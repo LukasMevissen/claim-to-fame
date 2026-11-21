@@ -2387,3 +2387,27 @@ TRINNERS4WINNERS,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
 alpha,28,1,0.0,,absent,fair,0.0,0.0,1,10,True,0.0,73.5,,1379.65,0.0
 chineseModels,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
 vietgang,28,1,0.0,,absent,fair,0.0,0.0,1,10,True,0.0,73.5,,1379.65,0.0
+404,29,1,1531.8,,accepted,fair,0.0,400.0,2,9,False,1531.8,inf,,2650.73,1441.23
+Asgardians,29,1,0.0,,accepted,unknown,495.91,1014.53,3,8,False,1531.8,inf,,2650.73,1441.23
+CHOOMS,29,1,1425.0,,accepted,fair,1531.8,inf,10,1,False,1531.8,inf,,2650.73,1441.23
+FDN,29,1,495.91,,accepted,fair,400.0,1014.53,3,8,False,1531.8,inf,,2650.73,1441.23
+GemischtesHack,29,1,,1531.8,hidden,fraud,1425.0,1531.8,10,1,False,1531.8,inf,,2650.73,1441.23
+Humble Legends,29,1,1223.77,,accepted,fair,0.0,400.0,2,9,False,1531.8,inf,,2650.73,1441.23
+Kiebler Software Solutions,29,1,1200.0,,accepted,fair,1531.8,inf,10,1,False,1531.8,inf,,2650.73,1441.23
+Lumenauts,29,1,400.0,,accepted,fair,0.0,495.91,2,9,False,1531.8,inf,,2650.73,1441.23
+TRINNERS4WINNERS,29,1,1421.09,,accepted,fair,495.91,1014.53,4,7,False,1531.8,inf,,2650.73,1441.23
+alpha,29,1,1014.53,,accepted,fair,1425.0,1531.8,9,2,False,1531.8,inf,,2650.73,1441.23
+chineseModels,29,1,1125.0,,accepted,fair,495.91,1014.53,4,7,False,1531.8,inf,,2650.73,1441.23
+vietgang,29,1,0.0,,absent,fair,0.0,0.0,1,10,True,1531.8,inf,,2650.73,1441.23
+404,29,2,452.04,,accepted,fraud,250.0,337.5,3,8,False,250.0,337.5,,565.5,518.53
+Asgardians,29,2,0.0,,accepted,unknown,769.54,inf,11,0,False,250.0,337.5,,565.5,518.53
+CHOOMS,29,2,565.25,,accepted,fraud,565.5,769.54,10,1,False,250.0,337.5,,565.5,518.53
+FDN,29,2,372.44,,accepted,fraud,400.0,419.97,6,5,False,250.0,337.5,,565.5,518.53
+GemischtesHack,29,2,565.5,,accepted,fraud,452.04,565.25,9,2,False,250.0,337.5,,565.5,518.53
+Humble Legends,29,2,769.54,,accepted,fraud,452.04,565.25,9,2,False,250.0,337.5,,565.5,518.53
+Kiebler Software Solutions,29,2,250.0,,accepted,fair,400.0,419.97,6,5,False,250.0,337.5,,565.5,518.53
+Lumenauts,29,2,400.0,,accepted,fraud,0.0,250.0,2,9,False,250.0,337.5,,565.5,518.53
+TRINNERS4WINNERS,29,2,419.97,,accepted,fraud,337.5,372.44,4,7,False,250.0,337.5,,565.5,518.53
+alpha,29,2,386.75,,accepted,fraud,452.04,565.25,8,3,False,250.0,337.5,,565.5,518.53
+chineseModels,29,2,337.5,,accepted,fraud,250.0,372.44,3,8,False,250.0,337.5,,565.5,518.53
+vietgang,29,2,0.0,,absent,fair,0.0,0.0,1,10,True,250.0,337.5,,565.5,518.53

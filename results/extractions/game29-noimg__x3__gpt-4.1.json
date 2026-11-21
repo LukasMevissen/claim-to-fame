@@ -1,0 +1,29 @@
+{
+  "case_id": "game29-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Replacement of stolen household contents (clothing, personal effects and everyday jewellery)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2200.0,
+      "price_log_sd": 0.25,
+      "rationale": "The policy covers forcible removal of insured property (2.6) and, where the schedule so provides, the movable property of the household (4.2.6). Everyday clothing and personal effects are fully covered (7.1.1(d)), and the description confirms the jewellery is 'everyday' and not of a high-value kind, so the EUR 1,000 per-article sub-limit (4.4.2) does not apply. The sum insured and any aggregate sub-limit for household contents would apply, but for ordinary claims of this type, reference cases show full indemnity for comparable losses. The police report and forced entry satisfy the proof requirements (2.6.5). Estimate based on moderate, ordinary replacement cost for a typical wardrobe and personal effects for one event."
+    },
+    {
+      "item_id": "2",
+      "description": "Emergency repair and re-securing of the forced entry door",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.15,
+      "rationale": "The policy covers immediate securing and provisional protection after a break-in (5.2.2), including restoring a closure element to a lockable state. Indemnity is capped at EUR 1,000 per event for this head. Reference cases for similar work (locksmith, door repair) suggest the full cap is rarely reached for a single door; a moderate, fair market rate for emergency re-securing is appropriate."
+    }
+  ]
+}

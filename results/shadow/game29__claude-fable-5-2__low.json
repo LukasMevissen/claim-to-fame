@@ -1,0 +1,45 @@
+{
+ "game": 29,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 6.5,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 32977,
+ "output_tokens": 322,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen household contents (clothing, personal effects, everyday jewellery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.5,
+   "rationale": "Forcible removal 2.6 with movable property presumably co-insured; everyday jewellery and clothing are paid in full under 4.4.5/4.4.6, but undifferentiated presentation under 9.6 risks treatment as a single unspecified article capped at EUR 1,000."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of forced entry door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 2.6.2 and 5.2.2 securing head, capped at EUR 1,000 incl. VAT per event; like-for-like door re-securing customary upper range."
+  }
+ ],
+ "quotes": {
+  "1": [
+   882.1,
+   616.49
+  ],
+  "2": [
+   522.0,
+   448.72
+  ]
+ }
+}

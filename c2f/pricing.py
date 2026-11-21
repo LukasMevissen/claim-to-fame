@@ -41,6 +41,7 @@ class PricingParams:
     charge_floor_quantile: float = 0.05  # never search below this quantile of t | t>0
     charge_ceiling_quantile: float = 0.95
     charge_min_ratio: float = 0.0        # never charge below this share of our median estimate
+    charge_min_quantile: float = 0.0     # never charge below this quantile of t | t > 0
     n_t_grid: int = 100
     n_candidates: int = 60
     n_opp_draws: int = 15
@@ -95,7 +96,11 @@ def charge_price(belief: TBelief, p: PricingParams) -> float:
     best = max(cands, key=lambda a: expected_revenue(a, belief, p))
     # Replay of games 1-12: the opponent model shades a to about 0.8 x estimate, yet our
     # charges were always proven fair with room above, so keep a at least this close.
-    return max(best, p.charge_min_ratio * belief.median)
+    # charge_min_quantile is the uncertainty-aware version: the floor moves down when the
+    # model is unsure (game 29: a rough guess of 3,047 with a wide spread was still charged
+    # at 0.87 x, proved inflated and earned nothing).
+    floor_q = pos.quantile(p.charge_min_quantile) if p.charge_min_quantile > 0 else 0.0
+    return max(best, p.charge_min_ratio * belief.median, floor_q)
 
 
 @dataclass(frozen=True)
