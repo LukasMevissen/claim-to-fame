@@ -1,0 +1,73 @@
+{
+  "case_id": "game38-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Air conditioning unit - living room (surge damaged, replaced like-for-like)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.3.3 (overvoltage caused by lightning) as a fixed, permanently wired technical installation forming part of the building. The unit is not within 5m of a cooking appliance, so the exclusion in 2.3.10(c) does not apply. Indemnity is for a like-for-like replacement (7.1.9), capped at the ordinary market price for such a unit, including VAT."
+    },
+    {
+      "item_id": "2",
+      "description": "Air conditioning unit - kitchen (wall-mounted a couple of metres from the hob)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.05,
+      "rationale": "Although surge damage is generally covered under 2.3.3, exclusion 2.3.10(c) applies: climate-control equipment within 5m of a cooking appliance is excluded unless a kitchen climate endorsement is present (none here). Therefore, this unit is not indemnified."
+    },
+    {
+      "item_id": "3",
+      "description": "Installation - living-room unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.2,
+      "rationale": "Installation of a covered replacement is indemnified as part of the necessary repair/replacement cost (7.1.9(c)), since the living-room unit is covered. Estimate based on typical installation charges for fixed AC units."
+    },
+    {
+      "item_id": "4",
+      "description": "Installation - kitchen unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.05,
+      "rationale": "Ancillary charges (installation) are only indemnified if the principal item is covered (7.1.11). As the kitchen unit is excluded by 2.3.10(c), installation is also excluded."
+    },
+    {
+      "item_id": "5",
+      "description": "Floor console (equivalent stand for the living-room unit)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.2,
+      "rationale": "The floor console is a necessary support for the covered living-room unit (7.1.9(b)), and the old one was damaged and could not be reused. Indemnified at the ordinary market price for a replacement stand."
+    },
+    {
+      "item_id": "6",
+      "description": "Freight shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.2,
+      "rationale": "Freight is an ancillary charge (1.3, 7.1.9(e), 7.1.11) and is indemnified only for the covered principal item(s). Here, only the living-room unit is covered, so only the proportion of shipping attributable to that unit is indemnified (apportioned 50%)."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "game38",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Living-room air conditioning unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.995,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1450.0,
+      "price_log_sd": 0.35,
+      "rationale": "The fixed unit is covered for lightning overvoltage under §§2.3.3 and 4.2.3. At about seven metres from the hob it falls outside the five-metre exclusion, so §7.1.9 allows the gross cost of one like-for-like unit, excluding separately billed labour and freight."
+    },
+    {
+      "item_id": "2",
+      "description": "Kitchen air conditioning unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1000.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 2.3.10(c) excludes surge damage to climate-control equipment within five metres of a cooking appliance, and no endorsement applies. The threshold is therefore expected to be zero; the positive estimate is the conditional cost of one equivalent unit."
+    },
+    {
+      "item_id": "3",
+      "description": "Living-room unit installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.995,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 650.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.9(c) covers the necessary labour to remove, fit, connect and commission the covered replacement. The estimate allows €650 gross for ordinary installation of one unit."
+    },
+    {
+      "item_id": "4",
+      "description": "Kitchen unit installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 550.0,
+      "price_log_sd": 0.35,
+      "rationale": "Under §7.1.11, installation follows the principal item, which is excluded under §2.3.10(c). The positive estimate is the conditional gross labour cost for one standard installation, not an expected payment."
+    },
+    {
+      "item_id": "5",
+      "description": "Living-room floor console",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 160.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.9(b) covers an equivalent support needed to mount the replacement because the old console was scorched and could not be reused. The estimate allows €160 gross for one standard console without a decorative upgrade."
+    },
+    {
+      "item_id": "6",
+      "description": "Shared freight shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 71.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 7.1.11–7.1.12 allow only the living-room unit's share of ordinary freight, apportioned by value or by weight or volume if that was the carrier's charging basis. Using value as a proxy, €120 gross × €1,450 / (€1,450 + €1,000) gives about €71, subject to freight itemisation."
+    }
+  ]
+}
