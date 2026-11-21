@@ -84,7 +84,7 @@ def run(game: int, cfg: Config, client=None, specs: list[str] | None = None,
         return []
     client = client or QuantCoClient(cfg)
     zip_path = REPO_ROOT / cfg.section("api").get("cases_dir", "data/cases") / f"case_{game:03d}.zip"
-    key = client.fetch_key(game, poll_seconds=0)
+    key = client.fetch_key(game, poll_seconds=30)      # retries dropped connections
     reference = pricebook.reference(before_game=game if prior_only else None,
                                     max_chars=cfg.section("llm").get("pricebook_max_chars", 24000))
     with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
