@@ -2,9 +2,10 @@
 
   python -m c2f version
   python -m c2f price --case-dir data/cases/case0
-  python -m c2f eval  --case-id case0 --case-dir data/cases/case0     # QC vs labels
-  python -m c2f eval  --case-id case0 --replay                         # no LLM, cached extraction (CI)
-  python -m c2f live  --case-id 7 --zip data/cases/case7.zip [--dry-run]
+  python -m c2f eval  --game 0                                         # QC vs data/labels/game0.json
+  python -m c2f eval  --game 0 --replay                                # no LLM, cached extraction (CI)
+  python -m c2f live  --case-id 0 [--dry-run]                          # one game now (0 = test game)
+  python -m c2f run   [--dry-run]                                      # unattended, all upcoming games
 """
 
 from __future__ import annotations
@@ -18,7 +19,7 @@ from pathlib import Path
 
 from .env import load_env
 from .agent import price_case, price_items, submission_payload
-from .case_io import decrypt, load_case
+from .case_io import decrypt, invoice_positions, load_case
 from .config import REPO_ROOT, load_config
 from .extract import load_cached
 from .versioning import stamp
@@ -51,15 +52,26 @@ def cmd_price(args, cfg) -> int:
 def cmd_eval(args, cfg) -> int:
     st = stamp(cfg)
     deadline = cfg.section("runtime").get("deadline_seconds", 50)
+    if args.case_id is None:
+        args.case_id = f"game{args.game}" if args.game is not None else "game0"
     if args.replay:
         model = cfg.section("llm")["model"]
         items = load_cached(args.case_id, model)
         if items is None:
-            print(f"no cached extraction for {args.case_id} / {model}; run eval once with --case-dir")
+            print(f"no cached extraction for {args.case_id} / {model}; run eval once with --game N")
             return 2
         t0 = time.monotonic()
         priced = price_items(items, cfg)
         timing = {"model": model, "replay": True, "pricing_s": round(time.monotonic() - t0, 2)}
+    elif args.game is not None:
+        # Decrypt data/cases/case_NNN.zip with the game's key (only works once the game started).
+        from .api import QuantCoClient
+
+        zip_path = REPO_ROOT / cfg.section("api").get("cases_dir", "data/cases") / f"case_{args.game:03d}.zip"
+        key = QuantCoClient(cfg).fetch_key(args.game, poll_seconds=0)
+        with tempfile.TemporaryDirectory() as tmp:
+            case = load_case(decrypt(zip_path, key, Path(tmp)), args.case_id)
+            priced, timing = price_case(case, cfg, use_cache=not args.no_cache)
     else:
         case = load_case(Path(args.case_dir), args.case_id)
         priced, timing = price_case(case, cfg, use_cache=not args.no_cache)
@@ -89,31 +101,184 @@ def cmd_eval(args, cfg) -> int:
     return 1 if errs else 0
 
 
+def _log(rec: dict) -> None:
+    RUN_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with RUN_LOG.open("a") as f:
+        f.write(json.dumps({"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), **rec}, ensure_ascii=False) + "\n")
+
+
+def _release_ok(st, args) -> bool:
+    if (st.git_dirty or not st.git_tag) and not args.allow_untagged:
+        print(f"refusing: running {st.label} (dirty or untagged). Release first or pass --allow-untagged.")
+        return False
+    return True
+
+
+def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: bool,
+              zip_path: Path | None = None) -> bool:
+    """Wait for the key, decrypt, then submit in stages (last write wins). Never raises.
+
+    stage 0  fixed fallback prices for every invoice line, right after decryption
+    stage 1  model prices WITHOUT the photo (faster)          } run in parallel; each is
+    stage 2  model prices WITH the photo, if the case has one } submitted when it finishes
+    A stage is only submitted if it priced something and no higher stage was submitted yet,
+    so a slow text-only answer never overwrites the photo answer.
+    """
+    from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
+
+    zip_path = zip_path or REPO_ROOT / cfg.section("api").get("cases_dir", "data/cases") / f"case_{game_id:03d}.zip"
+    rec = {"game_id": game_id, "dry_run": dry_run, "stamp": st.as_dict(), "zip": str(zip_path)}
+    t0 = None
+    try:
+        if not zip_path.exists():
+            raise FileNotFoundError(f"missing {zip_path}")
+        key = client.fetch_key(game_id, start_time)
+        t0 = time.monotonic()
+        # The 60 s window runs from the game start, not from when the key arrived.
+        start = start_time if start_time is not None else time.time()
+        deadline = cfg.section("runtime").get("deadline_seconds", 50)
+        fb = cfg.section("fallback")
+        fallback = (fb.get("charge_price", 0.0), fb.get("acceptance_limit", 0.0))
+        stages: list[dict] = []
+        best = {"rank": -1, "payload": [], "priced": [], "timing": {}}
+
+        def since() -> float:
+            return round(time.time() - start, 2)
+
+        def push(rank: int, name: str, priced, timing: dict | None, payload: list[dict]) -> None:
+            info = {"stage": name, "since_start_s": since(), "n_priced": len(priced)}
+            if timing and timing.get("model_errors"):
+                info["errors"] = timing["model_errors"]
+            if not payload or rank <= best["rank"]:
+                info["submitted"] = False
+            else:
+                try:
+                    if not dry_run:
+                        client.submit(game_id, payload)
+                    info["submitted"] = True
+                    best.update(rank=rank, payload=payload, priced=priced, timing=timing or {})
+                except Exception as e:  # noqa: BLE001
+                    info["submitted"], info["error"] = False, repr(e)[:200]
+            stages.append(info)
+            print(f"[game {game_id}] stage {name}: {info}")
+
+        tmpdir = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
+        try:
+            root = decrypt(zip_path, key, Path(tmpdir.name))
+            case = load_case(root, f"game{game_id}")
+            positions = invoice_positions(case.invoice_text)
+            push(0, "fixed", [], None, submission_payload([], positions, fallback))
+
+            budget = deadline - (time.time() - start)
+            variants = [(1, "text", False)] + ([(2, "photo", True)] if case.image is not None else [])
+            pool = ThreadPoolExecutor(max_workers=len(variants))
+            futs = {pool.submit(price_case, case, cfg, False, budget, with_image): (rank, name)
+                    for rank, name, with_image in variants}
+            pending = set(futs)
+            while pending:
+                left = deadline - (time.time() - start)
+                if left <= 0:
+                    break
+                done, pending = wait(pending, timeout=left, return_when=FIRST_COMPLETED)
+                for f in done:
+                    rank, name = futs[f]
+                    try:
+                        priced, timing = f.result()
+                    except Exception as e:  # noqa: BLE001
+                        priced, timing = [], {"model_errors": [repr(e)[:300]]}
+                    push(rank, name, priced, timing,
+                         submission_payload(priced, positions, fallback) if priced else [])
+            for f in pending:
+                stages.append({"stage": futs[f][1], "since_start_s": since(), "submitted": False,
+                               "error": "missed deadline"})
+                print(f"[game {game_id}] stage {futs[f][1]}: missed deadline")
+            pool.shutdown(wait=False, cancel_futures=True)
+        finally:
+            tmpdir.cleanup()
+
+        if best["rank"] < 0:
+            raise RuntimeError(f"nothing submitted; stages: {stages}")
+        timing = {**best["timing"], "n_invoice_lines": len(positions),
+                  "final_stage": stages and [s["stage"] for s in stages if s.get("submitted")][-1],
+                  "stages": stages, "since_start_s": since(),
+                  "wall_s": round(time.monotonic() - t0, 2)}
+        print(_table(best["priced"]))
+        print(f"[game {game_id}] {'DRY RUN ' if dry_run else ''}final={timing['final_stage']} "
+              f"{len(best['payload'])} items in {timing['since_start_s']}s")
+        _log({**rec, "ok": True, "timing": timing, "payload": best["payload"],
+              "n_accepted": None if dry_run else len(best["payload"])})
+        return True
+    except Exception as e:  # noqa: BLE001  the scheduler must survive any single game
+        wall = round(time.monotonic() - t0, 2) if t0 else None
+        print(f"[game {game_id}] FAILED after {wall}s: {e!r}")
+        _log({**rec, "ok": False, "error": repr(e)[:500], "wall_s": wall})
+        return False
+
+
 def cmd_live(args, cfg) -> int:
     from .api import QuantCoClient
 
     st = stamp(cfg)
-    if (st.git_dirty or not st.git_tag) and not args.allow_untagged:
-        print(f"refusing: running {st.label} (dirty or untagged). Release first or pass --allow-untagged.")
+    if not _release_ok(st, args):
         return 2
-    t0 = time.monotonic()
-    client = QuantCoClient(cfg)
-    key = client.fetch_key(args.case_id)
-    with tempfile.TemporaryDirectory() as tmp:
-        root = decrypt(Path(args.zip), key, Path(tmp))
-        case = load_case(root, str(args.case_id))
-        priced, timing = price_case(case, cfg, use_cache=False)
-        payload = submission_payload(priced)
-        resp = None if args.dry_run else client.submit(args.case_id, payload)
-    timing["wall_s"] = round(time.monotonic() - t0, 2)
-    print(_table(priced))
-    print(json.dumps(timing))
-    RUN_LOG.parent.mkdir(parents=True, exist_ok=True)
-    with RUN_LOG.open("a") as f:
-        f.write(json.dumps({"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "case_id": args.case_id,
-                            "dry_run": args.dry_run, "stamp": st.as_dict(), "timing": timing,
-                            "payload": payload, "response": resp}, ensure_ascii=False) + "\n")
+    ok = play_game(QuantCoClient(cfg), cfg, st, int(args.case_id), None, args.dry_run,
+                   Path(args.zip) if args.zip else None)
+    return 0 if ok else 1
+
+
+def cmd_market(args, cfg) -> int:
+    """Sync public transactions of completed games; print t bounds vs charges per item."""
+    import statistics
+
+    from . import market
+
+    summary = market.sync(refresh=args.refresh)
+    me = args.team
+    print(f"{'game':>4} {'pos':>3} {'t_low':>9} {'t_high':>9} {'others med a':>12} {'our a':>9} {'our b range':>21}")
+    for g, items in summary.items():
+        for idx, it in items.items():
+            others = [v for k, v in it["charges"].items() if k != me]
+            bb = it["b_bounds"].get(me)
+            print(f"{g:>4} {idx:>3} {it['t_low']:>9.2f} {str(it['t_high'] or '-'):>9} "
+                  f"{(statistics.median(others) if others else 0):>12.2f} "
+                  f"{str(it['charges'].get(me, '-')):>9} {str(bb or '-'):>21}")
+    print(f"saved {(market.CACHE / 'summary.json').relative_to(REPO_ROOT)}")
     return 0
+
+
+def cmd_run(args, cfg) -> int:
+    """Unattended loop: for every upcoming game, wait for start_time, then play it."""
+    from .api import QuantCoClient, parse_ts
+
+    st = stamp(cfg)
+    if not _release_ok(st, args):
+        return 2
+    client = QuantCoClient(cfg)
+    done: set[int] = set()
+    print(f"[run] {st.label} dry_run={args.dry_run}; Ctrl-C to stop")
+    while True:
+        try:
+            games = sorted(client.list_games(), key=lambda g: parse_ts(g["start_time"]))
+        except Exception as e:  # noqa: BLE001
+            print(f"[run] list_games failed: {e!r}; retry in 10s")
+            time.sleep(10)
+            continue
+        now = time.time()
+        # Still worth playing if it started less than ~45 s ago (60 s window).
+        todo = [g for g in games if g["id"] != 0 and g["id"] not in done
+                and parse_ts(g["start_time"]) > now - 45
+                and (args.until is None or g["id"] <= args.until)]
+        if not todo:
+            print("[run] no upcoming games; exiting")
+            return 0
+        g = todo[0]
+        start = parse_ts(g["start_time"])
+        if start - now > 120:          # re-check the schedule periodically while idle
+            print(f"[run] next: game {g['id']} at {g['start_time']} (in {int(start - now)}s)")
+            time.sleep(min(start - now - 60, 600))
+            continue
+        play_game(client, cfg, st, int(g["id"]), start, args.dry_run)
+        done.add(int(g["id"]))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -129,25 +294,36 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--case-id")
     p.add_argument("--no-cache", action="store_true")
 
-    e = sub.add_parser("eval")
-    e.add_argument("--case-id", default="case0")
-    e.add_argument("--case-dir")
+    e = sub.add_parser("eval", help="price a case and score it against data/labels/<case-id>.json")
+    e.add_argument("--game", type=int, help="decrypt data/cases/case_NNN.zip via the API key")
+    e.add_argument("--case-id", help="labels/cache name; default gameN (same name live runs use)")
+    e.add_argument("--case-dir", help="already decrypted case folder instead of --game")
     e.add_argument("--replay", action="store_true", help="use cached extraction, no LLM call")
     e.add_argument("--no-cache", action="store_true")
     e.add_argument("--fail-on-regression", action="store_true")
     e.add_argument("--tolerance", type=float, default=0.02)
 
-    lv = sub.add_parser("live")
-    lv.add_argument("--case-id", required=True)
-    lv.add_argument("--zip", required=True)
+    lv = sub.add_parser("live", help="play one game now (game 0 = permanent test game)")
+    lv.add_argument("--case-id", required=True, help="game id; zip defaults to data/cases/case_XXX.zip")
+    lv.add_argument("--zip")
     lv.add_argument("--dry-run", action="store_true")
     lv.add_argument("--allow-untagged", action="store_true")
 
+    mk = sub.add_parser("market", help="sync public transactions of completed games")
+    mk.add_argument("--refresh", action="store_true")
+    mk.add_argument("--team", default="GemischtesHack")
+
+    rn = sub.add_parser("run", help="unattended scheduler over all upcoming games")
+    rn.add_argument("--dry-run", action="store_true")
+    rn.add_argument("--allow-untagged", action="store_true")
+    rn.add_argument("--until", type=int, help="stop after this game id")
+
     args = ap.parse_args(argv)
-    if args.cmd == "eval" and not args.replay and not args.case_dir:
-        ap.error("eval needs --case-dir or --replay")
+    if args.cmd == "eval" and not args.replay and not args.case_dir and args.game is None:
+        ap.error("eval needs --game N, --case-dir or --replay")
     cfg = load_config(args.config)
-    return {"version": cmd_version, "price": cmd_price, "eval": cmd_eval, "live": cmd_live}[args.cmd](args, cfg)
+    return {"version": cmd_version, "price": cmd_price, "eval": cmd_eval,
+            "live": cmd_live, "run": cmd_run, "market": cmd_market}[args.cmd](args, cfg)
 
 
 if __name__ == "__main__":

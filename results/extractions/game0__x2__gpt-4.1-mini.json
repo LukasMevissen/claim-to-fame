@@ -1,0 +1,51 @@
+{
+  "case_id": "game0",
+  "extractor_version": "x2",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection and opening of the bathroom wall next to the washbasin",
+      "quantity": 2.0,
+      "unit": "hrs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Leak detection and wall opening is covered and necessary for the water escape damage."
+    },
+    {
+      "item_id": "2",
+      "description": "Replacement of split copper supply pipe section, 15 mm, incl. fittings",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.3,
+      "rationale": "Repairing the fractured pipe is covered and essential for the damage."
+    },
+    {
+      "item_id": "3",
+      "description": "Closing the wall opening, re-plastering and re-tiling approx. 0.2 m2",
+      "quantity": 0.2,
+      "unit": "m2",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.4,
+      "rationale": "Restoring plaster and tiles is covered and needed to repair the damage."
+    },
+    {
+      "item_id": "4",
+      "description": "Annual service and descaling of the gas boiler in the hallway",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 0.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.5,
+      "rationale": "Service and descaling of boiler is explicitly excluded and unrelated to the water damage."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "game5",
+  "extractor_version": "x2",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Laptop damage payment — cracked screen and lower-right-corner impact damage, thrown against car door during evasive turn",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1400.0,
+      "price_log_sd": 0.3,
+      "rationale": "Damage to portable insured equipment caused by sudden accidental physical damage during conveyance is covered under 2.6; price matches new laptop value."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# systemd user service: runs the scheduler unattended and restarts it if it crashes.
+# Installed by deploy/setup.sh into ~/.config/systemd/user/.
+[Unit]
+Description=Claim to Fame bot (GemischtesHack)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=%h/claim-to-fame
+ExecStart=%h/claim-to-fame/.venv/bin/python -u -m c2f run --allow-untagged
+Restart=on-failure
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

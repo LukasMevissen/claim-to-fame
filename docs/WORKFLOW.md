@@ -20,17 +20,19 @@
 | Eval results | `results/eval/<case>/<timestamp>__<version>.json` | committed, so we can compare versions |
 | LLM extractions | `results/extractions/<case>__<extractor>__<model>.json` | committed, so CI and teammates replay without tokens |
 
-## Quality control against case 0
+## Quality control against game 0
 
-1. Put the decrypted test case in `data/cases/case0/` (policy.txt, description.txt, invoices.pdf, images.png).
-2. Label it: `data/labels/case0.json` with our best expert threshold t per line item
-   (gross total, 0 if not covered or unrelated). Copy `data/labels/TEMPLATE.json`.
+Step by step, with the meaning of every metric: README, "Checking our prices: labels and eval".
+
+1. Label it: `data/labels/game0.json` with our best expert threshold t per line item, keyed by
+   the invoice POS number (gross total, 0 if not covered or unrelated). Copy `data/labels/TEMPLATE.json`.
    If QuantCo publishes the real t for case 0, use those and note it in `source`.
    Labels are made by a teammate who did not tune the prompt, to keep the check honest.
-3. Run `python -m c2f eval --case-id case0 --case-dir data/cases/case0` (one LLM call, then cached).
-4. It checks the hard gates (all items priced, a and b valid, runtime within budget, ids match labels),
+2. Run `python -m c2f eval --game 0` (decrypts `data/cases/case_000.zip` with the game key;
+   one LLM call unless the extraction is already cached, `--no-cache` forces a fresh one).
+3. It checks the hard gates (all items priced, a and b valid, runtime within budget, ids match labels),
    then simulates the tournament and compares with the best previous result.
-5. For pure strategy changes (no prompt change) use `--replay`: no LLM call, runs in CI.
+4. For pure strategy changes (no prompt change) use `--replay`: no LLM call, runs in CI.
 
 A change is good when: gates pass, `net_payoff` is not worse than the best previous run by more
 than 2% (`--fail-on-regression`), and runtime stays well below 50 s.
@@ -45,5 +47,6 @@ and evaluate across all of them before big strategy changes.
 
 ## Live run (runner only)
 
-    python -m c2f live --case-id <id> --zip data/cases/<file>.zip --dry-run   # rehearse
-    python -m c2f live --case-id <id> --zip data/cases/<file>.zip
+    python -m c2f live --case-id <id> --dry-run   # rehearse; zip defaults to data/cases/case_<id:03d>.zip
+    python -m c2f live --case-id <id>
+    python -m c2f run                             # unattended over all upcoming games

@@ -1,15 +1,16 @@
-"""QuantCo API client.
+"""QuantCo API client (vendor/quantco/API_HANDBOOK.md).
 
-NOT WIRED UP YET: the endpoints and payload format are defined in API_HANDBOOK.md,
-which is in the organisers' shared Drive folder. Once it is in vendor/quantco/:
-1. fill [api] in configs/default.toml,
-2. adapt fetch_key() and submit() to the handbook (port the calls from starter_script.py),
-3. run `python -m c2f live --case 0 --dry-run` and then without --dry-run on case 0.
+Fair play: the key is only requested at or after a game's start_time, at most once per second.
 """
 
 from __future__ import annotations
 
+import math
 import os
+import time
+from datetime import datetime, timezone
+
+import requests
 
 from .config import Config
 
@@ -18,34 +19,62 @@ class ApiNotConfigured(RuntimeError):
     pass
 
 
+def parse_ts(s: str) -> float:
+    return datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(timezone.utc).timestamp()
+
+
 class QuantCoClient:
     def __init__(self, cfg: Config):
         api = cfg.section("api")
-        if not api.get("base_url") or not api.get("key_endpoint") or not api.get("submit_endpoint"):
-            raise ApiNotConfigured("Fill [api] in the config from API_HANDBOOK.md first.")
+        for k in ("base_url", "games_endpoint", "key_endpoint", "submit_endpoint"):
+            if not api.get(k):
+                raise ApiNotConfigured(f"[api].{k} missing in config")
         self.base = api["base_url"].rstrip("/")
-        self.key_ep = api["key_endpoint"]
-        self.submit_ep = api["submit_endpoint"]
-        self.api_key = os.environ["TEAM_API_KEY"]
+        self.api = api
+        key = os.environ.get("TEAM_API_KEY", "").strip()
+        if not key:
+            raise ApiNotConfigured("TEAM_API_KEY not set")
+        self.s = requests.Session()
+        self.s.headers["X-API-Key"] = key
 
-    def _headers(self) -> dict:
-        # TODO(handbook): confirm auth header name/format.
-        return {"Authorization": f"Bearer {self.api_key}"}
+    def _url(self, ep: str, game_id: int | str) -> str:
+        return self.base + self.api[ep].format(game_id=game_id)
 
-    def fetch_key(self, case_id: str) -> str:
-        import requests
-
-        # TODO(handbook): confirm path/params and response field.
-        r = requests.get(f"{self.base}{self.key_ep}".format(case_id=case_id),
-                         headers=self._headers(), timeout=5)
+    def list_games(self) -> list[dict]:
+        r = self.s.get(self.base + self.api["games_endpoint"], timeout=10)
         r.raise_for_status()
-        return r.json()["key"]
+        return r.json()
 
-    def submit(self, case_id: str, payload: list[dict]) -> dict:
-        import requests
+    def fetch_key(self, game_id: int | str, start_time: float | None = None,
+                  poll_seconds: float | None = None) -> str:
+        """Wait for start_time (never ask early), then poll once per second on 403."""
+        poll = self.api.get("key_poll_seconds", 20) if poll_seconds is None else poll_seconds
+        if start_time is not None:
+            wait = start_time - time.time()
+            if wait > 0:
+                time.sleep(wait + 0.2)
+        give_up = time.monotonic() + poll
+        while True:
+            try:
+                r = self.s.get(self._url("key_endpoint", game_id), timeout=5)
+            except requests.RequestException as e:   # slow server at game start: retry
+                if time.monotonic() > give_up:
+                    raise RuntimeError(f"key for game {game_id}: {e!r}") from e
+                time.sleep(1.0)
+                continue
+            if r.status_code == 200:
+                return r.json()["decryption_key"]
+            if r.status_code != 403 or time.monotonic() > give_up:
+                raise RuntimeError(f"key for game {game_id}: {r.status_code} {r.text[:200]}")
+            time.sleep(1.0)
 
-        # TODO(handbook): map payload field names (item id, a, b) to the API schema.
-        r = requests.post(f"{self.base}{self.submit_ep}".format(case_id=case_id),
-                          headers=self._headers(), json={"items": payload}, timeout=8)
-        r.raise_for_status()
-        return r.json() if r.content else {}
+    def submit(self, game_id: int | str, payload: list[dict]) -> list[dict]:
+        for p in payload:
+            for k in ("charge_price", "acceptance_limit"):
+                v = p[k]
+                if not (isinstance(v, (int, float)) and math.isfinite(v) and v >= 0):
+                    raise ValueError(f"invalid {k}={v!r} for index {p['index']}")
+        r = self.s.put(self._url("submit_endpoint", game_id), json=payload, timeout=8)
+        if r.status_code != 200:
+            raise RuntimeError(f"submit game {game_id}: {r.status_code} {r.text[:300]}")
+        return r.json()

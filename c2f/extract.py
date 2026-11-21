@@ -8,6 +8,7 @@ Bump EXTRACTOR_VERSION whenever the prompt or schema changes.
 from __future__ import annotations
 
 import base64
+import io
 import json
 import os
 from dataclasses import asdict, dataclass
@@ -16,7 +17,28 @@ from pathlib import Path
 from .case_io import Case
 from .config import REPO_ROOT
 
-EXTRACTOR_VERSION = "x1"
+EXTRACTOR_VERSION = "x2"   # x2: photo shrunk to <= 1024 px JPEG before sending
+IMAGE_MAX_SIDE = 1024
+RAW_IMAGE_MAX_BYTES = 2_000_000   # without Pillow, larger photos are left out (upload too slow)
+
+
+def image_for_model(path: Path) -> tuple[str, bytes] | None:
+    """Photo as (mime, bytes), shrunk so the upload stays small.
+
+    Case photos can be 10 MB+ PNGs; sent as-is the model call timed out (game 5).
+    """
+    try:
+        from PIL import Image
+    except ImportError:
+        if path.stat().st_size > RAW_IMAGE_MAX_BYTES:
+            return None
+        return ("image/png" if path.suffix.lower() == ".png" else "image/jpeg"), path.read_bytes()
+    with Image.open(path) as im:
+        im = im.convert("RGB")
+        im.thumbnail((IMAGE_MAX_SIDE, IMAGE_MAX_SIDE))
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=80)
+    return "image/jpeg", buf.getvalue()
 CACHE_DIR = REPO_ROOT / "results" / "extractions"
 
 SYSTEM = """You are a senior claims adjuster for a German property and motor insurer.
@@ -49,7 +71,7 @@ class ItemEstimate:
     rationale: str = ""
 
 
-def _user_content(case: Case) -> list[dict]:
+def _user_content(case: Case, with_image: bool = True) -> list[dict]:
     parts: list[dict] = [{"type": "text", "text":
         f"POLICY:\n{case.policy}\n\nDAMAGE DESCRIPTION:\n{case.description}\n\n"
         + (f"INVOICE (text extracted from PDF):\n{case.invoice_text}" if case.invoice_text
@@ -58,9 +80,10 @@ def _user_content(case: Case) -> list[dict]:
         b64 = base64.b64encode(case.invoice_pdf.read_bytes()).decode()
         parts.append({"type": "file", "file": {"filename": "invoices.pdf",
                                                "file_data": f"data:application/pdf;base64,{b64}"}})
-    if case.image is not None:
-        b64 = base64.b64encode(case.image.read_bytes()).decode()
-        mime = "image/png" if case.image.suffix.lower() == ".png" else "image/jpeg"
+    img = image_for_model(case.image) if (with_image and case.image is not None) else None
+    if img is not None:
+        mime, data = img
+        b64 = base64.b64encode(data).decode()
         parts.append({"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}})
     return parts
 
@@ -102,8 +125,10 @@ def save_cache(case_id: str, model: str, items: list[ItemEstimate]) -> None:
 
 
 def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
-            use_cache: bool = True) -> list[ItemEstimate]:
-    if use_cache and (hit := load_cached(case.case_id, model)) is not None:
+            use_cache: bool = True, with_image: bool = True) -> list[ItemEstimate]:
+    """with_image=False skips the photo: faster, used as the first-stage submission."""
+    cid = case.case_id if (with_image or case.image is None) else f"{case.case_id}-noimg"
+    if use_cache and (hit := load_cached(cid, model)) is not None:
         return hit
     from openai import OpenAI  # imported lazily so pricing/tests run without it
 
@@ -114,8 +139,8 @@ def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
         temperature=temperature,
         response_format={"type": "json_object"},
         messages=[{"role": "system", "content": SYSTEM},
-                  {"role": "user", "content": _user_content(case)}],
+                  {"role": "user", "content": _user_content(case, with_image)}],
     )
     items = _parse(resp.choices[0].message.content)
-    save_cache(case.case_id, model, items)
+    save_cache(cid, model, items)
     return items

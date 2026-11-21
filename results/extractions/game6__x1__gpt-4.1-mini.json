@@ -1,0 +1,18 @@
+{
+  "case_id": "game6",
+  "extractor_version": "x1",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Laptop accidental damage repair (cracked screen and lower-right corner), settled with supplier",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.4,
+      "rationale": "Repair of portable insured equipment due to sudden accidental physical damage is covered under 2.6; typical repair cost for screen and corner damage in Germany is around 300-400 EUR including VAT."
+    }
+  ]
+}

@@ -9,15 +9,27 @@ llm_timeout_seconds = 30
 [llm]
 # Set to the model used in starter_script.py once it is in vendor/quantco/.
 model = "gpt-4.1-mini"
-fallback_model = "gpt-4.1-nano"
+fallback_model = "gpt-4.1"   # gpt-4.1-nano was withdrawn (404). Unverified: needs a key with model.request
 temperature = 0.0
 
 [api]
-# Fill in from API_HANDBOOK.md (vendor/quantco/). Left empty on purpose:
-# the agent refuses to call the API until these are set.
-base_url = ""
-key_endpoint = ""        # fetch decryption key for a released case
-submit_endpoint = ""     # submit a and b per line item
+# From vendor/quantco/API_HANDBOOK.md. Auth: X-API-Key header (TEAM_API_KEY).
+# Game 0 is the permanent test game (key always available, case_000.zip).
+base_url = "https://c2f.public.quantco.cloud"
+games_endpoint = "/api/games/list"
+key_endpoint = "/api/games/{game_id}/key"            # 403 until start_time
+submit_endpoint = "/api/games/{game_id}/submissions"  # PUT, last write wins
+cases_dir = "data/cases"                              # case_{game_id:03d}.zip
+key_poll_seconds = 20       # keep polling the key this long after start_time (1 req/s)
+
+[fallback]
+# (a, b) for invoice lines the model did not price: the model failed, timed out or skipped
+# a line. There is no price information, so both stay small. A small charge is paid in full
+# whenever a <= t, and the cap's absolute floor means even an uncovered line pays an accepted
+# small charge. A small limit only accepts small charges, which are mostly fair.
+# The API default of 0 / 0 earns nothing and rejects every charge (1.5a per fair one).
+charge_price = 20.0
+acceptance_limit = 20.0
 
 [pricing]
 acceptance_quantile = 0.3333333333
