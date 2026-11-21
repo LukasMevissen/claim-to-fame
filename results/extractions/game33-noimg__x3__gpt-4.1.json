@@ -1,0 +1,95 @@
+{
+  "case_id": "game33-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Laptop replacement - equivalent to the damaged model (repair uneconomic per supplier report)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 2.6 and 7.1.10: Sudden accidental damage to portable equipment is covered if the peril is on the schedule (it is), and the repair is uneconomic per supplier report. Indemnity is for a replacement of the same kind, quality and technical standard as the damaged unit, not for an upgrade. VAT is included if actually incurred. Reference Case 22 (laptop repair, same peril and wording) shows t < 313 for repair, but here replacement is required. Market price for a mid-range laptop in 2026 is likely 700–900 EUR gross; reference Case 21 (kitchen table, similar consumer goods) supports this range."
+    },
+    {
+      "item_id": "2",
+      "description": "Higher-spec upgrade difference (better model than the one damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.9: No betterment is indemnified; only the cost of an equivalent replacement is covered. Any upgrade cost is excluded and must be borne by the policyholder. Reference Case 19 (premium TV upgrade) and 7.1.9 logic."
+    },
+    {
+      "item_id": "3",
+      "description": "Tablet screen repair (struck in the same bag)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.2,
+      "rationale": "Policy 2.6.4 and 7.1.10: Both devices were damaged in the same event; each is assessed separately. Sudden external action is described and consistent with the damage. Repair of a tablet screen is a typical covered cost. Reference Case 22 (laptop repair t < 313) and market rates for tablet screen repair (2026) suggest 120–180 EUR gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Diagnostic inspection of both devices",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 5.2.3: Diagnostic costs for damaged portable equipment are covered up to EUR 250 per event, provided the gateway in 2.6 is passed (it is). Reference Case 22 (diagnostic t < 26 for one device) and market rates suggest a fair charge for both devices is 40–50 EUR gross."
+    },
+    {
+      "item_id": "5",
+      "description": "New laptop carry bag (not damaged in the incident)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.5 and 7.1.9: Only items actually damaged by the insured event are covered. The carry bag was not damaged, so its replacement is not indemnified. Reference Case 22 and 7.1.5 logic."
+    },
+    {
+      "item_id": "6",
+      "description": "Extended warranty on the replacement laptop",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 3.5(f) and 7.1.8(e): The cost of a warranty or service contract is expressly excluded, regardless of whether it is bundled with the replacement."
+    },
+    {
+      "item_id": "7",
+      "description": "Data recovery from the damaged laptop drive",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 3.5(d) and 4.3(c): Data recovery is not covered unless specifically endorsed (it is not). Reference Case 22 (data recovery not indemnified)."
+    },
+    {
+      "item_id": "8",
+      "description": "Administration fee (data recovery house)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 3.5(d) and 7.1.8(b): Administration fees for excluded services (data recovery) are not indemnified. Reference Case 22."
+    }
+  ]
+}

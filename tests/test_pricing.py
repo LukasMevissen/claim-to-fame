@@ -144,3 +144,15 @@ def test_beats_naive_in_expectation_over_belief():
             ours += m["net_payoff"]
             naive += m["naive_baseline"]
         assert ours > naive, it.item_id
+
+
+def test_confident_estimate_is_priced_close_to_it():
+    from c2f.agent import to_belief
+    from c2f.config import load_config
+    from c2f.extract import ItemEstimate
+    cfg = load_config()
+    sure = quote(to_belief(ItemEstimate("1", "", 1, "", 1.0, 1.0, 1000.0, 0.05), cfg), cfg.pricing)
+    unsure = quote(to_belief(ItemEstimate("1", "", 1, "", 1.0, 1.0, 1000.0, 0.4), cfg), cfg.pricing)
+    assert sure.charge_price >= 950 and sure.acceptance_limit >= 950
+    assert sure.charge_price <= 1000 and sure.acceptance_limit <= 1000
+    assert unsure.charge_price < 950 and unsure.acceptance_limit < sure.acceptance_limit

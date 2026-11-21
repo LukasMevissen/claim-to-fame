@@ -26,7 +26,13 @@ class PricedItem:
 
 def to_belief(it: ItemEstimate, cfg: Config) -> TBelief:
     b = cfg.section("belief")
-    sigma = min(max(it.price_log_sd, b.get("min_sigma", 0.15)), b.get("max_sigma", 1.2))
+    # The model's stated uncertainty is informative: stated < 0.12 -> actual log error about
+    # 0.05 (16 lines), 0.12-0.2 -> 0.23, 0.3-0.4 -> 0.32, 0.4-0.6 -> 0.54. So a very confident
+    # statement is trusted down to confident_min_sigma; everything else keeps the min_sigma floor.
+    if it.price_log_sd < b.get("confident_below", 0.0):
+        sigma = max(it.price_log_sd, b.get("confident_min_sigma", 0.1))
+    else:
+        sigma = min(max(it.price_log_sd, b.get("min_sigma", 0.15)), b.get("max_sigma", 1.2))
     p_zero = 1.0 - it.covered_prob * it.related_prob
     return TBelief(median=it.quantity * it.unit_price_gross_eur, sigma=sigma, p_zero=p_zero)
 

@@ -65,6 +65,9 @@ charge_ceiling_quantile = 0.95
 # Floor for a as a share of our median estimate. 12-game replay: 0 -> 40.5k, 0.87 -> 47.0k,
 # 0.90 -> 48.0k, 0.93 -> 40.3k (cliff: charges start to exceed t), so 0.87 keeps a margin.
 charge_min_ratio = 0.87
+# Confident estimates (belief sigma below charge_conf_sigma) are charged at least this share.
+charge_conf_sigma = 0.12
+charge_conf_ratio = 0.95
 n_t_grid = 100
 n_candidates = 60
 n_opp_draws = 15
@@ -94,4 +97,6 @@ miss_zero = 0.5
 [belief]
 # Floors applied to the LLM's stated uncertainty.
 min_sigma = 0.2
+confident_below = 0.12       # stated log-sd below this is trusted ...
+confident_min_sigma = 0.10   # ... down to this value (limit b = about 0.96 x estimate)
 max_sigma = 1.2
