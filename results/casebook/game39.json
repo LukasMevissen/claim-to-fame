@@ -1,0 +1,22 @@
+{
+ "game": 39,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Bathroom leak, upstairs at Jonas's place, cold water line. The cold water supply pipe in the 1st-floor bathroom failed and started leaking into the wall. They had to open the wall up to get at it, then repair the pipe and close everything back up. It wasn't a huge flood — nothing beyond the immediate wall area was affected. Once the pipe was fixed, the opening was closed and repainted, and a dryer was brought in for a bit to make sure everything was properly dry before that. Took a couple of site visits to sort out fully.",
+ "lines": {
+  "1": "Painting the disturbed wall area and closing the wall opening | 1 pcs",
+  "2": "Vehicle costs 1 flat rate",
+  "3": "Sealing material 1 pcs",
+  "4": "Stainless steel pipe 1 m",
+  "5": "Rock wool pipe insulation 1 m",
+  "6": "Installer hours 1 hrs",
+  "7": "Measuring device 1 pcs",
+  "8": "Service technician hours 9 hrs",
+  "9": "Vehicle costs 1 pcs",
+  "10": "Construction dryer flat-rate charge 1 flat rate",
+  "11": "Short saw blade 1 pcs",
+  "12": "Gunmetal 2 pcs",
+  "13": "Stainless steel pipe 1 m",
+  "14": "Pipe insulation shell, 100 cm long 1 m",
+  "15": "Service technician hours 9 hrs"
+ }
+}
