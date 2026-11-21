@@ -1,0 +1,51 @@
+{
+  "case_id": "game0",
+  "extractor_version": "x4",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Locate leak and open bathroom wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 194.0,
+      "price_log_sd": 0.22,
+      "rationale": "The indoor supply-pipe fracture is insured under §1.1, and §2.1 covers locating the leak and opening the wall. Two hours at about €97 gross per hour, benchmarked to the leak-detection technician in Case 34, totals €194."
+    },
+    {
+      "item_id": "2",
+      "description": "Replace split 15 mm copper pipe section and fittings",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 295.0,
+      "price_log_sd": 0.25,
+      "rationale": "Section 2.2 covers like-for-like replacement of the fractured section. Allow €295 gross for labour and fittings, close to the localised copper repair in Case 34, with wall access billed separately."
+    },
+    {
+      "item_id": "3",
+      "description": "Close, re-plaster and re-tile 0.2 m² wall patch",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 230.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 2.1 and 2.3 cover closing the opening and restoring the plaster and tiles to their previous condition. Allow €230 gross for labour and materials on the small patch only, without retiling the undamaged bathroom."
+    },
+    {
+      "item_id": "4",
+      "description": "Annual boiler service and descaling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 3.1 expressly excludes servicing and descaling even during the same visit, and the boiler work was unrelated to the leak. The €200 gross figure is a conditional price estimate only, not a payable allowance."
+    }
+  ]
+}

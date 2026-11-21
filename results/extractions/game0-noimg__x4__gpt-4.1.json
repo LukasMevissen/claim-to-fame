@@ -1,0 +1,51 @@
+{
+  "case_id": "game0-noimg",
+  "extractor_version": "x4",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection and opening of the bathroom wall next to the washbasin",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 280.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. Reference Case 27 (leak detection and opening, similar scope) supports full indemnity."
+    },
+    {
+      "item_id": "2",
+      "description": "Replacement of split copper supply pipe section, 15 mm, incl. fittings",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 295.0,
+      "price_log_sd": 0.1,
+      "rationale": "Covered under 2.2: repairing the fractured pipe. Reference Case 34 (repair of leaking copper joints) supports similar pricing."
+    },
+    {
+      "item_id": "3",
+      "description": "Closing the wall opening, re-plastering and re-tiling approx. 0.2 m2",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered under 2.3: restoring damaged plaster and tiles to previous condition. Reference Case 32 (plaster and tile restoration) supports this as standard."
+    },
+    {
+      "item_id": "4",
+      "description": "Annual service and descaling of the gas boiler in the hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if during the same visit."
+    }
+  ]
+}
