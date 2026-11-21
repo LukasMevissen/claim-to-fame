@@ -1,0 +1,227 @@
+{
+  "case_id": "game46-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Wall tile covering 3 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 270.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as reinstatement of damaged wall tiling in the damage area (policy 1.1, 7.1.1(b), 3.5(b)); reference cases show standard tiling work for similar areas is indemnified."
+    },
+    {
+      "item_id": "2",
+      "description": "Hole drilling 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.15,
+      "rationale": "Drilling for pipe pass-through is necessary for reinstatement of the tiled panel (policy 7.1.5); similar minor work is always included in reference cases."
+    },
+    {
+      "item_id": "3",
+      "description": "Wall tiles 60x30 3 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.1,
+      "rationale": "Material for reinstating the damaged area, standard grade (policy 7.1.6, 3.5(a)); reference cases confirm standard tiles are indemnified."
+    },
+    {
+      "item_id": "4",
+      "description": "Wall levelling material 1 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.15,
+      "rationale": "Levelling is necessary where render was lost to water damage (policy 7.1.5); reference cases show such substrate prep is included."
+    },
+    {
+      "item_id": "5",
+      "description": "Wall tiles 1000x5000 5 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.5,
+      "price_log_sd": 0.7,
+      "rationale": "No such tile size exists; likely a mis-entry or refers to offcut/packaging. If these are premium/oversized tiles, policy 3.5(a) limits to standard grade; but as the description and damage show only standard tiles, t = 0."
+    },
+    {
+      "item_id": "6",
+      "description": "Silicone joints 3.6 linear m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 22.0,
+      "price_log_sd": 0.15,
+      "rationale": "Silicone joints in the damage area are necessary for reinstatement (policy 7.1.5); reference cases show such work is included."
+    },
+    {
+      "item_id": "7",
+      "description": "Premium silicone sealant 12 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.2,
+      "rationale": "Only standard-grade materials are indemnified (policy 3.5(a)); if this is an upgrade, indemnity is capped at standard silicone price for the necessary length."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.1,
+      "rationale": "First vehicle/call-out charge per contractor per document is covered (policy 7.4.2); reference cases for tiling show 65–83 is fair."
+    },
+    {
+      "item_id": "9",
+      "description": "Skilled worker hours 14 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 308.0,
+      "price_log_sd": 0.15,
+      "rationale": "Labour for necessary reinstatement in the damage area is covered at local rates (policy 7.4.1); reference cases for similar trades show 18–28/hr for skilled, so 14×22=308."
+    },
+    {
+      "item_id": "10",
+      "description": "Clean wall tile covering 1 flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.15,
+      "rationale": "Cleaning of reinstated surfaces in the damage area is part of the repair (policy 3.5(c)); reference cases show this is included if not excessive."
+    },
+    {
+      "item_id": "11",
+      "description": "Remove drywall 1 flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.2,
+      "rationale": "Removal of wet plasterboard boxing adjacent to the damage is necessary (policy 7.1.5); reference cases for similar removal work show this is covered."
+    },
+    {
+      "item_id": "12",
+      "description": "Removal and disposal of damaged insulation 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 22.0,
+      "price_log_sd": 0.2,
+      "rationale": "Removal/disposal of wet mineral wool from the boxing is necessary and covered as part of debris removal (policy 5.2.1, 7.1.5); reference cases support this."
+    },
+    {
+      "item_id": "13",
+      "description": "Remove damp plaster in basement rooms 3 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.15,
+      "rationale": "Removal of damp render behind the damaged tiling is necessary for reinstatement (policy 7.1.5); reference cases for similar work show this is covered."
+    },
+    {
+      "item_id": "14",
+      "description": "Remove damp plaster in attic 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.5,
+      "price_log_sd": 0.7,
+      "rationale": "Attic staining is pre-existing and unrelated to the insured event (policy 3.5(b)); reference cases exclude such maintenance."
+    },
+    {
+      "item_id": "15",
+      "description": "Wall rosette 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.15,
+      "rationale": "Replacement of the chrome cover ring (wall rosette) broken during necessary repair is covered (policy 7.1.5); reference cases for similar small parts show this is included."
+    },
+    {
+      "item_id": "16",
+      "description": "Disassembly and assembly service 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 28.0,
+      "price_log_sd": 0.2,
+      "rationale": "Disassembly/reassembly of pipe joint and fittings is necessary for repair (policy 7.1.5); reference cases for similar work show this is included."
+    },
+    {
+      "item_id": "17",
+      "description": "Construction dryer 7 days",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.1,
+      "rationale": "Drying of the affected area is covered as technical drying (policy 5.2.7); reference cases for 7-day dryer rental are 58–84, so 70 is fair."
+    },
+    {
+      "item_id": "18",
+      "description": "Material surcharge 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.15,
+      "rationale": "Flat-rate surcharges are only covered if attributable to necessary materials (policy 7.4.4); reference cases show small parts/consumables at 33–45, so 35 is fair."
+    },
+    {
+      "item_id": "19",
+      "description": "Rock wool pipe insulation 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 21.0,
+      "price_log_sd": 0.1,
+      "rationale": "Replacement of sodden lagging is necessary for reinstatement (policy 7.1.5); reference cases for 1 m are 19–22."
+    },
+    {
+      "item_id": "20",
+      "description": "Construction waste disposal 1 flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 59.0,
+      "price_log_sd": 0.1,
+      "rationale": "Disposal of debris from the repair is covered as debris removal (policy 5.2.1); reference cases for similar jobs are 57–61."
+    }
+  ]
+}
