@@ -34,7 +34,7 @@ pricebook_max_chars = 24000
 # Anthropic models need ANTHROPIC_API_KEY in .env.
 # claude-opus-5-5@low is the live answer now ([llm].backup + prefer_backup) and sonnet replayed
 # far below the others (games 10-19: 1.4k vs 28-30k), so only fable stays as a comparison.
-models = ["anthropic:claude-fable-5-2@low"]
+models = []   # shadow tests stopped 2026-11-21 20:15 UTC (cost); e.g. ["anthropic:claude-fable-5-2@low"]
 timeout_seconds = 120
 
 [api]

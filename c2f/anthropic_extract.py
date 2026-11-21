@@ -47,8 +47,11 @@ def extract_claude(case: Case, model: str, timeout: float, reference: str = "",
 
     # base_url is pinned: an ANTHROPIC_BASE_URL in the environment (e.g. a proxy configured
     # for a coding assistant) must never receive this project's key or case data.
+    # A key that is not scoped to a workspace needs the workspace named on every request.
+    ws = os.environ.get("ANTHROPIC_WORKSPACE_ID", "").strip()
     client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"),
-                                 base_url=API_BASE, timeout=timeout, max_retries=0)
+                                 base_url=API_BASE, timeout=timeout, max_retries=0,
+                                 default_headers={"anthropic-workspace-id": ws} if ws else None)
     ref = f"REFERENCE CASES (earlier games, revealed thresholds):\n{reference}\n\n" if reference else ""
     content: list[dict] = []
     img = image_for_model(case.image) if (with_image and case.image is not None) else None
