@@ -10,9 +10,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 229.0,
-      "price_log_sd": 0.1,
-      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. Reference Case 21 (leak detection and opening) supports indemnity for similar work."
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. Reference Cases 21 and 27 show technician time for leak detection and wall opening is indemnified, with 2-hr technician work for similar tasks ranging from ~229 to 1400 EUR for flat rates, but hourly rates for opening and detection are typically lower. For 2 hrs, a moderate estimate is justified."
     },
     {
       "item_id": "2",
@@ -21,9 +21,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 158.0,
+      "unit_price_gross_eur": 180.0,
       "price_log_sd": 0.1,
-      "rationale": "Covered under 2.2: repairing the fractured pipe. Reference Cases 18 and 21 show similar pipe repair lines indemnified at this level."
+      "rationale": "Covered under 2.2: repairing the fractured pipe. Reference Cases 21 and 18 show similar repairs (copper pipe, fittings, insulation) are indemnified, with line totals for a single pipe repair between 157 and 221 EUR. This is a straightforward replacement, so use the lower end."
     },
     {
       "item_id": "3",
@@ -32,9 +32,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 66.0,
-      "price_log_sd": 0.15,
-      "rationale": "Covered under 2.3: restoring damaged plaster and tiles to previous condition. Reference Case 21 (final site cleaning, transition pieces, and minor restoration) supports indemnity for this type of repair."
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered under 2.3: restoring the damaged plaster and tiles to previous condition. Reference Case 21 (final site cleaning and minor restoration) and Case 27 (drying and minor wall repair) suggest small patch repairs are indemnified, with similar work ranging from 78 to 174 EUR for larger areas. For 0.2 m2, a moderate estimate is justified."
     },
     {
       "item_id": "4",
@@ -43,9 +43,9 @@
       "unit": "",
       "covered_prob": 0.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 80.0,
-      "price_log_sd": 0.3,
-      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured peril."
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.1,
+      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured peril or damage."
     }
   ]
 }

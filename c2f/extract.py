@@ -77,6 +77,20 @@ Return JSON {"items": [...]} with one object per invoice line, in invoice order:
 Do not skip lines. Do not invent lines."""
 
 
+# Price level for the Claude stages (c2f/anthropic_extract.py). The revealed thresholds sit at
+# the upper end of what teams charge (about 1.3x the median charge on covered lines), and
+# "ordinary market price" left the model too low on labour, materials and standard devices.
+# Backtest claude-opus-5-5@low, games 10-19, 5 runs each, price book of earlier games only:
+# price error 0.30 -> 0.23, replayed net 22.7k -> 29.3k (better in 8 of 10 games; game 12
+# worse, where the higher level overshot two large lines).
+_STEP3 = """3. If indemnified, start from a fair, ordinary market price for the work actually needed
+   (not the most thorough or expensive variant), then apply the policy's arithmetic:"""
+_STEP3_UPPER = """3. If indemnified, t is the HIGHEST price a claims expert would still accept as appropriate
+   for the work actually needed: the upper end of the customary price range, not the typical
+   or cheapest offer. Start there, then apply the policy's arithmetic:"""
+assert _STEP3 in SYSTEM
+SYSTEM_UPPER = SYSTEM.replace(_STEP3, _STEP3_UPPER)
+
 @dataclass
 class ItemEstimate:
     item_id: str

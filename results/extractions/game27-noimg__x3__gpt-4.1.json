@@ -1,0 +1,51 @@
+{
+  "case_id": "game27-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection and moisture measurement for the kitchen sink supply leak, incl. technician labour and call-out",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 550.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.4 (escape of water) and 7.1.7(e)/(f) as necessary investigation and measurement to locate the leak and confirm extent of moisture, including one call-out per invoice. Reference Case 21 shows similar work (leak detection call-out, electro-acoustic pinpointing, moisture measurement) with t >= 229, >= 449, and 153-178 EUR respectively, but this line is a combined flat rate for all detection and measurement, including technician labour for a full day. The fair market price for a full-day leak detection with two technicians, all measurements, and call-out is likely in the 450–600 EUR range gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Freeing, repair and re-insulation of the leaking kitchen sink supply pipe, incl. replacement copper section",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 260.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered under 2.4 (escape of water) and 7.1.7(a)/(c) as necessary repair to affected pipe, including removal of finishes, replacement copper, and re-insulation. Reference Case 21 (repair of leak and replacement copper pipe section with standard insulation) gives t between 157 and 220 EUR for a similar job, but this line includes freeing the pipe, removal of back panel and flooring, and re-insulation over a longer run (1.5m). A fair market price for this more extensive repair, including all necessary access and re-insulation, is likely in the 220–300 EUR range gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered under 7.1.7(f) as one travel/call-out charge per contractor per invoice. Reference Case 21 (vehicle costs) gives t >= 76 EUR for a similar plumbing job. Market rates for a plumbing van call-out are stable and well evidenced."
+    },
+    {
+      "item_id": "4",
+      "description": "Drying of the kitchen floor and wall base, incl. condensation dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 140.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 7.1.7(b)/(e) as necessary drying and measurement of affected areas, including equipment hire. Reference Case 21 (room drying of kitchen floor and wall base) gives t between 20 and 148 EUR, and condensation dryer 20–65 EUR, but this line is a combined flat rate for a week of drying and final measurement. A fair market price for a week’s drying with one unit and skilled labour is likely in the 120–160 EUR range gross."
+    }
+  ]
+}

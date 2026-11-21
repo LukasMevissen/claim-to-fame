@@ -10,7 +10,7 @@ import base64
 import os
 
 from .case_io import Case
-from .extract import SYSTEM, ItemEstimate, _parse, image_for_model
+from .extract import SYSTEM_UPPER, ItemEstimate, _parse, image_for_model
 
 # Models with a server-side refusal fallback. If the fallback model answers instead, the
 # result records it (served_by), so a comparison never credits the wrong model.
@@ -41,7 +41,7 @@ _SCHEMA = {
 
 def extract_claude(case: Case, model: str, timeout: float, reference: str = "",
                    effort: str | None = "low", with_image: bool = True,
-                   system: str = SYSTEM) -> tuple[list[ItemEstimate], dict]:
+                   system: str = SYSTEM_UPPER) -> tuple[list[ItemEstimate], dict]:
     """Returns (items, meta). meta: served_by, input_tokens, output_tokens."""
     import anthropic
 

@@ -22,7 +22,7 @@ NEUTRAL = ("Without a close reference use ordinary market\n   prices for the tra
 V1 = SYSTEM.replace(MODERATE, NEUTRAL)
 V2 = V1.replace("Return JSON", "Build every price from its components before you commit to it: labour hours x hourly\nrate, material, plant, travel, plus VAT. Name the components and their amounts in `reasoning`.\n\nReturn JSON")
 V3 = V1.replace("They are the best calibration available:", "Where a reference line shows \"we estimated X\", that was our own estimate before t was\nrevealed: learn from the direction and size of those misses for similar work.\nThey are the best calibration available:")
-PROMPTS = {'v0': SYSTEM, 'v1': V1, 'v2': V2, 'v3': V3}
+PROMPTS = {'v0': SYSTEM, 'v1': V1, 'v2': V2, 'v3': V3, 'rel': SYSTEM}   # rel: price book ranked by similarity
 
 def sol_estimates():
     est = {}
@@ -54,10 +54,11 @@ def run(variant, r, model):
         if f.exists(): return
         case = load_case(CASES / f'game{g}', f'game{g}')
         try:
-            items, meta = extract_claude(case, model, 120, reference(g, variant == 'v3'), 'low', system=PROMPTS[variant])
+            ref = pricebook.reference(before_game=g, case=case) if variant == 'rel' else reference(g, variant == 'v3')
+            items, meta = extract_claude(case, model, 120, ref, 'low', system=PROMPTS[variant])
             f.write_text(json.dumps({'game': g, 'items': [i.__dict__ for i in items], **meta}))
         except Exception as e: print('fail', variant, g, repr(e)[:200])
-    gs = [g for g in range(1, 60) if str(g) in S and (CASES / f'game{g}').exists()]
+    gs = [g for g in range(int(os.environ.get('FROM_GAME', 1)), 60) if str(g) in S and (CASES / f'game{g}').exists()]
     with ThreadPoolExecutor(5) as p: list(p.map(one, gs))
     print(variant, r, 'done', len(list(d.glob('game*.json'))), 'of', len(gs))
 
@@ -65,7 +66,7 @@ def score():
     from c2f.agent import price_items
     cfg = load_config(); S = load_summary()
     for d in sorted(OUT.glob('*/run*')):
-        files = sorted(d.glob('game*.json')); net = {1.15: 0.0, 1.4: 0.0}; errs = []
+        files = [f for f in sorted(d.glob('game*.json')) if int(f.stem[4:]) >= int(os.environ.get('FROM_GAME', 1))]; net = {1.15: 0.0, 1.4: 0.0}; errs = []
         for f in files:
             r = json.load(open(f)); items = [ItemEstimate(**i) for i in r['items']]; g = r['game']
             q = {int(p.item_id): (p.charge_price, p.acceptance_limit) for p in price_items(items, cfg)}

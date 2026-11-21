@@ -9,6 +9,13 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 ## unreleased (2026-11-21, live from game 10)
 
+- Live from game 26: the `claude-opus-5-5@low` answer is the one submitted (`[llm] prefer_backup`);
+  the `gpt-6.2-sol` full stage only stands if Anthropic fails. Replay games 10-19: about 23-30k
+  vs 13-17k.
+- Live from game 28: Claude stages use `SYSTEM_UPPER` (t = upper end of the customary price
+  range instead of an ordinary market price). Backtest games 10-19, 5 runs each: price error
+  0.30 -> 0.23, replayed net 22.7k -> 29.3k; game 12 got worse (two large lines overshot).
+
 - Extractor x3: policy-first prompt (optional covers, exclusions, sub-limits shared rateably,
   reductions, no betterment), one whole-line total per item instead of unit price x quantity.
 - Price book (`c2f/pricebook.py`): every prompt shows the earlier cases with the t bounds the

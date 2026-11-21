@@ -69,8 +69,32 @@ def _bounds(it: dict) -> str:
     return "t unknown"
 
 
-def reference(before_game: int | None = None, max_chars: int = 24000) -> str:
-    """Earlier cases with revealed bounds, newest first, as prompt text ('' if none)."""
+_STOP = {"the", "and", "for", "from", "with", "incl", "pcs", "flat", "rate", "hrs", "per", "new",
+         "was", "were", "that", "this", "had", "has", "have", "been", "not", "but", "are", "which",
+         "claim", "policy", "invoice", "damage", "damaged", "one", "two", "out", "into", "its"}
+
+
+def _tokens(text: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z]{3,}", text.lower()) if w not in _STOP}
+
+
+def _relevance(case, digest: dict) -> float:
+    """How useful an earlier case is for the current one: same policy edition counts most,
+    then shared words in the invoice lines (weighted double) and the claim description."""
+    same_policy = 1.0 if digest.get("policy") and digest["policy"] == policy_title(case.policy) else 0.0
+    cur_lines = _tokens(" ".join(invoice_lines(case.invoice_text).values()))
+    old_lines = _tokens(" ".join(digest["lines"].values()))
+    cur_desc, old_desc = _tokens(case.description), _tokens(digest["description"])
+    jac = lambda x, y: len(x & y) / len(x | y) if x and y else 0.0  # noqa: E731
+    return same_policy + 2.0 * jac(cur_lines, old_lines) + jac(cur_desc, old_desc)
+
+
+def reference(before_game: int | None = None, max_chars: int = 24000, case=None) -> str:
+    """Earlier cases with revealed bounds as prompt text ('' if none), cut at max_chars.
+
+    With `case` (the case being priced) the most similar earlier cases come first, so the
+    cut drops the least relevant ones. Without it the newest come first. After game 27 only
+    the newest 15 cases fitted, and the older, often more similar ones were lost."""
     if not SUMMARY.exists() or not CASEBOOK.exists():
         return ""
     summary = json.loads(SUMMARY.read_text())
@@ -84,10 +108,13 @@ def reference(before_game: int | None = None, max_chars: int = 24000) -> str:
         d = json.loads(f.read_text())
         rows = [f"  - {d['lines'].get(str(i), d['lines'].get(i, '?'))} => {_bounds(it)}"
                 for i, it in sorted(((int(k), v) for k, v in summary[str(g)].items()))]
-        blocks.append(f"Case {g} [{d['policy']}]\n  Claim: {d['description'][:600]}\n" + "\n".join(rows))
+        text = f"Case {g} [{d['policy']}]\n  Claim: {d['description'][:600]}\n" + "\n".join(rows)
+        blocks.append((_relevance(case, d) if case is not None else 0.0, text))
+    if case is not None:
+        blocks.sort(key=lambda b: -b[0])          # stable: ties stay newest first
     out = ""
-    for b in blocks:
+    for _, b in blocks:
         if len(out) + len(b) > max_chars:
-            break
+            continue                              # a shorter, less relevant case may still fit
         out += b + "\n\n"
     return out.strip()

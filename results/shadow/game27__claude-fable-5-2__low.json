@@ -1,0 +1,75 @@
+{
+ "game": 27,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.2,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 31308,
+ "output_tokens": 677,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection and moisture measurement incl. technician labour and call-out (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1450.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 7.1.7(e), (f), (g); combined position is attributable to the affected kitchen (7.1.8(e)). Priced from Case 21 components: call-out ~230 + pinpointing ~450 + moisture ~165 + 14 technician hours ~650."
+  },
+  {
+   "item_id": "2",
+   "description": "Freeing, repair and re-insulation of sink supply pipe incl. 1.5 m copper section (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 520.0,
+   "price_log_sd": 0.3,
+   "rationale": "Fracture damage to supply pipe inside building under 2.4.3(a); like-for-like copper and foam lagging under 7.1.7(a), (c), no betterment. Case 21 components: freeing ~140 + insulation removal ~136 + repair ~190 + insulation ~57."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs (plumber)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.3,
+   "rationale": "One travel charge per contractor per invoice is indemnified under 7.1.7(f); this is the only one on the plumber's invoice. Case 21 level about 76+."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of kitchen floor and wall base incl. condensation dryer (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.45,
+   "rationale": "Drying of rooms with established moisture is covered under 7.1.7(b) and equipment hire under (e); electricity is deemed included (7.1.8(d)). One dryer for about 7 days; Case 21 gave dryer 20-65 plus room drying 20-148."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1261.5,
+   1220.81
+  ],
+  "2": [
+   452.4,
+   437.81
+  ],
+  "3": [
+   69.6,
+   64.88
+  ],
+  "4": [
+   165.51,
+   145.26
+  ]
+ }
+}

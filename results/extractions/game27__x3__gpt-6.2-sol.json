@@ -1,0 +1,51 @@
+{
+  "case_id": "game27",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Kitchen leak detection, moisture measurement and call-out",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1490.0,
+      "price_log_sd": 0.22,
+      "rationale": "Sections 7.1.7(e)–(g) cover locating the concealed leak, measuring affected areas, necessary labour and one call-out; the combined billing is permitted under 7.1.8(e). Using Case 21 as a benchmark, about €650 for 14 technician-hours plus €840 for call-out, acoustic pinpointing and moisture measurement gives €1,490 gross, without a second travel charge."
+    },
+    {
+      "item_id": "2",
+      "description": "Expose, repair and re-insulate kitchen supply pipe",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 400.0,
+      "price_log_sd": 0.24,
+      "rationale": "Sections 2.4.3(a) and 7.1.7(a), (c) and (g) support local access and like-for-like repair of the failed indoor pipe. Allow about €140 for access, €195 for replacing the documented 1.5 m copper run with like-for-like fittings, and €65 for stripping and replacing the foam lagging, for €400 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Plumber vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 76.0,
+      "price_log_sd": 0.13,
+      "rationale": "Section 7.1.7(f) allows the first travel charge on each contractor's invoice. This is the plumber's only travel charge and is separate from the leak detection firm's call-out; allow €76 gross, consistent with Case 21."
+    },
+    {
+      "item_id": "4",
+      "description": "Dry affected kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 190.0,
+      "price_log_sd": 0.28,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) and (e) cover drying the measured wet floor and wall base, equipment hire and completion readings. Allow about €60 for one condensation dryer for nearly seven days and €130 for setup, collection and final checks, for €190 gross with no separate electricity allowance under 7.1.8(d)."
+    }
+  ]
+}
