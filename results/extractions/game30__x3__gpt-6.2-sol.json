@@ -1,0 +1,117 @@
+{
+  "case_id": "game30",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Electrician labour, 12 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1140.0,
+      "price_log_sd": 0.22,
+      "rationale": "External rainwater flooding falls under group (c2), which is not shown as insured. Clause 3.6.2(b) bars the labour; €1,140 is the conditional gross estimate at €95 per hour."
+    },
+    {
+      "item_id": "2",
+      "description": "Electrical contractor vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.25,
+      "rationale": "Clause 3.6.2(f) bars all journey charges for the uninsured flood. If the flood were covered, this first journey would be eligible under 7.1.7(g), estimated at €60 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Motor pump procurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clause 3.6.2(d) bars pumping costs for the uninsured flood. Even on a covered claim, 5.2.2 would not pay separately for procuring equipment used in the billed extraction; €1 is a required positive placeholder."
+    },
+    {
+      "item_id": "4",
+      "description": "Submersible pump",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clause 3.6.2(d) bars this cost, and 5.2.2 independently treats the pump as included in the separately billed extraction measure. The €1 amount is a required positive placeholder."
+    },
+    {
+      "item_id": "5",
+      "description": "Basement water extraction",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 420.0,
+      "price_log_sd": 0.45,
+      "rationale": "Clauses 3.6.2(d) and 5.1 bar extraction costs for the uninsured flood, even though pumping was necessary. The conditional gross estimate is €420 for one extraction operation, including labour and equipment."
+    },
+    {
+      "item_id": "6",
+      "description": "Small electrical materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 145.0,
+      "price_log_sd": 0.45,
+      "rationale": "Clause 3.6.2(c) bars materials used to repair uninsured flood damage. If covered, 7.1.7(c) would allow equivalent materials actually installed, estimated at €145 gross."
+    },
+    {
+      "item_id": "7",
+      "description": "Boiler, flue and storage tank replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 10500.0,
+      "price_log_sd": 0.4,
+      "rationale": "Fixed heating plant is insured property under 4.2.2, but 3.6.2(a) bars replacement after this uninsured flood. Under 7.1.1(c), a like-for-like installed system would be about €10,500 gross, excluding separately billed pipe adaptation and disposal."
+    },
+    {
+      "item_id": "8",
+      "description": "Supply pipework adaptation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 620.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clause 3.6.2(a) expressly bars adaptation work associated with replacement after an uninsured flood. The conditional €620 gross estimate covers only the connections needed to fit the replacement boiler under 7.1.7(d)."
+    },
+    {
+      "item_id": "9",
+      "description": "Old boiler system disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 280.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clauses 3.6.2(e) and 5.1 bar disposal costs arising from the uninsured flood. The conditional €280 gross estimate covers ordinary removal, hauling and disposal of the old system."
+    },
+    {
+      "item_id": "10",
+      "description": "Heating contractor vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clause 3.6.2(f) bars this journey charge; even with flood cover, 7.1.8(d) excludes the second journey charge for the same event. The €1 amount is a required positive placeholder."
+    }
+  ]
+}

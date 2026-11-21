@@ -12759,5 +12759,337 @@
     ]
    }
   }
+ },
+ "30": {
+  "1": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "2": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "3": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "4": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "5": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "6": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "7": {
+   "t_low": 0.0,
+   "t_high": 2000.0,
+   "charges": {
+    "GemischtesHack": 2000.0,
+    "404": 2000.0,
+    "chineseModels": 2000.0,
+    "Humble Legends": 2000.0,
+    "Kiebler Software Solutions": 2000.0,
+    "Lumenauts": 2000.0,
+    "TRINNERS4WINNERS": 2000.0
+   },
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {
+    "404": [
+     0.0,
+     2000.0
+    ],
+    "Asgardians": [
+     2000.0,
+     null
+    ],
+    "CHOOMS": [
+     0.0,
+     2000.0
+    ],
+    "FDN": [
+     0.0,
+     2000.0
+    ],
+    "GemischtesHack": [
+     0.0,
+     2000.0
+    ],
+    "Humble Legends": [
+     0.0,
+     2000.0
+    ],
+    "Kiebler Software Solutions": [
+     0.0,
+     2000.0
+    ],
+    "Lumenauts": [
+     0.0,
+     2000.0
+    ],
+    "TRINNERS4WINNERS": [
+     0.0,
+     2000.0
+    ],
+    "alpha": [
+     0.0,
+     2000.0
+    ],
+    "chineseModels": [
+     0.0,
+     2000.0
+    ],
+    "vietgang": [
+     0.0,
+     2000.0
+    ]
+   }
+  },
+  "8": {
+   "t_low": 0.0,
+   "t_high": 300.0,
+   "charges": {
+    "Kiebler Software Solutions": 300.0,
+    "404": 315.68,
+    "Humble Legends": 361.93
+   },
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {
+    "404": [
+     0.0,
+     300.0
+    ],
+    "Asgardians": [
+     361.93,
+     null
+    ],
+    "CHOOMS": [
+     0.0,
+     300.0
+    ],
+    "FDN": [
+     0.0,
+     300.0
+    ],
+    "GemischtesHack": [
+     0.0,
+     300.0
+    ],
+    "Humble Legends": [
+     0.0,
+     300.0
+    ],
+    "Kiebler Software Solutions": [
+     0.0,
+     315.68
+    ],
+    "Lumenauts": [
+     0.0,
+     300.0
+    ],
+    "TRINNERS4WINNERS": [
+     0.0,
+     300.0
+    ],
+    "alpha": [
+     0.0,
+     300.0
+    ],
+    "chineseModels": [
+     0.0,
+     300.0
+    ],
+    "vietgang": [
+     0.0,
+     300.0
+    ]
+   }
+  },
+  "9": {
+   "t_low": 0.0,
+   "t_high": 150.0,
+   "charges": {
+    "Kiebler Software Solutions": 150.0,
+    "TRINNERS4WINNERS": 189.69,
+    "Humble Legends": 251.23,
+    "GemischtesHack": 261.0
+   },
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {
+    "404": [
+     0.0,
+     150.0
+    ],
+    "Asgardians": [
+     261.0,
+     null
+    ],
+    "CHOOMS": [
+     0.0,
+     150.0
+    ],
+    "FDN": [
+     0.0,
+     150.0
+    ],
+    "GemischtesHack": [
+     0.0,
+     150.0
+    ],
+    "Humble Legends": [
+     0.0,
+     150.0
+    ],
+    "Kiebler Software Solutions": [
+     0.0,
+     189.69
+    ],
+    "Lumenauts": [
+     0.0,
+     150.0
+    ],
+    "TRINNERS4WINNERS": [
+     0.0,
+     150.0
+    ],
+    "alpha": [
+     0.0,
+     150.0
+    ],
+    "chineseModels": [
+     0.0,
+     150.0
+    ],
+    "vietgang": [
+     0.0,
+     150.0
+    ]
+   }
+  },
+  "10": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  }
  }
 }
