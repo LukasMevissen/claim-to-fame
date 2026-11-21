@@ -177,14 +177,20 @@ class Sync:
             if not (self.repo / "tests").is_dir():
                 return True, "no tests"
             venv = self.repo / ".venv" / ("Scripts/python.exe" if sys.platform == "win32" else "bin/python")
+            # Per machine override, e.g. a venv at a short path when Windows long paths are off:
+            #   git config autosync.python C:/Users/me/.venvs/c2f/Scripts/python.exe
+            override = self.git("config", "--get", "autosync.python", check=False).stdout.strip()
+            py = override or str(venv if venv.exists() else sys.executable)
             # The bot's tests; autosync's own tests are slow (real git repos) and CI runs them.
-            cmd = [str(venv if venv.exists() else sys.executable), "-m", "pytest", "-q", "-x",
+            cmd = [py, "-m", "pytest", "-q", "-x",
                    "-p", "no:cacheprovider", "--ignore=tests/test_autosync.py"]
         try:
             r = subprocess.run(cmd, cwd=self.repo, capture_output=True, text=True, encoding="utf-8",
                                errors="replace", creationflags=NO_WINDOW, timeout=600)
         except subprocess.TimeoutExpired:
             return False, "tests timed out after 10 min"
+        except OSError as e:
+            return False, f"cannot run tests with {cmd[0]}: {e}"
         tail = "\n".join((r.stdout + r.stderr).strip().splitlines()[-8:])
         return r.returncode == 0, tail
 

@@ -19,6 +19,9 @@ in `.git/autosync-backup/`) and never anything that looks like a secret.
 It does nothing while you are on another branch, so for a bigger change switch to a branch
 and use the PR flow above. On a conflict or failing tests it stops and notifies you; your commit
 stays local. `status`, `pause`, `resume`, `uninstall` do what they say.
+If the tests must run with another interpreter on your machine (e.g. a venv at a short path
+because Windows long paths are off and `.venv` installs incompletely), set it per checkout:
+`git config autosync.python C:/Users/<you>/.venvs/c2f/Scripts/python.exe`.
 
 ## What is versioned
 

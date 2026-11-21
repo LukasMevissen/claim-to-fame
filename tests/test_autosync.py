@@ -188,6 +188,14 @@ def test_failing_tests_block_the_push_not_the_commit(repos):
     assert "Lukas" not in remote_log(remote) and alerts
 
 
+def test_gate_uses_per_machine_python_from_git_config(repos, tmp_path):
+    remote, me, other = repos
+    (me / "tests").mkdir()
+    git(me, "config", "autosync.python", str(tmp_path / "no-such-python.exe"))
+    ok, why = make_sync(me, [], gate_cmd=None).gate()
+    assert not ok and "no-such-python" in why       # the configured interpreter was used
+
+
 def test_does_nothing_off_main(repos):
     remote, me, other = repos
     git(me, "switch", "-q", "-c", "experiment")
