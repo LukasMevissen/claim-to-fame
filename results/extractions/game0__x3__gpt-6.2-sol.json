@@ -5,14 +5,14 @@
   "items": [
     {
       "item_id": "1",
-      "description": "Locate the leak and open the bathroom wall",
+      "description": "Leak detection and bathroom wall opening",
       "quantity": 1.0,
       "unit": "",
       "covered_prob": 0.99,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 180.0,
-      "price_log_sd": 0.23,
-      "rationale": "The split internal supply pipe is an insured peril under §1.1, and §2.1 covers both leak location and wall opening. Two hours at €90 gross per hour total €180."
+      "unit_price_gross_eur": 190.0,
+      "price_log_sd": 0.22,
+      "rationale": "The indoor supply-pipe fracture is insured under §1.1, and §2.1 covers both locating the leak and opening the wall. Two hours at €95 gross per hour gives €190."
     },
     {
       "item_id": "2",
@@ -21,9 +21,9 @@
       "unit": "",
       "covered_prob": 0.99,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 185.0,
-      "price_log_sd": 0.2,
-      "rationale": "Section 2.2 covers repair of the fractured pipe. A gross allowance of €185 for labour, the short copper section and standard fittings is consistent with the comparable repair in Case 21."
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.24,
+      "rationale": "Section 2.2 covers the localized pipe repair. Allow €180 gross for the installed short copper section and standard fittings, excluding wall access and reinstatement billed separately."
     },
     {
       "item_id": "3",
@@ -32,20 +32,20 @@
       "unit": "",
       "covered_prob": 0.99,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 200.0,
+      "unit_price_gross_eur": 240.0,
       "price_log_sd": 0.3,
-      "rationale": "Sections 2.1 and 2.3 cover closing the opening and restoring plaster and tiles to their previous condition. Allow €200 gross for small-job labour and matching materials, limited to the invoiced patch."
+      "rationale": "Sections 2.1 and 2.3 cover closing the opening and restoring the plaster and tiles to their prior condition. Allow €240 gross for the small patch, including labour and materials, with no allowance for undamaged tiling."
     },
     {
       "item_id": "4",
-      "description": "Annual boiler service and descaling",
+      "description": "Annual gas boiler service and descaling",
       "quantity": 1.0,
       "unit": "",
       "covered_prob": 0.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 220.0,
+      "unit_price_gross_eur": 200.0,
       "price_log_sd": 0.35,
-      "rationale": "Section 3.1 expressly excludes servicing and descaling even during the same visit, and the boiler work was unrelated to the leak. The €220 gross estimate is conditional only; no payment is expected."
+      "rationale": "Section 3.1 expressly excludes servicing and descaling even during the same visit, and the boiler work is unrelated to the leak. The €200 gross figure is a conditional price estimate only, not a payable amount."
     }
   ]
 }

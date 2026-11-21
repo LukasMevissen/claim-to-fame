@@ -10,9 +10,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 300.0,
-      "price_log_sd": 0.15,
-      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. Reference Case 21 shows similar work (leak detection call-out, opening wall) is indemnified at >=229 EUR for call-out and >=449 EUR for pinpointing, but this is a combined line for 2 hours, so a moderate estimate is appropriate."
+      "unit_price_gross_eur": 229.0,
+      "price_log_sd": 0.1,
+      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. Reference Case 21 (leak detection and opening) supports indemnity for similar work."
     },
     {
       "item_id": "2",
@@ -21,9 +21,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 230.0,
+      "unit_price_gross_eur": 158.0,
       "price_log_sd": 0.1,
-      "rationale": "Covered under 2.2: repairing the fractured pipe. Reference Case 18 (copper pipe repair, incl. fittings) was indemnified at >=221 EUR for a similar flat rate; this is a single section, so a similar value applies."
+      "rationale": "Covered under 2.2: repairing the fractured pipe. Reference Cases 18 and 21 show similar pipe repair lines indemnified at this level."
     },
     {
       "item_id": "3",
@@ -32,9 +32,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 70.0,
+      "unit_price_gross_eur": 66.0,
       "price_log_sd": 0.15,
-      "rationale": "Covered under 2.3: restoring the damaged plaster and tiles to their previous condition. Reference Case 21 (final site cleaning, transition pieces, and similar restoration) shows values between 49 and 85 EUR for small areas; for 0.2 m2, a moderate estimate is justified."
+      "rationale": "Covered under 2.3: restoring damaged plaster and tiles to previous condition. Reference Case 21 (final site cleaning, transition pieces, and minor restoration) supports indemnity for this type of repair."
     },
     {
       "item_id": "4",
@@ -43,9 +43,9 @@
       "unit": "",
       "covered_prob": 0.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 120.0,
-      "price_log_sd": 0.05,
-      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured damage."
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.3,
+      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured peril."
     }
   ]
 }
