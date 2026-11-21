@@ -1,0 +1,18 @@
+{
+  "case_id": "game28-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Kitchen air conditioning unit - replacement including installation and delivery (3 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "The policy covers overvoltage caused by lightning (2.3.3) for insured electrical installations and appliances, but specifically excludes (2.3.10(c)) climate-control equipment installed within five metres of a cooking appliance unless a kitchen climate endorsement is present. The damage description confirms the unit is mounted close to the hob and the schedule has no endorsements. Per 3.5(a), new equipment and its ancillary charges are also excluded. Therefore, the entire combined line is excluded."
+    }
+  ]
+}

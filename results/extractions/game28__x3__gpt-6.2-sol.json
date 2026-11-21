@@ -1,0 +1,18 @@
+{
+  "case_id": "game28",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Fixed kitchen AC replacement, installation and delivery",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2200.0,
+      "price_log_sd": 0.35,
+      "rationale": "The photo places the unit within five metres of the hob, so §2.3.10(c) excludes the surge damage absent a kitchen climate endorsement. Installation and delivery follow the excluded unit under §§7.1.11 and 9.5; the conditional estimate is for one like-for-like installed unit, since the claim documents only one damaged unit despite the invoice quantity of three."
+    }
+  ]
+}

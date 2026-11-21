@@ -1,0 +1,30 @@
+{
+ "game": 28,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 4.9,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 32855,
+ "output_tokens": 226,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit replacement incl. installation and delivery (3 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2200.0,
+   "price_log_sd": 0.6,
+   "rationale": "Clause 2.3.10(c) excludes overvoltage damage to climate-control equipment within five metres of a cooking appliance; the unit is on the kitchen wall close to the hob and no kitchen climate endorsement is on the schedule. The whole combined line falls, including ancillary installation and delivery (7.1.11); in addition only one unit was damaged while 3 pcs are billed."
+  }
+ ],
+ "quotes": {
+  "1": [
+   2023.48,
+   0.0
+  ]
+ }
+}
