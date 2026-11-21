@@ -1,0 +1,84 @@
+{
+  "case_id": "game9-noimg",
+  "extractor_version": "x2",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Speaker system",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.3,
+      "rationale": "Speaker system is electrical equipment damaged by overvoltage, covered under the appliance sub-limit."
+    },
+    {
+      "item_id": "2",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.1,
+      "rationale": "Shipping is a carriage/delivery charge, excluded from indemnity under 7.1.8(b)."
+    },
+    {
+      "item_id": "3",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.1,
+      "rationale": "Installation is fitting/mounting work excluded under 7.1.8(c)."
+    },
+    {
+      "item_id": "4",
+      "description": "TV set",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 900.0,
+      "price_log_sd": 0.3,
+      "rationale": "TV set is electrical equipment damaged by overvoltage, covered under the appliance sub-limit."
+    },
+    {
+      "item_id": "5",
+      "description": "Property and liability damage to electronics",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 0.5,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.5,
+      "rationale": "Charge relates partly to liability risk and arrangement, excluded under 3.1.4 and 3.1.5."
+    },
+    {
+      "item_id": "6",
+      "description": "Property and liability damage to electronics - service order",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 0.5,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.5,
+      "rationale": "Service order charge excluded as service/maintenance arrangement under 3.1.5."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 0.5,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.5,
+      "rationale": "Vehicle costs are attendance/travel charges excluded under 7.1.8(d)."
+    }
+  ]
+}

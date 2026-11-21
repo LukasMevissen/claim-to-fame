@@ -1,0 +1,14 @@
+{
+ "game": 8,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Storm claim at the policyholder's place. A big tree in the garden came down in the storm and landed square on the garden shed, and the roof took the brunt of it. The shed is the declared garden building on the policy, so that part is straightforward. A separate crew came out afterwards to cut up and clear the fallen tree, and in the process the ground around it got churned up pretty badly. There were roots pulled out, loose soil everywhere, and some of the paving around the shed got shifted. The root ball itself was a fairly modest single lump, under a cubic metre once they had it out. A recycling and disposal service then hauled everything off in one run. Their invoice breaks the load out by category: the old roof timber and the broken glass pane off the shed, the green waste and root ball from the tree, and then the ground material - topsoil, paving grit and excavated soil - from the churned-up area. No foundation work was involved; the ground was just disturbed by the tree and the clearing.",
+ "lines": {
+  "1": "Disposal of shed roof timber removed from the damaged garden building | 1 pcs",
+  "2": "Disposal of the broken glass pane from the damaged shed | 1 pcs",
+  "3": "Disposal of green waste from the storm-felled tree (branches and foliage) | 1 pcs",
+  "4": "Disposal of the tree root ball (single mass under one cubic metre) | 1 pcs",
+  "5": "Disposal of sieved topsoil from the churned-up ground 1 pcs",
+  "6": "Disposal of paving grit displaced around the shed 1 pcs",
+  "7": "Disposal of excavated soil from the churned-up ground 1 pcs"
+ }
+}

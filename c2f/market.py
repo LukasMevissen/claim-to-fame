@@ -1,68 +1,51 @@
-"""Public game data -> what every team charged/accepted per line item, and bounds on t.
+"""Post-game market data pipeline: public transactions -> table, checks, opponent belief.
 
-Source: the public leaderboard API (same data as the Transactions tab), only for completed
-games. Each transaction is issuer (charges a) -> reviewer (limit b), accepted?, amount paid.
+One canonical path (c2f/leaderboard.py does all fetching, into data/transactions/):
+
+    refresh()  1. sync: download every completed game not on disk (gently, public
+                  leaderboard endpoints only; a game not completed yet is simply not
+                  listed and is picked up on the next call)
+               2. results/ab_table.csv      (c2f/ab_table.py, with our_a / our_b)
+               3. results/ab_checks.csv     (c2f/consistency.py, payoff-table checks)
+               4. results/market/summary.json (per item: charges, t bounds, b bounds)
+               5. results/opponent_belief.json refit (c2f/opponents.py), only when a new
+                  game arrived and enough time is left before the deadline
+    Every step logs and continues on failure; refresh() itself never raises, so the
+    scheduler (`python -m c2f run`) can call it between games.
 
 What one transaction reveals (payoff table in docs/CASE.md):
   accepted, amount x        -> issuer a = x (unless capped at c), reviewer b >= a
   rejected, amount x > 0    -> wrongful reject: a = x / 1.5 and a <= t; reviewer b < a
   rejected, amount 0        -> a > t (a itself is known from the issuer's other transactions)
-
-Raw transactions are cached in results/market/game_XXX.json; completed games never change.
 """
 
 from __future__ import annotations
 
 import json
+import math
 import time
 from collections import defaultdict
 from pathlib import Path
 
-import requests
-
+from . import leaderboard
 from .config import REPO_ROOT
 
-PUBLIC = "https://c2f.public.quantco.cloud/leaderboard/api"
-CACHE = REPO_ROOT / "results" / "market"
+CACHE = REPO_ROOT / "results" / "market"          # summary.json (+ legacy raw game_XXX.json)
+TX_DIR = leaderboard.DEFAULT_DIR
+TABLE = REPO_ROOT / "results" / "ab_table.csv"
+CHECKS = REPO_ROOT / "results" / "ab_checks.csv"
+BELIEF = REPO_ROOT / "results" / "opponent_belief.json"
+QUOTES = REPO_ROOT / "runs" / "submissions.jsonl"
+REFIT_SECONDS = 60      # start a refit only with this much time left before the deadline
 
 
-def _get(path: str, **params) -> dict:
-    r = requests.get(f"{PUBLIC}/{path}", params=params, timeout=15)
-    r.raise_for_status()
-    return r.json()
-
-
-def completed_games() -> list[int]:
-    return sorted(g["id"] for g in _get("games", completed_only="true", page_size=1000)["items"])
-
-
-def teams() -> list[str]:
-    return [t["team_name"] for t in _get("matrix", page=1, game_limit=1)["items"]]
-
-
-def fetch_game(game_id: int, refresh: bool = False) -> list[dict]:
-    """All transactions of a completed game (deduplicated across team queries)."""
-    path = CACHE / f"game_{game_id:03d}.json"
-    if path.exists() and not refresh:
-        return json.loads(path.read_text())
-    seen, out = set(), []
-    names = teams()
-    for team in names[:-1]:      # every pair involves at least one of the first n-1 teams
-        page = 1
-        while True:
-            d = _get("transactions", game_id=game_id, team=team, page=page, page_size=100)
-            for t in d["items"]:
-                k = (t["issuer"], t["reviewer"], t["line_item_index"])
-                if k not in seen:
-                    seen.add(k)
-                    out.append(t)
-            if page >= d.get("total_pages", 1):
-                break
-            page += 1
-        time.sleep(0.2)          # be gentle with the public API
-    CACHE.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(out, indent=1))
-    return out
+def load_games(directory: str | Path = TX_DIR) -> dict[int, list[dict]]:
+    """game id -> raw rows, from data/transactions/game<N>.json."""
+    out = {}
+    for f in sorted(Path(directory).glob("game*.json")):
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        out[int(doc["game_id"])] = doc["items"]
+    return dict(sorted(out.items()))
 
 
 def summarize(txns: list[dict]) -> dict[int, dict]:
@@ -105,10 +88,100 @@ def summarize(txns: list[dict]) -> dict[int, dict]:
     return out
 
 
-def sync(refresh: bool = False) -> dict[int, dict]:
-    """Fetch every completed game and write results/market/summary.json."""
-    games = completed_games()
-    summary = {g: summarize(fetch_game(g, refresh)) for g in games}
-    CACHE.mkdir(parents=True, exist_ok=True)
-    (CACHE / "summary.json").write_text(json.dumps(summary, indent=1))
+def write_summary(games: dict[int, list[dict]], path: str | Path = CACHE / "summary.json") -> dict:
+    summary = {g: summarize(rows) for g, rows in games.items()}
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    Path(path).write_text(json.dumps(summary, indent=1))
     return summary
+
+
+def _stale(target: Path, sources: list[Path]) -> bool:
+    if not target.exists():
+        return True
+    t = target.stat().st_mtime
+    return any(s.exists() and s.stat().st_mtime > t for s in sources)
+
+
+def refresh(fetch: bool = True, refit: bool = True, deadline: float | None = None,
+            force: bool = False, log=print, tx_dir: str | Path = TX_DIR,
+            quotes: str | Path = QUOTES, table: str | Path = TABLE,
+            checks: str | Path = CHECKS, belief: str | Path = BELIEF,
+            summary: str | Path = CACHE / "summary.json", pause: float = 0.3) -> dict:
+    """Sync, rebuild the table and checks, refit the belief. Never raises.
+
+    The table and checks are rebuilt when a transaction file or the submission log is newer
+    than the table (or force); the belief is refit only when a transaction file is newer.
+    Returns a report: new games, row count, findings, what was skipped or failed."""
+    from . import ab_table, consistency
+    from .opponents import load_transactions
+
+    rep: dict = {"new_games": [], "errors": []}
+    tx_dir, table, belief = Path(tx_dir), Path(table), Path(belief)
+
+    def fail(step: str, e: BaseException) -> None:
+        rep["errors"].append(f"{step}: {e!r}"[:300])
+        log(f"{step} failed: {e!r}"[:300])
+
+    if fetch:
+        try:
+            rep["new_games"] = leaderboard.sync(tx_dir, pause=pause, log=log, deadline=deadline)
+        except leaderboard.DeadlineReached:
+            log("sync stopped at the deadline; the rest follows next time")
+        except Exception as e:  # noqa: BLE001  network, API changes: retry next call
+            fail("sync", e)
+    txs_files = sorted(tx_dir.glob("game*.json"))
+    if not txs_files:
+        log("no transactions on disk yet")
+        return rep
+
+    if force or _stale(table, txs_files + [Path(quotes)]):
+        try:
+            rows = ab_table.rebuild(tx_dir, quotes, table)
+            per_round = defaultdict(int)
+            for r in rows:
+                per_round[r.round] += 1
+            rep["rows"] = dict(sorted(per_round.items()))
+            log(f"table {table.name}: {len(rows)} rows, per round {rep['rows']}")
+        except Exception as e:  # noqa: BLE001
+            fail("table", e)
+        try:
+            found = consistency.check(load_transactions(tx_dir, dedup=False),
+                                      consistency.our_quotes(quotes))
+            consistency.write_csv(found, checks)
+            rep["findings"] = found
+            n = defaultdict(int)
+            for f in found:
+                n[f.severity] += 1
+            log(f"checks {Path(checks).name}: {dict(n) or 'clean'}")
+            for line in consistency.summary([f for f in found if f.severity != "info"]).splitlines():
+                if line != "no findings":
+                    log(f"  {line}")
+        except Exception as e:  # noqa: BLE001
+            fail("checks", e)
+        try:
+            write_summary(load_games(tx_dir), summary)
+        except Exception as e:  # noqa: BLE001
+            fail("summary", e)
+
+    if refit and _stale(belief, txs_files):
+        if deadline is not None and deadline - time.time() < REFIT_SECONDS:
+            log("refit postponed: next game too close")
+        else:
+            try:
+                rep["belief"] = _refit(tx_dir, belief)
+                log(f"belief {belief.name}: refit on games {rep['belief']}")
+            except Exception as e:  # noqa: BLE001
+                fail("refit", e)
+    return rep
+
+
+def _refit(tx_dir: Path, path: Path) -> list[int]:
+    """Refit the opponent belief; only replace the file if every parameter is finite."""
+    from .opponents import fit, load_transactions, save_belief
+
+    b = fit(load_transactions(tx_dir))
+    vals = [b.pi_uncovered] + [v for tb in b.teams.values() for v in vars(tb).values()]
+    if not b.teams or not all(math.isfinite(v) for v in vals):
+        raise ValueError("fit produced no teams or non-finite parameters; belief kept")
+    save_belief(b, path)
+    return b.games

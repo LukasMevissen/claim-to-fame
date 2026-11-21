@@ -43,8 +43,13 @@ first games. That is allowed (public data) and is the main lever after the price
 
 ## 3b. Learning the opponents round by round
 
-After every game, `python scripts/update_opponents.py` pulls the public transactions
-(leaderboard Transactions tab, `c2f/leaderboard.py`) and refits a belief about every team.
+After every game the scheduler (`python -m c2f run`, idle time before the next game) calls
+`c2f.market.refresh()`: it pulls newly completed games from the public transactions
+(leaderboard Transactions tab, `c2f/leaderboard.py`, the only fetcher, into
+`data/transactions/`), rebuilds `results/ab_table.csv`, runs the payoff consistency checks
+(`c2f/consistency.py`, `results/ab_checks.csv`) and refits a belief about every team. Each
+step logs and continues on failure; a game not completed yet is picked up on the next idle
+iteration. Manually: `python -m c2f market [--no-fetch] [--check]`.
 
 **What the transactions reveal** (`c2f/ab_table.py`, table `results/ab_table.csv` via
 `python scripts/extract_ab.py`, columns team | round | line_item | a | b | ... | our_a | our_b):
@@ -59,7 +64,8 @@ After every game, `python scripts/update_opponents.py` pulls the public transact
 b is never shown. The table reports b = largest known charge the team accepted, the
 infimum of the feasible set, plus b_high (smallest known charge it rejected).
 A team that charged 0 everywhere and accepted nothing positive did not submit (absent).
-our_a / our_b come from `runs/submissions.jsonl` (last record per game).
+our_a / our_b come from `runs/submissions.jsonl` (last successful non-dry-run record per game).
+t_low / t_high / cap are per item; a cap hit (c revealed) shows as a_source = capped.
 
 **Latent model** (`c2f/opponents.py`): per item an apparent value v and covered/uncovered;
 per team log a = log v + alpha + sigma eps, log b = log v + beta + tau eta, a miss rate on

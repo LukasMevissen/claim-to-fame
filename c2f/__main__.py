@@ -6,6 +6,7 @@
   python -m c2f eval  --game 0 --replay                                # no LLM, cached extraction (CI)
   python -m c2f live  --case-id 0 [--dry-run]                          # one game now (0 = test game)
   python -m c2f run   [--dry-run]                                      # unattended, all upcoming games
+  python -m c2f market [--no-fetch] [--check]                          # transactions -> ab_table + checks
 """
 
 from __future__ import annotations
@@ -227,23 +228,48 @@ def cmd_live(args, cfg) -> int:
 
 
 def cmd_market(args, cfg) -> int:
-    """Sync public transactions of completed games; print t bounds vs charges per item."""
+    """Sync public transactions of completed games, rebuild results/ab_table.csv, run the
+    payoff consistency checks (results/ab_checks.csv) and refit the opponent belief.
+    With --check: exit 1 if any check is an error."""
     import statistics
 
     from . import market
 
-    summary = market.sync(refresh=args.refresh)
+    rep = market.refresh(fetch=not args.no_fetch, refit=not args.no_refit, force=True,
+                         pause=args.pause)
     me = args.team
-    print(f"{'game':>4} {'pos':>3} {'t_low':>9} {'t_high':>9} {'others med a':>12} {'our a':>9} {'our b range':>21}")
-    for g, items in summary.items():
-        for idx, it in items.items():
-            others = [v for k, v in it["charges"].items() if k != me]
-            bb = it["b_bounds"].get(me)
-            print(f"{g:>4} {idx:>3} {it['t_low']:>9.2f} {str(it['t_high'] or '-'):>9} "
-                  f"{(statistics.median(others) if others else 0):>12.2f} "
-                  f"{str(it['charges'].get(me, '-')):>9} {str(bb or '-'):>21}")
-    print(f"saved {(market.CACHE / 'summary.json').relative_to(REPO_ROOT)}")
-    return 0
+    if args.items:
+        summary = market.write_summary(market.load_games())
+        print(f"{'game':>4} {'pos':>3} {'t_low':>9} {'t_high':>9} {'others med a':>12} {'our a':>9} {'our b range':>21}")
+        for g, items in summary.items():
+            for idx, it in items.items():
+                others = [v for k, v in it["charges"].items() if k != me]
+                bb = it["b_bounds"].get(me)
+                print(f"{g:>4} {idx:>3} {it['t_low']:>9.2f} {str(it['t_high'] or '-'):>9} "
+                      f"{(statistics.median(others) if others else 0):>12.2f} "
+                      f"{str(it['charges'].get(me, '-')):>9} {str(bb or '-'):>21}")
+    if args.check:
+        from .consistency import summary as check_summary
+        found = rep.get("findings")
+        if found is None:
+            print("checks did not run")
+            return 1
+        print(check_summary(found))
+        return 1 if any(f.severity == "error" for f in found) or rep["errors"] else 0
+    return 1 if rep["errors"] else 0
+
+
+def _market_refresh(args, deadline: float) -> None:
+    """After a game: fetch newly completed games, rebuild the table and checks, refit the
+    belief. Bounded by `deadline` (no request or refit starts too close to the next game)
+    and fully guarded: a failure is logged and retried on the next idle iteration."""
+    if args.no_sync:
+        return
+    try:
+        from . import market
+        market.refresh(deadline=deadline, log=lambda m: print(f"[market] {m}"))
+    except Exception as e:  # noqa: BLE001  never let market data stop the scheduler
+        print(f"[market] refresh failed: {e!r}")
 
 
 def _already_played(dry_run: bool) -> set[int]:
@@ -288,8 +314,12 @@ def cmd_run(args, cfg) -> int:
         g = todo[0]
         start = parse_ts(g["start_time"])
         if start - now > 120:          # re-check the schedule periodically while idle
+            # Idle: pull the games completed since (a game completes some minutes after its
+            # start; until then it is not listed and the next idle iteration retries).
+            _market_refresh(args, deadline=start - 90)
+            now = time.time()
             print(f"[run] next: game {g['id']} at {g['start_time']} (in {int(start - now)}s)")
-            time.sleep(min(start - now - 60, 600))
+            time.sleep(max(0.0, min(start - now - 60, 600)))
             continue
         play_game(client, cfg, st, int(g["id"]), start, args.dry_run)
         done.add(int(g["id"]))
@@ -323,14 +353,20 @@ def main(argv: list[str] | None = None) -> int:
     lv.add_argument("--dry-run", action="store_true")
     lv.add_argument("--allow-untagged", action="store_true")
 
-    mk = sub.add_parser("market", help="sync public transactions of completed games")
-    mk.add_argument("--refresh", action="store_true")
+    mk = sub.add_parser("market", help="sync public transactions, rebuild ab_table, check, refit")
+    mk.add_argument("--no-fetch", action="store_true", help="only rebuild from data/transactions/")
+    mk.add_argument("--no-refit", action="store_true", help="keep results/opponent_belief.json")
+    mk.add_argument("--check", action="store_true", help="print payoff checks; exit 1 on errors")
+    mk.add_argument("--items", action="store_true", help="print t bounds vs charges per item")
+    mk.add_argument("--pause", type=float, default=0.3, help="seconds between API requests")
     mk.add_argument("--team", default="GemischtesHack")
 
     rn = sub.add_parser("run", help="unattended scheduler over all upcoming games")
     rn.add_argument("--dry-run", action="store_true")
     rn.add_argument("--allow-untagged", action="store_true")
     rn.add_argument("--until", type=int, help="stop after this game id")
+    rn.add_argument("--no-sync", action="store_true",
+                    help="do not refresh public transactions / ab_table / belief between games")
 
     args = ap.parse_args(argv)
     if args.cmd == "eval" and not args.replay and not args.case_dir and args.game is None:

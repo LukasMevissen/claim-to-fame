@@ -17,7 +17,7 @@ from pathlib import Path
 from .case_io import Case
 from .config import REPO_ROOT
 
-EXTRACTOR_VERSION = "x2"   # x2: photo shrunk to <= 1024 px JPEG before sending
+EXTRACTOR_VERSION = "x3"   # x3: policy-first prompt, line totals, price book of revealed thresholds
 IMAGE_MAX_SIDE = 1024
 RAW_IMAGE_MAX_BYTES = 2_000_000   # without Pillow, larger photos are left out (upload too slow)
 
@@ -41,21 +41,40 @@ def image_for_model(path: Path) -> tuple[str, bytes] | None:
     return "image/jpeg", buf.getvalue()
 CACHE_DIR = REPO_ROOT / "results" / "extractions"
 
-SYSTEM = """You are a senior claims adjuster for a German property and motor insurer.
-You receive an insurance policy, a damage description, an invoice WITHOUT prices
-(line items with quantities) and sometimes a photo.
+SYSTEM = """You are a senior claims adjuster. You receive an insurance policy, a damage description,
+an invoice WITHOUT prices and sometimes a photo. For every invoice line a secret threshold t
+exists: the highest gross total (incl. VAT, whole line, quantity x unit price) that a claims
+expert applying THIS policy to THIS claim would indemnify. Estimate t for every line.
 
-For EVERY invoice line item return:
-- item_id: the position number/identifier exactly as printed on the invoice
-- description, quantity, unit
-- covered_prob: probability (0..1) the policy covers this item (exclusions, deductibles do not make it 0)
-- related_prob: probability (0..1) the item is genuinely needed for the reported damage
-- unit_price_gross_eur: the fair unit price a claims expert would accept, in EUR INCLUDING VAT
-  (assume 19% German VAT unless the invoice states otherwise); typical German market rates
-- price_log_sd: your uncertainty about that price as a log standard deviation (0.1 = very sure, 0.8 = rough guess)
-- rationale: one short sentence
+Work policy-first; the policy wording decides far more than market prices do:
+1. Find the insured peril and the cover sections actually in force. Optional covers or
+   endorsements count only if the description or schedule says they were taken.
+2. Per line: is it excluded, unrelated to the damage, pre-existing, maintenance, an improvement,
+   or an ancillary/site charge the policy does not carry? Then t = 0. Check definitions and
+   exclusions literally (volume limits, "standing on its own", external surfaces, combined
+   lines that mix insured and uninsured work, who is paid, etc.).
+3. If indemnified, start from a fair, ordinary market price for the work actually needed
+   (not the most thorough or expensive variant), then apply the policy's arithmetic:
+   caps and sub-limits incl. VAT (an aggregate sub-limit is shared rateably across the
+   affected lines), percentage reductions for breached duties, no betterment over the
+   pre-loss standard, repair capped at replacement value or purchase price, deductibles.
+   Figures in the description (purchase price, age, sizes, volumes) are there to be used.
+4. REFERENCE CASES, when given, are earlier cases with what was later revealed about t.
+   They are the best calibration available: reuse their price level for similar work and
+   their coverage logic for similar clauses. Without a close reference stay moderate:
+   small service and disposal lines tend to be cheaper than first guessed.
 
-Return JSON: {"items": [ ... ]}. Do not skip items. Do not invent items."""
+Return JSON {"items": [...]} with one object per invoice line, in invoice order:
+- item_id: position number exactly as printed
+- description: short
+- reasoning: one or two sentences naming the decisive clause(s) and the arithmetic
+- indemnified_prob: probability (0..1) that t > 0
+- line_total_gross_eur: your best estimate of t IF it is indemnified, gross total for the
+  whole line after all policy arithmetic. Always give a positive number, even if you
+  believe the line is excluded.
+- price_log_sd: uncertainty of that number as a log standard deviation (0.05 = fixed by the
+  policy or a near-identical reference, 0.3 = normal, 0.7 = rough guess)
+Do not skip lines. Do not invent lines."""
 
 
 @dataclass
@@ -71,9 +90,10 @@ class ItemEstimate:
     rationale: str = ""
 
 
-def _user_content(case: Case, with_image: bool = True) -> list[dict]:
+def _user_content(case: Case, with_image: bool = True, reference: str = "") -> list[dict]:
+    ref = f"REFERENCE CASES (earlier games, revealed thresholds):\n{reference}\n\n" if reference else ""
     parts: list[dict] = [{"type": "text", "text":
-        f"POLICY:\n{case.policy}\n\nDAMAGE DESCRIPTION:\n{case.description}\n\n"
+        f"{ref}POLICY:\n{case.policy}\n\nDAMAGE DESCRIPTION:\n{case.description}\n\n"
         + (f"INVOICE (text extracted from PDF):\n{case.invoice_text}" if case.invoice_text
            else "INVOICE: see attached PDF")}]
     if not case.invoice_text and case.invoice_pdf.exists():
@@ -92,16 +112,22 @@ def _parse(payload: str) -> list[ItemEstimate]:
     items = json.loads(payload)["items"]
     out = []
     for it in items:
+        if "line_total_gross_eur" in it:       # x3 schema: whole-line total, single probability
+            qty, unit_price = 1.0, max(float(it.get("line_total_gross_eur") or 0), 0.0)
+            cov, rel = float(it.get("indemnified_prob", 1)), 1.0
+        else:
+            qty, unit_price = float(it.get("quantity") or 1), max(float(it.get("unit_price_gross_eur", 0)), 0.0)
+            cov, rel = float(it.get("covered_prob", 1)), float(it.get("related_prob", 1))
         out.append(ItemEstimate(
             item_id=str(it["item_id"]),
             description=str(it.get("description", "")),
-            quantity=float(it.get("quantity") or 1),
+            quantity=qty,
             unit=str(it.get("unit", "")),
-            covered_prob=min(max(float(it.get("covered_prob", 1)), 0.0), 1.0),
-            related_prob=min(max(float(it.get("related_prob", 1)), 0.0), 1.0),
-            unit_price_gross_eur=max(float(it.get("unit_price_gross_eur", 0)), 0.0),
+            covered_prob=min(max(cov, 0.0), 1.0),
+            related_prob=min(max(rel, 0.0), 1.0),
+            unit_price_gross_eur=unit_price,
             price_log_sd=max(float(it.get("price_log_sd", 0.5)), 0.0),
-            rationale=str(it.get("rationale", "")),
+            rationale=str(it.get("reasoning", it.get("rationale", ""))),
         ))
     return out
 
@@ -124,10 +150,20 @@ def save_cache(case_id: str, model: str, items: list[ItemEstimate]) -> None:
          "items": [asdict(i) for i in items]}, indent=2, ensure_ascii=False))
 
 
+def _model_args(model: str, temperature: float, effort: str | None) -> dict:
+    """gpt-4.x takes a temperature; later (reasoning) models take a reasoning effort instead."""
+    if model.startswith(("gpt-4", "chat")):
+        return {"temperature": temperature}
+    return {"reasoning_effort": effort} if effort else {}
+
+
 def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
-            use_cache: bool = True, with_image: bool = True) -> list[ItemEstimate]:
-    """with_image=False skips the photo: faster, used as the first-stage submission."""
+            use_cache: bool = True, with_image: bool = True, reference: str = "",
+            effort: str | None = None, tag: str = "") -> list[ItemEstimate]:
+    """with_image=False skips the photo: faster, used as the first-stage submission.
+    reference: price-book text (c2f/pricebook.py). tag: extra cache-key suffix."""
     cid = case.case_id if (with_image or case.image is None) else f"{case.case_id}-noimg"
+    cid += tag
     if use_cache and (hit := load_cached(cid, model)) is not None:
         return hit
     from openai import OpenAI  # imported lazily so pricing/tests run without it
@@ -136,10 +172,10 @@ def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
                     timeout=timeout, max_retries=0)
     resp = client.chat.completions.create(
         model=model,
-        temperature=temperature,
         response_format={"type": "json_object"},
         messages=[{"role": "system", "content": SYSTEM},
-                  {"role": "user", "content": _user_content(case, with_image)}],
+                  {"role": "user", "content": _user_content(case, with_image, reference)}],
+        **_model_args(model, temperature, effort),
     )
     items = _parse(resp.choices[0].message.content)
     save_cache(cid, model, items)

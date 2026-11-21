@@ -104,11 +104,11 @@ def _needs_fetch(path: Path) -> bool:
     return doc.get("complete", True) is False and doc.get("attempts", 1) < MAX_ATTEMPTS
 
 
-def import_legacy(directory: str | Path = DEFAULT_DIR, legacy: str | Path = LEGACY_DIR,
+def import_legacy(directory: str | Path = DEFAULT_DIR, legacy: str | Path | None = None,
                   log=print) -> list[int]:
     """Copy results/market/game_XXX.json (bare list of rows) into data/transactions/ when
     that game is not there yet. Returns the imported game ids."""
-    d, src = Path(directory), Path(legacy)
+    d, src = Path(directory), Path(legacy or LEGACY_DIR)
     if not src.is_dir():
         return []
     d.mkdir(parents=True, exist_ok=True)

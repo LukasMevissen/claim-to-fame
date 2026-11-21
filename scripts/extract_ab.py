@@ -3,6 +3,9 @@
     python scripts/extract_ab.py              # fetch new completed games, write the table
     python scripts/extract_ab.py --no-fetch   # rebuild from data/transactions/
 
+Same pipeline as `python -m c2f market` (which the scheduler also runs after every game);
+this script additionally prints the payoff consistency checks (c2f/consistency.py).
+
 Writes results/ab_table.csv (one row per team, round, line item). Column meaning in
 c2f/ab_table.py: a is exact when any reviewer accepted it or wrongly rejected it,
 b is the infimum of the feasible bracket
@@ -19,7 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from c2f.ab_table import ab_table, attach_our_quotes, our_quotes, write_csv  # noqa: E402
+from c2f.ab_table import rebuild  # noqa: E402
+from c2f.consistency import check, our_quotes, summary  # noqa: E402
 from c2f.leaderboard import sync  # noqa: E402
 from c2f.opponents import load_transactions  # noqa: E402
 
@@ -35,12 +39,10 @@ def main() -> None:
     args = ap.parse_args()
     if not args.no_fetch:
         sync(args.dir, args.pause)
-    txs = load_transactions(args.dir)
-    if not txs:
+    if not load_transactions(args.dir):
         sys.exit("no transactions on disk")
-    rows = ab_table(txs)
-    matched = attach_our_quotes(rows, our_quotes(args.quotes))
-    write_csv(rows, args.out)
+    rows = rebuild(args.dir, args.quotes, args.out)
+    matched = len({(r.round, r.line_item) for r in rows if r.our_a is not None})
     live = [r for r in rows if not r.absent]
     src = Counter(r.a_source for r in live)
     finite = sum(r.b > 0 and r.b_high != float("inf") for r in live)
@@ -48,6 +50,7 @@ def main() -> None:
     print(f"a exact: {src['accepted'] + src['wrongful_reject']}, hidden: {src['hidden']}; "
           f"b bracketed on both sides: {finite}/{len(live)}; "
           f"our quotes joined for {matched} round/item pairs")
+    print(summary(check(load_transactions(args.dir, dedup=False), our_quotes(args.quotes))))
 
 
 if __name__ == "__main__":

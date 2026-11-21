@@ -1,0 +1,9 @@
+{
+ "game": 1,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Electrical and Electronic Equipment Edition",
+ "description": "A thunderstorm surge came through the mains and damaged the home electronics that were plugged in at the time - a speaker system and a TV set. A technician attended afterwards to confirm the surge failure and check the wiring was safe. Nothing on that circuit was on a surge-protected strip. The claim has been kept simple, with the damaged electronics settled as one line and the technician's attendance as another.",
+ "lines": {
+  "1": "Surge-damaged home electronics (speaker system and TV set) | 2 pcs",
+  "2": "Diagnostic surge-failure report and technician call-out 3 pcs"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "game": 4,
+ "policy": "HOUSEHOLD CONTENTS INSURANCE / Policy wording \"WD-2026\" - Mobility Equipment and Recovery Edition",
+ "description": "A bicycle was stolen from outside the building. It was tracked down using a hidden AirTag and the police located it, but the lock had seized and a locksmith had to be called out to cut it off so the bike could be recovered. The recovery and the repair of the theft damage were handled together by one bicycle service and billed on a single invoice covering the recovery, the locksmith work and the repair itself. When we took out the household policy we did not have anything listed individually with a value of its own, the bike included; it was simply part of the ordinary contents.",
+ "lines": {
+  "1": "Recover stolen bicycle from secured location, incl. locksmith call-out and cutting of seized lock | 3 pcs",
+  "2": "Repair theft damage to bicycle (frame and brakes) 2 pcs",
+  "3": "Labour and sundries 1 flat rate"
+ }
+}
