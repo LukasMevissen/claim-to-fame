@@ -1,0 +1,20 @@
+{
+ "game": 24,
+ "policy": "HOUSEHOLD CONTENTS INSURANCE / Policy wording \"WD-2026\" - Mobility Equipment and Recovery Edition",
+ "description": "A bicycle was stolen from outside the building. A hidden AirTag let the police track it down, but the lock had seized and couldn't be opened at the scene, so a locksmith was called out to cut it off before the bike could be recovered and returned. The bike had taken a knock during the theft and needed the frame and the brakes replaced. Worth noting for cover: checking the file, this particular bicycle is specifically scheduled under a separate Bicycle Endorsement on the policy at an agreed value of EUR 3,500 (the endorsement schedule also lists the frame number and the original purchase date, two summers ago).",
+ "lines": {
+  "1": "Bicycle frame replacement 1 pcs",
+  "2": "Bicycle brake replacement 1 pcs",
+  "3": "Shipping 1 pcs",
+  "4": "Vehicle costs 1 pcs",
+  "5": "Assembly costs 1 pcs",
+  "6": "Miscellaneous items 1 pcs",
+  "7": "Apprentice hours 1 hrs",
+  "8": "Skilled worker hours 1 hrs",
+  "9": "Vehicle costs 1 pcs",
+  "10": "Assembly costs 1 pcs",
+  "11": "Miscellaneous items 1 pcs",
+  "12": "Apprentice hours 1 hrs",
+  "13": "Skilled worker hours 1 hrs"
+ }
+}

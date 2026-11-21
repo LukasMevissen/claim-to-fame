@@ -1,0 +1,210 @@
+{
+ "game": 24,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 17.0,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 24894,
+ "output_tokens": 1506,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.5,
+   "rationale": "The theft damaged the bike, which is scheduled at an agreed value of EUR 3,500 (4.4), so the mobility sub-limit of EUR 500 is replaced for this item. A frame replacement is a repair under 7.1.7. The frame is the main cost. Rough estimate of about 650 EUR."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Brake damage from the theft is a repair cost on the scheduled bike. The agreed value replaces the sub-limit, so a normal brake price applies."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage of parts is a repair element under 7.1.7(f) and is indemnified with the repair."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Attendance of the trade is part of the repair under 7.1.7(g)."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Fitting the replacement parts is part of the repair under 7.1.7(c)."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sundry materials consumed by the repair are covered under 7.1.7(e), but small lines like this were often judged to be low."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.3,
+   "rationale": "Apprentice labour on the repair is covered under 7.1.7(d). Rate taken from the reference level of about 35 EUR per hour."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.4,
+   "rationale": "Skilled labour for the frame and brake repair is covered under 7.1.7(d). One hour at a normal rate."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.25,
+   "rationale": "Attendance at the place where the bike was found to cut the lock off is a recovery cost under 5.2.2(a). The reference range was about 34 to 45 EUR."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.35,
+   "rationale": "Cutting the lock is recovery work under 5.2.2(b). The reference showed at least 100 EUR is fair."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sundry materials consumed by the lock cutting are recovery costs under 5.2.2(b), but the reference showed under 9 EUR."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.5,
+   "price_log_sd": 0.1,
+   "rationale": "Apprentice labour on the lock cutting is covered under 5.2.2(b). The reference range was about 35 to 36 EUR."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.2,
+   "rationale": "Skilled labour for cutting the lock is a recovery cost under 5.2.2(b). The reference showed under 45 EUR for one hour, so this is placed just below that."
+  }
+ ],
+ "quotes": {
+  "1": [
+   589.57,
+   400.72
+  ],
+  "2": [
+   104.4,
+   81.49
+  ],
+  "3": [
+   22.68,
+   13.58
+  ],
+  "4": [
+   34.8,
+   24.55
+  ],
+  "5": [
+   90.7,
+   54.32
+  ],
+  "6": [
+   9.2,
+   3.67
+  ],
+  "7": [
+   30.45,
+   24.27
+  ],
+  "8": [
+   60.9,
+   42.96
+  ],
+  "9": [
+   34.8,
+   34.04
+  ],
+  "10": [
+   104.4,
+   95.73
+  ],
+  "11": [
+   6.35,
+   3.04
+  ],
+  "12": [
+   30.89,
+   31.2
+  ],
+  "13": [
+   36.54,
+   35.88
+  ]
+ }
+}

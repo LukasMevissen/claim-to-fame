@@ -1,0 +1,150 @@
+{
+  "case_id": "game24",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Bicycle frame replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1050.0,
+      "price_log_sd": 0.43,
+      "rationale": "The theft-damaged frame is covered at the cost of a like-grade replacement under §§7.1.7(b) and 7.1.9. The EUR 3,500 agreed value replaces the EUR 500 class cap under §4.4; it is a ceiling, not a fixed payment."
+    },
+    {
+      "item_id": "2",
+      "description": "Bicycle brake replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 170.0,
+      "price_log_sd": 0.35,
+      "rationale": "The brakes were damaged in the theft, so §§7.1.7(b) and 7.1.9 allow a standard-equivalent replacement set, with fitting assessed separately. The scheduled value does not reduce the estimated repair total."
+    },
+    {
+      "item_id": "3",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.87,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 32.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.7(f) covers necessary freight for the replacement parts or the bicycle, but §7.1.8(g) bars recovery transport billed twice. The estimate is for one necessary parts shipment."
+    },
+    {
+      "item_id": "4",
+      "description": "Bicycle service vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.73,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 42.0,
+      "price_log_sd": 0.29,
+      "rationale": "Sections 7.1.7(g) and 7.1.8(f) allow a necessary repair attendance distinct from the locksmith's recovery visit. The estimate is for one local visit if its purpose is documented."
+    },
+    {
+      "item_id": "5",
+      "description": "Bicycle assembly",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.92,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.37,
+      "rationale": "Frame and brake fitting, alignment and testing are covered under §7.1.7(c). The estimate allows ordinary frame-transfer and fitting work, excluding any labour already charged separately under §7.1.8(g)."
+    },
+    {
+      "item_id": "6",
+      "description": "Bicycle repair sundries",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.79,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 13.0,
+      "price_log_sd": 0.38,
+      "rationale": "Section 7.1.7(e) covers small fixings and consumables used in the repair, but §§7.1.8(d) and 7.1.10 exclude shop overhead and unsupported charges. The estimate is a modest allowance for repair materials."
+    },
+    {
+      "item_id": "7",
+      "description": "Bicycle apprentice labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.87,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.1.7(d) covers one necessary apprentice hour at the customary rate, provided it is not already included in assembly under §7.1.8(g)."
+    },
+    {
+      "item_id": "8",
+      "description": "Bicycle skilled labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.87,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.26,
+      "rationale": "Section 7.1.7(d) covers one necessary skilled repair hour at an ordinary bicycle-workshop rate, excluding time already billed under assembly per §7.1.8(g)."
+    },
+    {
+      "item_id": "9",
+      "description": "Locksmith vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.14,
+      "rationale": "The on-site locksmith attendance was necessary to recover the bicycle and is covered under §5.2.2(a). One visit is estimated at EUR 40, consistent with Case 23; the recovery costs are below the EUR 1,000 cap."
+    },
+    {
+      "item_id": "10",
+      "description": "Locksmith assembly charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.23,
+      "rationale": "Under §§5.2.2(b) and 7.1.10, the charge is assessed by its purpose: cutting and removing the seized lock to release the bicycle. The estimate follows the comparable recovery operation in Case 23 and excludes duplicated hourly labour."
+    },
+    {
+      "item_id": "11",
+      "description": "Locksmith sundries",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.69,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 7.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 5.2.2(b) covers materials actually consumed in releasing the lock, not the locksmith's tools or general overhead under §7.1.8(d). If substantiated, the allowance is EUR 7, consistent with Case 23."
+    },
+    {
+      "item_id": "12",
+      "description": "Locksmith apprentice labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.93,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.5,
+      "price_log_sd": 0.09,
+      "rationale": "Section 5.2.2(b) covers necessary lock-release labour at every grade. One apprentice hour is estimated at EUR 35.50 using Case 23, provided it is not already charged in the flat fee."
+    },
+    {
+      "item_id": "13",
+      "description": "Locksmith skilled labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.62,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.25,
+      "rationale": "Section 5.2.2(b) covers skilled lock-release labour, but §7.1.8(g) excludes time already included in the operation charge. If separately substantiated, EUR 40 for the hour is consistent with the upper bound in Case 23."
+    }
+  ]
+}

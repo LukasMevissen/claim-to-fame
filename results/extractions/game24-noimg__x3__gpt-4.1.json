@@ -1,0 +1,150 @@
+{
+  "case_id": "game24-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Bicycle frame replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.2,
+      "rationale": "The bicycle is scheduled at an agreed value (EUR 3,500) under a Bicycle Endorsement, overriding the standard EUR 500 sub-limit. The frame was damaged in the theft and is an affected item (2.3.1(b), 7.1.1(b), 7.1.9). Indemnity is up to the agreed value, but only for the necessary repair/replacement cost, not exceeding the value of the item. Reference cases show that if nobody is paid (e.g., owner does the work), t=0, but here a trade is invoicing for the work."
+    },
+    {
+      "item_id": "2",
+      "description": "Bicycle brake replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.2,
+      "rationale": "Brakes are a permanently fitted part of the scheduled bicycle and were damaged in the theft (2.3.1(b), 4.2.2, 7.1.1(b)). The agreed value applies as the ceiling, but only the necessary repair cost is indemnified. Reference cases confirm this is covered when a trade is paid."
+    },
+    {
+      "item_id": "3",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.15,
+      "rationale": "Shipping of the affected item for repair is a necessary element of restoring the item (7.1.7(f)), and is covered up to the agreed value. Reference cases show shipping is not indemnified if nobody is paid, but here it is part of the repair invoice."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.15,
+      "rationale": "Vehicle costs for the trade attending to repair the affected item are covered as part of the necessary repair (7.1.7(g)), up to the agreed value. Reference cases for similar trades show t between 34 and 76."
+    },
+    {
+      "item_id": "5",
+      "description": "Assembly costs (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.15,
+      "rationale": "Assembly of the replacement parts on the affected item is part of the repair (7.1.7(c)), covered up to the agreed value. Reference cases show t >= 100 for similar work."
+    },
+    {
+      "item_id": "6",
+      "description": "Miscellaneous items (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sundry materials consumed in the repair are covered (7.1.7(e)), but reference cases show that such lines are often capped low or not indemnified if not clearly tied to the repair. Here, as part of a legitimate repair invoice, a modest amount is likely indemnified."
+    },
+    {
+      "item_id": "7",
+      "description": "Apprentice hours (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.05,
+      "rationale": "Labour hours for repair of the affected item are covered (7.1.7(d)), at customary rates. Reference cases show apprentice hours for similar work t between 35 and 36."
+    },
+    {
+      "item_id": "8",
+      "description": "Skilled worker hours (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 44.0,
+      "price_log_sd": 0.05,
+      "rationale": "Skilled labour for repair of the affected item is covered (7.1.7(d)), at customary rates. Reference cases show t below 45 for similar work."
+    },
+    {
+      "item_id": "9",
+      "description": "Vehicle costs (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.15,
+      "rationale": "Vehicle costs for the locksmith attending to recover the bicycle are covered as a necessary recovery cost (5.2.2(a), 7.1.7(g)), up to the agreed value. Reference cases for similar attendances show t between 34 and 45."
+    },
+    {
+      "item_id": "10",
+      "description": "Assembly costs (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.15,
+      "rationale": "Assembly/disassembly in the context of cutting the lock to recover the bicycle is a necessary recovery cost (5.2.2(b)), covered up to the agreed value. Reference cases show t >= 100 for similar work."
+    },
+    {
+      "item_id": "11",
+      "description": "Miscellaneous items (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sundry materials consumed in the recovery (e.g., cutting tools, small parts) are covered (5.2.2(b), 7.1.7(e)), but reference cases show such lines are often capped low. Here, as part of a legitimate recovery invoice, a modest amount is likely indemnified."
+    },
+    {
+      "item_id": "12",
+      "description": "Apprentice hours (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.05,
+      "rationale": "Labour hours for recovery of the affected item are covered (5.2.2(b), 7.1.7(d)), at customary rates. Reference cases show apprentice hours for similar work t between 35 and 36."
+    },
+    {
+      "item_id": "13",
+      "description": "Skilled worker hours (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 44.0,
+      "price_log_sd": 0.05,
+      "rationale": "Skilled labour for recovery of the affected item is covered (5.2.2(b), 7.1.7(d)), at customary rates. Reference cases show t below 45 for similar work."
+    }
+  ]
+}

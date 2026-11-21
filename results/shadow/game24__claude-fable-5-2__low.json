@@ -1,0 +1,210 @@
+{
+ "game": 24,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 20.8,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 24894,
+ "output_tokens": 1376,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Theft damage to recovered bike, 2.3.1(b)/7.1.1(b); scheduled at agreed value EUR 3,500 under 4.4, which replaces the EUR 500 sub-limit. Market price for an e-bike frame."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.45,
+   "rationale": "Brakes damaged in the theft, repair cost under 7.1.7(b); the agreed value means no sub-limit applies."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage of replacement parts is covered under 7.1.7(f) and follows the covered repair."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Attendance required by the covered repair, 7.1.7(g)."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.45,
+   "rationale": "Fitting of replacement parts is part of the repair, 7.1.7(c)."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sundries consumed by the repair are covered under 7.1.7(e); kept at a small amount."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.25,
+   "rationale": "Labour of every grade is covered under 7.1.7(d); 1 hour at the apprentice rate."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.3,
+   "rationale": "Skilled labour on the covered repair, 7.1.7(d); 1 hour at the customary rate."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Attendance at the place where the bike was found, recovery cost under 5.2.2(a); reference level 34-45."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.35,
+   "rationale": "Cutting and removal of the lock, 5.2.2(b); the reference showed at least 100 as fair."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sundries consumed by the lock cutting, 5.2.2(b); the reference showed below 9."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour of every grade on the recovery, 5.2.2(b); reference level 35-36."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.25,
+   "rationale": "Skilled labour on the lock cutting, 5.2.2(b); the reference showed below 45."
+  }
+ ],
+ "quotes": {
+  "1": [
+   997.74,
+   742.22
+  ],
+  "2": [
+   147.9,
+   119.31
+  ],
+  "3": [
+   27.21,
+   18.49
+  ],
+  "4": [
+   34.8,
+   27.16
+  ],
+  "5": [
+   95.7,
+   71.17
+  ],
+  "6": [
+   13.8,
+   5.51
+  ],
+  "7": [
+   31.32,
+   28.27
+  ],
+  "8": [
+   53.94,
+   46.38
+  ],
+  "9": [
+   34.8,
+   34.78
+  ],
+  "10": [
+   95.7,
+   78.4
+  ],
+  "11": [
+   6.35,
+   0.0
+  ],
+  "12": [
+   30.45,
+   30.44
+  ],
+  "13": [
+   36.54,
+   30.95
+  ]
+ }
+}
