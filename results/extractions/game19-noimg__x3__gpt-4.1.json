@@ -1,0 +1,128 @@
+{
+  "case_id": "game19-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Speaker system (surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 275.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered under 2.3.3 as an insured electrical appliance physically damaged by overvoltage; subject to the appliance sub-limit and 7.1.9 (no betterment). Reference Cases 1, 15, 17 show t between 253 and 537 for similar items, with no surge protection so indemnity is halved per 2.3.3."
+    },
+    {
+      "item_id": "2",
+      "description": "Premium replacement TV set (larger, higher-end than the damaged one)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 285.0,
+      "price_log_sd": 0.12,
+      "rationale": "Only the cost of a standard 55-inch mainstream-brand LED TV (pre-loss standard) is indemnified per 7.1.9; higher-end upgrade is not covered. Reference Cases 1, 9, 15, 17 show t between 517 and 616 for similar TVs, halved for lack of surge protection."
+    },
+    {
+      "item_id": "3",
+      "description": "HDMI cables and connectors",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.1,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.25,
+      "rationale": "Accessories only indemnified if physically damaged by the insured event (2.3.3, 4.2.4); reference cases 9, 15, 17 show t below 17, possibly 0, for such items. Usually excluded as not proven damaged or as improvement."
+    },
+    {
+      "item_id": "4",
+      "description": "Wall-mount bracket",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.25,
+      "rationale": "Not indemnified unless physical damage from the surge is proven (2.3.3, 4.2.4, 7.1.5); reference cases 9, 15, 17 show t below 14, possibly 0."
+    },
+    {
+      "item_id": "5",
+      "description": "Remote control",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.1,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.25,
+      "rationale": "Only indemnified if physically damaged by the surge (2.3.3, 4.2.4); reference cases 9, 17 show t below 17, possibly 0. Usually excluded unless clear evidence of damage."
+    },
+    {
+      "item_id": "6",
+      "description": "Games console (switched off and unplugged at the time)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.7,
+      "rationale": "Not covered: not physically damaged by the insured event (2.3.3, 4.2.4, 7.1.5); description confirms it was unplugged and unaffected."
+    },
+    {
+      "item_id": "7",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 10.0,
+      "price_log_sd": 0.25,
+      "rationale": "Explicitly excluded as an ancillary charge for bringing replacement property to the site (7.1.8(b)); reference cases 9, 15, 17 show t below 12, possibly 0."
+    },
+    {
+      "item_id": "8",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.25,
+      "rationale": "Explicitly excluded as an ancillary charge for fitting/commissioning replacement property (7.1.8(c)); reference cases 9, 15, 17 show t below 37, possibly 0."
+    },
+    {
+      "item_id": "9",
+      "description": "Diagnostic inspection and surge-failure report for damaged electronics",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.25,
+      "rationale": "Not indemnified: outlay for inspection/reporting is excluded (3.1.5, 7.1.8(e), 7.1.8(f)); reference cases 9, 15, 17 show t below 56, possibly 0."
+    },
+    {
+      "item_id": "10",
+      "description": "Wiring safety check of property distribution board",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.25,
+      "rationale": "Not indemnified: safety check is not a repair cost for physical damage (3.1.5, 7.1.8(e)); reference cases 9, 17 show t below 33, possibly 0."
+    },
+    {
+      "item_id": "11",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.25,
+      "rationale": "Ancillary charge only indemnified if on same invoice as covered work (7.1.8(d)); as all other lines on this invoice are excluded, this is also excluded. Reference cases 9, 15, 17 show t below 14, possibly 0."
+    }
+  ]
+}

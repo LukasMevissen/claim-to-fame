@@ -1,0 +1,128 @@
+{
+  "case_id": "game19",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Surge-damaged speaker system",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 290.0,
+      "price_log_sd": 0.29,
+      "rationale": "The speaker system has established surge damage under clauses 2.3.3 and 4.2.4. With no surge protection or waiver, the estimated €580 gross like-for-like cost is halved to €290; the €5,000 aggregate cap does not bind and no deductible amount is stated."
+    },
+    {
+      "item_id": "2",
+      "description": "Premium replacement TV",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 275.0,
+      "price_log_sd": 0.22,
+      "rationale": "Clause 7.1.9 limits the basis to an equivalent ordinary 55-inch LED TV, not the larger premium model. An estimated €550 gross for the equivalent set is halved under clause 2.3.3 because the original was unprotected."
+    },
+    {
+      "item_id": "3",
+      "description": "HDMI cables and connectors",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.35,
+      "rationale": "No physical surge damage is established for either cable under clauses 4.2.4 and 7.1.5. If both were shown to be damaged and otherwise covered, €30 gross for the pair would be halved to €15 under clause 2.3.3."
+    },
+    {
+      "item_id": "4",
+      "description": "Wall-mount bracket",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.4,
+      "rationale": "The bracket has no established physical damage, and replacing it to accommodate the upgraded TV is not covered under clauses 4.3(d) and 7.1.5. If accepted as a damaged TV accessory, an ordinary €40 gross bracket would be subject to the same 50% reduction as the TV."
+    },
+    {
+      "item_id": "5",
+      "description": "Remote control",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.4,
+      "rationale": "The remote has no established surge damage, and clause 7.1.6 does not extend cover to undamaged items merely because they belong to a set. If independently shown to be damaged and covered as a TV accessory, €30 gross would be halved to €15."
+    },
+    {
+      "item_id": "6",
+      "description": "Unplugged games console",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.55,
+      "rationale": "The console was unplugged and unaffected, so clauses 4.2.4 and 7.1.5 exclude it. The conditional figure is a rough like-for-like replacement allowance only, with no mains-protection reduction for an unplugged device."
+    },
+    {
+      "item_id": "7",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.4,
+      "rationale": "Delivery of replacement equipment is expressly excluded by clauses 7.1.8(b) and 5.2.2, even on the supplier's invoice. The conditional figure is an ordinary delivery allowance only."
+    },
+    {
+      "item_id": "8",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clause 7.1.8(c) expressly excludes installing and setting up replacement equipment, even if the original was installed. The conditional figure reflects basic installation only."
+    },
+    {
+      "item_id": "9",
+      "description": "Diagnostic inspections and surge-failure reports",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.4,
+      "rationale": "The separately billed inspections and reports establish cause rather than repair the appliances, and clauses 11.2 and 7.1.8(f) characterize the building-services invoice as excluded arrangement-related work. The conditional figure allows €25 gross per device if the work were instead accepted as necessary repair labour."
+    },
+    {
+      "item_id": "10",
+      "description": "Distribution-board safety check",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.4,
+      "rationale": "The board was checked for safety, but no physical damage to it was established and no repair was performed, so the charge falls outside clauses 7.1.5 and 7.1.7. The conditional figure is a modest allowance for one basic check."
+    },
+    {
+      "item_id": "11",
+      "description": "Building-services vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clause 7.1.8(d) allows an attendance charge only alongside indemnifiable work on the same invoice; the covered replacements are on a different invoice. The conditional figure allows for one local attendance if the building-services invoice were found to contain covered work."
+    }
+  ]
+}
