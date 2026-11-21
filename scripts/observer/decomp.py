@@ -9,7 +9,7 @@ S=load_summary(); cfg=load_config(); P=cfg.pricing
 est={}
 for f in glob.glob('results/shadow/game*__gpt-6.2-sol__*.json'):
     r=json.load(open(f)); est[r['game']]=[ItemEstimate(**i) for i in r['items']]
-for g in range(15,30):
+for g in range(15,80):
     try: est[g]=[ItemEstimate(**i) for i in json.load(open(f'results/extractions/game{g}__x3__gpt-6.2-sol.json'))['items']]
     except Exception: pass
 G=sorted(g for g in est if str(g) in S)
