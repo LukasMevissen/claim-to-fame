@@ -131,6 +131,13 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
         from . import pricebook
         from .anthropic_extract import extract_claude
         reference = pricebook.reference(max_chars=cfg.section("llm").get("pricebook_max_chars", 24000))
+        # Large invoices at medium effort came close to the deadline (19 lines: 38 s; 22 lines:
+        # 31 s against 19 s at low), so from [llm].low_effort_from_lines on the effort drops to low.
+        from .pricebook import invoice_lines
+        n_lines = len(invoice_lines(case.invoice_text))
+        if effort and n_lines >= cfg.section("llm").get("low_effort_from_lines", 10**6):
+            effort = "low"
+        timing["effort"], timing["n_lines"] = effort, n_lines
         items, meta = extract_claude(case, model, max(budget - 4, 5), reference, effort or None)
         timing.update(meta)
     except Exception as e:  # noqa: BLE001

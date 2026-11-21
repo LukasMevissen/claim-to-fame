@@ -1,0 +1,194 @@
+{
+  "case_id": "game36-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Cleaning of affected floor areas in the utility room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary cleaning of surfaces affected by the insured water damage (7.1.7(h), 7.1.5). Utility room floor was directly affected."
+    },
+    {
+      "item_id": "2",
+      "description": "Cleaning of affected floor areas in the adjoining hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary cleaning of surfaces affected by the insured water damage (7.1.7(h), 7.1.5). Hallway floor was directly affected."
+    },
+    {
+      "item_id": "3",
+      "description": "Inspection of the washing machine and supply/drain connection to confirm no further leakage",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary investigation to confirm the source and cessation of the leak (7.1.7(e))."
+    },
+    {
+      "item_id": "4",
+      "description": "Removal and disposal of water-damaged skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as removal/disposal of damaged building components directly affected by the water (7.1.7(a), 7.1.5)."
+    },
+    {
+      "item_id": "5",
+      "description": "Replace skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as reinstatement of damaged building components to pre-loss standard (7.1.1(b), 7.1.9). Only for affected areas."
+    },
+    {
+      "item_id": "6",
+      "description": "Cleaning and repainting of the upstairs bedroom not reached by the water",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Not covered: work in a room not itself affected by the insured event is excluded (7.1.5)."
+    },
+    {
+      "item_id": "7",
+      "description": "Moisture measurement of the utility room and hallway floor",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary investigation to establish the extent of damage (7.1.7(e)). Both rooms were affected."
+    },
+    {
+      "item_id": "8",
+      "description": "Drying of the affected floor area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary drying of affected areas (7.1.7(b)), limited to the utility room and hallway."
+    },
+    {
+      "item_id": "9",
+      "description": "Drying unit rental",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary equipment hire for drying affected areas (7.1.7(b)), provided it relates to the utility room/hallway."
+    },
+    {
+      "item_id": "10",
+      "description": "Skilled worker hours (4 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary labour for the drying and measurement work in affected areas (7.1.7(g))."
+    },
+    {
+      "item_id": "11",
+      "description": "Moisture measurement and drying of the basement storage room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Not covered: basement storage room was not affected by the documented water damage (7.1.5)."
+    },
+    {
+      "item_id": "12",
+      "description": "Transport of the high-value painting to the specialist restorer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as part of securing/conserving an item of particular value affected by the insured event (5.2.6)."
+    },
+    {
+      "item_id": "13",
+      "description": "Professional assessment of the high-value painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as part of securing/conserving an item of particular value affected by the insured event (5.2.6)."
+    },
+    {
+      "item_id": "14",
+      "description": "Conservatory drying and stabilisation of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as part of securing/conserving an item of particular value affected by the insured event (5.2.6)."
+    },
+    {
+      "item_id": "15",
+      "description": "Full restoration of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 800.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered as restoration of an item of particular value affected by the insured event, but capped at EUR 1,000 plus VAT as not scheduled (5.2.6)."
+    },
+    {
+      "item_id": "16",
+      "description": "Restoration of a second painting stored in the basement, unaffected by the utility-room leak",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Not covered: painting was not affected by the insured event (7.1.5, 5.2.6)."
+    },
+    {
+      "item_id": "17",
+      "description": "Administrative and claim-processing fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Not covered: general administrative/processing fees are excluded (7.1.8(b))."
+    }
+  ]
+}
