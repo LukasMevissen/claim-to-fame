@@ -5,13 +5,25 @@ c = cap (≥ 4t), a = our charge, b = our acceptance limit. All gross line-item 
 
 ## 1. Belief about t
 
-One LLM call per case returns, per item, `covered_prob`, `related_prob`, a fair gross unit
-price and a log-sd for its uncertainty (`c2f/extract.py`). We turn that into
+t is decided mostly by the policy wording, not by market prices: optional covers that were
+not taken, exclusions, sub-limits "incl. VAT" shared rateably across lines, halved indemnity
+for breached duties. One reasoning-model call per case (`c2f/extract.py`, prompt x3) applies
+the policy line by line and returns `indemnified_prob`, the whole-line gross total if
+indemnified, and a log-sd. A quick model runs in parallel and is submitted first as a safety net.
 
-- P(t = 0) = 1 − covered_prob · related_prob
-- t | t > 0 ~ LogNormal(median = quantity · unit price, sigma = clamp(log-sd))
+**Price book** (`c2f/pricebook.py`). After every game the public transactions bound t for
+each line (wrongly rejected charge: t >= a; rightly rejected: t < a; nobody paid: t = 0).
+The prompt shows all earlier cases with these bounds. Cases repeat policy editions and
+repair types, so this is the best price calibration we have, and it grows every 800 s.
+
+- P(t = 0) = 1 - indemnified_prob
+- t | t > 0 ~ LogNormal(median = line total, sigma = clamp(log-sd))
 
 (`c2f/belief.py`, `c2f/agent.py::to_belief`).
+
+**Evidence.** Replaying games 1-8 against the real opponents' charges and limit bounds
+(t taken inside the revealed bounds; only earlier games in the price book): gpt-4.1-mini with
+the old prompt logic about +2k, gpt-4.1 +21k, gpt-6.2-sol +26k to +41k, oracle (a = b = t) 71k.
 
 ## 2. Acceptance limit b (insurer role): closed form
 
@@ -22,6 +34,8 @@ Rejecting costs 1.5a when a ≤ t and nothing otherwise. Ignoring the cap (conse
 
 P(t ≥ a) falls with a, so the optimal limit is **b = 1/3 quantile of our belief about t**.
 Consequence: if P(t = 0) > 1/3 we set b = 0 and reject the item outright.
+The charge a is still positive on such a line (priced as if covered): a rejected charge
+costs nothing and an accepted one pays up to the cap.
 This is exact for any belief, needs no opponent model, and is unit tested
 (`tests/test_pricing.py::test_acceptance_rule_is_optimal_without_cap`).
 
