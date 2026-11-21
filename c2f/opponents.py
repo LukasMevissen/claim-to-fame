@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -55,8 +56,9 @@ class Tx:
     amount: float
 
 
-def load_transactions(path: str | Path) -> list[Tx]:
-    """All data/transactions/game*.json files (or one file) -> transactions, deduplicated."""
+def load_transactions(path: str | Path, dedup: bool = True) -> list[Tx]:
+    """All data/transactions/game*.json files (or one file) -> transactions, deduplicated
+    (dedup=False keeps repeated rows, for c2f.consistency to report them)."""
     p = Path(path)
     files = sorted(p.glob("game*.json")) if p.is_dir() else [p]
     seen, out = set(), []
@@ -65,7 +67,7 @@ def load_transactions(path: str | Path) -> list[Tx]:
         game = int(doc["game_id"])
         for r in doc["items"]:
             key = (game, int(r["line_item_index"]), r["issuer"], r["reviewer"])
-            if key in seen:
+            if dedup and key in seen:
                 continue
             seen.add(key)
             out.append(Tx(game, key[1], key[2], key[3], bool(r["accepted"]), float(r["amount"])))
@@ -366,8 +368,12 @@ def opponent_types(belief: OpponentBelief, us: str, min_limits: float = 3.0,
 
 
 def save_belief(belief: OpponentBelief, path: str | Path) -> None:
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    Path(path).write_text(belief.to_json(), encoding="utf-8")
+    """Atomic: pricing reads this file before every game, it must never see half of it."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(p.suffix + ".tmp")
+    tmp.write_text(belief.to_json(), encoding="utf-8")
+    os.replace(tmp, p)
 
 
 def load_belief(path: str | Path) -> OpponentBelief:
