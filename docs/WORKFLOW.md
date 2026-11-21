@@ -8,6 +8,18 @@
   paste the case 0 eval output into the PR template, merge when CI is green.
 - One person (the "runner") submits during games. Later submissions overwrite earlier ones.
 
+## Auto-sync (optional, per machine)
+
+`python scripts/autosync.py install` (Windows; elsewhere `python scripts/autosync.py loop`) keeps a
+checkout on the latest `main` every 2 min: it commits your saved changes straight to `main`
+("Auto-sync (<name>): <files>"), rebases onto `origin/main`, and pushes only if the tests pass.
+It never commits the generated data the server pushes after each game (transactions, market,
+extractions, opponent belief, ab table, submissions log: upstream wins, local copies are backed up
+in `.git/autosync-backup/`) and never anything that looks like a secret.
+It does nothing while you are on another branch, so for a bigger change switch to a branch
+and use the PR flow above. On a conflict or failing tests it stops and notifies you; your commit
+stays local. `status`, `pause`, `resume`, `uninstall` do what they say.
+
 ## What is versioned
 
 | Thing | Where | Rule |
