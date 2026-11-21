@@ -168,10 +168,16 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
             root = decrypt(zip_path, key, Path(tmpdir.name))
             case = load_case(root, f"game{game_id}")
             positions = invoice_positions(case.invoice_text)
+            try:                       # digest for the price book (c2f/pricebook.py)
+                from .pricebook import save_digest
+                save_digest(game_id, case)
+            except Exception as e:  # noqa: BLE001
+                print(f"[game {game_id}] digest not saved: {e!r}")
             push(0, "fixed", [], None, submission_payload([], positions, fallback))
 
             budget = deadline - (time.time() - start)
-            variants = [(1, "text", False)] + ([(2, "photo", True)] if case.image is not None else [])
+            # fast = quick model without photo (safety net), full = reasoning model (+ photo)
+            variants = [(1, "fast", False), (2, "full", True)]
             pool = ThreadPoolExecutor(max_workers=len(variants))
             futs = {pool.submit(price_case, case, cfg, False, budget, with_image): (rank, name)
                     for rank, name, with_image in variants}

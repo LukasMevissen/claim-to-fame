@@ -58,14 +58,29 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
     errors: list[str] = []
     items: list[ItemEstimate] = []
     used = None
-    for model in [m for m in (llm.get("model"), llm.get("fallback_model")) if m]:
+    # with_image=False is the fast safety-net stage: quick model, no photo.
+    # with_image=True is the full stage: reasoning model, photo if the case has one.
+    if with_image:
+        models = [llm.get("model"), llm.get("fallback_model")]
+    else:
+        models = [llm.get("fast_model") or llm.get("model"), llm.get("fallback_model")]
+    models = list(dict.fromkeys(m for m in models if m))
+    reference = ""
+    if llm.get("use_pricebook", True):
+        try:
+            from . import pricebook
+            reference = pricebook.reference(max_chars=llm.get("pricebook_max_chars", 24000))
+        except Exception as e:  # noqa: BLE001  the price book is an extra, never a blocker
+            errors.append(f"pricebook: {e!r}"[:200])
+    for model in models:
         timeout = min(rt.get("llm_timeout_seconds", 30), deadline - (time.monotonic() - t0) - 5)
         if timeout < 5:
             errors.append(f"{model}: skipped, only {timeout:.0f}s left")
             break
         try:
             items = extract(case, model, timeout, llm.get("temperature", 0.0), use_cache,
-                            with_image=with_image)
+                            with_image=with_image, reference=reference,
+                            effort=llm.get("reasoning_effort"))
             used = model
             break
         except Exception as e:  # noqa: BLE001  try the next model, then fall back to defaults

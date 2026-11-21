@@ -75,8 +75,11 @@ def test_charge_close_to_t_when_certain():
     assert a == pytest.approx(250, rel=0.03)
 
 
-def test_uncovered_item_charges_zero():
-    assert quote(TBelief(500, 0.3, p_zero=1.0)).charge_price == 0.0
+def test_uncovered_item_still_charges_but_accepts_nothing():
+    # A positive charge on an uncovered line is free (rejected -> 0) and pays where accepted.
+    q = quote(TBelief(500, 0.3, p_zero=1.0))
+    assert q.charge_price == quote(TBelief(500, 0.3, p_zero=0.0)).charge_price > 0
+    assert q.acceptance_limit == 0.0
 
 
 def test_quotes_finite_and_nonnegative():

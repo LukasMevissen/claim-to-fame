@@ -4,13 +4,20 @@
 
 [runtime]
 deadline_seconds = 50          # hard budget inside the 60 s window, leaves margin for submit
-llm_timeout_seconds = 30
+llm_timeout_seconds = 38
 
 [llm]
-# Set to the model used in starter_script.py once it is in vendor/quantco/.
-model = "gpt-4.1-mini"
-fallback_model = "gpt-4.1"   # gpt-4.1-nano was withdrawn (404). Unverified: needs a key with model.request
+# full stage: reasoning model that applies the policy wording (sub-limits, reductions,
+# optional covers). Replay of games 1-8 against the real opponents: gpt-4.1-mini +1k,
+# gpt-4.1 +21k, gpt-6.2-sol +27k..+42k (oracle 71k). 5-25 s per case.
+model = "gpt-6.2-sol"
+reasoning_effort = "low"
+# fast stage: submitted first as a safety net in case the full stage is slow or fails
+fast_model = "gpt-4.1"
+fallback_model = "gpt-4.1"
 temperature = 0.0
+use_pricebook = true         # show earlier cases with their revealed t bounds (c2f/pricebook.py)
+pricebook_max_chars = 24000
 
 [api]
 # From vendor/quantco/API_HANDBOOK.md. Auth: X-API-Key header (TEAM_API_KEY).
@@ -64,5 +71,5 @@ miss_zero = 0.5
 
 [belief]
 # Floors applied to the LLM's stated uncertainty.
-min_sigma = 0.15
+min_sigma = 0.2
 max_sigma = 1.2

@@ -1,0 +1,14 @@
+{
+ "game": 9,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Electrical and Electronic Equipment Edition",
+ "description": "During a thunderstorm a power surge came through the wiring and damaged a speaker system and a TV set that were both plugged in and running at the time. A technician came out afterwards to check the electronics over and confirm the wiring itself was safe. The point to note on this one is the cover. This policy carries a surge-protection endorsement that waives the usual surge-protection condition, so the indemnity for the damaged items is not cut back for the way they happened to be connected. Diagnostic reports confirming surge failure were obtained for both devices.",
+ "lines": {
+  "1": "Speaker system 1 pcs",
+  "2": "Shipping 1 pcs",
+  "3": "Installation 1 pcs",
+  "4": "TV set 1 pcs",
+  "5": "Property and liability damage to electronics 1 pcs",
+  "6": "Property and liability damage to electronics - service order | 1 pcs",
+  "7": "Vehicle costs 1 pcs"
+ }
+}

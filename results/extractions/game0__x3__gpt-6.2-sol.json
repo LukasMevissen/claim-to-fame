@@ -1,0 +1,51 @@
+{
+  "case_id": "game0",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection and bathroom wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.999,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.25,
+      "rationale": "The indoor supply-pipe fracture is insured under §1.1, and §2.1 covers both locating the leak and opening the wall. Two hours at €110 gross total €220."
+    },
+    {
+      "item_id": "2",
+      "description": "Replace split 15 mm copper pipe section",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.999,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 210.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 2.2 covers repair of the fractured pipe. Allow €170 gross for fitting the short replacement section and €40 gross for copper and fittings."
+    },
+    {
+      "item_id": "3",
+      "description": "Close, re-plaster and re-tile the 0.2 m² patch",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.999,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 295.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 2.1 and 2.3 cover closing the opening and restoring the plaster and tiles to their prior condition. Allow €250 gross for small-job labour and €45 gross for materials, limited to the invoiced patch."
+    },
+    {
+      "item_id": "4",
+      "description": "Annual gas boiler service and descaling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 3.1 expressly excludes servicing and descaling even during the same visit, so the indemnity threshold is zero. The positive figure is a conditional gross estimate only."
+    }
+  ]
+}

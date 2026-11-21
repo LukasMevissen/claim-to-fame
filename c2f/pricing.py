@@ -80,9 +80,13 @@ def expected_revenue(a: float, belief: TBelief, p: PricingParams) -> float:
 
 
 def charge_price(belief: TBelief, p: PricingParams) -> float:
-    if belief.median <= 0 or belief.p_zero >= 1.0:
+    if belief.median <= 0:
         return 0.0
+    # Priced as if the line is covered, whatever P(t = 0): on an uncovered line a positive
+    # charge costs nothing (rejected -> 0) and still pays min(a, c) wherever it is accepted,
+    # so a = 0 only gives that chance away and loses everything when we misjudged coverage.
     pos = TBelief(belief.median, belief.sigma, 0.0)
+    belief = pos
     lo = pos.quantile(p.charge_floor_quantile)
     hi = pos.quantile(p.charge_ceiling_quantile)
     n = max(p.n_candidates, 2)

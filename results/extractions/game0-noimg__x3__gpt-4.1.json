@@ -1,0 +1,51 @@
+{
+  "case_id": "game0-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection and opening of the bathroom wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under Part 2.1: locating the leak and opening the wall to reach it. No exclusion applies. Reference Case 7 (thermal imaging and opening for leak detection) supports a fair market rate for such work."
+    },
+    {
+      "item_id": "2",
+      "description": "Replacement of split copper supply pipe section, 15 mm, incl. fittings",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under Part 2.2: repairing the fractured pipe. No exclusion applies. Reference Case 7 (internal frost-burst fitting repair) supports a fair market rate for pipe repair."
+    },
+    {
+      "item_id": "3",
+      "description": "Closing the wall opening, re-plastering and re-tiling approx. 0.2 m2",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered under Part 2.3: restoring the damaged plaster and tiles to their previous condition. No exclusion applies. Reference Case 7 (restoration of plaster excluded for external facade, but here it is internal and directly related to the leak)."
+    },
+    {
+      "item_id": "4",
+      "description": "Annual service and descaling of the gas boiler in the hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.05,
+      "rationale": "Explicitly excluded by Part 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured peril."
+    }
+  ]
+}
