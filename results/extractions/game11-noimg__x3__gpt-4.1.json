@@ -1,0 +1,106 @@
+{
+  "case_id": "game11-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Made-to-measure replacement glass pane",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.5 and 2.7.3: breakage of glazing elements is not covered unless the optional glazing peril is agreed, which is not stated in the description or schedule. Reference Case 3 confirms t = 0 for this line under this policy."
+    },
+    {
+      "item_id": "2",
+      "description": "Hole drilling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.5 and 2.7.3: all glazing work, including preparatory operations like drilling, is not covered unless the optional glazing peril is agreed. Reference Case 3 confirms t = 0 for this line."
+    },
+    {
+      "item_id": "3",
+      "description": "Installation of the new glass into the frame",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.5 and 2.7.3: all glazing work, including installation, is not covered unless the optional glazing peril is agreed. Reference Case 3 confirms t = 0 for this line."
+    },
+    {
+      "item_id": "4",
+      "description": "Disposal of broken glass",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.5 and 2.7.3: disposal of glazing elements is not covered unless the optional glazing peril is agreed. Reference Case 3 confirms t = 0 for this line."
+    },
+    {
+      "item_id": "5",
+      "description": "Repair of dented solid-wood side table (knocked over in the same fall)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.6 (sudden accidental damage) and 7.1.1(b): the side table is movable property, damaged by a covered peril. Reference Case 3 (cabinet timber repair) suggests t >= 329 for similar work; side table repair is likely similar or slightly less, so estimate at 300 EUR gross."
+    },
+    {
+      "item_id": "6",
+      "description": "Touch-up of pre-existing scratches on a second cabinet (present before the incident)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.6(a) and 7.1.9: pre-existing conditions are not covered, even if treated at the same time as covered work. Reference Case 2 confirms t = 0 for similar lines."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.5,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.3,
+      "rationale": "Indemnified only if associated with covered work (7.1.12). Since the side table repair is covered, one attendance is payable. Reference Case 3 and 2 show vehicle costs are often declined, but if paid, t < 28. Estimate at 20 EUR gross."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs – return visit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 7.1.12: only one attendance per undertaking per insured event is indemnified unless the insurer agreed to a return visit in advance, which is not stated. Reference Case 3 confirms t = 0 for additional attendances."
+    },
+    {
+      "item_id": "9",
+      "description": "Administrative flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 7.1.8(b): general administrative, handling, or processing charges are not indemnified, even if levied as a flat rate. Reference Case 4 confirms t = 0 for similar lines."
+    }
+  ]
+}

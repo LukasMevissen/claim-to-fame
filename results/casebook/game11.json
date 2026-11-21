@@ -1,0 +1,16 @@
+{
+ "game": 11,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Accidental Damage and Optional Glazing Edition",
+ "description": "Accidental damage claim on the home contents cover. A bowl was knocked off a shelf and fell, catching the display cabinet on the way down. The glass panel in the cabinet door cracked, and a solid-wood side table next to the cabinet was knocked and dented in the same fall. A glazier remade the cabinet pane to measure and refitted it, and cleared away the broken glass. A separate contractor repaired the dented side table. A couple of things on the billing to flag. The contractor also touched up some older scratches on a second cabinet that were already there before the incident, and the invoice carries a return visit as well as an administrative flat rate.",
+ "lines": {
+  "1": "Made-to-measure replacement glass pane 1 pcs",
+  "2": "Hole drilling 1 pcs",
+  "3": "Installation of the new glass into the frame 1 pcs",
+  "4": "Disposal of broken glass 1 pcs",
+  "5": "Repair of dented solid-wood side table (knocked over in the same fall) | 1 flat rate",
+  "6": "Touch-up of pre-existing scratches on a second cabinet (present before the incident) | 1 flat rate",
+  "7": "Vehicle costs 1 pcs",
+  "8": "Vehicle costs – return visit 1 pcs",
+  "9": "Administrative flat rate 1 flat rate"
+ }
+}
