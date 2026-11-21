@@ -190,13 +190,72 @@ Two deliberate choices:
   that away and loses everything if our coverage call was wrong. This earned about 300 in
   each of games 11 and 13.
 
-## 6. How a change gets deployed
+## 6. The observer: how runs are assessed and how changes are made
 
-1. Re-run the candidate on finished games, with the price book restricted to earlier games
-   only, so the model sees exactly what it would have seen live.
-2. Score its quotes with the replay (section 7) against the version currently live.
-3. If it wins, run the unit tests and a dry run on test game 0, then restart the scheduler
-   between two games. Games already played are skipped on restart.
+The scheduler plays every game unattended. On top of it runs an observer: an AI coding
+agent (Claude, in a supervised session started by a team member) that reviews every finished
+game and may change the strategy. It has no access to anything the rules do not allow: it
+uses our own case files after the game's start time, our own submission log and the public
+leaderboard transactions.
+
+### 6.1 What is assessed after every game
+
+About 80 seconds after a game starts its transactions are public. For each invoice line the
+observer then looks at:
+
+1. **Outcome.** Our revenue, our cost, our net, and the rank of our net among the 12 teams,
+   computed directly from the transactions (no model involved).
+2. **Coverage call.** Did we treat the line as indemnified, and does the revealed interval
+   for t agree (section 3.3)?
+3. **Price level.** Where our estimate m, our charge a and our limit b sit relative to the
+   revealed interval $[\underline{t}, \overline{t})$, and whether our charge was proven fair or
+   inflated.
+4. **Reference.** What the best team on that line charged.
+5. **Operations.** Seconds from game start to the final submission, and any model error.
+
+The new bounds enter the price book automatically, so the next prompt already contains them.
+That part is learning without any change to code or parameters.
+
+### 6.2 When a change is made
+
+One game is noise: a single line can decide a game, and the thresholds are only known as
+intervals. The observer therefore does not react to a single result. A change needs:
+
+1. **A hypothesis from the reviews**, stated as a mechanism. Example: "our charges were proven
+   fair in every game and were twice the highest fair charge, so the charge rule shades too much".
+2. **A replay test** (section 7.1). The candidate is re-run on all finished games, with the
+   price book restricted to earlier games so it sees only what it would have seen live, and
+   its quotes are scored against the real opponents next to the version currently live.
+3. **A decision rule.** The candidate must beat the live version under both assumptions about
+   t (section 7.1), and the result must not sit on a cliff: neighbouring parameter values have
+   to point the same way. Where the best value is next to a drop, a value with a margin is
+   taken instead (the charge floor is 0.87, not 0.90, for this reason).
+4. **Checks before going live.** Unit tests pass and, for changes to the model call, a dry
+   run on test game 0 completes inside the time window.
+5. **Deployment between two games.** The scheduler is restarted; games already played are
+   skipped. The change and its replay result go into `CHANGELOG.md` and the config comments.
+
+Changes that failed the test were not deployed: medium reasoning effort (24.8k against 26.3k
+at low), `gpt-6-luna` as live model (misjudged coverage in game 4), a wider acceptance limit
+(+1% in replay, inside the noise).
+
+### 6.3 Changes made so far
+
+| Live from game | Change | Evidence before deployment |
+|---|---|---|
+| 10 | policy-first prompt, price book, `gpt-6.2-sol` with `gpt-4.1` safety net, always-positive charge | replay games 1 to 8: 1.7k / 17.0k before, 26.3k / 41.2k after |
+| 13 | charge floor 0.87 m | replay games 1 to 12: 33.3k / 47.8k before, 39.1k / 54.9k after |
+| 15 | Claude models run as shadows (not submitted) | none needed, does not affect submissions |
+
+### 6.4 What limits this procedure
+
+- The replay data is also the data the changes were tuned on. With 12 to 15 games there is
+  no separate hold-out set, so a tuned parameter can be overfitted. The margin rule in step 3
+  and the live results of the following games are the only protection.
+- The observer shares the working directory with the running scheduler and with other
+  sessions. Deployment is a restart, so a mistake in a change reaches the next game. The
+  safety net is the staged submission: fixed prices first, then the quick model, then the
+  full model.
 
 ## 7. Evidence
 
@@ -309,7 +368,21 @@ in `results/shadow/`, and `python -m c2f shadow-report` scores them with the rep
 section 7.1 next to what was actually submitted, on the same games.
 
 Configured: `claude-fable-5-2`, `claude-opus-5-5` and `claude-sonnet-5-5` through the Anthropic
-SDK (`c2f/anthropic_extract.py`), each at low effort. They start running as soon as
-`ANTHROPIC_API_KEY` is present in `.env`; until then they are skipped. Past games can be
-assessed with `python -m c2f shadow 1 2 3 ...`. A model is promoted to the live workflow only
-if it beats the live model on the same games and answers inside the time window.
+SDK (`c2f/anthropic_extract.py`), each at low effort, running after every game since game 15.
+Past games are assessed with `python -m c2f shadow 1 2 3 ...`.
+
+First comparison, games 1 to 14, one run per model and game, price book of earlier games only,
+same pricing rules for all (replay net, the two assumptions about t):
+
+| Model | Net, 1.15 | Net, 1.4 | Median / max seconds |
+|---|---|---|---|
+| claude-fable-5-2, low | 43.6k | 59.4k | 12 / 15 |
+| claude-opus-5-5, low | 40.4k | 56.5k | 11 / 15 |
+| gpt-6.2-sol, low (live model) | 38.3k | 54.3k | 14 / 20 |
+| claude-sonnet-5-5, low | 32.4k | 48.2k | 11 / 14 |
+
+All four answer well inside the window. `claude-fable-5-2` is ahead of the live model by about
+5k (14%), but most of that comes from two games (5 and 9), and each model was run only once,
+so run-to-run variation is not measured yet. That is not enough to switch. The shadows
+keep running on every new game; a model is promoted only if it stays ahead on the same games
+as the sample grows.
