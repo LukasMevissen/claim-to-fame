@@ -99,6 +99,42 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
     return priced, timing
 
 
+def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[PricedItem], dict]:
+    """Independent assessment by another provider ([llm].backup, "provider:model@effort"),
+    run in parallel to the main stages. It is what ends up submitted only if the full stage
+    does not answer in time, so one provider's outage, a dropped connection or a key without
+    credit does not leave us on fixed prices. Never raises."""
+    import os
+
+    spec = cfg.section("llm").get("backup", "")
+    t0 = time.monotonic()
+    timing: dict = {"model": spec, "backup": True}
+    items: list[ItemEstimate] = []
+    try:
+        if not spec:
+            return [], timing
+        provider, _, rest = spec.partition(":")
+        model, _, effort = rest.partition("@")
+        if provider != "anthropic":
+            raise ValueError(f"unsupported backup provider {provider!r}")
+        from .config import REPO_ROOT
+        from .env import load_env
+        load_env(REPO_ROOT / ".env")
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise RuntimeError("ANTHROPIC_API_KEY not set")
+        from . import pricebook
+        from .anthropic_extract import extract_claude
+        reference = pricebook.reference(max_chars=cfg.section("llm").get("pricebook_max_chars", 24000))
+        items, meta = extract_claude(case, model, max(budget - 4, 5), reference, effort or None)
+        timing.update(meta)
+    except Exception as e:  # noqa: BLE001
+        timing["model_errors"] = [f"{spec}: {e!r}"[:300]]
+        print(f"[agent] backup {spec} failed: {e!r}")
+    priced = price_items(items, cfg)
+    timing["total_s"] = round(time.monotonic() - t0, 2)
+    return priced, timing
+
+
 def _index(item_id: str, fallback: int) -> int:
     """Invoice POS number (1-based) as the API line_item index."""
     m = re.match(r"\s*(\d+)", str(item_id))

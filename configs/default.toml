@@ -5,6 +5,7 @@
 [runtime]
 deadline_seconds = 54         # hard budget inside the 60 s window, leaves margin for submit
 llm_timeout_seconds = 38
+fixed_max_seconds = 12        # fixed fallback prices are only submitted this early (see play_game)
 
 [llm]
 # full stage: reasoning model that applies the policy wording (sub-limits, reductions,
@@ -15,6 +16,10 @@ reasoning_effort = "low"
 # fast stage: submitted first as a safety net in case the full stage is slow or fails
 fast_model = "gpt-4.1"
 fallback_model = "gpt-4.1"
+# backup stage: the same assessment by another provider, in parallel. Submitted only if the
+# full stage does not answer in time (dropped connection, outage, key out of credit).
+# Replay games 1-19 and live shadows 15-20: claude-opus-5-5 is at least as good as the full model.
+backup = "anthropic:claude-opus-5-5@low"
 temperature = 0.0
 use_pricebook = true         # show earlier cases with their revealed t bounds (c2f/pricebook.py)
 pricebook_max_chars = 24000

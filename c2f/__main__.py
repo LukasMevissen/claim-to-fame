@@ -13,13 +13,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import tempfile
 import time
 from pathlib import Path
 
 from .env import load_env
-from .agent import price_case, price_items, submission_payload
+from .agent import price_case, price_case_backup, price_items, submission_payload
 from .case_io import decrypt, invoice_positions, load_case
 from .config import REPO_ROOT, load_config
 from .extract import load_cached
@@ -173,14 +174,31 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
                 save_digest(game_id, case)
             except Exception as e:  # noqa: BLE001
                 print(f"[game {game_id}] digest not saved: {e!r}")
-            push(0, "fixed", [], None, submission_payload([], positions, fallback))
+            # Two machines may run this bot on different networks (last write wins on the
+            # server). C2F_ROLE=standby marks the second one: it submits only its backup-model
+            # answer, never fixed or quick prices, so it can only replace a model answer by
+            # another one. On the primary, fixed prices are only sent early, so a slow
+            # connection cannot deliver them after the other machine's model answer.
+            standby = os.environ.get("C2F_ROLE", "primary").strip().lower() == "standby"
+            fixed_until = cfg.section("runtime").get("fixed_max_seconds", 12)
+            if standby:
+                print(f"[game {game_id}] standby role: backup stage only")
+            elif since() <= fixed_until:
+                push(0, "fixed", [], None, submission_payload([], positions, fallback))
+            else:
+                stages.append({"stage": "fixed", "since_start_s": since(), "submitted": False,
+                               "error": f"skipped: later than {fixed_until}s"})
+                print(f"[game {game_id}] stage fixed skipped: {since()}s after start")
 
             budget = deadline - (time.time() - start)
             # fast = quick model without photo (safety net), full = reasoning model (+ photo)
-            variants = [(1, "fast", False), (2, "full", True)]
-            pool = ThreadPoolExecutor(max_workers=len(variants))
+            variants = [] if standby else [(1, "fast", False), (3, "full", True)]
+            pool = ThreadPoolExecutor(max_workers=len(variants) + 1)
             futs = {pool.submit(price_case, case, cfg, False, budget, with_image): (rank, name)
                     for rank, name, with_image in variants}
+            # backup = same assessment by another provider; outranks fast, is outranked by full
+            if cfg.section("llm").get("backup"):
+                futs[pool.submit(price_case_backup, case, cfg, budget)] = (2, "backup")
             pending = set(futs)
             while pending:
                 left = deadline - (time.time() - start)
