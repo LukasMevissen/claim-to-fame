@@ -4,10 +4,10 @@
  "model": "claude-opus-5-5",
  "effort": "low",
  "ok": true,
- "secs": 10.4,
+ "secs": 7.2,
  "served_by": "claude-opus-5-5",
  "input_tokens": 16971,
- "output_tokens": 360,
+ "output_tokens": 371,
  "items": [
   {
    "item_id": "1",
@@ -18,7 +18,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 185.0,
    "price_log_sd": 0.3,
-   "rationale": "All elements are material arising under 5.2.1(a)-(b), and the root ball is under one cubic metre, so the combined position is wholly indemnifiable under 7.1.10. The amount is calibrated on Case 8: roughly 60 + 32 + 55 + 45, giving about 190."
+   "rationale": "All elements are material arising under 5.2.1(a)/(b), with the root mass under 1 m3, so the combined position is fully indemnifiable under 7.1.10. Priced from the Case 8 levels: timber ~60 + glass ~32 + green waste ~55 + root ball ~45 = ~190."
   },
   {
    "item_id": "2",
@@ -29,7 +29,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.5,
-   "rationale": "Ground material is excluded from clearance under 5.2.1(d). Disposal standing on its own, with no reinstatement or making good of the ground, is excluded under 5.2.2. Case 8 shows t=0 for the same lines."
+   "rationale": "Ground material is excluded under 5.2.1(d). Disposal as a stand-alone clearance measure, with no reinstatement or making good of the ground, is not indemnified under 5.2.2; Case 8 also gave t = 0 for these items."
   }
  ],
  "quotes": {
@@ -38,7 +38,7 @@
    146.1
   ],
   "2": [
-   83.94,
+   81.63,
    0.0
   ]
  }

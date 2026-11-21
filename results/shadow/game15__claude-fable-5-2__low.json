@@ -4,10 +4,10 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 13.8,
+ "secs": 17.5,
  "served_by": "claude-fable-5-2",
  "input_tokens": 21414,
- "output_tokens": 770,
+ "output_tokens": 732,
  "items": [
   {
    "item_id": "1",
@@ -16,9 +16,9 @@
    "unit": "",
    "covered_prob": 0.85,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 290.0,
-   "price_log_sd": 0.4,
-   "rationale": "Covered under 2.3.3 within the EUR 5,000 appliance sub-limit; standard-grade replacement per 7.1.9. Surge protection status not established, so no halving; reference cases suggest roughly 300 or below."
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.35,
+   "rationale": "Covered under 2.3.3 overvoltage; nothing established on surge protector so likely no halving; standard-grade replacement per 7.1.9. Reference case showed t below 336, combined case implies approx 250-330."
   },
   {
    "item_id": "2",
@@ -29,7 +29,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 5.0,
    "price_log_sd": 0.6,
-   "rationale": "Carriage of replacement property is not a repair cost under 7.1.8(b)."
+   "rationale": "Carriage of replacement property excluded under 7.1.8(b)."
   },
   {
    "item_id": "3",
@@ -40,7 +40,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 8.0,
    "price_log_sd": 0.6,
-   "rationale": "Fitting and installing replacement property is excluded under 7.1.8(c)."
+   "rationale": "Fitting/installing replacement property excluded under 7.1.8(c)."
   },
   {
    "item_id": "4",
@@ -51,7 +51,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 560.0,
    "price_log_sd": 0.25,
-   "rationale": "Covered under 2.3.3 within the sub-limit; standard-grade replacement per 7.1.9, no reduction established. Reference case 9 gives 517-616."
+   "rationale": "Covered under 2.3.3, within EUR 5,000 sub-limit; standard-grade replacement; reference t 517-616 without reduction."
   },
   {
    "item_id": "5",
@@ -61,19 +61,19 @@
    "covered_prob": 0.03,
    "related_prob": 1.0,
    "unit_price_gross_eur": 10.0,
-   "price_log_sd": 0.7,
-   "rationale": "Bundles a liability risk and a service arrangement without separate pricing; excluded under 3.1.4, 3.1.5 and 7.1.8(f)."
+   "price_log_sd": 0.6,
+   "rationale": "Bundled liability/property arrangement not separately itemised; excluded under 3.1.4 and 7.1.8(f)."
   },
   {
    "item_id": "6",
-   "description": "Service order under the arrangement",
+   "description": "Service order under arrangement",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 6.0,
-   "price_log_sd": 0.7,
-   "rationale": "Charge for placing an order under a service arrangement is excluded under 3.1.5 and 7.1.8(f)."
+   "price_log_sd": 0.6,
+   "rationale": "Charge for placing an order under a service arrangement excluded by 3.1.5 and 7.1.8(f)."
   },
   {
    "item_id": "7",
@@ -83,21 +83,21 @@
    "covered_prob": 0.03,
    "related_prob": 1.0,
    "unit_price_gross_eur": 5.0,
-   "price_log_sd": 0.7,
-   "rationale": "Under 7.1.8(d) an attendance charge is not indemnifiable where the work on the same invoice is not indemnifiable."
+   "price_log_sd": 0.6,
+   "rationale": "Attendance charge on an invoice with no indemnifiable work; excluded under 7.1.8(d)."
   }
  ],
  "quotes": {
   "1": [
-   256.52,
-   211.69
+   243.6,
+   212.6
   ],
   "2": [
-   5.26,
+   4.6,
    0.0
   ],
   "3": [
-   8.41,
+   7.36,
    0.0
   ],
   "4": [
@@ -105,15 +105,15 @@
    476.53
   ],
   "5": [
-   10.6,
+   9.2,
    0.0
   ],
   "6": [
-   6.36,
+   5.52,
    0.0
   ],
   "7": [
-   5.3,
+   4.6,
    0.0
   ]
  }

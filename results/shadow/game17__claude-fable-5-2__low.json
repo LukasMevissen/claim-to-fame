@@ -1,0 +1,240 @@
+{
+ "game": 17,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 28.6,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 22961,
+ "output_tokens": 1603,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "TV set (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.15,
+   "rationale": "Covered under 2.3.3; no surge protector established, so 50% reduction. References show t about 590-600 after halving."
+  },
+  {
+   "item_id": "2",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 2.3.3, halved for missing surge protection; references suggest 390-525 in one case and below 336 in another."
+  },
+  {
+   "item_id": "3",
+   "description": "AV receiver / amplifier (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 320.0,
+   "price_log_sd": 0.4,
+   "rationale": "Damaged appliance under 2.3.3; standard-grade price about 600-700, halved for no surge protection."
+  },
+  {
+   "item_id": "4",
+   "description": "Melted mains plug and power lead",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Physically damaged accessory, indemnifiable under 2.3.3; halved as accessory of an unprotected appliance."
+  },
+  {
+   "item_id": "5",
+   "description": "HDMI cables and remote controls",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "No physical damage established (4.2.4, 7.1.5, 7.1.6); undamaged accessories are not insured."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.6,
+   "rationale": "Not an electrical appliance and not damaged; 4.2.4, 4.3(d) and 7.1.5 exclude."
+  },
+  {
+   "item_id": "7",
+   "description": "DVD player (pre-existing, age-related fault)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded under 2.3.10(c): wear, ageing or internal defect, not caused by the insured peril."
+  },
+  {
+   "item_id": "8",
+   "description": "Router (no diagnostic report)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.6,
+   "rationale": "Physical damage not established by the loss investigation (4.2.4, 7.1.10), so not an affected appliance."
+  },
+  {
+   "item_id": "9",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded under 7.1.8(b): carriage of replacement property."
+  },
+  {
+   "item_id": "10",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded under 7.1.8(c): fitting and installing replacement property."
+  },
+  {
+   "item_id": "11",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "Not a repair cost and not a Part 5 cost head; contractor's diagnostic and documentation outlay under 7.1.8(e). Reference case 1 showed a near-zero threshold."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs - return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "Duplicate attendance charge (7.1.8(d), 7.1.8(g)) on an invoice with no indemnifiable work."
+  },
+  {
+   "item_id": "13",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "Inspection of an unaffected installation, not making good damage (7.1.5, 7.1.8(a), 3.1.5)."
+  },
+  {
+   "item_id": "14",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded under 7.1.8(e) and (f): administrative and order-processing charges."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "7.1.8(d): attendance charge follows the invoice's work, which is not indemnifiable. References put the threshold near zero."
+  }
+ ],
+ "quotes": {
+  "1": [
+   517.65,
+   530.52
+  ],
+  "2": [
+   330.6,
+   313.09
+  ],
+  "3": [
+   278.4,
+   233.59
+  ],
+  "4": [
+   18.14,
+   10.86
+  ],
+  "5": [
+   36.79,
+   0.0
+  ],
+  "6": [
+   32.19,
+   0.0
+  ],
+  "7": [
+   36.79,
+   0.0
+  ],
+  "8": [
+   41.39,
+   0.0
+  ],
+  "9": [
+   13.8,
+   0.0
+  ],
+  "10": [
+   36.79,
+   0.0
+  ],
+  "11": [
+   73.58,
+   0.0
+  ],
+  "12": [
+   27.59,
+   0.0
+  ],
+  "13": [
+   73.58,
+   0.0
+  ],
+  "14": [
+   18.4,
+   0.0
+  ],
+  "15": [
+   27.59,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+{
+  "case_id": "game17-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "TV set (surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 560.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as insured electrical appliance under 2.3.3, subject to the EUR 5,000 appliance sub-limit (incl. VAT, aggregate). Reference Cases 1, 9, 15 show t between 517 and 616 for similar TVs; no surge protection so indemnity is halved per 2.3.3."
+    },
+    {
+      "item_id": "2",
+      "description": "Speaker system (surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as insured electrical appliance under 2.3.3, subject to the EUR 5,000 sub-limit. Reference Cases 1, 9, 15 show t between 389 and 525 for similar speakers; no surge protection so indemnity is halved."
+    },
+    {
+      "item_id": "3",
+      "description": "AV receiver / amplifier (surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as insured electrical appliance under 2.3.3, subject to the EUR 5,000 sub-limit. No direct reference, but AV receivers are typically similar or slightly higher than speaker systems; no surge protection so indemnity is halved."
+    },
+    {
+      "item_id": "4",
+      "description": "Melted mains plug and power lead (physically surge-damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.2,
+      "rationale": "Accessory physically damaged by the insured event, covered as part of the affected appliance under 2.3.3 and 4.2.4. Reference Cases 16, 15: small parts t between 27 and 55 before halving; here, estimate at lower end and halve."
+    },
+    {
+      "item_id": "5",
+      "description": "HDMI cables and remote controls",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.3,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.3,
+      "rationale": "Accessories only covered if physically damaged by the insured event and part of the affected appliance (2.3.3, 4.2.4). No evidence of physical damage to all; if so, only indemnify those proven damaged. Reference Cases: similar lines not indemnified unless damage proven."
+    },
+    {
+      "item_id": "6",
+      "description": "Wall-mount bracket",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.2,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.3,
+      "rationale": "Only covered if physically damaged by the insured event and part of the affected appliance (2.3.3, 4.2.4). No evidence of damage; if undamaged, not indemnified. Reference Cases: similar mounting hardware not indemnified unless damage proven."
+    },
+    {
+      "item_id": "7",
+      "description": "DVD player (was already failing before the storm, age-related)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Pre-existing defect/ageing is excluded (2.3.10(c), 7.1.9). Not indemnified as damage not caused by insured event."
+    },
+    {
+      "item_id": "8",
+      "description": "Router (no diagnostic report provided)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "No physical damage established by loss investigation (4.2.4, 7.1.5, 7.1.10). Not indemnified."
+    },
+    {
+      "item_id": "9",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.1,
+      "rationale": "Ancillary charge for bringing replacement property to the insured location is excluded (7.1.8(b)). Reference Cases 1, 9, 15: t below 6, possibly 0."
+    },
+    {
+      "item_id": "10",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.1,
+      "rationale": "Ancillary charge for fitting/commissioning replacement property is excluded (7.1.8(c)). Reference Cases 1, 9, 15: t below 9, possibly 0."
+    },
+    {
+      "item_id": "11",
+      "description": "Diagnostic inspection and surge-failure report for damaged electronics",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.1,
+      "rationale": "Outlay for confirming surge failure and checking wiring is not a repair cost (3.1.5, 7.1.8(e)). Reference Cases 1, 9, 15: t below 6, possibly 0."
+    },
+    {
+      "item_id": "12",
+      "description": "Vehicle costs – return visit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Attendance charge for a return visit is excluded unless incurred on the same invoice as indemnifiable work (7.1.8(d)). Reference Cases 11, 1, 9: t = 0 or below 6."
+    },
+    {
+      "item_id": "13",
+      "description": "Wiring safety check of property distribution board",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "General safety check is not a repair cost for physical damage caused by the insured event (3.1.5, 7.1.8(e)). Reference Cases: similar checks not indemnified."
+    },
+    {
+      "item_id": "14",
+      "description": "Administrative and claim-processing fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Administrative/processing charges are excluded (7.1.8(e), 3.1.5). Reference Cases 11, 1: t below 5, possibly 0."
+    },
+    {
+      "item_id": "15",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.1,
+      "rationale": "Attendance charge is only indemnified if incurred on the same invoice as indemnifiable work (7.1.8(d)). Here, if any work on this invoice is indemnified, one such charge may be allowed. Reference Cases 1, 9, 15: t below 6, possibly 0."
+    }
+  ]
+}

@@ -4,21 +4,21 @@
  "model": "claude-opus-5-5",
  "effort": "low",
  "ok": true,
- "secs": 14.5,
+ "secs": 9.7,
  "served_by": "claude-opus-5-5",
  "input_tokens": 15571,
- "output_tokens": 349,
+ "output_tokens": 397,
  "items": [
   {
    "item_id": "1",
-   "description": "Surge-damaged speaker system and TV set",
+   "description": "Surge-damaged speaker system and TV set (2 pcs)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.9,
+   "covered_prob": 0.85,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 1750.0,
-   "price_log_sd": 0.4,
-   "rationale": "Lightning overvoltage covered under 2.3.3, subject to EUR 5,000 aggregate appliance sub-limit; no surge protection established, so indemnity halved. Market replacement for TV + speaker system ~3,000-4,000, halved to ~1,750."
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.45,
+   "rationale": "Lightning overvoltage covered under 2.3.3; the description establishes there was no surge protection, so the indemnity is halved, and the result is subject to the EUR 5,000 aggregate appliance sub-limit and 7.1.9. Estimated market replacement of about EUR 3,000 for both items, halved to about EUR 1,500."
   },
   {
    "item_id": "2",
@@ -27,18 +27,18 @@
    "unit": "",
    "covered_prob": 0.3,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 60.0,
-   "price_log_sd": 0.6,
-   "rationale": "Diagnostic/report is contractor's measuring outlay or assessment, not a repair cost (7.1.8(e)); call-out only indemnifiable alongside indemnifiable work on the same invoice, one per attendance (7.1.8(d)); likely excluded or minimal, halved."
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Diagnostics and assessment are a contractor's own diagnostic outlay under 7.1.8(e), not a repair cost. The call-out may be indemnifiable under 7.1.8(d) because it sits on the same invoice as covered work, but the line is assessed by its predominant purpose under 7.1.10, which is likely not indemnifiable."
   }
  ],
  "quotes": {
   "1": [
-   1522.5,
-   1351.7
+   1306.65,
+   1052.73
   ],
   "2": [
-   55.19,
+   108.84,
    0.0
   ]
  }

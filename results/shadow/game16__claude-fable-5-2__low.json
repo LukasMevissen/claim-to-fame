@@ -4,10 +4,10 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 23.3,
+ "secs": 22.4,
  "served_by": "claude-fable-5-2",
  "input_tokens": 29201,
- "output_tokens": 1572,
+ "output_tokens": 1587,
  "items": [
   {
    "item_id": "1",
@@ -18,7 +18,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.45,
-   "rationale": "Covered under 2.4.3(b) and 7.1.9 as the fractured fitting; like-for-like market price."
+   "rationale": "Frost fracture of internal fitting covered under 2.4.3 and 7.1.9; like-for-like valve at ordinary price."
   },
   {
    "item_id": "2",
@@ -33,14 +33,14 @@
   },
   {
    "item_id": "3",
-   "description": "Senior installer hours 3 hrs",
+   "description": "Senior installer hours (3 hrs)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.92,
+   "covered_prob": 0.93,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 225.0,
+   "unit_price_gross_eur": 215.0,
    "price_log_sd": 0.3,
-   "rationale": "Labour for the covered fitting repair under 7.1.9; about 3 hrs at roughly EUR 75 gross."
+   "rationale": "Labour for covered fitting renewal under 7.1.9; 3 hrs at about 70-75 EUR gross."
   },
   {
    "item_id": "4",
@@ -51,7 +51,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 20.0,
    "price_log_sd": 0.5,
-   "rationale": "Consumables actually used in covered work, 7.1.7(e), expressly preserved by 7.1.8(b); small amount."
+   "rationale": "Consumables used in covered work are indemnified under 7.1.7(e); small flat rate."
   },
   {
    "item_id": "5",
@@ -62,154 +62,154 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 35.0,
    "price_log_sd": 0.45,
-   "rationale": "One attendance per undertaking for covered work is indemnified under 7.1.11 and 7.1.9."
+   "rationale": "One attendance per undertaking indemnified under 7.1.11 as covered work was done at that visit."
   },
   {
    "item_id": "6",
-   "description": "Thermal imaging camera leak detection",
+   "description": "Thermal imaging camera (leak detection)",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.92,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 130.0,
-   "price_log_sd": 0.4,
-   "rationale": "Leak location under 2.4.5 and 5.2.2, well within the EUR 2,500 cap; the cause found is a covered frost fracture."
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.45,
+   "rationale": "Leak location with imaging equipment covered under 2.4.5 and 5.2.2, well within the EUR 2,500 cap."
   },
   {
    "item_id": "7",
    "description": "Facade water and frost damage",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 150.0,
    "price_log_sd": 0.7,
-   "rationale": "External surface frost damage excluded under 3.1.4(b) and 3.5(a)."
+   "rationale": "External surface frost damage excluded under 3.1.4(b) and 3.5(a); not an affected part."
   },
   {
    "item_id": "8",
    "description": "Loose plaster removal",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 80.0,
    "price_log_sd": 0.7,
-   "rationale": "Taking off failed surface material excluded under 3.5(b)."
+   "rationale": "Taking off failed surface material is excluded under 3.5(b)."
   },
   {
    "item_id": "9",
    "description": "Base plaster",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 120.0,
    "price_log_sd": 0.7,
-   "rationale": "Renewal of external surface material excluded under 3.5(b)."
+   "rationale": "Re-forming the substrate of an external surface is excluded under 3.5(b)."
   },
   {
    "item_id": "10",
    "description": "Additional work",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 80.0,
    "price_log_sd": 0.7,
-   "rationale": "Further work on the elevation on the same occasion excluded under 3.5(b); cannot be allocated to an affected part, 9.6."
+   "rationale": "Further work on the elevation on the same occasion is excluded under 3.5(b); not allocable under 9.6."
   },
   {
    "item_id": "11",
    "description": "Newly plastered substrate",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 100.0,
+   "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.7,
-   "rationale": "Preparation and re-forming of the substrate excluded under 3.5(b)."
+   "rationale": "Substrate preparation on the excluded facade, 3.5(b) and 7.1.7 last paragraph."
   },
   {
    "item_id": "12",
    "description": "Facade paint (4 coats)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 200.0,
    "price_log_sd": 0.7,
-   "rationale": "Successive coats of the new finish excluded under 3.5(b), however many are applied."
+   "rationale": "Successive coats of the new finish are excluded under 3.5(b), however many are applied."
   },
   {
    "item_id": "13",
    "description": "Drying",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.04,
+   "covered_prob": 0.03,
    "related_prob": 1.0,
    "unit_price_gross_eur": 80.0,
    "price_log_sd": 0.7,
-   "rationale": "Drying of the facade substrate excluded under 3.5(b) and 7.1.7 (not an affected part)."
+   "rationale": "Drying out of the external substrate is excluded under 3.5(b); 7.1.7(c) applies only to affected parts."
   },
   {
    "item_id": "14",
    "description": "Priming",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 60.0,
    "price_log_sd": 0.7,
-   "rationale": "Priming of the external surface excluded under 3.5(b)."
+   "rationale": "Priming of the external surface is excluded under 3.5(b)."
   },
   {
    "item_id": "15",
-   "description": "Painter hours 5 hrs",
+   "description": "Painter hours (5 hrs)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.03,
+   "covered_prob": 0.02,
    "related_prob": 1.0,
    "unit_price_gross_eur": 275.0,
    "price_log_sd": 0.6,
-   "rationale": "Labour is an ancillary charge to uncovered facade work, excluded under 3.5(c) and 7.1.11."
+   "rationale": "Labour is an ancillary charge to excluded facade work, not covered under 3.5(c) and 7.1.11."
   },
   {
    "item_id": "16",
    "description": "Flat rate",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.02,
+   "covered_prob": 0.01,
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.7,
-   "rationale": "Lump sum on excluded facade work, excluded under 3.5(c) and 7.1.8(b)."
+   "rationale": "Lump sum attached to excluded facade work, excluded under 3.5(c) and 7.1.8(b)."
   }
  ],
  "quotes": {
   "1": [
-   36.64,
+   34.84,
    30.9
   ],
   "2": [
-   16.49,
+   15.68,
    13.46
   ],
   "3": [
-   195.75,
-   188.12
+   187.05,
+   181.02
   ],
   "4": [
-   18.65,
+   18.14,
    12.33
   ],
   "5": [
-   32.06,
+   30.49,
    22.65
   ],
   "6": [
-   113.1,
-   102.4
+   104.53,
+   91.74
   ],
   "7": [
    159.04,
@@ -228,7 +228,7 @@
    0.0
   ],
   "11": [
-   106.03,
+   95.43,
    0.0
   ],
   "12": [

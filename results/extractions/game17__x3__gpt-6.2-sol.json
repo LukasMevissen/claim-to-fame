@@ -1,0 +1,172 @@
+{
+  "case_id": "game17",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Surge-damaged TV",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 595.0,
+      "price_log_sd": 0.17,
+      "rationale": "Sections 2.3.3 and 7.1.9 cover a like-for-like replacement for the confirmed surge damage. Half of the estimated €1,190 gross replacement cost is €595; the shared €5,000 appliance limit does not bind."
+    },
+    {
+      "item_id": "2",
+      "description": "Surge-damaged speaker system",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 2.3.3 and 7.1.9 limit payment to the damaged speaker equipment at its pre-loss specification. The missing surge protection halves the estimated €900 gross replacement cost to €450."
+    },
+    {
+      "item_id": "3",
+      "description": "Surge-damaged AV receiver",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 325.0,
+      "price_log_sd": 0.33,
+      "rationale": "The receiver has confirmed physical damage and qualifies separately under sections 2.3.3 and 4.2.4. An equivalent receiver at an estimated €650 gross yields €325 after the 50% reduction."
+    },
+    {
+      "item_id": "4",
+      "description": "Melted mains plug and power lead",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.36,
+      "rationale": "The plug and lead are physically damaged accessories, not undamaged items replaced for convenience. Section 2.3.3 halves their estimated €24 gross like-for-like replacement cost to €12."
+    },
+    {
+      "item_id": "5",
+      "description": "HDMI cables and remotes",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.02,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.45,
+      "rationale": "No physical damage is established, and sections 4.2.4 and 7.1.5–7.1.6 do not cover undamaged accessories merely because they belong to the same setup. If all three pieces were shown to be damaged, an estimated €90 gross replacement cost would be halved to €45."
+    },
+    {
+      "item_id": "6",
+      "description": "Wall-mount bracket",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.4,
+      "rationale": "No physical damage to the bracket is established, so sections 4.3(d) and 7.1.5 exclude replacing it alongside the TV. If it qualified as a damaged TV accessory, half of an estimated €60 gross equivalent would be €30."
+    },
+    {
+      "item_id": "7",
+      "description": "Pre-existing DVD player failure",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 2.3.10(c) excludes age-related or internal failure without evidence that the surge damaged the player. If separate surge damage were established, half of an estimated €70 gross equivalent would be €35."
+    },
+    {
+      "item_id": "8",
+      "description": "Router without damage evidence",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.03,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 4.2.4 and 7.1.10 require evidence of physical surge damage, which is not supplied for the router. If that damage were established, half of an estimated €140 gross equivalent would be €70."
+    },
+    {
+      "item_id": "9",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 7.1.8(b) and 5.2.2 exclude delivery of replacement equipment. The conditional gross estimate for the delivery line is €25."
+    },
+    {
+      "item_id": "10",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 85.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 7.1.8(c) excludes installing and setting up replacement equipment. The conditional gross estimate for a basic setup is €85."
+    },
+    {
+      "item_id": "11",
+      "description": "Diagnostic inspection and surge report",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.02,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 140.0,
+      "price_log_sd": 0.4,
+      "rationale": "The two inspections document the failure rather than repair it, and section 5.1 does not separately cover this expense. If both were shown to be necessary steps in a covered repair, the gross estimate would be €140 in total."
+    },
+    {
+      "item_id": "12",
+      "description": "Return-visit vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 7.1.8(d) requires attendance tied to indemnifiable work on the same invoice, and no covered repair is identified for the return visit. If it qualified as a distinct repair attendance, the gross estimate would be €45."
+    },
+    {
+      "item_id": "13",
+      "description": "Distribution-board wiring safety check",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 85.0,
+      "price_log_sd": 0.4,
+      "rationale": "Sections 3.5 and 7.1.5 exclude a standalone safety check where no physical damage to the distribution board was established. If the check were necessary to make good proven damage, its gross estimate would be €85."
+    },
+    {
+      "item_id": "14",
+      "description": "Administrative and claim-processing fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.45,
+      "rationale": "Section 7.1.8(e) excludes separate administrative and documentation charges. The conditional gross estimate for this fee is €20."
+    },
+    {
+      "item_id": "15",
+      "description": "Initial vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.38,
+      "rationale": "Section 7.1.8(d) excludes attendance on an invoice with no indemnifiable work; the covered replacements on the separate retail invoice do not qualify this charge. If the attendance qualified, one trip is estimated at €50 gross."
+    }
+  ]
+}

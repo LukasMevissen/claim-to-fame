@@ -4,38 +4,38 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 14.5,
+ "secs": 9.6,
  "served_by": "claude-fable-5-2",
  "input_tokens": 15571,
- "output_tokens": 361,
+ "output_tokens": 362,
  "items": [
   {
    "item_id": "1",
-   "description": "Surge-damaged speaker system and TV set (replacement supply)",
+   "description": "Surge-damaged speaker system and TV set (replacement)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.88,
+   "covered_prob": 0.9,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 1250.0,
-   "price_log_sd": 0.5,
-   "rationale": "Covered under 2.3.3 as lightning overvoltage on appliances; sub-limit EUR 5,000 aggregate; no surge protector established, so 50% reduction after 7.1.9 standard-grade pricing. Estimated standard TV plus speaker system about EUR 2,400, halved to about 1,200; max 2,500."
+   "unit_price_gross_eur": 1400.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 2.3.3 as appliances damaged by lightning overvoltage; standard-grade replacement per 7.1.9, capped at EUR 5,000 sub-limit, then halved because no surge protection device was used (2.3.3). Estimated standard value ~2,500-3,000 for both, halved to ~1,400; maximum 2,500."
   },
   {
    "item_id": "2",
    "description": "Diagnostic surge-failure report and technician call-out",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.15,
+   "covered_prob": 0.12,
    "related_prob": 1.0,
    "unit_price_gross_eur": 150.0,
    "price_log_sd": 0.6,
-   "rationale": "Diagnostic report/documentation and call-out are not repair costs (7.1.8(d),(e)); wiring safety check on undamaged installation falls under 7.1.5; predominant purpose not indemnifiable under 7.1.10. If paid, halved."
+   "rationale": "Diagnostic/documentation and call-out charges are not repair costs (7.1.8(d), 7.1.8(e)); attendance not tied to itemised indemnifiable repair work, predominant purpose non-indemnifiable under 7.1.10."
   }
  ],
  "quotes": {
   "1": [
-   1165.85,
-   881.51
+   1219.54,
+   1047.01
   ],
   "2": [
    137.96,

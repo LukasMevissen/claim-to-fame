@@ -4,21 +4,21 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 10.4,
+ "secs": 6.6,
  "served_by": "claude-fable-5-2",
  "input_tokens": 16971,
- "output_tokens": 312,
+ "output_tokens": 333,
  "items": [
   {
    "item_id": "1",
    "description": "Disposal of storm debris (roof timber, glass pane, green waste, root ball <1 m3)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.88,
+   "covered_prob": 0.85,
    "related_prob": 1.0,
    "unit_price_gross_eur": 185.0,
-   "price_log_sd": 0.35,
-   "rationale": "All elements are material arising under 5.2.1(a)-(b) (root mass single, under 1 m3), so the combined position passes 7.1.10. Priced from reference: about 60+32+55+40 for the four components."
+   "price_log_sd": 0.3,
+   "rationale": "Combined position, but every element is material arising under 5.2.1(a)-(b) (root mass under 1 m3), so 7.1.10 is satisfied. Priced from reference case levels: approx. 60 + 32 + 55 + 40."
   },
   {
    "item_id": "2",
@@ -29,13 +29,13 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 120.0,
    "price_log_sd": 0.6,
-   "rationale": "Ground material is excluded under 4.3(d) and 5.2.1(d); 5.2.2 not met as it is stand-alone clearance with no reinstatement or making good. Not indemnified."
+   "rationale": "Ground material is excluded from clearance by 5.2.1(d) and 4.3(d); it is a standalone disposal with no reinstatement or making good, so 5.2.2 is not met. Reference case showed 0 for the same items."
   }
  ],
  "quotes": {
   "1": [
    160.95,
-   144.88
+   146.1
   ],
   "2": [
    110.37,

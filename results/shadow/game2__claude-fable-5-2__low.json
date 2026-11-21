@@ -4,21 +4,21 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 12.2,
+ "secs": 10.3,
  "served_by": "claude-fable-5-2",
  "input_tokens": 26942,
- "output_tokens": 570,
+ "output_tokens": 541,
  "items": [
   {
    "item_id": "1",
-   "description": "Laptop screen crack repair (display assembly)",
+   "description": "Laptop screen crack repair (complete display assembly)",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.93,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 800.0,
+   "unit_price_gross_eur": 850.0,
    "price_log_sd": 0.3,
-   "rationale": "Covered under 2.6.2/2.6.3(a): swerve in a conveyance, screen breakage. Purchase price about EUR 1,400; both repairs together stay below new price, so repair is economic (7.1.10). Display takes most of the cost, estimated around EUR 800."
+   "rationale": "Covered under 2.6.2/2.6.3(a): thrown against car door by a swerve. Purchase price about EUR 1,400; both repairs together stay below replacement, so 7.1.10 cap is not triggered. Display is the major share, about EUR 850."
   },
   {
    "item_id": "2",
@@ -29,7 +29,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 380.0,
    "price_log_sd": 0.4,
-   "rationale": "Covered under 2.6.3(b): housing deformation at a corner from the same event, whether or not operation is impaired. Lower shell plus labour estimated at about EUR 380; combined with line 1 still below new price."
+   "rationale": "Enclosure damage from the same event is covered under 2.6.3(b) as one loss on one unit. Lower housing shell swap including labour estimated at about EUR 380, combined total below replacement value."
   },
   {
    "item_id": "3",
@@ -40,7 +40,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.6,
-   "rationale": "Excluded by 7.1.11 and 2.6.5(b): treating a pre-existing surface condition is not a repair cost, even on the same invoice."
+   "rationale": "Pre-existing surface condition; 7.1.11 and 7.1.8(a) state that treating it is not a repair cost, so excluded."
   },
   {
    "item_id": "4",
@@ -51,13 +51,13 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 70.0,
    "price_log_sd": 0.45,
-   "rationale": "Covered under 5.2.3 as examination cost after an insured event under 2.6, capped at EUR 250 incl. VAT. Ordinary diagnostic fee is about EUR 70, well under the cap."
+   "rationale": "Examination cost admitted under 5.2.3 as an insured event exists; capped at EUR 250 gross. Typical diagnostic fee about EUR 70."
   }
  ],
  "quotes": {
   "1": [
-   696.0,
-   673.55
+   739.5,
+   715.65
   ],
   "2": [
    330.6,
@@ -68,7 +68,7 @@
    0.0
   ],
   "4": [
-   64.11,
+   60.98,
    51.12
   ]
  }

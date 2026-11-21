@@ -4,28 +4,28 @@
  "model": "claude-opus-5-5",
  "effort": "low",
  "ok": true,
- "secs": 11.2,
+ "secs": 12.5,
  "served_by": "claude-opus-5-5",
  "input_tokens": 16068,
- "output_tokens": 697,
+ "output_tokens": 716,
  "items": [
   {
    "item_id": "1",
-   "description": "Disposal shed roof timber",
-   "quantity": 1.0,
-   "unit": "",
-   "covered_prob": 0.92,
-   "related_prob": 1.0,
-   "unit_price_gross_eur": 120.0,
-   "price_log_sd": 0.4,
-   "rationale": "Remains of insured site installation destroyed by storm; 5.2.1(a) clearance covered."
-  },
-  {
-   "item_id": "2",
-   "description": "Disposal broken glass pane",
+   "description": "Disposal of shed roof timber",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Remains of insured site installation destroyed by storm; clearance 5.2.1(a)."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.45,
@@ -33,87 +33,87 @@
   },
   {
    "item_id": "3",
-   "description": "Disposal green waste from tree",
+   "description": "Disposal of green waste from felled tree",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.9,
+   "covered_prob": 0.88,
    "related_prob": 1.0,
    "unit_price_gross_eur": 150.0,
-   "price_log_sd": 0.4,
-   "rationale": "Vegetal material felled by storm onto site counts as material arising under 5.2.1(b)."
+   "price_log_sd": 0.45,
+   "rationale": "Vegetal material felled by storm counts as material arising, 5.2.1(b)."
   },
   {
    "item_id": "4",
-   "description": "Disposal root ball <1 m3",
+   "description": "Disposal of root ball under 1 m³",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.85,
+   "covered_prob": 0.82,
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.45,
-   "rationale": "Single root mass not exceeding 1 m3 is material arising under 5.2.1(b)."
+   "rationale": "Single root mass not exceeding 1 m³ is material arising under 5.2.1(b)."
   },
   {
    "item_id": "5",
-   "description": "Disposal sieved topsoil",
+   "description": "Disposal of sieved topsoil",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.05,
    "related_prob": 1.0,
    "unit_price_gross_eur": 80.0,
    "price_log_sd": 0.5,
-   "rationale": "Ground material excluded from clearance 5.2.1(d); standalone disposal without reinstatement/making good not covered under 5.2.2."
+   "rationale": "Ground material excluded from clearance 5.2.1(d); standalone disposal without reinstatement/making good not covered 5.2.2."
   },
   {
    "item_id": "6",
-   "description": "Disposal paving grit",
+   "description": "Disposal of displaced paving grit",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.05,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 50.0,
+   "unit_price_gross_eur": 60.0,
    "price_log_sd": 0.5,
-   "rationale": "Paving grit is ground material (1.3); excluded 5.2.1(d), no making good under 5.2.2."
+   "rationale": "Paving grit is ground material (1.3); standalone disposal excluded 5.2.1(d)/5.2.2."
   },
   {
    "item_id": "7",
-   "description": "Disposal excavated soil",
+   "description": "Disposal of excavated soil",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.05,
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.5,
-   "rationale": "Ground material; standalone disposal not indemnified 5.2.2."
+   "rationale": "Ground material, no reinstatement/making good; excluded 5.2.1(d), 5.2.2."
   }
  ],
  "quotes": {
   "1": [
    104.4,
-   94.52
+   92.69
   ],
   "2": [
-   36.64,
-   29.91
+   34.84,
+   29.21
   ],
   "3": [
-   130.5,
-   115.86
+   130.66,
+   109.54
   ],
   "4": [
-   82.43,
-   63.16
+   78.4,
+   60.32
   ],
   "5": [
-   74.61,
+   72.56,
    0.0
   ],
   "6": [
-   46.63,
+   54.42,
    0.0
   ],
   "7": [
-   83.94,
+   81.63,
    0.0
   ]
  }

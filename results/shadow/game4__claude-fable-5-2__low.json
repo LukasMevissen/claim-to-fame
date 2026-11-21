@@ -4,10 +4,10 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 10.3,
+ "secs": 9.0,
  "served_by": "claude-fable-5-2",
  "input_tokens": 16499,
- "output_tokens": 470,
+ "output_tokens": 538,
  "items": [
   {
    "item_id": "1",
@@ -16,45 +16,45 @@
    "unit": "",
    "covered_prob": 0.9,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 195.0,
+   "unit_price_gross_eur": 220.0,
    "price_log_sd": 0.35,
-   "rationale": "Covered under 5.2.2(a),(b), but bike is unscheduled so 4.2.2 mobility sub-limit of EUR 500 applies in aggregate, shared rateably. Est. fair value ~450 of ~1150 total gives about 195."
+   "rationale": "Covered under 5.2.2(a),(b),(d), but the bike is mobility equipment (4.2.2) with no scheduled value, so the EUR 500 aggregate sub-limit applies rateably. Assumed fair price approx. 450 of approx. 1,000 total indemnifiable, giving approx. 500 x 0.45 = 225."
   },
   {
    "item_id": "2",
    "description": "Repair of theft damage to frame and brakes (2 pcs)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.9,
+   "covered_prob": 0.88,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 220.0,
-   "price_log_sd": 0.35,
-   "rationale": "Repair cost under 2.3.1(b) and 7.1.1(b), within mobility class; rateable share of EUR 500 sub-limit. Est. fair ~500 of ~1150 gives about 220."
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.4,
+   "rationale": "Repair cost under 2.3.1(b) and 7.1.1(b), within the same EUR 500 class sub-limit shared rateably. Assumed fair price approx. 400 of approx. 1,000 total, giving approx. 200."
   },
   {
    "item_id": "3",
-   "description": "Labour and sundries flat rate",
+   "description": "Labour and sundries (flat rate)",
    "quantity": 1.0,
    "unit": "",
    "covered_prob": 0.8,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 85.0,
-   "price_log_sd": 0.45,
-   "rationale": "Labour and sundries follow the covered work under 7.1.7(d),(e) and 5.2.2(b); rateable share of sub-limit. Est. fair ~200 of ~1150 gives about 85."
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour and sundries follow the covered repair and recovery work (7.1.7(d),(e), 5.2.2(b)), so indemnifiable but within the rateable sub-limit. Assumed fair price approx. 150 of approx. 1,000 total, giving approx. 75-80."
   }
  ],
  "quotes": {
   "1": [
-   169.65,
-   155.56
-  ],
-  "2": [
    191.4,
    175.5
   ],
+  "2": [
+   174.0,
+   151.25
+  ],
   "3": [
-   77.85,
-   55.0
+   72.56,
+   49.32
   ]
  }
 }

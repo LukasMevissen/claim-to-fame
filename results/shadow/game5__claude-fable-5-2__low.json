@@ -4,27 +4,27 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 8.3,
+ "secs": 5.5,
  "served_by": "claude-fable-5-2",
  "input_tokens": 25676,
- "output_tokens": 233,
+ "output_tokens": 213,
  "items": [
   {
    "item_id": "1",
-   "description": "Laptop damage payment - cracked screen and lower-right corner impact damage",
+   "description": "Laptop damage payment - cracked screen and lower-right corner damage",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.93,
+   "covered_prob": 0.9,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 1380.0,
-   "price_log_sd": 0.12,
-   "rationale": "Covered under 2.6.1/2.6.2 (thrown against fixed interior part of conveyance during evasive manoeuvre); both damage areas are one loss on one unit (2.6.3). Repair cost of screen plus corner housing approx. EUR 1,150-1,400, capped under 7.1.10 at the acquisition price of an equivalent new unit, EUR 1,400; no deductible or sub-limit stated."
+   "unit_price_gross_eur": 1250.0,
+   "price_log_sd": 0.15,
+   "rationale": "Covered under 2.6.1/2.6.2 (thrown against fixed interior of conveyance during evasive turn); both damage areas are one loss per 2.6.3. Repair cost (screen ~800 + corner ~350) capped under 7.1.10 at the acquisition price of an equivalent new unit, EUR 1,400; no deductible or sub-limit stated."
   }
  ],
  "quotes": {
   "1": [
-   1200.6,
-   1230.46
+   1087.5,
+   1098.58
   ]
  }
 }

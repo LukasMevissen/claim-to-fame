@@ -4,32 +4,32 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 13.9,
+ "secs": 13.6,
  "served_by": "claude-fable-5-2",
  "input_tokens": 16068,
- "output_tokens": 788,
+ "output_tokens": 795,
  "items": [
   {
    "item_id": "1",
    "description": "Disposal of shed roof timber",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.92,
+   "covered_prob": 0.93,
    "related_prob": 1.0,
    "unit_price_gross_eur": 160.0,
    "price_log_sd": 0.45,
-   "rationale": "Remains of insured site installation, material arising under 5.2.1(a); fair disposal price for timber load."
+   "rationale": "Remains of insured site installation, 5.2.1(a); covered at ordinary disposal price."
   },
   {
    "item_id": "2",
    "description": "Disposal of broken glass pane",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.9,
+   "covered_prob": 0.92,
    "related_prob": 1.0,
    "unit_price_gross_eur": 45.0,
    "price_log_sd": 0.5,
-   "rationale": "Glass pane is a building component of the shed; remains covered under 5.2.1(a); small disposal charge."
+   "rationale": "Glazing is a building component of the shed (4.2.2); remains under 5.2.1(a). Small disposal charge."
   },
   {
    "item_id": "3",
@@ -40,18 +40,18 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 190.0,
    "price_log_sd": 0.45,
-   "rationale": "Storm-felled vegetal material is material arising under 5.2.1(b) and 2.5.3(c); ordinary green waste disposal price."
+   "rationale": "Storm-felled vegetal material is material arising under 5.2.1(b) and 2.5.3(c); covered."
   },
   {
    "item_id": "4",
-   "description": "Disposal of tree root ball under 1 m3",
+   "description": "Disposal of root ball under 1 m3",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.85,
+   "covered_prob": 0.87,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 120.0,
-   "price_log_sd": 0.5,
-   "rationale": "Single root mass not exceeding one cubic metre counts as material arising under 5.2.1(b); covered."
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.45,
+   "rationale": "Root mass of felled tree, single mass not exceeding one cubic metre, counts as material arising under 5.2.1(b)."
   },
   {
    "item_id": "5",
@@ -60,9 +60,9 @@
    "unit": "",
    "covered_prob": 0.05,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 110.0,
-   "price_log_sd": 0.6,
-   "rationale": "Ground material however processed is excluded under 5.2.1(d) and 4.3(d); no reinstatement ground works or making good, so 5.2.2 not met."
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Ground material however processed is excluded by 5.2.1(d); 5.2.2 not met as no reinstatement-related ground work or making good, standalone clearance."
   },
   {
    "item_id": "6",
@@ -72,8 +72,8 @@
    "covered_prob": 0.06,
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
-   "price_log_sd": 0.6,
-   "rationale": "Paving grit is ground material; standalone disposal without making good is not indemnified under 5.2.1(d)/5.2.2."
+   "price_log_sd": 0.5,
+   "rationale": "Paving grit is ground material (1.3), excluded under 4.3(d) and 5.2.1(d); the 5.2.2 conditions not met as ground not made good."
   },
   {
    "item_id": "7",
@@ -82,38 +82,38 @@
    "unit": "",
    "covered_prob": 0.05,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 130.0,
-   "price_log_sd": 0.6,
-   "rationale": "Excavated soil is ground material; clearance standing on its own, no foundation or reinstatement work, excluded under 5.2.2 last paragraph."
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.5,
+   "rationale": "Excavated soil is ground material; standalone disposal without reinstatement is not indemnified under 5.2.1(d) and 5.2.2."
   }
  ],
  "quotes": {
   "1": [
-   146.55,
-   122.32
+   139.38,
+   123.61
   ],
   "2": [
-   41.97,
-   32.58
+   40.82,
+   33.39
   ],
   "3": [
-   174.03,
+   165.51,
    145.26
   ],
   "4": [
-   111.92,
-   80.97
+   95.82,
+   79.32
   ],
   "5": [
-   101.17,
+   108.84,
    0.0
   ],
   "6": [
-   82.78,
+   81.63,
    0.0
   ],
   "7": [
-   119.57,
+   126.98,
    0.0
   ]
  }

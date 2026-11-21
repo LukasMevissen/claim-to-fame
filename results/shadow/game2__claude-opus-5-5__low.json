@@ -4,32 +4,32 @@
  "model": "claude-opus-5-5",
  "effort": "low",
  "ok": true,
- "secs": 10.4,
+ "secs": 9.2,
  "served_by": "claude-opus-5-5",
  "input_tokens": 26942,
- "output_tokens": 487,
+ "output_tokens": 540,
  "items": [
   {
    "item_id": "1",
-   "description": "Laptop screen crack repair (display assembly)",
+   "description": "Laptop screen crack repair (full display assembly)",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.9,
+   "covered_prob": 0.85,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 950.0,
-   "price_log_sd": 0.3,
-   "rationale": "Insured under 2.6.1/2.6.2 (thrown against car door during swerve); 2.6.3(a) covers screen. Full display assembly for 14in aluminium notebook, repair total near 1,400 but below new price; no deductible stated."
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sudden external action in a conveyance (2.6.2) is covered; display breakage per 2.6.3(a). Repair is below the ~EUR 1,500 replacement value, so the ordinary display-assembly price applies. Deductible unknown."
   },
   {
    "item_id": "2",
    "description": "Lower-right corner / housing shell repair",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.88,
+   "covered_prob": 0.85,
    "related_prob": 1.0,
    "unit_price_gross_eur": 380.0,
    "price_log_sd": 0.35,
-   "rationale": "2.6.3(b) covers corner deformation of enclosure, same event, one loss. Lower housing shell replacement at market price."
+   "rationale": "Housing deformation at a corner is covered under 2.6.3(b) as part of the same loss; priced as an ordinary lower shell swap. Combined with line 1 it stays under the replacement value."
   },
   {
    "item_id": "3",
@@ -40,36 +40,36 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.5,
-   "rationale": "7.1.11: treating pre-existing surface condition is not a repair cost; excluded."
+   "rationale": "Treatment of a pre-existing surface condition is not a repair cost under 7.1.11 and 7.1.8(a), so the line is excluded."
   },
   {
    "item_id": "4",
    "description": "Diagnostic inspection",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.85,
+   "covered_prob": 0.8,
    "related_prob": 1.0,
-   "unit_price_gross_eur": 70.0,
+   "unit_price_gross_eur": 60.0,
    "price_log_sd": 0.4,
-   "rationale": "5.2.3 examination cost covered for insured event, capped EUR 250 incl. VAT; ordinary diagnostic fee."
+   "rationale": "Examination costs are covered under 5.2.3, capped at EUR 250 incl. VAT; a typical shop diagnostic charge is expected to fall well below that cap."
   }
  ],
  "quotes": {
   "1": [
-   826.5,
-   782.72
+   739.5,
+   645.38
   ],
   "2": [
    330.6,
-   297.58
+   288.52
   ],
   "3": [
-   37.31,
+   36.28,
    0.0
   ],
   "4": [
-   60.9,
-   51.1
+   52.2,
+   40.75
   ]
  }
 }

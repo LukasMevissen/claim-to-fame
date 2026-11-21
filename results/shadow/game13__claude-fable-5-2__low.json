@@ -4,10 +4,10 @@
  "model": "claude-fable-5-2",
  "effort": "low",
  "ok": true,
- "secs": 11.6,
+ "secs": 11.7,
  "served_by": "claude-fable-5-2",
  "input_tokens": 18418,
- "output_tokens": 523,
+ "output_tokens": 524,
  "items": [
   {
    "item_id": "1",
@@ -18,7 +18,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.3,
-   "rationale": "Remains of insured property, material arising under 5.2.1(a); both elements indemnifiable so the combined line stands. References: glass 30-34, timber below 75."
+   "rationale": "Remains of insured property, material arising under 5.2.1(a); both elements indemnifiable so the combined line is fine. Reference prices: timber below 75, glass about 32, giving roughly 90."
   },
   {
    "item_id": "2",
@@ -29,7 +29,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 150.0,
    "price_log_sd": 0.6,
-   "rationale": "Combined position mixing indemnifiable green waste with root mass over 1 m3 (5.2.1(e)) and ground material (5.2.1(d)); under 7.1.10 the whole line is not indemnified."
+   "rationale": "Combined position mixing indemnifiable green waste with a root mass over 1 m3 (5.2.1(e)) and ground material (5.2.1(d)); 7.1.10 declines the whole line."
   },
   {
    "item_id": "3",
@@ -40,7 +40,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.6,
-   "rationale": "Ground material under 5.2.1(d); no reinstatement ground works and ground not made good, so 5.2.2 is not met. Standalone disposal is not indemnified."
+   "rationale": "Ground material under 5.2.1(d); standalone clearance without reinstatement or making good, so not indemnified under 5.2.2."
   },
   {
    "item_id": "4",
@@ -51,7 +51,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 40.0,
    "price_log_sd": 0.6,
-   "rationale": "Ground material however processed, 5.2.1(d); standalone clearance without reinstatement is excluded under 5.2.2."
+   "rationale": "Ground material however processed, 5.2.1(d); 5.2.2 conditions not met since no reinstatement ground works and ground not made good."
   }
  ],
  "quotes": {

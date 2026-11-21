@@ -7,7 +7,7 @@
  "secs": 8.6,
  "served_by": "claude-fable-5-2",
  "input_tokens": 25681,
- "output_tokens": 507,
+ "output_tokens": 509,
  "items": [
   {
    "item_id": "1",
@@ -18,7 +18,7 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 520.0,
    "price_log_sd": 0.4,
-   "rationale": "Escape of water from a hose under 2.4.2; cleaning of affected surfaces 7.1.7(h), source check 7.1.7(e) and skirting as building component 4.2.2/7.1.7(a) are all repair costs in the affected rooms. Fair market flat rate for a small job."
+   "rationale": "Escape of water from a hose under 2.4.2; cleaning of affected surfaces 7.1.7(h), source check 7.1.7(e) and skirting as building component 4.2.2/7.1.7(a) are all covered, so the combined line is indemnified at a fair market price."
   },
   {
    "item_id": "2",
@@ -29,18 +29,18 @@
    "related_prob": 1.0,
    "unit_price_gross_eur": 480.0,
    "price_log_sd": 0.4,
-   "rationale": "Covered under 7.1.7(b) and (e) (drying, moisture measurement, equipment hire) for the affected rooms; both rooms were wetted. Ordinary market price for a small drying job."
+   "rationale": "Moisture measurement, drying and equipment hire are covered under 7.1.7(b), (e) and (g) for the affected rooms; fair market price for a small drying job."
   },
   {
    "item_id": "3",
    "description": "Assessment and drying of framed decorative print",
    "quantity": 1.0,
    "unit": "",
-   "covered_prob": 0.1,
+   "covered_prob": 0.12,
    "related_prob": 1.0,
    "unit_price_gross_eur": 90.0,
    "price_log_sd": 0.6,
-   "rationale": "Household contents are excluded under 4.3(d); 5.2.6 applies only to individual items of particular value, and a mass-produced poster print in a pine frame from a furniture store is not one. If it were accepted, the cost would fall well below the EUR 1,000 net cap."
+   "rationale": "The print is a movable household contents item excluded under 4.3(d); 5.2.6 applies only to individual items of particular value, and a mass-produced poster in a pine frame from a furniture store is not one, so most likely nothing is paid. If it were accepted, the EUR 1,190 gross cap would not bite on a small charge."
   }
  ],
  "quotes": {
