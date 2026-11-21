@@ -1,0 +1,177 @@
+{
+ "game": 19,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 38.7,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged speaker system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 290.0,
+   "price_log_sd": 0.22,
+   "rationale": "The speaker system sustained covered physical surge damage under §§2.3.3 and 4.2.4. With no surge protection or waiver, the estimated €580 gross like-for-like cost is halved to €290; the €5,000 event cap does not bind and no deductible is specified."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium replacement TV",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 275.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.9 limits the valuation to an equivalent standard 55-inch LED TV, estimated at €550 gross, rather than the larger premium model purchased. Section 2.3.3 then halves that amount to €275 because the damaged TV was unprotected."
+  },
+  {
+   "item_id": "3",
+   "description": "HDMI cables and connectors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.35,
+   "rationale": "No physical damage to the cables or connectors is established, so §§7.1.5–7.1.6 do not cover replacing them with the TV. If both were shown to be damaged and otherwise covered, §2.3.3 would halve their estimated €30 gross replacement cost to €15."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "There is no evidence that the existing bracket was damaged or that it had to be removed and could not be refitted to complete a covered repair. Sections 7.1.5–7.1.7 therefore provide no payment for a new bracket."
+  },
+  {
+   "item_id": "5",
+   "description": "Remote control",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.35,
+   "rationale": "The remote is not shown to have sustained physical damage, and §§7.1.5–7.1.6 do not cover it merely because the TV failed. If it were separately proven damaged and otherwise covered, §2.3.3 would halve its estimated €28 gross replacement cost to €14."
+  },
+  {
+   "item_id": "6",
+   "description": "Unplugged games console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "The console was unplugged and did not sustain surge damage, so §§4.2.4 and 7.1.5 exclude its replacement in full."
+  },
+  {
+   "item_id": "7",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 5.2.2 and 7.1.8(b) expressly exclude delivery of replacement property, even when the replacement itself is covered."
+  },
+  {
+   "item_id": "8",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.8(c) excludes fitting and setting up replacement equipment, even if the damaged equipment was previously installed."
+  },
+  {
+   "item_id": "9",
+   "description": "Diagnostic inspections and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "The two inspections and report establish the cause of loss rather than repair the appliances, and §5.1 does not list them as insured costs. The building-services arrangement described in §11.2 also falls outside cover under §§3.1.4–3.1.5 and 7.1.8(f)."
+  },
+  {
+   "item_id": "10",
+   "description": "Distribution-board safety check",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "No physical damage to the distribution board was established. Under §§3.5 and 7.1.5, checking that it is safe is not a covered repair."
+  },
+  {
+   "item_id": "11",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.8(d) allows attendance charges only when the same invoice includes covered work. Neither the diagnostics nor the wiring check qualifies, so the vehicle charge is excluded in full."
+  }
+ ],
+ "quotes": {
+  "1": [
+   252.3,
+   262.7
+  ],
+  "2": [
+   239.25,
+   245.78
+  ],
+  "3": [
+   13.05,
+   0.0
+  ],
+  "4": [
+   0.87,
+   0.0
+  ],
+  "5": [
+   12.18,
+   0.0
+  ],
+  "6": [
+   0.87,
+   0.0
+  ],
+  "7": [
+   0.87,
+   0.0
+  ],
+  "8": [
+   0.87,
+   0.0
+  ],
+  "9": [
+   0.87,
+   0.0
+  ],
+  "10": [
+   0.87,
+   0.0
+  ],
+  "11": [
+   0.87,
+   0.0
+  ]
+ }
+}

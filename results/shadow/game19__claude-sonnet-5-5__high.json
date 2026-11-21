@@ -1,0 +1,180 @@
+{
+ "game": 19,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 18.8,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 24217,
+ "output_tokens": 1306,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.35,
+   "rationale": "Surge damage is covered under 2.3.3 and the speakers were physically damaged. The 50% reduction under 2.3.3 applies because nothing was on a surge protector and no waiver endorsement exists. Earlier cases with no protection put speakers at about 250-525 before the reduction, so I take roughly 300 as the half-payment figure."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium replacement TV (larger, higher-end)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.3,
+   "rationale": "The TV was damaged and is covered, but 7.1.9 caps indemnity at a standard equivalent to the 4-year-old 55-inch LED, roughly 520-600. The 50% reduction for no surge protection applies, giving about 280."
+  },
+  {
+   "item_id": "3",
+   "description": "HDMI cables and connectors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "The cables were not shown to be physically damaged (4.2.4, 7.1.5). Reference cases put similar lines near zero."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "No physical damage is established to the bracket, so it is not an affected item under 7.1.5. Reference cases put it at or near zero."
+  },
+  {
+   "item_id": "5",
+   "description": "Remote control",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "No damage is shown to the remote, so it is not an affected item under 4.2.4 and 7.1.5."
+  },
+  {
+   "item_id": "6",
+   "description": "Games console (off and unplugged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "The console was switched off and unplugged, so it was not affected by the surge. 4.2.4 and 7.1.5 exclude it."
+  },
+  {
+   "item_id": "7",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "7.1.8(b) excludes carriage and delivery charges for replacement property."
+  },
+  {
+   "item_id": "8",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "7.1.8(c) excludes fitting and installing replacement property."
+  },
+  {
+   "item_id": "9",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.6,
+   "rationale": "This is the contractor's own diagnostic and documentation work (7.1.8(e)) and relates to the service/liability arrangement in 11.2 (7.1.8(f)). It is not a repair cost."
+  },
+  {
+   "item_id": "10",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.6,
+   "rationale": "The check is on unaffected building wiring (7.1.5) and is a general inspection, not a repair cost (7.1.8(a))."
+  },
+  {
+   "item_id": "11",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.8(d), the attendance charge follows the invoice work, and none of this invoice's work is indemnifiable. The charge is therefore not payable."
+  }
+ ],
+ "quotes": {
+  "1": [
+   261.0,
+   245.44
+  ],
+  "2": [
+   243.6,
+   235.74
+  ],
+  "3": [
+   9.07,
+   0.0
+  ],
+  "4": [
+   9.07,
+   0.0
+  ],
+  "5": [
+   7.26,
+   0.0
+  ],
+  "6": [
+   136.06,
+   0.0
+  ],
+  "7": [
+   4.54,
+   0.0
+  ],
+  "8": [
+   7.26,
+   0.0
+  ],
+  "9": [
+   18.4,
+   0.0
+  ],
+  "10": [
+   22.99,
+   0.0
+  ],
+  "11": [
+   7.26,
+   0.0
+  ]
+ }
+}

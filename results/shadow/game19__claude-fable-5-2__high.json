@@ -1,0 +1,180 @@
+{
+ "game": 19,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 27.2,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 24217,
+ "output_tokens": 1956,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.25,
+   "rationale": "Covered under 2.3.3 as a surge-damaged appliance; no surge protector was fitted, so indemnity is halved. Reference cases put the halved speaker at about 250-315."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium replacement TV (larger, higher-end)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.4,
+   "rationale": "The TV was damaged and is covered, but 7.1.9 limits it to a standard 55-inch LED equivalent (about 650-700), then 2.3.3 halves it for the missing surge protector."
+  },
+  {
+   "item_id": "3",
+   "description": "HDMI cables and connectors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.6,
+   "rationale": "No physical damage to the cables is established (4.2.4, 7.1.5); the reference case gave near zero. If paid, it would be a low halved amount."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.6,
+   "rationale": "A passive bracket cannot be surge damaged, so it is not an affected item under 4.2.4 and 7.1.5; the reference case gave near zero."
+  },
+  {
+   "item_id": "5",
+   "description": "Remote control",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "A battery-powered remote is not connected to the mains and no damage is established (4.2.4); at most it is an accessory of the TV at a halved amount."
+  },
+  {
+   "item_id": "6",
+   "description": "Games console (unplugged at the time)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.7,
+   "rationale": "The console was switched off and unplugged in a cupboard, so the surge did not affect it; excluded under 4.2.4, 4.3(d) and 7.1.5."
+  },
+  {
+   "item_id": "7",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Delivery of replacement property is expressly not a repair cost under 7.1.8(b)."
+  },
+  {
+   "item_id": "8",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.7,
+   "rationale": "Fitting and setting up replacement property is excluded under 7.1.8(c)."
+  },
+  {
+   "item_id": "9",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.7,
+   "rationale": "Under 11.2 this invoice relates to a service and liability arrangement, excluded by 3.1.4, 3.1.5 and 7.1.8(e)/(f); the reference cases gave near zero."
+  },
+  {
+   "item_id": "10",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.7,
+   "rationale": "An inspection of undamaged wiring is not a repair cost (7.1.5, 7.1.8(a)/(f), 3.1.5); the reference case gave near zero."
+  },
+  {
+   "item_id": "11",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "An attendance charge on an invoice with no indemnifiable work is itself not indemnifiable under 7.1.8(d)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   247.95,
+   246.93
+  ],
+  "2": [
+   304.5,
+   270.34
+  ],
+  "3": [
+   11.04,
+   0.0
+  ],
+  "4": [
+   11.04,
+   0.0
+  ],
+  "5": [
+   9.2,
+   0.0
+  ],
+  "6": [
+   159.04,
+   0.0
+  ],
+  "7": [
+   10.6,
+   0.0
+  ],
+  "8": [
+   26.51,
+   0.0
+  ],
+  "9": [
+   42.41,
+   0.0
+  ],
+  "10": [
+   26.51,
+   0.0
+  ],
+  "11": [
+   10.6,
+   0.0
+  ]
+ }
+}

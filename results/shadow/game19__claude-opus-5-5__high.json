@@ -1,0 +1,180 @@
+{
+ "game": 19,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 26.0,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 24217,
+ "output_tokens": 1826,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 330.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 2.3.3 lightning overvoltage within the EUR 5,000 sub-limit. It was plugged in without a surge protector, so the indemnity is halved (about 660 × 50%)."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium replacement TV (larger, higher-end)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.35,
+   "rationale": "Under 7.1.9 the indemnity is limited to an equivalent standard 55-inch mainstream LED TV (about 750). That is then halved under 2.3.3 for the missing surge protection."
+  },
+  {
+   "item_id": "3",
+   "description": "HDMI cables and connectors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "No physical damage was established, so these are not affected items (4.2.4, 7.1.5, 7.1.6). Not indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Not surge damaged and not an affected appliance (7.1.5); a new bracket for a larger TV would also be an improvement. Not indemnified."
+  },
+  {
+   "item_id": "5",
+   "description": "Remote control",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "No surge damage was established, and the matched-set rule in 7.1.6 excludes undamaged accessories. Not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Games console (unplugged at the time)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.6,
+   "rationale": "It was unplugged and switched off, so not affected by the insured event (4.2.4, 4.3(d)). Not indemnified."
+  },
+  {
+   "item_id": "7",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Delivery of replacement property is excluded under 7.1.8(b)."
+  },
+  {
+   "item_id": "8",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Fitting or installing replacement property is excluded under 7.1.8(c)."
+  },
+  {
+   "item_id": "9",
+   "description": "Diagnostic inspection and surge report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "This invoice relates to a property/liability service arrangement and order placement (11.2), excluded under 3.1.4, 3.1.5 and 7.1.8(e)(f). Not indemnified."
+  },
+  {
+   "item_id": "10",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is an inspection or service check, not a repair cost (3.1.5, 7.1.8(a)(f)). Not indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.8(d) an attendance charge is not indemnifiable when the other work on the same invoice is not indemnifiable."
+  }
+ ],
+ "quotes": {
+  "1": [
+   287.1,
+   281.53
+  ],
+  "2": [
+   330.6,
+   308.38
+  ],
+  "3": [
+   13.61,
+   0.0
+  ],
+  "4": [
+   13.61,
+   0.0
+  ],
+  "5": [
+   9.07,
+   0.0
+  ],
+  "6": [
+   183.95,
+   0.0
+  ],
+  "7": [
+   7.26,
+   0.0
+  ],
+  "8": [
+   18.14,
+   0.0
+  ],
+  "9": [
+   36.28,
+   0.0
+  ],
+  "10": [
+   22.68,
+   0.0
+  ],
+  "11": [
+   9.07,
+   0.0
+  ]
+ }
+}
