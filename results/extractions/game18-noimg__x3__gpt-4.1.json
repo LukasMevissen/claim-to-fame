@@ -1,0 +1,84 @@
+{
+  "case_id": "game18-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Copper pipe repair – fittings, pipe section and consumables",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 55.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered as necessary repair to insured pipework after escape of water (2.4.2, 2.4.3, 7.1.1(b)). Indemnity is for the actual repair, capped at a fair market rate for the materials and fittings for about 1m of copper pipe and standard fittings."
+    },
+    {
+      "item_id": "2",
+      "description": "Labour – service technician and helper",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.18,
+      "rationale": "Labour for the repair is indemnified (7.1.7(g)), but only for the time reasonably required for the work described. Reference Case 16 (3 senior installer hours: t ≥ 274) and Case 7 (internal frost-burst fitting repair: t ≈ 450 for all work). Here, a day and a half with a helper is likely 10–12 hours total, so a moderate estimate is warranted."
+    },
+    {
+      "item_id": "3",
+      "description": "Pipe re-insulation (rock wool)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.15,
+      "rationale": "Re-insulation of the repaired section is necessary ancillary work (7.1.7(c)), but only for the affected length. 6 pcs likely refers to 6 sleeves or meters. Reference Case 16 (connection hose: t ≈ 30). Rock wool sleeves are inexpensive; allow for installation."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.1,
+      "rationale": "One travel/call-out charge per invoice is indemnified (7.1.7(f)). Reference Case 16 (vehicle costs: t ≥ 60), but most cases with a single visit and no special circumstances are lower (Case 14: t ≈ 15)."
+    },
+    {
+      "item_id": "5",
+      "description": "Construction waste disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 14.0,
+      "price_log_sd": 0.13,
+      "rationale": "Disposal of debris from the repair is covered (5.2.1, 7.1.7(a)), but only for the affected pipe and insulation. Reference Case 16 (auxiliary and cleaning material: t < 11), Case 13/10 (disposal lines for small loads: t ≈ 10–20). For a small amount of pipe and insulation, a moderate estimate is appropriate."
+    },
+    {
+      "item_id": "6",
+      "description": "Processing flat fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.05,
+      "rationale": "General administrative/processing fees are excluded (7.1.8(b)), as they do not constitute a repair cost and are not indemnified."
+    },
+    {
+      "item_id": "7",
+      "description": "Tile cleaning, disinfection and coating",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.2,
+      "rationale": "Cleaning and disinfection of the affected area is covered as necessary post-repair work (7.1.7(b)), but only for the area where water had been standing. Coating is only covered if it is necessary to restore the pre-loss standard, not as an improvement. Reference Case 12 (floor cleaning and drying: t ≈ 500 for a much larger scope). For 5 hours, a moderate estimate is warranted."
+    }
+  ]
+}
