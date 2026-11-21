@@ -59,7 +59,7 @@ acceptance_limit = 0.0
 
 [pricing]
 acceptance_quantile = 0.3333333333
-acceptance_shrink = 1.0
+acceptance_shrink = 1.05     # games 26-46 replay: +8.5k, 14 games better, 0 worse (1.10: losing games); live from game 48
 charge_floor_quantile = 0.05
 charge_ceiling_quantile = 0.95
 # Floor for a as a share of our median estimate. 12-game replay: 0 -> 40.5k, 0.87 -> 47.0k,

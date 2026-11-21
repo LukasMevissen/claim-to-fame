@@ -1,0 +1,23 @@
+{
+ "game": 47,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Water Escape, External Surfaces and Site Charges",
+ "description": "Buildings frost claim after a long, hard freeze. The trouble started inside: a water fitting on a pipe run failed in the cold and let go. A thermal imaging camera had to be brought in to trace exactly where the escaping water was sitting before anyone could open up and repair it. What matters for this one is what happened next. The water from that burst tracked out through the external wall and soaked into the render from behind. When the cold came back through, the wet render froze, blew and detached, and a stretch of plaster came off the facade. So the plaster loss did not come from the outside air acting on the wall. It came from the internal burst pushing water into the wall, which then froze. The facade repair follows on directly from the pipe failure.",
+ "lines": {
+  "1": "Filling valve (internal frost-burst fitting) 1 pcs",
+  "2": "Connection hose 1 pcs",
+  "3": "Senior installer hours 3 hrs",
+  "4": "Auxiliary and cleaning material 1 pcs",
+  "5": "Vehicle costs 1 pcs",
+  "6": "Thermal imaging camera (leak detection) 1 pcs",
+  "7": "Facade damage where the wall froze from the internal water escape | 1 pcs",
+  "8": "Loose plaster 1 pcs",
+  "9": "Base plaster 1 pcs",
+  "10": "Additional work 1 pcs",
+  "11": "Newly plastered substrate 1 pcs",
+  "12": "Facade paint (4 coats) 1 pcs",
+  "13": "Drying 1 pcs",
+  "14": "Priming 1 pcs",
+  "15": "Painter hours 5 hrs",
+  "16": "Flat rate 1 pcs"
+ }
+}

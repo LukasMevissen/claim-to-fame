@@ -54,7 +54,13 @@ class PricingParams:
 
 
 def acceptance_limit(belief: TBelief, p: PricingParams) -> float:
-    return max(0.0, belief.quantile(p.acceptance_quantile) * p.acceptance_shrink)
+    q = belief.quantile(p.acceptance_quantile)
+    b = q * p.acceptance_shrink
+    if p.acceptance_shrink > 1.0:
+        # A factor above 1 never lifts the limit over our own estimate of t (confident lines
+        # already sit at about 0.96 x estimate). Replay games 26-46: same saving with the cap.
+        b = min(b, max(q, belief.median))
+    return max(0.0, b)
 
 
 def _opp_limits(t: float, belief: TBelief, opp: OpponentType, zs: list[float]) -> list[float]:

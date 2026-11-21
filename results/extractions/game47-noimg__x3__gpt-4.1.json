@@ -1,0 +1,183 @@
+{
+  "case_id": "game47-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Filling valve (internal frost-burst fitting)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as repair of a fitting fractured by frost under 2.4.4 and 7.1.9; indemnity is for like-for-like replacement, including labour and necessary materials."
+    },
+    {
+      "item_id": "2",
+      "description": "Connection hose",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as a connection element renewed with the fractured fitting per 7.1.9; necessary for reinstatement after frost damage."
+    },
+    {
+      "item_id": "3",
+      "description": "Senior installer hours (3 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour for repair of affected pipework/fitting is covered under 7.1.7(f) and 7.1.9; reference cases show 3 hrs at ~90–110 EUR/hr gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Auxiliary and cleaning material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.1,
+      "rationale": "Consumables actually used in covered repair are indemnified under 7.1.7(e); reference cases support a flat rate in the 30–45 EUR range."
+    },
+    {
+      "item_id": "5",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.1,
+      "rationale": "Attendance for covered repair is indemnified (7.1.11); reference cases for similar plumbing jobs show 70–85 EUR per visit."
+    },
+    {
+      "item_id": "6",
+      "description": "Thermal imaging camera (leak detection)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.1,
+      "rationale": "Leak location, including use of technical equipment, is covered up to 2,500 EUR per event (2.4.6, 5.2.2); reference cases for similar equipment use are 40–60 EUR."
+    },
+    {
+      "item_id": "7",
+      "description": "Facade damage where the wall froze from the internal water escape",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.2,
+      "rationale": "Repair of external render/plaster is covered because the damage was caused by water escaping from inside (2.4.3), not by external frost (3.5 does not apply); indemnity includes making good the affected area."
+    },
+    {
+      "item_id": "8",
+      "description": "Loose plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.15,
+      "rationale": "Removal of failed plaster is part of the necessary repair to the affected area (7.1.7(a), 7.1.5); covered as part of the reinstatement."
+    },
+    {
+      "item_id": "9",
+      "description": "Base plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.15,
+      "rationale": "Renewal of the base plaster is necessary to restore the affected area (7.1.7(c), 7.1.5); covered as part of the repair."
+    },
+    {
+      "item_id": "10",
+      "description": "Additional work",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.7,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.3,
+      "rationale": "If this refers to ancillary work directly required for reinstating the affected area, it is covered (7.1.7, 7.1.11); if it is a vague or administrative charge, it is not (3.6(b)), but in absence of detail, assume minor necessary work."
+    },
+    {
+      "item_id": "11",
+      "description": "Newly plastered substrate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.15,
+      "rationale": "Making good the substrate is part of the repair to the affected area (7.1.7(c)); covered as necessary reinstatement."
+    },
+    {
+      "item_id": "12",
+      "description": "Facade paint (4 coats)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.15,
+      "rationale": "Painting the repaired area is covered (7.1.7(d)), but only to the extent of the original finish; four coats is reasonable for exterior render."
+    },
+    {
+      "item_id": "13",
+      "description": "Drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.15,
+      "rationale": "Drying is necessary before repair of the affected area (7.1.7(c)); covered as part of the reinstatement."
+    },
+    {
+      "item_id": "14",
+      "description": "Priming",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.15,
+      "rationale": "Priming is a necessary preparatory step before painting/plastering (7.1.7(d)); covered as part of the repair."
+    },
+    {
+      "item_id": "15",
+      "description": "Painter hours (5 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 250.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour for reinstating the affected area is covered (7.1.7(f)); reference cases suggest 5 hrs at 40–60 EUR/hr gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.7,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.3,
+      "rationale": "If this is a lump-sum for covered work on the affected area, it is indemnified (7.1.12); if it is an admin/processing fee, it is not (3.6(b)), but in absence of detail, assume minor covered work."
+    }
+  ]
+}
