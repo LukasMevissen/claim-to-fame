@@ -1,0 +1,17 @@
+{
+ "game": 30,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Heavy rainfall over a short spell caused surface flooding that got into the basement, leaving roughly a meter of water standing in the plant room down there. This was rainwater coming in from outside, not anything to do with the plumbing - the pipes themselves were sound. The boiler in the basement, along with its flue and storage tank, sat submerged and stopped working, so the whole unit had to be renewed rather than repaired. The old one was hauled out and disposed of, and the supply pipework was adjusted to suit the replacement. Getting the water out took a fair bit of pumping, so a submersible pump was brought in specifically for it. Once the water was down, an electrician spent the better part of a day and a half on site checking and rewiring the circuits that had been under water.",
+ "lines": {
+  "1": "Electrician labour checking and rewiring the flooded basement circuits | 12 hrs",
+  "2": "Vehicle costs 1 pcs",
+  "3": "Procurement of a motor pump 1 pcs",
+  "4": "Submersible pump 1 pcs",
+  "5": "Water extraction from the flooded basement 1 pcs",
+  "6": "Small electrical materials for the rewiring 1 pcs",
+  "7": "Renew boiler system including flue gas system and storage tank | 1 flat rate",
+  "8": "Adjust supply pipework to fit the replacement boiler 1 flat rate",
+  "9": "Dispose of the old boiler system 1 –",
+  "10": "Vehicle costs 1 pcs"
+ }
+}
