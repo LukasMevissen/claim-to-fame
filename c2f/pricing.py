@@ -40,6 +40,7 @@ class PricingParams:
     acceptance_shrink: float = 1.0       # multiply b by this (<1 = stricter insurer)
     charge_floor_quantile: float = 0.05  # never search below this quantile of t | t>0
     charge_ceiling_quantile: float = 0.95
+    charge_min_ratio: float = 0.0        # never charge below this share of our median estimate
     n_t_grid: int = 100
     n_candidates: int = 60
     n_opp_draws: int = 15
@@ -91,7 +92,10 @@ def charge_price(belief: TBelief, p: PricingParams) -> float:
     hi = pos.quantile(p.charge_ceiling_quantile)
     n = max(p.n_candidates, 2)
     cands = [lo * (hi / lo) ** (i / (n - 1)) for i in range(n)] if lo > 0 else [hi]
-    return max(cands, key=lambda a: expected_revenue(a, belief, p))
+    best = max(cands, key=lambda a: expected_revenue(a, belief, p))
+    # Replay of games 1-12: the opponent model shades a to about 0.8 x estimate, yet our
+    # charges were always proven fair with room above, so keep a at least this close.
+    return max(best, p.charge_min_ratio * belief.median)
 
 
 @dataclass(frozen=True)

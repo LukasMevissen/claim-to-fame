@@ -19,6 +19,8 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 - Charge price is always positive, also on lines we think are uncovered: a rejected charge
   costs nothing, an accepted one pays up to the cap. b stays 0 on those lines.
 - `min_sigma` 0.15 -> 0.2.
+- From game 13: `charge_min_ratio = 0.87` (a at least 0.87 x our estimate). 12-game replay
+  +16%; our charges had always been proven fair with room above.
 
 ## v0.1.0 (2026-11-21)
 

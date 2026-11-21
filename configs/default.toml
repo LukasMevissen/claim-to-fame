@@ -43,6 +43,9 @@ acceptance_quantile = 0.3333333333
 acceptance_shrink = 1.0
 charge_floor_quantile = 0.05
 charge_ceiling_quantile = 0.95
+# Floor for a as a share of our median estimate. 12-game replay: 0 -> 40.5k, 0.87 -> 47.0k,
+# 0.90 -> 48.0k, 0.93 -> 40.3k (cliff: charges start to exceed t), so 0.87 keeps a margin.
+charge_min_ratio = 0.87
 n_t_grid = 100
 n_candidates = 60
 n_opp_draws = 15
