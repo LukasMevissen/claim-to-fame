@@ -2646,5 +2646,244 @@
     ]
    }
   }
+ },
+ "12": {
+  "1": {
+   "t_low": 423.26,
+   "t_high": 514.08,
+   "charges": {
+    "vietgang": 67.83,
+    "CHOOMS": 316.58,
+    "GemischtesHack": 360.43,
+    "Lumenauts": 361.02,
+    "Asgardians": 364.34,
+    "404": 386.76,
+    "TRINNERS4WINNERS": 399.26,
+    "FDN": 423.26,
+    "Kiebler Software Solutions": 514.08,
+    "chineseModels": 552.5,
+    "Humble Legends": 556.92,
+    "alpha": 629.46
+   },
+   "fair": {
+    "alpha": false,
+    "chineseModels": false,
+    "FDN": true,
+    "GemischtesHack": true,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "TRINNERS4WINNERS": true,
+    "404": true,
+    "Asgardians": true,
+    "Lumenauts": true,
+    "CHOOMS": true
+   },
+   "b_bounds": {
+    "404": [
+     399.26,
+     423.26
+    ],
+    "Asgardians": [
+     316.58,
+     360.43
+    ],
+    "CHOOMS": [
+     67.83,
+     360.43
+    ],
+    "FDN": [
+     399.26,
+     514.08
+    ],
+    "GemischtesHack": [
+     386.76,
+     399.26
+    ],
+    "Humble Legends": [
+     629.46,
+     null
+    ],
+    "Kiebler Software Solutions": [
+     67.83,
+     316.58
+    ],
+    "Lumenauts": [
+     364.34,
+     386.76
+    ],
+    "TRINNERS4WINNERS": [
+     316.58,
+     360.43
+    ],
+    "alpha": [
+     556.92,
+     null
+    ],
+    "chineseModels": [
+     423.26,
+     514.08
+    ],
+    "vietgang": [
+     0.0,
+     316.58
+    ]
+   }
+  },
+  "2": {
+   "t_low": 605.2,
+   "t_high": 680.0,
+   "charges": {
+    "vietgang": 67.83,
+    "FDN": 353.16,
+    "Lumenauts": 420.22,
+    "GemischtesHack": 444.96,
+    "404": 478.31,
+    "CHOOMS": 484.88,
+    "Asgardians": 508.69,
+    "Kiebler Software Solutions": 514.08,
+    "TRINNERS4WINNERS": 539.92,
+    "alpha": 605.2,
+    "chineseModels": 680.0
+   },
+   "fair": {
+    "404": true,
+    "alpha": true,
+    "Asgardians": true,
+    "chineseModels": false,
+    "CHOOMS": true,
+    "GemischtesHack": true,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": true,
+    "TRINNERS4WINNERS": true,
+    "FDN": true,
+    "Lumenauts": true
+   },
+   "b_bounds": {
+    "404": [
+     67.83,
+     353.16
+    ],
+    "Asgardians": [
+     444.96,
+     478.31
+    ],
+    "CHOOMS": [
+     514.08,
+     539.92
+    ],
+    "FDN": [
+     67.83,
+     420.22
+    ],
+    "GemischtesHack": [
+     420.22,
+     478.31
+    ],
+    "Humble Legends": [
+     680.0,
+     null
+    ],
+    "Kiebler Software Solutions": [
+     67.83,
+     353.16
+    ],
+    "Lumenauts": [
+     353.16,
+     444.96
+    ],
+    "TRINNERS4WINNERS": [
+     478.31,
+     484.88
+    ],
+    "alpha": [
+     539.92,
+     680.0
+    ],
+    "chineseModels": [
+     539.92,
+     605.2
+    ],
+    "vietgang": [
+     0.0,
+     353.16
+    ]
+   }
+  },
+  "3": {
+   "t_low": 0.0,
+   "t_high": 57.73,
+   "charges": {
+    "Asgardians": 57.73,
+    "vietgang": 67.83,
+    "TRINNERS4WINNERS": 73.15,
+    "CHOOMS": 85.68,
+    "GemischtesHack": 95.82,
+    "Kiebler Software Solutions": 123.16,
+    "Lumenauts": 135.74,
+    "chineseModels": 144.5
+   },
+   "fair": {
+    "404": false,
+    "Asgardians": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false,
+    "vietgang": false
+   },
+   "b_bounds": {
+    "404": [
+     0.0,
+     57.73
+    ],
+    "Asgardians": [
+     0.0,
+     67.83
+    ],
+    "CHOOMS": [
+     0.0,
+     57.73
+    ],
+    "FDN": [
+     0.0,
+     57.73
+    ],
+    "GemischtesHack": [
+     0.0,
+     57.73
+    ],
+    "Humble Legends": [
+     144.5,
+     null
+    ],
+    "Kiebler Software Solutions": [
+     0.0,
+     57.73
+    ],
+    "Lumenauts": [
+     73.15,
+     85.68
+    ],
+    "TRINNERS4WINNERS": [
+     0.0,
+     57.73
+    ],
+    "alpha": [
+     0.0,
+     57.73
+    ],
+    "chineseModels": [
+     0.0,
+     57.73
+    ],
+    "vietgang": [
+     0.0,
+     57.73
+    ]
+   }
+  }
  }
 }

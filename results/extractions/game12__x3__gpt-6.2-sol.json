@@ -1,0 +1,40 @@
+{
+  "case_id": "game12",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Floor cleaning, connection check and skirting replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 460.0,
+      "price_log_sd": 0.35,
+      "rationale": "The washing-machine hose leak qualifies as escape of water under §2.4.2(a). Section 7.1.7 covers necessary cleaning of affected flooring, checking the source, and replacing damaged skirting like for like; allow €460 gross for the combined work."
+    },
+    {
+      "item_id": "2",
+      "description": "Moisture measurement and drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 520.0,
+      "price_log_sd": 0.43,
+      "rationale": "Sections 7.1.7(b), (e) and (g) cover necessary moisture checks, dryer hire and labour in both affected spaces. Allow €520 gross for a modest drying job, with no separate utility charge under §7.1.8(d)."
+    },
+    {
+      "item_id": "3",
+      "description": "Assessment and drying of framed poster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.45,
+      "rationale": "The mass-produced poster is movable contents excluded by §4.3(d), not an item of particular value under §5.2.6; the €1,000 net limit for unlisted qualifying items does not create cover. If accepted as a qualifying item, a basic assessment and drying would cost about €110 gross."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "case_id": "game12-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Floor cleaning, washing machine connection check, and removal and replacement of water-damaged skirting boards in the utility room and hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under escape of water (2.4.2) and repair of damaged building components (7.1.1(b)), including necessary cleaning (7.1.7(h)), checking the connection (7.1.7(e)), and replacement of affected skirting boards (4.2.2, 7.1.5). Only the damaged skirting boards are indemnified, not any improvement or unaffected areas (7.1.5, 7.1.9). Reference cases show similar combined repair lines (Case 7: internal frost-burst fitting repair incl. detection, t ~450)."
+    },
+    {
+      "item_id": "2",
+      "description": "Moisture measurement and drying of the utility room and hallway floor, incl. drying unit and skilled labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.2,
+      "rationale": "Moisture measurement and drying are necessary preparatory works for repair after water escape (7.1.7(b)), and are covered for the affected rooms. Reference Case 7 (thermal imaging and repair, t ~450) and Case 2 (diagnostic inspection, t ~70) suggest a moderate value for this combined line."
+    },
+    {
+      "item_id": "3",
+      "description": "Assessment and drying of a small framed decorative print from the hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.05,
+      "rationale": "The print is not insured under the building policy (4.3(d)), as it is a movable household item and not a building component or accessory. No optional contents or valuables cover is in force. Even if covered, the EUR 1,000 sublimit for non-scheduled items (5.2.6) would apply, but here t = 0 as the policy does not cover contents."
+    }
+  ]
+}

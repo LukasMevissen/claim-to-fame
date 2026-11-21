@@ -527,3 +527,39 @@ TRINNERS4WINNERS,11,9,5.45,,accepted,fraud,0.0,inf,3,8,False,0.0,5.45,,18.09,0.0
 alpha,11,9,0.0,,accepted,unknown,0.0,5.45,2,9,False,0.0,5.45,,18.09,0.0
 chineseModels,11,9,,5.45,hidden,fraud,0.0,5.45,3,8,False,0.0,5.45,,18.09,0.0
 vietgang,11,9,,0.0,hidden,fraud,5.45,inf,4,7,False,0.0,5.45,,18.09,0.0
+404,12,1,386.76,,accepted,fair,399.26,423.26,6,5,False,423.26,514.08,,360.43,390.44
+Asgardians,12,1,364.34,,accepted,fair,316.58,360.43,2,9,False,423.26,514.08,,360.43,390.44
+CHOOMS,12,1,316.58,,accepted,fair,67.83,360.43,1,10,False,423.26,514.08,,360.43,390.44
+FDN,12,1,423.26,,accepted,fair,399.26,514.08,7,4,False,423.26,514.08,,360.43,390.44
+GemischtesHack,12,1,360.43,,accepted,fair,386.76,399.26,5,6,False,423.26,514.08,,360.43,390.44
+Humble Legends,12,1,556.92,,accepted,fraud,629.46,inf,11,0,False,423.26,514.08,,360.43,390.44
+Kiebler Software Solutions,12,1,514.08,,accepted,fraud,67.83,316.58,1,10,False,423.26,514.08,,360.43,390.44
+Lumenauts,12,1,361.02,,accepted,fair,364.34,386.76,4,7,False,423.26,514.08,,360.43,390.44
+TRINNERS4WINNERS,12,1,399.26,,accepted,fair,316.58,360.43,2,9,False,423.26,514.08,,360.43,390.44
+alpha,12,1,629.46,,accepted,fraud,556.92,inf,11,0,False,423.26,514.08,,360.43,390.44
+chineseModels,12,1,552.5,,accepted,fraud,423.26,514.08,8,3,False,423.26,514.08,,360.43,390.44
+vietgang,12,1,67.83,,accepted,unknown,0.0,316.58,0,11,False,423.26,514.08,,360.43,390.44
+404,12,2,478.31,,accepted,fair,67.83,353.16,1,10,False,605.2,680.0,,444.96,428.64
+Asgardians,12,2,508.69,,accepted,fair,444.96,478.31,4,7,False,605.2,680.0,,444.96,428.64
+CHOOMS,12,2,484.88,,accepted,fair,514.08,539.92,7,4,False,605.2,680.0,,444.96,428.64
+FDN,12,2,353.16,,accepted,fair,67.83,420.22,1,10,False,605.2,680.0,,444.96,428.64
+GemischtesHack,12,2,444.96,,accepted,fair,420.22,478.31,3,8,False,605.2,680.0,,444.96,428.64
+Humble Legends,12,2,,539.92,hidden,fraud,680.0,inf,11,0,False,605.2,680.0,,444.96,428.64
+Kiebler Software Solutions,12,2,514.08,,accepted,fair,67.83,353.16,1,10,False,605.2,680.0,,444.96,428.64
+Lumenauts,12,2,420.22,,accepted,fair,353.16,444.96,2,9,False,605.2,680.0,,444.96,428.64
+TRINNERS4WINNERS,12,2,539.92,,accepted,fair,478.31,484.88,5,6,False,605.2,680.0,,444.96,428.64
+alpha,12,2,605.2,,accepted,fair,539.92,680.0,9,2,False,605.2,680.0,,444.96,428.64
+chineseModels,12,2,680.0,,accepted,fraud,539.92,605.2,9,2,False,605.2,680.0,,444.96,428.64
+vietgang,12,2,67.83,,accepted,unknown,0.0,353.16,0,11,False,605.2,680.0,,444.96,428.64
+404,12,3,,144.5,hidden,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+Asgardians,12,3,57.73,,accepted,fraud,0.0,67.83,2,9,False,0.0,57.73,,95.82,0.0
+CHOOMS,12,3,85.68,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+FDN,12,3,0.0,,accepted,unknown,0.0,57.73,1,10,False,0.0,57.73,,95.82,0.0
+GemischtesHack,12,3,95.82,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+Humble Legends,12,3,,73.15,hidden,fraud,144.5,inf,10,1,False,0.0,57.73,,95.82,0.0
+Kiebler Software Solutions,12,3,123.16,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+Lumenauts,12,3,135.74,,accepted,fraud,73.15,85.68,5,6,False,0.0,57.73,,95.82,0.0
+TRINNERS4WINNERS,12,3,73.15,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+alpha,12,3,0.0,,accepted,unknown,0.0,57.73,1,10,False,0.0,57.73,,95.82,0.0
+chineseModels,12,3,144.5,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
+vietgang,12,3,67.83,,accepted,fraud,0.0,57.73,2,9,False,0.0,57.73,,95.82,0.0
