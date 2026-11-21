@@ -13091,5 +13091,136 @@
    },
    "b_bounds": {}
   }
+ },
+ "31": {
+  "1": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "CHOOMS": false,
+    "FDN": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "2": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "FDN": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  },
+  "3": {
+   "t_low": 2900.0,
+   "t_high": 3109.91,
+   "charges": {
+    "CHOOMS": 1440.0,
+    "Lumenauts": 1543.48,
+    "chineseModels": 2212.5,
+    "alpha": 2257.07,
+    "GemischtesHack": 2566.5,
+    "Asgardians": 2686.56,
+    "TRINNERS4WINNERS": 2791.42,
+    "Kiebler Software Solutions": 2850.0,
+    "FDN": 2900.0,
+    "Humble Legends": 3109.91
+   },
+   "fair": {
+    "404": false,
+    "Asgardians": true,
+    "FDN": true,
+    "GemischtesHack": true,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": true,
+    "TRINNERS4WINNERS": true,
+    "alpha": true,
+    "chineseModels": true,
+    "CHOOMS": true,
+    "Lumenauts": true
+   },
+   "b_bounds": {
+    "404": [
+     0.0,
+     1440.0
+    ],
+    "Asgardians": [
+     3109.91,
+     null
+    ],
+    "CHOOMS": [
+     0.0,
+     1543.48
+    ],
+    "FDN": [
+     2850.0,
+     3109.91
+    ],
+    "GemischtesHack": [
+     2257.07,
+     2686.56
+    ],
+    "Humble Legends": [
+     0.0,
+     1440.0
+    ],
+    "Kiebler Software Solutions": [
+     2900.0,
+     3109.91
+    ],
+    "Lumenauts": [
+     1440.0,
+     2212.5
+    ],
+    "TRINNERS4WINNERS": [
+     2850.0,
+     2900.0
+    ],
+    "alpha": [
+     2566.5,
+     2686.56
+    ],
+    "chineseModels": [
+     1543.48,
+     2257.07
+    ],
+    "vietgang": [
+     0.0,
+     1440.0
+    ]
+   }
+  },
+  "4": {
+   "t_low": 0.0,
+   "t_high": null,
+   "charges": {},
+   "fair": {
+    "404": false,
+    "chineseModels": false,
+    "CHOOMS": false,
+    "FDN": false,
+    "GemischtesHack": false,
+    "Humble Legends": false,
+    "Kiebler Software Solutions": false,
+    "Lumenauts": false,
+    "TRINNERS4WINNERS": false
+   },
+   "b_bounds": {}
+  }
  }
 }

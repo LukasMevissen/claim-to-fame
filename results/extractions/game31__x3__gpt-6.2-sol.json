@@ -1,0 +1,51 @@
+{
+  "case_id": "game31",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Spanish-to-English police report translation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clauses 2.3.3, 3.1.6 and 7.1.8(f) distinguish the required police report from the cost of translating it. All 68 lines are excluded."
+    },
+    {
+      "item_id": "2",
+      "description": "Translation materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "The translation provider's working materials are excluded under 7.1.8(e) and (f), even when billed separately."
+    },
+    {
+      "item_id": "3",
+      "description": "Robbery compensation for watch and cash",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2950.0,
+      "price_log_sd": 0.05,
+      "rationale": "The reported armed robbery away from home is covered under 2.3 and 11.1, subject to the itemisation required by 7.1.10. Allow €2,500 for the unscheduled watch and €500 for cash under 4.2.2–4.2.3; the €5,000 away-from-home limit does not reduce that total, and the single €50 deductible leaves €2,950."
+    },
+    {
+      "item_id": "4",
+      "description": "Shipping on the settlement statement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Forwarding charges are excluded under 7.1.8(b) and 11.4 even when billed alongside covered property compensation."
+    }
+  ]
+}
