@@ -1,0 +1,29 @@
+{
+  "case_id": "game22-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Diagnostic inspection of the cracked laptop",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 5.2.3 covers diagnostic costs for portable insured equipment where an insured event under 2.6 is established. The damage description and photo confirm a sudden external action (2.6.1, 2.6.2, 2.6.6), so the gateway is passed. Indemnity is capped at EUR 250 incl. VAT per event (5.2.3), but reference cases (Case 2: t between 60 and 84; Case 18: t >= 221 for repair, but diagnostics not separately listed) show that actual market rates for diagnostics are much lower, typically 60–84 EUR. The battery is below new but not below 80% capacity, so 2.6.8 does not exclude cover."
+    },
+    {
+      "item_id": "2",
+      "description": "Laptop screen and lower-right corner repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 2.6.1, 2.6.2, 2.6.3 and 7.1.10: sudden external action (swerve, laptop thrown, impact) is covered for portable insured equipment, and all areas of damage on the unit from the same event are one loss. Battery is above 80% (photo), so 2.6.8 does not exclude. Reference cases (Case 2: screen crack repair t >= 808, corner repair t >= 342; Case 6: combined repair t >= 744; Case 5: combined repair t >= 1166) show that a combined repair for screen and corner is typically in the 750–1200 EUR range, with 744–808 EUR as the lowest proven fair threshold. No betterment or sub-limit applies, and VAT is included. The repair is not capped at replacement value as there is no evidence the repair exceeds replacement cost."
+    }
+  ]
+}

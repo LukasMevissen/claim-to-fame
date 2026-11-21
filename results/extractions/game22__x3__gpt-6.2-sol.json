@@ -1,0 +1,29 @@
+{
+  "case_id": "game22",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Diagnostic inspection of the cracked laptop",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 72.0,
+      "price_log_sd": 0.15,
+      "rationale": "The report shows 41,200 ÷ 52,000 = 79.23% battery capacity, below the 80% cutoff in §2.6.8, and no waiver applies. Sections 2.6.7 and 5.2.3 therefore exclude the diagnostic even though it established the coverage bar; €72 is the conditional estimate from Case 2."
+    },
+    {
+      "item_id": "2",
+      "description": "Laptop screen and lower-right corner repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 549.0,
+      "price_log_sd": 0.08,
+      "rationale": "The swerve impact and both damaged areas would otherwise qualify under §§2.6.2–2.6.3, but §2.6.8 excludes the entire unit at 79.23% battery capacity without a waiver. The photographed €549 parts-and-labour quote is the conditional estimate for the combined repair, not a payable amount."
+    }
+  ]
+}

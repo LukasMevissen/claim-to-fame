@@ -3,7 +3,7 @@
 # and pass --config configs/<name>.toml.
 
 [runtime]
-deadline_seconds = 50          # hard budget inside the 60 s window, leaves margin for submit
+deadline_seconds = 54         # hard budget inside the 60 s window, leaves margin for submit
 llm_timeout_seconds = 38
 
 [llm]
@@ -38,12 +38,13 @@ key_poll_seconds = 20       # keep polling the key this long after start_time (1
 
 [fallback]
 # (a, b) for invoice lines the model did not price: the model failed, timed out or skipped
-# a line. There is no price information, so both stay small. A small charge is paid in full
-# whenever a <= t, and the cap's absolute floor means even an uncovered line pays an accepted
-# small charge. A small limit only accepts small charges, which are mostly fair.
-# The API default of 0 / 0 earns nothing and rejects every charge (1.5a per fair one).
-charge_price = 20.0
-acceptance_limit = 20.0
+# a line. The API default of 0 / 0 earns nothing and rejects every charge (1.5a per fair one).
+# Replay games 1-19 with these as the only prices (cap c = 4t): 20/20 -> -73k, 100/0 -> -48k,
+# 200/0 -> -22k, 300/0 -> -6k, 400/0 -> +2k, 800/0 -> -12k. A high charge is paid 1.5x on the
+# big lines where it is fair and by lenient teams elsewhere; the limit stays 0 without a price.
+# Game 21 (no model answer in time, 20/20 submitted on 22 lines) cost -15.8k.
+charge_price = 350.0
+acceptance_limit = 0.0
 
 [pricing]
 acceptance_quantile = 0.3333333333

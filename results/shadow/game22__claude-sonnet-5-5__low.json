@@ -1,0 +1,45 @@
+{
+ "game": 22,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 9.3,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 35614,
+ "output_tokens": 371,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.4,
+   "rationale": "The photo's battery report shows 41,200 mWh against a design capacity of 52,000 mWh, which is 79%. That is below 80%, and no battery health waiver is on the schedule (standard form, no extras). Under 2.6.8 the unit is therefore at the end of its working life and not insured equipment, so 2.6.7 applies and the 5.2.3 examination cost is not reimbursed."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.3,
+   "rationale": "The same 79% battery finding means the gateway in 2.6.8 is not passed, so no repair indemnity is payable under any head, even though the impact damage is genuine. If the unit were covered, the repair would be roughly the quote of 549 less the diagnostic."
+  }
+ ],
+ "quotes": {
+  "1": [
+   60.9,
+   0.0
+  ],
+  "2": [
+   417.6,
+   0.0
+  ]
+ }
+}

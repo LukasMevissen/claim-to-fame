@@ -1,0 +1,45 @@
+{
+ "game": 22,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.0,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 35614,
+ "output_tokens": 310,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.3,
+   "rationale": "Battery report shows full charge capacity 41,200/52,000 mWh = 79%, below 80%; per 2.6.8 the unit is no longer insured equipment, no battery waiver (standard form), so 2.6.7 bars all heads incl. examination under 5.2.3."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 549.0,
+   "price_log_sd": 0.3,
+   "rationale": "2.6.8 end-of-working-life rule (79% < 80% design capacity, established by shop examination) removes the unit from cover whatever the cause; 2.6.7 then excludes repair."
+  }
+ ],
+ "quotes": {
+  "1": [
+   60.9,
+   0.0
+  ],
+  "2": [
+   477.63,
+   0.0
+  ]
+ }
+}

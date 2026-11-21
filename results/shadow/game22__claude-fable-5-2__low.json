@@ -1,0 +1,45 @@
+{
+ "game": 22,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 9.4,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 35614,
+ "output_tokens": 325,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.3,
+   "rationale": "Battery report shows full-charge capacity 79% of design, below the 80% threshold; under 2.6.8 the unit is no longer portable insured equipment, no battery waiver agreed (standard form, no extras). 2.6.7 / 5.2.3 then deny the examination cost too."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 549.0,
+   "price_log_sd": 0.3,
+   "rationale": "Clause 2.6.8: battery at 79% (<80%) means end of working life, damage is not an insured event whatever the cause; 2.6.7 excludes repair. If it were covered, the quote of about EUR 549 would apply."
+  }
+ ],
+ "quotes": {
+  "1": [
+   65.25,
+   0.0
+  ],
+  "2": [
+   477.63,
+   0.0
+  ]
+ }
+}

@@ -7,6 +7,9 @@ from c2f.agent import PricedItem
 from c2f.config import load_config
 
 
+FB = load_config().section("fallback")["charge_price"]   # stage 0: fixed fallback charge
+
+
 class FakeClient:
     def __init__(self):
         self.calls = []
@@ -42,15 +45,15 @@ def _run(monkeypatch, tmp_path, text_s, photo_s, image=True):
 
 def test_photo_after_text_overwrites(monkeypatch, tmp_path):
     calls = _run(monkeypatch, tmp_path, text_s=0.05, photo_s=0.2)
-    assert [c[0]["charge_price"] for c in calls] == [20.0, 100.0, 200.0]
+    assert [c[0]["charge_price"] for c in calls] == [FB, 100.0, 200.0]
 
 
 def test_text_after_photo_is_not_submitted(monkeypatch, tmp_path):
     calls = _run(monkeypatch, tmp_path, text_s=0.2, photo_s=0.05)
-    assert [c[0]["charge_price"] for c in calls] == [20.0, 200.0]
+    assert [c[0]["charge_price"] for c in calls] == [FB, 200.0]
 
 
 def test_no_photo_still_runs_fast_and_full(monkeypatch, tmp_path):
     # Without a photo the fast stage is still the safety net for the slower full stage.
     calls = _run(monkeypatch, tmp_path, text_s=0.05, photo_s=0.2, image=False)
-    assert [c[0]["charge_price"] for c in calls] == [20.0, 100.0, 200.0]
+    assert [c[0]["charge_price"] for c in calls] == [FB, 100.0, 200.0]
