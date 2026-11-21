@@ -42,6 +42,7 @@ class PricingParams:
     charge_ceiling_quantile: float = 0.95
     charge_min_ratio: float = 0.0        # never charge below this share of our median estimate
     charge_min_quantile: float = 0.0     # never charge below this quantile of t | t > 0
+    charge_conf_k: float = 0.0           # never charge below m * exp(-k * sigma): tight when sure
     n_t_grid: int = 100
     n_candidates: int = 60
     n_opp_draws: int = 15
@@ -100,7 +101,11 @@ def charge_price(belief: TBelief, p: PricingParams) -> float:
     # model is unsure (game 29: a rough guess of 3,047 with a wide spread was still charged
     # at 0.87 x, proved inflated and earned nothing).
     floor_q = pos.quantile(p.charge_min_quantile) if p.charge_min_quantile > 0 else 0.0
-    return max(best, p.charge_min_ratio * belief.median, floor_q)
+    # charge_conf_k lets a confident estimate (small sigma: amount fixed by the policy or a
+    # near-identical earlier case) be charged almost in full. Game 31: estimate 2,950 for a
+    # threshold of 2,900-3,110, charged at 0.87 x; the four teams ahead of us charged 2,687-2,900.
+    floor_c = belief.median * math.exp(-p.charge_conf_k * belief.sigma) if p.charge_conf_k > 0 else 0.0
+    return max(best, p.charge_min_ratio * belief.median, floor_q, floor_c)
 
 
 @dataclass(frozen=True)
