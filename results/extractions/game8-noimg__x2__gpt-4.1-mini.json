@@ -1,0 +1,84 @@
+{
+  "case_id": "game8-noimg",
+  "extractor_version": "x2",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disposal of shed roof timber removed from the damaged garden building",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.3,
+      "rationale": "Disposal of damaged building components from insured garden building is covered and necessary."
+    },
+    {
+      "item_id": "2",
+      "description": "Disposal of the broken glass pane from the damaged shed",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.3,
+      "rationale": "Disposal of broken glazing from insured garden building is covered and necessary."
+    },
+    {
+      "item_id": "3",
+      "description": "Disposal of green waste from the storm-felled tree (branches and foliage)",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clearance of storm-felled tree debris is covered as material arising, but vegetation removal is generally excluded except for clearance."
+    },
+    {
+      "item_id": "4",
+      "description": "Disposal of the tree root ball (single mass under one cubic metre)",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.4,
+      "rationale": "Removal of root mass under one cubic metre caused by insured event is covered and necessary."
+    },
+    {
+      "item_id": "5",
+      "description": "Disposal of sieved topsoil from the churned-up ground",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.5,
+      "rationale": "Ground material disposal is not covered under policy even if churned up by insured event."
+    },
+    {
+      "item_id": "6",
+      "description": "Disposal of paving grit displaced around the shed",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.5,
+      "rationale": "Ground material disposal is excluded from coverage."
+    },
+    {
+      "item_id": "7",
+      "description": "Disposal of excavated soil from the churned-up ground",
+      "quantity": 1.0,
+      "unit": "pcs",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.5,
+      "rationale": "Ground material disposal is excluded from coverage."
+    }
+  ]
+}
