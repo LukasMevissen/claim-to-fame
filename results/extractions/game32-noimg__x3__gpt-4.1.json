@@ -1,0 +1,216 @@
+{
+  "case_id": "game32-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Filling valve (internal frost-burst fitting)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 53.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as a fractured fitting due to internal frost under 2.4.4 and 7.1.9; reference Case 25 shows t between 51 and 54 for this exact line under the same policy and peril."
+    },
+    {
+      "item_id": "2",
+      "description": "Connection hose",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 27.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as a necessary connection element renewed with the fractured fitting (7.1.9); reference Case 25 shows t between 26 and 28 for this line."
+    },
+    {
+      "item_id": "3",
+      "description": "Senior installer hours (3 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 279.0,
+      "price_log_sd": 0.05,
+      "rationale": "Labour for covered repair is indemnified (7.1.7(f)); Case 25 shows t >= 279 for 3 hours under the same policy and peril."
+    },
+    {
+      "item_id": "4",
+      "description": "Auxiliary and cleaning material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.2,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.3,
+      "rationale": "Consumables actually used in covered repair are indemnified (7.1.7(e)); Case 25 shows t below 8, possibly 0, so lowest proven charge was too high."
+    },
+    {
+      "item_id": "5",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 41.0,
+      "price_log_sd": 0.05,
+      "rationale": "Vehicle costs for attendance on covered repair are indemnified (7.1.11); Case 25 shows t between 38 and 44."
+    },
+    {
+      "item_id": "6",
+      "description": "Thermal imaging camera (leak detection)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.2,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 28.0,
+      "price_log_sd": 0.3,
+      "rationale": "Equipment used for leak location is covered (2.4.6, 7.1.7); Case 25 shows t below 28, possibly 0, so lowest proven charge was too high."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs – return visit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 13.0,
+      "price_log_sd": 0.05,
+      "rationale": "Return visits are not indemnified unless agreed in advance (7.1.11); reference Case 25 and others show t = 0 for return visits."
+    },
+    {
+      "item_id": "8",
+      "description": "Facade frost damage - remove loose and spalled plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.3,
+      "rationale": "Covered as direct repair of frost-damaged external surface under 2.6.2 (peril is endorsed); reference Case 25 and 7 show this is covered when peril is agreed."
+    },
+    {
+      "item_id": "9",
+      "description": "Base plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Covered as part of making good the damaged area (2.6.2, 7.1.7(c)); reference Case 25 and 7 show this is covered when peril is agreed."
+    },
+    {
+      "item_id": "10",
+      "description": "Newly plastered substrate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Covered as part of reinstating the substrate beneath the damaged area (2.6.2, 7.1.7(c)); reference Case 25 and 7."
+    },
+    {
+      "item_id": "11",
+      "description": "Priming",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.3,
+      "rationale": "Priming is part of the finish system required to reinstate the damaged area (2.6.2, 7.1.7(d)); reference Case 25 and 7."
+    },
+    {
+      "item_id": "12",
+      "description": "Drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.3,
+      "rationale": "Drying needed before repair of the affected part is covered (2.6.2, 7.1.7(c)); reference Case 25 and 7."
+    },
+    {
+      "item_id": "13",
+      "description": "Facade paint (4 coats)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.3,
+      "rationale": "Painting the repaired area is covered (2.6.2, 7.1.7(d)); only the damaged elevation, not undamaged areas (7.1.5, 2.6.3(a)); reference Case 25 and 7."
+    },
+    {
+      "item_id": "14",
+      "description": "Painter hours (5 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.3,
+      "rationale": "Labour for covered repair is indemnified (7.1.7(f)); reference Case 25 and 7, but painter hours for undamaged areas are not covered."
+    },
+    {
+      "item_id": "15",
+      "description": "Scaffolding hire",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.3,
+      "rationale": "Access provision for covered work is indemnified (2.6.2, 7.1.8); only for the damaged elevation, not for undamaged areas."
+    },
+    {
+      "item_id": "16",
+      "description": "Repaint of undamaged rear elevation (no frost loss there)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.05,
+      "rationale": "Work on undamaged areas is excluded (2.6.3(a), 7.1.5); reference Case 25 and 7 show t = 0 for undamaged elevations."
+    },
+    {
+      "item_id": "17",
+      "description": "Waste disposal of removed plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.3,
+      "rationale": "Disposal of material from covered repair is indemnified (2.6.2, 5.2.1, 7.1.11); reference Case 25 and 7."
+    },
+    {
+      "item_id": "18",
+      "description": "Administrative flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.05,
+      "rationale": "Charges levied in addition to the work for administration/processing are excluded (3.6(b), 7.1.12); reference Case 25 and others."
+    },
+    {
+      "item_id": "19",
+      "description": "Catering for work crew",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 7.0,
+      "price_log_sd": 0.05,
+      "rationale": "Provisioning/catering for own personnel is excluded (3.6(a), 7.1.12); reference Case 25 and others."
+    }
+  ]
+}
