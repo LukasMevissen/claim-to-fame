@@ -3503,3 +3503,207 @@ TRINNERS4WINNERS,39,15,,144.21,hidden,fraud,0.0,144.21,2,9,False,731.85,inf,,275
 alpha,39,15,144.21,,accepted,fair,0.0,204.84,2,9,False,731.85,inf,,275.93,0.0
 chineseModels,39,15,612.0,,wrongful_reject,fair,0.0,144.21,2,9,False,731.85,inf,,275.93,0.0
 vietgang,39,15,0.0,,absent,fair,0.0,0.0,1,10,True,731.85,inf,,275.93,0.0
+404,40,1,33.87,,accepted,fair,31.0,36.12,8,3,False,38.47,inf,,26.1,23.93
+Asgardians,40,1,38.47,,accepted,fair,31.0,33.87,8,3,False,38.47,inf,,26.1,23.93
+CHOOMS,40,1,30.46,,accepted,fair,31.0,33.87,7,4,False,38.47,inf,,26.1,23.93
+FDN,40,1,30.46,,accepted,fair,30.46,31.0,6,5,False,38.47,inf,,26.1,23.93
+GemischtesHack,40,1,26.1,,accepted,fair,23.8,30.46,4,7,False,38.47,inf,,26.1,23.93
+Humble Legends,40,1,31.0,,accepted,fair,20.0,23.55,2,9,False,38.47,inf,,26.1,23.93
+Kiebler Software Solutions,40,1,20.0,,accepted,fair,26.1,30.46,4,7,False,38.47,inf,,26.1,23.93
+Lumenauts,40,1,36.12,,accepted,fair,38.47,inf,10,1,False,38.47,inf,,26.1,23.93
+TRINNERS4WINNERS,40,1,,38.47,hidden,fraud,38.47,inf,11,0,False,38.47,inf,,26.1,23.93
+alpha,40,1,23.55,,accepted,fair,26.1,30.46,4,7,False,38.47,inf,,26.1,23.93
+chineseModels,40,1,23.8,,accepted,fair,23.55,26.1,3,8,False,38.47,inf,,26.1,23.93
+vietgang,40,1,0.0,,absent,fair,0.0,0.0,0,11,True,38.47,inf,,26.1,23.93
+404,40,2,82.37,,accepted,fair,69.94,72.25,4,7,False,95.2,inf,,78.3,68.33
+Asgardians,40,2,69.94,,accepted,fair,61.41,72.25,3,8,False,95.2,inf,,78.3,68.33
+CHOOMS,40,2,95.2,,accepted,fair,94.41,inf,10,1,False,95.2,inf,,78.3,68.33
+FDN,40,2,88.35,,accepted,fair,84.52,94.41,8,3,False,95.2,inf,,78.3,68.33
+GemischtesHack,40,2,78.3,,accepted,fair,61.41,69.94,3,8,False,95.2,inf,,78.3,68.33
+Humble Legends,40,2,84.52,,accepted,fair,50.0,61.41,2,9,False,95.2,inf,,78.3,68.33
+Kiebler Software Solutions,40,2,50.0,,accepted,fair,69.94,72.25,3,8,False,95.2,inf,,78.3,68.33
+Lumenauts,40,2,94.41,,accepted,fair,95.2,inf,10,1,False,95.2,inf,,78.3,68.33
+TRINNERS4WINNERS,40,2,,95.2,hidden,fraud,95.2,inf,11,0,False,95.2,inf,,78.3,68.33
+alpha,40,2,61.41,,accepted,fair,72.25,78.3,4,7,False,95.2,inf,,78.3,68.33
+chineseModels,40,2,72.25,,accepted,fair,0.0,50.0,1,10,False,95.2,inf,,78.3,68.33
+vietgang,40,2,0.0,,absent,fair,0.0,0.0,0,11,True,95.2,inf,,78.3,68.33
+404,40,3,16.69,,accepted,fair,13.13,14.45,4,7,False,18.85,inf,,15.66,13.67
+Asgardians,40,3,13.13,,accepted,fair,12.7,14.45,3,8,False,18.85,inf,,15.66,13.67
+CHOOMS,40,3,17.14,,accepted,fair,17.85,18.37,8,3,False,18.85,inf,,15.66,13.67
+FDN,40,3,18.37,,accepted,fair,17.85,18.85,9,2,False,18.85,inf,,15.66,13.67
+GemischtesHack,40,3,15.66,,accepted,fair,13.13,14.45,4,7,False,18.85,inf,,15.66,13.67
+Humble Legends,40,3,17.85,,accepted,fair,10.0,12.7,2,9,False,18.85,inf,,15.66,13.67
+Kiebler Software Solutions,40,3,10.0,,accepted,fair,14.45,15.66,4,7,False,18.85,inf,,15.66,13.67
+Lumenauts,40,3,18.85,,accepted,fair,18.37,inf,10,1,False,18.85,inf,,15.66,13.67
+TRINNERS4WINNERS,40,3,,18.37,hidden,fraud,18.85,inf,11,0,False,18.85,inf,,15.66,13.67
+alpha,40,3,12.7,,accepted,fair,15.66,16.69,5,6,False,18.85,inf,,15.66,13.67
+chineseModels,40,3,14.45,,accepted,fair,0.0,10.0,1,10,False,18.85,inf,,15.66,13.67
+vietgang,40,3,0.0,,absent,fair,0.0,0.0,0,11,True,18.85,inf,,15.66,13.67
+404,40,4,7.22,,accepted,fair,7.21,10.44,9,2,False,7.22,10.44,,10.44,6.93
+Asgardians,40,4,4.84,,accepted,fair,0.0,3.81,1,10,False,7.22,10.44,,10.44,6.93
+CHOOMS,40,4,3.81,,accepted,fair,4.0,4.84,2,9,False,7.22,10.44,,10.44,6.93
+FDN,40,4,7.21,,accepted,fair,6.44,7.22,8,3,False,7.22,10.44,,10.44,6.93
+GemischtesHack,40,4,10.44,,accepted,fraud,6.44,7.21,8,3,False,7.22,10.44,,10.44,6.93
+Humble Legends,40,4,5.6,,accepted,fair,0.0,3.81,1,10,False,7.22,10.44,,10.44,6.93
+Kiebler Software Solutions,40,4,4.0,,accepted,fair,6.44,7.21,7,4,False,7.22,10.44,,10.44,6.93
+Lumenauts,40,4,6.44,,accepted,fair,5.6,7.21,7,4,False,7.22,10.44,,10.44,6.93
+TRINNERS4WINNERS,40,4,,7.21,hidden,fraud,10.44,inf,11,0,False,7.22,10.44,,10.44,6.93
+alpha,40,4,5.41,,accepted,fair,6.44,7.21,7,4,False,7.22,10.44,,10.44,6.93
+chineseModels,40,4,5.44,,accepted,fair,4.84,5.41,4,7,False,7.22,10.44,,10.44,6.93
+vietgang,40,4,0.0,,absent,fair,0.0,0.0,0,11,True,7.22,10.44,,10.44,6.93
+404,40,5,21.69,,wrongful_reject,fair,17.94,22.72,10,1,False,22.72,inf,,17.4,0.0
+Asgardians,40,5,9.78,,accepted,fair,8.0,11.9,2,9,False,22.72,inf,,17.4,0.0
+CHOOMS,40,5,15.23,,accepted,fair,15.71,17.4,7,4,False,22.72,inf,,17.4,0.0
+FDN,40,5,14.65,,accepted,fair,12.84,15.23,5,6,False,22.72,inf,,17.4,0.0
+GemischtesHack,40,5,17.4,,accepted,fair,0.0,8.0,1,10,False,22.72,inf,,17.4,0.0
+Humble Legends,40,5,17.94,,accepted,fair,11.9,12.84,4,7,False,22.72,inf,,17.4,0.0
+Kiebler Software Solutions,40,5,8.0,,accepted,fair,12.84,14.65,4,7,False,22.72,inf,,17.4,0.0
+Lumenauts,40,5,15.71,,accepted,fair,15.23,17.4,7,4,False,22.72,inf,,17.4,0.0
+TRINNERS4WINNERS,40,5,22.72,,wrongful_reject,fair,17.94,21.69,10,1,False,22.72,inf,,17.4,0.0
+alpha,40,5,12.84,,accepted,fair,15.71,17.4,7,4,False,22.72,inf,,17.4,0.0
+chineseModels,40,5,11.9,,accepted,fair,0.0,8.0,1,10,False,22.72,inf,,17.4,0.0
+vietgang,40,5,0.0,,absent,fair,0.0,0.0,0,11,True,22.72,inf,,17.4,0.0
+404,40,6,72.56,,accepted,fair,76.72,77.22,8,3,False,90.44,inf,,66.99,58.46
+Asgardians,40,6,66.11,,accepted,fair,66.99,72.56,6,5,False,90.44,inf,,66.99,58.46
+CHOOMS,40,6,48.74,,accepted,fair,48.0,59.84,2,9,False,90.44,inf,,66.99,58.46
+FDN,40,6,76.72,,accepted,fair,77.22,89.35,9,2,False,90.44,inf,,66.99,58.46
+GemischtesHack,40,6,66.99,,accepted,fair,48.74,59.84,3,8,False,90.44,inf,,66.99,58.46
+Humble Legends,40,6,90.44,,accepted,fair,72.56,76.72,8,3,False,90.44,inf,,66.99,58.46
+Kiebler Software Solutions,40,6,48.0,,accepted,fair,59.84,65.02,3,8,False,90.44,inf,,66.99,58.46
+Lumenauts,40,6,65.02,,accepted,fair,72.56,76.72,7,4,False,90.44,inf,,66.99,58.46
+TRINNERS4WINNERS,40,6,89.35,,accepted,fair,77.22,90.44,10,1,False,90.44,inf,,66.99,58.46
+alpha,40,6,77.22,,accepted,fair,90.44,inf,11,0,False,90.44,inf,,66.99,58.46
+chineseModels,40,6,59.84,,accepted,fair,48.74,65.02,3,8,False,90.44,inf,,66.99,58.46
+vietgang,40,6,0.0,,absent,fair,0.0,0.0,0,11,True,90.44,inf,,66.99,58.46
+404,40,7,489.45,,accepted,fair,505.09,539.4,8,3,False,593.37,inf,,477.63,433.57
+Asgardians,40,7,334.47,,accepted,fair,0.0,378.64,1,10,False,593.37,inf,,477.63,433.57
+CHOOMS,40,7,481.95,,accepted,fair,505.09,539.4,8,3,False,593.37,inf,,477.63,433.57
+FDN,40,7,539.4,,accepted,fair,505.09,580.0,9,2,False,593.37,inf,,477.63,433.57
+GemischtesHack,40,7,477.63,,accepted,fair,378.64,444.42,3,8,False,593.37,inf,,477.63,433.57
+Humble Legends,40,7,593.37,,accepted,fair,580.0,inf,11,0,False,593.37,inf,,477.63,433.57
+Kiebler Software Solutions,40,7,580.0,,accepted,fair,593.37,inf,11,0,False,593.37,inf,,477.63,433.57
+Lumenauts,40,7,505.09,,accepted,fair,539.4,580.0,9,2,False,593.37,inf,,477.63,433.57
+TRINNERS4WINNERS,40,7,444.42,,accepted,fair,489.45,505.09,7,4,False,593.37,inf,,477.63,433.57
+alpha,40,7,378.64,,accepted,fair,334.47,444.42,2,9,False,593.37,inf,,477.63,433.57
+chineseModels,40,7,459.0,,accepted,fair,444.42,477.63,4,7,False,593.37,inf,,477.63,433.57
+vietgang,40,7,0.0,,absent,fair,0.0,0.0,0,11,True,593.37,inf,,477.63,433.57
+404,40,8,295.81,,accepted,fair,301.07,330.15,9,2,False,386.54,inf,,300.15,245.91
+Asgardians,40,8,132.52,,accepted,fair,0.0,180.61,1,10,False,386.54,inf,,300.15,245.91
+CHOOMS,40,8,301.07,,accepted,fair,300.15,330.15,9,2,False,386.54,inf,,300.15,245.91
+FDN,40,8,330.15,,accepted,fair,301.07,386.54,10,1,False,386.54,inf,,300.15,245.91
+GemischtesHack,40,8,300.15,,accepted,fair,215.63,268.81,5,6,False,386.54,inf,,300.15,245.91
+Humble Legends,40,8,386.54,,wrongful_reject,fair,301.07,330.15,10,1,False,386.54,inf,,300.15,245.91
+Kiebler Software Solutions,40,8,300.0,,accepted,fair,330.15,386.54,10,1,False,386.54,inf,,300.15,245.91
+Lumenauts,40,8,215.63,,accepted,fair,196.83,268.81,4,7,False,386.54,inf,,300.15,245.91
+TRINNERS4WINNERS,40,8,180.61,,accepted,fair,132.52,196.83,2,9,False,386.54,inf,,300.15,245.91
+alpha,40,8,196.83,,accepted,fair,215.63,268.81,4,7,False,386.54,inf,,300.15,245.91
+chineseModels,40,8,268.81,,accepted,fair,215.63,295.81,5,6,False,386.54,inf,,300.15,245.91
+vietgang,40,8,0.0,,absent,fair,0.0,0.0,0,11,True,386.54,inf,,300.15,245.91
+404,40,9,69.32,,accepted,fair,72.09,79.79,4,7,False,116.25,inf,,104.4,94.77
+Asgardians,40,9,79.79,,accepted,fair,91.8,98.12,7,4,False,116.25,inf,,104.4,94.77
+CHOOMS,40,9,85.68,,accepted,fair,79.79,91.8,6,5,False,116.25,inf,,104.4,94.77
+FDN,40,9,116.25,,accepted,fair,104.4,inf,11,0,False,116.25,inf,,104.4,94.77
+GemischtesHack,40,9,104.4,,accepted,fair,91.8,98.12,8,3,False,116.25,inf,,104.4,94.77
+Humble Legends,40,9,50.75,,accepted,fair,72.09,79.79,4,7,False,116.25,inf,,104.4,94.77
+Kiebler Software Solutions,40,9,104.0,,accepted,fair,116.25,inf,11,0,False,116.25,inf,,104.4,94.77
+Lumenauts,40,9,62.68,,accepted,fair,69.32,72.09,3,8,False,116.25,inf,,104.4,94.77
+TRINNERS4WINNERS,40,9,98.12,,accepted,fair,91.8,104.0,8,3,False,116.25,inf,,104.4,94.77
+alpha,40,9,72.09,,accepted,fair,85.68,91.8,6,5,False,116.25,inf,,104.4,94.77
+chineseModels,40,9,91.8,,accepted,fair,85.68,98.12,7,4,False,116.25,inf,,104.4,94.77
+vietgang,40,9,0.0,,absent,fair,0.0,0.0,0,11,True,116.25,inf,,104.4,94.77
+404,40,10,13.47,,accepted,fair,11.36,14.0,6,5,False,18.0,inf,,17.4,9.44
+Asgardians,40,10,7.33,,accepted,fair,0.0,9.52,1,10,False,18.0,inf,,17.4,9.44
+CHOOMS,40,10,9.52,,accepted,fair,10.0,11.29,3,8,False,18.0,inf,,17.4,9.44
+FDN,40,10,16.74,,wrongful_reject,fair,14.0,17.0,8,3,False,18.0,inf,,17.4,9.44
+GemischtesHack,40,10,17.4,,wrongful_reject,fair,7.33,9.52,2,9,False,18.0,inf,,17.4,9.44
+Humble Legends,40,10,18.0,,wrongful_reject,fair,0.0,7.33,1,10,False,18.0,inf,,17.4,9.44
+Kiebler Software Solutions,40,10,10.0,,accepted,fair,14.0,16.74,7,4,False,18.0,inf,,17.4,9.44
+Lumenauts,40,10,14.0,,accepted,fair,7.33,9.52,2,9,False,18.0,inf,,17.4,9.44
+TRINNERS4WINNERS,40,10,11.36,,accepted,fair,9.52,10.0,3,8,False,18.0,inf,,17.4,9.44
+alpha,40,10,11.29,,accepted,fair,14.0,16.74,7,4,False,18.0,inf,,17.4,9.44
+chineseModels,40,10,17.0,,wrongful_reject,fair,14.0,16.74,8,3,False,18.0,inf,,17.4,9.44
+vietgang,40,10,0.0,,absent,fair,0.0,0.0,0,11,True,18.0,inf,,17.4,9.44
+404,40,11,28.95,,accepted,fair,25.58,30.44,9,2,False,33.32,inf,,22.05,10.86
+Asgardians,40,11,11.93,,accepted,fair,0.0,14.39,1,10,False,33.32,inf,,22.05,10.86
+CHOOMS,40,11,33.32,,accepted,fair,30.44,inf,11,0,False,33.32,inf,,22.05,10.86
+FDN,40,11,25.58,,accepted,fair,25.0,28.95,8,3,False,33.32,inf,,22.05,10.86
+GemischtesHack,40,11,22.05,,accepted,fair,0.0,11.93,1,10,False,33.32,inf,,22.05,10.86
+Humble Legends,40,11,18.55,,accepted,fair,0.0,11.93,1,10,False,33.32,inf,,22.05,10.86
+Kiebler Software Solutions,40,11,25.0,,accepted,fair,33.32,inf,11,0,False,33.32,inf,,22.05,10.86
+Lumenauts,40,11,14.39,,accepted,fair,11.93,17.0,2,9,False,33.32,inf,,22.05,10.86
+TRINNERS4WINNERS,40,11,30.44,,accepted,fair,25.0,25.58,8,3,False,33.32,inf,,22.05,10.86
+alpha,40,11,22.32,,accepted,fair,25.58,28.95,8,3,False,33.32,inf,,22.05,10.86
+chineseModels,40,11,17.0,,accepted,fair,14.39,18.55,3,8,False,33.32,inf,,22.05,10.86
+vietgang,40,11,0.0,,absent,fair,0.0,0.0,0,11,True,33.32,inf,,22.05,10.86
+404,40,12,53.84,,accepted,fair,56.55,62.15,6,5,False,71.15,inf,,56.55,53.55
+Asgardians,40,12,67.2,,accepted,fair,71.15,inf,11,0,False,71.15,inf,,56.55,53.55
+CHOOMS,40,12,48.0,,accepted,fair,43.8,53.84,4,7,False,71.15,inf,,56.55,53.55
+FDN,40,12,71.15,,accepted,fair,67.2,inf,11,0,False,71.15,inf,,56.55,53.55
+GemischtesHack,40,12,56.55,,accepted,fair,48.0,53.84,5,6,False,71.15,inf,,56.55,53.55
+Humble Legends,40,12,64.46,,accepted,fair,71.15,inf,11,0,False,71.15,inf,,56.55,53.55
+Kiebler Software Solutions,40,12,66.0,,accepted,fair,71.15,inf,11,0,False,71.15,inf,,56.55,53.55
+Lumenauts,40,12,38.73,,accepted,fair,43.8,48.0,3,8,False,71.15,inf,,56.55,53.55
+TRINNERS4WINNERS,40,12,62.15,,accepted,fair,53.84,56.55,6,5,False,71.15,inf,,56.55,53.55
+alpha,40,12,43.8,,accepted,fair,53.84,56.55,5,6,False,71.15,inf,,56.55,53.55
+chineseModels,40,12,42.5,,accepted,fair,38.73,43.8,2,9,False,71.15,inf,,56.55,53.55
+vietgang,40,12,0.0,,absent,fair,0.0,0.0,0,11,True,71.15,inf,,56.55,53.55
+404,40,13,57.91,,accepted,fair,56.44,61.15,10,1,False,57.91,61.15,,34.8,23.09
+Asgardians,40,13,52.55,,accepted,fair,61.15,inf,11,0,False,57.91,61.15,,34.8,23.09
+CHOOMS,40,13,45.6,,accepted,fair,34.8,52.44,5,6,False,57.91,61.15,,34.8,23.09
+FDN,40,13,61.15,,accepted,fraud,57.91,inf,11,0,False,57.91,61.15,,34.8,23.09
+GemischtesHack,40,13,34.8,,accepted,fair,0.0,29.05,1,10,False,57.91,61.15,,34.8,23.09
+Humble Legends,40,13,56.44,,accepted,fair,45.6,52.44,6,5,False,57.91,61.15,,34.8,23.09
+Kiebler Software Solutions,40,13,55.0,,accepted,fair,61.15,inf,11,0,False,57.91,61.15,,34.8,23.09
+Lumenauts,40,13,30.55,,accepted,fair,0.0,29.05,1,10,False,57.91,61.15,,34.8,23.09
+TRINNERS4WINNERS,40,13,52.44,,accepted,fair,34.8,45.6,5,6,False,57.91,61.15,,34.8,23.09
+alpha,40,13,29.05,,accepted,fair,34.8,45.6,4,7,False,57.91,61.15,,34.8,23.09
+chineseModels,40,13,29.75,,accepted,fair,0.0,29.05,1,10,False,57.91,61.15,,34.8,23.09
+vietgang,40,13,0.0,,absent,fair,0.0,0.0,0,11,True,57.91,61.15,,34.8,23.09
+404,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+Asgardians,40,14,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,220.52,0.0
+CHOOMS,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+FDN,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+GemischtesHack,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+Humble Legends,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+Kiebler Software Solutions,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+Lumenauts,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+TRINNERS4WINNERS,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+alpha,40,14,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,220.52,0.0
+chineseModels,40,14,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,220.52,0.0
+vietgang,40,14,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,inf,,220.52,0.0
+404,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+Asgardians,40,15,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,661.57,0.0
+CHOOMS,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+FDN,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+GemischtesHack,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+Humble Legends,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+Kiebler Software Solutions,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+Lumenauts,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+TRINNERS4WINNERS,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+alpha,40,15,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,661.57,0.0
+chineseModels,40,15,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,661.57,0.0
+vietgang,40,15,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,inf,,661.57,0.0
+404,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+Asgardians,40,16,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,70.57,0.0
+CHOOMS,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+FDN,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+GemischtesHack,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+Humble Legends,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+Kiebler Software Solutions,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+Lumenauts,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+TRINNERS4WINNERS,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+alpha,40,16,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,70.57,0.0
+chineseModels,40,16,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,70.57,0.0
+vietgang,40,16,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,inf,,70.57,0.0
+404,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+Asgardians,40,17,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,17.64,0.0
+CHOOMS,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+FDN,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+GemischtesHack,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+Humble Legends,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+Kiebler Software Solutions,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+Lumenauts,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+TRINNERS4WINNERS,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+alpha,40,17,,,paid_zero_t0,unknown,0.0,inf,2,9,False,0.0,inf,,17.64,0.0
+chineseModels,40,17,,0.0,hidden,fraud,0.0,inf,3,8,False,0.0,inf,,17.64,0.0
+vietgang,40,17,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,inf,,17.64,0.0

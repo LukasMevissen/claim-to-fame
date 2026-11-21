@@ -17,7 +17,7 @@ from pathlib import Path
 from .case_io import Case
 from .config import REPO_ROOT
 
-EXTRACTOR_VERSION = "x4"   # x4: x3 + stated amounts (x 1.19 if net) are the threshold; no general hourly rate
+EXTRACTOR_VERSION = "x3"   # x3: policy-first prompt, line totals, price book of revealed thresholds (x4 with two extra sentences ran in game 39 only and was withdrawn)
 IMAGE_MAX_SIDE = 1024
 RAW_IMAGE_MAX_BYTES = 2_000_000   # without Pillow, larger photos are left out (upload too slow)
 
@@ -59,12 +59,6 @@ Work policy-first; the policy wording decides far more than market prices do:
    affected lines), percentage reductions for breached duties, no betterment over the
    pre-loss standard, repair capped at replacement value or purchase price, deductibles.
    Figures in the description (purchase price, age, sizes, volumes) are there to be used.
-   When the description or the policy states an amount for the item itself (purchase or shop
-   price, agreed value, allowance, cap, sub-limit), that amount is normally the threshold:
-   multiply it by 1.19 if it is stated net, before or exclusive of VAT, and use it as it is
-   if it includes VAT.
-   Do not assume a general hourly rate (labour is NOT people x hours x a round rate): hourly
-   prices differ by trade and by kind of case, so take them from similar reference lines.
 4. REFERENCE CASES, when given, are earlier cases with what was later revealed about t.
    They are the best calibration available: reuse their price level for similar work and
    their coverage logic for similar clauses. Without a close reference stay moderate:

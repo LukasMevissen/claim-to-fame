@@ -1,0 +1,194 @@
+{
+  "case_id": "game40-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Profipress elbow 90° copper 15mm (4 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 4.0,
+      "price_log_sd": 0.15,
+      "rationale": "Directly related to the repair of the failed copper heating pipe in the affected plant room; covered as necessary repair material under 7.1.7(c). Reference Case 39 supports indemnity for similar fittings."
+    },
+    {
+      "item_id": "2",
+      "description": "Profipress elbow 90° copper 28mm (5 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 7.5,
+      "price_log_sd": 0.15,
+      "rationale": "Directly related to the pipe repair in the affected area; necessary repair material per 7.1.7(c). Reference Case 39 supports indemnity for similar fittings."
+    },
+    {
+      "item_id": "3",
+      "description": "Profipress elbow 45° copper 28mm (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.5,
+      "price_log_sd": 0.15,
+      "rationale": "Directly related to the pipe repair in the affected area; necessary repair material per 7.1.7(c). Reference Case 39 supports indemnity for similar fittings."
+    },
+    {
+      "item_id": "4",
+      "description": "Grub screw (8 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2.0,
+      "price_log_sd": 0.2,
+      "rationale": "Likely used as minor fixings for the pipe repair; covered as consumable installation material under 7.1.7(c). Reference Case 39 supports indemnity for similar small parts."
+    },
+    {
+      "item_id": "5",
+      "description": "Two-screw pipe clamp 25 mm (4 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 4.0,
+      "price_log_sd": 0.2,
+      "rationale": "Pipe clamps are necessary to secure the new pipework in the affected area; covered under 7.1.7(c). Reference Case 39 supports indemnity for similar items."
+    },
+    {
+      "item_id": "6",
+      "description": "Copper pipe 15x1 (6.4 m)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 38.0,
+      "price_log_sd": 0.15,
+      "rationale": "Directly required for the repair of the failed pipe in the affected plant room; covered under 7.1.7(c). Reference Case 39 supports indemnity for copper pipe by the meter."
+    },
+    {
+      "item_id": "7",
+      "description": "Service technician hours (6.75 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 540.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour for the pipe repair in the affected area is covered under 7.1.7(g). Reference Case 39 supports indemnity for technician hours at ~80–85 EUR/hr gross."
+    },
+    {
+      "item_id": "8",
+      "description": "Helper hours (5.75 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.15,
+      "rationale": "Helper labour for the pipe repair is covered under 7.1.7(g). Reference Case 39 supports indemnity for helper hours at ~40–45 EUR/hr gross."
+    },
+    {
+      "item_id": "9",
+      "description": "Rock wool pipe insulation (6 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 132.0,
+      "price_log_sd": 0.15,
+      "rationale": "Pipe insulation is necessary to restore the repaired pipe to its pre-loss standard; covered under 7.1.7(c). Reference Case 39 supports indemnity for rock wool insulation at ~20–22 EUR/m."
+    },
+    {
+      "item_id": "10",
+      "description": "Binding wire (2 kg)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.2,
+      "rationale": "Binding wire is a minor consumable likely used for securing insulation or pipework; covered under 7.1.7(c). Reference Case 39 supports indemnity for similar small parts."
+    },
+    {
+      "item_id": "11",
+      "description": "Small parts and consumables (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covers minor fixings and consumables for the pipe repair; indemnified under 7.1.7(c) as long as not duplicated elsewhere. Reference Case 39 supports similar lump sums."
+    },
+    {
+      "item_id": "12",
+      "description": "Vehicle costs (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.1,
+      "rationale": "One call-out charge per contractor per invoice is covered under 7.1.7(f). Reference Case 39 supports indemnity for vehicle costs at 65–83 EUR per invoice."
+    },
+    {
+      "item_id": "13",
+      "description": "Construction waste disposal (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 55.0,
+      "price_log_sd": 0.15,
+      "rationale": "Disposal of waste generated by the pipe repair is covered under 5.2.1 and 7.1.7(a). Reference Case 39 supports indemnity for similar disposal at 50–60 EUR per job."
+    },
+    {
+      "item_id": "14",
+      "description": "Repainting of basement hallway (outside boiler room, 12 m²)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.05,
+      "rationale": "The hallway was not affected by the leak; per 7.1.5, work outside the affected area is not covered. Reference Case 36 and 39 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "15",
+      "description": "Laminate flooring replacement – adjacent storage room (15 m², undamaged by leak)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.05,
+      "rationale": "The storage room was not affected by the leak; per 7.1.5, work outside the affected area is not covered. Reference Case 36 and 39 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "16",
+      "description": "Outdoor garden tap service (1 flat rate)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Servicing the outdoor tap is unrelated to the insured event and is general maintenance; per 7.1.8(a), not indemnified. Reference Case 39 confirms t = 0 for similar lines."
+    },
+    {
+      "item_id": "17",
+      "description": "Processing flat fee (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.05,
+      "rationale": "General administrative or processing fees are not indemnified per 7.1.8(b). Reference Case 36 and 39 confirm t = 0 for similar lines."
+    }
+  ]
+}
