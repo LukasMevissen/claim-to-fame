@@ -2999,3 +2999,27 @@ TRINNERS4WINNERS,34,8,75.64,,accepted,fair,76.0,inf,10,1,False,76.0,inf,,67.86,6
 alpha,34,8,50.62,,accepted,fair,64.0,67.86,5,6,False,76.0,inf,,67.86,67.83
 chineseModels,34,8,74.97,,accepted,fair,50.62,58.91,4,7,False,76.0,inf,,67.86,67.83
 vietgang,34,8,0.0,,absent,fair,0.0,0.0,0,11,True,76.0,inf,,67.86,67.83
+404,35,1,,11.39,hidden,fraud,23.82,inf,6,5,False,0.0,11.39,,1590.44,0.0
+Asgardians,35,1,23.82,,accepted,fraud,11.39,inf,5,6,False,0.0,11.39,,1590.44,0.0
+CHOOMS,35,1,,23.82,hidden,fraud,0.0,11.39,4,7,False,0.0,11.39,,1590.44,0.0
+FDN,35,1,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,11.39,,1590.44,0.0
+GemischtesHack,35,1,,23.82,hidden,fraud,0.0,11.39,4,7,False,0.0,11.39,,1590.44,0.0
+Humble Legends,35,1,0.0,,absent,fair,0.0,0.0,4,7,True,0.0,11.39,,1590.44,0.0
+Kiebler Software Solutions,35,1,,23.82,hidden,fraud,0.0,11.39,4,7,False,0.0,11.39,,1590.44,0.0
+Lumenauts,35,1,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,11.39,,1590.44,0.0
+TRINNERS4WINNERS,35,1,11.39,,accepted,fraud,0.0,23.82,4,7,False,0.0,11.39,,1590.44,0.0
+alpha,35,1,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,11.39,,1590.44,0.0
+chineseModels,35,1,0.0,,absent,fair,0.0,0.0,4,7,True,0.0,11.39,,1590.44,0.0
+vietgang,35,1,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,11.39,,1590.44,0.0
+404,35,2,53.43,,accepted,fraud,45.99,60.0,7,4,False,0.0,6.66,,45.99,0.0
+Asgardians,35,2,,45.99,hidden,fraud,60.0,inf,9,2,False,0.0,6.66,,45.99,0.0
+CHOOMS,35,2,32.0,,accepted,fraud,0.0,6.66,4,7,False,0.0,6.66,,45.99,0.0
+FDN,35,2,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,6.66,,45.99,0.0
+GemischtesHack,35,2,45.99,,accepted,fraud,0.0,6.66,4,7,False,0.0,6.66,,45.99,0.0
+Humble Legends,35,2,0.0,,absent,fair,0.0,0.0,4,7,True,0.0,6.66,,45.99,0.0
+Kiebler Software Solutions,35,2,60.0,,accepted,fraud,0.0,6.66,4,7,False,0.0,6.66,,45.99,0.0
+Lumenauts,35,2,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,6.66,,45.99,0.0
+TRINNERS4WINNERS,35,2,6.66,,accepted,fraud,0.0,32.0,4,7,False,0.0,6.66,,45.99,0.0
+alpha,35,2,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,6.66,,45.99,0.0
+chineseModels,35,2,0.0,,absent,fair,0.0,0.0,4,7,True,0.0,6.66,,45.99,0.0
+vietgang,35,2,0.0,,absent,fair,0.0,0.0,3,8,True,0.0,6.66,,45.99,0.0
