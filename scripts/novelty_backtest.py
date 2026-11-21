@@ -16,12 +16,16 @@ t is not published. Two readings of the bounds [t_low, t_high):
 Baseline: the charge we submitted. Games we did not price live (4, 5: not played; 21: model
 timeout, fixed prices sent) use 0.87 x a saved estimate as the baseline and are marked *.
 
-Rules (S1-S3 act on lines flagged new that we believe covered, S4 on anchored ones):
+Rules (all act on lines flagged new that we believe covered):
     S1  new line: a = 1.00 x estimate
     S2  new line: a = 1.20 x estimate
     S3  new line: a = M x estimate, M = the multiple in [0.87, 1.5] that would have earned
         most on the new lines of all earlier games (worst-case reading), once 5 are known
-    S4  anchored line: a = max(a, the precedent's highest proven-fair charge)
+    S4  new line with an estimate of at most SMALL (200 EUR): a = 1.30 x estimate; larger
+        new lines keep their charge (threshold and multiple were picked after seeing games
+        4-22, so this one is in-sample; --small / --small-mult show the sensitivity)
+Also printed, as a rejected idea: the ratchet (anchored line: a = max(a, the precedent's
+highest proven-fair charge)).
 """
 
 from __future__ import annotations
@@ -116,17 +120,20 @@ def best_multiple(history: list[tuple[float, float]]) -> float:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--from", dest="start", type=int, default=4)
+    ap.add_argument("--small", type=float, default=200.0)
+    ap.add_argument("--small-mult", type=float, default=1.3)
     ap.add_argument("--lines", action="store_true", help="print every line with its flag")
     args = ap.parse_args()
     summary = json.loads((ROOT / "results/market/summary.json").read_text())
     subs = live_quotes()
     games = sorted(int(g) for g in summary)
-    names = ("S1", "S2", "S3", "S4")
+    names = ("S1", "S2", "S3", "S4", "ratchet")
     tot = {m: {n: 0.0 for n in names} for m in ("worst", "mid")}
+    sub_tot = {k: {m: {n: 0.0 for n in names} for m in ("worst", "mid")} for k in ("live", "not live")}
     history: list[tuple[float, float]] = []
     print("game  lines new anch |" + "".join(f" {n:>7}" for n in names) + "  |" + "".join(f" {n:>7}" for n in names)
           + "  | S3 multiple")
-    print("                     |  worst case: t = highest proven-fair  |  mid: t = midpoint / 1.15 x")
+    print("                     |  worst case: t = highest proven-fair          |  mid: t = midpoint / 1.15 x")
     for g in games:
         its = lines_of(g, summary, subs)
         new = [x for x in its if x["covered"] and x["flag"].status == "new"]
@@ -138,9 +145,12 @@ def main() -> None:
                 gain = lambda grp, f: sum(revenue(f(x), x, mode) - revenue(x["a"], x, mode) for x in grp)  # noqa: E731
                 row[mode] = {"S1": gain(new, lambda x: 1.0 * x["est"]), "S2": gain(new, lambda x: 1.2 * x["est"]),
                              "S3": gain(new, lambda x: m3 * x["est"]),
-                             "S4": gain(anch, lambda x: max(x["a"], x["flag"].t_low))}
+                             "S4": gain([x for x in new if x["est"] <= args.small],
+                                        lambda x: args.small_mult * x["est"]),
+                             "ratchet": gain(anch, lambda x: max(x["a"], x["flag"].t_low))}
                 for n in names:
                     tot[mode][n] += row[mode][n]
+                    sub_tot["live" if its and its[0]["live"] else "not live"][mode][n] += row[mode][n]
             mark = " " if its and its[0]["live"] else "*"
             print(f"{g:3d}{mark}  {len(its):4d} {len(new):3d} {len(anch):4d} |"
                   + "".join(f" {row['worst'][n]:+7.0f}" for n in names) + "  |"
@@ -152,9 +162,10 @@ def main() -> None:
                         print(f"        {x['i']:2d} {f.status:11s} est={x['est']:7.0f} a={x['a']:8.2f} "
                               f"t[{x['tl']:.0f},{x['th']}] ref={f.ref} {x['text']}")
         history += [(x["est"], x["tl"]) for x in new]
-    print("-" * 100)
-    print("total                |" + "".join(f" {tot['worst'][n]:+7.0f}" for n in names) + "  |"
-          + "".join(f" {tot['mid'][n]:+7.0f}" for n in names))
+    print("-" * 118)
+    for label, t in (("total", tot), ("  live rounds", sub_tot["live"]), ("  rounds marked *", sub_tot["not live"])):
+        print(f"{label:21s}|" + "".join(f" {t['worst'][n]:+7.0f}" for n in names) + "  |"
+              + "".join(f" {t['mid'][n]:+7.0f}" for n in names))
 
 
 if __name__ == "__main__":
