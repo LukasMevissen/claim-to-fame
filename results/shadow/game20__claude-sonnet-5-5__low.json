@@ -1,0 +1,105 @@
+{
+ "game": 20,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.1,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 33112,
+ "output_tokens": 795,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.4,
+   "rationale": "Cost of establishing cause and extent under 5.2.6(b) is covered whether or not repair follows, up to EUR 3,000, so the assessment is indemnified even with gradual leakage."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection incl. technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.35,
+   "rationale": "Leak location under 5.2.6(a) with technician time is covered up to EUR 1,000 and the single vehicle charge is admitted under 5.2.6(c), regardless of gradual cause."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor covering removal incl. linoleum, skirting, prep and waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.4,
+   "rationale": "Porous-pipe leakage is gradual under 7.1.10, so the moisture damage to the building is not escape of water damage and removal of floor finishes and debris is not indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Catering for work crew",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "Provisioning for a contractor's own personnel is business outlay under 7.1.8(b), and in any case not a repair cost."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying incl. labour, dust protection and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5000.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 7.1.10 drying measures under 7.1.7 and the related costs are not indemnified for gradual leakage, and the disinfection is likewise a consequence of moisture damage not covered."
+  },
+  {
+   "item_id": "6",
+   "description": "Electricity for drying equipment (separately metered)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.4,
+   "rationale": "Drying is not indemnified for gradual leakage under 7.1.10, and separately metered utility charges are excluded under 7.1.7 in any event."
+  }
+ ],
+ "quotes": {
+  "1": [
+   330.6,
+   293.51
+  ],
+  "2": [
+   783.0,
+   736.32
+  ],
+  "3": [
+   2175.0,
+   0.0
+  ],
+  "4": [
+   45.35,
+   0.0
+  ],
+  "5": [
+   4350.0,
+   0.0
+  ],
+  "6": [
+   783.0,
+   0.0
+  ]
+ }
+}

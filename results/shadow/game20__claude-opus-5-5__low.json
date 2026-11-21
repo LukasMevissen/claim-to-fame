@@ -1,0 +1,105 @@
+{
+ "game": 20,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 13.2,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 33112,
+ "output_tokens": 749,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.4,
+   "rationale": "Cost of establishing cause and extent under 5.2.6(b), payable even for gradual leakage per 7.1.10; within EUR 3,000 cap. Moderate flat-rate price."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection incl. technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 750.0,
+   "price_log_sd": 0.3,
+   "rationale": "Leak location under 5.2.6(a), expressly indemnified under 7.1.10 even for ageing leakage, cap EUR 1,000 per event; the vehicle is admitted under 5.2.6(c)."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor covering removal, screed prep, waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.5,
+   "rationale": "Gradual leakage from porous pipes: 7.1.10 states that moisture damage to the building is not escape of water damage, so 7.1.7 measures and 5.2.1 debris removal are not indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Catering for work crew",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "Provisioning for the contractor's own personnel is excluded under 7.1.8(b)."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying incl. kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3000.0,
+   "price_log_sd": 0.5,
+   "rationale": "Drying and disinfection under 7.1.7 are excluded for gradual leakage moisture damage per 7.1.10."
+  },
+  {
+   "item_id": "6",
+   "description": "Electricity for drying equipment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.4,
+   "rationale": "Excluded under 7.1.10 because drying is not covered, and a separately metered utility charge is excluded under 7.1.7 in any case."
+  }
+ ],
+ "quotes": {
+  "1": [
+   365.4,
+   324.41
+  ],
+  "2": [
+   652.5,
+   617.94
+  ],
+  "3": [
+   1360.55,
+   0.0
+  ],
+  "4": [
+   54.42,
+   0.0
+  ],
+  "5": [
+   2721.1,
+   0.0
+  ],
+  "6": [
+   609.0,
+   0.0
+  ]
+ }
+}

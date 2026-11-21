@@ -1,0 +1,73 @@
+{
+  "case_id": "game20",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Damage assessment and inspection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 7.1.10 and 5.2.6(b) preserve cover for necessary investigation of the cause and extent of the loss even though the resulting moisture damage is excluded. An ordinary assessment visit is estimated at €350 gross, below the €3,000 event cap."
+    },
+    {
+      "item_id": "2",
+      "description": "Indoor leak detection, technician and vehicle",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 570.0,
+      "price_log_sd": 0.32,
+      "rationale": "Sections 7.1.10 and 5.2.6(a)–(c) cover leak location, technician time and one vehicle charge. The estimate is €500 for detection plus €70 for travel, below the respective €1,000 and €83.30 gross caps."
+    },
+    {
+      "item_id": "3",
+      "description": "Floor removal, screed preparation and disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1700.0,
+      "price_log_sd": 0.55,
+      "rationale": "Section 7.1.10 excludes making good moisture damage caused by gradual pipe porosity, including the preparatory work and disposal under §§7.1.7 and 5.2.1. No portion of this whole-floor line is identified as necessary access for repairing the leaking pipe sections."
+    },
+    {
+      "item_id": "4",
+      "description": "Work crew catering",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 7.1.8(b) expressly excludes provisioning for the contractor’s personnel. The conditional estimate is three portions at €15 gross each."
+    },
+    {
+      "item_id": "5",
+      "description": "Large-area and cavity drying with kitchen disinfection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 3800.0,
+      "price_log_sd": 0.55,
+      "rationale": "Section 7.1.10 excludes drying and disinfection under §7.1.7 for moisture damage caused by gradual leakage. The open-plan layout does not change that exclusion; €3,800 is a conditional estimate for the combined work."
+    },
+    {
+      "item_id": "6",
+      "description": "Separately metered drying electricity",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 844.24,
+      "price_log_sd": 0.25,
+      "rationale": "Section 7.1.10 excludes the underlying drying, and §7.1.7 independently bars a separate electricity charge alongside a drying lump sum. The conditional estimate is 2,412.1 kWh at €0.35 gross per kWh."
+    }
+  ]
+}
