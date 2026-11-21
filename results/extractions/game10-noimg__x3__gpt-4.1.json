@@ -1,0 +1,29 @@
+{
+  "case_id": "game10-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disposal of storm debris from shed and felled tree (roof timber, glass, green waste, root ball <1m³)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 5.2.1 covers clearance and disposal of 'material arising' from insured property and storm-felled trees, including roof timber, broken glass, green waste, and a root ball under 1m³. Reference Case 8 sets t for similar lines: glass pane disposal t=30–34€, green waste t=41–68€, roof timber t<75€, root ball t<51€. As this is a combined line, 7.1.10 applies: all elements must be indemnifiable, which they are here. The total threshold is the sum of fair market rates for each, referencing Case 8's price levels. For 4 pcs (likely 1 each: roof timber, glass, green waste, root ball), a fair total is 34 (glass) + 68 (green waste) + 50 (roof timber, upper bound) + 50 (root ball, upper bound) = 202€, but as Case 8's combined disposals were not indemnified above 75€ for timber and 51€ for root ball, and the lowest proven fair charge for a single line was 68€, a moderate estimate for the whole combined line is 150€ gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Disposal of ground material from churned-up area (soil, topsoil, paving grit)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 5.2.1 and 5.2.2 exclude ground material disposal unless it is necessary for reinstatement of insured property and the ground is made good as part of the same work. Here, no foundation or reinstatement work was needed; the ground was just disturbed. Reference Case 8: all lines for disposal of soil, topsoil, and paving grit from churned-up ground were t=0, not indemnified. This is a combined line (7.1.10), but all elements are excluded under 5.2.1(d) and 5.2.2."
+    }
+  ]
+}

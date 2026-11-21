@@ -395,3 +395,27 @@ TRINNERS4WINNERS,9,7,6.29,,accepted,fraud,0.0,inf,5,6,False,0.0,6.29,,0.0,0.0
 alpha,9,7,0.0,,accepted,unknown,0.0,6.29,4,7,False,0.0,6.29,,0.0,0.0
 chineseModels,9,7,,6.29,hidden,fraud,0.0,6.29,5,6,False,0.0,6.29,,0.0,0.0
 vietgang,9,7,,0.0,hidden,fraud,6.29,inf,6,5,False,0.0,6.29,,0.0,0.0
+404,10,1,217.9,,accepted,fraud,125.0,156.57,2,9,False,156.57,217.9,,156.57,169.92
+Asgardians,10,1,543.11,,accepted,fraud,442.46,495.21,8,3,False,156.57,217.9,,156.57,169.92
+CHOOMS,10,1,0.0,,absent,fair,0.0,0.0,0,11,True,156.57,217.9,,156.57,169.92
+FDN,10,1,125.0,,accepted,fair,156.57,217.9,2,9,False,156.57,217.9,,156.57,169.92
+GemischtesHack,10,1,156.57,,accepted,fair,125.0,217.9,2,9,False,156.57,217.9,,156.57,169.92
+Humble Legends,10,1,235.62,,accepted,fraud,271.32,305.19,5,6,False,156.57,217.9,,156.57,169.92
+Kiebler Software Solutions,10,1,,543.11,hidden,fraud,543.11,inf,10,1,False,156.57,217.9,,156.57,169.92
+Lumenauts,10,1,305.19,,accepted,fraud,271.32,442.46,6,5,False,156.57,217.9,,156.57,169.92
+TRINNERS4WINNERS,10,1,442.46,,accepted,fraud,305.19,495.21,7,4,False,156.57,217.9,,156.57,169.92
+alpha,10,1,495.21,,accepted,fraud,442.46,543.11,8,3,False,156.57,217.9,,156.57,169.92
+chineseModels,10,1,,543.11,hidden,fraud,543.11,inf,10,1,False,156.57,217.9,,156.57,169.92
+vietgang,10,1,271.32,,accepted,fraud,0.0,125.0,1,10,False,156.57,217.9,,156.57,169.92
+404,10,2,145.76,,accepted,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+Asgardians,10,2,,218.66,hidden,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+CHOOMS,10,2,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,89.79,,111.14,0.0
+FDN,10,2,0.0,,accepted,unknown,0.0,89.79,2,9,False,0.0,89.79,,111.14,0.0
+GemischtesHack,10,2,111.14,,accepted,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+Humble Legends,10,2,,0.0,hidden,fraud,218.66,inf,8,3,False,0.0,89.79,,111.14,0.0
+Kiebler Software Solutions,10,2,,218.66,hidden,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+Lumenauts,10,2,89.79,,accepted,fraud,0.0,111.14,3,8,False,0.0,89.79,,111.14,0.0
+TRINNERS4WINNERS,10,2,218.66,,accepted,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+alpha,10,2,0.0,,accepted,unknown,0.0,89.79,2,9,False,0.0,89.79,,111.14,0.0
+chineseModels,10,2,,218.66,hidden,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
+vietgang,10,2,193.31,,accepted,fraud,0.0,89.79,3,8,False,0.0,89.79,,111.14,0.0
