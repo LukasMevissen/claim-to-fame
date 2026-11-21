@@ -1,0 +1,120 @@
+{
+ "game": 15,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 13.6,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 21414,
+ "output_tokens": 1434,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.4,
+   "rationale": "Physical surge damage is established and the appliance falls under 2.3.3, well within the EUR 5,000 sub-limit. No evidence is given about the surge protector, so no 50% reduction is applied. The price level follows the earlier surge cases, where the speaker came out below about 336."
+  },
+  {
+   "item_id": "2",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 7.1.8(b), delivery of replacement property to the insured location is not a repair cost, so t = 0."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 7.1.8(c), installing and commissioning replacement property is not indemnified, so t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "TV set",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 565.0,
+   "price_log_sd": 0.25,
+   "rationale": "The TV is a surge-damaged appliance under 2.3.3 and is within the sub-limit. No reduction is applied because nothing is established about the surge protector, and indemnity is capped at standard-grade replacement under 7.1.9. The price follows the earlier TV reference of about 517 to 616."
+  },
+  {
+   "item_id": "5",
+   "description": "Property and liability damage to electronics",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is a property and liability arrangement charge. 3.1.4, 3.1.5 and 7.1.8(f) exclude it, so t = 0."
+  },
+  {
+   "item_id": "6",
+   "description": "Property and liability damage to electronics - service order",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is an order-placement charge under a service or liability arrangement. 7.1.8(f) excludes it, so t = 0."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.8(d), an attendance charge is only payable when the work on the same invoice is indemnifiable. This invoice contains no indemnifiable work, so t = 0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   217.5,
+   182.5
+  ],
+  "2": [
+   4.35,
+   0.0
+  ],
+  "3": [
+   6.96,
+   0.0
+  ],
+  "4": [
+   491.55,
+   480.78
+  ],
+  "5": [
+   9.07,
+   0.0
+  ],
+  "6": [
+   5.44,
+   0.0
+  ],
+  "7": [
+   5.44,
+   0.0
+  ]
+ }
+}

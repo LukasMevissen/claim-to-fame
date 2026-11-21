@@ -1,0 +1,105 @@
+{
+ "game": 3,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 31.0,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 24348,
+ "output_tokens": 1166,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.5,
+   "rationale": "Drilling to receive the glass or its hardware is preparatory glazing work under 1.3. The optional glazing peril 2.1(e) is not shown as agreed, so 2.6.4 and 3.5(b) exclude it."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation of new glass into frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.45,
+   "rationale": "Setting and fitting the pane is glazing work. Glazing breakage is outside the accidental damage peril (2.6.4) and the glazing peril was not taken, so 3.5(b) excludes it."
+  },
+  {
+   "item_id": "3",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.45,
+   "rationale": "The replacement glazing element is excluded under 2.6.4, 2.7.3 and 3.5(a)/(b) because the optional glazing peril is not shown as agreed."
+  },
+  {
+   "item_id": "4",
+   "description": "Repair of dented/gouged solid-wood door frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.35,
+   "rationale": "The frame is a non-glazing part of freestanding furniture (4.2.2, 4.2.6), damaged by sudden external impact (2.6.1). The repair cost is covered under 7.1.1(b), including refinishing of the affected part, at a moderate market price."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair and refinish of scratched/chipped wooden shelf",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.35,
+   "rationale": "The shelf was struck in the same incident and is a separately affected item (2.6.2). The scratch and chip were caused by the impact, not by ordinary use, so the repair and refinish are covered at market price."
+  },
+  {
+   "item_id": "6",
+   "description": "Vehicle costs (attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is one attendance per undertaking under 7.1.12. Covered timber repair was carried out at the visit, so the charge is payable in full and not apportioned against the excluded glazing work."
+  }
+ ],
+ "quotes": {
+  "1": [
+   31.75,
+   0.0
+  ],
+  "2": [
+   78.4,
+   0.0
+  ],
+  "3": [
+   139.38,
+   0.0
+  ],
+  "4": [
+   174.0,
+   159.55
+  ],
+  "5": [
+   130.5,
+   117.47
+  ],
+  "6": [
+   39.15,
+   30.56
+  ]
+ }
+}

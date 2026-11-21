@@ -1,0 +1,60 @@
+{
+ "game": 4,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 18.5,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 16499,
+ "output_tokens": 1089,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Recovery of stolen bicycle incl. locksmith call-out and cutting seized lock (3 attendances)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 197.0,
+   "price_log_sd": 0.3,
+   "rationale": "Recovery attendance and cutting of the lock are covered under 5.2.2(a) and (b), but the bicycle is mobility equipment under 4.2.2. Recovery and repair share the EUR 500 gross aggregate sub-limit rateably. I estimated about EUR 240 of recovery cost against about EUR 610 of total loss, so the line is scaled to roughly 0.82, giving about EUR 197."
+  },
+  {
+   "item_id": "2",
+   "description": "Repair of theft damage to frame and brakes (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 230.0,
+   "price_log_sd": 0.3,
+   "rationale": "Damage done in the course of the theft is covered under 2.3.1(b) and 7.1.7 as repair of an affected item. It falls in the mobility class, so it takes its rateable share of the EUR 500 sub-limit. I estimated about EUR 280 market cost, scaled by about 0.82, giving about EUR 230."
+  },
+  {
+   "item_id": "3",
+   "description": "Labour and sundries flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour and sundries serving the covered repair and recovery are part of the repair cost under 7.1.7(d) and (e). There is no sign of servicing or maintenance work on the invoice. The line is capped by its rateable share of the EUR 500 sub-limit, about EUR 90 scaled to about EUR 74."
+  }
+ ],
+ "quotes": {
+  "1": [
+   171.39,
+   159.76
+  ],
+  "2": [
+   200.1,
+   189.5
+  ],
+  "3": [
+   64.38,
+   52.74
+  ]
+ }
+}

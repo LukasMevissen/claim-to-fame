@@ -1,0 +1,72 @@
+{
+ "game": 2,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 31.3,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replace cracked display assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.2,
+   "rationale": "The swerve and impact are covered under §§2.6.1–2.6.3. Under §§7.1.7 and 7.1.10, the display accounts for €1,000 of the estimated €1,340 gross repair, which is below the cost of an equivalent new laptop; no deductible is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Replace impact-damaged lower housing",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 340.0,
+   "price_log_sd": 0.3,
+   "rationale": "The corner dent is covered even if it did not impair operation (§2.6.3(b)). The equivalent housing and fitting account for €340 of the €1,340 combined repair under §§7.1.7 and 7.1.10, with no separate deductible for this damage area."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 7.1.5 and 7.1.11 exclude cosmetic work on the old scuff because the impact did not cause it. The €35 figure is a conditional estimate only; the line is not payable."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.3 covers the necessary damage assessment after an insured impact, whether reimbursed to the policyholder or settled with the shop (§7.1.12). An estimated €60 gross is below the €250 event cap, and no repair credit is shown."
+  }
+ ],
+ "quotes": {
+  "1": [
+   870.0,
+   914.05
+  ],
+  "2": [
+   295.8,
+   297.12
+  ],
+  "3": [
+   30.49,
+   0.0
+  ],
+  "4": [
+   52.2,
+   50.93
+  ]
+ }
+}

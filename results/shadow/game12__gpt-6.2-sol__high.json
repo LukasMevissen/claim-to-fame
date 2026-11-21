@@ -1,0 +1,57 @@
+{
+ "game": 12,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.7,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Floor cleaning, connection check and skirting replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 415.0,
+   "price_log_sd": 0.3,
+   "rationale": "The hose leak is covered under §2.4.2 even while the policyholder was away. Under §§7.1.5 and 7.1.7, allow about €85 for cleaning the affected floor, €70 to check the source and confirm it no longer leaks, and €260 to remove and replace about 10 m of damaged skirting like for like."
+  },
+  {
+   "item_id": "2",
+   "description": "Moisture measurement and floor drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(b), (e) and (g) cover necessary moisture measurement, equipment hire and labour in both affected rooms. Allow about €200 for one drying unit for ten days and €250 for measurement, setup, monitoring and removal, with no separate electricity allowance under §7.1.8(d)."
+  },
+  {
+   "item_id": "3",
+   "description": "Assessment and drying of framed decorative print",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.4,
+   "rationale": "The mass-produced print is movable household contents excluded by §4.3(d), not an item of particular value eligible under §5.2.6. If eligible, a brief specialist assessment and simple drying would cost about €110 gross."
+  }
+ ],
+ "quotes": {
+  "1": [
+   361.05,
+   362.67
+  ],
+  "2": [
+   391.5,
+   384.52
+  ],
+  "3": [
+   95.7,
+   0.0
+  ]
+ }
+}

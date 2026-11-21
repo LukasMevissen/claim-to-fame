@@ -1,0 +1,240 @@
+{
+ "game": 17,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 27.4,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 22961,
+ "output_tokens": 1737,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "TV set (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.3,
+   "rationale": "Surge damage is an insured event under 2.3.3. No surge protection is established, but the loss notification says nothing was on a protected strip, so the 50% reduction applies. References put a TV at about 590 and the policy halves it, giving about 300."
+  },
+  {
+   "item_id": "2",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 225.0,
+   "price_log_sd": 0.35,
+   "rationale": "Damaged appliance covered under 2.3.3. The 50% unprotected-connection reduction applies. Reference speaker price is about 450, so half is about 225."
+  },
+  {
+   "item_id": "3",
+   "description": "AV receiver / amplifier (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 225.0,
+   "price_log_sd": 0.4,
+   "rationale": "Physically damaged appliance, covered under 2.3.3 and subject to the 50% reduction. A standard-grade receiver costs about 450, so about 225 after the reduction."
+  },
+  {
+   "item_id": "4",
+   "description": "Melted mains plug and power lead",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.5,
+   "rationale": "Physically surge-damaged accessory, indemnifiable. The unprotected-strip reduction applies to accessories as well, so a small amount results."
+  },
+  {
+   "item_id": "5",
+   "description": "HDMI cables and remote controls",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Not shown to be physically damaged by the surge. 4.2.4 and 7.1.5 require established damage to the item, and 7.1.6 gives no extension to undamaged parts of a set."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "A passive metal bracket is not an electrical appliance and was not damaged by the surge, so it is not an affected item."
+  },
+  {
+   "item_id": "7",
+   "description": "DVD player (pre-existing failure)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Had been failing for months before the storm. This is wear and ageing, excluded under 2.3.10(c), so t=0."
+  },
+  {
+   "item_id": "8",
+   "description": "Router (no diagnostic report)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "No physical damage is established by the loss investigation (4.2.4, 7.1.5, 7.1.10), so the router is not an affected item."
+  },
+  {
+   "item_id": "9",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage of replacement property is not a repair cost under 7.1.8(b)."
+  },
+  {
+   "item_id": "10",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Fitting and setup of replacement property is excluded under 7.1.8(c)."
+  },
+  {
+   "item_id": "11",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.5,
+   "rationale": "The technician's own diagnostic and report is an outlay under 7.1.8(e) and the invoice is an arrangement under 3.1.4 and 3.1.5, so it is not a repair cost. References put this type of line at 0 to 6."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs - return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "The invoice is not indemnifiable, so the attendance charge is not either under 7.1.8(d). A return visit is also a duplicate under 7.1.8(g)."
+  },
+  {
+   "item_id": "13",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "The check of undamaged building wiring is outside the affected items under 7.1.5 and is an inspection under 3.1.5."
+  },
+  {
+   "item_id": "14",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative and order-processing charges are excluded under 7.1.8(e) and 7.1.8(f)."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "Attendance charge on an invoice with no indemnifiable work, excluded under 7.1.8(d)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   261.0,
+   243.28
+  ],
+  "2": [
+   195.75,
+   176.2
+  ],
+  "3": [
+   195.75,
+   164.25
+  ],
+  "4": [
+   10.88,
+   5.21
+  ],
+  "5": [
+   22.68,
+   0.0
+  ],
+  "6": [
+   27.21,
+   0.0
+  ],
+  "7": [
+   36.28,
+   0.0
+  ],
+  "8": [
+   54.42,
+   0.0
+  ],
+  "9": [
+   4.54,
+   0.0
+  ],
+  "10": [
+   7.26,
+   0.0
+  ],
+  "11": [
+   5.44,
+   0.0
+  ],
+  "12": [
+   4.54,
+   0.0
+  ],
+  "13": [
+   36.28,
+   0.0
+  ],
+  "14": [
+   4.54,
+   0.0
+  ],
+  "15": [
+   4.54,
+   0.0
+  ]
+ }
+}

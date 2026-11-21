@@ -1,0 +1,237 @@
+{
+ "game": 17,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 37.8,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged TV set",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.998,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 490.0,
+   "price_log_sd": 0.32,
+   "rationale": "Confirmed surge damage is covered under 2.3.3 and 4.2.4. A like-for-like TV estimated at €980 gross under 7.1.9 is reduced by 50% because it was unprotected; the €5,000 aggregate cap does not bind and no deductible is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Surge-damaged speaker system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.998,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.38,
+   "rationale": "The physically damaged speaker system is covered under 2.3.3 and 4.2.4. An equivalent system estimated at €700 gross under 7.1.9 is reduced by 50% to €350; together with the TV, this gives €840, consistent with the comparable unprotected loss in Case 1."
+  },
+  {
+   "item_id": "3",
+   "description": "Surge-damaged AV receiver",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.997,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.35,
+   "rationale": "The receiver itself was physically damaged and qualifies under 2.3.3 and 4.2.4. A like-for-like receiver estimated at €500 gross under 7.1.9 is reduced by 50% to €250."
+  },
+  {
+   "item_id": "4",
+   "description": "Melted mains plug and power lead",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.5,
+   "price_log_sd": 0.4,
+   "rationale": "The plug and lead were physically melted, unlike the other listed accessories. Under 2.3.3 and 7.1.7, an equivalent plug and lead estimated at €25 gross is subject to the same 50% reduction, leaving €12.50."
+  },
+  {
+   "item_id": "5",
+   "description": "HDMI cables and remote controls",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.45,
+   "rationale": "No physical damage is established for any of the three accessories, and 4.2.4 and 7.1.5–7.1.6 do not cover replacing them merely to accompany the new equipment. If all three were shown to be damaged and covered, €60 gross would be halved to €30 under 2.3.3."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.003,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.45,
+   "rationale": "No physical damage or necessary replacement of the existing bracket is established, so 4.3(d) and 7.1.5 rule out a new one. The conditional estimate is €50 for an equivalent bracket, halved if it qualified as an insured accessory under 2.3.3."
+  },
+  {
+   "item_id": "7",
+   "description": "DVD player with pre-existing faults",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.003,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.38,
+   "rationale": "The reported failure predates the storm and is attributed to age, with no separate surge damage established under 2.3.10(c) and 4.2.4. If covered surge damage were established, a €90 like-for-like replacement would be halved to €45 under 2.3.3."
+  },
+  {
+   "item_id": "8",
+   "description": "Router without evidence of surge damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.015,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "No diagnostic report or other evidence establishes physical surge damage to the router as required by 4.2.4 and 7.1.5. If such damage were established, a €100 equivalent router would be halved to €50 under 2.3.3."
+  },
+  {
+   "item_id": "9",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Delivery of replacement equipment is expressly excluded by 7.1.8(b) and is not a moving-and-protecting cost under 5.2.2. The €10 conditional figure is for one ordinary delivery charge, not part of the covered equipment price."
+  },
+  {
+   "item_id": "10",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.45,
+   "rationale": "Putting replacement equipment into service is excluded by 7.1.8(c), even when the supplier bills it with covered equipment. The conditional estimate is €45 gross for one basic setup."
+  },
+  {
+   "item_id": "11",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.006,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.42,
+   "rationale": "The two inspections document the cause of failure rather than repair the equipment; 3.5 and 7.1.1(b) do not cover stand-alone claim substantiation, consistent with Case 1. The conditional estimate is two basic checks at €45 gross each."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs for return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.42,
+   "rationale": "Under 7.1.8(d), travel is payable only when tied to covered work on the same invoice, and no covered work is shown for the return visit. The conditional estimate is €30 for one local attendance."
+  },
+  {
+   "item_id": "13",
+   "description": "Distribution-board wiring safety check",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.003,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.4,
+   "rationale": "The board was checked for safety, but no physical damage to it was established, so the check is not a repair of an affected part under 3.5 and 7.1.5. The conditional estimate is €65 gross for one basic board check."
+  },
+  {
+   "item_id": "14",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Separately billed administrative and claim-processing charges are excluded under 7.1.8(e)–(f), consistent with the arrangement described in 11.2. The conditional estimate is €8 for one small flat fee."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs for technician call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.002,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.42,
+   "rationale": "The building-services invoice contains no covered repair, and 7.1.8(d) does not allow the retailer's covered equipment lines to qualify a call-out on a different invoice. The conditional estimate is €30 for one local attendance."
+  }
+ ],
+ "quotes": {
+  "1": [
+   426.3,
+   426.41
+  ],
+  "2": [
+   304.5,
+   296.74
+  ],
+  "3": [
+   217.5,
+   214.6
+  ],
+  "4": [
+   10.88,
+   10.36
+  ],
+  "5": [
+   26.13,
+   0.0
+  ],
+  "6": [
+   21.78,
+   0.0
+  ],
+  "7": [
+   39.15,
+   0.0
+  ],
+  "8": [
+   43.5,
+   0.0
+  ],
+  "9": [
+   9.07,
+   0.0
+  ],
+  "10": [
+   39.2,
+   0.0
+  ],
+  "11": [
+   78.3,
+   0.0
+  ],
+  "12": [
+   26.1,
+   0.0
+  ],
+  "13": [
+   56.55,
+   0.0
+  ],
+  "14": [
+   7.26,
+   0.0
+  ],
+  "15": [
+   26.1,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "game": 9,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 37.6,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 18820,
+ "output_tokens": 1296,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge-damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.3,
+   "rationale": "Overvoltage from lightning (2.3.3) is covered, and the endorsement waives the 50% reduction for missing surge protection. Indemnity is the standard-grade replacement price (7.1.9), well within the EUR 5,000 sub-limit. Case 1 implies roughly EUR 1,650 for the pair at full value, so I take about EUR 600 for the speakers."
+  },
+  {
+   "item_id": "2",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Carriage and delivery of replacement property are not repair costs under 7.1.8(b), so t = 0."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fitting, installing and commissioning of replacement property is excluded under 7.1.8(c), so t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "TV set (surge-damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1100.0,
+   "price_log_sd": 0.3,
+   "rationale": "Damage to the TV is established by the diagnostic report and falls under overvoltage cover (2.3.3). The reduction is waived by the endorsement, so indemnity is the standard-grade replacement price with no betterment (7.1.9). Taking the Case 1 pair total of about EUR 1,650 less about EUR 600 for the speakers gives roughly EUR 1,100."
+  },
+  {
+   "item_id": "5",
+   "description": "Property and liability damage to electronics",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "This charge relates to an arrangement covering liability and property exposure. 3.1.4, 3.1.5 and 7.1.8(f) exclude it, and the liability and property elements are not separately priced, so t = 0."
+  },
+  {
+   "item_id": "6",
+   "description": "Service order for property and liability arrangement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "Charges for placing or administering an order under a service or liability arrangement are excluded under 3.1.5 and 7.1.8(f), so t = 0."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs (attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.8(d) an attendance charge is covered only when the work on the same invoice is indemnifiable. Lines 5 and 6 on this invoice are not, so t = 0. Case 3 shows the same logic, with a small possible amount if paid."
+  }
+ ],
+ "quotes": {
+  "1": [
+   522.0,
+   508.57
+  ],
+  "2": [
+   34.8,
+   0.0
+  ],
+  "3": [
+   69.6,
+   0.0
+  ],
+  "4": [
+   957.0,
+   932.37
+  ],
+  "5": [
+   90.7,
+   0.0
+  ],
+  "6": [
+   45.35,
+   0.0
+  ],
+  "7": [
+   22.68,
+   0.0
+  ]
+ }
+}

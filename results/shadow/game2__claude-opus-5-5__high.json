@@ -1,0 +1,75 @@
+{
+ "game": 2,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.9,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 26942,
+ "output_tokens": 1033,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen crack repair (complete display assembly)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 920.0,
+   "price_log_sd": 0.3,
+   "rationale": "The portable equipment cover is in force, and a swerve in a car is expressly covered under 2.6.1/2.6.2. A cracked screen is an area of damage under 2.6.3(a). The repair stays below the price of a new unit, so 7.1.10 pays the full necessary repair; the display is the larger part of a combined repair of about EUR 1,350-1,400."
+  },
+  {
+   "item_id": "2",
+   "description": "Lower-right corner / housing shell repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.35,
+   "rationale": "A dented housing at a corner is covered under 2.6.3(b) as part of the same loss on the same unit. Replacing the lower shell with a like-for-like part is a necessary repair cost under 7.1.7/7.1.10 and is the smaller share of the combined total."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish of pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Treating a pre-existing surface condition is expressly not a repair cost under 7.1.11, 7.1.5 and 7.1.8(a), even when done on the same invoice. t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.4,
+   "rationale": "The examination cost is covered under 5.2.3 because an insured event under 2.6 is established, capped at EUR 250 incl. VAT. A typical shop diagnostic charge is well below that cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   800.4,
+   769.22
+  ],
+  "2": [
+   365.4,
+   340.84
+  ],
+  "3": [
+   36.28,
+   0.0
+  ],
+  "4": [
+   60.9,
+   51.1
+  ]
+ }
+}

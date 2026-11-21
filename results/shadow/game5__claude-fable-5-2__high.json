@@ -1,0 +1,30 @@
+{
+ "game": 5,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 16.2,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 25676,
+ "output_tokens": 590,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop damage payment - cracked screen and lower-right corner impact damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1390.0,
+   "price_log_sd": 0.1,
+   "rationale": "Covered under 2.6.1(b) and 2.6.2 (thrown against a fixed interior part of a conveyance during an evasive swerve); screen and corner are one loss on one unit under 2.6.3 and 7.1.5. Under 7.1.10 repair is capped at the cost of an equivalent new unit, EUR 1,400; reference case 2 showed screen plus corner repair at EUR 1,150 or more, so t sits at or just under the cap, with no deductible figure given."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1209.3,
+   1233.64
+  ]
+ }
+}

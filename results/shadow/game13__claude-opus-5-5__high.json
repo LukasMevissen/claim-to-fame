@@ -1,0 +1,75 @@
+{
+ "game": 13,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 18.3,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 18418,
+ "output_tokens": 791,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber and broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.3,
+   "rationale": "Both are remains of the insured shed and count as material arising under 5.2.1(a), so this combined position is fully indemnifiable under 7.1.10. Price is calibrated on reference cases 8 and 10 (timber below ~75, glass ~30-34)."
+  },
+  {
+   "item_id": "2",
+   "description": "Combined load: green waste, root mass >1 m³, packed soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "A root mass over 1 m³ (5.2.1(e)) and ground material (5.2.1(d)) are not material arising. Under 7.1.10 the whole combined position is therefore declined, and the indemnifiable green waste is not extracted."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Paving grit is ground material excluded under 4.3(d) and 5.2.1(d). This is standalone disposal with no reinstatement and no making good under 5.2.2, so it is not indemnified (reference case 8)."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Topsoil is ground material in whatever processed form (5.2.1(d)). Standalone clearance is excluded under 5.2.2, consistent with reference case 8."
+  }
+ ],
+ "quotes": {
+  "1": [
+   82.65,
+   78.27
+  ],
+  "2": [
+   136.06,
+   0.0
+  ],
+  "3": [
+   36.28,
+   0.0
+  ],
+  "4": [
+   36.28,
+   0.0
+  ]
+ }
+}

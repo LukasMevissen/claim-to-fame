@@ -1,0 +1,120 @@
+{
+ "game": 18,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 11.6,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 27994,
+ "output_tokens": 920,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Copper pipe repair - fittings, pipe section, consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "A heating pipe fracture inside the building is covered under 2.4.3(a) and the pipe is not part of the boiler. Material for the repair is a necessary repair cost under 7.1.7(c). One metre of copper pipe, new fittings and consumables is modest."
+  },
+  {
+   "item_id": "2",
+   "description": "Labour - service technician and helper",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour at customary rates is indemnified under 7.1.7(g). About 1.5 days with a helper for part of it is plausible but may be slightly generous, so I used a moderate figure."
+  },
+  {
+   "item_id": "3",
+   "description": "Pipe re-insulation (rock wool) 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "The insulation belonged to the repaired pipe section and had to be replaced, so it falls under the repair cost in 7.1.7(c). The covered quantity is only about 1 m, so the price is small."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.4,
+   "rationale": "One call-out or travel charge per contractor per invoice is indemnified under 7.1.7(f). Reference cases show these charges are small."
+  },
+  {
+   "item_id": "5",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Disposal of the removed old pipe and insulation is covered under 7.1.7(a) and 5.2.1. The waste is one small bag, so the price is low."
+  },
+  {
+   "item_id": "6",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "General administrative, handling or processing charges on top of itemised labour and materials are excluded under 7.1.8(b)."
+  },
+  {
+   "item_id": "7",
+   "description": "Tile cleaning, disinfection and coating 5 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.6,
+   "rationale": "Cleaning and disinfecting is general cleanliness, not a repair cost (7.1.8(a)). Water from a heating pipe is not damage to the tiles, and the coating would be an improvement. The line is excluded."
+  }
+ ],
+ "quotes": {
+  "1": [
+   104.4,
+   90.75
+  ],
+  "2": [
+   565.5,
+   518.53
+  ],
+  "3": [
+   36.28,
+   24.66
+  ],
+  "4": [
+   39.15,
+   32.85
+  ],
+  "5": [
+   22.68,
+   15.41
+  ],
+  "6": [
+   9.07,
+   0.0
+  ],
+  "7": [
+   55.19,
+   0.0
+  ]
+ }
+}

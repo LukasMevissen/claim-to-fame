@@ -1,0 +1,42 @@
+{
+ "game": 1,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.0,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged TV and speaker system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "The confirmed surge damage is covered under 2.3.3 and 4.2.4. Equivalent replacements under 7.1.9 are estimated at €1,300 gross for both items, below the €5,000 aggregate cap; the missing surge protection reduces that amount by 50% to €650."
+  },
+  {
+   "item_id": "2",
+   "description": "Surge diagnostic report and technician call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "The bundled line primarily documents the failure and checks wiring safety rather than repairing damage, so 7.1.10 weighs against payment. If the attendance qualifies under 7.1.8(d), €120 allows for the one documented visit, not the three billed units."
+  }
+ ],
+ "quotes": {
+  "1": [
+   565.5,
+   543.07
+  ],
+  "2": [
+   104.4,
+   0.0
+  ]
+ }
+}

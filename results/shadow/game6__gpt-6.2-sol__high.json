@@ -1,0 +1,27 @@
+{
+ "game": 6,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 11.1,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Combined laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1180.0,
+   "price_log_sd": 0.22,
+   "rationale": "The swerve and impact inside the car are covered under 2.6.2–2.6.3, and both damaged areas form one loss; direct payment to the shop does not change coverage under 7.1.12. The comparable split repairs total at least €1,150 gross and the comparable combined repair was accepted at €1,166, supporting a €1,180 gross estimate under 7.1.10, with no stated deductible or sub-limit to apply."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1026.6,
+   1068.94
+  ]
+ }
+}

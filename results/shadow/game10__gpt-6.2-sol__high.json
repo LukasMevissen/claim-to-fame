@@ -1,0 +1,42 @@
+{
+ "game": 10,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 17.6,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed and fallen-tree debris",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 186.0,
+   "price_log_sd": 0.25,
+   "rationale": "The shed timber and glass, green waste, and single root ball under 1 m³ all qualify under 5.2.1, so the combined line passes 7.1.10. Gross disposal estimate: €60 for timber + €32 for glass + €54 for green waste + €40 for the root ball = €186."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of soil, topsoil and paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 5.2.1(d) excludes all three materials, and 5.2.2 does not cover standalone disposal without reinstatement-related ground works and making good. The €105 figure is a conditional price estimate only; no payment is due."
+  }
+ ],
+ "quotes": {
+  "1": [
+   161.82,
+   165.44
+  ],
+  "2": [
+   91.47,
+   0.0
+  ]
+ }
+}

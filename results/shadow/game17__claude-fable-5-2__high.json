@@ -1,0 +1,240 @@
+{
+ "game": 17,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 36.0,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 22961,
+ "output_tokens": 2641,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "TV set (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.35,
+   "rationale": "Covered under 2.3.3 as a surge-damaged appliance; standard-grade replacement (7.1.9) of about EUR 800-900, halved because it was established that no surge protection device was in use."
+  },
+  {
+   "item_id": "2",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 270.0,
+   "price_log_sd": 0.4,
+   "rationale": "Covered under 2.3.3 with damage established; standard-grade replacement value halved for the missing surge protection device."
+  },
+  {
+   "item_id": "3",
+   "description": "AV receiver / amplifier (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 2.3.3 as a damaged appliance; standard-grade replacement halved for the missing surge protection device. The EUR 5,000 appliance sub-limit is not reached."
+  },
+  {
+   "item_id": "4",
+   "description": "Melted mains plug and power lead",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.5,
+   "rationale": "Physically damaged accessory, so indemnifiable under 2.3.3 and 4.2.4; the half reduction also applies to accessories. Small part value, halved."
+  },
+  {
+   "item_id": "5",
+   "description": "HDMI cables and remote controls",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "No physical damage established for these items (4.2.4, 7.1.5); undamaged parts of a set are not covered under 7.1.6."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.6,
+   "rationale": "Not an electrical appliance and not damaged by the surge; excluded under 4.2.4, 4.3(d) and 7.1.5."
+  },
+  {
+   "item_id": "7",
+   "description": "DVD player (already failing, age-related)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Pre-existing, age-related defect excluded under 2.3.10(c); no insured peril caused the failure."
+  },
+  {
+   "item_id": "8",
+   "description": "Router (no diagnostic report)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.6,
+   "rationale": "Physical damage not established by the loss investigation (4.2.4, 7.1.10), so it does not count as an affected appliance."
+  },
+  {
+   "item_id": "9",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Carriage and delivery of replacement property is not a repair cost under 7.1.8(b); earlier surge cases confirmed zero."
+  },
+  {
+   "item_id": "10",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Fitting and commissioning of replacement property is excluded under 7.1.8(c); earlier surge cases confirmed zero."
+  },
+  {
+   "item_id": "11",
+   "description": "Diagnostic inspection and surge-failure report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.6,
+   "rationale": "Not a repair cost and not among the exhaustive cost heads in 5.1; falls under 7.1.8(e) as diagnostic and documentation outlay. A near-identical line in an earlier case was not indemnified."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs – return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "Attendance charge on an invoice with no indemnifiable work (7.1.8(d)) and a duplicate charge (7.1.8(g))."
+  },
+  {
+   "item_id": "13",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "Inspection of a component with no established damage; this is upkeep or checking, not repair (7.1.5, 7.1.8(a), 3.1.5)."
+  },
+  {
+   "item_id": "14",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.6,
+   "rationale": "General administrative and order-processing charge excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "Under 7.1.8(d) an attendance charge is payable only alongside indemnifiable work on the same invoice; nothing on this invoice is indemnifiable, and earlier surge cases gave zero."
+  }
+ ],
+ "quotes": {
+  "1": [
+   365.4,
+   343.62
+  ],
+  "2": [
+   234.9,
+   204.18
+  ],
+  "3": [
+   217.77,
+   182.57
+  ],
+  "4": [
+   19.95,
+   13.56
+  ],
+  "5": [
+   27.59,
+   0.0
+  ],
+  "6": [
+   22.99,
+   0.0
+  ],
+  "7": [
+   36.79,
+   0.0
+  ],
+  "8": [
+   32.19,
+   0.0
+  ],
+  "9": [
+   13.8,
+   0.0
+  ],
+  "10": [
+   36.79,
+   0.0
+  ],
+  "11": [
+   82.78,
+   0.0
+  ],
+  "12": [
+   27.59,
+   0.0
+  ],
+  "13": [
+   73.58,
+   0.0
+  ],
+  "14": [
+   18.4,
+   0.0
+  ],
+  "15": [
+   27.59,
+   0.0
+  ]
+ }
+}

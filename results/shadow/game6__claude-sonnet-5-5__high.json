@@ -1,0 +1,30 @@
+{
+ "game": 6,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 10.2,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 28163,
+ "output_tokens": 314,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop accidental damage repair (cracked screen and lower-right corner), combined line, settled with supplier",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sudden external action during a swerve is covered under 2.6.2, and the portable-equipment extension 4.5.2 applies on the Berlin-Munich drive. The screen and corner are one loss on one unit (2.6.3, 7.1.10), and direct settlement with the shop (7.1.12) does not change cover. The combined line is assessed by its predominant purpose, so it is indemnified at the necessary repair cost. References: 808 screen plus 342 corner gives about 1150, and case 5 showed at least 1166 fair. The repair is capped by replacement value, so I estimate about 1200 including VAT. The deductible is unknown."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1044.0,
+   1021.13
+  ]
+ }
+}

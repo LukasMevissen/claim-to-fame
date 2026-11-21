@@ -40,8 +40,8 @@ _SCHEMA = {
 
 
 def extract_claude(case: Case, model: str, timeout: float, reference: str = "",
-                   effort: str | None = "low", with_image: bool = True
-                   ) -> tuple[list[ItemEstimate], dict]:
+                   effort: str | None = "low", with_image: bool = True,
+                   system: str = SYSTEM) -> tuple[list[ItemEstimate], dict]:
     """Returns (items, meta). meta: served_by, input_tokens, output_tokens."""
     import anthropic
 
@@ -62,7 +62,7 @@ def extract_claude(case: Case, model: str, timeout: float, reference: str = "",
     output_config: dict = {"format": {"type": "json_schema", "schema": _SCHEMA}}
     if effort:
         output_config["effort"] = effort
-    kwargs = dict(model=model, max_tokens=16000, system=SYSTEM,
+    kwargs = dict(model=model, max_tokens=16000, system=system,
                   messages=[{"role": "user", "content": content}], output_config=output_config)
     if model in _HAS_FALLBACK:
         resp = client.beta.messages.create(betas=[_FALLBACK_BETA], fallbacks="default", **kwargs)

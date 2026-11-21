@@ -1,0 +1,42 @@
+{
+ "game": 7,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 14.0,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst fitting repair and thermal leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 510.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like repair of the frost-fractured internal fitting, and sections 2.4.6 and 5.2.2 cover thermal leak detection. Estimated gross cost is €300 for detection, including one attendance, plus €210 for repair; the detection cost is below its €2,500 cap, and no deductible is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Exterior frost-damaged plaster repair and repainting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1400.0,
+   "price_log_sd": 0.6,
+   "rationale": "The facade damage is attributed to outdoor frost, not escaped water under section 2.4.3, and sections 2.6.4 and 3.5 exclude it because optional exterior frost cover is not shown as agreed. If covered, €1,400 gross would allow for like-for-like replastering and repainting of the affected area only under sections 7.1.5 and 7.1.10."
+  }
+ ],
+ "quotes": {
+  "1": [
+   443.7,
+   435.78
+  ],
+  "2": [
+   1287.67,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "game": 3,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 28.7,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 24348,
+ "output_tokens": 1220,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Hole drilling (preparation for glass and hardware)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Drilling is a preparatory operation within glazing work (1.3). The optional glazing peril 2.1(e) is not shown as agreed, so 2.6.4 and 3.5(b) exclude it."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation of new glass into frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Setting and fitting the pane is glazing work, excluded under 3.5(b) and 2.6.4 because the glazing peril is not agreed. Covered timber work on the same invoice does not carry it (7.1.13)."
+  },
+  {
+   "item_id": "3",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.5,
+   "rationale": "Replacement of a broken glazing element in furniture is covered only under optional peril 2.7, which is not agreed. It is excluded by 2.6.4 and 3.5(a)."
+  },
+  {
+   "item_id": "4",
+   "description": "Repair of dented and gouged solid-wood door frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 240.0,
+   "price_log_sd": 0.4,
+   "rationale": "The frame is a non-glazing part of the cabinet (4.2.2, 4.2.6) damaged by sudden impact under 2.6.1. Necessary repair including finish is payable under 7.1.1(b), estimated at an ordinary market flat rate."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair and refinish of scratched and chipped wooden shelf",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.4,
+   "rationale": "The shelf was hit in the same incident, so it is an affected item under 2.6.2 and repair with refinishing is covered by 7.1.1(b). There is a small risk the marks are treated as pre-existing or ordinary-use wear (2.6.3(a), 7.1.9)."
+  },
+  {
+   "item_id": "6",
+   "description": "Vehicle costs (attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is an attendance charge under 1.3. Under 7.1.12 one attendance is payable in full, without apportionment, because covered timber repair was carried out at the visit."
+  }
+ ],
+ "quotes": {
+  "1": [
+   36.28,
+   0.0
+  ],
+  "2": [
+   81.63,
+   0.0
+  ],
+  "3": [
+   163.27,
+   0.0
+  ],
+  "4": [
+   208.8,
+   190.8
+  ],
+  "5": [
+   139.2,
+   121.0
+  ],
+  "6": [
+   39.15,
+   33.65
+  ]
+ }
+}

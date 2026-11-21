@@ -1,0 +1,30 @@
+{
+ "game": 5,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 12.0,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 25676,
+ "output_tokens": 513,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop damage payment – cracked screen and lower-right corner impact damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1250.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sudden external action from a swerve, with the laptop thrown against the car door, is covered under 2.6.1/2.6.2, and the scope extends away from home under 4.5.2. The screen and the corner damage are one loss on one unit (2.6.3), indemnified at repair cost under 7.1.10. Reference Case 2 puts screen plus housing at about EUR 1,150 or more, capped at the replacement price of the new unit, EUR 1,400."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1087.5,
+   1098.58
+  ]
+ }
+}

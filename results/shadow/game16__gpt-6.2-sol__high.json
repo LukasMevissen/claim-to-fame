@@ -1,0 +1,252 @@
+{
+ "game": 16,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 33.3,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.29,
+   "rationale": "The internal frost fracture is covered under §2.4.3. Allow €65 gross for one like-for-like filling valve under §§7.1.9–7.1.10."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.9 covers connection elements that must be renewed with the fractured valve, even if they did not themselves fracture. Allow €22 gross for one standard hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 264.0,
+   "price_log_sd": 0.18,
+   "rationale": "Necessary labour to renew the internal fitting is covered under §7.1.9. Three hours at €88 gross per hour gives €264, consistent with the combined plumbing and leak-location allowance in Case 7."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 7.1.7(e) and 7.1.9 cover consumables actually used on the valve repair, not general tool or overhead charges. Allow €14 gross for the repair consumables."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.9 and 7.1.11 permit one attendance for the undertaking that carried out the covered repair. Allow €28 gross for that attendance, without a separate trip charge for leak detection."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 2.4.5 and 5.2.2 expressly cover imaging used to locate the insured fracture. Allow €61 gross for equipment use alone, below the €2,500 gross per-event leak-location cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Exterior facade water and frost damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.1.4 and 3.5(a) exclude frost and weather damage to exterior finishes. The description separates this damage from the internal fitting fracture, so nothing is payable; the estimate is hypothetical for a small facade repair."
+  },
+  {
+   "item_id": "8",
+   "description": "Removal of loose facade plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.65,
+   "rationale": "Sections 3.5(b) and 5.2.1 exclude removal of material from a surface whose damage is not covered. Nothing is payable; €35 gross is a hypothetical small removal charge."
+  },
+  {
+   "item_id": "9",
+   "description": "Facade base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 3.5(b) excludes renewal of the substrate beneath weather-damaged exterior plaster. Nothing is payable; €45 gross is a hypothetical allowance for a small patch."
+  },
+  {
+   "item_id": "10",
+   "description": "Additional facade work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes other work on the same elevation, and §9.6 requires each charge to be tied to an insured affected part. No such connection is shown; €30 gross is a hypothetical minor-work allowance."
+  },
+  {
+   "item_id": "11",
+   "description": "Re-forming the facade substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 3.5(b) expressly excludes preparing and re-forming the substrate beneath weather-damaged plaster. Nothing is payable; €50 gross assumes a small area if covered."
+  },
+  {
+   "item_id": "12",
+   "description": "Four coats of facade paint",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.65,
+   "rationale": "Sections 3.5(b)–(d) exclude recoating this facade regardless of the number of coats. The hypothetical €60 gross allows an ordinary like-for-like finish under §7.1.10, not four coats without evidence they were needed."
+  },
+  {
+   "item_id": "13",
+   "description": "Drying the facade substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(b) and 7.1.7(c) exclude drying the weather-damaged facade substrate because it is not an insured affected part. Nothing is payable; €45 gross is a hypothetical local drying charge."
+  },
+  {
+   "item_id": "14",
+   "description": "Facade priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 3.5(b) expressly excludes priming as part of renewing a weather-damaged facade finish. Nothing is payable; €25 gross is a hypothetical small-area priming charge."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 3.5(c) and 7.1.11 exclude labour attributable to the uninsured facade work. Nothing is payable; the hypothetical labour total is five hours at €70 gross per hour."
+  },
+  {
+   "item_id": "16",
+   "description": "Painter flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(c) excludes flat-rate charges attributable to the uninsured facade work, and §7.1.8(b) also excludes standalone administrative overhead. Nothing is payable; €20 gross is a hypothetical minor ancillary charge."
+  }
+ ],
+ "quotes": {
+  "1": [
+   56.55,
+   57.06
+  ],
+  "2": [
+   19.14,
+   19.1
+  ],
+  "3": [
+   229.68,
+   241.31
+  ],
+  "4": [
+   12.18,
+   11.99
+  ],
+  "5": [
+   24.36,
+   24.67
+  ],
+  "6": [
+   53.07,
+   52.83
+  ],
+  "7": [
+   106.03,
+   0.0
+  ],
+  "8": [
+   36.96,
+   0.0
+  ],
+  "9": [
+   47.51,
+   0.0
+  ],
+  "10": [
+   31.81,
+   0.0
+  ],
+  "11": [
+   52.79,
+   0.0
+  ],
+  "12": [
+   63.35,
+   0.0
+  ],
+  "13": [
+   47.71,
+   0.0
+  ],
+  "14": [
+   22.99,
+   0.0
+  ],
+  "15": [
+   304.5,
+   0.0
+  ],
+  "16": [
+   21.21,
+   0.0
+  ]
+ }
+}

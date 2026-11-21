@@ -1,0 +1,72 @@
+{
+ "game": 13,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.2,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of damaged shed roof timber and glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 98.0,
+   "price_log_sd": 0.22,
+   "rationale": "Both materials are storm-damaged remnants of the insured shed under §5.2.1(a), so the combined line qualifies under §7.1.10. Case 8 supports about €66 for the timber and €32 for the glass, totaling €98 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Mixed clearance load of green waste, oversized root mass and soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 5.2.1(d)–(e) excludes the soil and the root mass over 1 m³, and the clearance was not necessary to reinstate the shed under §5.2.2. Section 7.1.10 therefore bars the entire unsplit line, including the otherwise eligible green waste; €285 is a conditional gross estimate for the whole load."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.55,
+   "rationale": "Paving grit is ground material excluded by §5.2.1(d), and stand-alone disposal does not qualify as reinstatement ground work under §5.2.2. The conditional gross estimate for the one disposal line is €28."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 33.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sieving does not change the topsoil's status as excluded ground material under §5.2.1(d), and its disposal was not part of qualifying reinstatement ground work under §5.2.2. The conditional gross estimate for the one disposal line is €33."
+  }
+ ],
+ "quotes": {
+  "1": [
+   85.26,
+   88.78
+  ],
+  "2": [
+   300.92,
+   0.0
+  ],
+  "3": [
+   25.93,
+   0.0
+  ],
+  "4": [
+   30.56,
+   0.0
+  ]
+ }
+}

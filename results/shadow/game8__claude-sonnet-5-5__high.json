@@ -1,0 +1,120 @@
+{
+ "game": 8,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 17.7,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 16068,
+ "output_tokens": 897,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.4,
+   "rationale": "Remains of insured property (shed is a declared site installation) destroyed by storm count as material arising under 5.2.1(a), so clearance and disposal are indemnified. Price is a modest disposal fee."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of broken shed glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.45,
+   "rationale": "Broken glazing is a remnant of insured property (4.2.2 building component), so it is material arising under 5.2.1(a). A small disposal line, likely cheap."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of green waste from felled tree",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.4,
+   "rationale": "Branches and foliage felled by the storm are material arising under 5.2.1(b), so clearance and disposal are covered."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of root ball under 1 m3",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "The root mass of a felled tree forming a single mass of at most one cubic metre is material arising under 5.2.1(b), so its disposal is covered."
+  },
+  {
+   "item_id": "5",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "Topsoil is ground material under 1.3 and 5.2.1(d), so it is not material arising. Ground works under 5.2.2 need reinstatement with the ground made good, which is absent. Disposal standing on its own is not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.4,
+   "rationale": "Paving grit is ground material by definition. No reinstatement of the paving or making good is shown, and the paving is not a terrace, so 5.2.2 is not met and the line is excluded."
+  },
+  {
+   "item_id": "7",
+   "description": "Disposal of excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Excavated soil is ground material under 5.2.1(d). A clearance measure standing on its own, with no reinstatement and no making good, is not indemnified under 5.2.2."
+  }
+ ],
+ "quotes": {
+  "1": [
+   82.65,
+   73.38
+  ],
+  "2": [
+   30.49,
+   25.56
+  ],
+  "3": [
+   95.7,
+   84.96
+  ],
+  "4": [
+   104.4,
+   90.75
+  ],
+  "5": [
+   78.3,
+   0.0
+  ],
+  "6": [
+   52.2,
+   0.0
+  ],
+  "7": [
+   104.4,
+   0.0
+  ]
+ }
+}

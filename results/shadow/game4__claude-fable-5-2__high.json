@@ -1,0 +1,60 @@
+{
+ "game": 4,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 19.0,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 16499,
+ "output_tokens": 1126,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Recovery of stolen bicycle incl. locksmith call-out and cutting of seized lock (3 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 145.0,
+   "price_log_sd": 0.35,
+   "rationale": "Recovery cost under 5.2.2(a),(b),(d), but the bike is unscheduled mobility equipment, so the EUR 500 aggregate sub-limit (4.2.2) covers recovery and repair together. Assumed fair price about EUR 350 of about EUR 1,250 total claim, so rateable share is about EUR 145."
+  },
+  {
+   "item_id": "2",
+   "description": "Repair of theft damage to bicycle, frame and brakes (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 275.0,
+   "price_log_sd": 0.35,
+   "rationale": "Damage found on a recovered item is made good under 2.3.1(b) and 7.1.1(b), within the same EUR 500 class sub-limit (4.2.2, 7.1.10). Assumed fair price about EUR 700 of about EUR 1,250 total, so rateable share is about EUR 275."
+  },
+  {
+   "item_id": "3",
+   "description": "Labour and sundries (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.45,
+   "rationale": "Labour and sundries share the fate of the covered recovery and repair work (7.1.7(d),(e), 5.2.2(b)), so they are indemnifiable but share the EUR 500 sub-limit rateably. Assumed fair price about EUR 200 of about EUR 1,250 total, so rateable share is about EUR 80."
+  }
+ ],
+ "quotes": {
+  "1": [
+   126.15,
+   115.67
+  ],
+  "2": [
+   239.25,
+   219.38
+  ],
+  "3": [
+   69.69,
+   51.76
+  ]
+ }
+}

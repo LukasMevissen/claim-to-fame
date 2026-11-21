@@ -1,0 +1,30 @@
+{
+ "game": 5,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 17.5,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 25676,
+ "output_tokens": 261,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop damage payment: cracked screen and lower-right-corner damage (one unit, one event)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1250.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sudden external action on portable equipment during an evasive manoeuvre is covered under 2.6.1/2.6.2, and 2.6.3 treats screen and corner as one loss on one unit. Repair is capped at the new acquisition price of about EUR 1,400 (7.1.10); a repair of screen plus corner would be roughly EUR 1,150-1,250, and a brand-new unit may make it uneconomic, so I assume it is paid at about 1,250 with no deductible stated."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1087.5,
+   1083.04
+  ]
+ }
+}

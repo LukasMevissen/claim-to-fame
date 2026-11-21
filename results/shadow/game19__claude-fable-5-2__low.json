@@ -1,0 +1,180 @@
+{
+ "game": 19,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 22.9,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 24217,
+ "output_tokens": 1176,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 2.3.3; no surge protector established, so 50% reduction. References show roughly 250-450 after halving."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium replacement TV (larger, higher-end)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 360.0,
+   "price_log_sd": 0.3,
+   "rationale": "7.1.9 limits to equivalent standard 55-inch LED TV (~700-800), then halved under 2.3.3 for missing surge protection; roughly 350-400."
+  },
+  {
+   "item_id": "3",
+   "description": "HDMI cables and connectors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.6,
+   "rationale": "No physical damage established on accessories (4.2.4, 7.1.5); reference case shows a very low or zero threshold."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall-mount bracket",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.6,
+   "rationale": "Bracket not damaged by surge and relates to the larger TV; 4.2.4, 7.1.5 and 7.1.9 exclude it."
+  },
+  {
+   "item_id": "5",
+   "description": "Remote control",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Not shown as damaged; a remote normally comes with the replacement TV. If treated as an accessory it would be halved."
+  },
+  {
+   "item_id": "6",
+   "description": "Games console (unplugged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.7,
+   "rationale": "Not affected by the surge; excluded by 4.2.4, 4.3(d) and 7.1.5."
+  },
+  {
+   "item_id": "7",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded by 7.1.8(b), delivery of replacement property."
+  },
+  {
+   "item_id": "8",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded by 7.1.8(c), installing replacement property."
+  },
+  {
+   "item_id": "9",
+   "description": "Diagnostic inspection and surge report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.7,
+   "rationale": "Not a repair cost; 7.1.8(e)/(f) and 3.1.5 exclude inspection and documentation charges. Reference shows a threshold below 56, possibly zero."
+  },
+  {
+   "item_id": "10",
+   "description": "Wiring safety check of distribution board",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.7,
+   "rationale": "Inspection of undamaged wiring is not a repair cost (7.1.5, 7.1.8(a), 3.1.5)."
+  },
+  {
+   "item_id": "11",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.6,
+   "rationale": "7.1.8(d): attendance charge on an invoice with no indemnifiable work is not indemnifiable."
+  }
+ ],
+ "quotes": {
+  "1": [
+   261.0,
+   247.17
+  ],
+  "2": [
+   313.2,
+   284.31
+  ],
+  "3": [
+   11.04,
+   0.0
+  ],
+  "4": [
+   11.04,
+   0.0
+  ],
+  "5": [
+   9.2,
+   0.0
+  ],
+  "6": [
+   159.04,
+   0.0
+  ],
+  "7": [
+   4.6,
+   0.0
+  ],
+  "8": [
+   7.36,
+   0.0
+  ],
+  "9": [
+   31.81,
+   0.0
+  ],
+  "10": [
+   21.21,
+   0.0
+  ],
+  "11": [
+   7.36,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "game": 12,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.5,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 25681,
+ "output_tokens": 1134,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Floor cleaning, washing machine connection check, skirting board replacement (utility room and hallway)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 520.0,
+   "price_log_sd": 0.4,
+   "rationale": "Escape of water from an appliance hose (2.4.2). All three parts are repair costs: cleaning affected surfaces 7.1.7(h), source check 7.1.7(e), removal and like-for-like skirting 7.1.7(a)/(c), both rooms affected; priced at an ordinary market flat rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Moisture measurement and drying of utility room and hallway floor, incl. drying unit and labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 520.0,
+   "price_log_sd": 0.4,
+   "rationale": "Moisture measurement, drying and equipment hire are expressly covered under 7.1.7(b) and (e), and both rooms were wetted; priced as an ordinary small drying job."
+  },
+  {
+   "item_id": "3",
+   "description": "Assessment and drying of small framed decorative print",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.55,
+   "rationale": "A mass-produced poster print in a plain pine frame is ordinary household contents, excluded by 4.3(d), and not an 'item of particular value' under 5.2.6, so most likely nothing is paid. If 5.2.6 were applied, the modest cost would sit well under the EUR 1,000 net cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   452.4,
+   401.65
+  ],
+  "2": [
+   452.4,
+   409.59
+  ],
+  "3": [
+   129.67,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "game": 8,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 38.8,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of damaged shed roof timber",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.34,
+   "rationale": "The storm-felled tree struck the insured shed under 2.5.3(c), so the damaged roof timber qualifies as debris under 5.2.1(a). Allow €65 gross for the timber lot, including its share of the single haul."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of one broken shed pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.35,
+   "rationale": "The pane is an insured shed component under 4.2.2 and qualifies as debris under 5.2.1(a). Allow €24 gross for disposal of one pane in the shared load, not a separate pickup."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of storm-felled branches and foliage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 72.0,
+   "price_log_sd": 0.4,
+   "rationale": "Storm-felled branches and foliage qualify for clearance under 5.2.1(b), even though the tree itself is not insured. Allow €72 gross for one green-waste lot in the shared haul, excluding the separate crew's cutting work."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of one root ball under 1 m³",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.4,
+   "rationale": "The single root mass is reported below the 1 m³ limit in 5.2.1(b), which includes adhering earth in the measured volume. Allow €95 gross for disposal of one root ball and its share of the haul."
+  },
+  {
+   "item_id": "5",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sieved topsoil is still ground material excluded from clearance under 5.2.1(d). This is stand-alone disposal, not qualifying reinstatement work under 5.2.2; €55 is the conditional gross estimate for one lot."
+  },
+  {
+   "item_id": "6",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.55,
+   "rationale": "Paving grit is ground material under 1.3 and is excluded from debris clearance by 5.2.1(d). No qualifying reinstatement or making good is shown under 5.2.2; €42 is the conditional gross estimate for one lot."
+  },
+  {
+   "item_id": "7",
+   "description": "Disposal of excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.55,
+   "rationale": "Excavation does not turn soil into insured debris under 5.2.1(d), and the stand-alone disposal fails the reinstatement and making-good requirements of 5.2.2. The conditional gross estimate for one lot is €75."
+  }
+ ],
+ "quotes": {
+  "1": [
+   56.55,
+   55.79
+  ],
+  "2": [
+   20.88,
+   20.51
+  ],
+  "3": [
+   62.64,
+   60.16
+  ],
+  "4": [
+   82.65,
+   78.77
+  ],
+  "5": [
+   50.94,
+   0.0
+  ],
+  "6": [
+   38.9,
+   0.0
+  ],
+  "7": [
+   69.46,
+   0.0
+  ]
+ }
+}

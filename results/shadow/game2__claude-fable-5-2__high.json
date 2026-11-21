@@ -1,0 +1,75 @@
+{
+ "game": 2,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 29.9,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 26942,
+ "output_tokens": 1290,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen crack repair (complete display assembly)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 2.6.2 (thrown against a fixed interior part of the car in a swerve) and 2.6.3(a); necessary repair cost under 7.1.10. Both repair lines together stay below the roughly EUR 1,400 replacement value, most of it for the display, so about EUR 850."
+  },
+  {
+   "item_id": "2",
+   "description": "Lower-right corner and housing repair (new lower shell)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.35,
+   "rationale": "Housing damage at a corner from the same event is covered under 2.6.3(b) and settled as one loss with the screen (7.1.10). This is the smaller share of a repair total that stays under the roughly EUR 1,400 new price, so about EUR 380."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish of pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Excluded: 7.1.11 and 2.6.5(b) say treating a pre-existing surface condition is not a repair cost, even on the same invoice (7.1.5, 7.1.8(a))."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.4,
+   "rationale": "The repairer's diagnostic charge is expressly covered under 5.1(c) and 5.2.3 once an insured event under 2.6 exists, capped at EUR 250 gross. An ordinary shop diagnostic fee of about EUR 80 is well below the cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   739.5,
+   725.17
+  ],
+  "2": [
+   330.6,
+   310.89
+  ],
+  "3": [
+   36.28,
+   0.0
+  ],
+  "4": [
+   69.6,
+   61.79
+  ]
+ }
+}

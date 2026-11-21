@@ -1,0 +1,45 @@
+{
+ "game": 10,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 18.6,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 16971,
+ "output_tokens": 648,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of storm debris from shed and felled tree (roof timber, glass pane, green waste, root ball under 1 m3)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.3,
+   "rationale": "Combined position, but every element is material arising under 5.2.1(a)/(b) (shed remains, felled-tree green waste, single root mass not exceeding 1 m3), so 7.1.10 does not bar it. Priced from the Case 8 component levels (about 55 + 32 + 55 + 40)."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of ground material from churned-up area (excavated soil, sieved topsoil, paving grit)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ground material is not material arising (5.2.1(d)) and not insured property (4.3(d)). No reinstatement-related ground works and no making good, so this is standalone clearance excluded under 5.2.2; Case 8 gave t = 0 for the same items."
+  }
+ ],
+ "quotes": {
+  "1": [
+   156.6,
+   145.97
+  ],
+  "2": [
+   82.78,
+   0.0
+  ]
+ }
+}

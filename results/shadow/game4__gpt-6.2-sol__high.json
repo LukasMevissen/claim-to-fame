@@ -1,0 +1,57 @@
+{
+ "game": 4,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 19.5,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle recovery, locksmith call-out and lock cutting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 142.24,
+   "price_log_sd": 0.27,
+   "rationale": "Clause 5.2.2 covers the necessary attendance, lock cutting and recovery transport, assuming theft at the location is covered. The estimated €165 gross share is €142.24 after applying the €500 mobility limit rateably to €580 of eligible costs under clause 4.2.2; no deductible is shown."
+  },
+  {
+   "item_id": "2",
+   "description": "Repair of theft damage to frame and brakes",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 284.48,
+   "price_log_sd": 0.22,
+   "rationale": "Clauses 2.3.1(b), 7.1.1(b) and 7.1.9 cover necessary repairs to restore the frame and brakes to their pre-theft standard. The estimated €330 gross, excluding labour and sundries billed separately on line 3, is reduced to €284.48 by the shared €500 limit (€330 × €500/€580)."
+  },
+  {
+   "item_id": "3",
+   "description": "Labour and sundries",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.84,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 73.28,
+   "price_log_sd": 0.36,
+   "rationale": "Clauses 5.2.2(b) and 7.1.7(d)–(e) cover necessary labour and materials for the recovery or repair, but clauses 7.1.8(g) and 7.1.10 require the flat charge to be attributable to covered work and not billed elsewhere. An estimated €85 gross for distinct work yields €73.28 after applying the shared limit (€85 × €500/€580)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   123.75,
+   122.57
+  ],
+  "2": [
+   247.5,
+   250.76
+  ],
+  "3": [
+   63.75,
+   54.56
+  ]
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "game": 2,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 31.5,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 26942,
+ "output_tokens": 1029,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen crack repair (new display assembly)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.25,
+   "rationale": "The cracked screen is an area of damage from sudden external action (2.6.2 swerve, 2.6.3(a)), and the cover is in force. The full display assembly is a necessary repair and, with item 2, stays below the roughly EUR 1,400 replacement price (7.1.10). I estimate about EUR 900 gross, with no deductible figure available."
+  },
+  {
+   "item_id": "2",
+   "description": "Lower-right corner and housing repair (new lower shell)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.3,
+   "rationale": "Damage to the housing at the corner is covered under 2.6.3(b) whether or not operation is impaired. It is the same event and the same unit, so it is one loss. A new shell is a necessary repair, estimated at about EUR 350 so that both repairs stay below the replacement price."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish of pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 7.1.11 and 7.1.8(a), treating a pre-existing cosmetic scuff is not a repair cost, even when invoiced with the covered repair, so t = 0. If it were paid, it would be a small polishing charge."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.4,
+   "rationale": "The diagnostic charge is reimbursable under 5.2.3 because an insured event under 2.6 is established. It is capped at EUR 250 including VAT, and a normal diagnostic charge is well below that, so I estimate about EUR 70."
+  }
+ ],
+ "quotes": {
+  "1": [
+   783.0,
+   779.79
+  ],
+  "2": [
+   304.5,
+   294.68
+  ],
+  "3": [
+   34.8,
+   0.0
+  ],
+  "4": [
+   60.9,
+   54.07
+  ]
+ }
+}

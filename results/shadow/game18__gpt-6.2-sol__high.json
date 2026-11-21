@@ -1,0 +1,117 @@
+{
+ "game": 18,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 32.5,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Copper pipe, fittings and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.28,
+   "rationale": "The failed joint on the internal heating pipe is covered under 2.4.3(a). Under 7.1.7(c), allow €105 gross for about one metre of like-for-like copper pipe, the necessary fittings and minor consumables."
+  },
+  {
+   "item_id": "2",
+   "description": "Service technician and helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1336.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(g) covers necessary repair labour at customary local rates. Allow about 12 technician hours at €92 gross and four helper hours at €58 gross, excluding the separately billed tile work."
+  },
+  {
+   "item_id": "3",
+   "description": "Rock-wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 cover reinstatement of the original insulation on the repaired section. Allow €35 gross for pieces and fixings needed to cover about one metre; six pieces do not establish six metres of covered work."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice. Allow €60 gross, consistent with the comparable plumbing call-out in Case 16."
+  },
+  {
+   "item_id": "5",
+   "description": "Disposal of removed pipe and insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of the pipe and insulation removed for the insured repair. Allow €30 gross for a small bag of repair debris, not a separate bulk-waste haul."
+  },
+  {
+   "item_id": "6",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) expressly excludes processing charges billed on top of labour and materials. The €8 gross figure is a conditional estimate only, not an allowance."
+  },
+  {
+   "item_id": "7",
+   "description": "Tile cleaning, disinfection and coating",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.45,
+   "rationale": "Standing water is documented, but tile damage and the need for disinfection or coating are not established under 7.1.5 and 7.1.8(a). If necessary localized cleanup can be substantiated and separated from the rest, allow about €75 gross rather than the full five hours."
+  }
+ ],
+ "quotes": {
+  "1": [
+   91.35,
+   92.59
+  ],
+  "2": [
+   1162.32,
+   1194.05
+  ],
+  "3": [
+   30.45,
+   29.15
+  ],
+  "4": [
+   52.2,
+   54.84
+  ],
+  "5": [
+   26.1,
+   25.7
+  ],
+  "6": [
+   7.26,
+   0.0
+  ],
+  "7": [
+   65.33,
+   0.0
+  ]
+ }
+}

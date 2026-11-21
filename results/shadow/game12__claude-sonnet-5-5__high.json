@@ -1,0 +1,60 @@
+{
+ "game": 12,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 9.9,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 25681,
+ "output_tokens": 535,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Floor cleaning, washing machine connection check, replacement of skirting boards in utility room and hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 780.0,
+   "price_log_sd": 0.4,
+   "rationale": "Escape of water from a hose is covered (2.4.2). Cleaning of affected surfaces (7.1.7h), source check (7.1.7e) and replacement of skirting boards (fixed trim, a building component under 4.2.2) are all covered repair costs. Both rooms were wetted, so no unaffected-room issue arises. Estimated at a fair market price for the combined work."
+  },
+  {
+   "item_id": "2",
+   "description": "Moisture measurement and drying of utility room and hallway floor incl. drying unit and labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.4,
+   "rationale": "Moisture measurement and drying, including equipment hire and labour, are covered under 7.1.7(b),(e),(g). Both rooms were wetted. A fair price for drying two rooms is assumed."
+  },
+  {
+   "item_id": "3",
+   "description": "Assessment and drying of small framed decorative print from hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "The print is movable household contents (4.3(d)), not insured under the buildings-only schedule. It is a mass-produced pine-framed poster with no particular value, so 5.2.6 does not apply and the restorer's work is not indemnified. t = 0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   678.6,
+   620.11
+  ],
+  "2": [
+   826.5,
+   755.26
+  ],
+  "3": [
+   54.42,
+   0.0
+  ]
+ }
+}

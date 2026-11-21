@@ -1,0 +1,27 @@
+{
+ "game": 5,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "high",
+ "ok": true,
+ "secs": 18.0,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "MacBook screen and lower-right corner impact damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1210.0,
+   "price_log_sd": 0.2,
+   "rationale": "The evasive turn and door impact qualify under §§2.6.2–2.6.3 and 4.5.2, but neither the damage description nor a supplied schedule confirms that household contents and portable-equipment accidental damage cover were taken. If cover is confirmed, the comparable repair supports about €850 for the screen plus €360 for the corner, or €1,210 gross for one loss under §7.1.10, below the €1,400 equivalent-new benchmark, with no stated deductible to subtract."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1052.7,
+   0.0
+  ]
+ }
+}

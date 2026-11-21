@@ -1,0 +1,45 @@
+{
+ "game": 10,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 21.7,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 16971,
+ "output_tokens": 416,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of storm debris from shed and felled tree (roof timber, glass, green waste, root ball <1 m3), 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.35,
+   "rationale": "Every component is material arising under 5.2.1(a)-(c), and the root ball is a single mass under 1 m3, so the combined position under 7.1.10 is fully indemnifiable. Reference case 8 gives about 75 + 32 + 55 + 50 for similar items, so I estimate roughly 200 gross for the whole line."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of ground material from churned-up area (excavated soil, topsoil, paving grit), 3 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Ground material is excluded from clearance under 5.2.1(d). Under 5.2.2 it is covered only with reinstatement of affected insured property and making good of the ground, and no foundation or reinstatement work was needed here, so this is standalone disposal. Reference case 8 shows the same lines at t=0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   174.0,
+   156.62
+  ],
+  "2": [
+   108.84,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "game": 13,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 19.5,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 18418,
+ "output_tokens": 877,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber and broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.3,
+   "rationale": "Remains of the insured garden building are material arising under 5.2.1(a), and both elements of the line are indemnifiable, so 7.1.10 does not bar it. Priced from Case 8 (glass about 32, timber under 75) at roughly 95 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Combined load: green waste, root mass over 1 m3 and excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.6,
+   "rationale": "Combined position under 7.1.10: the root mass over one cubic metre (5.2.1(e)) and the packed soil (5.2.1(d)) are not indemnifiable, so the whole line fails. The green waste is not extracted, and no reinstatement ground works under 5.2.2 took place."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Paving grit is ground material, excluded by 4.3(d) and 5.2.1(d). It was a stand-alone clearance with no reinstatement or making good, so 5.2.2 does not apply; Case 8 gave t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil from churned-up ground",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Topsoil is ground material however processed (5.2.1(d)). Disposal standing on its own without the ground being made good is not indemnified under 5.2.2; Case 8 gave t = 0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   82.65,
+   78.27
+  ],
+  "2": [
+   137.96,
+   0.0
+  ],
+  "3": [
+   36.79,
+   0.0
+  ],
+  "4": [
+   36.79,
+   0.0
+  ]
+ }
+}

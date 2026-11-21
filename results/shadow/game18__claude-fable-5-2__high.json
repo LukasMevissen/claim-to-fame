@@ -1,0 +1,120 @@
+{
+ "game": 18,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 24.6,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 27994,
+ "output_tokens": 1840,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Copper pipe repair – fittings, pipe section and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 125.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fracture of a heating pipe inside the building is insured (2.4.3(a)); like-for-like materials and consumables are repair costs under 7.1.7(c). Priced for about 1 m of copper pipe plus fittings at an ordinary market rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Labour – service technician and helper",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1050.0,
+   "price_log_sd": 0.35,
+   "rationale": "Trade labour at customary rates is covered under 7.1.7(g). About 12 technician hours plus part-time helper would be roughly 1,300 gross, trimmed to about 1,050 because a 1 m pipe repair hardly needs a day and a half."
+  },
+  {
+   "item_id": "3",
+   "description": "Pipe re-insulation (rock wool), 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.6,
+   "rationale": "Insulation that was in place before the loss is covered under 7.1.7(c). But 6 pieces for a 1 m repaired section exceeds the documented repair (7.1.8(e)), so only the quantity for the repaired section is likely accepted."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "One travel or call-out charge per contractor per invoice is covered under 7.1.7(f), and this is the only one. Priced at the level of the reference case (at least 60)."
+  },
+  {
+   "item_id": "5",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.45,
+   "rationale": "Disposal of the removed pipe and old insulation is covered under 7.1.7(a) and 5.2.1. The volume is a single small bag, so a modest price applies."
+  },
+  {
+   "item_id": "6",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.6,
+   "rationale": "General administrative or processing charges are contractor's own business outlay and excluded under 7.1.8(b)."
+  },
+  {
+   "item_id": "7",
+   "description": "Tile cleaning, disinfection and coating, 5 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.7,
+   "rationale": "The tiles were not physically damaged (7.1.5). Cleaning and disinfection are cleanliness/upkeep and the coating is an improvement not present before (7.1.8(a), 7.1.9); the combined line mixes these, so it is most likely not indemnified."
+  }
+ ],
+ "quotes": {
+  "1": [
+   108.75,
+   99.38
+  ],
+  "2": [
+   913.5,
+   859.05
+  ],
+  "3": [
+   41.39,
+   16.54
+  ],
+  "4": [
+   52.2,
+   48.66
+  ],
+  "5": [
+   30.49,
+   22.65
+  ],
+  "6": [
+   22.99,
+   0.0
+  ],
+  "7": [
+   159.04,
+   0.0
+  ]
+ }
+}

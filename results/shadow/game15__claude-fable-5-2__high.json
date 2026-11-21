@@ -1,0 +1,120 @@
+{
+ "game": 15,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 22.0,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 21414,
+ "output_tokens": 1528,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system (surge damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.35,
+   "rationale": "Lightning overvoltage damage to an appliance is covered under 2.3.3/4.2.4 within the EUR 5,000 sub-limit (not reached). Nothing is established about surge protection, so no 50% reduction; standard-grade replacement per 7.1.9, priced near the Case 9 level."
+  },
+  {
+   "item_id": "2",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.6,
+   "rationale": "Carriage/delivery of replacement property is not a repair cost under 7.1.8(b) and is outside 5.2.2."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.6,
+   "rationale": "Fitting, installing and commissioning replacement property is excluded under 7.1.8(c)."
+  },
+  {
+   "item_id": "4",
+   "description": "TV set",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 560.0,
+   "price_log_sd": 0.15,
+   "rationale": "Surge-damaged appliance covered under 2.3.3 and 7.1.1(c), within the sub-limit; no reduction as nothing is established about a protective device. Standard-grade replacement at the Case 9 reference level (517-616)."
+  },
+  {
+   "item_id": "5",
+   "description": "Property and liability damage to electronics",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Bundles property with liability handling without separate pricing and arises from a service arrangement; excluded under 3.1.4, 3.1.5 and 7.1.8(f)."
+  },
+  {
+   "item_id": "6",
+   "description": "Property and liability damage to electronics - service order",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.6,
+   "rationale": "Charge for placing an order under a service/liability arrangement; excluded under 3.1.5 and 7.1.8(f)."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.6,
+   "rationale": "Attendance charge on an invoice where no work is indemnifiable; excluded under 7.1.8(d)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   247.95,
+   208.79
+  ],
+  "2": [
+   4.6,
+   0.0
+  ],
+  "3": [
+   7.36,
+   0.0
+  ],
+  "4": [
+   487.2,
+   499.32
+  ],
+  "5": [
+   9.2,
+   0.0
+  ],
+  "6": [
+   5.52,
+   0.0
+  ],
+  "7": [
+   4.6,
+   0.0
+  ]
+ }
+}

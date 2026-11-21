@@ -1,0 +1,45 @@
+{
+ "game": 7,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 12.2,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 26107,
+ "output_tokens": 774,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst fitting repair incl. thermal-imaging leak detection (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 740.0,
+   "price_log_sd": 0.4,
+   "rationale": "Frost fracture of an internal fitting is covered under 2.4.4 and 7.1.9, and thermal-imaging leak location under 2.4.6 and 5.2.2 (cap EUR 2,500, not reached); the lump sum prices covered work only (7.1.12). Estimated at an ordinary market price of about EUR 300-400 for the fitting repair with one attendance plus about EUR 350-400 for the leak detection."
+  },
+  {
+   "item_id": "2",
+   "description": "Exterior facade frost damage repair (re-plaster and repaint, flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2800.0,
+   "price_log_sd": 0.6,
+   "rationale": "The plaster failed from outdoor frost acting from without, which is the optional peril 2.1(d); nothing in the description shows it as agreed, so 2.6.4 and 3.5(a)-(c) exclude the whole combined line, and 2.4.3 does not apply because the water did not come from the internal escape. The figure is a market estimate for re-plastering and repainting the damaged area only in case the peril was in fact agreed."
+  }
+ ],
+ "quotes": {
+  "1": [
+   643.8,
+   588.31
+  ],
+  "2": [
+   2575.34,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "game": 1,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 27.3,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 15571,
+ "output_tokens": 919,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged home electronics (speaker system and TV set), 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.4,
+   "rationale": "Overvoltage from atmospheric electricity (2.3.3) is insured, and both appliances were physically damaged. The indemnity is an equivalent standard-grade replacement (7.1.9) of roughly EUR 1,200 for TV and speakers, well under the EUR 5,000 sub-limit. The claim states nothing was on a surge-protected strip, so the 2.3.3 reduction applies and the indemnity is 50%, about EUR 600."
+  },
+  {
+   "item_id": "2",
+   "description": "Diagnostic surge-failure report and technician call-out, 3 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is a diagnostic and documentation charge plus a wiring safety check. It is not a repair cost under 7.1.8(e) and 7.1.5, and the predominant purpose is not indemnifiable (7.1.10). The call-out is not separately priced, so it cannot be split out under 7.1.8(d). t is most likely 0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   522.0,
+   477.01
+  ],
+  "2": [
+   81.63,
+   0.0
+  ]
+ }
+}

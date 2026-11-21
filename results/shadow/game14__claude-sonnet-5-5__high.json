@@ -1,0 +1,75 @@
+{
+ "game": 14,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "high",
+ "ok": true,
+ "secs": 8.1,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 28812,
+ "output_tokens": 504,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.35,
+   "rationale": "Glass Breakage Cover is agreed, so under 2.7.2 the glazing work includes the preparatory drilling for hardware. Case 11 shows a low price level for drilling, below 19."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation of new glass into frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.35,
+   "rationale": "Setting, fitting and sealing is glazing work and is indemnified under 2.7.2 because the optional peril is agreed. Case 11 puts the price level below 41."
+  },
+  {
+   "item_id": "3",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "The cabinet pane is a glazing element and the optional peril is agreed, so the made-to-measure replacement is covered. Case 11 puts the price level below 68."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.4,
+   "rationale": "One attendance per undertaking is indemnified under 7.1.12 because indemnified glazing work was done at that visit. The reference cases show a small amount, under 20."
+  }
+ ],
+ "quotes": {
+  "1": [
+   13.05,
+   12.27
+  ],
+  "2": [
+   30.45,
+   28.63
+  ],
+  "3": [
+   52.2,
+   49.47
+  ],
+  "4": [
+   13.05,
+   10.95
+  ]
+ }
+}

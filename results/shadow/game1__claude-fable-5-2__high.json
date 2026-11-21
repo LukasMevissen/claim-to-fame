@@ -1,0 +1,45 @@
+{
+ "game": 1,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "ok": true,
+ "secs": 20.9,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 15571,
+ "output_tokens": 1122,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged home electronics (speaker system and TV set), 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Covered under 2.3.3/4.2.4 as appliances damaged by lightning overvoltage, capped at the EUR 5,000 appliance sub-limit. No surge protector was in place per the loss notification, so indemnity is halved: assumed standard-grade TV plus speaker system of about EUR 2,800 (7.1.9) x 0.5 = about EUR 1,400."
+  },
+  {
+   "item_id": "2",
+   "description": "Diagnostic surge-failure report and technician call-out, 3 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.6,
+   "rationale": "A diagnostic report and wiring safety check are not repair costs (1.3, 7.1.8(e), 5.1 exhaustive list). The bundled call-out follows the line's predominant non-indemnifiable purpose under 7.1.10, so likely t = 0; if paid, a modest attendance charge of about EUR 180 is assumed."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1269.85,
+   1050.98
+  ],
+  "2": [
+   165.56,
+   0.0
+  ]
+ }
+}
