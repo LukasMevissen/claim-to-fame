@@ -213,10 +213,10 @@ class Sync:
         shutil.copy2(src, dst)
         return dst
 
-    def rebase_onto_upstream(self, generated: list[tuple[str, str]]) -> tuple[bool, list[str]]:
+    def rebase_onto_upstream(self, generated: list[tuple[str, str]]) -> tuple[bool, str]:
         """Rebase local commits onto upstream. Dirty generated files are moved out of the way:
         replaced by upstream when upstream changed them (local copy backed up), otherwise put
-        back after the rebase. Returns (ok, conflicting files)."""
+        back after the rebase. Returns (ok, problem description)."""
         stamp = time.strftime("%Y%m%d-%H%M%S")
         incoming = set(p for p in self.git("diff", "--name-only", "-z", "HEAD", self.upstream).stdout.split("\0") if p)
         restore: list[tuple[str, Path | None]] = []
@@ -235,11 +235,17 @@ class Sync:
             if path not in incoming:
                 restore.append((path, saved))  # nobody else changed it: keep the local version
         r = self.git("rebase", "--quiet", self.upstream, check=False)
-        conflicts: list[str] = []
+        problem = ""
         if r.returncode != 0:
             conflicts = [p for p in self.git("diff", "--name-only", "--diff-filter=U", "-z", check=False)
                          .stdout.split("\0") if p]
-            self.git("rebase", "--abort", check=False)
+            if conflicts:
+                problem = (f"your commits conflict with {self.upstream} in {', '.join(conflicts)}. "
+                           "Resolve by hand: git pull --rebase")
+            else:
+                problem = f"git rebase failed: {(r.stderr or r.stdout).strip()[:300]}"
+            if self.in_progress():
+                self.git("rebase", "--abort", check=False)
         for path, saved in restore:
             dst = self.repo / path
             if saved is None:
@@ -247,11 +253,14 @@ class Sync:
             else:
                 dst.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(saved, dst)
-        return r.returncode == 0, conflicts or ([] if r.returncode == 0 else ["(see git output)"])
+        return r.returncode == 0, problem
 
     # ---------- one cycle ----------
 
     def cycle(self) -> dict:
+        if sys.platform == "win32" and self.git("config", "core.longpaths", check=False).stdout.strip() != "true":
+            # Deep checkouts exceed MAX_PATH; without this `git rebase` dies with "Filename too long".
+            self.git("config", "core.longpaths", "true")
         if (self.gitdir / "autosync.paused").exists():
             return self.done("paused", "paused; run: python scripts/autosync.py resume")
         busy = self.in_progress()
@@ -278,10 +287,9 @@ class Sync:
         self.fetch()
         behind = self.count(f"HEAD..{self.upstream}")
         if behind:
-            ok, conflicts = self.rebase_onto_upstream(generated)
+            ok, problem = self.rebase_onto_upstream(generated)
             if not ok:
-                return self.done("conflict", f"your commits conflict with {self.upstream} in "
-                                 f"{', '.join(conflicts)}. Resolve by hand: git pull --rebase", alert=True)
+                return self.done("conflict" if "conflict" in problem else "rebase-failed", problem, alert=True)
         for attempt in range(self.push_retries):
             ahead = self.count(f"{self.upstream}..HEAD")
             if not ahead:
@@ -294,10 +302,9 @@ class Sync:
                 return self.done("ok", f"pushed {ahead} commit(s)" + (f", pulled {behind}" if behind else ""))
             # Someone pushed in between: take their commits and try again.
             self.fetch()
-            ok, conflicts = self.rebase_onto_upstream([(xy, p) for xy, p in self.changes() if is_generated(p)])
+            ok, problem = self.rebase_onto_upstream([(xy, p) for xy, p in self.changes() if is_generated(p)])
             if not ok:
-                return self.done("conflict", f"your commits conflict with {self.upstream} in "
-                                 f"{', '.join(conflicts)}. Resolve by hand: git pull --rebase", alert=True)
+                return self.done("conflict" if "conflict" in problem else "rebase-failed", problem, alert=True)
         return self.done("push-failed", (r.stderr or r.stdout).strip()[:300], alert=True)
 
     # ---------- reporting ----------
