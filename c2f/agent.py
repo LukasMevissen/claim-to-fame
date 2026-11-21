@@ -64,7 +64,9 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
         models = [llm.get("model"), llm.get("fallback_model")]
     else:
         models = [llm.get("fast_model") or llm.get("model"), llm.get("fallback_model")]
-    models = list(dict.fromkeys(m for m in models if m))
+    # No de-duplication: when both entries name the same model, the second attempt is a
+    # retry after a failure (game 21: one dropped connection left us with fixed prices).
+    models = [m for m in models if m]
     reference = ""
     if llm.get("use_pricebook", True):
         try:
