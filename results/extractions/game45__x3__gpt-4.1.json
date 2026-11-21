@@ -1,0 +1,73 @@
+{
+  "case_id": "game45",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Translation from Spanish to English",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.1.6 and 7.1.8(f): translation of documents for the claim is not indemnifiable, regardless of necessity or who performs it."
+    },
+    {
+      "item_id": "2",
+      "description": "Material costs (translation)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 3.1.6 and 7.1.8(f): working materials or disbursements for translation or claim substantiation are not indemnifiable."
+    },
+    {
+      "item_id": "3",
+      "description": "Compensation for stolen watch (premium replacement model, upgrade on the one taken)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2500.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.1(a), 7.1.9, 4.2.2, 4.2.4: Only the value of the watch actually taken is indemnified, capped at the valuables sub-limit (€2,500 per item, as no higher limit is scheduled). No upgrade is indemnified; only a standard-grade equivalent to the stolen watch is covered. Deductible of €150 applies once per event."
+    },
+    {
+      "item_id": "4",
+      "description": "Compensation for cash taken in robbery",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.1(c), 4.2.3, 4.2.4: Cash is covered up to the means-of-payment sub-limit (€500 per event for cash taken outside the premises)."
+    },
+    {
+      "item_id": "5",
+      "description": "Replacement of designer sunglasses (mislaid separately, not taken in robbery)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.05,
+      "rationale": "2.3.4(a), 7.1.5: Sunglasses were not taken in the insured event but mislaid separately; not an affected item, so not indemnified."
+    },
+    {
+      "item_id": "6",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.8(b): Shipping, carriage, or delivery charges are not indemnified, regardless of necessity or who performs them."
+    }
+  ]
+}

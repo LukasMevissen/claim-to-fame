@@ -1,0 +1,13 @@
+{
+ "game": 45,
+ "policy": "HOUSEHOLD AND PERSONAL EFFECTS INSURANCE / Policy wording \"WD-2026\" - Robbery and Personal Effects Edition",
+ "description": "An expensive watch was taken in a robbery while the policyholder was on holiday abroad. They were threatened with a weapon and the robbers took the watch off their wrist along with some cash they were carrying - roughly €900 by their own count. The watch had been bought a few years ago for about €7,000. It was reported to the local police and the report had to be translated before it could go with the claim. Couple of things to flag for the file. The replacement the owner has gone for is a newer, higher-spec model of the watch rather than a like-for-like of the one that was taken. The claim also lists a pair of designer sunglasses, but those weren't taken in the robbery - they were mislaid separately later in the trip.",
+ "lines": {
+  "1": "Translation from Spanish to English 2 hrs",
+  "2": "Material costs 1 pcs",
+  "3": "Compensation for stolen watch (premium replacement model, upgrade on the one taken) | 1 pcs",
+  "4": "Compensation for cash taken in robbery 1 pcs",
+  "5": "Replacement of designer sunglasses (mislaid separately, not taken in robbery) | 1 pcs",
+  "6": "Shipping 1 pcs"
+ }
+}
