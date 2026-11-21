@@ -24,6 +24,12 @@ class Config:
         learned = self.learned_opponents(p.pop("opponents_from", ""), p.pop("team_name", ""),
                                          p.pop("min_limit_obs", 3.0))
         opps = learned or opps
+        # Adaptive factor on the acceptance limit (c2f/limit_factor.py): re-measured after every
+        # game, clamped to [1, cap]; the fixed acceptance_shrink applies until a file exists.
+        src, cap = p.pop("acceptance_shrink_from", ""), p.pop("acceptance_shrink_cap", 1.0)
+        if src:
+            from .limit_factor import load
+            p["acceptance_shrink"] = load(src, cap, p.get("acceptance_shrink", 1.0))
         return PricingParams(**p, **({"opponents": opps} if opps else {}))
 
     @staticmethod

@@ -1,0 +1,11 @@
+{
+ "game": 49,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Repair Scope and Building Services Edition",
+ "description": "A power surge damaged two air conditioning units in the house — one in the living room, one in the kitchen — along with some other connected equipment. Both AC units needed replacing, one of them mounted on a floor-standing console. Replacement parts had to be shipped in, and a technician came out afterward to install everything and check the wiring.",
+ "lines": {
+  "1": "Air conditioning unit (kitchen) 1 pcs",
+  "2": "Installation 1 pcs",
+  "3": "Floor console 1 pcs",
+  "4": "Freight shipping 1 pcs"
+ }
+}

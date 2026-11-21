@@ -45,7 +45,7 @@ games_endpoint = "/api/games/list"
 key_endpoint = "/api/games/{game_id}/key"            # 403 until start_time
 submit_endpoint = "/api/games/{game_id}/submissions"  # PUT, last write wins
 cases_dir = "data/cases"                              # case_{game_id:03d}.zip
-key_poll_seconds = 20       # keep polling the key this long after start_time (1 req/s)
+key_poll_seconds = 30       # keep polling the key this long after start_time (1 req/s; 403, 429 and 5xx are retried)
 
 [fallback]
 # (a, b) for invoice lines the model did not price: the model failed, timed out or skipped
@@ -60,6 +60,12 @@ acceptance_limit = 0.0
 [pricing]
 acceptance_quantile = 0.3333333333
 acceptance_shrink = 1.05     # games 26-46 replay: +8.5k, 14 games better, 0 worse (1.10: losing games); live from game 48
+# Adaptive: after every game c2f/limit_factor.py re-measures the factor on the recent games of
+# the current model and writes it here; used clamped to [1, cap]. Walk-forward games 26-47 with
+# cap 1.06: it chose 1.04-1.06 throughout; caps of 1.10+ had losing games. Delete the file or
+# the two keys to fall back to the fixed factor above.
+acceptance_shrink_from = "results/market/limit_factor.json"
+acceptance_shrink_cap = 1.06
 charge_floor_quantile = 0.05
 charge_ceiling_quantile = 0.95
 # Floor for a as a share of our median estimate. 12-game replay: 0 -> 40.5k, 0.87 -> 47.0k,

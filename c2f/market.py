@@ -106,7 +106,8 @@ def refresh(fetch: bool = True, refit: bool = True, deadline: float | None = Non
             force: bool = False, log=print, tx_dir: str | Path = TX_DIR,
             quotes: str | Path = QUOTES, table: str | Path = TABLE,
             checks: str | Path = CHECKS, belief: str | Path = BELIEF,
-            summary: str | Path = CACHE / "summary.json", pause: float = 0.3) -> dict:
+            summary: str | Path = CACHE / "summary.json", pause: float = 0.3,
+            limit_cap: float | None = None) -> dict:
     """Sync, rebuild the table and checks, refit the belief. Never raises.
 
     The table and checks are rebuilt when a transaction file or the submission log is newer
@@ -116,6 +117,13 @@ def refresh(fetch: bool = True, refit: bool = True, deadline: float | None = Non
     from .opponents import load_transactions
 
     rep: dict = {"new_games": [], "errors": []}
+    if limit_cap is None:        # [pricing] acceptance_shrink_cap; no adaptive factor without it
+        try:
+            from .config import load_config
+            pr = load_config().raw.get("pricing", {})
+            limit_cap = float(pr.get("acceptance_shrink_cap", 1.0)) if pr.get("acceptance_shrink_from") else 1.0
+        except Exception:  # noqa: BLE001
+            limit_cap = 1.0
     tx_dir, table, belief = Path(tx_dir), Path(table), Path(belief)
 
     def fail(step: str, e: BaseException) -> None:
@@ -162,6 +170,16 @@ def refresh(fetch: bool = True, refit: bool = True, deadline: float | None = Non
             write_summary(load_games(tx_dir), summary)
         except Exception as e:  # noqa: BLE001
             fail("summary", e)
+        try:                         # adaptive factor on our acceptance limit
+            from . import limit_factor
+            if Path(summary) == limit_factor.SUMMARY and Path(quotes) == limit_factor.QUOTES:
+                lf = limit_factor.update(cap=limit_cap) if limit_cap > 1.0 else None
+                if lf:
+                    rep["limit_factor"] = lf["factor"]
+                    log(f"limit factor {lf['factor']} ({lf['model']}, {len(lf['games'])} games, "
+                        f"saving vs 1.0: {lf['saving_vs_1']})")
+        except Exception as e:  # noqa: BLE001
+            fail("limit factor", e)
 
     if refit and _stale(belief, txs_files):
         if deadline is not None and deadline - time.time() < REFIT_SECONDS:

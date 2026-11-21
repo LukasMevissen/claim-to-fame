@@ -64,7 +64,10 @@ class QuantCoClient:
                 continue
             if r.status_code == 200:
                 return r.json()["decryption_key"]
-            if r.status_code != 403 or time.monotonic() > give_up:
+            # 403 = not started yet. 5xx / 429 = the server is overloaded at the game start
+            # (game 48: one 503 and the game was lost; the server answered again 35 s later).
+            retry = r.status_code == 403 or r.status_code == 429 or r.status_code >= 500
+            if not retry or time.monotonic() > give_up:
                 raise RuntimeError(f"key for game {game_id}: {r.status_code} {r.text[:200]}")
             time.sleep(1.0)
 
