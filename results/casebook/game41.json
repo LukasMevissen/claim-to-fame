@@ -1,0 +1,25 @@
+{
+ "game": 41,
+ "policy": "HOUSEHOLD CONTENTS INSURANCE / Policy wording \"WD-2026\" - Mobility Equipment and Recovery Edition",
+ "description": "A bicycle was stolen from outside the building. A hidden AirTag let the police track it down, but the lock had seized and couldn't be opened on site, so a locksmith was called out to cut it off and release the bike. The yard that had been holding the bike also wanted a hundred euros plus VAT in storage before it would hand it over. The stolen bike had genuine theft damage to the frame and the brakes. While everything was being sorted the owner had a few other bits done too - the second household bike got a service, a new helmet and lights were bought, and the AirTag that had been used to find the bike was replaced. The billing also picked up a second call-out and a processing fee. Flagging all of it for the file.",
+ "lines": {
+  "1": "Bicycle frame replacement 1 pcs",
+  "2": "Bicycle brake replacement 1 pcs",
+  "3": "Replacement AirTag tracker 1 pcs",
+  "4": "Service second household bicycle (not stolen) 1 flat rate",
+  "5": "New helmet and lights 2 pcs",
+  "6": "Shipping 1 pcs",
+  "7": "Vehicle costs 1 pcs",
+  "8": "Assembly costs 1 pcs",
+  "9": "Miscellaneous items 1 pcs",
+  "10": "Apprentice hours 1 hrs",
+  "11": "Skilled worker hours 1 hrs",
+  "12": "Locksmith call-out to recovery site 1 pcs",
+  "13": "Cut and remove seized lock to release bicycle 2 pcs",
+  "14": "Vehicle costs – return visit 1 pcs",
+  "15": "Impound release / storage fee paid to recover bicycle 1 –",
+  "16": "Administrative and claim-processing fee 1 flat rate",
+  "17": "Apprentice hours 1 hrs",
+  "18": "Skilled worker hours 1 hrs"
+ }
+}

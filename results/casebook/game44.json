@@ -1,0 +1,29 @@
+{
+ "game": 44,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Client found water on the floor of the boiler room. A section of copper heating pipe down there had gone bad and was dripping — not a full burst, just a joint that had failed. The plumber cut out about a meter of the old pipe and reconnected it with new fittings, then re-insulated the repaired section with rock wool once everything was back together. Took a while — the main technician was on site something like a day and a half in total, with a helper along for part of that. Afterwards they cleaned and disinfected the tiled area right around where the leak had been dripping, since standing water in a cellar for a few days isn't exactly hygienic.",
+ "lines": {
+  "1": "Profipress elbow 90° copper 15mm model 01 4 pcs",
+  "2": "Profipress elbow 90° copper 15mm model 02 4 pcs",
+  "3": "Profipress elbow 90° copper 28mm model 01 5 pcs",
+  "4": "Profipress elbow 45° copper 28mm model 02 5 pcs",
+  "5": "Profipress elbow 45° copper 28mm model 03 1 pcs",
+  "6": "Grub screw 8 pcs",
+  "7": "Two-screw pipe clamp 10 mm 4 pcs",
+  "8": "Two-screw pipe clamp 15 mm 4 pcs",
+  "9": "Service technician hours 6.75 hrs",
+  "10": "Helper hours 5.75 hrs",
+  "11": "Copper pipe 15x1 6.4 m",
+  "12": "Vehicle costs 1 pcs",
+  "13": "Small parts and consumables 1 flat rate",
+  "14": "Processing flat fee 1 pcs",
+  "15": "Rock wool pipe insulation 6 m",
+  "16": "Rock wool mat 6 pcs",
+  "17": "Binding wire 2 pcs",
+  "18": "Service technician hours 7 hrs",
+  "19": "Vehicle costs 1 pcs",
+  "20": "Hygiene set incl. gloves 1 pcs",
+  "21": "Construction waste disposal 1 flat rate",
+  "22": "Tile cleaning, disinfection and coating 5 hrs"
+ }
+}

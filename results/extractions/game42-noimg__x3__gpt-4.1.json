@@ -1,0 +1,73 @@
+{
+  "case_id": "game42-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Air conditioning unit - living room (higher-output replacement, larger cooling capacity than the damaged one)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1400.0,
+      "price_log_sd": 0.07,
+      "rationale": "Policy 7.1.9 and 7.1.10: Only a like-for-like replacement of the damaged 3.5 kW unit is indemnified; the upgrade to a 7.1 kW model is a non-covered improvement, so indemnity is capped at the cost of an equivalent 3.5 kW replacement. Reference Case 38 (similar fixed living-room unit, surge loss, t = 1352–1445 EUR incl. VAT)."
+    },
+    {
+      "item_id": "2",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 480.0,
+      "price_log_sd": 0.07,
+      "rationale": "Policy 7.1.9: Installation of a like-for-like replacement is covered, but only to the extent required for the equivalent 3.5 kW unit. Reference Case 38 (installation for living-room unit, t = 468–488 EUR incl. VAT)."
+    },
+    {
+      "item_id": "3",
+      "description": "Decorative floor console (chosen for room appearance, not required by the new unit)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.10 and 3.5(d): Not indemnified, as it is an improvement for appearance, not required for installation or function. Reference Case 38 (floor console for living-room unit, t = 54–67 EUR, but only covered if required for installation; here, it is not)."
+    },
+    {
+      "item_id": "4",
+      "description": "Freight shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 42.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.9(e) and 7.1.12: Ordinary freight for the covered replacement is indemnified. Reference Case 38 (freight shipping, t = 40–43 EUR incl. VAT)."
+    },
+    {
+      "item_id": "5",
+      "description": "Express delivery surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.12: Surcharges for expedited/timed delivery are excluded unless agreed in advance or necessary to avert further loss, which is not indicated here."
+    },
+    {
+      "item_id": "6",
+      "description": "Contractor administration fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.8(b): General administrative/handling/processing charges are not indemnified, regardless of description. Reference Case 38 and others: admin fees always t = 0."
+    }
+  ]
+}

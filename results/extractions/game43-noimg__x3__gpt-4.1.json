@@ -1,0 +1,194 @@
+{
+  "case_id": "game43-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Premium chrome-plated designer copper pipe 15mm (upgrade from plain copper), 6.4 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.9 strictly limits indemnity to the pre-loss standard; upgrades to premium or designer materials are not covered. Only the cost of standard copper pipe is indemnified, capped at the proven fair price from Case 40 (6.4 m copper pipe t >= 90)."
+    },
+    {
+      "item_id": "2",
+      "description": "Premium chrome-plated Profipress elbow 90° 15mm, 4 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 38.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.9: Only standard-grade fittings matching the pre-loss installation are indemnified. Use Case 40 reference for standard Profipress elbow 90° 15mm, 4 pcs (t >= 38)."
+    },
+    {
+      "item_id": "3",
+      "description": "Premium chrome-plated Profipress elbow 90° 28mm, 5 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 95.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.9: Only standard-grade fittings are covered. Use Case 40 reference for standard Profipress elbow 90° 28mm, 5 pcs (t >= 95)."
+    },
+    {
+      "item_id": "4",
+      "description": "Premium chrome-plated Profipress elbow 45° 28mm, 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 19.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.9: Only standard-grade fittings are covered. Use Case 40 reference for standard Profipress elbow 45° 28mm, 1 pcs (t >= 19)."
+    },
+    {
+      "item_id": "5",
+      "description": "Grub screw, 8 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 9.0,
+      "price_log_sd": 0.1,
+      "rationale": "7.1.7(c): Minor fixings and fastenings are included as repair costs. Use Case 40 reference (8 pcs, t between 7 and 10)."
+    },
+    {
+      "item_id": "6",
+      "description": "Two-screw pipe clamp 10 mm, 4 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.15,
+      "rationale": "7.1.7(c): Standard fixings are covered. Use Case 40 reference for 25 mm clamps (4 pcs, t >= 23); 10 mm likely slightly less, estimate proportionally."
+    },
+    {
+      "item_id": "7",
+      "description": "Two-screw pipe clamp 25 mm, 4 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 23.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(c): Standard fixings are covered. Use Case 40 reference for 25 mm clamps (4 pcs, t >= 23)."
+    },
+    {
+      "item_id": "8",
+      "description": "Service technician hours, 6.75 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 593.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(g): Labour for the repair is covered at customary rates. Use Case 40 reference (6.75 hrs, t >= 593)."
+    },
+    {
+      "item_id": "9",
+      "description": "Helper hours, 5.75 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 387.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(g): Labour for the repair is covered at customary rates. Use Case 40 reference (5.75 hrs, t >= 387)."
+    },
+    {
+      "item_id": "10",
+      "description": "High-performance aluminium-clad Armaflex insulation shell (upgrade from rock wool), 6 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 116.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.9: Only the pre-loss standard (rock wool) is indemnified. Use Case 40 reference for rock wool pipe insulation (6 pcs, t >= 116)."
+    },
+    {
+      "item_id": "11",
+      "description": "Binding wire, 2 kg",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(c): Consumables for the repair are covered. Use Case 40 reference (2 kg, t >= 18)."
+    },
+    {
+      "item_id": "12",
+      "description": "Smart leak-detection sensor with app connectivity (new addition), 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.7,
+      "rationale": "7.1.9: New additions not present before the loss are not indemnified."
+    },
+    {
+      "item_id": "13",
+      "description": "Thermostatic mixing valve (new addition), 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.7,
+      "rationale": "7.1.9: New additions not present before the loss are not indemnified."
+    },
+    {
+      "item_id": "14",
+      "description": "Small parts and consumables, 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 33.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(c): Minor fixings and consumables are covered. Use Case 40 reference (1 pcs, t >= 33)."
+    },
+    {
+      "item_id": "15",
+      "description": "Vehicle costs, 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 71.0,
+      "price_log_sd": 0.05,
+      "rationale": "7.1.7(f): One call-out charge per invoice is covered. Use Case 40 reference (1 pcs, t >= 71)."
+    },
+    {
+      "item_id": "16",
+      "description": "Construction waste disposal, 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "5.2.1 and 7.1.7(a): Disposal of debris from the repair is covered. Use Case 40 reference (1 pcs, t between 58 and 61)."
+    },
+    {
+      "item_id": "17",
+      "description": "Processing flat fee, 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.7,
+      "rationale": "7.1.8(b): General administrative or processing charges are not indemnified."
+    }
+  ]
+}

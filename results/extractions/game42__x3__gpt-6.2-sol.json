@@ -1,0 +1,73 @@
+{
+  "case_id": "game42",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Living-room air conditioning unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1400.0,
+      "price_log_sd": 0.12,
+      "rationale": "The fixed unit was damaged by lightning overvoltage and was nine metres from the hob, outside the five-metre exclusion in §2.3.10(c). Under §§7.1.9–7.1.10, the 7.1 kW upgrade is payable only up to the gross cost of an equivalent 3.5 kW unit, estimated at €1,400 using Case 38."
+    },
+    {
+      "item_id": "2",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 478.0,
+      "price_log_sd": 0.09,
+      "rationale": "Sections 7.1.9–7.1.11 cover removal, fitting, connection and commissioning at the pre-loss standard, but not extra labour attributable to the upgrade. Case 38 supports €478 gross for one ordinary installation."
+    },
+    {
+      "item_id": "3",
+      "description": "Decorative floor console",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.25,
+      "rationale": "Section 7.1.10 excludes the entire cost of a decorative console that is not needed to install the replacement; there is no allowance for the old bracket on this line."
+    },
+    {
+      "item_id": "4",
+      "description": "Standard freight",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 42.0,
+      "price_log_sd": 0.08,
+      "rationale": "Sections 7.1.9 and 7.1.11–7.1.12 cover ordinary carriage for the equivalent replacement, not any extra cost attributable to the larger unit or timed service. Case 38 supports €42 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Express delivery surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.5,
+      "rationale": "Section 7.1.12 excludes the entire express or timed premium unless agreed in advance or needed to prevent further loss. Neither exception is evidenced."
+    },
+    {
+      "item_id": "6",
+      "description": "Contractor administration fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.5,
+      "rationale": "Section 7.1.8(b) excludes the entire separately billed administration fee as contractor overhead rather than a reinstatement cost."
+    }
+  ]
+}

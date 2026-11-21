@@ -38,6 +38,17 @@ def _table(priced) -> str:
     return "\n".join(rows)
 
 
+def _estimates(priced) -> list[dict]:
+    """The belief behind every submitted quote, for the run log (offline analysis of m, sigma,
+    p_zero against the revealed bounds). Never raises: logging must not cost a game."""
+    try:
+        return [{"item_id": p.item_id, "description": p.description[:80],
+                 "p_zero": round(p.belief["p_zero"], 4), "median": round(p.belief["median"], 2),
+                 "sigma": round(p.belief["sigma"], 4)} for p in priced]
+    except Exception:  # noqa: BLE001
+        return []
+
+
 def cmd_version(args, cfg) -> int:
     print(json.dumps(stamp(cfg).as_dict(), indent=2))
     return 0
@@ -234,6 +245,7 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
         print(f"[game {game_id}] {'DRY RUN ' if dry_run else ''}final={timing['final_stage']} "
               f"{len(best['payload'])} items in {timing['since_start_s']}s")
         _log({**rec, "ok": True, "timing": timing, "payload": best["payload"],
+              "estimates": _estimates(best["priced"]),
               "n_accepted": None if dry_run else len(best["payload"])})
         return True
     except Exception as e:  # noqa: BLE001  the scheduler must survive any single game
