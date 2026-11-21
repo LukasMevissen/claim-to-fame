@@ -1,0 +1,72 @@
+{
+ "game": 13,
+ "provider": "openai",
+ "model": "gpt-6-luna",
+ "effort": "low",
+ "ok": true,
+ "secs": 9.7,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber and broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.3,
+   "rationale": "Both are remains of storm-damaged insured property and qualify as material arising under 5.2.1(a). Using the reference levels for glass disposal (about €30–34) and roof timber disposal (below €75), a modest combined estimate is €55 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Combined clearance load: green waste, root mass over 1 m³ and packed soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Although the felled-tree green waste is ordinarily covered, the root mass exceeds the 1 m³ limit and the soil is ground material excluded from clearance under 5.2.1(d)–(e). Because this is one combined position and every component must be indemnifiable under 7.1.10, the whole line is not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Paving grit is ground material, not material arising under 5.2.1(d); ground works under 5.2.2 are not covered here because no reinstatement or making good of the ground is described. Disposal as a standalone clearance measure is therefore excluded."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil from churned-up ground",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Topsoil remains ground material even when sieved, and its standalone disposal is excluded under 5.2.1(d) and 5.2.2 because no reinstatement with making good is described. The prior storm references likewise found such soil-disposal lines not indemnifiable."
+  }
+ ],
+ "quotes": {
+  "1": [
+   47.85,
+   46.92
+  ],
+  "2": [
+   1.06,
+   0.0
+  ],
+  "3": [
+   1.06,
+   0.0
+  ],
+  "4": [
+   1.06,
+   0.0
+  ]
+ }
+}

@@ -19,6 +19,13 @@ temperature = 0.0
 use_pricebook = true         # show earlier cases with their revealed t bounds (c2f/pricebook.py)
 pricebook_max_chars = 24000
 
+[shadow]
+# Models that assess every case in parallel to the live workflow. Never submitted; scored
+# afterwards by `python -m c2f shadow-report`. Format "provider:model@effort".
+# Anthropic models need ANTHROPIC_API_KEY in .env.
+models = ["anthropic:claude-fable-5-2@low", "anthropic:claude-opus-5-5@low", "anthropic:claude-sonnet-5-5@low"]
+timeout_seconds = 120
+
 [api]
 # From vendor/quantco/API_HANDBOOK.md. Auth: X-API-Key header (TEAM_API_KEY).
 # Game 0 is the permanent test game (key always available, case_000.zip).

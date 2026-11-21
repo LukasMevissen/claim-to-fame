@@ -159,7 +159,7 @@ def _model_args(model: str, temperature: float, effort: str | None) -> dict:
 
 def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
             use_cache: bool = True, with_image: bool = True, reference: str = "",
-            effort: str | None = None, tag: str = "") -> list[ItemEstimate]:
+            effort: str | None = None, tag: str = "", save: bool = True) -> list[ItemEstimate]:
     """with_image=False skips the photo: faster, used as the first-stage submission.
     reference: price-book text (c2f/pricebook.py). tag: extra cache-key suffix."""
     cid = case.case_id if (with_image or case.image is None) else f"{case.case_id}-noimg"
@@ -178,5 +178,6 @@ def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
         **_model_args(model, temperature, effort),
     )
     items = _parse(resp.choices[0].message.content)
-    save_cache(cid, model, items)
+    if save:
+        save_cache(cid, model, items)
     return items

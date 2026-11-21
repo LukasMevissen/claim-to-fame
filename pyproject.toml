@@ -5,6 +5,7 @@ description = "QuantCo Claim to Fame pricing agent (START Hack Munich 2026, team
 requires-python = ">=3.11"
 dependencies = [
   "openai>=1.40",
+  "anthropic>=1.0",
   "requests>=2.31",
   "pypdf>=4.0",
   "pyzipper>=0.3.6",

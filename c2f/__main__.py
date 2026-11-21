@@ -278,6 +278,36 @@ def _market_refresh(args, deadline: float) -> None:
         print(f"[market] refresh failed: {e!r}")
 
 
+def _shadow_async(cfg, client, game_id: int) -> None:
+    """After the live submission: let the shadow models assess the same case in a background
+    thread (c2f/shadow.py). Never submits; any failure is only logged."""
+    if not cfg.section("shadow").get("models"):
+        return
+    import threading
+
+    def work() -> None:
+        try:
+            from . import shadow
+            shadow.run(game_id, cfg, client)
+        except Exception as e:  # noqa: BLE001
+            print(f"[shadow] game {game_id} failed: {e!r}")
+
+    threading.Thread(target=work, daemon=True, name=f"shadow-{game_id}").start()
+
+
+def cmd_shadow(args, cfg) -> int:
+    from . import shadow
+    for g in args.games:
+        shadow.run(g, cfg, specs=args.models or None)
+    return 0
+
+
+def cmd_shadow_report(args, cfg) -> int:
+    from . import shadow
+    print(shadow.report())
+    return 0
+
+
 def _already_played(dry_run: bool) -> set[int]:
     """Games the log records as submitted (same dry_run mode), so a restart skips them."""
     out: set[int] = set()
@@ -329,6 +359,7 @@ def cmd_run(args, cfg) -> int:
             continue
         play_game(client, cfg, st, int(g["id"]), start, args.dry_run)
         done.add(int(g["id"]))
+        _shadow_async(cfg, client, int(g["id"]))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -374,12 +405,18 @@ def main(argv: list[str] | None = None) -> int:
     rn.add_argument("--no-sync", action="store_true",
                     help="do not refresh public transactions / ab_table / belief between games")
 
+    sh = sub.add_parser("shadow", help="assess started games with the shadow models (never submits)")
+    sh.add_argument("games", type=int, nargs="+")
+    sh.add_argument("--models", nargs="*", help='override [shadow].models, e.g. anthropic:claude-fable-5-2@low')
+    sub.add_parser("shadow-report", help="score shadow models vs live submissions -> results/shadow/REPORT.md")
+
     args = ap.parse_args(argv)
     if args.cmd == "eval" and not args.replay and not args.case_dir and args.game is None:
         ap.error("eval needs --game N, --case-dir or --replay")
     cfg = load_config(args.config)
     return {"version": cmd_version, "price": cmd_price, "eval": cmd_eval,
-            "live": cmd_live, "run": cmd_run, "market": cmd_market}[args.cmd](args, cfg)
+            "live": cmd_live, "run": cmd_run, "market": cmd_market,
+            "shadow": cmd_shadow, "shadow-report": cmd_shadow_report}[args.cmd](args, cfg)
 
 
 if __name__ == "__main__":
