@@ -221,3 +221,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- claim-to-fame ---
+# case material stays local (decrypted cases contain the answers we are scored on)
+data/cases/
+*.zip
+# keys
+.env.*
+!.env.example

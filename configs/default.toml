@@ -1,0 +1,51 @@
+# Agent configuration. Every run records a hash of this file, so results are
+# traceable to the exact settings. Copy to configs/<name>.toml for experiments
+# and pass --config configs/<name>.toml.
+
+[runtime]
+deadline_seconds = 50          # hard budget inside the 60 s window, leaves margin for submit
+llm_timeout_seconds = 30
+
+[llm]
+# Set to the model used in starter_script.py once it is in vendor/quantco/.
+model = "gpt-4.1-mini"
+fallback_model = "gpt-4.1-nano"
+temperature = 0.0
+
+[api]
+# Fill in from API_HANDBOOK.md (vendor/quantco/). Left empty on purpose:
+# the agent refuses to call the API until these are set.
+base_url = ""
+key_endpoint = ""        # fetch decryption key for a released case
+submit_endpoint = ""     # submit a and b per line item
+
+[pricing]
+acceptance_quantile = 0.3333333333
+acceptance_shrink = 1.0
+charge_floor_quantile = 0.05
+charge_ceiling_quantile = 0.95
+n_t_grid = 100
+n_candidates = 60
+n_opp_draws = 15
+
+# Opponent population used to choose the charge price a.
+# Calibrate from the leaderboard "Matchup" and "Transactions" tabs once games ran.
+[[pricing.opponents]]
+weight = 0.15
+kind = "absent"          # never submits: b = 0, rejects everything
+
+[[pricing.opponents]]
+weight = 0.05
+kind = "accept_all"
+
+[[pricing.opponents]]
+weight = 0.80
+kind = "noisy"           # b = t * exp(mu + s Z)
+mu = 0.0
+s = 0.35
+miss_zero = 0.5
+
+[belief]
+# Floors applied to the LLM's stated uncertainty.
+min_sigma = 0.15
+max_sigma = 1.2

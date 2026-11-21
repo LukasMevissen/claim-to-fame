@@ -1,0 +1,23 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: Case 0 quality gate (replay, no LLM call)
+        run: |
+          if ls results/extractions/case0__*.json >/dev/null 2>&1; then
+            python -m c2f eval --case-id case0 --replay --fail-on-regression
+          else
+            echo "no cached case 0 extraction yet, skipping"
+          fi

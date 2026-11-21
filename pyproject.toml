@@ -1,0 +1,23 @@
+[project]
+name = "c2f"
+dynamic = ["version"]
+description = "QuantCo Claim to Fame pricing agent (START Hack Munich 2026, team GemischtesHack)"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.40",
+  "requests>=2.31",
+  "pypdf>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.dynamic]
+version = { attr = "c2f.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["c2f*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

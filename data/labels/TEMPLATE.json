@@ -1,0 +1,6 @@
+{
+  "source": "who set these thresholds and how (expert judgement / official case 0 values)",
+  "items": {
+    "1": {"t": 0.0, "price_if_covered": 0.0, "note": "gross line-item total incl. VAT; t = 0 if not covered or unrelated"}
+  }
+}
