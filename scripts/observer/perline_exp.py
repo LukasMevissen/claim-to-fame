@@ -15,8 +15,19 @@ load_env(ROOT / '.env')
 import anthropic
 client = anthropic.Anthropic(api_key=os.environ['ANTHROPIC_API_KEY'], base_url=API_BASE, timeout=120, max_retries=2)
 CASES = Path('/tmp/c2f_work/cases'); S = load_summary()
+ANCHOR = 1795266000   # 2026-11-21T13:00:00Z, start of game 1
+
+def wait_outside_game_window():
+    """Games start every 800 s from 13:00 UTC. Experiments share this laptop's network and CPU
+    with the live bot, so they pause from 25 s before a start until 60 s after it."""
+    while True:
+        phase = (time.time() - ANCHOR) % 800
+        if 60 <= phase <= 775: return
+        time.sleep(5)
+
 
 def call(shared, pos):
+    wait_outside_game_window()
     resp = client.messages.create(
         model='claude-opus-5-5', max_tokens=8000, system=SYSTEM,
         output_config={'effort': os.environ.get('EFFORT', 'low'), 'format': {'type': 'json_schema', 'schema': _SCHEMA}},
