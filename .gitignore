@@ -229,3 +229,10 @@ data/cases/
 # keys
 .env.*
 !.env.example
+
+# dashboard data, rebuilt locally by scripts/dashboard.py
+dashboard/data.json
+dashboard/data.js
+dashboard/*.tmp
+dashboard/briefings/
+dashboard/artifact/

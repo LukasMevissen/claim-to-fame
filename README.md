@@ -35,6 +35,26 @@ Every live run appends to `runs/submissions.jsonl` (what was sent, timing, error
 model's output to `results/extractions/`. If the model fails, every invoice line still gets the
 `[fallback]` prices from `configs/default.toml`.
 
+## Team dashboard
+
+    python scripts/dashboard.py serve        # http://localhost:8777, rebuilt every 2 min
+    python scripts/dashboard.py brief        # print the briefing of the latest round
+
+- **Dashboard tab**: a briefing for every finished round (result and rank change, money won and
+  lost as handyman and as insurer, the lines that decided it, operations, opponents changing
+  strategy), the score of every team per game, how each opponent plays as handyman and as
+  insurer (read off the public transactions), and the team ToDo.
+- **ToDo**: `TODO.md` (one section per contributor; tick or add tasks on the page or in the file,
+  autosync shares it), open pipeline steps detected automatically (unreviewed games, stale
+  opponent belief, unmerged branches, write-up gaps), and everyone's latest commits.
+- **Program tab**: diagrams of the agent: overview, one game second by second, pricing,
+  learning between games, code map.
+- **After every round** `serve` picks up the new game within 2 minutes and prints its briefing in
+  the console. Run logs and line names come from `origin/main` if this checkout is behind.
+
+The data is built locally (git-ignored); nothing is published. `python scripts/dashboard.py`
+alone writes `dashboard/data.js` once, and `dashboard/index.html` then also opens from disk.
+
 ## Checking our prices: labels and eval
 
 Submitting does not tell us how good our prices were: the API only confirms what it stored and
