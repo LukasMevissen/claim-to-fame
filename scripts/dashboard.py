@@ -481,13 +481,16 @@ def make_briefing(game: int, sc: dict, strat: dict, rows: list[dict], latest: bo
     if sub:
         tm = sub.get("timing", {}) or {}
         stages = [s for s in tm.get("stages", []) if s.get("submitted")]
-        errs = [s for s in tm.get("stages", []) if s.get("error")]
+        errs = [(s["stage"], e) for s in tm.get("stages", [])
+                for e in ([s["error"]] if s.get("error") else []) + list(s.get("errors") or [])]
         ops = [f"Final stage {tm.get('final_stage', '?')} ({tm.get('model', '?')}) after "
                f"{tm.get('since_start_s', 0):.0f} s, {tm.get('n_invoice_lines', '?')} lines, "
                f"{len(stages)} submissions."]
         if tm.get("final_stage") in ("fixed", None) or not sub.get("ok"):
             ops.append("WARNING: no model prices went out, fallback prices only.")
-        ops += [f"Error in stage {s['stage']}: {s['error'][:90]}" for s in errs]
+        for stage, e in errs:
+            short = re.search(r"'message': '([^']+)'", e)
+            ops.append(f"Error in stage {stage}: {(short.group(1) if short else e)[:110]}")
         sections.append({"title": "Operations", "bullets": ops})
     else:
         sections.append({"title": "Operations", "bullets": ["Submission log for this game not synced yet."]})
