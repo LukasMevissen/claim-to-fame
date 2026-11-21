@@ -246,6 +246,20 @@ def cmd_market(args, cfg) -> int:
     return 0
 
 
+def _already_played(dry_run: bool) -> set[int]:
+    """Games the log records as submitted (same dry_run mode), so a restart skips them."""
+    out: set[int] = set()
+    if RUN_LOG.exists():
+        for line in RUN_LOG.read_text().splitlines():
+            try:
+                r = json.loads(line)
+            except ValueError:
+                continue
+            if r.get("ok") and bool(r.get("dry_run")) == dry_run and r.get("game_id") is not None:
+                out.add(int(r["game_id"]))
+    return out
+
+
 def cmd_run(args, cfg) -> int:
     """Unattended loop: for every upcoming game, wait for start_time, then play it."""
     from .api import QuantCoClient, parse_ts
@@ -254,7 +268,7 @@ def cmd_run(args, cfg) -> int:
     if not _release_ok(st, args):
         return 2
     client = QuantCoClient(cfg)
-    done: set[int] = set()
+    done: set[int] = _already_played(args.dry_run)   # a restart must not replay a game
     print(f"[run] {st.label} dry_run={args.dry_run}; Ctrl-C to stop")
     while True:
         try:

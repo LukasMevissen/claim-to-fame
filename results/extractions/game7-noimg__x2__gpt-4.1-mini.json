@@ -1,0 +1,29 @@
+{
+  "case_id": "game7-noimg",
+  "extractor_version": "x2",
+  "model": "gpt-4.1-mini",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Internal frost-burst fitting repair including thermal-imaging leak detection",
+      "quantity": 1.0,
+      "unit": "flat rate",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.3,
+      "rationale": "Escape of water from burst fitting is covered; leak detection and repair are necessary and standard priced."
+    },
+    {
+      "item_id": "2",
+      "description": "Exterior facade frost damage repair (re-plaster and repaint)",
+      "quantity": 1.0,
+      "unit": "flat rate",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.4,
+      "rationale": "Frost damage to external surfaces is excluded unless optional frost peril is agreed, which is not indicated here."
+    }
+  ]
+}

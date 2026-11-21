@@ -12,7 +12,7 @@
       "related_prob": 1.0,
       "unit_price_gross_eur": 60.0,
       "price_log_sd": 0.3,
-      "rationale": "Leak detection and wall opening is covered and necessary for the water escape damage."
+      "rationale": "Leak detection and wall opening are covered and necessary for the water escape damage."
     },
     {
       "item_id": "2",
@@ -23,7 +23,7 @@
       "related_prob": 1.0,
       "unit_price_gross_eur": 80.0,
       "price_log_sd": 0.3,
-      "rationale": "Repairing the fractured pipe is covered and essential for the damage."
+      "rationale": "Pipe replacement is covered and directly related to the fractured pipe damage."
     },
     {
       "item_id": "3",
@@ -34,7 +34,7 @@
       "related_prob": 1.0,
       "unit_price_gross_eur": 70.0,
       "price_log_sd": 0.4,
-      "rationale": "Restoring plaster and tiles is covered and needed to repair the damage."
+      "rationale": "Restoration of plaster and tiles is covered and necessary to restore damage."
     },
     {
       "item_id": "4",
@@ -45,7 +45,7 @@
       "related_prob": 0.0,
       "unit_price_gross_eur": 100.0,
       "price_log_sd": 0.5,
-      "rationale": "Service and descaling of boiler is explicitly excluded and unrelated to the water damage."
+      "rationale": "Service and descaling are explicitly excluded and unrelated to the water damage."
     }
   ]
 }
