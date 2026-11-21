@@ -9,6 +9,7 @@ dependencies = [
   "pypdf>=4.0",
   "pyzipper>=0.3.6",
   "pillow>=10",
+  "numpy>=1.26",
 ]
 
 [project.optional-dependencies]

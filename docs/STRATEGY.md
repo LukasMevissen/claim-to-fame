@@ -41,6 +41,40 @@ against a configurable opponent mix (`configs/default.toml`, `[pricing.opponents
 **Calibrate this mix** from the public leaderboard (Matchup and Transactions tabs) after the
 first games. That is allowed (public data) and is the main lever after the price estimates.
 
+## 3b. Learning the opponents round by round
+
+After every game, `python scripts/update_opponents.py` pulls the public transactions
+(leaderboard Transactions tab, `c2f/leaderboard.py`) and refits a belief about every team.
+
+**What the transactions reveal** (`c2f/ab_table.py`, table `results/ab_table.csv` via
+`python scripts/extract_ab.py`, columns team | round | line_item | a | b | ... | our_a | our_b):
+
+| row | a of the issuer | b of the reviewer | t |
+|---|---|---|---|
+| accepted, amount m | m (capped at c if a > t) | b >= a | – |
+| rejected, amount 1.5a | m / 1.5 | b < a | t >= a |
+| rejected, amount 0 | hidden (a > t) | b < a | t < a |
+| no positive payment on the whole item | not identified | – | t = 0 almost surely |
+
+b is never shown. The table reports b = largest known charge the team accepted, the
+infimum of the feasible set, plus b_high (smallest known charge it rejected).
+A team that charged 0 everywhere and accepted nothing positive did not submit (absent).
+our_a / our_b come from `runs/submissions.jsonl` (last record per game).
+
+**Latent model** (`c2f/opponents.py`): per item an apparent value v and covered/uncovered;
+per team log a = log v + alpha + sigma eps, log b = log v + beta + tau eta, a miss rate on
+exclusions and an absent rate. EM on a log grid per item; b enters interval censored,
+hidden charges left censored, fair/fraud rejections pin t absolutely. Older games are
+weighted 0.85 per game, so the belief follows teams that change strategy.
+
+**Best response:** `results/opponent_belief.json` replaces the hand-set opponent mix
+(`[pricing] opponents_from`), so a is optimised against the learned b-rules of the actual
+teams. b stays the 1/3 quantile of our belief about t, which is optimal for any opponent.
+
+**Limits.** For lenient teams most charges they see are below their b, so b is only bounded
+below; beta can be biased upwards (synthetic test: +0.1 to +0.2). Uncovered items reveal
+almost nothing (all payments 0), so the miss rate stays near its prior.
+
 ## 4. Where the money is
 
 1. Price estimates (median and honest uncertainty) drive both a and b.

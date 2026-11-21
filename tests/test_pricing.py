@@ -99,7 +99,18 @@ def _items():
 def test_default_config_loads():
     cfg = load_config()
     p = cfg.pricing
-    assert len(p.opponents) == 3 and 0 < p.acceptance_quantile < 1
+    learned = cfg.learned_opponents(cfg.raw["pricing"].get("opponents_from", ""),
+                                    cfg.raw["pricing"].get("team_name", ""), 3.0)
+    # learned population from results/opponent_belief.json when present, else the hand-set 3
+    assert p.opponents == (learned or p.opponents) and len(p.opponents) >= 3
+    assert 0 < p.acceptance_quantile < 1
+
+
+def test_hand_set_mix_without_belief_file():
+    from c2f.config import Config
+    raw = {"pricing": {"opponents_from": "results/does_not_exist.json", "team_name": "x",
+                       "opponents": [{"weight": 1.0, "kind": "absent"}]}}
+    assert len(Config(raw, None, "").pricing.opponents) == 1
 
 
 def test_price_items_and_gates():
