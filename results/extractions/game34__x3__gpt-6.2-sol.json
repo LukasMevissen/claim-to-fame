@@ -1,0 +1,95 @@
+{
+  "case_id": "game34",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Damage assessment and inspection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 338.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 5.2.6(b) covers the separate cause-and-extent assessment. A fair gross charge of €500, calibrated to case 20 and below the €3,000 cap, gives about €338 after allocating the single €500 event deductible pro rata."
+    },
+    {
+      "item_id": "2",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 338.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 5.2.6(a) covers locating the porous spots; this estimate treats the flat rate as the detection service, distinct from the technician time billed separately. The two lines total an estimated €625 gross before deductible allocation, below the €1,000 shared cap; this line's €500 gross allowance becomes about €338."
+    },
+    {
+      "item_id": "3",
+      "description": "Measurement technician, 2.5 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 85.0,
+      "price_log_sd": 0.21,
+      "rationale": "Section 5.2.6(a) expressly covers on-site technician time, provided it is not already included in the flat rate under §7.1.8(c). At €50 gross per hour, €125 becomes about €85 after the line's share of the event deductible."
+    },
+    {
+      "item_id": "4",
+      "description": "Leak-detection vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 56.0,
+      "price_log_sd": 0.12,
+      "rationale": "Section 5.2.6(c) allows one vehicle charge on the contractor's invoice despite the hourly unit shown. The €70 net cap is €83.30 gross at 19% VAT, or about €56 after deductible allocation."
+    },
+    {
+      "item_id": "5",
+      "description": "Repair of two actively leaking copper joints",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 176.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 2.4.3(a) treats ageing-related leakage as fracture damage only at the verified leaking sections; §9.1.1 does not make ordinary ageing alone a breach. Allowing €260 gross for localized sealing or renewal of both joints gives about €176 after deductible allocation."
+    },
+    {
+      "item_id": "6",
+      "description": "Precautionary replacement of non-leaking copper run",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1450.0,
+      "price_log_sd": 0.65,
+      "rationale": "Sections 2.4.3(a) and 7.1.5 exclude sections not shown to be leaking, even when replaced during a covered repair. The positive figure is an indicative price only if covered, not an allowance for preventative work."
+    },
+    {
+      "item_id": "7",
+      "description": "Premium composite piping upgrade surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.65,
+      "rationale": "Section 7.1.9 limits reinstatement to the pre-loss standard, so a separately billed premium upgrade difference is not payable. The positive figure is an indicative surcharge only."
+    },
+    {
+      "item_id": "8",
+      "description": "Plumber vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 52.0,
+      "price_log_sd": 0.17,
+      "rationale": "Section 5.2.6(c) allows the plumber's single vehicle charge because the visit was needed for the covered joint repairs, even though preventative work was also performed. An ordinary €77 gross charge is below the €83.30 gross cap and becomes about €52 after deductible allocation."
+    }
+  ]
+}

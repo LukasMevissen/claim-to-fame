@@ -1,0 +1,15 @@
+{
+ "game": 34,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Quick note on the ground-floor copper-pipe job, 1994 build, pipes original to the house. Same story as first flagged: the leak-detection specialist and the plumber both put the cause down to material ageing, several porous spots along the run rather than one burst. Two joints were actually weeping and got sealed. While they were in, the homeowner had the plumber swap out the entire remaining copper run across the ground floor as a precaution against future leaks, even the sections that weren't leaking, and upgrade the lot to premium multilayer composite pipe instead of like-for-like copper. Assessment call and indoor leak detection up front as usual, one van per firm.",
+ "lines": {
+  "1": "Damage assessment and inspection 1 flat rate",
+  "2": "Indoor leak detection 1 flat rate",
+  "3": "Measurement technician 2.5 hrs",
+  "4": "Vehicle costs 1 hrs",
+  "5": "Repair of the copper joints verified as actively leaking (seal/renew failed sections) | 1 flat rate",
+  "6": "Precautionary replacement of the remaining original copper supply run across the ground floor (sections not themselves shown to be leaking) | 1 flat rate",
+  "7": "Upgrade surcharge – premium multilayer composite piping in lieu of standard copper | 1 flat rate",
+  "8": "Vehicle costs 1 flat rate"
+ }
+}
