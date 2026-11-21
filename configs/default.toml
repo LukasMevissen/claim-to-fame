@@ -32,7 +32,9 @@ pricebook_max_chars = 24000
 # Models that assess every case in parallel to the live workflow. Never submitted; scored
 # afterwards by `python -m c2f shadow-report`. Format "provider:model@effort".
 # Anthropic models need ANTHROPIC_API_KEY in .env.
-models = ["anthropic:claude-fable-5-2@low", "anthropic:claude-opus-5-5@low", "anthropic:claude-sonnet-5-5@low"]
+# claude-opus-5-5@low is the live answer now ([llm].backup + prefer_backup) and sonnet replayed
+# far below the others (games 10-19: 1.4k vs 28-30k), so only fable stays as a comparison.
+models = ["anthropic:claude-fable-5-2@low"]
 timeout_seconds = 120
 
 [api]

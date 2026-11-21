@@ -1,0 +1,180 @@
+{
+ "game": 26,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.2,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 25073,
+ "output_tokens": 1155,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Upgrade to premium carbon frame (elective)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.6,
+   "rationale": "Bike recovered undamaged; the frame upgrade is the owner's election and falls under 3.1.6 and 7.1.8(c) in its entirety, so t=0."
+  },
+  {
+   "item_id": "2",
+   "description": "Brake replacement as part of routine service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.4,
+   "rationale": "Renewed as part of a service on an undamaged part (3.1.6, 7.1.10), so not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Full drivetrain service and tune-up",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Servicing and tuning are excluded under 3.1.6 and 7.1.8(a)."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.4,
+   "rationale": "Ancillary to the non-indemnifiable service and upgrade work on an invoice where nothing is indemnifiable, so t=0."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "Attendance charge on an invoice with nothing indemnifiable (7.1.8(f)), so t=0."
+  },
+  {
+   "item_id": "6",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.4,
+   "rationale": "Assembly belongs to the elective upgrade and service work, so t=0."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour for non-indemnifiable service work, so t=0."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour for non-indemnifiable service work, so t=0."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.35,
+   "rationale": "Attendance to cut the lock is a recovery cost under 5.2.2(a), within the EUR 500 mobility sub-limit. Based on the references, the sum of the locksmith lines is well under 500, so this line is paid in full."
+  },
+  {
+   "item_id": "10",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.4,
+   "rationale": "Cutting a lock holding the item is covered under 5.2.2(b), within the sub-limit."
+  },
+  {
+   "item_id": "11",
+   "description": "Locksmith skilled worker hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour of every grade on the lock cutting is covered under 5.2.2(b), within the sub-limit."
+  }
+ ],
+ "quotes": {
+  "1": [
+   275.93,
+   0.0
+  ],
+  "2": [
+   113.1,
+   0.0
+  ],
+  "3": [
+   104.4,
+   0.0
+  ],
+  "4": [
+   21.75,
+   0.0
+  ],
+  "5": [
+   26.1,
+   0.0
+  ],
+  "6": [
+   87.0,
+   0.0
+  ],
+  "7": [
+   30.45,
+   0.0
+  ],
+  "8": [
+   36.54,
+   0.0
+  ],
+  "9": [
+   60.9,
+   55.84
+  ],
+  "10": [
+   95.7,
+   84.96
+  ],
+  "11": [
+   52.2,
+   46.99
+  ]
+ }
+}
