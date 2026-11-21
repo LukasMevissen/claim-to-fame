@@ -23,10 +23,11 @@ POLL_S = 1.0
 FINAL_SUBMIT_BY_S = 50    # el último envío "bueno" antes de este segundo; reenviar es gratis
 
 # ---------------------------------------------------------------- LLM
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
-ANTHROPIC_VERSION = os.getenv("ANTHROPIC_VERSION", "2023-06-01")
-LLM_FAST_MODEL = os.getenv("LLM_FAST_MODEL", "claude-haiku-5-5")   # 1ª pasada, solo texto
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-5-5")            # 2ª pasada, con imágenes
+# OpenAI (Chat Completions). Keys: OPENAI_KEY (starter kit) u OPENAI_API_KEY.
+OPENAI_KEY = os.getenv("OPENAI_KEY") or os.getenv("OPENAI_API_KEY", "")
+OPENAI_BASE = os.getenv("OPENAI_BASE", "https://api.openai.com/v1")
+LLM_FAST_MODEL = os.getenv("LLM_FAST_MODEL", "gpt-4o-mini")   # 1st pass, text only
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")                  # 2nd pass, with image
 LLM_TIMEOUT_S = 35
 
 # ---------------------------------------------------------------- decisión

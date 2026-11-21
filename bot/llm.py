@@ -39,24 +39,25 @@ Use the invoice's own index numbers. Do not skip any line.
 def _img(path):
     media = "image/png" if path.lower().endswith(".png") else "image/jpeg"
     with open(path, "rb") as f:
-        return {"type": "image", "source": {"type": "base64", "media_type": media,
-                                            "data": base64.b64encode(f.read()).decode()}}
+        data = base64.b64encode(f.read()).decode()
+    return {"type": "image_url", "image_url": {"url": f"data:{media};base64,{data}"}}
 
 
 def call(case, model, with_images, timeout):
     text = PROMPT.replace("{description}", case["description"]) \
                  .replace("{policy}", case["policy"]).replace("{invoice}", case["invoice_text"])
-    content = [_img(p) for p in case["images"][:4]] if with_images else []
-    content.append({"type": "text", "text": text})
-    body = json.dumps({"model": model, "max_tokens": 4000, "temperature": 0.2,
+    content = [{"type": "text", "text": text}]
+    if with_images:
+        content += [_img(p) for p in case["images"][:2]]
+    body = json.dumps({"model": model, "temperature": 0.2,
+                       "response_format": {"type": "json_object"},
                        "messages": [{"role": "user", "content": content}]}).encode()
     req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=body, method="POST",
-        headers={"x-api-key": config.ANTHROPIC_API_KEY, "anthropic-version": config.ANTHROPIC_VERSION,
-                 "content-type": "application/json"})
+        f"{config.OPENAI_BASE}/chat/completions", data=body, method="POST",
+        headers={"Authorization": f"Bearer {config.OPENAI_KEY}", "content-type": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         out = json.loads(r.read())
-    return parse("".join(b.get("text", "") for b in out.get("content", [])))
+    return parse(out["choices"][0]["message"]["content"])
 
 
 def parse(text):
