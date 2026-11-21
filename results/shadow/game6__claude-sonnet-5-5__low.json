@@ -1,0 +1,30 @@
+{
+ "game": 6,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.6,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 28163,
+ "output_tokens": 278,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop accidental damage repair (cracked screen and lower-right corner), combined line, settled with shop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1150.0,
+   "price_log_sd": 0.25,
+   "rationale": "Peril 2.6 (swerve, laptop thrown against door) is covered under 2.6.2 and 4.5.2, and 2.6.3 and 7.1.12 treat both areas of damage as one loss on one unit, so the combined line is covered. Earlier cases put the screen at about 808 and the corner at about 342, a combined level of about 1150 (Case 5 shows at least 1166). The unit's purchase price is unknown, so the repair cap is unclear. The deductible is unknown, so I estimate slightly below the sum."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1000.5,
+   996.39
+  ]
+ }
+}

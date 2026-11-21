@@ -1,0 +1,120 @@
+{
+ "game": 8,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 13.9,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 16068,
+ "output_tokens": 788,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.45,
+   "rationale": "Remains of insured site installation, material arising under 5.2.1(a); fair disposal price for timber load."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.5,
+   "rationale": "Glass pane is a building component of the shed; remains covered under 5.2.1(a); small disposal charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of green waste (branches, foliage)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.45,
+   "rationale": "Storm-felled vegetal material is material arising under 5.2.1(b) and 2.5.3(c); ordinary green waste disposal price."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of tree root ball under 1 m3",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Single root mass not exceeding one cubic metre counts as material arising under 5.2.1(b); covered."
+  },
+  {
+   "item_id": "5",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ground material however processed is excluded under 5.2.1(d) and 4.3(d); no reinstatement ground works or making good, so 5.2.2 not met."
+  },
+  {
+   "item_id": "6",
+   "description": "Disposal of paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.6,
+   "rationale": "Paving grit is ground material; standalone disposal without making good is not indemnified under 5.2.1(d)/5.2.2."
+  },
+  {
+   "item_id": "7",
+   "description": "Disposal of excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excavated soil is ground material; clearance standing on its own, no foundation or reinstatement work, excluded under 5.2.2 last paragraph."
+  }
+ ],
+ "quotes": {
+  "1": [
+   146.55,
+   122.32
+  ],
+  "2": [
+   41.97,
+   32.58
+  ],
+  "3": [
+   174.03,
+   145.26
+  ],
+  "4": [
+   111.92,
+   80.97
+  ],
+  "5": [
+   101.17,
+   0.0
+  ],
+  "6": [
+   82.78,
+   0.0
+  ],
+  "7": [
+   119.57,
+   0.0
+  ]
+ }
+}

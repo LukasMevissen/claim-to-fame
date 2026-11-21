@@ -1,0 +1,84 @@
+{
+  "case_id": "game15",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Surge-damaged speaker system",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 285.0,
+      "price_log_sd": 0.28,
+      "rationale": "Clauses 2.3.3, 4.2.4 and 7.1.9 cover a like-for-like replacement of the damaged system, estimated at €285 gross. The €5,000 aggregate cap does not bind, and being plugged in does not establish that surge protection was absent, so no 50% reduction is applied."
+    },
+    {
+      "item_id": "2",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.3,
+      "rationale": "Clause 7.1.8(b) excludes shipping for replacement equipment even when billed alongside covered equipment. The €5 estimate is conditional only; the expected allowance is zero."
+    },
+    {
+      "item_id": "3",
+      "description": "Replacement equipment installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 8.0,
+      "price_log_sd": 0.45,
+      "rationale": "Clause 7.1.8(c) excludes installing or connecting replacement equipment, even if billed as labour. The €8 estimate is conditional only; the expected allowance is zero."
+    },
+    {
+      "item_id": "4",
+      "description": "Surge-damaged TV",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 565.0,
+      "price_log_sd": 0.15,
+      "rationale": "Clauses 2.3.3 and 7.1.9 cover an equivalent pre-loss-specification TV at €565 gross, consistent with Case 9. The two replacements total €850, below the €5,000 aggregate cap; neither a missing protective device nor a scheduled deductible is established."
+    },
+    {
+      "item_id": "5",
+      "description": "Combined electronics property and liability charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 10.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clauses 3.1.4 and 11.2 exclude the combined property and liability arrangement charge because no physical-damage element is separately itemised and priced. The €10 estimate is conditional only; the expected allowance is zero."
+    },
+    {
+      "item_id": "6",
+      "description": "Electronics service order",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clauses 3.1.4, 3.1.5 and 7.1.8(f) exclude charges for placing an order under the property and liability arrangement. The €6 estimate is conditional only; the expected allowance is zero."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clause 7.1.8(d) permits an attendance charge only when indemnifiable work appears on the same invoice, and neither service line on this invoice qualifies. The €5 estimate is conditional only; the expected allowance is zero."
+    }
+  ]
+}

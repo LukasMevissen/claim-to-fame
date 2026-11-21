@@ -1,0 +1,120 @@
+{
+ "game": 9,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 15.3,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 18820,
+ "output_tokens": 776,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Speaker system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 2.3.3 overvoltage; endorsement waives halving; standard-grade replacement per 7.1.9, within EUR 5,000 sub-limit. Reference case combined speaker+TV about 800-900 (possibly halved there), so speaker roughly 700."
+  },
+  {
+   "item_id": "2",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage/delivery of replacement property excluded by 7.1.8(b)."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Fitting/installing/commissioning replacement property excluded by 7.1.8(c)."
+  },
+  {
+   "item_id": "4",
+   "description": "TV set",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 2.3.3; damage confirmed by diagnostic report; no halving due to endorsement; standard-grade equivalent per 7.1.9, within sub-limit."
+  },
+  {
+   "item_id": "5",
+   "description": "Property and liability damage to electronics",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.7,
+   "rationale": "Bundles property with liability risk without separate pricing; excluded in entirety under 3.1.4 and 7.1.8(f)."
+  },
+  {
+   "item_id": "6",
+   "description": "Service order under arrangement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "Charge for placing an order under a service/liability arrangement excluded by 3.1.5 and 7.1.8(f)."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Attendance charge on an invoice with no indemnifiable work is not indemnifiable under 7.1.8(d)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   641.15,
+   523.5
+  ],
+  "2": [
+   37.31,
+   0.0
+  ],
+  "3": [
+   83.94,
+   0.0
+  ],
+  "4": [
+   915.93,
+   747.86
+  ],
+  "5": [
+   318.09,
+   0.0
+  ],
+  "6": [
+   73.58,
+   0.0
+  ],
+  "7": [
+   27.98,
+   0.0
+  ]
+ }
+}

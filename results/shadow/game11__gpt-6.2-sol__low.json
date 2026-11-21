@@ -1,0 +1,147 @@
+{
+ "game": 11,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 19.3,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 145.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.6.4 excludes glazing from accidental damage cover. No optional glazing cover is shown, so §3.5(a) excludes the replacement."
+  },
+  {
+   "item_id": "2",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.35,
+   "rationale": "Drilling to receive the replacement pane or its hardware is preparatory glazing work under §1.3 and is excluded by §3.5(b)."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation of replacement pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.3,
+   "rationale": "Fitting the replacement pane is glazing work excluded by §3.5(b); under §7.1.11 it does not become payable because the same incident damaged the side table."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of broken glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 32.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 3.5(b) excludes disposal of the broken pane, and §5.2.1 does not cover debris from an item whose damage is uninsured. The conditional estimate uses the €30–34 glass-disposal benchmark in Case 8."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of dented solid-wood side table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.28,
+   "rationale": "The sudden impact damaged insured household contents under §§2.6.1 and 4.2.6. Sections 7.1.1(b) and 7.1.5 allow local dent repair and finish restoration, estimated at €280 gross with no stated deductible."
+  },
+  {
+   "item_id": "6",
+   "description": "Touch-up of pre-existing scratches",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 3.6(a) and 7.1.9 exclude the old scratches on the second cabinet, even though the touch-up was billed with the covered repair."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs for first visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.22,
+   "rationale": "Under §7.1.12, the contractor's first attendance is payable in full if the covered table repair was carried out at that visit. The old-scratch work does not reduce the reasonable €25 gross charge."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs for return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.12 excludes a return visit by the same contractor unless the insurer agreed to it in advance; no approval is indicated."
+  },
+  {
+   "item_id": "9",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(b) expressly excludes separate administrative flat rates as business overhead rather than repair costs."
+  }
+ ],
+ "quotes": {
+  "1": [
+   126.15,
+   0.0
+  ],
+  "2": [
+   21.75,
+   0.0
+  ],
+  "3": [
+   56.55,
+   0.0
+  ],
+  "4": [
+   27.84,
+   0.0
+  ],
+  "5": [
+   243.6,
+   246.9
+  ],
+  "6": [
+   73.95,
+   0.0
+  ],
+  "7": [
+   21.75,
+   22.45
+  ],
+  "8": [
+   21.75,
+   0.0
+  ],
+  "9": [
+   17.4,
+   0.0
+  ]
+ }
+}

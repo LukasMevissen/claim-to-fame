@@ -1,0 +1,45 @@
+{
+ "game": 1,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 14.4,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 15571,
+ "output_tokens": 402,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged home electronics (speaker system and TV set), 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.5,
+   "rationale": "Overvoltage from atmospheric discharge (2.3.3) is insured and both appliances were damaged. Indemnity is capped by the EUR 5,000 appliance sub-limit and by 7.1.9. No surge protector was used, so the amount is halved under 2.3.3. The market value is a guess: roughly 1,500 EUR for TV and speakers, halved to about 750 EUR."
+  },
+  {
+   "item_id": "2",
+   "description": "Diagnostic surge-failure report and technician call-out, 3 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "Diagnostic report and measuring work are the contractor's own diagnostic outlay (7.1.8(e)). The call-out charge (7.1.8(d)) is not indemnifiable because no indemnifiable repair work is billed on this invoice. No repair cost is shown, so t is 0."
+  }
+ ],
+ "quotes": {
+  "1": [
+   839.41,
+   634.69
+  ],
+  "2": [
+   139.9,
+   0.0
+  ]
+ }
+}

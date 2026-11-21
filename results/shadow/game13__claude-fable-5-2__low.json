@@ -1,0 +1,75 @@
+{
+ "game": 13,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.6,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 18418,
+ "output_tokens": 523,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber and broken glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.3,
+   "rationale": "Remains of insured property, material arising under 5.2.1(a); both elements indemnifiable so the combined line stands. References: glass 30-34, timber below 75."
+  },
+  {
+   "item_id": "2",
+   "description": "Combined load: green waste, root mass over 1 m3, excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.6,
+   "rationale": "Combined position mixing indemnifiable green waste with root mass over 1 m3 (5.2.1(e)) and ground material (5.2.1(d)); under 7.1.10 the whole line is not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ground material under 5.2.1(d); no reinstatement ground works and ground not made good, so 5.2.2 is not met. Standalone disposal is not indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ground material however processed, 5.2.1(d); standalone clearance without reinstatement is excluded under 5.2.2."
+  }
+ ],
+ "quotes": {
+  "1": [
+   78.3,
+   74.15
+  ],
+  "2": [
+   137.96,
+   0.0
+  ],
+  "3": [
+   36.79,
+   0.0
+  ],
+  "4": [
+   36.79,
+   0.0
+  ]
+ }
+}

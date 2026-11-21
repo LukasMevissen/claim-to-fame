@@ -1,0 +1,45 @@
+{
+ "game": 7,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.8,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 26107,
+ "output_tokens": 406,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst fitting repair incl. thermal-imaging leak detection (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.4,
+   "rationale": "Internal fitting fractured by frost is covered under 2.4.4 and 7.1.9, and leak location with imaging equipment is covered under 2.4.6 and 3.6, so the combined lump sum prices covered work. I estimated a fair market price for fitting renewal plus leak location, with one attendance included."
+  },
+  {
+   "item_id": "2",
+   "description": "Exterior facade frost damage repair (re-plaster and repaint)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.5,
+   "rationale": "The facade plaster failed from outdoor cold, which is frost action on an external surface. The optional peril 2.1(d) is not shown as agreed, so 3.5 excludes the repair and all its ancillary work. The fitting burst was internal and the water did not reach the facade through the fabric, so 2.4.3 does not apply. The combined line is declined whole under 7.1.13."
+  }
+ ],
+ "quotes": {
+  "1": [
+   522.0,
+   477.01
+  ],
+  "2": [
+   2331.69,
+   0.0
+  ]
+ }
+}

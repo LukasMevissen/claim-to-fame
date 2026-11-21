@@ -1,0 +1,57 @@
+{
+ "game": 12,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 8.6,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Floor cleaning, connection check and skirting replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.32,
+   "rationale": "The washing-machine hose leak qualifies as escape of water under §2.4.2. Under §§7.1.5 and 7.1.7, allow about €85 for necessary cleaning of wetted flooring, €75 for the source and connection check, and €260 for removing and replacing damaged skirting like for like."
+  },
+  {
+   "item_id": "2",
+   "description": "Moisture measurement and floor drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 520.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.7(b), (e) and (g) cover necessary moisture measurement, drying-unit hire and skilled labour in both affected spaces. Allow €520 gross for a small drying setup and associated labour, without a separate electricity allowance under §7.1.8(d)."
+  },
+  {
+   "item_id": "3",
+   "description": "Assessment and drying of framed poster print",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "The mass-produced decorative print is excluded household contents under §4.3(d) and does not qualify as an item of particular value under §5.2.6. If it qualified, €120 gross would be a reasonable allowance for the combined assessment and drying, below the €1,000 net cap for an unlisted qualifying item."
+  }
+ ],
+ "quotes": {
+  "1": [
+   365.4,
+   363.75
+  ],
+  "2": [
+   452.4,
+   434.46
+  ],
+  "3": [
+   104.4,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "game": 8,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 20.3,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of damaged shed roof timber",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "Storm-driven tree impact on the declared shed is covered under §2.5.3(c), and the damaged roof timber qualifies as debris under §5.2.1(a). Allow €85 gross for ordinary disposal, without a separate haulage charge."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of broken shed glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.35,
+   "rationale": "The broken pane is a component of the insured shed under §4.2.2 and qualifies as debris under §5.2.1(a). Allow €22 gross for disposal of one pane on the shared run."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of storm-felled branches and foliage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 5.2.1(b) expressly covers disposal of storm-felled branches and foliage even though the tree itself is not insured under §4.3(e). Allow €65 gross for the separately billed green-waste disposal."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of the single root ball",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.45,
+   "rationale": "Under §§1.3 and 5.2.1(b), the single root ball qualifies because its volume, including adhering earth, is reported below 1 m³. Allow €90 gross for disposal, distinct from loose soil disposal."
+  },
+  {
+   "item_id": "5",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.005,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sieved topsoil remains ground material excluded by §5.2.1(d), and its standalone disposal does not meet the reinstatement and making-good conditions of §5.2.2. If covered, ordinary disposal would be about €55 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.005,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.5,
+   "rationale": "Paving grit is ground material under §1.3 and is excluded from debris cover by §5.2.1(d); no qualifying reinstatement ground works are stated under §5.2.2. If covered, ordinary disposal would be about €45 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Disposal of excavated soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.005,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.55,
+   "rationale": "Excavated soil is excluded under §5.2.1(d), and the bill is for standalone clearance rather than soil removal and making good necessary for shed reinstatement under §5.2.2. If covered, ordinary disposal would be about €75 gross."
+  }
+ ],
+ "quotes": {
+  "1": [
+   73.95,
+   71.02
+  ],
+  "2": [
+   19.14,
+   18.8
+  ],
+  "3": [
+   59.54,
+   53.1
+  ],
+  "4": [
+   82.43,
+   72.89
+  ],
+  "5": [
+   51.3,
+   0.0
+  ],
+  "6": [
+   41.97,
+   0.0
+  ],
+  "7": [
+   69.46,
+   0.0
+  ]
+ }
+}

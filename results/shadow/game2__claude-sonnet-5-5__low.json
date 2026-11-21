@@ -1,0 +1,75 @@
+{
+ "game": 2,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.8,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 26942,
+ "output_tokens": 606,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen crack repair (complete display assembly)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.3,
+   "rationale": "Cracked screen from the swerve is covered under 2.6.2 and 2.6.3(a). Battery was found fine, so 2.6.8 does not apply. Display is the main cost; the laptop cost about 1,400 and repair is less than replacement, so no cap. The invoice total is near 1,300, and the display is most of it, so I estimate about 850 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Lower-right corner and housing repair (new lower shell)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.3,
+   "rationale": "Housing and corner damage from the same event is covered under 2.6.3(b) even if operation is unaffected. A new lower shell with labour is an ordinary repair, estimated at about 280 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish of pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Treating a pre-existing surface condition is not a repair cost under 7.1.11 and 7.1.8(a), even if on the same invoice. t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.4,
+   "rationale": "Examination of a damaged unit in an insured event is reimbursed under 5.2.3, capped at EUR 250 incl. VAT. A typical diagnostic charge is cheaper than the cap, so about 60 gross."
+  }
+ ],
+ "quotes": {
+  "1": [
+   739.5,
+   715.65
+  ],
+  "2": [
+   243.6,
+   234.11
+  ],
+  "3": [
+   34.8,
+   0.0
+  ],
+  "4": [
+   52.2,
+   47.26
+  ]
+ }
+}

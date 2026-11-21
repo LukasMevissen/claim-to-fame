@@ -1,0 +1,75 @@
+{
+ "game": 2,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 12.2,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 26942,
+ "output_tokens": 570,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen crack repair (display assembly)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 800.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 2.6.2/2.6.3(a): swerve in a conveyance, screen breakage. Purchase price about EUR 1,400; both repairs together stay below new price, so repair is economic (7.1.10). Display takes most of the cost, estimated around EUR 800."
+  },
+  {
+   "item_id": "2",
+   "description": "Lower-right corner and housing repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.4,
+   "rationale": "Covered under 2.6.3(b): housing deformation at a corner from the same event, whether or not operation is impaired. Lower shell plus labour estimated at about EUR 380; combined with line 1 still below new price."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish of pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Excluded by 7.1.11 and 2.6.5(b): treating a pre-existing surface condition is not a repair cost, even on the same invoice."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered under 5.2.3 as examination cost after an insured event under 2.6, capped at EUR 250 incl. VAT. Ordinary diagnostic fee is about EUR 70, well under the cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   696.0,
+   673.55
+  ],
+  "2": [
+   330.6,
+   299.32
+  ],
+  "3": [
+   36.79,
+   0.0
+  ],
+  "4": [
+   64.11,
+   51.12
+  ]
+ }
+}

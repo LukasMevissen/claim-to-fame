@@ -140,13 +140,14 @@ def report(window: float = 45.0) -> str:
             return sum(game_net(qs.get(g, {}), g, summary, up) for g in gs)
 
         secs = [by_game[g]["secs"] for g in ok]
-        both = [g for g in games if g in live]
+        both = [g for g in ok if g in live]
         lines += [f"## {name}", "",
-                  f"- games scored: {len(games)} ({games[0]}..{games[-1]}), failed: {len(games) - len(ok)}",
+                  f"- games answered: {len(ok)} of {len(games)} attempted"
+                  + (f" (failed: {[g for g in games if g not in ok]})" if len(ok) < len(games) else ""),
                   f"- latency: median {sorted(secs)[len(secs) // 2] if secs else '-'} s, "
-                  f"max {max(secs) if secs else '-'} s, in time {sum(s <= window for s in secs)}/{len(games)}",
-                  f"- net, all scored games (failed = 0/0 quotes): {tot(q, games, 1.15):,.0f} / {tot(q, games, 1.4):,.0f}",
-                  f"- on the {len(both)} games we also played live: shadow {tot(q, both, 1.15):,.0f} / "
+                  f"max {max(secs) if secs else '-'} s, in time {sum(s <= window for s in secs)}/{len(ok)}",
+                  f"- net on the answered games: {tot(q, ok, 1.15):,.0f} / {tot(q, ok, 1.4):,.0f}",
+                  f"- on the {len(both)} of those we also played live: shadow {tot(q, both, 1.15):,.0f} / "
                   f"{tot(q, both, 1.4):,.0f} vs live {tot(live, both, 1.15):,.0f} / {tot(live, both, 1.4):,.0f}",
                   ""]
         tin = sum(by_game[g].get("input_tokens", 0) for g in ok)

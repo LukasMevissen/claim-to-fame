@@ -1,0 +1,45 @@
+{
+ "game": 7,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 14.4,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 26107,
+ "output_tokens": 382,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst fitting repair incl. thermal-imaging leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 620.0,
+   "price_log_sd": 0.4,
+   "rationale": "Covered under 2.4.4/7.1.9 (frost fracture of fitting, labour, consumables, one attendance) and 2.4.6/5.2.2 leak location (cap EUR 2,500 not reached). Lump sum prices covered work (7.1.12); fair market price for small fitting repair plus thermal imaging."
+  },
+  {
+   "item_id": "2",
+   "description": "Exterior facade frost damage repair (re-plaster and repaint)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2800.0,
+   "price_log_sd": 0.6,
+   "rationale": "Plaster failed under outdoor cold, i.e. frost from without; optional peril 2.1(d) not stated as agreed, so 3.5(a)-(c) and 2.6.4 exclude the whole combined line (7.1.13). No evidence that escaping water reached the facade (2.4.3)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   539.4,
+   492.91
+  ],
+  "2": [
+   2575.34,
+   0.0
+  ]
+ }
+}

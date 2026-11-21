@@ -8,15 +8,32 @@ In time = answered within 45 s. Compare rows only on the same games.
 
 ## claude-fable-5-2@low
 
-- games scored: 2 (12..13), failed: 2
-- latency: median - s, max - s, in time 0/2
-- net, all scored games (failed = 0/0 quotes): -9,809 / -9,809
-- on the 2 games we also played live: shadow -9,809 / -9,809 vs live 3,838 / 3,838
+- games scored: 15 (1..15), failed: 14
+- latency: median 13.8 s, max 13.8 s, in time 1/15
+- net, all scored games (failed = 0/0 quotes): -47,066 / -47,066
+- on the 10 games we also played live: shadow -20,841 / -20,841 vs live 8,945 / 8,945
+- tokens: 21,414 in, 770 out over 1 games
 
-## gpt-6-luna@low
+## claude-opus-5-5@low
 
-- games scored: 2 (12..13), failed: 0
-- latency: median 9.7 s, max 9.7 s, in time 2/2
-- net, all scored games (failed = 0/0 quotes): 3,604 / 3,604
-- on the 2 games we also played live: shadow 3,604 / 3,604 vs live 3,838 / 3,838
+- games scored: 15 (1..15), failed: 14
+- latency: median 13.8 s, max 13.8 s, in time 1/15
+- net, all scored games (failed = 0/0 quotes): -48,054 / -48,054
+- on the 10 games we also played live: shadow -21,829 / -21,829 vs live 8,945 / 8,945
+- tokens: 21,414 in, 788 out over 1 games
+
+## claude-sonnet-5-5@low
+
+- games scored: 15 (1..15), failed: 14
+- latency: median 11.0 s, max 11.0 s, in time 1/15
+- net, all scored games (failed = 0/0 quotes): -51,478 / -51,478
+- on the 10 games we also played live: shadow -25,253 / -25,253 vs live 8,945 / 8,945
+- tokens: 21,414 in, 798 out over 1 games
+
+## gpt-6.2-sol@low
+
+- games scored: 14 (1..14), failed: 0
+- latency: median 14.2 s, max 20.3 s, in time 14/14
+- net, all scored games (failed = 0/0 quotes): 38,276 / 54,308
+- on the 9 games we also played live: shadow 9,969 / 26,001 vs live 7,145 / 7,145
 

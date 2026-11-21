@@ -1,0 +1,27 @@
+{
+ "game": 6,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 18.7,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Combined laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1170.0,
+   "price_log_sd": 0.2,
+   "rationale": "The swerve and impact are covered under §§2.6.2–2.6.3 and 4.5.2, and direct payment to the shop does not change cover under §7.1.12. Comparable screen and housing repairs support about €810 + €360 = €1,170 gross under §7.1.10, with no stated deductible or lower cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1017.9,
+   1069.44
+  ]
+ }
+}

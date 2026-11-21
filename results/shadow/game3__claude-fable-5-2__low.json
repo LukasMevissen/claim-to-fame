@@ -1,0 +1,105 @@
+{
+ "game": 3,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 12.8,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 24348,
+ "output_tokens": 737,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Preparatory operation for glazing hardware = glazing work (1.3); optional glazing peril 2.1(e) not shown as agreed, excluded under 2.6.4 and 3.5(b)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation of new glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Setting/fitting of glazing element is glazing work; excluded under 3.5(b) as glazing peril not agreed."
+  },
+  {
+   "item_id": "3",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.5,
+   "rationale": "Glazing element replacement excluded under 2.6.4 and 3.5(a) since optional glazing peril not agreed."
+  },
+  {
+   "item_id": "4",
+   "description": "Repair of dented/gouged solid-wood door frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 260.0,
+   "price_log_sd": 0.4,
+   "rationale": "Non-glazing frame damaged by sudden impact, covered under 2.6.1, 4.2.6 and 7.1.1(b); fair market price for timber repair and refinish."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair and refinish of scratched/chipped shelf",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.4,
+   "rationale": "Shelf hit by the same incident per description, affected item under 2.6.2; covered repair incl. finish under 7.1.1(b). Slight risk of being viewed as pre-existing wear."
+  },
+  {
+   "item_id": "6",
+   "description": "Vehicle costs (attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "Attendance under 7.1.12: one visit per undertaking payable in full, not apportioned, as covered timber work was done at that visit."
+  }
+ ],
+ "quotes": {
+  "1": [
+   37.31,
+   0.0
+  ],
+  "2": [
+   83.94,
+   0.0
+  ],
+  "3": [
+   167.88,
+   0.0
+  ],
+  "4": [
+   226.2,
+   200.82
+  ],
+  "5": [
+   139.2,
+   112.12
+  ],
+  "6": [
+   43.5,
+   36.5
+  ]
+ }
+}

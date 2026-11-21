@@ -1,0 +1,150 @@
+{
+ "game": 11,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 15.4,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 27692,
+ "output_tokens": 983,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.5,
+   "rationale": "Glazing peril 2.1(e) not stated as agreed; glazing excluded under 2.6.4 and 3.5(a)/(b)."
+  },
+  {
+   "item_id": "2",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Preparatory glazing work, excluded under 3.5(b) as the optional glazing peril is not agreed."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation of new glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Fitting of glazing element is glazing work, excluded under 3.5(b)."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of broken glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Removal and disposal of the broken element is glazing work (3.5(b)); 5.2.1 does not extend to remains of non-covered items."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of dented solid-wood side table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 260.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sudden accidental damage under 2.6.1/2.6.2 to movable household property; necessary repair cost under 7.1.1(b) at a fair market price."
+  },
+  {
+   "item_id": "6",
+   "description": "Touch-up of pre-existing scratches on second cabinet",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Pre-existing condition on an unaffected item, excluded under 3.6(a)/(b) and 7.1.9."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs (first attendance)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.45,
+   "rationale": "One attendance per undertaking is payable in full under 7.1.12 since covered table repair was done; reference shows a low price level (below 28)."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs - return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Return visit by the same undertaking is not separately indemnified under 7.1.12 without prior insurer agreement."
+  },
+  {
+   "item_id": "9",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "General administrative charge is the undertaking's own business outlay, excluded under 7.1.8(b)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   167.88,
+   0.0
+  ],
+  "2": [
+   37.31,
+   0.0
+  ],
+  "3": [
+   83.94,
+   0.0
+  ],
+  "4": [
+   27.98,
+   0.0
+  ],
+  "5": [
+   226.2,
+   212.72
+  ],
+  "6": [
+   83.94,
+   0.0
+  ],
+  "7": [
+   18.32,
+   12.94
+  ],
+  "8": [
+   18.65,
+   0.0
+  ],
+  "9": [
+   27.98,
+   0.0
+  ]
+ }
+}

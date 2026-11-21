@@ -1,0 +1,57 @@
+{
+ "game": 4,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 14.3,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle recovery and locksmith work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 175.0,
+   "price_log_sd": 0.31,
+   "rationale": "Sections 2.3.2 and 5.2.2 cover necessary recovery attendance and cutting the seized lock, subject to confirmation that theft at the location was covered. An estimated €210 gross for the whole line takes €175 of the €500 mobility limit under 4.2.2, based on €600 in estimated eligible costs."
+  },
+  {
+   "item_id": "2",
+   "description": "Frame and brake repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.1(b) and 7.1.9 cover necessary repairs to the theft-damaged frame and brakes at the pre-loss standard, up to the bicycle’s insurable value. The estimated €300 gross for both repairs is reduced rateably to €250 under 4.2.2."
+  },
+  {
+   "item_id": "3",
+   "description": "Labour and sundries",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.39,
+   "rationale": "Sections 5.2.2(b) and 7.1.7(d)–(e) cover necessary labour and materials attributable to recovery or repair, but 7.1.8(g) bars charges already included in the first two lines. An estimated €90 gross in distinct, substantiated costs takes €75 of the shared limit; no deductible amount is supplied."
+  }
+ ],
+ "quotes": {
+  "1": [
+   152.25,
+   146.5
+  ],
+  "2": [
+   217.5,
+   214.14
+  ],
+  "3": [
+   65.25,
+   51.43
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "game": 5,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 7.0,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 25676,
+ "output_tokens": 256,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop damage payment: cracked screen and lower-right corner damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1150.0,
+   "price_log_sd": 0.25,
+   "rationale": "The insured peril is sudden external action under 2.6.2 (swerve, laptop thrown against door). Under 2.6.3 and 7.1.10 the screen and the corner are one loss on one unit, and repair is capped at the acquisition price of EUR 1,400 for a new equivalent unit. Reference Case 2 puts the screen repair at 808 or more and the corner at 342 or more, which comes to roughly 1,150. For a single combined line I estimate about EUR 1,150, below the cap."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1000.5,
+   965.73
+  ]
+ }
+}

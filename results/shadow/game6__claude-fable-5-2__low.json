@@ -1,0 +1,30 @@
+{
+ "game": 6,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.8,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 28163,
+ "output_tokens": 224,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop accidental damage repair (screen and lower-right corner), combined line paid direct to shop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1150.0,
+   "price_log_sd": 0.22,
+   "rationale": "Covered under 2.6.1/2.6.2 (swerve in a conveyance) and 2.6.3 (all areas of damage on one unit are one loss); a combined line and direct settlement do not alter cover under 7.1.12. Priced at the reference level for screen plus corner repair (about 808 + 342), capped by replacement value under 7.1.10; no deductible is stated."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1000.5,
+   1013.69
+  ]
+ }
+}

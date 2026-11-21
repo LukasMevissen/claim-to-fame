@@ -1,0 +1,72 @@
+{
+ "game": 13,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.4,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed roof timber and broken glass",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 97.0,
+   "price_log_sd": 0.23,
+   "rationale": "The tree impact is covered under 2.5.3(c), and both materials are insured shed debris under 5.2.1(a), so the combined line qualifies under 7.1.10. Using Case 8, allow €65 for timber and €32 for glass, for €97 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Mixed green waste, oversized root mass and soil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 240.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 5.2.1 excludes the root mass over 1 m³ and the excavated soil, and the work does not qualify as reinstatement-related ground works under 5.2.2. Section 7.1.10 therefore bars the whole line without carving out the green waste; €240 is a conditional gross estimate only."
+  },
+  {
+   "item_id": "3",
+   "description": "Disposal of displaced paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.4,
+   "rationale": "Paving grit is ground material excluded from debris clearance under 5.2.1(d), and standalone disposal does not meet 5.2.2. The €28 gross estimate is conditional only."
+  },
+  {
+   "item_id": "4",
+   "description": "Disposal of sieved topsoil",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "Screening does not change topsoil’s exclusion as ground material under 5.2.1(d), and there was no qualifying ground reinstatement under 5.2.2. The €30 gross estimate is conditional only."
+  }
+ ],
+ "quotes": {
+  "1": [
+   84.39,
+   87.48
+  ],
+  "2": [
+   222.29,
+   0.0
+  ],
+  "3": [
+   24.36,
+   0.0
+  ],
+  "4": [
+   26.1,
+   0.0
+  ]
+ }
+}

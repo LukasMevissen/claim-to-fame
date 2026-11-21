@@ -1,0 +1,72 @@
+{
+ "game": 2,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 14.2,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replace cracked display assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.22,
+   "rationale": "The swerve-induced impact is covered under §§2.6.2–2.6.3 and 4.5. Under §§7.1.7 and 7.1.10, I estimate €950 gross for the equivalent display assembly and fitting; together with the housing repair, that is €1,300, below the roughly €1,400 purchase-price benchmark."
+  },
+  {
+   "item_id": "2",
+   "description": "Replace impact-damaged lower housing",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 2.6.3(b) covers the impact damage to the housing even if the laptop still operates. I estimate €350 gross for the equivalent shell and fitting under §§7.1.7 and 7.1.10, with no separate deductible for this second damage area."
+  },
+  {
+   "item_id": "3",
+   "description": "Polish pre-existing lid scuff",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.5 and 7.1.11 exclude cosmetic work on the old scuff because the impact did not cause it. The threshold is zero; €25 is a conditional price estimate only."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 5.2.3 expressly covers the necessary examination of equipment damaged in an insured event. An ordinary €65 gross bench diagnostic is below the €250 event cap and is payable only to the extent it was not credited against the repair."
+  }
+ ],
+ "quotes": {
+  "1": [
+   826.5,
+   860.58
+  ],
+  "2": [
+   304.5,
+   308.62
+  ],
+  "3": [
+   21.75,
+   0.0
+  ],
+  "4": [
+   56.55,
+   55.6
+  ]
+ }
+}

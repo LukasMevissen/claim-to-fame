@@ -1,0 +1,105 @@
+{
+ "game": 3,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.2,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 24348,
+ "output_tokens": 759,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Hole drilling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Drilling is glazing work (1.3) and the glazing peril 2.1(e) is not shown as agreed; 2.6.4 excludes glass under accidental damage, so 3.5 and 7.1.11 exclude it."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation of new glass into frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fitting of a glazing element is glazing work, not covered because the optional glazing peril is not agreed (3.5(b))."
+  },
+  {
+   "item_id": "3",
+   "description": "Made-to-measure replacement glass pane",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.4,
+   "rationale": "The glass breakage is excluded under accidental damage (2.6.4) and the optional glazing peril is not agreed, so t=0."
+  },
+  {
+   "item_id": "4",
+   "description": "Repair of dented and gouged solid-wood door frame",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.35,
+   "rationale": "The timber frame is a non-glazing part damaged by the impact and is covered as sudden accidental damage (4.2.2, 7.1.1(b)). Repair is priced at a fair flat rate; the deductible is unknown."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair and refinish of scratched and chipped wooden shelf",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.35,
+   "rationale": "The shelf was hit and damaged by the event, so repair and refinish are covered under 7.1.1(b) at a moderate flat rate."
+  },
+  {
+   "item_id": "6",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "One attendance is payable under 7.1.12 because indemnified timber repair was done at the visit, and it is not apportioned. Vehicle costs are a modest charge."
+  }
+ ],
+ "quotes": {
+  "1": [
+   34.8,
+   0.0
+  ],
+  "2": [
+   78.3,
+   0.0
+  ],
+  "3": [
+   174.0,
+   0.0
+  ],
+  "4": [
+   191.4,
+   175.5
+  ],
+  "5": [
+   156.6,
+   140.96
+  ],
+  "6": [
+   34.8,
+   20.52
+  ]
+ }
+}

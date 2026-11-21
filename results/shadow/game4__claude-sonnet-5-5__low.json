@@ -1,0 +1,60 @@
+{
+ "game": 4,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 9.6,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 16499,
+ "output_tokens": 499,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Recovery of stolen bicycle incl. locksmith call-out and cutting seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 260.0,
+   "price_log_sd": 0.35,
+   "rationale": "Recovery costs under 5.2.2(a),(b) are covered but fall in the mobility class, so the EUR 500 aggregate sub-limit (4.2.2) is shared rateably with the repair lines. Recovery is likely the largest share of the claim, so about 55% of 500."
+  },
+  {
+   "item_id": "2",
+   "description": "Repair of theft damage to frame and brakes",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.35,
+   "rationale": "Theft damage is covered under 2.3.1(b) and 7.1.1(b), but the mobility sub-limit of EUR 500 including VAT applies in aggregate. The line is shared rateably with the recovery and labour lines, so about 35% of 500."
+  },
+  {
+   "item_id": "3",
+   "description": "Labour and sundries flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour and sundries serving the covered repair are part of repair cost under 7.1.7(d),(e), so they are indemnified within the shared EUR 500 sub-limit. They get a small rateable share, and the line could be treated as ancillary or duplicate."
+  }
+ ],
+ "quotes": {
+  "1": [
+   226.2,
+   197.41
+  ],
+  "2": [
+   147.9,
+   121.17
+  ],
+  "3": [
+   60.62,
+   0.0
+  ]
+ }
+}

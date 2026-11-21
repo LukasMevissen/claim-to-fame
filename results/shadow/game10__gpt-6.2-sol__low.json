@@ -1,0 +1,42 @@
+{
+ "game": 10,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 12.7,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of shed and tree debris",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 192.0,
+   "price_log_sd": 0.25,
+   "rationale": "The storm-felled tree damaged the declared shed under §2.5.3(c). All four debris types qualify under §5.2.1(a)–(b), including the single root ball under 1 m³, so §7.1.10 permits the combined line; estimated disposal is €60 timber + €32 glass + €55 green waste + €45 root ball, excluding any duplicate haulage under §7.1.8(c)."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of soil, topsoil and paving grit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 5.2.1(d) excludes all three ground materials, even after screening or displacement. This stand-alone disposal was not necessary for shed reinstatement and included no making good under §5.2.2; €120 is a conditional gross estimate only."
+  }
+ ],
+ "quotes": {
+  "1": [
+   167.04,
+   169.08
+  ],
+  "2": [
+   109.91,
+   0.0
+  ]
+ }
+}

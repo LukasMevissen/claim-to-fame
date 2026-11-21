@@ -1,0 +1,42 @@
+{
+ "game": 1,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 11.0,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Surge-damaged TV and speaker system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.4,
+   "rationale": "The two damaged appliances qualify under 2.3.3 and 4.2.4. Estimated like-for-like replacements of €650 for the TV and €450 for the speakers under 7.1.9 total €1,100 gross, below the €5,000 aggregate cap; the reported lack of surge protection halves this to €550, with no stated deductible."
+  },
+  {
+   "item_id": "2",
+   "description": "Diagnostic report and technician call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "The unpriced bundle predominantly documents the cause of failure and checks wiring safety rather than repairing damage, so it is excluded under 7.1.7, 7.1.8(d)–(e) and 7.1.10. If attendance qualified separately, only one call-out is evidenced despite the three billed units, estimated at €75 gross."
+  }
+ ],
+ "quotes": {
+  "1": [
+   478.5,
+   459.52
+  ],
+  "2": [
+   65.25,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "case_id": "game15-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Speaker system (surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.2,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 336.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.3.3 as an electrical appliance physically damaged by overvoltage from lightning, but subject to the EUR 5,000 appliance sub-limit (incl. VAT) for all affected appliances in the event. Reference Cases 1 and 9 show that similar speaker system lines were not indemnified above ~336 EUR, with the lowest proven too high. No evidence of a higher pre-loss value or special features."
+    },
+    {
+      "item_id": "2",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6.0,
+      "price_log_sd": 0.05,
+      "rationale": "Explicitly excluded by 7.1.8(b): carriage, freight, delivery, dispatch, packaging, postage, transport, logistics and comparable charges for bringing replacement property to the insured location are not indemnified, regardless of how invoiced. Reference Cases 1 and 9 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "3",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 9.0,
+      "price_log_sd": 0.05,
+      "rationale": "Explicitly excluded by 7.1.8(c): fitting, mounting, installing, connecting, commissioning, setting up, calibrating, configuring, programming, pairing, demonstrating or instructing in the use of replacement property is not indemnified. Reference Cases 1 and 9 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "4",
+      "description": "TV set",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 570.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered under 2.3.3 as an electrical appliance physically damaged by overvoltage from lightning, subject to the EUR 5,000 appliance sub-limit (incl. VAT) for all affected appliances in the event. Reference Cases 1 and 9 show TV set lines indemnified between 517 and 616 EUR for similar claims. No evidence of a higher pre-loss value or special features."
+    },
+    {
+      "item_id": "5",
+      "description": "Property and liability damage to electronics",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.05,
+      "rationale": "Not indemnified: 3.1.4 excludes liability risks and any charge for handling or assessing such claims unless the physical-damage element is separately itemised and priced. Reference Cases 1 and 9 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "6",
+      "description": "Property and liability damage to electronics - service order",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 7.0,
+      "price_log_sd": 0.05,
+      "rationale": "Not indemnified: 3.1.4 and 3.1.5 exclude charges for placing, registering, administering or executing an order under a service, maintenance or liability arrangement. Reference Cases 1 and 9 confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6.0,
+      "price_log_sd": 0.05,
+      "rationale": "Excluded by 7.1.8(d) unless incurred on the same invoice as indemnifiable work. Here, all other lines on this invoice are excluded, so this vehicle cost is also excluded. Reference Cases 1 and 9 confirm t = 0 for similar lines."
+    }
+  ]
+}

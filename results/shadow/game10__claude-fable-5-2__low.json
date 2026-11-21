@@ -1,0 +1,45 @@
+{
+ "game": 10,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.4,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 16971,
+ "output_tokens": 312,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disposal of storm debris (roof timber, glass pane, green waste, root ball <1 m3)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 185.0,
+   "price_log_sd": 0.35,
+   "rationale": "All elements are material arising under 5.2.1(a)-(b) (root mass single, under 1 m3), so the combined position passes 7.1.10. Priced from reference: about 60+32+55+40 for the four components."
+  },
+  {
+   "item_id": "2",
+   "description": "Disposal of ground material (soil, topsoil, paving grit)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ground material is excluded under 4.3(d) and 5.2.1(d); 5.2.2 not met as it is stand-alone clearance with no reinstatement or making good. Not indemnified."
+  }
+ ],
+ "quotes": {
+  "1": [
+   160.95,
+   144.88
+  ],
+  "2": [
+   110.37,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "game": 5,
+ "provider": "openai",
+ "model": "gpt-6.2-sol",
+ "effort": "low",
+ "ok": true,
+ "secs": 10.9,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop screen and lower-right corner impact damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1160.0,
+   "price_log_sd": 0.16,
+   "rationale": "If portable-equipment cover is in force and the laptop is insured household property, §§2.6.2–2.6.3 and 4.5.2 cover both impact areas as one event; the missing schedule and third-party invoice add uncertainty. Under §7.1.10, Case 2 supports about €810 for the screen plus €350 for the corner, or €1,160 gross, below the €1,400 new-equivalent benchmark; no deductible is stated."
+  }
+ ],
+ "quotes": {
+  "1": [
+   1009.2,
+   955.94
+  ]
+ }
+}
