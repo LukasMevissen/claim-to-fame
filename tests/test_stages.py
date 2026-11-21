@@ -97,3 +97,30 @@ def test_backup_stands_when_full_stage_fails(monkeypatch, tmp_path):
 def test_standby_submits_only_the_backup_answer(monkeypatch, tmp_path):
     """A second machine never sends fixed or quick prices."""
     assert _run_backup(monkeypatch, tmp_path, role="standby") == [150.0]
+
+
+def test_preferred_backup_is_not_overwritten_by_a_later_full_stage(monkeypatch, tmp_path):
+    """[llm].prefer_backup: the backup provider's answer stands even if full answers later."""
+    def backup(case, cfg, budget):
+        time.sleep(0.05)
+        return [PricedItem("1", "", {"p_zero": 0, "median": 150.0}, 150.0, 150.0)], {}
+
+    def fake_price(case, cfg, use_cache, budget, with_image):
+        time.sleep(0.2 if with_image else 0.0)
+        v = 200.0 if with_image else 100.0
+        return [PricedItem("1", "", {"p_zero": 0, "median": v}, v, v)], {}
+
+    assert load_config().section("llm").get("prefer_backup") is True
+    case = SimpleNamespace(image=None, invoice_text="")
+    monkeypatch.setattr(m, "decrypt", lambda z, k, d: d)
+    monkeypatch.setattr(m, "load_case", lambda root, cid: case)
+    monkeypatch.setattr(m, "invoice_positions", lambda text: [1])
+    monkeypatch.setattr(m, "_log", lambda rec: None)
+    monkeypatch.setattr(m, "price_case", fake_price)
+    monkeypatch.setattr(m, "price_case_backup", backup)
+    monkeypatch.delenv("C2F_ROLE", raising=False)
+    zip_path = tmp_path / "case.zip"
+    zip_path.write_bytes(b"")
+    client = FakeClient()
+    assert m.play_game(client, load_config(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
+    assert [c[0]["charge_price"] for c in client.calls] == [FB, 100.0, 150.0]

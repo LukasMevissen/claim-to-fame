@@ -192,13 +192,16 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
 
             budget = deadline - (time.time() - start)
             # fast = quick model without photo (safety net), full = reasoning model (+ photo)
-            variants = [] if standby else [(1, "fast", False), (3, "full", True)]
+            # [llm].prefer_backup swaps the two top ranks: the backup provider's answer is
+            # what stands, and the full stage only fills in if that provider fails.
+            top, second = (2, 3) if cfg.section("llm").get("prefer_backup") else (3, 2)
+            variants = [] if standby else [(1, "fast", False), (top, "full", True)]
             pool = ThreadPoolExecutor(max_workers=len(variants) + 1)
             futs = {pool.submit(price_case, case, cfg, False, budget, with_image): (rank, name)
                     for rank, name, with_image in variants}
             # backup = same assessment by another provider; outranks fast, is outranked by full
             if cfg.section("llm").get("backup"):
-                futs[pool.submit(price_case_backup, case, cfg, budget)] = (2, "backup")
+                futs[pool.submit(price_case_backup, case, cfg, budget)] = (second, "backup")
             pending = set(futs)
             while pending:
                 left = deadline - (time.time() - start)

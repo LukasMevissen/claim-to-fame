@@ -1,0 +1,183 @@
+{
+  "case_id": "game25",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Internal filling valve",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 52.0,
+      "price_log_sd": 0.07,
+      "rationale": "Sections 2.4.4(b) and 7.1.9 cover like-for-like renewal of the frost-fractured valve. Case 16 supports €52 gross for one valve."
+    },
+    {
+      "item_id": "2",
+      "description": "Connection hose",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.09,
+      "rationale": "Section 7.1.9 covers the hose if it had to be renewed with the fractured valve. Case 16 supports €30 gross for one hose."
+    },
+    {
+      "item_id": "3",
+      "description": "Senior installer labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 285.0,
+      "price_log_sd": 0.14,
+      "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary fitting-repair labour. Three hours at €95 gross total €285, consistent with Case 16."
+    },
+    {
+      "item_id": "4",
+      "description": "Auxiliary and cleaning materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.82,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 9.0,
+      "price_log_sd": 0.29,
+      "rationale": "Section 7.1.7(e) covers consumables actually used on the valve repair, but §3.6(c) excludes the contractor’s own small equipment. Allow €9 gross for a modest quantity of qualifying consumables."
+    },
+    {
+      "item_id": "5",
+      "description": "Plumber vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.15,
+      "rationale": "Sections 7.1.9 and 7.1.11 cover one attendance by the plumber for the insured repair. Allow €65 gross, consistent with Case 16."
+    },
+    {
+      "item_id": "6",
+      "description": "Thermal imaging for leak location",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 55.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 2.4.6 and 5.2.2 expressly cover the camera's use to locate the confirmed escape, not purchase of the equipment. Allow €55 gross for one use, below the €2,500 aggregate leak-location cap."
+    },
+    {
+      "item_id": "7",
+      "description": "Facade freeze-thaw damage",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 2.6.4 and 3.5(a) exclude outdoor frost damage unless the optional peril was agreed, which is not shown. No escaped water reached the facade, so §2.4.3 does not apply."
+    },
+    {
+      "item_id": "8",
+      "description": "Loose plaster removal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.65,
+      "rationale": "Section 3.5(b) excludes removal of render loosened by uninsured outdoor frost. The covered plumbing repair does not change that under §7.1.13."
+    },
+    {
+      "item_id": "9",
+      "description": "Base plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.65,
+      "rationale": "Section 3.5(b) excludes renewal of base plaster on the facade affected only by uninsured outdoor frost."
+    },
+    {
+      "item_id": "10",
+      "description": "Premium insulated render",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 3.5(d) and 7.1.10 exclude the upgrade. There is no like-for-like allowance either, because the underlying outdoor frost damage is uninsured."
+    },
+    {
+      "item_id": "11",
+      "description": "Substrate replastering",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.65,
+      "rationale": "Section 3.5(b) excludes preparing and re-forming the substrate where the facade damage came from uninsured outdoor frost."
+    },
+    {
+      "item_id": "12",
+      "description": "Facade paint, four coats",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.65,
+      "rationale": "Section 3.5(b) excludes the finish coats on the uninsured facade, regardless of the number of coats applied."
+    },
+    {
+      "item_id": "13",
+      "description": "Repainting undamaged elevations",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate, undamaged elevations for visual consistency, even if the principal facade repair were covered."
+    },
+    {
+      "item_id": "14",
+      "description": "Facade priming",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.6,
+      "rationale": "Section 3.5(b) expressly excludes priming that forms part of the repair of uninsured outdoor frost damage."
+    },
+    {
+      "item_id": "15",
+      "description": "Painter labour, five hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 325.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 3.5(c) and 7.1.11 exclude labour attributable to the uninsured facade work. At an ordinary rate of €65 gross per hour, five hours would otherwise cost €325."
+    },
+    {
+      "item_id": "16",
+      "description": "Painter flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 7.1.12 and 9.6 require the flat rate to price identifiable covered work. The painter's account identifies none, and any standalone administrative fee is excluded by §3.6(b)."
+    }
+  ]
+}

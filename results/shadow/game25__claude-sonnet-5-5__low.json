@@ -1,0 +1,255 @@
+{
+ "game": 25,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 17.7,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 33327,
+ "output_tokens": 1669,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.3,
+   "rationale": "Internal fitting fractured by frost is covered under 2.4.4 and 7.1.9, renewed like for like. Reference case 16 puts a similar valve at about 50."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Connection elements renewed with the fractured fitting are covered under 7.1.9. Reference case 16 gives about 30."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours 3 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 290.0,
+   "price_log_sd": 0.25,
+   "rationale": "Labour on the covered fitting repair is covered under 7.1.7(f). Reference case 16 shows 3 hours at 274 or more was fair."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.5,
+   "rationale": "Consumables actually used in covered work are covered under 7.1.7(e). The amount is small, below about 11 in the reference."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.3,
+   "rationale": "One attendance for covered work is indemnified under 7.1.11. Reference case 16 gives about 60 or more."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "Leak location equipment is covered under 2.4.6 and 3.6. Reference case 16 shows the proven fair charge was below 57."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade frost damage from outdoor freeze-thaw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "The optional frost peril on external surfaces is not shown as agreed, so 3.5 and 3.1.5 exclude it. The render failed from outside frost, not from escaping water."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.6,
+   "rationale": "This is ancillary to the excluded facade frost damage and falls under 3.5(b) and 7.1.11."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Substrate re-forming for the excluded frost damage is excluded under 3.5(b)."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render system (upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.6,
+   "rationale": "An upgrade of an excluded repair is excluded under 7.1.10 and 3.5(d)."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Part of the excluded facade work under 3.5(b)."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "The finish coats for the excluded frost damage are excluded under 3.5(b)."
+  },
+  {
+   "item_id": "13",
+   "description": "Repaint of undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Work on undamaged elevations is excluded under 7.1.5 and 2.6.3(a)."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.6,
+   "rationale": "Ancillary to the excluded facade work under 3.5(b)."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours 5 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "The labour is for excluded facade work under 3.5(c) and 7.1.11."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.6,
+   "rationale": "This is an additional charge that prices no work, excluded under 3.6(b) and also ancillary to the excluded facade work."
+  }
+ ],
+ "quotes": {
+  "1": [
+   45.24,
+   43.78
+  ],
+  "2": [
+   26.1,
+   25.08
+  ],
+  "3": [
+   252.3,
+   251.26
+  ],
+  "4": [
+   8.16,
+   3.91
+  ],
+  "5": [
+   53.94,
+   48.96
+  ],
+  "6": [
+   43.5,
+   37.81
+  ],
+  "7": [
+   13.8,
+   0.0
+  ],
+  "8": [
+   11.04,
+   0.0
+  ],
+  "9": [
+   13.8,
+   0.0
+  ],
+  "10": [
+   18.4,
+   0.0
+  ],
+  "11": [
+   9.2,
+   0.0
+  ],
+  "12": [
+   13.8,
+   0.0
+  ],
+  "13": [
+   13.8,
+   0.0
+  ],
+  "14": [
+   7.36,
+   0.0
+  ],
+  "15": [
+   13.8,
+   0.0
+  ],
+  "16": [
+   7.36,
+   0.0
+  ]
+ }
+}

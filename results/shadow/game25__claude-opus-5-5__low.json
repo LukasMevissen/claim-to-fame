@@ -1,0 +1,255 @@
+{
+ "game": 25,
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 19.3,
+ "served_by": "claude-opus-5-5",
+ "input_tokens": 33327,
+ "output_tokens": 1418,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 51.0,
+   "price_log_sd": 0.1,
+   "rationale": "Internal frost fracture of fitting covered under 2.4.4/7.1.9; ref case 16 48-55."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.1,
+   "rationale": "Connection element renewed with fitting, 7.1.9; ref 27-33."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours 3h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 290.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour on covered fitting repair 7.1.7(f); ref >=274."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.4,
+   "rationale": "Consumables used in covered work 7.1.7(e), but ref shows below 11; small."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.15,
+   "rationale": "One attendance per undertaking 7.1.11; ref >=60."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.35,
+   "rationale": "Leak location covered 2.4.6 within EUR 2,500 cap, though ref indicated below 57."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade frost damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "External frost peril 2.1(d) not shown as agreed; 3.5 excludes."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(b) excluded, optional peril not agreed."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(b) excluded."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Upgrade on uncovered work, 3.5(d)/7.1.10."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(b) excluded."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint 4 coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(b) excluded."
+  },
+  {
+   "item_id": "13",
+   "description": "Repaint undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Unaffected elevations 7.1.5 and uncovered peril."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(b) excluded."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours 5h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour on excluded facade work 3.5(c)."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Lump sum for excluded work / admin charge 3.5(c),3.6(b)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   44.37,
+   45.88
+  ],
+  "2": [
+   26.1,
+   26.75
+  ],
+  "3": [
+   252.3,
+   260.86
+  ],
+  "4": [
+   6.96,
+   0.0
+  ],
+  "5": [
+   56.55,
+   57.96
+  ],
+  "6": [
+   39.15,
+   25.1
+  ],
+  "7": [
+   13.61,
+   0.0
+  ],
+  "8": [
+   10.88,
+   0.0
+  ],
+  "9": [
+   13.61,
+   0.0
+  ],
+  "10": [
+   13.61,
+   0.0
+  ],
+  "11": [
+   9.07,
+   0.0
+  ],
+  "12": [
+   13.61,
+   0.0
+  ],
+  "13": [
+   9.07,
+   0.0
+  ],
+  "14": [
+   7.26,
+   0.0
+  ],
+  "15": [
+   13.61,
+   0.0
+  ],
+  "16": [
+   7.26,
+   0.0
+  ]
+ }
+}
