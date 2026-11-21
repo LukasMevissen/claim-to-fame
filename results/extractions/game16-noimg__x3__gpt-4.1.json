@@ -1,0 +1,183 @@
+{
+  "case_id": "game16-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Filling valve (internal frost-burst fitting)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.4.3(a) as frost-related fracture damage to internal pipework/fittings; indemnity per 7.1.9 for like-for-like replacement, capped at ordinary market price."
+    },
+    {
+      "item_id": "2",
+      "description": "Connection hose",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.15,
+      "rationale": "Replacement of connection hose is covered as part of the frost-burst fitting repair under 2.4.3(a) and 7.1.9, as it is a necessary connection element renewed with the fitting."
+    },
+    {
+      "item_id": "3",
+      "description": "Senior installer hours (3 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.15,
+      "rationale": "Labour for repair of affected internal fitting is covered under 7.1.9 and 7.1.7; 3 hours is reasonable for diagnosis, removal, and replacement."
+    },
+    {
+      "item_id": "4",
+      "description": "Auxiliary and cleaning material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.15,
+      "rationale": "Consumables used in the covered repair are indemnified under 7.1.7(e) and 7.1.9, provided they are not general admin/overhead."
+    },
+    {
+      "item_id": "5",
+      "description": "Vehicle costs (plumbing)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.2,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6.0,
+      "price_log_sd": 0.3,
+      "rationale": "One attendance per trade is indemnified if covered work was performed (7.1.11); reference cases show vehicle costs for similar work are not indemnified above 6 EUR, often 0."
+    },
+    {
+      "item_id": "6",
+      "description": "Thermal imaging camera (leak detection)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.15,
+      "rationale": "Leak location (including imaging equipment) is covered under 2.4.5 and 5.2.2, capped at EUR 2,500 per event; reference case 7 supports full indemnity for this line."
+    },
+    {
+      "item_id": "7",
+      "description": "Facade water and frost damage",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "External surface damage from frost is excluded under 3.5(a) and (b); policy explicitly excludes repair of external surfaces for frost, moisture, or weathering."
+    },
+    {
+      "item_id": "8",
+      "description": "Loose plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Removal and renewal of external plaster due to frost is excluded under 3.5(a)-(c); not indemnified even if invoiced with covered work."
+    },
+    {
+      "item_id": "9",
+      "description": "Base plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Renewal of base plaster on external surface due to frost is excluded under 3.5(a)-(c); not indemnified."
+    },
+    {
+      "item_id": "10",
+      "description": "Additional work (painting trade)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Any additional work on external surfaces due to frost is excluded under 3.5; not indemnified."
+    },
+    {
+      "item_id": "11",
+      "description": "Newly plastered substrate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Renewal of substrate/plaster on external surface due to frost is excluded under 3.5(a)-(c); not indemnified."
+    },
+    {
+      "item_id": "12",
+      "description": "Facade paint (4 coats)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Recoating of external surface due to frost is excluded under 3.5(b)-(d); not indemnified."
+    },
+    {
+      "item_id": "13",
+      "description": "Drying (painting trade)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Drying of external surfaces due to frost is excluded under 3.5(b)-(c); not indemnified."
+    },
+    {
+      "item_id": "14",
+      "description": "Priming (painting trade)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Priming of external surfaces due to frost is excluded under 3.5(b)-(c); not indemnified."
+    },
+    {
+      "item_id": "15",
+      "description": "Painter hours (5 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Labour for external surface repair due to frost is excluded under 3.5(b)-(c); not indemnified."
+    },
+    {
+      "item_id": "16",
+      "description": "Flat rate (painting trade)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Flat rate for external surface repair due to frost is excluded under 3.5(c); not indemnified."
+    }
+  ]
+}
