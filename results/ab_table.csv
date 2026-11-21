@@ -2375,3 +2375,15 @@ TRINNERS4WINNERS,27,4,337.73,,accepted,fraud,247.5,288.77,5,6,False,120.0,174.22
 alpha,27,4,244.2,,accepted,fraud,247.5,288.77,4,7,False,120.0,174.22,,174.22,149.57
 chineseModels,27,4,247.5,,accepted,fraud,174.22,244.2,3,8,False,120.0,174.22,,174.22,149.57
 vietgang,27,4,0.0,,absent,fair,0.0,0.0,0,11,True,120.0,174.22,,174.22,149.57
+404,28,1,,0.0,hidden,fraud,600.0,inf,5,6,False,0.0,73.5,,1379.65,0.0
+Asgardians,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+CHOOMS,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+FDN,28,1,73.5,,accepted,fraud,0.0,400.0,2,9,False,0.0,73.5,,1379.65,0.0
+GemischtesHack,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+Humble Legends,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+Kiebler Software Solutions,28,1,600.0,,accepted,fraud,0.0,73.5,2,9,False,0.0,73.5,,1379.65,0.0
+Lumenauts,28,1,400.0,,accepted,fraud,0.0,73.5,2,9,False,0.0,73.5,,1379.65,0.0
+TRINNERS4WINNERS,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+alpha,28,1,0.0,,absent,fair,0.0,0.0,1,10,True,0.0,73.5,,1379.65,0.0
+chineseModels,28,1,0.0,,absent,fair,0.0,0.0,2,9,True,0.0,73.5,,1379.65,0.0
+vietgang,28,1,0.0,,absent,fair,0.0,0.0,1,10,True,0.0,73.5,,1379.65,0.0
