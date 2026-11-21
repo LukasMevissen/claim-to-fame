@@ -1,0 +1,210 @@
+{
+ "game": 23,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 17.2,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 26354,
+ "output_tokens": 1353,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.4,
+   "rationale": "A bicycle is a means of transport excluded under 4.3(b), so repair of its frame is not indemnified (3.1.5, 7.1.8(a))."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Bicycle parts and brakes are excluded under 4.3(b) and 7.1.8(a)."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.4,
+   "rationale": "Carriage for the bicycle repair is excluded under 4.3 and 7.1.8(d)."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bike shop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "The attendance charge of a trade working on uninsured property is not indemnified (7.1.8(a),(f)). Nothing on this invoice is covered."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "Assembly of the bicycle parts follows the excluded item (7.1.8(a))."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sundries used on the bicycle are not indemnified (7.1.8(a))."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour on the bicycle is excluded under 4.3 and 7.1.8(a)."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour on the bicycle is excluded under 4.3 and 7.1.8(a)."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.3,
+   "rationale": "The locksmith works on the forced back door, which is insured. One attendance is covered under 7.1.7(g)."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (lock fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.35,
+   "rationale": "Fitting a replacement lock is part of the repair of the building component under 7.1.7(d)."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sundry materials incorporated into the door repair are covered under 7.1.7(f). The new lock cylinder and hardware are probably in this line."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour of every grade on the covered door and lock repair is indemnified under 7.1.7(e)."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.3,
+   "rationale": "Skilled labour for the lock replacement and door securing is covered under 7.1.7(e)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   391.5,
+   0.0
+  ],
+  "2": [
+   104.4,
+   0.0
+  ],
+  "3": [
+   17.4,
+   0.0
+  ],
+  "4": [
+   26.1,
+   0.0
+  ],
+  "5": [
+   43.5,
+   0.0
+  ],
+  "6": [
+   13.05,
+   0.0
+  ],
+  "7": [
+   30.45,
+   0.0
+  ],
+  "8": [
+   130.5,
+   0.0
+  ],
+  "9": [
+   60.9,
+   58.94
+  ],
+  "10": [
+   78.3,
+   73.04
+  ],
+  "11": [
+   72.56,
+   57.93
+  ],
+  "12": [
+   39.15,
+   36.52
+  ],
+  "13": [
+   82.65,
+   79.98
+  ]
+ }
+}

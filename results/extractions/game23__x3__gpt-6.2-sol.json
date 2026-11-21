@@ -1,0 +1,150 @@
+{
+  "case_id": "game23",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Bicycle frame replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.6,
+      "rationale": "The bicycle and its frame are excluded means of transport under 4.3(b); 7.1.8(a) excludes the replacement cost."
+    },
+    {
+      "item_id": "2",
+      "description": "Bicycle brake replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.5,
+      "rationale": "Clause 4.3(b) expressly excludes bicycle braking assemblies, and 7.1.8(a) excludes their replacement."
+    },
+    {
+      "item_id": "3",
+      "description": "Bicycle shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.5,
+      "rationale": "Carriage for the excluded bicycle is not indemnifiable under 4.3(b) and 7.1.8(a)."
+    },
+    {
+      "item_id": "4",
+      "description": "Bicycle workshop vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 55.0,
+      "price_log_sd": 0.45,
+      "rationale": "The workshop attended solely for the excluded bicycle, so its vehicle charge is excluded under 7.1.8(a) and (f)."
+    },
+    {
+      "item_id": "5",
+      "description": "Bicycle assembly",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.5,
+      "rationale": "Clause 7.1.8(a) excludes assembly work on the bicycle, which is uninsured under 4.3(b)."
+    },
+    {
+      "item_id": "6",
+      "description": "Bicycle sundry materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.5,
+      "rationale": "Under 7.1.8(a) and 7.1.10, sundries follow the work they serve; these were used on the excluded bicycle."
+    },
+    {
+      "item_id": "7",
+      "description": "Bicycle workshop apprentice labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clauses 7.1.8(a) and 7.1.10 exclude the one apprentice hour because it was spent on the uninsured bicycle."
+    },
+    {
+      "item_id": "8",
+      "description": "Bicycle workshop skilled labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 225.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clauses 7.1.8(a) and 7.1.10 exclude all three skilled hours because they were spent on the uninsured bicycle."
+    },
+    {
+      "item_id": "9",
+      "description": "Locksmith vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.25,
+      "rationale": "Clause 7.1.7(g) covers one attendance by the locksmith for the insured forced-entry repair. Allow €65 gross for the single visit; no deductible amount is stated."
+    },
+    {
+      "item_id": "10",
+      "description": "Back-door lock fitting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.4,
+      "rationale": "Clauses 2.6.2 and 7.1.7(d) cover fitting and testing a like-for-like lock. Allow €75 gross for distinct fitting work, without duplicating the hourly labour under 7.1.8(g) or funding an upgrade under 7.1.9."
+    },
+    {
+      "item_id": "11",
+      "description": "Locksmith sundry materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.45,
+      "rationale": "Clause 7.1.7(f) covers fixings and consumables incorporated into the damaged door repair. Allow €20 gross for one ordinary sundries charge."
+    },
+    {
+      "item_id": "12",
+      "description": "Locksmith apprentice labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.3,
+      "rationale": "Clauses 7.1.7(e) and 11.3 expressly cover apprentice labour on the affected building. Allow one hour at €45 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Locksmith skilled labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 95.0,
+      "price_log_sd": 0.25,
+      "rationale": "Clauses 2.6.2 and 7.1.7(e) cover skilled labour to restore the forced back-door locking point. Allow one hour at €95 gross."
+    }
+  ]
+}

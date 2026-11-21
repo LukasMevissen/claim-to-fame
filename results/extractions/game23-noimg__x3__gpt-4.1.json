@@ -1,0 +1,150 @@
+{
+  "case_id": "game23-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Bicycle frame replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.3,
+      "rationale": "Directed at a movable item (the bicycle), which is not insured property under 4.3(b); 7.1.8(a) excludes all outlay on such property, regardless of the event."
+    },
+    {
+      "item_id": "2",
+      "description": "Bicycle brake replacement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Directed at a movable item (the bicycle), which is not insured property under 4.3(b); 7.1.8(a) excludes all outlay on such property, regardless of the event."
+    },
+    {
+      "item_id": "3",
+      "description": "Shipping (bicycle)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.3,
+      "rationale": "Ancillary/site charge for a non-insured item (the bicycle); 7.1.8(a) and 7.1.8(d) exclude all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs (bicycle service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.3,
+      "rationale": "Attendance/vehicle charge for a non-insured item (the bicycle); 7.1.8(a) and 7.1.8(f) exclude all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "5",
+      "description": "Assembly costs (bicycle)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.3,
+      "rationale": "Assembly/labour for a non-insured item (the bicycle); 7.1.8(a) excludes all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "6",
+      "description": "Miscellaneous items (bicycle)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 10.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sundry materials for a non-insured item (the bicycle); 7.1.8(a) excludes all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "7",
+      "description": "Apprentice hours (bicycle)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.3,
+      "rationale": "Labour for a non-insured item (the bicycle); 7.1.8(a) excludes all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "8",
+      "description": "Skilled worker hours (bicycle)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Labour for a non-insured item (the bicycle); 7.1.8(a) excludes all such costs for property outside Part 4."
+    },
+    {
+      "item_id": "9",
+      "description": "Vehicle costs (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Attendance charge for the locksmith trade, which performed covered work on the affected building component (the back door); 7.1.7(g) allows one attendance per trade for indemnifiable work."
+    },
+    {
+      "item_id": "10",
+      "description": "Assembly costs (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.1,
+      "rationale": "Assembly/fitting of the new lock into the affected door is part of the necessary repair to insured property after break-in damage (2.6.2, 7.1.7(d))."
+    },
+    {
+      "item_id": "11",
+      "description": "Miscellaneous items (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.1,
+      "rationale": "Sundry materials and small parts consumed in the repair of the affected door/lock are indemnifiable as part of the repair cost (7.1.7(f))."
+    },
+    {
+      "item_id": "12",
+      "description": "Apprentice hours (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour hours for the repair of the affected door/lock are indemnifiable at every grade (7.1.7(e)), as the work was necessary to restore security after break-in damage."
+    },
+    {
+      "item_id": "13",
+      "description": "Skilled worker hours (locksmith)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour hours for the repair of the affected door/lock are indemnifiable at every grade (7.1.7(e)), as the work was necessary to restore security after break-in damage."
+    }
+  ]
+}

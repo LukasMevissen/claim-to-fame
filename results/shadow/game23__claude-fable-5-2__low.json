@@ -1,0 +1,210 @@
+{
+ "game": 23,
+ "provider": "anthropic",
+ "model": "claude-fable-5-2",
+ "effort": "low",
+ "ok": true,
+ "secs": 18.3,
+ "served_by": "claude-fable-5-2",
+ "input_tokens": 26354,
+ "output_tokens": 1240,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.7,
+   "rationale": "Bike is a means of transport, not insured (4.3(b), 7.1.8(a))."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.7,
+   "rationale": "Directed at uninsured movable item (4.3(b), 7.1.8(a))."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.7,
+   "rationale": "Carriage for uninsured item; also excluded under 7.1.8(d)."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bike workshop)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.7,
+   "rationale": "Attendance on an invoice wholly directed at uninsured property (7.1.8(a),(f))."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.7,
+   "rationale": "Assembly of uninsured item, 7.1.8(a)."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sundries for uninsured item, 7.1.8(a)."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.7,
+   "rationale": "Labour on uninsured item, 7.1.8(a)."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bike)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.7,
+   "rationale": "Labour on uninsured item, 7.1.8(a)."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.3,
+   "rationale": "One attendance by the trade doing covered work on the door, 7.1.7(g); priced at reference level."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (lock fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.45,
+   "rationale": "Fitting replacement lock into the building is repair cost under 7.1.7(d); ordinary fitting price."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sundry materials incorporated in covered work, 7.1.7(f)."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours 1 hr",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 48.0,
+   "price_log_sd": 0.3,
+   "rationale": "All labour grades covered under 7.1.7(e) at customary rate."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours 1 hr",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.3,
+   "rationale": "Labour on affected door/lock, 7.1.7(e); customary hourly rate."
+  }
+ ],
+ "quotes": {
+  "1": [
+   636.18,
+   0.0
+  ],
+  "2": [
+   127.24,
+   0.0
+  ],
+  "3": [
+   42.41,
+   0.0
+  ],
+  "4": [
+   63.62,
+   0.0
+  ],
+  "5": [
+   106.03,
+   0.0
+  ],
+  "6": [
+   42.41,
+   0.0
+  ],
+  "7": [
+   47.71,
+   0.0
+  ],
+  "8": [
+   233.26,
+   0.0
+  ],
+  "9": [
+   60.9,
+   56.77
+  ],
+  "10": [
+   104.4,
+   87.63
+  ],
+  "11": [
+   36.28,
+   26.99
+  ],
+  "12": [
+   41.76,
+   38.93
+  ],
+  "13": [
+   73.95,
+   70.03
+  ]
+ }
+}
