@@ -59,3 +59,36 @@ def test_invoice_positions_skip_quantity_lines():
         "3 Closing the wall opening, re-plastering", "5 pcs",
     ])
     assert invoice_positions(text) == [1, 2, 3]
+
+
+def test_openai_key_failover(monkeypatch):
+    """A refused first key falls through to OPENAI_KEY2; later calls try the working key first."""
+    import httpx2 as httpx
+    import openai
+
+    import c2f.extract as ex
+
+    used = []
+
+    class FakeClient:
+        def __init__(self, api_key, **kw):
+            self.key = api_key
+            self.chat = self
+            self.completions = self
+
+        def create(self, **kw):
+            used.append(self.key)
+            if self.key == "bad":
+                resp = httpx.Response(429, request=httpx.Request("POST", "https://x"))
+                raise openai.RateLimitError("quota", response=resp, body=None)
+            return "ok"
+
+    monkeypatch.setattr(openai, "OpenAI", FakeClient)
+    monkeypatch.setattr(ex, "_dead_keys", set())
+    monkeypatch.setenv("OPENAI_KEY", "bad")
+    monkeypatch.setenv("OPENAI_KEY2", "good")
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    assert ex._create_with_failover(5, model="m") == "ok"
+    assert used == ["bad", "good"]
+    assert ex._create_with_failover(5, model="m") == "ok"
+    assert used == ["bad", "good", "good"]

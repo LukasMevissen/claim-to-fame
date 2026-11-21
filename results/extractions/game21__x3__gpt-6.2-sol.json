@@ -1,0 +1,249 @@
+{
+  "case_id": "game21",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection call-out and survey",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.7(e) and (f) cover the necessary initial survey and first attendance charge. Allow €180 gross for that scope, excluding pinpointing and measurements billed separately."
+    },
+    {
+      "item_id": "2",
+      "description": "Electro-acoustic leak pinpointing",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.7(e) covers the investigation needed to locate the under-sink leak. Allow €200 gross for one targeted pinpointing service, not a separate purchase charge for the contractor's equipment."
+    },
+    {
+      "item_id": "3",
+      "description": "Kitchen floor and wall-base moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 95.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(e) covers measurement of the affected floor and wall base. Allow €95 gross for one survey of those areas."
+    },
+    {
+      "item_id": "4",
+      "description": "Leak detection technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 255.0,
+      "price_log_sd": 0.5,
+      "rationale": "Sections 7.1.7(g) and 7.1.8(c) allow only necessary labour not already billed in the survey and testing lines. For this localized investigation, allow about 3 additional hours at €85 gross rather than the 14 claimed."
+    },
+    {
+      "item_id": "5",
+      "description": "Leak detection van charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.1.7(f) allows only the first travel, mileage or call-out charge on the invoice. Line 1 is the first attendance charge; €65 is the conditional value of a standalone van charge."
+    },
+    {
+      "item_id": "6",
+      "description": "Expose affected under-sink pipe",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 130.0,
+      "price_log_sd": 0.32,
+      "rationale": "Sections 2.4.3(a) and 7.1.1(b) cover the necessary access work for the failed interior supply pipe. Allow €130 gross for localized exposure."
+    },
+    {
+      "item_id": "7",
+      "description": "Remove and dispose of damaged pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.7(a) covers removal and disposal of affected material. Allow €18 gross per piece for the two small insulation sections."
+    },
+    {
+      "item_id": "8",
+      "description": "Repair copper pipe and restore standard insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 375.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 2.4.3(a) and 7.1.7(c) and (g) cover the short copper replacement, fittings, standard insulation and installation labour. Allow €375 gross, excluding the access and disposal already billed separately."
+    },
+    {
+      "item_id": "9",
+      "description": "Roof-space drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.002,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.6,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) require evidence of insured moisture in the area dried, and the loss was confined to the kitchen. The €300 estimate is conditional on a supported small drying job."
+    },
+    {
+      "item_id": "10",
+      "description": "Kitchen condensation dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 7.1.7(b) and (e) cover necessary dryer hire for the affected kitchen. Allow €220 gross for one normal rental period, without duplicating the drying service below."
+    },
+    {
+      "item_id": "11",
+      "description": "Dry kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 355.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.7(b) covers drying the documented wet floor and wall base. Allow €355 gross for the drying service and labour apart from the separately billed dryer hire."
+    },
+    {
+      "item_id": "12",
+      "description": "Transition pieces and pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.03,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.38,
+      "rationale": "Section 7.1.8(c) bars duplicate costs across trades, and line 8 already covers the repaired pipe and its insulation. Allow €70 gross only if these are substantiated as distinct, necessary materials."
+    },
+    {
+      "item_id": "13",
+      "description": "Final site cleaning",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.08,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 7.1.8(a) excludes general cleaning, even within the work area; this line does not identify removal of loss or repair debris under 5.2.1. If it represents covered residue removal, allow €65 gross."
+    },
+    {
+      "item_id": "14",
+      "description": "Drying contractor vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.1.7(f) allows the first travel charge on the drying contractor's invoice. Allow €65 gross for one local trip."
+    },
+    {
+      "item_id": "15",
+      "description": "Remove damaged kitchen table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(h) expressly covers removing the damaged furnishing from the dwelling. Allow €45 gross for carrying out one table, apart from haulage."
+    },
+    {
+      "item_id": "16",
+      "description": "Transport and dispose of damaged table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.7(h) and 5.2.1 cover haulage and disposal of the damaged table. Allow €60 gross for the two billed operations combined, excluding removal from the dwelling already billed in line 15."
+    },
+    {
+      "item_id": "17",
+      "description": "Comparable replacement kitchen table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.999,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 523.6,
+      "price_log_sd": 0.05,
+      "rationale": "The scheduled new-for-old option under 7.1.1(d) removes the age deduction, and the same model meets 7.1.9. The gross replacement price is €440 × 1.19 = €523.60 under 7.7."
+    },
+    {
+      "item_id": "18",
+      "description": "Deliver replacement table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(h) expressly covers delivery of the comparable replacement furnishing. Allow €50 gross for one local delivery."
+    },
+    {
+      "item_id": "19",
+      "description": "Assemble table and clean installation spot",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(h) covers setting up the replacement and cleaning the spot where the damaged table stood. Allow €65 gross for basic assembly and spot cleaning, not general kitchen cleaning."
+    },
+    {
+      "item_id": "20",
+      "description": "Carpentry vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.88,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 7.1.7(f) permits the first vehicle charge on this contractor's invoice. Allow €50 gross for one local attendance, provided it is distinct from the delivery and haulage already billed."
+    },
+    {
+      "item_id": "21",
+      "description": "Carpentry return-visit vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.002,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 7.1.7(f) excludes the second vehicle charge on the same invoice, even if another visit was needed. The €50 figure is the conditional standalone trip value."
+    },
+    {
+      "item_id": "22",
+      "description": "Inspect other furniture stored in the garden",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.002,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.4,
+      "rationale": "Sections 7.1.5 and 7.1.8(f) exclude inspection of items not established as affected by the kitchen leak. The €60 figure is conditional on a comparable inspection of affected furniture."
+    }
+  ]
+}

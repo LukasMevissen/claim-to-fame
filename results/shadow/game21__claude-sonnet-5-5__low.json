@@ -1,0 +1,345 @@
+{
+ "game": 21,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "ok": true,
+ "secs": 50.5,
+ "served_by": "claude-sonnet-5-5",
+ "input_tokens": 31356,
+ "output_tokens": 2306,
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.4,
+   "rationale": "Only one travel/call-out charge per contractor per invoice is covered (7.1.7(f)); the call-out is the first charge on this invoice, so it is indemnified and the separate van line is not."
+  },
+  {
+   "item_id": "2",
+   "description": "Electro-acoustic pinpointing of leak",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 330.0,
+   "price_log_sd": 0.35,
+   "rationale": "Investigation to locate the source is covered under 7.1.7(e)."
+  },
+  {
+   "item_id": "3",
+   "description": "Moisture measurement of floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.4,
+   "rationale": "Measurement of the affected floor and wall base is covered under 7.1.7(e)."
+  },
+  {
+   "item_id": "4",
+   "description": "Service technician hours 14 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.35,
+   "rationale": "Skilled labour at customary rates is covered under 7.1.7(g). 14 hours is high but includes detection work."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs (detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is a second travel charge on the same invoice, after the call-out, so under 7.1.7(f) only the first is indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Freeing pipe run under sink",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.4,
+   "rationale": "Exposing the pipe is necessary repair preparation under 7.1.7(a)."
+  },
+  {
+   "item_id": "7",
+   "description": "Removal and disposal of damaged insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "Dismantling and disposal of affected components is covered under 7.1.7(a) and 5.2.1; the line is small."
+  },
+  {
+   "item_id": "8",
+   "description": "Leak repair and copper section with standard insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.35,
+   "rationale": "Repair of the confirmed leak with standard materials is the core covered work."
+  },
+  {
+   "item_id": "9",
+   "description": "Room drying roof space",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "The roof space was not affected by the damage, so drying there is not covered under 7.1.5 and 7.1.7(b)."
+  },
+  {
+   "item_id": "10",
+   "description": "Condensation dryer (kitchen)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.45,
+   "rationale": "Equipment hire for drying is covered under 7.1.7(e) for the affected kitchen. The price is a rough guess."
+  },
+  {
+   "item_id": "11",
+   "description": "Room drying of kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.4,
+   "rationale": "Drying of the affected floor and wall base is covered under 7.1.7(b)."
+  },
+  {
+   "item_id": "12",
+   "description": "Transition pieces and standard insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "Standard insulation and fittings for the repaired section are covered materials, but this duplicates insulation already invoiced in position 8, so the amount is small."
+  },
+  {
+   "item_id": "13",
+   "description": "Final site cleaning",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is general cleaning, not a repair cost under 7.1.8(a); the reference cases show cleaning lines as low or zero."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs (drying)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is the drying contractor's only travel charge, so it is covered once under 7.1.7(f)."
+  },
+  {
+   "item_id": "15",
+   "description": "Removal of damaged kitchen table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "Removal of a replaced furnishing item is covered under 7.1.7(h)."
+  },
+  {
+   "item_id": "16",
+   "description": "Transport and disposal of damaged table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "Transport away of the damaged item is covered under 7.1.7(h), but this overlaps with the removal line."
+  },
+  {
+   "item_id": "17",
+   "description": "Replacement kitchen table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 524.0,
+   "price_log_sd": 0.15,
+   "rationale": "The new-for-old option was taken, so the new price applies with no age deduction: 440 net plus 19% VAT is about 524. The comparable specification means no betterment."
+  },
+  {
+   "item_id": "18",
+   "description": "Delivery of replacement table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.45,
+   "rationale": "Delivery and setting up of the replacement furnishing item is covered under 7.1.7(h)."
+  },
+  {
+   "item_id": "19",
+   "description": "Assembly and cleaning of installation area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.45,
+   "rationale": "Setting up the replacement and cleaning the position where the old item stood are covered under 7.1.7(h)."
+  },
+  {
+   "item_id": "20",
+   "description": "Vehicle costs (carpentry)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is the first and only travel charge of the carpentry contractor on its invoice, so it is covered once."
+  },
+  {
+   "item_id": "21",
+   "description": "Vehicle costs - return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is a second travel charge on the same invoice, and only the first is indemnified under 7.1.7(f)."
+  },
+  {
+   "item_id": "22",
+   "description": "Inspection of garden furniture for moisture",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.4,
+   "rationale": "The furniture was not among the affected parts, so inspecting it is excluded under 7.1.8(f)."
+  }
+ ],
+ "quotes": {
+  "1": [
+   95.7,
+   74.7
+  ],
+  "2": [
+   287.1,
+   269.99
+  ],
+  "3": [
+   130.5,
+   115.86
+  ],
+  "4": [
+   783.0,
+   704.8
+  ],
+  "5": [
+   34.8,
+   0.0
+  ],
+  "6": [
+   174.0,
+   159.0
+  ],
+  "7": [
+   43.5,
+   38.62
+  ],
+  "8": [
+   330.6,
+   315.72
+  ],
+  "9": [
+   90.7,
+   0.0
+  ],
+  "10": [
+   217.77,
+   175.45
+  ],
+  "11": [
+   261.0,
+   236.3
+  ],
+  "12": [
+   54.42,
+   0.0
+  ],
+  "13": [
+   45.35,
+   0.0
+  ],
+  "14": [
+   47.85,
+   37.35
+  ],
+  "15": [
+   43.5,
+   36.5
+  ],
+  "16": [
+   45.35,
+   0.0
+  ],
+  "17": [
+   455.88,
+   467.22
+  ],
+  "18": [
+   43.55,
+   35.09
+  ],
+  "19": [
+   60.98,
+   49.13
+  ],
+  "20": [
+   43.5,
+   33.96
+  ],
+  "21": [
+   26.1,
+   0.0
+  ],
+  "22": [
+   43.5,
+   0.0
+  ]
+ }
+}

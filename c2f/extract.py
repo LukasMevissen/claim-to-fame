@@ -157,6 +157,49 @@ def _model_args(model: str, temperature: float, effort: str | None) -> dict:
     return {"reasoning_effort": effort} if effort else {}
 
 
+KEY_VARS = ("OPENAI_KEY", "OPENAI_KEY2")   # tried in this order; OPENAI_API_KEY as a last resort
+_dead_keys: set[str] = set()               # env var names whose key was refused in this process
+
+
+def _api_keys() -> list[tuple[str, str]]:
+    """(env var, key) for every configured key, keys that still work first. .env is re-read
+    on every call, so a key added while the scheduler runs is picked up without a restart."""
+    from .env import load_env
+    load_env(REPO_ROOT / ".env")
+    keys = [(v, os.environ[v].strip()) for v in (*KEY_VARS, "OPENAI_API_KEY")
+            if os.environ.get(v, "").strip()]
+    seen, out = set(), []
+    for v, k in keys:
+        if k not in seen:
+            seen.add(k)
+            out.append((v, k))
+    return sorted(out, key=lambda vk: vk[0] in _dead_keys)
+
+
+def _create_with_failover(timeout: float, **kwargs):
+    """chat.completions.create with key failover: if a key is refused (invalid, no
+    permission, out of credit or rate limited) the same request goes to the next key.
+    These refusals come back within about a second, so the time window is not at risk.
+    Other errors (timeouts, bad requests) are raised unchanged."""
+    import openai
+
+    last: Exception | None = None
+    for var, key in _api_keys():
+        client = openai.OpenAI(api_key=key, timeout=timeout, max_retries=0)
+        try:
+            resp = client.chat.completions.create(**kwargs)
+            _dead_keys.discard(var)
+            return resp
+        except (openai.AuthenticationError, openai.PermissionDeniedError,
+                openai.RateLimitError) as e:
+            _dead_keys.add(var)
+            last = e
+            print(f"[extract] {var} refused ({type(e).__name__}); trying the next key")
+    if last is None:
+        raise RuntimeError("no OpenAI key configured (OPENAI_KEY / OPENAI_KEY2)")
+    raise last
+
+
 def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
             use_cache: bool = True, with_image: bool = True, reference: str = "",
             effort: str | None = None, tag: str = "", save: bool = True) -> list[ItemEstimate]:
@@ -166,11 +209,8 @@ def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
     cid += tag
     if use_cache and (hit := load_cached(cid, model)) is not None:
         return hit
-    from openai import OpenAI  # imported lazily so pricing/tests run without it
-
-    client = OpenAI(api_key=os.environ.get("OPENAI_KEY") or os.environ.get("OPENAI_API_KEY"),
-                    timeout=timeout, max_retries=0)
-    resp = client.chat.completions.create(
+    resp = _create_with_failover(
+        timeout,
         model=model,
         response_format={"type": "json_object"},
         messages=[{"role": "system", "content": SYSTEM},

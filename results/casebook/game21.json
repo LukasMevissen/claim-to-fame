@@ -1,0 +1,29 @@
+{
+ "game": 21,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Kitchen water damage, ground floor. A leak developed in the supply pipe beneath the kitchen sink, causing water damage to the floor and the lower section of the adjacent wall. Leak detection was carried out to locate the source, after which the pipe was exposed, repaired, and re-insulated. A short section of copper piping was replaced. The detection firm charges its attendance and survey on site as a \"call-out\" fee and bills its van separately. The affected floor and wall base were dried before the new flooring was installed. A wooden kitchen table that had warped beyond repair was removed and replaced with a comparable table. It was a plain pine table we bought about seven years ago, and the same model is still in the shop at EUR 440 before VAT. When we took out the policy we added the new-for-old option for our furnishings to the schedule, together with the bicycle cover.",
+ "lines": {
+  "1": "Leak detection call-out 1 pcs",
+  "2": "Electro-acoustic pinpointing of the leak beneath the kitchen sink | 1 pcs",
+  "3": "Moisture measurement of the kitchen floor and wall base | 1 pcs",
+  "4": "Service technician hours 14 hrs",
+  "5": "Vehicle costs 1 pcs",
+  "6": "Freeing the affected pipe run beneath the kitchen sink 1 pcs",
+  "7": "Removal and disposal of damaged insulation 2 pcs",
+  "8": "Repair of the confirmed leak and replacement copper pipe section with standard insulation | 1 flat rate",
+  "9": "Room drying line item for the roof space (Dachstuhl) 1 pcs",
+  "10": "Condensation dryer (kitchen) 1 pcs",
+  "11": "Room drying of the kitchen floor and wall base 1 pcs",
+  "12": "Transition pieces and standard insulation for the repaired section | 1 flat rate",
+  "13": "Final site cleaning of the covered work area 1 pcs",
+  "14": "Vehicle costs 1 pcs",
+  "15": "Removal of the water-damaged wooden kitchen table 1 pcs",
+  "16": "Transport and disposal of the damaged table 2 pcs",
+  "17": "Supply of replacement kitchen table, comparable specification to the original | 1 pcs",
+  "18": "Delivery of the replacement table 1 pcs",
+  "19": "Assembly and cleaning of the installation area 1 flat rate",
+  "20": "Vehicle costs 1 pcs",
+  "21": "Vehicle costs – return visit 1 pcs",
+  "22": "Inspection of further furniture items stored in the garden for moisture | 1 pcs"
+ }
+}

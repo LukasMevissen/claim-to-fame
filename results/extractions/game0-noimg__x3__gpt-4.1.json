@@ -5,14 +5,14 @@
   "items": [
     {
       "item_id": "1",
-      "description": "Leak detection and opening of the bathroom wall",
+      "description": "Leak detection and opening of the bathroom wall next to the washbasin",
       "quantity": 1.0,
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 180.0,
-      "price_log_sd": 0.15,
-      "rationale": "Covered under Part 2.1: locating the leak and opening the wall to reach it. No exclusion applies. Reference Case 7 (thermal imaging and opening for leak detection) supports a fair market rate for such work."
+      "unit_price_gross_eur": 481.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered under 2.1: locating the leak and opening the wall to reach it. This is directly related to the insured peril and is not excluded."
     },
     {
       "item_id": "2",
@@ -21,9 +21,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 120.0,
-      "price_log_sd": 0.15,
-      "rationale": "Covered under Part 2.2: repairing the fractured pipe. No exclusion applies. Reference Case 7 (internal frost-burst fitting repair) supports a fair market rate for pipe repair."
+      "unit_price_gross_eur": 221.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered under 2.2: repairing the fractured pipe. This is the core insured cost for the peril described."
     },
     {
       "item_id": "3",
@@ -32,9 +32,9 @@
       "unit": "",
       "covered_prob": 1.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 80.0,
-      "price_log_sd": 0.2,
-      "rationale": "Covered under Part 2.3: restoring the damaged plaster and tiles to their previous condition. No exclusion applies. Reference Case 7 (restoration of plaster excluded for external facade, but here it is internal and directly related to the leak)."
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 2.3: restoring the damaged plaster and tiles to their previous condition. The area is small, so price is pro-rated from reference cases."
     },
     {
       "item_id": "4",
@@ -43,9 +43,9 @@
       "unit": "",
       "covered_prob": 0.0,
       "related_prob": 1.0,
-      "unit_price_gross_eur": 120.0,
-      "price_log_sd": 0.05,
-      "rationale": "Explicitly excluded by Part 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit. Not related to the insured peril."
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.3,
+      "rationale": "Explicitly excluded by 3.1: maintenance, servicing or descaling of installations, even if carried out during the same visit."
     }
   ]
 }
