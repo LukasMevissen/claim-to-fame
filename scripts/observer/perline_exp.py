@@ -19,7 +19,7 @@ CASES = Path('/tmp/c2f_work/cases'); S = load_summary()
 def call(shared, pos):
     resp = client.messages.create(
         model='claude-opus-5-5', max_tokens=8000, system=SYSTEM,
-        output_config={'effort': 'low', 'format': {'type': 'json_schema', 'schema': _SCHEMA}},
+        output_config={'effort': os.environ.get('EFFORT', 'low'), 'format': {'type': 'json_schema', 'schema': _SCHEMA}},
         messages=[{'role': 'user', 'content': [
             {'type': 'text', 'text': shared, 'cache_control': {'type': 'ephemeral'}},
             {'type': 'text', 'text': f'Assess ONLY invoice line {pos} now. The other lines are context: use them where '
@@ -49,7 +49,7 @@ def game(g, d):
     except Exception as e: print('fail', g, repr(e)[:200], flush=True)
 
 if __name__ == '__main__':
-    d = Path('/tmp/c2f_work/prompt_exp/perline') / f'run{sys.argv[1]}'; d.mkdir(parents=True, exist_ok=True)
+    d = Path('/tmp/c2f_work/prompt_exp/perline' + ('_' + os.environ['EFFORT'] if os.environ.get('EFFORT') else '')) / f'run{sys.argv[1]}'; d.mkdir(parents=True, exist_ok=True)
     gs = [g for g in range(1, 60) if str(g) in S and (CASES / f'game{g}').exists()]
     with ThreadPoolExecutor(3) as p: list(p.map(lambda g: game(g, d), gs))
     fs = [json.load(open(x)) for x in d.glob('game*.json')]
