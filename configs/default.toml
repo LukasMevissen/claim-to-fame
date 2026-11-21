@@ -27,6 +27,11 @@ charge_ceiling_quantile = 0.95
 n_t_grid = 100
 n_candidates = 60
 n_opp_draws = 15
+# Learned opponent population (scripts/update_opponents.py, refreshed after every game).
+# When this file exists it replaces the hand-set mix below; delete it to fall back.
+opponents_from = "results/opponent_belief.json"
+team_name = "GemischtesHack"
+min_limit_obs = 3.0      # teams with less evidence on b keep the default noisy rule
 
 # Opponent population used to choose the charge price a.
 # Calibrate from the leaderboard "Matchup" and "Transactions" tabs once games ran.
