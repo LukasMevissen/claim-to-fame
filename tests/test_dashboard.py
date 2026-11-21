@@ -70,3 +70,15 @@ def test_labels():
     lab, why = dash.insurer_label(m, field)
     assert lab == "Strict gatekeeper" and "fair bills" in why
     assert dash.insurer_label(m | {"accept_rate": 0.5}, field)[0] == "Lenient payer"
+
+
+def test_dropped_out_ignores_empty_games_and_detects_absent_runs():
+    def rows(team, game, absent, n=4):
+        return [{"team": team, "round": str(game), "absent": str(absent)} for _ in range(n)]
+    ab = []
+    for g in range(1, 8):
+        ab += rows("A", g, False)
+        ab += rows("Quit", g, g >= 4)          # stops quoting from game 4 on
+        ab += rows("Blip", g, g == 6)          # misses one game only
+    ab += rows("A", 8, True) + rows("Quit", 8, True) + rows("Blip", 8, True)   # empty case: nobody quotes
+    assert dash.dropped_out(ab) == {"Quit": 4}

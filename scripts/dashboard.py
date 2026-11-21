@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import io
 import json
 import math
 import re
@@ -151,8 +152,7 @@ def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
         by_team[r["team"]].append(r | {"g": g})
 
     tx: list[dict] = []
-    for f in tx_dir.glob("game*.json"):
-        doc = json.loads(f.read_text())
+    for doc in tx_docs(tx_dir):
         tx += [r | {"g": int(doc["game_id"])} for r in doc.get("items", [])]
     last_game = max((r["g"] for r in tx), default=0)
 
@@ -178,6 +178,18 @@ def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
         known = [r for r in accepted
                  if a_vs_t.get((r["issuer"], r["g"], r["line_item_index"])) in ("fair", "fraud")]
         penalties = [r for r in reviewed if not r["accepted"] and r["amount"] > 0]
+        # insurer cost by state: what share of everything the team paid went where
+        cost = defaultdict(float)
+        for r in reviewed:
+            if not r["amount"]:
+                continue
+            if not r["accepted"]:
+                cost["penalty"] += r["amount"]           # fair bill rejected: pays 1.5a
+            else:
+                v = a_vs_t.get((r["issuer"], r["g"], r["line_item_index"]))
+                cost["fair" if v == "fair" else "inflated" if v == "fraud" else "unclassified"] += r["amount"]
+        total_cost = sum(cost.values())
+        share = lambda k: cost[k] / total_cost if total_cost else None  # noqa: E731
         n = lambda xs: max(len(xs), 1)  # noqa: E731
         return {
             "lines": len(rows),
@@ -191,6 +203,10 @@ def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
             "wrong_accept_share": len(wrong) / len(known) if known else None,
             "penalty_rate": len(penalties) / n(reviewed),
             "costs": round(sum(r["amount"] for r in reviewed), 2),
+            "cost_share_fair": share("fair"),
+            "cost_share_inflated": share("inflated"),
+            "cost_share_penalty": share("penalty"),
+            "cost_share_unclassified": share("unclassified"),
         }
 
     teams = sorted(by_team, key=str.lower)
@@ -545,11 +561,69 @@ def briefings(sc: dict, strat: dict, fetch: bool) -> list[dict]:
 
 # ------------------------------------------------------------------ build / serve
 
+DROP_GAMES = 3        # absent in each of a team's last 3 played games ...
+DROP_SHARE = 0.8      # ... on at least 80% of the lines -> dropped out
+
+
+def dropped_out(ab_rows: list[dict]) -> dict[str, int]:
+    """Teams that stopped playing: {team: first game of the current absent run}.
+    Games where nobody quoted (an empty case) are skipped, so they cannot fake a dropout."""
+    share = defaultdict(lambda: [0, 0])          # (team, game) -> [absent lines, lines]
+    played = set()
+    for r in ab_rows:
+        g, absent = int(r["round"]), r["absent"] == "True"
+        c = share[(r["team"], g)]
+        c[0] += absent
+        c[1] += 1
+        if not absent:
+            played.add(g)
+    out = {}
+    for team in {t for t, _ in share}:
+        games = sorted(g for t, g in share if t == team and g in played)
+        absent = [g for g in games if share[(team, g)][0] >= DROP_SHARE * share[(team, g)][1]]
+        if len(games) >= DROP_GAMES and set(games[-DROP_GAMES:]) <= set(absent):
+            since = games[-1]
+            for g in reversed(games):
+                if g not in absent:
+                    break
+                since = g
+            out[team] = since
+    return out
+
+
+def tx_docs(tx_dir: Path) -> list[dict]:
+    """Every game's public transactions: the working tree's files, plus games that only
+    origin/main has yet (a checkout that is not pulled lags behind the runner's pushes)."""
+    docs = {}
+    for f in tx_dir.glob("game*.json"):
+        doc = json.loads(f.read_text())
+        docs[int(doc["game_id"])] = doc
+    try:
+        rel = tx_dir.resolve().relative_to(ROOT).as_posix()
+    except ValueError:                      # a directory outside the repo: files only
+        return [docs[g] for g in sorted(docs)]
+    for name in _git("ls-tree", "--name-only", "origin/main", rel + "/").split():
+        m = re.search(r"game(\d+)\.json$", name)
+        if m and int(m.group(1)) not in docs:
+            text = _git("show", f"origin/main:{name}")
+            if text:
+                doc = json.loads(text)
+                docs[int(doc["game_id"])] = doc
+    return [docs[g] for g in sorted(docs)]
+
+
+def fresh_ab(fetch: bool) -> list[dict]:
+    """results/ab_table.csv from the working tree, or from origin/main when that is newer
+    (a checkout that is not pulled would otherwise label teams on stale games)."""
+    text = _repo_text("results/ab_table.csv", refresh=fetch)
+    return list(csv.DictReader(io.StringIO(text))) if text else []
+
+
 def build(fetch: bool = True) -> dict:
     tx_dir = ROOT / "data" / "transactions"
     sc = scores(tx_dir, fetch)
-    strat = strategies(load_ab(ROOT / "results" / "ab_table.csv"), tx_dir,
-                       ROOT / "results" / "opponent_belief.json")
+    ab_rows = fresh_ab(fetch)
+    strat = strategies(ab_rows, tx_dir, ROOT / "results" / "opponent_belief.json")
     last_game = max(sc["games"][-1] if sc["games"] else 0, strat["last_game"])
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -559,6 +633,7 @@ def build(fetch: bool = True) -> dict:
         "strategies": strat,
         "todo": todo(last_game),
         "briefings": briefings(sc, strat, fetch),
+        "dropped": dropped_out(ab_rows),
     }
     write(data)
     return data

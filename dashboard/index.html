@@ -13,6 +13,7 @@
   --us: #2a78d6; --pick-1: #eb6834; --pick-2: #1baf7a; --pick-3: #6250d6;
   --other: #c9c8c2; --grid: #ecebe7; --zero: #a9a8a2;
   --good: #0a7d32; --bad: #c2352f; --chip: #e9e8e3;
+  --cost-fair: #8fb3dd; --cost-inflated: #eda100; --cost-penalty: #c2352f;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
 }
@@ -24,6 +25,7 @@
     --us: #3987e5; --pick-1: #d95926; --pick-2: #199e70; --pick-3: #9085e9;
     --other: #4a4a47; --grid: #262625; --zero: #5c5b57;
     --good: #3fb76a; --bad: #e66767; --chip: #2a2a28;
+    --cost-fair: #4a72a3; --cost-inflated: #c98500; --cost-penalty: #e66767;
   }
 }
 :root[data-theme="dark"] {
@@ -33,6 +35,7 @@
   --us: #3987e5; --pick-1: #d95926; --pick-2: #199e70; --pick-3: #9085e9;
   --other: #4a4a47; --grid: #262625; --zero: #5c5b57;
   --good: #3fb76a; --bad: #e66767; --chip: #2a2a28;
+  --cost-fair: #4a72a3; --cost-inflated: #c98500; --cost-penalty: #e66767;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 var(--font); }
@@ -82,6 +85,7 @@ section.card { background: var(--surface); border: 1px solid var(--border); bord
   padding: 2px 10px 2px 8px; cursor: pointer; }
 .legend button[aria-pressed="true"] { color: var(--text); border-color: var(--text-2); }
 .swatch { width: 14px; height: 3px; border-radius: 2px; background: var(--other); }
+.legend .muted-i { color: var(--muted); font-style: normal; font-size: 11px; }
 .chart-wrap { position: relative; }
 svg.chart { width: 100%; height: 380px; display: block; overflow: visible; }
 svg.chart text { font: 11px var(--font); fill: var(--muted); font-variant-numeric: tabular-nums; }
@@ -100,6 +104,14 @@ th { color: var(--text-2); font-weight: 600; font-size: 12px; white-space: nowra
 th.grp { border-bottom: 0; padding-bottom: 0; color: var(--text); font-size: 12.5px; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 tr.us td { background: color-mix(in srgb, var(--us) 9%, transparent); }
+.costbar { display: flex; gap: 2px; width: 120px; height: 8px; margin-top: 5px; }
+.costbar span { border-radius: 2px; min-width: 2px; }
+.costbar .seg-fair { background: var(--cost-fair); }
+.costbar .seg-inflated { background: var(--cost-inflated); }
+.costbar .seg-penalty { background: var(--cost-penalty); }
+.costbar .seg-unclassified { background: var(--other); }
+.cost-key { display: inline-flex; gap: 12px; flex-wrap: wrap; }
+.cost-key i { display: inline-block; width: 10px; height: 8px; border-radius: 2px; margin-right: 4px; vertical-align: 0; }
 .badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px;
   background: var(--chip); color: var(--text); white-space: nowrap; }
 .why { color: var(--text-2); font-size: 12px; margin-top: 3px; }
@@ -191,6 +203,7 @@ details.defs dd { margin: 0; }
         <button aria-pressed="false" data-view="table">Table</button>
       </div>
       <span class="note" style="margin:0">Click up to 3 teams to highlight them.</span>
+      <label class="note" id="scale-dropped-wrap" style="margin:0" hidden><input type="checkbox" id="scale-dropped"> Scale to dropped-out teams</label>
     </div>
     <div class="legend" id="legend"></div>
     <div class="chart-wrap" id="chart-wrap">
@@ -203,6 +216,7 @@ details.defs dd { margin: 0; }
   <section class="card">
     <h2>How the others play</h2>
     <p class="sub" id="strat-sub">Read off every team's charges and accept/reject decisions in the public transactions.</p>
+    <p class="note cost-key" style="margin:0 0 8px"><span><i style="background:var(--cost-fair)"></i>Fair bills accepted</span><span><i style="background:var(--cost-inflated)"></i>Inflated bills paid</span><span><i style="background:var(--cost-penalty)"></i>Fair bills rejected (1.5a penalty)</span><span><i style="background:var(--other)"></i>Unclassified</span></p>
     <div class="table-scroll"><table id="strat"></table></div>
     <details class="defs">
       <summary>How the labels are made</summary>
@@ -213,10 +227,12 @@ details.defs dd { margin: 0; }
         <dt>Threshold hunter</dt><dd>Prices close to t: a/t ≥ 0.75 and more than 30% above t.</dd>
         <dt>Fair pricer</dt><dd>a/t ≥ 0.75 and at most 30% above t.</dd>
         <dt>Undercutter</dt><dd>a/t &lt; 0.75: almost always fair, gives away margin.</dd>
-        <dt>Accepts</dt><dd>Share of incoming bills they accept as insurer.</dd>
+        <dt>Paid as insurer</dt><dd>Everything the team paid out as insurer over the whole tournament.</dd>
         <dt>Strict / Lenient</dt><dd>Accept rate at least 5 points below / above the field median. Otherwise <i>Selective</i>.</dd>
-        <dt>Paid inflated</dt><dd>Of the bills they accepted, the share proven above t.</dd>
-        <dt>Penalties</dt><dd>Share of bills they rejected although fair (they pay 1.5a).</dd>
+        <dt>Fair accepted</dt><dd>Share of that total paid for fair bills they accepted (a ≤ t): money that is owed anyway.</dd>
+        <dt>Inflated paid</dt><dd>Share paid for bills they accepted although the charge was above t (the cost of being too lenient).</dd>
+        <dt>Fair rejected</dt><dd>Share paid as penalties for fair bills they rejected (1.5a each: the cost of being too strict).</dd>
+        <dt>Unclassified</dt><dd>Accepted bills on lines whose t is not pinned down yet; shown grey in the bar.</dd>
         <dt>Last N games</dt><dd>The same labels on the most recent games only. Shown when the strategy changed.</dd>
       </dl>
     </details>
@@ -526,9 +542,14 @@ function renderLegend() {
   const teams = Object.keys(cum).sort((a, b) => cum[b][n] - cum[a][n]);
   $("#legend").innerHTML = teams.map(t => {
     const on = t === DATA.us || picks.includes(t);
-    return `<button data-team="${esc(t)}" aria-pressed="${on}" ${t === DATA.us ? "disabled" : ""}>
-      <span class="swatch" style="background:${colorOf(t)};height:${on ? 3 : 2}px"></span>${esc(t)}${t === DATA.us ? " (us)" : ""}</button>`;
+    const drop = isDropped(t);
+    return `<button data-team="${esc(t)}" aria-pressed="${on}" ${t === DATA.us ? "disabled" : ""}
+      title="${drop ? `stopped quoting in game ${DATA.dropped[t]}` : ""}">
+      <span class="swatch" style="background:${colorOf(t)};height:${on ? 3 : 2}px${drop ? ";opacity:.55" : ""}"></span>${esc(t)}${t === DATA.us ? " (us)" : ""}${drop ? ` <i class="muted-i">dropped out · game ${DATA.dropped[t]}</i>` : ""}</button>`;
   }).join("");
+  const nd = Object.keys(DATA.dropped || {}).length;
+  $("#scale-dropped-wrap").hidden = !nd;
+  $("#scale-dropped").checked = scaleDropped;
   $("#legend").querySelectorAll("button[data-team]").forEach(b => b.onclick = () => {
     const t = b.dataset.team, i = picks.indexOf(t);
     if (i >= 0) picks.splice(i, 1); else { if (picks.length >= 3) picks.shift(); picks.push(t); }
@@ -536,11 +557,15 @@ function renderLegend() {
   });
 }
 function niceTicks(lo, hi, n = 5) {
+  // first tick at or below lo, last tick at or above hi, so every value sits inside the plot
   const span = hi - lo || 1, step0 = span / n, mag = 10 ** Math.floor(Math.log10(step0));
   const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => span / s <= n) || mag * 10;
-  const out = []; for (let v = Math.floor(lo / step) * step; v <= hi + 1e-9; v += step) out.push(v);
+  const out = [], end = Math.ceil(hi / step - 1e-9) * step;
+  for (let v = Math.floor(lo / step + 1e-9) * step; v <= end + step * 1e-6; v += step) out.push(Math.abs(v) < step * 1e-9 ? 0 : v);
   return out;
 }
+const isDropped = t => !!(DATA.dropped && DATA.dropped[t] != null);
+let scaleDropped = store.get("scaleDropped", false);
 const kfmt = v => Math.abs(v) >= 1000 ? (v / 1000).toLocaleString("en-US", { maximumFractionDigits: 1 }) + "k" : fmt(v);
 
 function renderScores() {
@@ -553,25 +578,36 @@ function renderScores() {
 
   const svg = $("#chart"), W = svg.clientWidth || 900, H = svg.clientHeight || 380;
   const m = { l: 52, r: 128, t: 12, b: 30 };
-  const all = Object.values(S).flat();
+  // the scale follows the teams still playing; dropped-out teams are clipped to the plot
+  const inScale = Object.keys(S).filter(t => scaleDropped || !isDropped(t) || t === DATA.us || picks.includes(t));
+  const all = inScale.flatMap(t => S[t]);
   const ticks = niceTicks(Math.min(0, ...all), Math.max(0, ...all));
   const y0 = ticks[0], y1 = ticks[ticks.length - 1];
   const x = i => m.l + (games.length > 1 ? i / (games.length - 1) : .5) * (W - m.l - m.r);
   const y = v => m.t + (1 - (v - y0) / (y1 - y0 || 1)) * (H - m.t - m.b);
   const order = Object.keys(S).sort((a, b) => (a === DATA.us) - (b === DATA.us) || picks.includes(a) - picks.includes(b));
-  let h = "";
+  let h = `<defs><clipPath id="plotclip"><rect x="${m.l}" y="${m.t - 4}" width="${W - m.l - m.r + 6}" height="${H - m.t - m.b + 8}"/></clipPath></defs>`;
   for (const v of ticks) h += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${v === 0 ? css("--zero") : css("--grid")}" stroke-width="1"/>
     <text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${kfmt(v)}</text>`;
   const every = Math.max(1, Math.ceil(games.length / ((W - m.l - m.r) / 36)));
   games.forEach((g, i) => { if (i % every === 0 || i === games.length - 1) h += `<text x="${x(i)}" y="${H - m.b + 18}" text-anchor="middle">${g}</text>`; });
   h += `<text x="${m.l}" y="${H - 2}" class="lbl" style="font-size:11px">game</text>`;
   const labels = [];
+  const offScale = [];
   for (const t of order) {
-    const v = S[t], hi = t === DATA.us || picks.includes(t);
+    const v = S[t], hi = t === DATA.us || picks.includes(t), drop = isDropped(t);
     const d = v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join("");
-    h += `<path d="${d}" fill="none" stroke="${colorOf(t)}" stroke-width="${hi ? 2.5 : 1.25}" stroke-linejoin="round" stroke-linecap="round" opacity="${hi ? 1 : .9}"/>`;
-    if (hi) labels.push({ t, y: y(v[v.length - 1]), c: colorOf(t) });
+    h += `<path d="${d}" fill="none" stroke="${colorOf(t)}" stroke-width="${hi ? 2.5 : 1.25}" stroke-linejoin="round" stroke-linecap="round"
+      opacity="${hi ? 1 : drop ? .55 : .9}" ${drop && !hi ? 'stroke-dasharray="4 4"' : ""} clip-path="url(#plotclip)"/>`;
+    const last = v[v.length - 1];
+    if (last < y0 || last > y1) offScale.push({ t, last });
+    else if (hi) labels.push({ t, y: y(last), c: colorOf(t) });
   }
+  // teams whose line leaves the scale: a marker on the edge with their value
+  offScale.forEach((o, k) => {
+    const below = o.last < y0, yy = below ? H - m.b - 6 - k * 14 : m.t + 10 + k * 14;
+    h += `<text x="${W - m.r + 10}" y="${yy}" class="lbl">${below ? "↓" : "↑"} ${esc(o.t.length > 12 ? o.t.slice(0, 11) + "…" : o.t)} ${kfmt(o.last).replace("-", "−")}</text>`;
+  });
   // end labels for highlighted series, nudged apart
   labels.sort((a, b) => a.y - b.y);
   for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 14) labels[i].y = labels[i - 1].y + 14;
@@ -595,7 +631,7 @@ function renderScores() {
     dots.innerHTML = rows.filter(([t]) => t === DATA.us || picks.includes(t))
       .map(([t, v]) => `<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${colorOf(t)}" stroke="${css("--surface")}" stroke-width="2"/>`).join("");
     tip.innerHTML = `<h4>Game ${games[i]} · ${mode === "cum" ? "cumulative" : "this game"}</h4>` + rows.map(([t, v], k) =>
-      `<div class="r ${t === DATA.us ? "us" : ""}"><span class="nm"><span class="swatch" style="background:${colorOf(t)}"></span>${k + 1}. ${esc(t)}</span><span>${signed(v)}</span></div>`).join("");
+      `<div class="r ${t === DATA.us ? "us" : ""}"><span class="nm"><span class="swatch" style="background:${colorOf(t)}"></span>${k + 1}. ${esc(t)}${isDropped(t) ? " (dropped out)" : ""}</span><span>${signed(v)}</span></div>`).join("");
     tip.style.display = "block";
     const tw = tip.offsetWidth, left = x(i) + 14 + tw > W ? x(i) - tw - 14 : x(i) + 14;
     tip.style.left = left + "px"; tip.style.top = Math.max(0, ev.clientY - r.top - 60) + "px";
@@ -609,6 +645,7 @@ function renderScoreTable(S) {
   $("#score-table").innerHTML = `<table><thead><tr><th>Team</th>${g.map(x => `<th class="num">${x}</th>`).join("")}</tr></thead><tbody>` +
     teams.map(t => `<tr class="${t === DATA.us ? "us" : ""}"><td>${esc(t)}</td>${S[t].map(v => `<td class="num">${kfmt(v)}</td>`).join("")}</tr>`).join("") + "</tbody></table>";
 }
+$("#scale-dropped").onchange = e => { scaleDropped = e.target.checked; store.set("scaleDropped", scaleDropped); renderScores(); };
 document.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => {
   mode = b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderScores();
 });
@@ -634,15 +671,22 @@ function renderBriefing() {
 }
 
 /* ---------- strategies ---------- */
+function costBar(a) {
+  const parts = [["fair", a.cost_share_fair, "Fair bills accepted"], ["inflated", a.cost_share_inflated, "Inflated bills paid"],
+                 ["penalty", a.cost_share_penalty, "Fair bills rejected (penalties)"], ["unclassified", a.cost_share_unclassified, "Unclassified"]];
+  if (!parts.some(p => p[1])) return "";
+  return `<div class="costbar" role="img" aria-label="${parts.filter(p => p[1]).map(p => p[2] + " " + pct(p[1])).join(", ")}">` +
+    parts.filter(p => p[1] > 0.0005).map(p => `<span class="seg-${p[0]}" style="flex:${p[1]}" title="${p[2]}: ${pct(p[1])}"></span>`).join("") + "</div>";
+}
 function renderStrategies() {
   const S = DATA.strategies, cum = cumulative(), n = DATA.scores.games.length - 1;
   $("#strat-sub").textContent = `Games 1–${S.last_game}, read off the public transactions; "last ${S.recent_games}" flags teams whose behaviour changed recently. Sorted by total score.`;
   const teams = Object.keys(S.teams).sort((a, b) => ((cum[b] || [])[n] ?? 0) - ((cum[a] || [])[n] ?? 0));
   const shift = (now, rec) => rec && rec !== now ? `<div class="shift">last ${S.recent_games}: <b>${esc(rec)}</b></div>` : "";
   $("#strat").innerHTML = `<thead>
-    <tr><th class="grp"></th><th class="grp" colspan="4">As handyman (charge a)</th><th class="grp" colspan="4">As insurer (limit b)</th></tr>
+    <tr><th class="grp"></th><th class="grp" colspan="4">As handyman (charge a)</th><th class="grp" colspan="5">As insurer (limit b): where the money went</th></tr>
     <tr><th>Team</th><th>Strategy</th><th class="num">a / t</th><th class="num">Above t</th><th class="num">Paid</th>
-        <th>Strategy</th><th class="num">Accepts</th><th class="num">Paid inflated</th><th class="num">Penalties</th></tr></thead><tbody>` +
+        <th>Strategy</th><th class="num">Paid as insurer</th><th class="num">Fair accepted</th><th class="num">Inflated paid</th><th class="num">Fair rejected</th><th aria-label="Share of cost"></th></tr></thead><tbody>` +
     teams.map(t => {
       const s = S.teams[t], a = s.all;
       return `<tr class="${s.is_us ? "us" : ""}">
@@ -652,9 +696,11 @@ function renderStrategies() {
         <td class="num">${pct(a.over_covered)}</td>
         <td class="num" title="share of their bills that were accepted">${pct(a.charge_accept_rate)}</td>
         <td><span class="badge">${esc(s.insurer.label)}</span><div class="why">${esc(s.insurer.reason)}</div>${shift(s.insurer.label, s.insurer.recent_label)}</td>
-        <td class="num">${pct(a.accept_rate)}</td>
-        <td class="num">${pct(a.wrong_accept_share)}</td>
-        <td class="num">${pct(a.penalty_rate)}</td></tr>`;
+        <td class="num">${kfmt(a.costs)}</td>
+        <td class="num">${pct(a.cost_share_fair)}</td>
+        <td class="num">${pct(a.cost_share_inflated)}</td>
+        <td class="num">${pct(a.cost_share_penalty)}</td>
+        <td>${costBar(a)}</td></tr>`;
     }).join("") + "</tbody>";
 }
 
