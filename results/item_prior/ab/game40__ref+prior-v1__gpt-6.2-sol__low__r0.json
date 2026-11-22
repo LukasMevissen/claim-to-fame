@@ -1,0 +1,196 @@
+{
+ "game": 40,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 7 \"Service technician hours\": indemnified in all 3 earlier cases; when indemnified t per hr about 84 (80% range 56 to 106); revealed per hr: 44-49 (case 21), >=81 (case 39), >=81 (case 39), so this line (6.75 hr) about 566 (381 to 715)\n- line 8 \"Helper hours\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 68 (80% range 27 to 173), so this line (5.75 hr) about 394 (156 to 992)\n- line 9 \"Rock wool pipe insulation\": indemnified in the one earlier case; when indemnified t per pc about 24 (80% range 17.9 to 37); revealed per pc: >=22 (case 39), so this line (6 pc) about 146 (107 to 222)\n- line 12 \"Vehicle costs\": indemnified in 13 of 28 earlier cases, t = 0 in 15; when indemnified t per pc about 80 (80% range 72 to 88); revealed per pc: >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34), >=65 (case 39)\n- line 13 \"Construction waste disposal\": indemnified in the one earlier case; when indemnified t per pc about 62 (80% range 45 to 94); revealed per pc: >=57 (case 18)\n- line 17 \"Processing flat fee\": NOT indemnified (t = 0) in all 6 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover matching fittings used to reconnect the failed indoor heating pipe. Four elbows at €9 gross each give €36."
+  },
+  {
+   "item_id": "2",
+   "description": "28 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.34,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.8(e) requires evidence that the 28 mm fittings were used in the repair; the only copper pipe listed is 15 mm, though the fittings could connect to retained 28 mm pipework. If verified, five elbows at €17 gross each give €85."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper press elbow, 45°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.34,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.0,
+   "price_log_sd": 0.28,
+   "rationale": "Under §7.1.8(e), the 28 mm fitting needs to be tied to the documented repair despite the 15 mm replacement pipe listed. If verified, one elbow is estimated at €17 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers minor fixings used in the pipe repair without requiring each screw to be individually matched to the work. Eight at €0.75 gross each give €6."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamps, 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.73,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.7(c) covers necessary pipe supports if the clamp size matches the pipe or adjoining section actually repaired, as required by §7.1.8(e). Four at €5 gross each give €20."
+  },
+  {
+   "item_id": "6",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover like-for-like copper used to replace the failed indoor heating line. At €12.50 gross per metre, 6.4 m gives €80."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 336.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.5 and 7.1.7(g) cover customary labour for the pipe repair only, not the other jobs on the invoice. Allowing about four repair hours at €84 gross per hour gives €336."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.7(g) covers helper time reasonably needed for the pipe repair, while §7.1.5 excludes time spent on unrelated work. Allowing about 2.5 repair hours at €68 gross per hour gives €170."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 146.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers reinstatement of the insulation removed for the repair. Six pieces at about €24.33 gross each give €146, consistent with Case 39 and the price prior."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.79,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(c) covers wire consumed in securing the insulation, but §7.1.8(e) excludes quantities not attributable to this short repair. Allow about €6 gross for the portion used rather than pricing the full 2 kg as necessary."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.89,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) permit a modest lump sum for repair consumables, provided it does not duplicate the separately listed materials. Allow €15 gross."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.09,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice, and this is the only one listed. The plumbing travel prior supports €80 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.38,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of removed pipe and insulation, not laminate from the undamaged storage room. Allow €40 gross for the small repair-only share if it can be substantiated."
+  },
+  {
+   "item_id": "14",
+   "description": "Basement hallway repainting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 230.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 3.5 and 7.1.5 exclude repainting the hallway because the leak affected only the plant room. The positive figure is a conditional gross estimate for 12 m², not an allowance."
+  },
+  {
+   "item_id": "15",
+   "description": "Storage-room laminate replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 675.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.5–7.1.6 exclude replacement in the undamaged storage room, which is separate from the affected plant room. The positive figure is a conditional gross estimate for 15 m² of standard laminate removal and replacement."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.5 and 7.1.8(a) exclude routine service on a tap unrelated to the indoor heating leak. The positive figure is a conditional estimate for a basic service without another call-out charge."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) expressly excludes a separate processing charge added to itemised labour and materials. The positive figure is a nominal conditional estimate, not an allowance."
+  }
+ ]
+}

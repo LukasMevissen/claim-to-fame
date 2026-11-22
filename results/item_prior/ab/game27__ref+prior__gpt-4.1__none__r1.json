@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Vehicle costs\": indemnified in 8 of 18 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 69 to 89); revealed per pc: 34-45 (case 23*), 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection and moisture measurement for kitchen sink supply leak, incl. technician labour and call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 229.0,
+   "price_log_sd": 0.05,
+   "rationale": "Insured peril is escape of water (2.4.2), and the leak detection and moisture measurement are necessary to locate and confirm the extent of the damage (7.1.7(e)). The line is a combined flat rate for detection, measurement, technician labour, and call-out, all of which are covered as necessary investigation and measurement. Reference case 21 (leak detection call-out: t >= 229) and similar cases support indemnification at this level."
+  },
+  {
+   "item_id": "2",
+   "description": "Freeing, repair and re-insulation of the leaking kitchen sink supply pipe, incl. replacement copper section",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.05,
+   "rationale": "Direct repair of the affected pipework following an insured escape of water event (2.4.2, 7.1.1(b), 7.1.7(a), (c)). The work is limited to the affected section, with like-for-like replacement and re-insulation. Reference case 21 (repair of leak and replacement copper pipe section: t between 157 and 220) and case 18 (copper pipe repair: t >= 221) support this range."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.1,
+   "rationale": "Policy covers one travel/call-out charge per contractor per invoice (7.1.7(f)). Vehicle costs are indemnified in about half of reference cases, with t per pc about 79 when paid. Reference case 21 (vehicle costs: t >= 76) supports this figure."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of the kitchen floor and wall base, incl. condensation dryer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drying of affected areas is necessary preparatory work (7.1.7(b)), and the invoice/description confirm the dryer was used only in the affected kitchen area. Reference case 21 (room drying of kitchen floor and wall base: t between 20 and 148) and (condensation dryer: t between 20 and 65) support a moderate value within this range for a single affected area."
+  }
+ ]
+}

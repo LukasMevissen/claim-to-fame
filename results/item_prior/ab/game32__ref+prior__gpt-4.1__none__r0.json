@@ -1,0 +1,218 @@
+{
+ "game": 32,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Filling valve (internal frost-burst fitting)\": indemnified in all 2 earlier cases; when indemnified t per pc about 52 (80% range 41 to 68); revealed per pc: 48-55 (case 16*), 51-54 (case 25) (* = other policy wording)\n- line 2 \"Connection hose\": indemnified in all 2 earlier cases; when indemnified t per pc about 27 (80% range 21 to 37); revealed per pc: 27-33 (case 16*), 26-28 (case 25) (* = other policy wording)\n- line 3 \"Senior installer hours\": indemnified in all 2 earlier cases; when indemnified t per hr about 98 (80% range 76 to 127); revealed per hr: >=91 (case 16*), >=93 (case 25) (* = other policy wording), so this line (3 hr) about 295 (229 to 382)\n- line 4 \"Auxiliary and cleaning material\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 5 \"Vehicle costs\": indemnified in 9 of 21 earlier cases, t = 0 in 12; when indemnified t per pc about 67 (80% range 38 to 97); revealed per pc: >=76 (case 21*), >=76 (case 21*), >=76 (case 21*), 34-45 (case 23*), >=74 (case 27*), 38-44 (case 25) (* = other policy wording)\n- line 6 \"Thermal imaging camera (leak detection)\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 7 \"Vehicle costs – return visit\": NOT indemnified (t = 0) in all 3 earlier cases; no price evidence\n- line 9 \"Base plaster\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 10 \"Newly plastered substrate\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 11 \"Priming\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 13 \"Facade paint (4 coats)\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 14 \"Painter hours\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 18 \"Administrative flat rate\": NOT indemnified (t = 0) in all 3 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 53.0,
+   "price_log_sd": 0.05,
+   "rationale": "Covered under 2.4.4(b) and 7.1.9 as a fractured fitting due to frost, with like-for-like renewal. Price prior and references (case 25) show t between 51 and 54 per pc."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.05,
+   "rationale": "Covered as a necessary connection element renewed with the fractured fitting (2.4.4(b), 7.1.9). Price prior and references (case 25) show t between 26 and 28 per pc."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours (3 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 295.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour for covered repair (7.1.7(f), 7.1.9). Price prior for 3 hrs is about 295 (229 to 382)."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not indemnified in all references (case 25); likely considered a non-covered ancillary charge (3.6(c))."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.2,
+   "rationale": "Vehicle costs for covered repair are sometimes indemnified (see case 25, 27); price prior for 1 pc is 41 (38 to 44)."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not indemnified in all references (case 25); likely considered a non-covered ancillary charge (3.6(c))."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs – return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.0,
+   "price_log_sd": 0.3,
+   "rationale": "Return visits are not indemnified unless agreed in advance (7.1.11); not indemnified in all references."
+  },
+  {
+   "item_id": "8",
+   "description": "Facade frost damage - remove loose and spalled plaster (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered under 2.6.2 and 7.1.7(a) as direct frost damage to external surface with endorsement in force. Reference: similar work not indemnified without endorsement (case 25), but here it is. Market price for this work (2 pcs) estimated at 120."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as part of making good the damaged area (2.6.2, 7.1.7(c)), but not if applied to undamaged areas. Here, assumed for affected elevation only."
+  },
+  {
+   "item_id": "10",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as part of reinstating the affected area (2.6.2, 7.1.7(c)), provided it is only for the damaged elevation."
+  },
+  {
+   "item_id": "11",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as part of the finish system for the affected area (2.6.2, 7.1.7(d)), provided it is only for the damaged elevation."
+  },
+  {
+   "item_id": "12",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary preparatory work for reinstating the affected area (2.6.2, 7.1.7(c)), provided it is only for the damaged elevation."
+  },
+  {
+   "item_id": "13",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as part of the finish system for the affected area (2.6.2, 7.1.7(d)), provided it is only for the damaged elevation."
+  },
+  {
+   "item_id": "14",
+   "description": "Painter hours (5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour for covered reinstatement of the affected area (2.6.2, 7.1.7(f)). Market price for 5 hrs estimated at 200."
+  },
+  {
+   "item_id": "15",
+   "description": "Scaffolding hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary access provision for the affected elevation (2.6.2, 7.1.8). Market price for single elevation, two storeys, about 8m wide, estimated at 350."
+  },
+  {
+   "item_id": "16",
+   "description": "Repaint of undamaged rear elevation (no frost loss there)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.3,
+   "rationale": "Explicitly excluded by 2.6.3(a) and 7.1.5: no cover for undamaged areas, even for uniform appearance."
+  },
+  {
+   "item_id": "17",
+   "description": "Waste disposal of removed plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as debris removal for affected part (2.6.2, 5.2.1, 7.1.7(a)). Market price for a few rubble sacks estimated at 30."
+  },
+  {
+   "item_id": "18",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.3,
+   "rationale": "Explicitly excluded by 3.6(b) and 7.1.12: admin/processing charges are not indemnified."
+  },
+  {
+   "item_id": "19",
+   "description": "Catering for work crew (3 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.3,
+   "rationale": "Explicitly excluded by 3.6(a): provisioning/catering for personnel is not indemnified."
+  }
+ ]
+}

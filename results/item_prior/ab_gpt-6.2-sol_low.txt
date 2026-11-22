@@ -1,0 +1,40 @@
+gpt-6.2-sol@low, 3 run(s) per arm; net = replayed net payoff per game (mean of runs)
+  game              ref        ref+prior         ref>fuse      ref>replace
+    20             -915             -637             -915             -915
+    21             3511             6132             3739             4043
+    22             2096             2101             2096             2096
+    23               35              -59              -20              -45
+    24             -251             4005            -1129            -1868
+    25             1396             1099             1245              504
+    26             1368             1255             1371             1369
+    27             9073             9300             9106             9124
+    28                0                0                0                0
+    29            -2146            -2393            -2146            -2146
+    30              442              435              442              442
+    31            12084            12084            12084            12084
+    32             5797             6407             5824             5382
+    33             -469             -817             -469             -469
+    34              587             5687             1185             4108
+    35               40               34               40               40
+    36            10626             9677            10344            10217
+    37                0                0                0                0
+    38            11709             8300            11709            11709
+    39            -3706             -674            -2788            -2535
+    40            -4589             6349            -1980             5393
+    41             3975             4113             4245              744
+    42             8542             8687             8671            10260
+    43             4758             5674             5331             5831
+    44             3360             2703             2887             2094
+    45             7425             7425             7425             7425
+    46           -11280            -5979           -11037           -11574
+ref        net     63468 | lines 287, covered-or-not wrong 35.0 (lines with a prior row: 17.0) | priced lines: mean log miss 0.348, below t_low 53% | priced lines with a prior row (78): miss 0.274, below t_low 43%
+ref+prior  net     90907 | lines 287, covered-or-not wrong 36.7 (lines with a prior row: 17.3) | priced lines: mean log miss 0.291, below t_low 47% | priced lines with a prior row (78): miss 0.228, below t_low 33%
+ref>fuse   net     67260 | lines 287, covered-or-not wrong 35.0 (lines with a prior row: 17.0) | priced lines: mean log miss 0.336, below t_low 51% | priced lines with a prior row (78): miss 0.247, below t_low 40%
+ref>replace net     73313 | lines 287, covered-or-not wrong 35.0 (lines with a prior row: 17.0) | priced lines: mean log miss 0.344, below t_low 48% | priced lines with a prior row (78): miss 0.266, below t_low 33%
+ref+prior better than ref in 13 games, worse in 10, of 27
+ref>fuse better than ref in 11 games, worse in 5, of 27
+ref>replace better than ref in 7 games, worse in 8, of 27
+ref: total per run [68505, 62639, 59260], sd 4678
+ref+prior: total per run [99364, 97349, 76008], sd 12943
+ref>fuse: total per run [72406, 66498, 62875], sd 4811
+ref>replace: total per run [76152, 75430, 68356], sd 4308

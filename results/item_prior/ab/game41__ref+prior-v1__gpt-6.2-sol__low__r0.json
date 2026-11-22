@@ -1,0 +1,207 @@
+{
+ "game": 41,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 1 \"Bicycle frame replacement\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 229 (80% range 142 to 392); revealed per pc: 142-349 (case 24)\n- line 2 \"Bicycle brake replacement\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 140 (80% range 104 to 211); revealed per pc: 130-148 (case 24)\n- line 6 \"Shipping\": indemnified in 1 of 8 earlier cases, t = 0 in 7; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)\n- line 7 \"Vehicle costs\": indemnified in 14 of 29 earlier cases, t = 0 in 15; when indemnified t per pc about 77 (80% range 57 to 95); revealed per pc: >=74 (case 27*), 37-41 (case 32*), >=83 (case 34*), >=76 (case 34*), >=65 (case 39*), >=71 (case 40*) (* = other policy wording)\n- line 8 \"Assembly costs\": indemnified in 3 of 5 earlier cases, t = 0 in 2; when indemnified t per pc about 113 (80% range 92 to 151); revealed per pc: >=100 (case 23*), 106-209 (case 24), >=97 (case 24) (* = other policy wording)\n- line 9 \"Miscellaneous items\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 10 \"Apprentice hours\": indemnified in 1 of 5 earlier cases, t = 0 in 4; when indemnified t per hr about 55 (80% range 29 to 139); revealed per hr: 35-36 (case 23*) (* = other policy wording)\n- line 11 \"Skilled worker hours\": indemnified in 3 of 7 earlier cases, t = 0 in 4; when indemnified t per hr about 39 (80% range 32 to 50); revealed per hr: 50-58 (case 36*), 35-42 (case 24), 35-40 (case 26) (* = other policy wording)\n- line 13 \"Cut and remove seized lock to release bicycle\": indemnified in the one earlier case; when indemnified t per pc about 54 (80% range 40 to 82); revealed per pc: >=50 (case 26), so this line (2 pc) about 108 (80 to 165)\n- line 14 \"Vehicle costs – return visit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 16 \"Administrative and claim-processing fee\": NOT indemnified (t = 0) in all 7 earlier cases; no price evidence\n- line 17 \"Apprentice hours\": indemnified in 1 of 5 earlier cases, t = 0 in 4; when indemnified t per hr about 55 (80% range 29 to 139); revealed per hr: 35-36 (case 23*) (* = other policy wording)\n- line 18 \"Skilled worker hours\": indemnified in 3 of 7 earlier cases, t = 0 in 4; when indemnified t per hr about 39 (80% range 32 to 50); revealed per hr: 50-58 (case 36*), 35-42 (case 24), 35-40 (case 26) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 118.0,
+   "price_log_sd": 0.31,
+   "rationale": "The frame sustained theft damage, so §§7.1.7 and 7.1.9 cover a pre-loss equivalent. The €229 gross estimate is reduced to €118 by the shared €500 mobility cap (§4.2.2), using an estimated allocation factor of 0.52."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 72.0,
+   "price_log_sd": 0.25,
+   "rationale": "The brakes sustained theft damage, so like-for-like replacement is covered under §§7.1.7 and 7.1.9. The €140 gross estimate is reduced rateably to €72 under §4.2.2."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.25,
+   "rationale": "The tracker worked during recovery, and no theft damage or loss of the tracker itself is established. Sections 3.1.7 and 4.2.3 exclude its elective replacement."
+  },
+  {
+   "item_id": "4",
+   "description": "Service second household bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "The second bicycle was not affected by the theft, and routine servicing is independently excluded under §§3.1.6 and 7.1.5."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.002,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.45,
+   "rationale": "Neither the helmet nor the lights are identified as stolen or damaged property. Sections 3.1.7 and 4.2.3 exclude supplementary purchases made in connection with the claim."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(f) covers necessary carriage for the damaged bicycle or its repair parts, but §7.1.10 excludes any share attributable to the unrelated purchases. If this is repair freight, €26 gross reduces rateably to €13 under §4.2.2."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle shop vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.18,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(g) and 7.1.8(f) require a necessary covered attendance, which the generic vehicle line does not establish. If substantiated, a €77 gross charge would reduce to about €38 after sharing the mobility cap."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.86,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 58.0,
+   "price_log_sd": 0.25,
+   "rationale": "Fitting the replacement frame and brakes is covered under §7.1.7(c), provided it is separate from the labour already billed. The €113 gross estimate reduces rateably to €58 under §4.2.2."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.7(e) covers sundries consumed in the insured repair, but §7.1.10 requires a link to that repair, which this generic line does not establish. If substantiated, €10 gross reduces to about €5 under the shared cap."
+  },
+  {
+   "item_id": "10",
+   "description": "Bicycle shop apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.69,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.52,
+   "rationale": "Section 7.1.7(d) covers necessary apprentice labour on the theft repair, not time spent servicing the second bike or duplicating billed assembly. One eligible hour at €55 gross reduces rateably to €28."
+  },
+  {
+   "item_id": "11",
+   "description": "Bicycle shop skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(d) covers necessary skilled repair time if allocated to the stolen bicycle and not already billed as assembly. One eligible hour at €39 gross reduces rateably to €20."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith recovery call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.33,
+   "rationale": "The locksmith's attendance at the recovery site was necessary to release the bike and is separately covered by §5.2.2(a). A €35 gross call-out reduces rateably to €18 under §4.2.2."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 56.0,
+   "price_log_sd": 0.31,
+   "rationale": "Section 5.2.2(b) expressly covers cutting and removing the lock that held the recovered bicycle. The two charges at €54 each total €108 gross, reduced rateably to €56 under §4.2.2."
+  },
+  {
+   "item_id": "14",
+   "description": "Return-visit vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.22,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 5.2.2(a) and 7.1.8(f) allow a second attendance only if recovery actually required it; the claim does not explain why it was needed. If substantiated, €35 gross would reduce to about €17 after sharing the mobility cap."
+  },
+  {
+   "item_id": "15",
+   "description": "Mandatory yard storage and release fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.19,
+   "rationale": "The yard required payment before releasing the bike, so §5.2.2(c) covers the unavoidable third-party fee. €100 plus 19% VAT is €119 gross; the €1,000 recovery cap does not bind, but the shared €500 mobility cap reduces this line to €61."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.1.5 and 7.1.8(d) exclude claim processing. This is distinct from the yard's mandatory release fee."
+  },
+  {
+   "item_id": "17",
+   "description": "Locksmith apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.71,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.52,
+   "rationale": "Section 5.2.2(b) covers every labour grade actually used to release the bike, but §7.1.8(g) bars labour already included in the cutting charge. One separately billable hour at €55 gross reduces rateably to €28."
+  },
+  {
+   "item_id": "18",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 5.2.2(b) covers skilled labour needed to release the bicycle if not already included in the cutting charge. One eligible hour at €39 gross reduces rateably to €20."
+  }
+ ]
+}

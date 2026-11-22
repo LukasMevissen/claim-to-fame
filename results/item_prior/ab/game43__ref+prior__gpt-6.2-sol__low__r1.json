@@ -1,0 +1,196 @@
+{
+ "game": 43,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 5 \"Grub screw\": indemnified in the one earlier case; when indemnified t per pc about 1.10 (80% range 0.79 to 1.71); revealed per pc: 0.90-1.30 (case 40), so this line (8 pc) about 8.8 (6.3 to 13.6)\n- line 7 \"Two-screw pipe clamp 25 mm\": indemnified in the one earlier case; when indemnified t per pc about 6.2 (80% range 4.6 to 9.4); revealed per pc: >=5.7 (case 40), so this line (4 pc) about 25 (18.3 to 38)\n- line 8 \"Service technician hours\": indemnified in all 4 earlier cases; when indemnified t per hr about 88 (80% range 72 to 104); revealed per hr: 44-49 (case 21), >=81 (case 39), >=81 (case 39), >=88 (case 40), so this line (6.75 hr) about 595 (485 to 702)\n- line 9 \"Helper hours\": indemnified in the one earlier case; when indemnified t per hr about 73 (80% range 55 to 101); revealed per hr: >=67 (case 40), so this line (5.75 hr) about 418 (316 to 581)\n- line 11 \"Binding wire\": indemnified in the one earlier case; when indemnified t per kg about 9.8 (80% range 7.2 to 15.0); revealed per kg: >=9.0 (case 40), so this line (2 kg) about 19.6 (14.5 to 30)\n- line 14 \"Small parts and consumables\": indemnified in the one earlier case; when indemnified t per pc about 36 (80% range 27 to 55); revealed per pc: >=33 (case 40)\n- line 15 \"Vehicle costs\": indemnified in 14 of 29 earlier cases, t = 0 in 15; when indemnified t per pc about 79 (80% range 72 to 87); revealed per pc: >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34), >=65 (case 39), >=71 (case 40)\n- line 16 \"Construction waste disposal\": indemnified in all 2 earlier cases; when indemnified t per pc about 60 (80% range 51 to 71); revealed per pc: >=57 (case 18), 58-61 (case 40)\n- line 17 \"Processing flat fee\": NOT indemnified (t = 0) in all 9 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Designer copper pipe, 15 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 93.0,
+   "price_log_sd": 0.23,
+   "rationale": "The indoor heating-pipe failure falls under §2.4.3(a). Under §7.1.9, the 6.4 m replacement is valued at about €14.50/m for plain copper, without the chrome premium."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome 90° elbows, 15 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow equivalent standard fittings. Four plain copper elbows at €10 each give €40 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome 90° elbows, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.9 limits these replacement fittings to the plain copper equivalent. Five standard elbows at €20 each give €100 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome 45° elbow, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.24,
+   "rationale": "Under §7.1.9, one equivalent plain copper elbow is allowed at €20 gross, without the designer finish."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(c) covers minor repair fastenings. Eight screws at €1.10 each give €8.80 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamps, 10 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.3,
+   "rationale": "No 10 mm pipe is documented in the repair, so §7.1.8(e) excludes clamps of that dimension unless their use can be substantiated. If attributable, four at €5 each would total €20 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamps, 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) allows necessary pipe fixings. The matching four-clamp reference supports €25 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.15,
+   "rationale": "Sections 7.1.7(g) and 7.1.9 allow ordinary repair labour, not extra work to install new features. The matching standard-repair estimate for 6.75 hours is €595 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 418.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(g) covers necessary helper labour at customary rates. The matching 5.75-hour standard-repair estimate is €418 gross, with no allowance for extra upgrade labour."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad insulation shells",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 cover reinstating the old insulation standard, not the Armaflex upgrade. Six equivalent rock-wool shells at €20 each give €120 gross."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) allows ordinary fastening material for reinstating the pipe insulation. Two kilograms at €9.80/kg give €19.60 gross."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.9 excludes installations not present before the loss. The €75 figure is a conditional price estimate only, not an allowance for this addition."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.9 excludes the newly added valve because there was no pre-loss equivalent. The €110 figure is a conditional price estimate only."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) permit a lump sum for incidental repair consumables, provided it does not duplicate itemised costs. The comparable gross allowance is €36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) permits one travel charge per contractor per invoice. The single charge is estimated at €79 gross."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover necessary disposal of removed pipe and insulation from the insured repair. The comparable gross charge is €60."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) expressly excludes separate processing charges. The €20 figure is a conditional price estimate only, not a covered amount."
+  }
+ ]
+}

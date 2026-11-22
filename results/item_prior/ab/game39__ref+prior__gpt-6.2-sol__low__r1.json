@@ -1,0 +1,174 @@
+{
+ "game": 39,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 12 of 26 earlier cases, t = 0 in 14; when indemnified t per unit about 81 (80% range 73 to 88); revealed per unit: >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34)\n- line 6 \"Installer hours\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 63 (80% range 23 to 176)\n- line 8 \"Service technician hours\": indemnified in the one earlier case; when indemnified t per hr about 47 (80% range 36 to 69); revealed per hr: 44-49 (case 21), so this line (9 hr) about 425 (327 to 621)\n- line 9 \"Vehicle costs\": indemnified in 12 of 26 earlier cases, t = 0 in 14; when indemnified t per pc about 81 (80% range 73 to 88); revealed per pc: >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34)\n- line 15 \"Service technician hours\": indemnified in the one earlier case; when indemnified t per hr about 47 (80% range 36 to 69); revealed per hr: 44-49 (case 21), so this line (9 hr) about 425 (327 to 621)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Close wall opening and repaint disturbed area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.3,
+   "rationale": "The internal supply-pipe leak falls under §§2.4.2–2.4.3. Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the disturbed patch; €285 allows for a small patch repair and local repainting."
+  },
+  {
+   "item_id": "2",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. The gross estimate is €81 for one charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.7(c) covers consumable sealing material used in the pipe repair. The estimate is €9 for one allowance."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow the first metre at the pre-loss specification, estimated at €24 gross for a standard supply-pipe section."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation on the repaired section if it was present before the loss. One metre is estimated at €13 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer labour, 1 hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.79,
+   "rationale": "Section 7.1.7(g) covers necessary installer labour at the customary trade rate. One hour at €63 gives €63 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.7(e) allows necessary investigation, but §7.1.8(b) excludes a separate charge for the contractor's own measuring device. If this was instead documented as a necessary external equipment hire, the conditional allowance is €18."
+  },
+  {
+   "item_id": "8",
+   "description": "First service technician labour block, 9 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 7.1.7(e) and (g) cover necessary investigation and technician labour attributable to this leak. The nine-hour reference allowance is €425 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge on this contractor's invoice, even if several visits were needed. The conditional estimate for one eligible charge would be €81."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat-rate deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 72.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per operation. A brief deployment for the localized wall area is estimated at €72 gross."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) expressly excludes separately billed contractor blades. The conditional gross estimate for one blade is €12."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings, 2 pieces",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.7(c) covers ordinary fittings used to join the replacement section to the existing line. Two fittings at €15 each give €30 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Second stainless steel pipe entry, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.8(c) excludes repeat billing, and the claim does not establish a distinct second metre. If documented as additional pipe actually installed under §7.1.7(c), one metre would be €24 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "Pipe insulation shell, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.0,
+   "price_log_sd": 0.32,
+   "rationale": "This appears to repeat the one-metre insulation allowance at position 5, which §7.1.8(c) bars. If separately required and documented under §7.1.7(c), the conditional allowance is €13 gross."
+  },
+  {
+   "item_id": "15",
+   "description": "Second service technician labour block, 9 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.8(c) bars duplicate labour charges, and multiple visits alone do not substantiate a second identical nine-hour block. If documented as distinct and reasonably necessary under §7.1.7(g), the reference allowance is €425 gross."
+  }
+ ]
+}

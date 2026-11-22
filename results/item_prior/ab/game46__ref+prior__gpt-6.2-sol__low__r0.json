@@ -1,0 +1,229 @@
+{
+ "game": 46,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Hole drilling\": indemnified in 1 of 3 earlier cases, t = 0 in 2; when indemnified t per pc about 70 (80% range 52 to 107); revealed per pc: >=64 (case 14)\n- line 8 \"Vehicle costs\": indemnified in 16 of 32 earlier cases, t = 0 in 16; when indemnified t per pc about 80 (80% range 73 to 88); revealed per pc: >=83 (case 34), >=76 (case 34), >=65 (case 39), >=71 (case 40), >=82 (case 43), >=81 (case 44)\n- line 9 \"Skilled worker hours\": indemnified in 3 of 7 earlier cases, t = 0 in 4; when indemnified t per hr about 43 (80% range 33 to 59); revealed per hr: 35-42 (case 24), 35-40 (case 26), 50-58 (case 36), so this line (14 hr) about 599 (458 to 821)\n- line 12 \"Removal and disposal of damaged insulation\": indemnified in the one earlier case; when indemnified t per pc about 74 (80% range 55 to 113); revealed per pc: >=68 (case 21)\n- line 19 \"Rock wool pipe insulation\": indemnified in all 3 earlier cases; when indemnified t per m about 22 (80% range 18.3 to 26); revealed per m: >=22 (case 39), >=19.4 (case 40), >=19.0 (case 44)\n- line 20 \"Construction waste disposal\": indemnified in all 4 earlier cases; when indemnified t per unit about 60 (80% range 55 to 66); revealed per unit: >=57 (case 18), 58-61 (case 40), >=58 (case 43), >=57 (case 44)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Install wall tiles",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 195.0,
+   "price_log_sd": 0.25,
+   "rationale": "The full wall-and-plinth panel was damaged by escaped water under §2.4.2. Its measured area is about 3 m², allowing €195 at €65/m² for installation under §7.1.5."
+  },
+  {
+   "item_id": "2",
+   "description": "Drill tile opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.28,
+   "rationale": "One opening was needed to pass the pipe through the replacement tile under §5.2.6. Allow €70 for the documented opening if not included in the tiling rate."
+  },
+  {
+   "item_id": "3",
+   "description": "Standard wall tiles",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 54.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 3.5(a) and 7.1.6 limit replacement to equivalent budget-grade tiles. Allow €54 for 3 m² at €18/m²."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall levelling material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.3,
+   "rationale": "Only about 1 m² needed rebuilding down to the brick. Allow €25 for standard patching and levelling material under §§5.2.6 and 7.1.5."
+  },
+  {
+   "item_id": "5",
+   "description": "Oversized wall tiles",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 54.0,
+   "price_log_sd": 0.35,
+   "rationale": "No separate tile area or need for oversized tiles is documented, and line 3 already covers the panel. Sections 3.5(a), (d) and (e) bar the extra quantity and upgrade; €54 is the conditional standard-grade equivalent if this line replaces rather than duplicates line 3."
+  },
+  {
+   "item_id": "6",
+   "description": "Silicone joints",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.25,
+   "rationale": "Only the 2.4 m wall-to-plinth joint and roughly 0.85 m end joint are supported under §7.1.5. At €12/m, the necessary 3.25 m comes to €39."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium silicone sealant",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.3,
+   "rationale": "The 12 m quantity and premium grade are unsupported under §3.5(a) and (e), and §3.5(d) bars material already included in line 6. If separately payable, one standard cartridge for the documented joints would cost about €12."
+  },
+  {
+   "item_id": "8",
+   "description": "Tiler vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.075,
+   "rationale": "This is the first and only travel charge on the tiler's document, so §7.4.2 permits one customary charge of €80."
+  },
+  {
+   "item_id": "9",
+   "description": "Skilled worker labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.14,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 599.0,
+   "price_log_sd": 0.23,
+   "rationale": "Section 7.4.1 bars separate hours for labour already included in priced services, and no distinct 14-hour breakdown separates covered work from the attic job. If the full line were substantiated as separate necessary labour, the benchmark would be €599."
+  },
+  {
+   "item_id": "10",
+   "description": "Final tile wipe-down",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.5(c) allows cleaning of reinstated surfaces, but this was a routine finishing wipe already part of laying the tiles, not a separate cleaning service under §3.5(d). If shown to be distinct, a modest allowance would be €20."
+  },
+  {
+   "item_id": "11",
+   "description": "Remove wet plasterboard boxing",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.3,
+   "rationale": "Removing the wet board was necessary under §§5.2.1 and 5.2.6. Allow €65 for dismantling the small section, without a second charge for hauling it away."
+  },
+  {
+   "item_id": "12",
+   "description": "Remove and dispose of boxing insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.28,
+   "rationale": "The tiler removed and separately hauled away the wet mineral wool from the boxing, so it does not duplicate the container waste under §5.2.1. Allow the €74 benchmark for one lot."
+  },
+  {
+   "item_id": "13",
+   "description": "Remove damp basement plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.27,
+   "rationale": "The damp render extended across the approximately 3 m² panel, even though only 1 m² needed rebuilding down to the brick. Sections 5.2.6 and 7.1.5 support removal at €30/m², or €90."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove attic plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.55,
+   "rationale": "The attic staining predates the cellar leak, and §3.5(b) excludes work outside the established damage area. €75 is a conditional estimate for a small removal job only."
+  },
+  {
+   "item_id": "15",
+   "description": "Replace wall rosette",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.28,
+   "rationale": "The old ring broke during necessary tile removal, so a like-for-like replacement is part of making good under §5.2.6. Allow €12 for one ordinary chrome ring."
+  },
+  {
+   "item_id": "16",
+   "description": "Disassemble and reassemble pipe joint",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.27,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.32,
+   "rationale": "The failed olive caused a covered escape under §2.4.2, but the sound nut and absence of fracture do not establish separate pipe-repair cover under §2.4.3. Allow €85 conditionally for a short service if documented as necessary access and refitting under §5.2.6."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction dryer for seven days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.29,
+   "rationale": "Moisture readings support one dryer for seven days under §5.2.7, with no allowance for the owner's precautionary drying. At about €15 per day, the gross allowance is €105."
+  },
+  {
+   "item_id": "18",
+   "description": "Material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.4.4 requires the surcharge to be tied to necessary materials not already priced elsewhere, and the line does not establish that. If supported as distinct covered consumables, allow €12."
+  },
+  {
+   "item_id": "19",
+   "description": "Replace rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.14,
+   "rationale": "About one metre of lagging was directly damaged by escaped water under §2.4.2. Allow €22 for one metre of equivalent insulation under §7.1.6."
+  },
+  {
+   "item_id": "20",
+   "description": "Dispose of container waste",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.075,
+   "rationale": "Section 5.2.1 covers one disposal charge for the tiles, render and board in the container; the separately hauled boxing insulation is not included. Allow €60 for the documented small waste lot."
+  }
+ ]
+}

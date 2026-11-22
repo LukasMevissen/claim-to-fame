@@ -1,0 +1,75 @@
+{
+ "game": 20,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.10 preserves cause-and-extent assessment cover under §5.2.6(b) even for gradual leakage. An ordinary inspection and findings allowance of €300 gross is below the €3,000 event cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection, technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 495.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.10 and 5.2.6(a), (c) cover leak location, technician time and one vehicle charge. Estimate €420 gross for detection and technician time plus €75 gross for travel, below the respective limits of €1,000 and €83.30 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Linoleum and skirting removal, screed preparation and disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1600.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 7.1.10 excludes removal, preparation and disposal for moisture damage caused by gradual porosity. No pipe-access work is separately identified, so the expected payment is zero; the positive estimate is conditional on the whole line being accepted."
+  },
+  {
+   "item_id": "4",
+   "description": "Crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(b) expressly excludes provisioning for the contractor's personnel. The conditional figure is €15 gross per serving for three servings; expected payment is zero."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4200.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 7.1.10 bars §7.1.7 drying and disinfection for moisture damage from gradual pipe porosity, including the labour and dust protection bundled into this line. The positive figure is a conditional lump-sum estimate for the whole scope; expected payment is zero."
+  },
+  {
+   "item_id": "6",
+   "description": "Separately metered drying electricity",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 796.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.10 excludes the underlying drying, and §7.1.7 independently treats electricity as included in a drying lump sum. The conditional figure is 2,412.1 kWh at about €0.33 gross per kWh; expected payment is zero."
+  }
+ ]
+}

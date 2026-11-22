@@ -48,6 +48,33 @@ def price_items(items: list[ItemEstimate], cfg: Config) -> list[PricedItem]:
     return out
 
 
+def _with_item_prior(reference: str, case: Case, llm: dict, errors: list[str]) -> str:
+    """Opt-in ([llm] use_item_prior): append the PRICE PRIORS block for the recurring lines of
+    this invoice (c2f/item_prior.py) to the reference text. Never raises."""
+    if not llm.get("use_item_prior", False):
+        return reference
+    try:
+        from . import item_prior
+        block = item_prior.context_for_case(case)
+        return (reference + "\n\n" + block) if (reference and block) else (block or reference)
+    except Exception as e:  # noqa: BLE001  an extra, never a blocker
+        errors.append(f"item_prior: {e!r}"[:200])
+        return reference
+
+
+def _combine_item_prior(items: list[ItemEstimate], case: Case, cfg: Config) -> None:
+    """Opt-in ([belief] item_prior = "fuse" | "replace"): combine the model's estimates with
+    the item prior after the assessment (c2f/item_prior.py::combine). Never raises."""
+    mode = cfg.section("belief").get("item_prior", "off")
+    if mode not in ("fuse", "replace") or not items:
+        return
+    try:
+        from . import item_prior
+        item_prior.combine_for_case(items, case, mode)
+    except Exception as e:  # noqa: BLE001  an extra, never a blocker
+        print(f"[agent] item prior not combined: {e!r}")
+
+
 def price_case(case: Case, cfg: Config, use_cache: bool = True,
                budget: float | None = None,
                with_image: bool = True) -> tuple[list[PricedItem], dict]:
@@ -80,6 +107,7 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
             reference = pricebook.reference(max_chars=llm.get("pricebook_max_chars", 24000))
         except Exception as e:  # noqa: BLE001  the price book is an extra, never a blocker
             errors.append(f"pricebook: {e!r}"[:200])
+    reference = _with_item_prior(reference, case, llm, errors)
     for model in models:
         timeout = min(rt.get("llm_timeout_seconds", 30), deadline - (time.monotonic() - t0) - 5)
         if timeout < 5:
@@ -95,6 +123,7 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
             errors.append(f"{model}: {e!r}"[:300])
             print(f"[agent] model {model} failed: {e!r}")
     t1 = time.monotonic()
+    _combine_item_prior(items, case, cfg)
     priced = price_items(items, cfg)
     t2 = time.monotonic()
     timing = {"model": used, "with_image": with_image and case.image is not None,
@@ -131,6 +160,7 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
         from . import pricebook
         from .anthropic_extract import extract_claude
         reference = pricebook.reference(max_chars=cfg.section("llm").get("pricebook_max_chars", 24000))
+        reference = _with_item_prior(reference, case, cfg.section("llm"), [])
         # Large invoices at medium effort came close to the deadline (19 lines: 38 s; 22 lines:
         # 31 s against 19 s at low), so from [llm].low_effort_from_lines on the effort drops to low.
         from .pricebook import invoice_lines
@@ -143,6 +173,7 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
     except Exception as e:  # noqa: BLE001
         timing["model_errors"] = [f"{spec}: {e!r}"[:300]]
         print(f"[agent] backup {spec} failed: {e!r}")
+    _combine_item_prior(items, case, cfg)
     priced = price_items(items, cfg)
     timing["total_s"] = round(time.monotonic() - t0, 2)
     return priced, timing

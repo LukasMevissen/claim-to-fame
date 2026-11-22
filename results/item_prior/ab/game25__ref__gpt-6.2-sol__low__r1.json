@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.07,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the frost-fractured valve. Case 16 supports €52 gross for one valve."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.9 covers connection elements that must be renewed with the fractured fitting. Case 16 supports €30 gross for one standard hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 288.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary labour for the internal repair. Three hours at €96 gross total €288, consistent with the lower bound in Case 16."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(e) covers consumables actually used in the repair, but section 3.6(c) excludes the contractor's own tools and small equipment. Allow €9 gross if the line is supported as repair consumables, consistent with Case 16."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber's vehicle attendance",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 7.1.9 and 7.1.11 allow one attendance by the plumber for covered work. Case 16 supports €65 gross for the single trip."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging used to locate the internal escape. Allow €50 gross for equipment use, below the €2,500 gross event cap; no deductible amount is stated."
+  },
+  {
+   "item_id": "7",
+   "description": "Outdoor freeze-thaw facade damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 2.6.4 and 3.5 exclude outdoor frost damage because the optional peril is not shown as agreed. No escaped water reached the facade, so section 2.4.3 does not apply and the payable amount is €0."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes removal of failed exterior plaster where the underlying outdoor frost damage is uninsured. Payable: €0."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(b) and 7.1.7 exclude substrate reinstatement on the uninsured facade. Payable: €0."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(d) and 7.1.10 exclude the upgrade. Because the underlying facade repair is uninsured, there is no allowance even for the equivalent plain render: €0."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes reforming the substrate beneath render damaged by uninsured outdoor frost. Payable: €0."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes the finish coats on the uninsured facade regardless of the number applied. Payable: €0."
+  },
+  {
+   "item_id": "13",
+   "description": "Repainting undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate undamaged elevations for uniform appearance, even if the original facade damage were covered. Payable: €0."
+  },
+  {
+   "item_id": "14",
+   "description": "Facade priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) expressly excludes priming in consequence of uninsured outdoor frost damage. Payable: €0."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(c) and 7.1.11 exclude labour attributable to uninsured facade work. None of the five hours is payable."
+  },
+  {
+   "item_id": "16",
+   "description": "Painter's flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.7,
+   "rationale": "Under sections 7.1.12–7.1.13 and 9.6, the flat rate cannot be allocated to any covered work. If it is an administrative surcharge instead, section 3.6(b) also excludes it; payable €0."
+  }
+ ]
+}

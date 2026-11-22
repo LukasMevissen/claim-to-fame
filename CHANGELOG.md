@@ -7,6 +7,21 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 <!-- new entries below -->
 
+## unreleased: item prior (2026-11-22, changes quotes: `[llm] use_item_prior = true`)
+
+- `c2f/item_prior.py`: distribution of t per unit for every invoice line type that repeats
+  across games (hourly rates by grade, vehicle costs, waste disposal, fittings, fees), fitted
+  on the censored bounds the public transactions reveal: zero-inflated lognormal, lower bounds
+  with a gap model, an outlier component for policy arithmetic, capped games detected and
+  left out, level weighted by policy wording.
+- The agent appends a PRICE PRIORS block for the recurring lines of the invoice to the
+  reference cases (all stages). A/B on games 20-46 with `gpt-6.2-sol@low`, 3 runs per arm:
+  replayed net 63.5k -> 90.9k. Not tested on `claude-opus-5-5`.
+- `[belief] item_prior = "fuse" | "replace"`: the same prior combined with the model's
+  estimate after the assessment. Off; smaller gain (+4k to +10k).
+- `scripts/item_prior_backtest.py` (leave-future-out, no model calls),
+  `scripts/item_prior_ab.py` (model A/B, nothing submitted), `docs/research/item_prior.md`.
+
 ## unreleased (2026-11-21, live from game 10)
 
 - Live from game 26: the `claude-opus-5-5@low` answer is the one submitted (`[llm] prefer_backup`);

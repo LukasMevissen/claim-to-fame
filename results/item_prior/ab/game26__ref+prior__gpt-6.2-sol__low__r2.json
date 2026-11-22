@@ -1,0 +1,130 @@
+{
+ "game": 26,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 4 \"Shipping\": indemnified in 1 of 6 earlier cases, t = 0 in 5; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)\n- line 5 \"Vehicle costs\": indemnified in 8 of 17 earlier cases, t = 0 in 9; when indemnified t per pc about 74 (80% range 45 to 101); revealed per pc: >=68 (case 18*), >=76 (case 21*), >=76 (case 21*), >=76 (case 21*), 34-45 (case 23*), 38-44 (case 25*) (* = other policy wording)\n- line 6 \"Assembly costs\": indemnified in 3 of 4 earlier cases, t = 0 in 1; when indemnified t per pc about 113 (80% range 92 to 151); revealed per pc: >=100 (case 23*), 106-209 (case 24), >=97 (case 24) (* = other policy wording)\n- line 7 \"Apprentice hours\": indemnified in 1 of 4 earlier cases, t = 0 in 3; when indemnified t per hr about 46 (80% range 23 to 145); revealed per hr: 35-36 (case 23*) (* = other policy wording)\n- line 8 \"Skilled worker hours\": indemnified in 1 of 4 earlier cases, t = 0 in 3; when indemnified t per hr about 39 (80% range 30 to 59); revealed per hr: 35-42 (case 24)\n- line 11 \"Skilled worker hours\": indemnified in 1 of 4 earlier cases, t = 0 in 3; when indemnified t per hr about 39 (80% range 30 to 59); revealed per hr: 35-42 (case 24)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Elective premium carbon frame upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 225.0,
+   "price_log_sd": 0.4,
+   "rationale": "The original frame was undamaged. Sections 3.1.6 and 7.1.8(c) exclude the entire elective swap, not just the premium over a standard frame."
+  },
+  {
+   "item_id": "2",
+   "description": "Brake replacement during routine service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 139.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 3.1.6 and 7.1.10 exclude parts replaced during routine service rather than to repair theft damage. The comparable gross price would be about €139."
+  },
+  {
+   "item_id": "3",
+   "description": "Drivetrain service and tune-up",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "The tune-up is maintenance excluded by §§3.1.6 and 7.1.8(a). An ordinary standalone service would cost about €75 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Bike-shop shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Under §7.1.10, shipping follows the excluded workshop work. Nothing identifies this charge as transport from the recovery site under §5.2.2(d); the conditional benchmark is €26."
+  },
+  {
+   "item_id": "5",
+   "description": "Bike-shop vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.8(f) and 7.1.10 exclude attendance on the elective service invoice, with no separate recovery trip established. The conditional benchmark is €74."
+  },
+  {
+   "item_id": "6",
+   "description": "Bike-shop assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 113.0,
+   "price_log_sd": 0.19,
+   "rationale": "Under §§7.1.8(a) and 7.1.10, assembly for the elective upgrade and service is excluded. The conditional benchmark is €113."
+  },
+  {
+   "item_id": "7",
+   "description": "Bike-shop apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 46.0,
+   "price_log_sd": 0.72,
+   "rationale": "Section 7.1.10 allocates labour to the work it served, which here was excluded servicing and upgrading. The conditional benchmark is one hour at €46."
+  },
+  {
+   "item_id": "8",
+   "description": "Bike-shop skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.26,
+   "rationale": "The workshop labour follows the excluded service and upgrade under §§3.1.6 and 7.1.10. The conditional benchmark is one hour at €39."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 5.2.2(a) expressly covers necessary attendance at the recovery site even when the bike is undamaged. The €74 call-out requires no rateable reduction because estimated recovery costs total €243, below the €500 mobility cap."
+  },
+  {
+   "item_id": "10",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.2(b) covers cutting and removing the lock to release the bicycle. Allow about €130 gross for the full two-unit line, excluding any labour duplicated on line 11 under §7.1.8(g); the mobility cap does not bind."
+  },
+  {
+   "item_id": "11",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.26,
+   "rationale": "Section 5.2.2(b) covers necessary recovery labour if it is not already included in the lock-removal charge (§7.1.8(g)). One hour at €39 gross remains unreduced under the €500 mobility cap."
+  }
+ ]
+}

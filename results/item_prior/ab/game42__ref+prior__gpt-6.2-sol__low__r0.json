@@ -1,0 +1,75 @@
+{
+ "game": 42,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Air conditioning unit - living room (higher-output replacement, larger\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 1411 (80% range 1047 to 2122); revealed per pc: 1352-1445 (case 38)\n- line 2 \"Installation\": indemnified in 1 of 6 earlier cases, t = 0 in 5; when indemnified t per pc about 482 (80% range 358 to 724); revealed per pc: 468-488 (case 38)\n- line 4 \"Freight shipping\": indemnified in the one earlier case; when indemnified t per pc about 42 (80% range 31 to 63); revealed per pc: 40-43 (case 38)\n- line 6 \"Contractor administration fee\": NOT indemnified (t = 0) in all 8 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.998,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1411.0,
+   "price_log_sd": 0.27,
+   "rationale": "The fixed unit suffered insured lightning overvoltage under §2.3.3 and was nine metres from the hob, outside the five-metre exclusion in §2.3.10(c). Sections 7.1.9–7.1.10 cap payment at €1,411 gross for an equivalent 3.5 kW unit, excluding the cost of the upgrade to 7.1 kW."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 482.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.9(c) and 7.1.11 cover removal, fitting, connection and commissioning at the ordinary cost for the equivalent 3.5 kW replacement. The €482 gross estimate excludes any extra labour attributable to the upgrade."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.10 excludes the entire cost of a console chosen for appearance and not required to install the replacement; no portion is payable."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 cover ordinary carriage for the equivalent replacement, estimated at €42 gross. Any extra freight cost attributable to the larger unit or timed service is excluded."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.002,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 7.1.12 excludes the entire express or timed delivery surcharge unless agreed in advance or necessary to prevent further loss. Neither exception is indicated."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) excludes separately billed general administration and paperwork charges in full."
+  }
+ ]
+}

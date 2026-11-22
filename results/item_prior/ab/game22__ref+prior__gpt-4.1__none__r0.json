@@ -1,0 +1,31 @@
+{
+ "game": 22,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.3 covers diagnostic costs for portable insured equipment if an insured event under 2.6 is established. Here, the swerve and impact are sudden external action (2.6.1, 2.6.2), and the damage pattern is consistent (2.6.6). However, the battery health is below 80% (79%), so under 2.6.8 the unit is at the end of its working life and is not insured property for 2.6. Thus, 2.6.7 applies: no indemnity for any head, including diagnostics."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 549.0,
+   "price_log_sd": 0.05,
+   "rationale": "The policy (2.6.8) states that a unit with battery health below 80% is not portable insured equipment, so no indemnity is payable for repair or replacement (2.6.7), even though the damage is otherwise covered. Reference cases 5 and 6 confirm that if the gateway is not passed, t = 0 for all lines, regardless of the repair cost."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "game": 22,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.3 covers diagnostic costs for damaged portable insured equipment only if an insured event under 2.6 is established. Here, the swerve and impact are sudden external actions (2.6.1, 2.6.2), and the damage pattern is consistent (2.6.6). However, the battery health is below 80% (79%), which under 2.6.8 means the unit is no longer 'portable insured equipment' and is not covered under 2.6.7. Therefore, no indemnity is payable for any head, including diagnostics."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 744.0,
+   "price_log_sd": 0.05,
+   "rationale": "Although the physical damage is genuine and would otherwise be covered under 2.6.1–2.6.3, the battery health report (photo and text: 79% of design capacity) triggers 2.6.8. The laptop is not 'portable insured equipment' for policy purposes, so 2.6.7 applies: no indemnity for repair, replacement, or any ancillary cost."
+  }
+ ]
+}

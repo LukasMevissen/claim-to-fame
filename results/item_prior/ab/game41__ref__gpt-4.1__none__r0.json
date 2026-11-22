@@ -1,0 +1,207 @@
+{
+ "game": 41,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 245.0,
+   "price_log_sd": 0.15,
+   "rationale": "Theft peril applies; frame was genuinely damaged in the theft (2.3.1(b)), so repair/replacement is indemnifiable as a necessary repair cost (7.1.1(b), 7.1.7(b)). Subject to the EUR 500 mobility equipment sub-limit (4.2.2), rateably across all indemnifiable lines in this class. Reference Case 24: t between 142 and 349 for frame replacement."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.1,
+   "rationale": "Brakes were genuinely damaged in the theft (2.3.1(b)), so repair/replacement is indemnifiable as a necessary repair cost (7.1.1(b), 7.1.7(b)). Subject to the EUR 500 mobility equipment sub-limit, rateably. Reference Case 24: t between 130 and 148 for brake replacement."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.05,
+   "rationale": "Tracker was not itself damaged or taken in the theft; replacement is an elective purchase and not indemnifiable (3.1.7, 7.1.8(b))."
+  },
+  {
+   "item_id": "4",
+   "description": "Service second household bicycle (not stolen)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.1,
+   "rationale": "Second bike was not affected by the theft; service is maintenance and not indemnifiable (3.1.6, 7.1.8(a), 7.1.5)."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Helmet and lights were not affected items; these are new accessories purchased after the event and not indemnifiable (3.1.7, 7.1.8(b))."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.1,
+   "rationale": "Shipping is indemnifiable only if it relates to the repair/recovery of the affected bike (7.1.7(f)). Reference Case 24: t between 24 and 27. Subject to sub-limit and rateable reduction."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.2,
+   "rationale": "Vehicle costs are ancillary and indemnifiable only if they relate to the repair/recovery of the affected bike (7.1.7(g)). Reference Case 24: t below 27, possibly 0, but Case 34: t >= 76 for vehicle costs. Given context, moderate estimate and subject to sub-limit."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.2,
+   "rationale": "Assembly costs are indemnifiable as part of the repair of the affected bike (7.1.7(c)). Reference Case 24: t between 106 and 209, but subject to sub-limit and rateable reduction."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.3,
+   "rationale": "Miscellaneous items are only indemnifiable if they are small parts/sundries consumed in the repair of the affected bike (7.1.7(e)). Reference Case 24: t below 8, possibly 0."
+  },
+  {
+   "item_id": "10",
+   "description": "Apprentice hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.25,
+   "rationale": "Labour hours are indemnifiable if they relate to the repair of the affected bike (7.1.7(d)). Reference Case 24: t below 18, possibly 0."
+  },
+  {
+   "item_id": "11",
+   "description": "Skilled worker hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour hours are indemnifiable if they relate to the repair of the affected bike (7.1.7(d)). Reference Case 24: t between 35 and 42."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Recovery cost under 5.2.2(a); necessary to recover the stolen bike. Reference Case 24: t below 35, possibly 0, but Case 26: t below 35, possibly 0. Given necessity, moderate estimate."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock to release bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 99.0,
+   "price_log_sd": 0.05,
+   "rationale": "Recovery cost under 5.2.2(b); necessary to recover the stolen bike. Reference Case 26: t >= 99 for 2 pcs."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs – return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.3,
+   "rationale": "Ancillary recovery cost, only indemnifiable if required for the recovery (7.1.7(g), 5.2.2(a)). Reference Case 24: t below 30, possibly 0."
+  },
+  {
+   "item_id": "15",
+   "description": "Impound release / storage fee paid to recover bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 119.0,
+   "price_log_sd": 0.05,
+   "rationale": "Explicitly covered as a recovery cost under 5.2.2(c); charge required by third party for release of recovered item. Capped by EUR 1,000 recovery limit and EUR 500 mobility equipment sub-limit."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.05,
+   "rationale": "Explicitly excluded under 3.1.5 and 7.1.8(d); not indemnifiable."
+  },
+  {
+   "item_id": "17",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.25,
+   "rationale": "Labour hours are indemnifiable if they relate to the recovery of the affected bike (7.1.7(d), 5.2.2(b)). Reference Case 24: t below 18, possibly 0."
+  },
+  {
+   "item_id": "18",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour hours are indemnifiable if they relate to the recovery of the affected bike (7.1.7(d), 5.2.2(b)). Reference Case 24: t between 35 and 42."
+  }
+ ]
+}

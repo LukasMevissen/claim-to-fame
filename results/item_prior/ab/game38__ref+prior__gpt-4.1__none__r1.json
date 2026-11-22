@@ -1,0 +1,75 @@
+{
+ "game": 38,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Installation - living-room unit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 4 \"Installation - kitchen unit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit - living room (surge damaged, replaced like-for-like)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.25,
+   "rationale": "The living-room unit is a fixed, permanently wired installation serving the building, damaged by insured overvoltage (2.3.3). Replacement like-for-like is covered under 7.1.9, capped at the cost of an equivalent unit. No policy sub-limit or purchase price is stated. Reference Case 15 (speaker system: t = 389–525) and Case 33 (laptop replacement: t = 1220–1472) suggest a fair range for a fixed AC unit is likely somewhat higher than a speaker but lower than a laptop. The unit is not near the hob, so the kitchen exclusion (2.3.10(c)) does not apply."
+  },
+  {
+   "item_id": "2",
+   "description": "Air conditioning unit - kitchen (wall-mounted a couple of metres from the hob)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.05,
+   "rationale": "Although the kitchen unit is a fixed installation, 2.3.10(c) specifically excludes overvoltage damage to climate-control equipment installed within five metres of a cooking appliance, regardless of cause. The invoice and photo confirm the unit is within this range. Therefore, the entire line is excluded."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation - living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.05,
+   "rationale": "Installation is an ancillary charge (1.3) and is only indemnified if the principal item (the living-room unit) is covered (7.1.11). Reference price priors show installation lines for AC units have never been indemnified (t = 0 in all 4 earlier cases), so t = 0 here as well."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation - kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.05,
+   "rationale": "Ancillary charge for a principal item (kitchen unit) that is itself excluded by 2.3.10(c). Per 7.1.11, ancillary charges follow the principal item, so this is also excluded."
+  },
+  {
+   "item_id": "5",
+   "description": "Floor console (equivalent stand for the living-room unit)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "The floor console is a fixed support required for the living-room unit (7.1.9(b)), and the old one was damaged and could not be reused. This is indemnified as part of the necessary replacement. Reference Case 33 (laptop replacement: t = 1220–1472 for a principal item, but this is a support, so lower), and Case 32 (base plaster: t = 35–41) suggest a moderate value."
+  },
+  {
+   "item_id": "6",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.3,
+   "rationale": "Freight shipping is an ancillary charge (1.3) and is indemnified only for the covered principal item (living-room unit). Since only one unit is covered, indemnity is limited to the proportionate cost for that unit. Reference Case 15 (shipping: t < 4, possibly 0) and Case 32 (vehicle costs: t = 37–41) suggest a low threshold."
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "game": 33,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 8 \"Administration fee\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop replacement - equivalent to the damaged model (repair uneconomic per supplier report)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 2.6 and 7.1.10: Sudden accidental damage to portable equipment is covered, and the battery health waiver means the below-80% battery does not exclude cover. The replacement is capped at the cost of an equivalent model, not a higher-spec one. Reference Case 22 (laptop screen and corner repair, t below 313) and general market for full replacement: a fair indemnity for a mainstream laptop is likely in the 600–900 EUR range, but the exact t is not revealed in prior cases. Moderate estimate."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference (better model than the one damaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: No betterment over pre-loss standard; indemnity is limited to the equivalent model. The upgrade cost is not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair (struck in the same bag)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 2.6 and 7.1.10: Sudden accidental damage to portable equipment is covered. The tablet was in the same incident and the screen was cracked. Reference Case 22 (laptop screen repair t below 313) and general market for tablet screen repair: a fair indemnity is likely in the 120–180 EUR range."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection of both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 5.2.3: Diagnostic costs for damaged portable equipment are covered up to EUR 250 per event. Reference Case 22 (diagnostic t below 26, possibly 0), but here two devices were inspected and the policy allows up to 250. Moderate estimate for both devices together."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag (not damaged in the incident)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.5 and 7.1.9: Only items damaged by the insured event are covered. The bag was not damaged, so this is not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty on the replacement laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 3.5(f) and 7.1.8(e): The cost of a warranty or service contract is expressly excluded."
+  },
+  {
+   "item_id": "7",
+   "description": "Data recovery from the damaged laptop drive",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 3.5(d) and 4.3(c): Data recovery is not covered unless specifically endorsed, which is not the case here."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.05,
+   "rationale": "Reference cases and policy 7.1.8(b): Administration/processing fees are not indemnified."
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "game": 38,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioner",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1450.0,
+   "price_log_sd": 0.3,
+   "rationale": "The fixed unit is insured under 4.2.3, and the lightning surge is covered under 2.3.3. At about seven metres from the hob it falls outside the five-metre exclusion, so 7.1.9 allows €1,450 gross for one equivalent replacement, excluding separately billed labour, console and freight."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioner",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.3.10(c) excludes surge damage to climate-control equipment within five metres of the hob. The unit is about two metres away and no kitchen climate endorsement was taken, so the payable amount is €0."
+  },
+  {
+   "item_id": "3",
+   "description": "Living-room unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 475.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.9(c) covers ordinary removal, fitting, connection and commissioning labour for the covered replacement. Allow about five technician-hours at €95 gross per hour, or €475."
+  },
+  {
+   "item_id": "4",
+   "description": "Kitchen unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under 7.1.11, installation labour follows the principal item. The kitchen unit is excluded under 2.3.10(c), so none of its installation charge is payable."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(b) covers the equivalent support because the original was scorched and could not be reused. Allow €150 gross for one standard console, with no decorative upgrade under 7.1.10."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 59.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.11–7.1.12 allow only the living-room unit’s share of ordinary freight. Using estimated unit values in the absence of weight-based billing details, €100 gross × €1,450 / (€1,450 + €1,000) gives about €59."
+  }
+ ]
+}

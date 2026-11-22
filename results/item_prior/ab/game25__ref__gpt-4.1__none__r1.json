@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered under 2.4.4(b) and 7.1.9: frost-related fracture of an internal fitting, including like-for-like replacement, labour, and necessary materials. Reference Case 16 shows t between 48 and 55 for a similar fitting."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered as a necessary connection element renewed with the fractured fitting (7.1.9). Reference Case 16: t between 27 and 33 for a similar hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours (3 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour for covered repair (7.1.7(f), 7.1.9). Reference Case 16: t >= 274 for 3 hrs senior installer. Full amount indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "Consumables for covered repair (7.1.7(e)), but reference Case 16: t below 11, possibly 0 (lowest charge proven too high)."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.05,
+   "rationale": "Ancillary charge for attendance on covered work (7.1.11). Reference Case 16: t >= 60 for similar vehicle costs."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.3,
+   "rationale": "Leak location is covered (2.4.6, 5.1(b)), but reference Case 16: t below 57, possibly 0 (lowest charge proven too high)."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade frost damage from outdoor freeze-thaw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 2.6.4 and 3.5 exclude frost damage to external surfaces unless the optional peril is agreed. The schedule does not show it as agreed. Reference Case 16 and 7: t = 0 for similar lines."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes removal of failed surface material from external surfaces where the peril is not agreed. Reference Case 16: t below 12, possibly 0."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes renewal of substrate and base plaster for external frost damage where the peril is not agreed. Reference Case 16: t below 17, possibly 0."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render system (upgrade on former plain plaster)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.7,
+   "rationale": "Not covered: 3.5(b) excludes all work on external surfaces for frost damage where the peril is not agreed, and 7.1.10 excludes upgrades even if the peril were covered."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes renewal of substrate for external frost damage where the peril is not agreed. Reference Case 16: t below 10, possibly 0."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes all finish work on external surfaces for frost damage where the peril is not agreed. Reference Case 16: t below 16, possibly 0."
+  },
+  {
+   "item_id": "13",
+   "description": "Repaint of undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.7,
+   "rationale": "Not covered: 7.1.5 and 3.5(b) exclude work on undamaged areas and all work on external surfaces for frost damage where the peril is not agreed."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes all preparatory work on external surfaces for frost damage where the peril is not agreed. Reference Case 16: t below 8, possibly 0."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours (5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes all labour for external frost damage where the peril is not agreed. Reference Case 16: t below 17, possibly 0."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not covered: 3.5(b) excludes all lump-sum items for external frost damage where the peril is not agreed. Reference Case 16: t below 9, possibly 0."
+  }
+ ]
+}

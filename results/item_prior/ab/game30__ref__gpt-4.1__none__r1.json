@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour checking and rewiring the flooded basement circuits (12 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.1 and 3.6.2: The cause is inundation (surface water/rainwater from outside, not plumbing), which is only covered if the schedule records the further natural hazards group (2.1(c2)). If not, all work is excluded, including repair, labour, and materials. Even if covered, only the affected parts (7.1.5) and no betterment (7.1.9). Reference cases show t = 0 for all lines when inundation is not insured."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (electrician)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(f): All journey/vehicle charges are excluded if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for vehicle costs in similar circumstances."
+  },
+  {
+   "item_id": "3",
+   "description": "Procurement of a motor pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 3.6.2(d): Working equipment and its procurement are not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for such equipment."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 3.6.2(d): Working equipment for water removal is not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for such equipment."
+  },
+  {
+   "item_id": "5",
+   "description": "Water extraction from the flooded basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(d): Measures to remove standing water are not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for water removal after surface flooding."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for the rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(c): Materials for repair are not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for all repair materials in such cases."
+  },
+  {
+   "item_id": "7",
+   "description": "Renew boiler system including flue gas system and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6000.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 3.6.2(a): Replacement of installations is not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for plant replacement after surface flooding."
+  },
+  {
+   "item_id": "8",
+   "description": "Adjust supply pipework to fit the replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(a): Adaptation work is not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for such work."
+  },
+  {
+   "item_id": "9",
+   "description": "Dispose of the old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(e): Disposal of installations is not indemnified if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for disposal after surface flooding."
+  },
+  {
+   "item_id": "10",
+   "description": "Vehicle costs (heating contractor)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 3.6.2(f): All journey/vehicle charges are excluded if the claim is barred by 3.6 (inundation not insured). Reference cases confirm t = 0 for vehicle costs in similar circumstances."
+  }
+ ]
+}

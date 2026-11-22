@@ -1,0 +1,20 @@
+{
+ "game": 28,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning replacement, installation and delivery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2400.0,
+   "price_log_sd": 0.4,
+   "rationale": "The fixed unit is within five metres of the hob, so §2.3.10(c) excludes the surge damage without a kitchen climate endorsement. Under §§7.1.11 and 9.5, installation and delivery follow the excluded replacement, leaving nothing payable on the combined line."
+  }
+ ]
+}

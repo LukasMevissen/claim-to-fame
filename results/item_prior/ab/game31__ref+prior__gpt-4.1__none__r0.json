@@ -1,0 +1,53 @@
+{
+ "game": 31,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 4 \"Shipping\": indemnified in 1 of 7 earlier cases, t = 0 in 6; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation from Spanish to English",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(f): translation of documents for the purposes of the claim is not indemnifiable, regardless of necessity or who performs it."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(e)/(f): working materials and ancillary charges raised alongside a non-indemnifiable translation are not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for robbery damage (watch and cash)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.05,
+   "rationale": "Indemnified under 2.3.1, 4.2.2, 4.2.3, 4.2.4, 7.1.1, 7.1.5, 7.1.10: both the watch (valuables, sub-limit EUR 2,500 per item) and the cash (means of payment, sub-limit EUR 500) were taken by force while away from the insured premises and reported to the police. No separate valuables schedule exists, so sub-limits apply. The total indemnity is capped at EUR 3,000 (EUR 2,500 for the watch + EUR 500 for the cash), less the EUR 50 deductible (7.8), for a maximum of EUR 2,950 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.2,
+   "rationale": "Excluded by 7.1.8(b): carriage, shipping, delivery and comparable charges are not indemnified, even if raised on a settlement statement for indemnifiable property."
+  }
+ ]
+}

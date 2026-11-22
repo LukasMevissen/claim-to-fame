@@ -27,6 +27,13 @@ prefer_backup = true
 temperature = 0.0
 use_pricebook = true         # show earlier cases with their revealed t bounds (c2f/pricebook.py)
 pricebook_max_chars = 24000
+# Item prior as context (c2f/item_prior.py): append a PRICE PRIORS block for the recurring
+# lines of the invoice (t per unit with an 80 % range, how often the line type was indemnified).
+# A/B on games 20-46, gpt-6.2-sol@low, 3 runs per arm, prior fitted on earlier games only:
+# replayed net 63.5k -> 90.9k, price error on lines with a prior row 0.27 -> 0.23
+# (scripts/item_prior_ab.py, docs/research/item_prior.md). Not tested on claude-opus-5-5
+# (no Anthropic credit on 2026-11-22): set to false if its shadow results get worse.
+use_item_prior = true
 
 [shadow]
 # Models that assess every case in parallel to the live workflow. Never submitted; scored
@@ -106,3 +113,10 @@ min_sigma = 0.2
 confident_below = 0.12       # stated log-sd below this is trusted ...
 confident_min_sigma = 0.10   # ... down to this value (limit b = about 0.96 x estimate)
 max_sigma = 1.2
+# Item prior at belief level (c2f/item_prior.py::combine), applied after the assessment to lines
+# the model believes indemnified and whose estimate is within e^1 of the prior:
+# "off" | "fuse" (precision-weighted with the model's estimate) | "replace" (the prior's level).
+# Same A/B: 63.5k -> 67.3k (fuse) / 73.3k (replace); stored live answers of games 5-46:
+# 80.7k -> 89.2k / 91.2k. Less than the prompt block ([llm] use_item_prior), and the same
+# evidence would count twice with both on, so this stays off while the block is on.
+item_prior = "off"

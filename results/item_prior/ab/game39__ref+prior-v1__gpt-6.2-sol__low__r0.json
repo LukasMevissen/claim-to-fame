@@ -1,0 +1,174 @@
+{
+ "game": 39,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 12 of 26 earlier cases, t = 0 in 14; when indemnified t per unit about 81 (80% range 73 to 88); revealed per unit: >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34)\n- line 6 \"Installer hours\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 63 (80% range 23 to 176)\n- line 8 \"Service technician hours\": indemnified in the one earlier case; when indemnified t per hr about 47 (80% range 36 to 69); revealed per hr: 44-49 (case 21), so this line (9 hr) about 425 (327 to 621)\n- line 9 \"Vehicle costs\": indemnified in 12 of 26 earlier cases, t = 0 in 14; when indemnified t per pc about 81 (80% range 73 to 88); revealed per pc: >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34)\n- line 15 \"Service technician hours\": indemnified in the one earlier case; when indemnified t per hr about 47 (80% range 36 to 69); revealed per hr: 44-49 (case 21), so this line (9 hr) about 425 (327 to 621)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Close and repaint the disturbed wall area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.32,
+   "rationale": "The internal supply-pipe leak is covered under §2.4. Sections 7.1.5 and 7.1.7(a) cover closing the access opening and repainting the disturbed area, estimated at €350 gross for the local patch."
+  },
+  {
+   "item_id": "2",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. One flat-rate charge is estimated at €81 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers minor consumables used to seal the repaired pipe. Allow €12 gross for one lot."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe, first metre",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 cover material corresponding to the original installation, not an upgrade. Allow €24 gross for one metre at ordinary like-for-like cost, subject to confirming the pipe specification."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.7(c) covers reinstating insulation that was present before the loss. Allow €14 gross for one metre."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(g) covers reasonable trade labour for the local pipe repair. One installer hour at €63 gross gives €63."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(b) excludes the contractor's own measuring equipment even when the investigation itself is covered. The €20 conditional estimate would apply only if this were substantiated as necessary equipment hire for drying under §7.1.7(e)."
+  },
+  {
+   "item_id": "8",
+   "description": "First service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.7(e) and (g) cover necessary investigation and repair labour, but only for time reasonably required. The nine-hour line is benchmarked at approximately €425 gross, subject to time records supporting those hours."
+  },
+  {
+   "item_id": "9",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge on this contractor's invoice, even for separate visits. The €81 figure is the conditional benchmark for one vehicle charge, not an additional allowance."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.7(b) and (e) allow one equipment deployment charge for the necessary drying operation. Allow €75 gross for short use on the local wall area."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) expressly excludes contractor blades as business equipment. The nominal conditional benchmark is €8 gross for one blade."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 34.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(d) allow fittings attributable to the repaired connection. If these are the two fittings used, allow 2 × €17 = €34 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Stainless steel pipe, second metre",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.16,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.8(c) and (d) exclude duplicate or unsupported quantities; the claim describes a single local repair and does not establish a second metre. If separately documented as installed and like-for-like, allow €24 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "Pipe insulation shell, one metre",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.19,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(c)–(d) allow this only if it reinstates a distinct length of original insulation rather than duplicating position 5. The conditional allowance is €14 gross for one metre."
+  },
+  {
+   "item_id": "15",
+   "description": "Second service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.14,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.7(g) and 7.1.8(c) exclude duplicated labour and require reasonable time; a return visit alone does not substantiate a second identical nine-hour block. If distinct and necessary, nine hours are benchmarked at €425 gross."
+  }
+ ]
+}

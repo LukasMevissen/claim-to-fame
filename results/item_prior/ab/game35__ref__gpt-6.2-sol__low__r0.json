@@ -1,0 +1,31 @@
+{
+ "game": 35,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is excluded under §§2.1 and 3.1.4. The clothing and jewellery are also excluded as personal property, vehicle contents, and property away from the insured location under §§4.3(d)–(f), so no amount is payable."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 5.2.5 and 7.1.8(d) exclude vehicle and journey charges; the exception for covered debris transport does not apply. The car itself is also excluded under §4.3(e), so no amount is payable."
+  }
+ ]
+}

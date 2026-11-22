@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen leak detection and moisture measurements",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.2,
+   "rationale": "Water escaping from the copper supply is covered under §2.4.2, and §7.1.7(e)–(g) covers source location, moisture measurements, necessary labour and one call-out. Using Case 21, allow about €650 for 14 technician-hours, €450 for acoustic pinpointing, €165 for moisture measurements and €235 for the call-out."
+  },
+  {
+   "item_id": "2",
+   "description": "Access, copper pipe repair and re-insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.22,
+   "rationale": "The localized indoor pipe failure is covered under §2.4.3(a), with necessary access and like-for-like reinstatement under §7.1.7. Allow about €140 to expose the run, €200 to replace just over 1.5 m of copper and its fittings, and €60 to remove and replace the soaked foam lagging."
+  },
+  {
+   "item_id": "3",
+   "description": "Plumber's vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(f) permits the first travel charge per contractor per invoice. The leak detector's call-out is on a separate contractor invoice, so allow €76 for the plumber's vehicle charge, in line with Case 21."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and completion readings for the documented wet floor and wall base. Allow about €100 for one condensation dryer for roughly seven days and €100 for setup, collection and final readings, with no separate electricity allowance under §7.1.8(d)."
+  }
+ ]
+}

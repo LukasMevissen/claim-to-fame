@@ -1,0 +1,75 @@
+{
+ "game": 38,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1450.0,
+   "price_log_sd": 0.35,
+   "rationale": "The permanently wired unit is insured under 4.2.3, and at about seven metres from the hob it is outside the five-metre exclusion in 2.3.10(c). Under 7.1.9–7.1.10, €1,450 gross allows for like-for-like supply only; no deductible amount is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1050.0,
+   "price_log_sd": 0.4,
+   "rationale": "At about two metres from the hob, the unit is excluded from lightning-surge cover by 2.3.10(c), and no kitchen climate endorsement is in force. The €1,050 gross figure is a conditional supply estimate only."
+  },
+  {
+   "item_id": "3",
+   "description": "Living-room unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.9(c) covers the labour to remove the affected unit, fit and connect its replacement, and commission it. €480 gross allows for ordinary installation labour without a premium surcharge."
+  },
+  {
+   "item_id": "4",
+   "description": "Kitchen unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.35,
+   "rationale": "Under 7.1.11, installation follows the principal item, which is excluded by 2.3.10(c). The €420 gross figure is a conditional labour estimate only."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.9(b) covers a like-for-like support needed to install the replacement when the old one cannot be reused. The scorched console meets that test; €150 gross allows for an equivalent stand, not a decorative upgrade."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 58.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.11–7.1.12 cover ordinary freight only in the living-room unit's share, apportioned by value unless freight was billed by weight or volume. Applying the estimated value share of €1,450 out of €2,500 to €100 gross shared freight gives €58, subject to an itemised split if required."
+  }
+ ]
+}

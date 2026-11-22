@@ -1,0 +1,20 @@
+{
+ "game": 28,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air-conditioning replacement, installation and delivery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2200.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.3.10(c) excludes lightning-surge damage to climate-control equipment within five metres of a cooking appliance; the unit is mounted by the hob and no kitchen climate endorsement applies. Installation and delivery follow the excluded unit under 7.1.11, so the entire combined line is excluded under 9.5; the positive estimate is conditional on the exclusion not applying and assumes one documented replacement."
+  }
+ ]
+}

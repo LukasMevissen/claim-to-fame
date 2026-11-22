@@ -1,0 +1,31 @@
+{
+ "game": 37,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 11.0,
+   "price_log_sd": 0.05,
+   "rationale": "Per 3.1.4 and 4.3(d), loss of or damage to property taken away by a third party is not covered, regardless of means or location. The policy does not insure movable belongings or personal effects (see 1.1, 4.3(d), and 4.3(e)), and theft is not an insured peril under Part 2. Reference Case 35 confirms t = 0 for this scenario."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.05,
+   "rationale": "Expenditure connected with a conveyance or journey is expressly excluded (see 5.2.5 and 4.3(e)), and the policy does not cover any costs related to vehicles, whether parked at the insured location or not. Reference Case 35 confirms t = 0 for this scenario."
+  }
+ ]
+}

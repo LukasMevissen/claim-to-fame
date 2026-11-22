@@ -1,0 +1,53 @@
+{
+ "game": 31,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English police report translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Clauses 3.1.6 and 7.1.8(f) exclude translation costs for claim documents, even when the report is required under 2.3.3."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation service materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Clauses 7.1.8(e) and (f) exclude the provider's working materials and any surcharge billed alongside the excluded translation."
+  },
+  {
+   "item_id": "3",
+   "description": "Robbery compensation for watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.09,
+   "rationale": "The reported armed robbery away from home is covered under 2.3 and 11.1, subject to the itemisation required by 7.1.10. The Tudor watch is estimated to reach the €2,500 per-item valuables cap and the cash exceeds the €500 cash cap; their €3,000 total is below the €5,000 away-from-home limit, leaving €2,950 after the single €50 deductible."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping on compensation statement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Clauses 5.2.3 and 7.1.8(b) exclude forwarding and shipping, even when billed on the same statement as covered property compensation."
+  }
+ ]
+}

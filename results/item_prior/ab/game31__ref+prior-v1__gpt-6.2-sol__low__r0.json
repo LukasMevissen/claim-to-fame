@@ -1,0 +1,53 @@
+{
+ "game": 31,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 4 \"Shipping\": indemnified in 1 of 7 earlier cases, t = 0 in 6; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Police report translation, 68 lines",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 136.0,
+   "price_log_sd": 0.35,
+   "rationale": "The police report is required under 2.3.3, but 3.1.6 and 7.1.8(f) expressly exclude the cost of translating it to substantiate the claim."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "The translator’s working materials are excluded under 7.1.8(e) and (f), both as provider overhead and as an ancillary charge to excluded translation work."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for stolen watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.1,
+   "rationale": "The reported armed robbery away from home is covered under 2.3 and 4.2.4; subject to the evidence required by 7.1.10, the watch is estimated to reach the €2,500 per-item valuables cap and the cash exceeds its €500 cap. The €5,000 away-from-home limit does not reduce the €3,000 subtotal, and the single €50 deductible under 7.8 leaves €2,950."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping or forwarding",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Clause 7.1.8(b) excludes shipping and forwarding even when the charge appears on the same statement as covered property compensation."
+  }
+ ]
+}

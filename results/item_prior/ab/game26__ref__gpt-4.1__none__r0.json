@@ -1,0 +1,130 @@
+{
+ "game": 26,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Upgrade to premium carbon frame (elective, bicycle recovered undamaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 3.1.6, 7.1.8(c): The frame upgrade is an elective improvement, not caused by the insured event. The recovered bicycle was undamaged, so no indemnity for upgrades or elective replacements."
+  },
+  {
+   "item_id": "2",
+   "description": "Brake replacement as part of routine service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 3.1.6, 7.1.8(a): Routine service and replacement of undamaged parts is not indemnified. No damage to brakes from the theft event."
+  },
+  {
+   "item_id": "3",
+   "description": "Full drivetrain service and tune-up",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 3.1.6, 7.1.8(a): General servicing and tune-up is maintenance, not repair of insured damage. Not indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(b): Shipping is only indemnified if it relates to covered repair or recovery. Here, it is for elective work and not for recovery or repair of insured damage."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(f): Vehicle costs are only indemnified if required for covered repair or recovery. Here, they relate to elective work and are not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(a): Assembly for elective upgrades or maintenance is not indemnified. No insured damage to repair."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(a): Labour for elective or maintenance work is not indemnified. No insured damage."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(a): Labour for elective or maintenance work is not indemnified. No insured damage."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.2(a), 7.1.7(g): This is a necessary recovery cost to regain possession of the stolen bicycle. Indemnified, but subject to the EUR 500 mobility equipment sub-limit (4.2.2) in aggregate with other recovery costs."
+  },
+  {
+   "item_id": "10",
+   "description": "Cut and remove seized lock to release bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.2(b): Cutting the lock is a necessary recovery cost for the stolen bicycle. Indemnified, but subject to the EUR 500 mobility equipment sub-limit in aggregate with other recovery costs."
+  },
+  {
+   "item_id": "11",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.2(b), 7.1.7(d): Labour for the recovery of the stolen bicycle is indemnified, subject to the EUR 500 mobility equipment sub-limit in aggregate with other recovery costs."
+  }
+ ]
+}

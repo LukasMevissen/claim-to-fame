@@ -1,0 +1,75 @@
+{
+ "game": 45,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 6 \"Shipping\": indemnified in 1 of 8 earlier cases, t = 0 in 7; when indemnified t per pc about 27 (80% range 7.8 to 82); revealed per pc: 24-27 (case 24*) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation from Spanish to English, 2 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(f): translation of documents for the purposes of substantiating the claim is not indemnified, regardless of necessity or who performed it."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "Excluded by 7.1.8(f) and 3.1.6: working materials and ancillary charges for translation or claim substantiation are not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for stolen watch (premium replacement model, upgrade on the one taken)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.05,
+   "rationale": "7.1.9: Indemnity is limited to the cost of an equivalent standard-grade replacement of the watch taken, not a higher-spec upgrade. 4.2.2 and 6.3: Valuables sub-limit of €2,500 per item applies, as no separate schedule exists. 6.2.3: Indemnity is the lower of replacement value for same kind/quality or sub-limit."
+  },
+  {
+   "item_id": "4",
+   "description": "Compensation for cash taken in robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.05,
+   "rationale": "4.2.3 and 2.3.2: Means of payment taken by force is covered up to the means-of-payment sub-limit of €500 per event, even if more was lost."
+  },
+  {
+   "item_id": "5",
+   "description": "Replacement of designer sunglasses (mislaid separately, not taken in robbery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.3,
+   "rationale": "2.3.4(a), 7.1.5: Property mislaid or lost without an insured event (force/threat) is not covered, even if plausibly related to the trip."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.3,
+   "rationale": "7.1.8(b): Shipping, carriage, delivery and comparable charges are not indemnified, even if related to replacement property."
+  }
+ ]
+}

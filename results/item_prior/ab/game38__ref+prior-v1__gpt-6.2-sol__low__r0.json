@@ -1,0 +1,75 @@
+{
+ "game": 38,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 3 \"Installation - living-room unit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 4 \"Installation - kitchen unit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1250.0,
+   "price_log_sd": 0.35,
+   "rationale": "The fixed unit is insured under 4.2.3, and its lightning-surge damage is covered under 2.3.3 because it is outside the five-metre exclusion in 2.3.10(c). Under 7.1.9–7.1.10, €1,250 is the estimated gross equipment cost for a like-for-like replacement; no deductible amount is supplied."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.3.10(c) excludes surge damage to climate-control equipment within five metres of a cooking appliance, and no kitchen climate endorsement applies. The €950 figure is a conditional equipment estimate only."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation of living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.9(c) expressly covers ordinary labour to fit, connect and commission the covered replacement. The €380 gross estimate excludes any upgrade or expedited-service surcharge."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation of kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 330.0,
+   "price_log_sd": 0.35,
+   "rationale": "Under 7.1.11, installation follows the principal item, which is excluded by 2.3.10(c). The €330 figure is a conditional labour estimate only."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 145.0,
+   "price_log_sd": 0.38,
+   "rationale": "The damaged console could not be reused, so 7.1.9(b) covers the equivalent support needed to mount the fixed living-room unit. The €145 gross estimate allows for an ordinary equivalent stand, not a decorative upgrade under 7.1.10."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.42,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 cover only the living-room unit’s share of ordinary freight. Using estimated equipment values as the allocation basis, €105 × €1,250 / (€1,250 + €950) is about €60 gross, subject to the actual freight basis."
+  }
+ ]
+}

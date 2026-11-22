@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen clothing, personal effects and everyday jewellery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 2.6.3 and 4.2.6 require movable property to be co-insured for forcible removal, which the supplied documents do not confirm. If that cover is in force and the articles are substantiated, §§4.4.5–4.4.6 and 7.1.1(d) support an estimated €650 gross for like-for-like replacement without the high-value jewellery cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of the forced back door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 325.0,
+   "price_log_sd": 0.38,
+   "rationale": "Section 2.6.2 covers forced-entry damage to the door and lock under the building peril, and §5.2.2 covers necessary immediate re-securing without double recovery. Allow €325 gross for temporary boarding and like-for-like lock and frame work, below the €1,000 securing cap."
+  }
+ ]
+}

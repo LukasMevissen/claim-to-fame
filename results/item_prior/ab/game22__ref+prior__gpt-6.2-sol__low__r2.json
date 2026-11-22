@@ -1,0 +1,31 @@
+{
+ "game": 22,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop diagnostic inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "The diagnostic shows 41,200 ÷ 52,000 mWh, or 79.2%, below the 80% cutoff in §2.6.8, and no battery health waiver applies. Sections 2.6.7 and 5.2.3 therefore exclude the diagnostic itself; €75 is a conditional estimate below the €250 gross cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 549.0,
+   "price_log_sd": 0.1,
+   "rationale": "The swerve and impact meet §2.6.2, but §2.6.8 excludes the entire unit at the measured battery capacity, even though the damage is unrelated to the battery. If eligible, the combined repair under §7.1.10 is estimated at €549 gross based on the photographed parts-and-labour quote."
+  }
+ ]
+}

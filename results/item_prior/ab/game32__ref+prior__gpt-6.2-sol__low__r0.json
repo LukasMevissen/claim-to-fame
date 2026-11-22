@@ -1,0 +1,218 @@
+{
+ "game": 32,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Filling valve (internal frost-burst fitting)\": indemnified in all 2 earlier cases; when indemnified t per pc about 52 (80% range 41 to 68); revealed per pc: 48-55 (case 16*), 51-54 (case 25) (* = other policy wording)\n- line 2 \"Connection hose\": indemnified in all 2 earlier cases; when indemnified t per pc about 27 (80% range 21 to 37); revealed per pc: 27-33 (case 16*), 26-28 (case 25) (* = other policy wording)\n- line 3 \"Senior installer hours\": indemnified in all 2 earlier cases; when indemnified t per hr about 98 (80% range 76 to 127); revealed per hr: >=91 (case 16*), >=93 (case 25) (* = other policy wording), so this line (3 hr) about 295 (229 to 382)\n- line 4 \"Auxiliary and cleaning material\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 5 \"Vehicle costs\": indemnified in 9 of 21 earlier cases, t = 0 in 12; when indemnified t per pc about 67 (80% range 38 to 97); revealed per pc: >=76 (case 21*), >=76 (case 21*), >=76 (case 21*), 34-45 (case 23*), >=74 (case 27*), 38-44 (case 25) (* = other policy wording)\n- line 6 \"Thermal imaging camera (leak detection)\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 7 \"Vehicle costs – return visit\": NOT indemnified (t = 0) in all 3 earlier cases; no price evidence\n- line 9 \"Base plaster\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 10 \"Newly plastered substrate\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 11 \"Priming\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 13 \"Facade paint (4 coats)\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 14 \"Painter hours\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 18 \"Administrative flat rate\": NOT indemnified (t = 0) in all 3 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the frost-fractured internal valve; the reference allowance is €52 gross for one valve."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.09,
+   "rationale": "Section 7.1.9 covers the connection hose needed for the valve renewal; one hose is calibrated at €27 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 295.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary fitting-repair labour; three hours at about €98 gross give approximately €295."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.7(e) and 7.1.9 cover consumables actually used in the valve repair, but §3.6(c) excludes the contractor's own small equipment. Allow about €7 if the generic charge is substantiated as repair consumables."
+  },
+  {
+   "item_id": "5",
+   "description": "Initial vehicle attendance",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 7.1.9 and 7.1.11 cover one plumbing attendance; €41 gross follows the €38–44 range in the closest reference."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal camera for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover use of imaging equipment to locate the escape. A single-use allowance of €25 gross is well within the €2,500 event cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Return-visit vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.11 excludes a second attendance by the same plumber unless approved in advance; no approval is stated. If approved, allow about €41 gross for one trip."
+  },
+  {
+   "item_id": "8",
+   "description": "Remove loose and spalled facade plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.4,
+   "rationale": "The facade frost endorsement activates §2.6.2, which covers removing failed material from the damaged area. Allow two local removals at about €65 gross each."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.42,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) cover like-for-like base plaster on the damaged patches; allow €60 gross for materials without duplicating labour."
+  },
+  {
+   "item_id": "10",
+   "description": "Re-form plaster substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 125.0,
+   "price_log_sd": 0.42,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover re-forming the substrate in the frost-damaged area; allow €125 gross for this step, excluding separately billed base plaster."
+  },
+  {
+   "item_id": "11",
+   "description": "Facade primer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.36,
+   "rationale": "Section 2.6.2 covers priming the repaired area; allow €45 gross, excluding separately billed painter labour."
+  },
+  {
+   "item_id": "12",
+   "description": "Drying before facade repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.48,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover drying only where needed before reinstatement. If the separate drying measure was necessary and documented, allow €85 gross for local treatment."
+  },
+  {
+   "item_id": "13",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 135.0,
+   "price_log_sd": 0.42,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) cover only the coats required by the equivalent pre-loss finish on the damaged area. Allow €135 gross for paint, with labour assessed separately."
+  },
+  {
+   "item_id": "14",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 325.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 7.1.5 and 7.1.7(f) cover painter labour on the frost-damaged area only; five hours at €65 gross give €325, with the rear repaint billed separately."
+  },
+  {
+   "item_id": "15",
+   "description": "Scaffolding hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 2.6.2 and 7.1.8 cover necessary access; the scaffold was removed before the rear work, so no apportionment is needed. About 50 m² at €14 gross per m² gives €700."
+  },
+  {
+   "item_id": "16",
+   "description": "Repaint undamaged rear elevation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 2.6.3(a), 7.1.5 and 7.1.6 exclude repainting a separate undamaged elevation, even for colour matching. The €650 figure is a conditional price estimate only."
+  },
+  {
+   "item_id": "17",
+   "description": "Disposal of removed plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.31,
+   "rationale": "Sections 2.6.2 and 5.2.1 cover transport and disposal of plaster removed from the insured repair area; allow €50 gross for a few rubble sacks."
+  },
+  {
+   "item_id": "18",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.6(b) and 7.1.12 exclude a separate administrative fee because it does not price repair work. The €15 figure is conditional only."
+  },
+  {
+   "item_id": "19",
+   "description": "Crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6(a) expressly excludes crew catering even on covered jobs. The conditional price estimate is three portions at €5 gross each."
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "game": 24,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.2,
+   "rationale": "The bicycle is scheduled at an agreed value (EUR 3,500) under a Bicycle Endorsement, overriding the standard EUR 500 sub-limit for mobility equipment. The frame was damaged in the theft event and is an affected item (2.3.1(b), 7.1.1(b)). Indemnity is capped at the agreed value, but repair/replacement of the frame is within scope. Reference Case 23 shows that, absent an agreed value, no indemnity would be paid for the frame if the bike was recovered undamaged, but here damage is established."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.2,
+   "rationale": "Brakes are a permanently fitted part of the scheduled bicycle and were damaged in the theft (2.3.1(b), 7.1.1(b)). Covered as part of the repair to the affected item, within the agreed value cap. Reference Case 23: not indemnified if no damage, but here damage is established."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.15,
+   "rationale": "Shipping of the affected item or its parts to/from repair is covered as part of the necessary repair cost (7.1.7(f)), within the agreed value cap. Reference Case 23: shipping not indemnified if no repair, but here repair is required."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.1,
+   "rationale": "Vehicle costs for the trade attending to repair the affected item are covered as part of the necessary repair cost (7.1.7(g)), within the agreed value cap. Reference Case 23: vehicle costs for repair are indemnified."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.1,
+   "rationale": "Assembly of replacement parts on the affected item is part of the necessary repair cost (7.1.7(c)), within the agreed value cap. Reference Case 23: assembly costs for repair are indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sundry materials consumed in the repair of the affected item are covered (7.1.7(e)), within the agreed value cap. Reference Case 23: miscellaneous items for repair are indemnified if reasonable."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for repair of the affected item are covered at customary rates (7.1.7(d)), within the agreed value cap. Reference Case 23: apprentice hours for repair are indemnified."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for repair of the affected item are covered at customary rates (7.1.7(d)), within the agreed value cap. Reference Case 23: skilled worker hours for repair are indemnified."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.1,
+   "rationale": "Vehicle costs for the locksmith attending the recovery are covered as a recovery cost under 5.2.2(a), within the EUR 1,000 recovery cap and the agreed value cap for the scheduled bicycle. Reference Case 23: vehicle costs for recovery are indemnified."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.1,
+   "rationale": "Assembly/disassembly (cutting the lock) is a necessary recovery cost under 5.2.2(b), within the EUR 1,000 recovery cap and the agreed value cap for the scheduled bicycle. Reference Case 23: assembly costs for recovery are indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sundry materials consumed in the recovery (e.g., cutting tools) are covered under 5.2.2(b), within the EUR 1,000 recovery cap and the agreed value cap for the scheduled bicycle. Reference Case 23: miscellaneous items for recovery are indemnified if reasonable."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for recovery of the affected item are covered at customary rates (5.2.2(b)), within the EUR 1,000 recovery cap and the agreed value cap for the scheduled bicycle. Reference Case 23: apprentice hours for recovery are indemnified."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for recovery of the affected item are covered at customary rates (5.2.2(b)), within the EUR 1,000 recovery cap and the agreed value cap for the scheduled bicycle. Reference Case 23: skilled worker hours for recovery are indemnified."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "game": 28,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit - replacement including installation and delivery (3 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.2,
+   "rationale": "The insured peril is overvoltage caused by lightning (2.3.3), and the damaged item is a fixed, wall-mounted kitchen air conditioning unit, which is a technical installation firmly connected to the building (4.2.3). The policy is the standard wording with no endorsements, so the kitchen climate exclusion (2.3.10(c)) applies: 'damage within the meaning of 2.3.3 to climate-control equipment, or to any part of it, that is installed within five metres of a cooking appliance... is conclusively presumed to be impaired by grease-laden vapour; the cause and strength of the overvoltage are immaterial, and evidence of the condition of the equipment is not admitted.' The photo and description confirm the unit is close to the hob. Therefore, the entire line is excluded by 2.3.10(c) and 3.2."
+  }
+ ]
+}

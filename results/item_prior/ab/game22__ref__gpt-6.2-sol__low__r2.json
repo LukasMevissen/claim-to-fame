@@ -1,0 +1,31 @@
+{
+ "game": 22,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Diagnostic inspection of the cracked laptop",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.3,
+   "rationale": "The diagnostic measured 41,200 of 52,000 mWh (79.2%), below the 80% threshold in §2.6.8, and no waiver applies. Sections 2.6.7 and 5.2.3 therefore bar reimbursement even for the diagnostic that established ineligibility; €75 is the conditional gross estimate, below the €250 cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Laptop screen and lower-right corner repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 549.0,
+   "price_log_sd": 0.1,
+   "rationale": "The swerve and impact meet §2.6.2, but the measured battery capacity of 79.2% makes the entire laptop ineligible under §§2.6.8 and 2.6.7. The €549 parts-and-labour quote shown in the photo is the conditional gross repair estimate, not a payable amount."
+  }
+ ]
+}

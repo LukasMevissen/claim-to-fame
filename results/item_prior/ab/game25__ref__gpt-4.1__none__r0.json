@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered under 2.4.4 and 7.1.9 as fracture damage to an internal fitting from frost; indemnity includes like-for-like replacement, labour, and necessary materials. Reference Case 16 shows t between 48 and 55 for a similar fitting."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.08,
+   "rationale": "Directly related to the frost-burst fitting repair (2.4.4, 7.1.9); connection elements renewed with the fitting are indemnified. Reference Case 16: t between 27 and 33."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours (3 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour for covered repair is indemnified (7.1.7(f), 7.1.9). Reference Case 16: t >= 274 for 3 hrs senior installer."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "Consumables actually used in covered work are indemnified (7.1.7(e)), but reference Case 16 shows t below 11, possibly 0 (lowest charge proven too high)."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.05,
+   "rationale": "One attendance per undertaking is indemnified if covered work was done (7.1.11). Reference Case 16: t >= 60 for vehicle costs."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.3,
+   "rationale": "Leak location is covered if the cause is insured (2.4.6, 5.2.2), but reference Case 16 shows t below 57, possibly 0 (lowest charge proven too high)."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade frost damage from outdoor freeze-thaw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Frost action on external surfaces is not covered unless the optional peril is agreed (2.6.4, 3.5). The schedule does not show this peril as agreed, so t = 0."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.7,
+   "rationale": "Removal of failed external render is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Renewal of base plaster on external surface is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render system (upgrade on former plain plaster)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.7,
+   "rationale": "Upgrade beyond pre-loss standard is not covered (7.1.10), and external frost damage is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Work on external surfaces damaged by frost is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.7,
+   "rationale": "Painting of external surfaces after frost damage is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "13",
+   "description": "Repaint of undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.7,
+   "rationale": "Work on undamaged elevations is not covered (7.1.5, 3.5). Not indemnified."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.7,
+   "rationale": "Priming of external surfaces after frost damage is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours (5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.0,
+   "price_log_sd": 0.7,
+   "rationale": "Labour for work on external surfaces damaged by frost is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.7,
+   "rationale": "Flat rate for painting work on external surfaces damaged by frost is not covered unless the optional peril is agreed (3.5). Not indemnified."
+  }
+ ]
+}

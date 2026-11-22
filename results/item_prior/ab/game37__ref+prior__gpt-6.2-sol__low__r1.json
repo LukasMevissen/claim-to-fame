@@ -1,0 +1,31 @@
+{
+ "game": 37,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 12 of 25 earlier cases, t = 0 in 13; when indemnified t per pc about 78 (80% range 53 to 99); revealed per pc: 34-45 (case 23*), 38-44 (case 25*), >=74 (case 27*), 37-41 (case 32*), >=83 (case 34*), >=76 (case 34*) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is excluded under §§2.1 and 3.1.4. Sections 4.3(d)–(f) also exclude personal belongings in a vehicle away from the insured location, so the payable threshold is €0 before any deductible."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 4.3(e) excludes the private car, and §5.2.5 excludes vehicle and journey costs. The payable threshold is €0 before any deductible."
+  }
+ ]
+}

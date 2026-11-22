@@ -1,0 +1,34 @@
+gpt-4.1@none, 2 run(s) per arm; net = replayed net payoff per game (mean of runs)
+  game              ref        ref+prior
+    20            -9105            -9061
+    21             3133            -1682
+    22             2100             1911
+    23              126              183
+    24            -2479            -2016
+    25             1133             1422
+    26               -6             -330
+    27           -12394           -12936
+    28                0              261
+    29             1039             7883
+    30              566              587
+    31            12979            12979
+    32              -48             2787
+    33             1422             1317
+    34              292              197
+    35               22               34
+    36              832             7134
+    37                0                0
+    38            -6748           -11706
+    39              445            -2382
+    40            -3790             4267
+    41               35            -1526
+    42             8579             8902
+    43             4230             6052
+    44             2509             3624
+    45            12000            12000
+    46            -2493            -7674
+ref        net     14379 | lines 287, covered-or-not wrong 29.0 (lines with a prior row: 13.5) | priced lines: mean log miss 0.413, below t_low 57% | priced lines with a prior row (78): miss 0.242, below t_low 45%
+ref+prior  net     22228 | lines 287, covered-or-not wrong 34.0 (lines with a prior row: 19.0) | priced lines: mean log miss 0.425, below t_low 53% | priced lines with a prior row (77): miss 0.255, below t_low 34%
+ref+prior better than ref in 14 games, worse in 10, of 27
+ref: total per run [23716, 5041], sd 13206
+ref+prior: total per run [26054, 18403], sd 5410

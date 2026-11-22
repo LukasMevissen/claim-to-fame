@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.06,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the frost-fractured valve. Case 16 supports €52 gross for one valve."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover the hose if it had to be renewed with the fractured valve. Case 16 supports €30 gross for one hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.14,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary repair labour. Three hours at €100 gross give €300, consistent with Case 16."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 3.6(c) and 7.1.7(e) distinguish excluded contractor equipment from consumables actually used in the covered repair. Allow €9 gross if this line is for those consumables, consistent with Case 16."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.9 and 7.1.11 cover one attendance for the plumbing repair. Allow €63 gross for that visit, consistent with Case 16."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 48.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging used to locate the insured escape. Allow €48 gross for the camera-use line, below both the Case 16 upper bound and the €2,500 aggregate leak-location cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Outdoor freeze-thaw facade damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 2.6.4 and 3.5 exclude outdoor frost damage without the optional cover, which is not shown as agreed. No internal escape reached the facade, so §2.4.3 does not apply and the payable amount is zero."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.5(b) excludes removal of plaster loosened by uninsured outdoor frost. No amount is payable."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5(b) and 7.1.7 exclude renewal of the base plaster on an elevation damaged only by an uninsured peril. No amount is payable."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5(d) and 7.1.10 bar the upgrade. Because the underlying facade work is uninsured, there is no allowance even for equivalent plain render."
+  },
+  {
+   "item_id": "11",
+   "description": "Replastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.5(b) excludes re-forming the substrate beneath the uninsured outdoor frost damage. No amount is payable."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.5(b) excludes all finish coats associated with uninsured outdoor frost damage, regardless of the number applied. No amount is payable."
+  },
+  {
+   "item_id": "13",
+   "description": "Repainting undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate undamaged elevations for a uniform appearance. No amount is payable."
+  },
+  {
+   "item_id": "14",
+   "description": "Facade priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.5(b) expressly excludes priming associated with uninsured exterior frost damage. No amount is payable."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5(c) and 7.1.11 exclude labour attributable to uninsured facade work. None of the five hours is payable."
+  },
+  {
+   "item_id": "16",
+   "description": "Painting flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under §§7.1.12–7.1.13, a lump sum for uninsured facade work is not payable, and §9.6 bars any unallocated charge. Nothing identifies covered work in this line."
+  }
+ ]
+}

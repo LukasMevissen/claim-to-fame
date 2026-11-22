@@ -1,0 +1,97 @@
+{
+ "game": 34,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered under 5.2.6(b) as costs of inspecting and assessing the damage to determine cause and extent, up to EUR 3,000 per event. Reference Case 20 shows t >= 481 for similar work."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.1,
+   "rationale": "Covered under 5.2.6(a) as costs of locating the point of water escape, up to EUR 1,000 per event. Reference Case 20 shows t >= 707 for combined detection and technician, so standalone detection is likely t >= 400."
+  },
+  {
+   "item_id": "3",
+   "description": "Measurement technician (2.5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.15,
+   "rationale": "Technician time for leak detection is covered under 5.2.6(a), included in the EUR 1,000 cap for leak location. Reference Case 20 and 21 show technician time is usually bundled, but if split, t ≈ 150–200 for 2.5 hrs."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered under 5.2.6(c) as one travel/vehicle charge per contractor per invoice, up to EUR 70 net. Reference Case 21 and 20 show t >= 76 for similar lines."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of the copper joints verified as actively leaking (seal/renew failed sections)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.1,
+   "rationale": "Covered under 2.4.3 and 7.1.5 as repair of pipe sections shown to be leaking due to material ageing. Reference Case 21 and 27 show t between 117 and 220 for similar repairs."
+  },
+  {
+   "item_id": "6",
+   "description": "Precautionary replacement of the remaining original copper supply run (sections not themselves shown to be leaking)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.01,
+   "price_log_sd": 0.05,
+   "rationale": "Explicitly excluded by 2.4.3 and 7.1.5: only sections shown to be leaking are covered. Preventive replacement of undamaged pipe is not indemnified."
+  },
+  {
+   "item_id": "7",
+   "description": "Upgrade surcharge – premium multilayer composite piping in lieu of standard copper",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.01,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 7.1.9: no indemnity for upgrades or improvements beyond pre-loss standard. Only like-for-like copper is covered."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs (plumbing)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.08,
+   "rationale": "Covered under 5.2.6(c) as one travel/vehicle charge per contractor per invoice, up to EUR 70 net. Reference Case 21 and 27 show t >= 74 for similar lines."
+  }
+ ]
+}

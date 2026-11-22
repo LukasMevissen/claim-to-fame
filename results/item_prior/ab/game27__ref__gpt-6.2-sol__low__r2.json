@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection and moisture measurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 2.4.2 and 7.1.7(e)–(g) cover locating the supply leak, measuring the affected floor and wall base, and one call-out. Allow about €650 for 14 technician-hours plus €350 for the call-out and specialist testing, without billing the same labour twice."
+  },
+  {
+   "item_id": "2",
+   "description": "Expose, repair and re-insulate sink supply pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 385.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(a), (c) and (g) cover access and like-for-like repair of the failed indoor pipe. Allow €140 for access and removal, €190 for replacing the roughly 1.5 m copper section and fittings, and €55 for matching foam lagging."
+  },
+  {
+   "item_id": "3",
+   "description": "Plumber vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.19,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on the plumber's separate invoice. Allow €76 gross for one van attendance, in line with the comparable kitchen leak claim."
+  },
+  {
+   "item_id": "4",
+   "description": "Dry affected kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.7(b) and (e) cover drying the areas with confirmed moisture and the final readings. Allow €105 for one condensation dryer for roughly seven days and €85 for setup, collection and final checks; no separate electricity allowance under 7.1.8(d)."
+  }
+ ]
+}

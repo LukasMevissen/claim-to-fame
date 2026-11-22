@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen everyday contents",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.7,
+   "rationale": "Forced entry meets §2.6.1, but contents are covered only if co-insured on the schedule under §§2.6.3 and 4.2.6, which is not confirmed. If covered, €650 is a provisional like-for-like replacement estimate under §7.1.1(d); the €1,000 high-value per-article ceiling does not apply to the everyday items described (§§4.4.5–4.4.6)."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of the forced door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.4,
+   "rationale": "The forced door is covered building damage if the forcible-removal peril is in force (§2.6.2), and necessary emergency re-securing is eligible under §5.2.2. Allow €350 gross for attendance, boarding and basic like-for-like repair, below the €1,000 securing cap and without counting the repair twice under Part 7."
+  }
+ ]
+}

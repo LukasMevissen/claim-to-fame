@@ -1,0 +1,75 @@
+{
+ "game": 42,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room AC replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1400.0,
+   "price_log_sd": 0.12,
+   "rationale": "The fixed unit was damaged by lightning overvoltage (§2.3.3), and at nine metres from the hob it is outside the five-metre exclusion (§2.3.10(c)). Under §§7.1.9–7.1.10, the 7.1 kW upgrade is indemnified only up to the cost of an equivalent 3.5 kW unit, estimated at €1,400 gross using Case 38; no deductible is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "AC installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 478.0,
+   "price_log_sd": 0.09,
+   "rationale": "Sections 7.1.9(c) and 7.1.10 cover ordinary removal, installation, connection and commissioning at the pre-loss specification, not extra labour attributable to the upgrade. Case 38 supports €478 gross for equivalent installation."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.5(d) and 7.1.10 exclude the entire console because it was chosen for appearance and was not required for installation. The positive figure is a conditional estimate only."
+  },
+  {
+   "item_id": "4",
+   "description": "Ordinary freight",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.1,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 allow ordinary carriage for the covered equivalent unit, not any extra cost attributable to the upgrade or timed service. Case 38 supports €42 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.12 excludes expedited or timed delivery surcharges unless agreed in advance or necessary to avert or mitigate further loss; neither is shown. The positive figure is a conditional estimate only."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) excludes separately billed administration and processing charges as contractor overhead. The positive figure is a conditional estimate only."
+  }
+ ]
+}

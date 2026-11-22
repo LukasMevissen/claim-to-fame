@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)\n- line 10 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour to check and rewire basement circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1140.0,
+   "price_log_sd": 0.22,
+   "rationale": "Rainwater flooding is a further natural hazard under §2.5, and the schedule does not establish that group (c2) was taken. Section 3.6.2(b) therefore bars the labour as presented; if flood cover is confirmed, 12 hours at €95 gross gives €1,140."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.008,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars travel charges on this flood claim absent evidence of group (c2) cover. If cover is confirmed and this was the first journey charge, §7.1.7(g) allows one charge for the event, estimated at €79 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 3.6.2(d) bars pumping costs on the claim as presented, and §5.2.2 independently excludes separate pump procurement even if flood cover is confirmed. The €150 figure is a nominal gross estimate, not a payable allowance."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.6.2(d) bars this charge as presented, and §5.2.2 includes the pump in the extraction measure rather than allowing it as a separate charge. The €85 figure is a nominal gross estimate for deployment."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(d) bars extraction absent evidence of flood cover, even though it was necessary. If cover is confirmed, §5.2.2 would allow an estimated €550 gross for the complete measure, including labour and pumping equipment."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(c) bars materials on the claim as presented. If flood cover is confirmed, §7.1.7(c) would allow about €120 gross for like-for-like conductors, terminals and fixings installed on affected circuits."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 11500.0,
+   "price_log_sd": 0.32,
+   "rationale": "The fixed heating system is insured property under §4.2.2, but §3.6.2(a) bars replacement absent evidence of flood cover. If cover is confirmed, §§7.1.1(c) and 7.1.9 support about €11,500 gross for like-for-like renewal, excluding the separately billed pipework adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(a) expressly bars adaptation work on the claim as presented. If flood cover is confirmed, §7.1.7(d) would allow about €650 gross for the immediately adjoining pipework changes needed to connect the replacement."
+  },
+  {
+   "item_id": "9",
+   "description": "Disposal of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.6.2(e) and 5.2.1 bar disposal absent evidence of flood cover. If cover is confirmed, ordinary haul-away and disposal of the failed system is estimated at €350 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.002,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars this charge as presented; even if flood cover is confirmed, §7.1.8(d) bars a second journey charge for the same event. The €79 gross estimate applies only if this proves to be the first and sole allowable journey charge."
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "game": 39,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Painting the disturbed wall area and closing the wall opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.15,
+   "rationale": "Repair of the affected wall area after leak is covered under 7.1.5 and 7.1.7; only the disturbed area is indemnified, not the whole room. Reference Case 36 (cleaning/repainting affected area) suggests similar work is indemnified."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (first charge)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.1,
+   "rationale": "One travel/call-out charge per contractor per invoice is indemnified (7.1.7(f)). Reference Case 27 and 36 show typical rates."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.2,
+   "rationale": "Consumable installation material used in the repair is covered (7.1.7(c)). Reference Case 32 and 34 show similar items indemnified."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement pipe for the affected section is covered as part of the repair (7.1.7(c)), but only for the damaged length. 1 m is plausible for a wall section."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.2,
+   "rationale": "Replacement of insulation removed to access/repair the pipe is covered (7.1.7(c)). Reference Case 32 supports this."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer hours 1 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour for pipe repair is covered (7.1.7(g)). Reference Case 32 and 34 show similar rates."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.15,
+   "rationale": "Flat-rate deployment of measuring equipment for leak detection or moisture measurement is covered once per drying/repair operation (7.1.7(e)). Reference Case 36 and 32."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician hours 9 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 540.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour for leak detection, opening wall, repair, and closing up is covered (7.1.7(g)). Reference Case 27 and 36 show similar work and rates."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (second charge)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.05,
+   "rationale": "Only the first travel/call-out charge per contractor per invoice is indemnified (7.1.7(f)); second charge is excluded."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drying necessary before repair is covered (7.1.7(b)). Reference Case 36 and 27 show similar charges indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.0,
+   "price_log_sd": 0.3,
+   "rationale": "Reusable contractor tools are excluded (7.1.8(b)), but minor consumable blades may be allowed if used up in the repair. Reference Case 32 and 34 suggest low indemnity."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.2,
+   "rationale": "Gunmetal fittings (e.g., connectors) used in the pipe repair are covered as consumable installation material (7.1.7(c)). Reference Case 32 and 34."
+  },
+  {
+   "item_id": "13",
+   "description": "Stainless steel pipe 1 m (second)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.2,
+   "rationale": "If both lengths were needed for the repair of the affected section, both are covered (7.1.7(c)). If only one was needed, the second is not. Assume both were required for a typical wall run."
+  },
+  {
+   "item_id": "14",
+   "description": "Pipe insulation shell, 100 cm long",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.2,
+   "rationale": "Replacement insulation for the repaired pipe is covered (7.1.7(c)). Reference Case 32."
+  },
+  {
+   "item_id": "15",
+   "description": "Service technician hours 9 hrs (second)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 540.0,
+   "price_log_sd": 0.2,
+   "rationale": "If this is a duplicate of line 8, only the first is indemnified (7.1.8(c)). If it is for a separate, necessary part of the repair (e.g., second visit), it may be covered. Reference Case 27 and 36: assume both visits were needed."
+  }
+ ]
+}

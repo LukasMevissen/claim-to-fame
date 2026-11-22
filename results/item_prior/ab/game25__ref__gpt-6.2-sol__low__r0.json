@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.07,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the frost-fractured valve. Case 16 supports €52 gross for one valve."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.1,
+   "rationale": "Section 7.1.9 covers the hose if it had to be renewed with the fractured valve. Case 16 supports €30 gross for one hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover labour needed to repair the fitting. Three hours at €95 gross gives €285, consistent with Case 16."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(e) covers consumables actually used in the repair, but §3.6(c) excludes the contractor’s own tools and small equipment. Allow €9 gross if this is a separately incurred consumables charge, consistent with Case 16."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.15,
+   "rationale": "Sections 7.1.9 and 7.1.11 cover one attendance for the insured repair. Allow €65 gross, consistent with Case 16."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 49.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging used to locate the confirmed escape. Allow €49 gross for one use; the €2,500 gross leak-location cap is not reached."
+  },
+  {
+   "item_id": "7",
+   "description": "Outdoor freeze-thaw facade damage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 2.6.4 and 3.5 exclude frost acting from outside because the optional peril is not shown as agreed. No escaped water reached the facade, so §2.4.3 does not apply."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) expressly excludes removal of failed render caused by uninsured external frost. No amount is payable."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(b) and 7.1.7 exclude substrate work on an area damaged only by uninsured external frost. No amount is payable."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(d) and 7.1.10 exclude the upgrade. Because the underlying facade damage is also excluded, there is no allowance for equivalent plain render."
+  },
+  {
+   "item_id": "11",
+   "description": "Replastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes re-forming the substrate after uninsured external frost damage. No amount is payable."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes all finish coats associated with uninsured external frost damage, regardless of the number applied. No amount is payable."
+  },
+  {
+   "item_id": "13",
+   "description": "Repaint of undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate undamaged elevations for appearance matching. No amount is payable."
+  },
+  {
+   "item_id": "14",
+   "description": "Facade priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) expressly excludes priming associated with uninsured external frost damage. No amount is payable."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(c) and 7.1.11 exclude labour associated with the uninsured facade work. None of the five hours is payable."
+  },
+  {
+   "item_id": "16",
+   "description": "Painter flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.7,
+   "rationale": "Under §§7.1.12–7.1.13, a lump sum follows the work it prices, and no insured work is identified on the painting account. If this is an administrative fee instead, §3.6(b) excludes it."
+  }
+ ]
+}

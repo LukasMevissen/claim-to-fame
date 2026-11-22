@@ -1,0 +1,53 @@
+{
+ "game": 31,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 4 \"Shipping\": indemnified in 1 of 7 earlier cases, t = 0 in 6; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Police report translation, 68 lines",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 145.0,
+   "price_log_sd": 0.3,
+   "rationale": "Clauses 2.3.3, 3.1.6 and 7.1.8(f) distinguish the required police report from the cost of translating it for the claim. The translation is excluded even if necessary."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation working materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Clauses 7.1.8(e) and (f) exclude both the provider's working materials and ancillary charges billed alongside the excluded translation."
+  },
+  {
+   "item_id": "3",
+   "description": "Robbery settlement for stolen watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.05,
+   "rationale": "Part 11 confirms covered robbery away from home. Subject to the itemisation required by 7.1.10, the estimated settlement is €2,500 for the unscheduled watch plus €500 for cash under 4.2.2–4.2.3, below the €5,000 away-from-home cap, less the single €50 deductible under 7.8."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping and forwarding",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Clause 7.1.8(b) excludes forwarding charges even when billed on the same statement as covered property."
+  }
+ ]
+}

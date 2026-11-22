@@ -1,0 +1,152 @@
+{
+ "game": 24,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Shipping\": NOT indemnified (t = 0) in all 5 earlier cases; no price evidence\n- line 4 \"Vehicle costs\": indemnified in 7 of 14 earlier cases, t = 0 in 7; when indemnified t per pc about 77 (80% range 65 to 88); revealed per pc: >=60 (case 16), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), 34-45 (case 23)\n- line 5 \"Assembly costs\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 109 (80% range 80 to 166); revealed per pc: >=100 (case 23)\n- line 6 \"Miscellaneous items\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 7 \"Apprentice hours\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per hr about 36 (80% range 28 to 55); revealed per hr: 35-36 (case 23)\n- line 8 \"Skilled worker hours\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 9 \"Vehicle costs\": indemnified in 7 of 14 earlier cases, t = 0 in 7; when indemnified t per pc about 77 (80% range 65 to 88); revealed per pc: >=60 (case 16), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), 34-45 (case 23)\n- line 10 \"Assembly costs\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 109 (80% range 80 to 166); revealed per pc: >=100 (case 23)\n- line 11 \"Miscellaneous items\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence\n- line 12 \"Apprentice hours\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per hr about 36 (80% range 28 to 55); revealed per hr: 35-36 (case 23)\n- line 13 \"Skilled worker hours\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.10 and 3.1.6: The frame is only indemnified if it is an affected item (i.e., physically damaged in the theft). The description and photo confirm the bike took a knock and the frame needed replacement. However, the bicycle is scheduled at an agreed value of EUR 3,500, which is the ceiling for all indemnity (including repair, replacement, and recovery costs) for this item. The frame is part of the scheduled item, so indemnity is possible, but the total for all lines relating to the bike (including recovery) cannot exceed EUR 3,500. Reference Case 23 shows that if the bike is recovered and nobody is paid for the frame, t = 0. Here, the frame is physically damaged and replaced, so indemnity is likely."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.10 and 3.1.6: The brakes are only indemnified if they are an affected item (i.e., physically damaged in the theft). The description states the brakes needed replacement due to the theft. Reference Case 23 shows that if the bike is recovered and nobody is paid for the brakes, t = 0. Here, the brakes are physically damaged and replaced, so indemnity is likely, but the total for all lines relating to the bike (including recovery) cannot exceed EUR 3,500."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(d) and price priors: Shipping is not indemnified in any reference case and is excluded as an ancillary charge not specifically covered."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 77.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 7.1.7(g) and price priors: Vehicle costs are indemnified if they relate to covered repair/recovery work. Reference cases show t per pc about 77 when indemnified. Here, the vehicle cost is for the bicycle service, which is part of the repair of an affected item."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 109.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 7.1.7(c) and price priors: Assembly costs are indemnified if they relate to covered repair/recovery work. Reference cases show t per pc about 109 when indemnified. Here, the assembly cost is for the bicycle service, which is part of the repair of an affected item."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(d) and price priors: Miscellaneous items are not indemnified in any reference case and are excluded as ancillary charges not specifically covered."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(d) and price priors: Apprentice hours are indemnified if they relate to covered repair/recovery work. Reference cases show t per hr about 36 when indemnified. Here, the apprentice hour is for the bicycle service, which is part of the repair of an affected item."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(d) and price priors: Skilled worker hours are not indemnified in any reference case and are excluded as ancillary charges not specifically covered."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 77.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.2 and price priors: Vehicle costs are indemnified if they relate to the recovery of an item that was taken. Here, the locksmith's attendance was necessary to recover the stolen bicycle, so this is a covered recovery cost. Reference cases show t per pc about 77 when indemnified."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 109.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 5.2.2(b) and price priors: Assembly costs (here, the lock cutting) are indemnified as part of the necessary recovery work to release the bicycle. Reference cases show t per pc about 109 when indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(d) and price priors: Miscellaneous items are not indemnified in any reference case and are excluded as ancillary charges not specifically covered."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.2(b) and price priors: Apprentice hours are indemnified if they relate to the necessary recovery work. Reference cases show t per hr about 36 when indemnified."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.2(b) and price priors: Skilled worker hours are not indemnified in any reference case and are excluded as ancillary charges not specifically covered."
+  }
+ ]
+}

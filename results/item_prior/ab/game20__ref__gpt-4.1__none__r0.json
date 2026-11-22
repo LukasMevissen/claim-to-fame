@@ -1,0 +1,75 @@
+{
+ "game": 20,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.6(b) covers costs of inspecting and assessing the damage to determine cause and extent, up to EUR 3,000 per event. Reference Case 2 (diagnostic inspection) shows t between 60 and 84 for a similar single assessment. This is a standard, single assessment call."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection incl. measurement technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.6(a) covers leak location (including technician time and vehicle) up to EUR 1,000 per event. Reference Case 2 (diagnostic inspection) and Case 16 (thermal imaging) both show t below 84 and 57 respectively for similar work. This is a single, standard leak detection visit."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor covering removal incl. linoleum and skirting, surface preparation and construction-waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.7(a) and (c) allow removal of affected finishes and necessary substrate prep, and 5.2.1 covers disposal of debris from insured property. However, per 7.1.10, only the pipe repair is covered for gradual leaks, not moisture damage or associated floor removal. Reference Case 2 and policy wording: t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "Catering for work crew",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(b) excludes contractor provisioning and catering as not a repair cost."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying (large-area, cavity and borehole) incl. labour, dust protection and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.10: for gradual leaks, only pipe repair and leak location/assessment are covered, not drying or disinfection of building. Reference Case 2 and policy wording: t = 0."
+  },
+  {
+   "item_id": "6",
+   "description": "Electricity for drying equipment (separately metered)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(b) states that drying charges are deemed to include utilities, but for gradual leaks, drying is not covered at all (7.1.10). Even if drying were covered, a separate utility charge would be excluded."
+  }
+ ]
+}

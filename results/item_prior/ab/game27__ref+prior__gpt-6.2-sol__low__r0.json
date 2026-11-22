@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Vehicle costs\": indemnified in 8 of 18 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 69 to 89); revealed per pc: 34-45 (case 23*), 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen leak detection and moisture measurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1495.0,
+   "price_log_sd": 0.19,
+   "rationale": "The concealed supply leak is an escape of water under §2.4.2. Sections 7.1.7(e)–(g) cover source tracing, moisture readings, 14 technician-hours and one call-out; Case 21 supports about €230 + €450 + €165 + €650 for the bundled work."
+  },
+  {
+   "item_id": "2",
+   "description": "Access, copper pipe repair and re-insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 390.0,
+   "price_log_sd": 0.24,
+   "rationale": "The localized pinhole is consistent with a covered indoor pipe fracture under §2.4.3(a). Under §§7.1.7 and 7.1.9, allow about €140 for access, €190 for the like-for-like repair of just over 1.5 m of copper, and €60 for the foam lagging."
+  },
+  {
+   "item_id": "3",
+   "description": "Plumber vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.1,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on the plumber’s invoice; the leak detector’s call-out is on a separate contractor invoice. The gross prior for one vehicle charge is €79."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of the kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 7.1.5 and 7.1.7(b) and (e) cover drying where loss-related moisture was measured. Allow about €60 for one condensation dryer for roughly a week and €140 for setup, monitoring and collection, with no separate allowance for electricity under §7.1.8(d)."
+  }
+ ]
+}

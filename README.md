@@ -94,6 +94,25 @@ is compared with the best earlier result for the same case; `--fail-on-regressio
 net payoff drops by more than 2%. Without a label file, eval only checks the gates.
 The scores are only as good as the labels.
 
+## Price priors for recurring invoice lines
+
+`c2f/item_prior.py` pools what the public transactions revealed about t for every line type
+that repeats across games (hourly rates by grade, vehicle costs, waste disposal, fittings,
+administration fees) and fits a distribution of t per unit: a probability that the line type is
+not indemnified at all and a lognormal for the amount when it is. The bounds are treated as
+what they are (censored), a game whose lines were cut by a shared cap is left out of the
+price level, and the level follows the policy wording when that wording has history.
+
+For the lines of the current invoice that have history, the agent appends a PRICE PRIORS
+block to the reference cases (`[llm] use_item_prior`): per line how often the type was
+indemnified, t per unit with an 80 % range, the revealed bounds behind it and the line total
+for the invoiced quantity. Coverage and policy arithmetic stay with the model.
+
+    python scripts/item_prior_backtest.py --sweep --replay    # prior fitted on earlier games only, no model calls
+    python scripts/item_prior_ab.py --cases <dir> --games 20-46 --runs 3 --model gpt-6.2-sol --effort low
+
+Design, test results and limits: [docs/research/item_prior.md](docs/research/item_prior.md).
+
 ## Layout
 
     c2f/            agent package
@@ -102,6 +121,8 @@ The scores are only as good as the labels.
       pricing.py      b = 1/3 quantile; a = argmax expected revenue vs opponent mix
       extract.py      one LLM call per case -> line items with coverage/price estimates (cached)
       agent.py        case -> quotes, deadline + fallback model
+      pricebook.py    earlier cases with their revealed t bounds -> REFERENCE CASES prompt block
+      item_prior.py   distribution of t per unit for recurring line types -> PRICE PRIORS prompt block
       evaluate.py     QC gates + tournament simulation vs labelled case
       api.py          QuantCo API client (list games, fetch key, submit)
       versioning.py   version stamp on every run

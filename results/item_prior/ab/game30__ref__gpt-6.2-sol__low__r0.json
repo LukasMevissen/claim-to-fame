@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour, 12 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1080.0,
+   "price_log_sd": 0.2,
+   "rationale": "Rainwater entered from outside, so this is surface flooding under §2.5, not escape of water under §2.4. No further natural hazards cover is evidenced, so §3.6.2(b) bars the labour; the conditional estimate is 12 hours × €90 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 3.6.2(f) bars all journey charges for the flood claim. If flood cover were confirmed, this first listed journey could qualify under §7.1.7(g) at about €65 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.6.2(d) bars the charge on this claim, and §5.2.2 independently excludes separate pump procurement alongside billed water extraction. The positive figure is a nominal estimate only."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.6.2(d) bars the charge, and §5.2.2 treats the pump as working equipment included in the extraction measure, not as a separate payable item. The positive figure is a nominal estimate only."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.6.2(d) and 5.1 bar mitigation costs without evidenced flood cover. If covered, §5.2.2 would allow about €450 gross for the extraction as a single measure including labour and equipment."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(c) bars materials for this flood claim. If covered, §7.1.7(c) would allow about €100 gross for standard materials actually installed in the damaged circuits."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9500.0,
+   "price_log_sd": 0.4,
+   "rationale": "The boiler system is insured building plant, but §3.6.2(a) bars its replacement when flood cover is not evidenced. The conditional estimate under §7.1.1(c) is €9,500 gross for like-for-like replacement and installation, excluding the separately billed adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(a) expressly bars adaptation work on this claim. If covered, §7.1.7(d) would allow about €650 gross for necessary changes to the immediately adjoining connections."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(e) bars disposal on this claim. If covered, §5.2.1 would allow about €350 gross for ordinary removal, haulage and disposal of the unusable plant, with no duplicate recovery."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.6.2(f) bars the charge, and §7.1.8(d) independently excludes a second journey charge for the same event. The positive figure is a nominal estimate only."
+  }
+ ]
+}

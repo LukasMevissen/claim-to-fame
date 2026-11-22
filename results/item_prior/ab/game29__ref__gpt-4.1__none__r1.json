@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen household contents (clothing, personal effects and everyday jewellery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.25,
+   "rationale": "The policy covers forcible removal of insured property (2.6) and includes ordinary clothing and everyday jewellery as movable property of the household (4.2.6, 4.4.5, 4.4.6). The description and police reference confirm forced entry. No high-value or scheduled items are claimed, so the per-article sub-limit for high-value items (4.4.2) does not apply. Indemnity is for the cost to replace with items of the same kind and quality in new condition (7.1.1(d)), within the sum insured. Reference cases show that ordinary clothing and modest jewellery are indemnified in full, with no reduction for betterment. The total will depend on the actual value of the stolen items, but for a typical household claim of this type (clothing and modest jewellery, not luxury), a moderate estimate is appropriate."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of the forced entry door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.15,
+   "rationale": "The policy covers immediate securing and provisional protection after a break-in (5.2.2), including temporary boarding and restoring the closure element to a lockable state. The photo shows a boarded door and tools, matching the invoice. Indemnity is capped at EUR 1,000 per event for this head (5.2.2). Reference cases for similar emergency securing work (e.g., glass replacement, boarding, lock repair) suggest a fair market price for a single door is well below the cap, typically in the EUR 100–300 range depending on extent. As this is a straightforward emergency repair, a moderate estimate is justified."
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "game": 34,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Damage assessment and inspection\": indemnified in the one earlier case; when indemnified t per unit about 524 (80% range 386 to 799); revealed per unit: >=481 (case 20)\n- line 3 \"Measurement technician\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 60 (80% range 20 to 177), so this line (2.5 hr) about 150 (51 to 442)\n- line 4 \"Vehicle costs\": indemnified in 10 of 22 earlier cases, t = 0 in 12; when indemnified t per hr about 79 (80% range 71 to 87); revealed per hr: 37-41 (case 32*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)\n- line 8 \"Vehicle costs\": indemnified in 10 of 22 earlier cases, t = 0 in 12; when indemnified t per unit about 79 (80% range 71 to 87); revealed per unit: 37-41 (case 32*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 524.0,
+   "price_log_sd": 0.28,
+   "rationale": "The initial cause-and-extent assessment is covered under §5.2.6(b), separately from leak location. The €524 benchmark is below the €3,000 assessment limit; the §7.8 deductible applies once to the event, not separately to this line."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.3,
+   "rationale": "Pinpointing the porous leaks is covered under §5.2.6(a). Allow €480 for the detection work itself, excluding separately billed technician time and travel; the detection and technician estimates together are below the €1,000 limit."
+  },
+  {
+   "item_id": "3",
+   "description": "Measurement technician, 2.5 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.84,
+   "rationale": "Section 5.2.6(a) covers on-site technician time, and §7.1.8(c) bars it only if the same work is already billed. At €60 gross per hour, 2.5 hours is €150, within the shared €1,000 leak-location limit."
+  },
+  {
+   "item_id": "4",
+   "description": "Leak-detection vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 5.2.6(c) allows one vehicle charge on this contractor’s invoice. The €79 benchmark is below the €83.30 gross limit (€70 net plus 19% VAT)."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of two actively leaking copper joints",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 260.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 2.4.3 treats leakage from age-related porosity as fracture damage for sections shown to be leaking. Under §7.1.1(b), €260 gross allows for local repair of both joints without funding renewal of the remaining run."
+  },
+  {
+   "item_id": "6",
+   "description": "Precautionary replacement of the remaining copper run",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1900.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 2.4.3 expressly excludes pipe sections not shown to be leaking, and §7.1.5 confines repairs to affected parts. Preventive replacement is therefore not indemnifiable."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium composite piping upgrade surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.9 limits payment to the pre-loss specification. This line is solely the premium upgrade difference, so none of it is payable."
+  },
+  {
+   "item_id": "8",
+   "description": "Plumber’s vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 5.2.6(c) allows one vehicle charge on the plumber’s separate invoice because the visit included the covered joint repairs. The €79 benchmark is below the €83.30 gross limit."
+  }
+ ]
+}

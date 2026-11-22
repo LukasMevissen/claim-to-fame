@@ -1,0 +1,229 @@
+{
+ "game": 46,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Wall tile covering 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.15,
+   "rationale": "Panel tiling in the damage area is reinstatement of damaged finishes (policy 7.1.1(b), 7.1.5, 7.1.6). Only the affected area is covered, not any improvement or extension."
+  },
+  {
+   "item_id": "2",
+   "description": "Hole drilling 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drilling a hole through a new tile for the pipe is necessary for reinstatement of the damaged area (policy 7.1.5)."
+  },
+  {
+   "item_id": "3",
+   "description": "Wall tiles 60x30 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.1,
+   "rationale": "Replacement of standard-grade tiles in the damaged area is covered (policy 7.1.6, 3.5(a)). Only standard tiles, not upgrades."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall levelling material 1 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.15,
+   "rationale": "Levelling material for patching render/plaster in the affected area is necessary for reinstatement (policy 7.1.5)."
+  },
+  {
+   "item_id": "5",
+   "description": "Wall tiles 1000x5000 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "No evidence in the description of any large-format or premium tiles used; if these are a duplicate or an upgrade, policy 3.5(a),(d) excludes. If not used, t=0."
+  },
+  {
+   "item_id": "6",
+   "description": "Silicone joints 3.6 linear m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.15,
+   "rationale": "Silicone joints in the affected area are part of the necessary reinstatement (policy 7.1.5)."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium silicone sealant 12 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.2,
+   "rationale": "If 'premium' is an upgrade over standard, only the cost of standard-grade is indemnified (policy 3.5(a), 7.1.6)."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 71.0,
+   "price_log_sd": 0.1,
+   "rationale": "One vehicle/call-out charge per contractor per document is covered (policy 7.4.2)."
+  },
+  {
+   "item_id": "9",
+   "description": "Skilled worker hours 14 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 462.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour for reinstatement in the damage area is covered at local rates (policy 7.4.1, see references for typical rates)."
+  },
+  {
+   "item_id": "10",
+   "description": "Clean wall tile covering 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.15,
+   "rationale": "Cleaning of reinstated surfaces in the damage area is part of the repair cost (policy 3.5(c), 7.1.5)."
+  },
+  {
+   "item_id": "11",
+   "description": "Remove drywall 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.2,
+   "rationale": "Removal of wet drywall/plasterboard in the affected area is necessary for reinstatement (policy 7.1.5)."
+  },
+  {
+   "item_id": "12",
+   "description": "Removal and disposal of damaged insulation 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 29.0,
+   "price_log_sd": 0.2,
+   "rationale": "Removal and disposal of wet mineral wool from the affected boxing is necessary and covered (policy 5.1(a), 5.2.1)."
+  },
+  {
+   "item_id": "13",
+   "description": "Remove damp plaster in basement rooms 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.15,
+   "rationale": "Removal of damp plaster in the damage area is necessary for reinstatement (policy 7.1.5)."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove damp plaster in attic 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.1,
+   "rationale": "Attic gable plaster is not related to the insured event (pre-existing staining, not affected by this leak; policy 3.5(b))."
+  },
+  {
+   "item_id": "15",
+   "description": "Wall rosette 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement of the chrome cover ring (wall rosette) broken during necessary repair is covered (policy 7.1.5)."
+  },
+  {
+   "item_id": "16",
+   "description": "Disassembly and assembly service 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 32.0,
+   "price_log_sd": 0.2,
+   "rationale": "Disassembly/reassembly of pipework or fittings to access and repair the leak is covered (policy 5.2.6, 7.1.5)."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction dryer 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 84.0,
+   "price_log_sd": 0.1,
+   "rationale": "Drying of the affected area is covered (policy 5.1(g), 5.2.7; see references for typical rates)."
+  },
+  {
+   "item_id": "18",
+   "description": "Material surcharge 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.3,
+   "rationale": "Material surcharges are only covered if attributable to necessary materials for reinstatement (policy 7.4.4); moderate allowance."
+  },
+  {
+   "item_id": "19",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.1,
+   "rationale": "Replacement of sodden pipe insulation in the damage area is covered (policy 7.1.5; see references for typical rates)."
+  },
+  {
+   "item_id": "20",
+   "description": "Construction waste disposal 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 58.0,
+   "price_log_sd": 0.1,
+   "rationale": "Disposal of construction waste from the reinstatement is covered (policy 5.1(a), 5.2.1; see references for typical rates)."
+  }
+ ]
+}

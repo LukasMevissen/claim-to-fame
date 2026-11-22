@@ -1,0 +1,75 @@
+{
+ "game": 45,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English police report translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "The police report is required under 2.3.3, but translating it to substantiate the claim is expressly excluded by 3.1.6 and 7.1.8(f)."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Provider working materials and charges ancillary to an excluded translation are excluded by 7.1.8(e)–(f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Stolen watch compensation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.999,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2375.0,
+   "price_log_sd": 0.05,
+   "rationale": "The reported robbery is covered, but 7.1.9 limits valuation to the pre-loss specification, and the equivalent watch value is then capped at €2,500 under 4.2.2 and 4.4. The capped watch and cash total €3,000, below the €5,000 away-from-home limit; allocating the single €150 deductible pro rata leaves €2,375 on this line."
+  },
+  {
+   "item_id": "4",
+   "description": "Stolen cash compensation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 475.0,
+   "price_log_sd": 0.05,
+   "rationale": "The approximately €900 taken in the robbery is valued at face amount under 6.2.4 and capped at €500 under 2.3.2 and 4.2.3. Its pro rata share of the single €150 deductible is €25, leaving €475."
+  },
+  {
+   "item_id": "5",
+   "description": "Replacement designer sunglasses",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.5,
+   "rationale": "The sunglasses were mislaid separately and were not taken in the robbery, so 2.3.4(a) and 7.1.10 exclude them."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Shipping is expressly excluded by 7.1.8(b), even when billed alongside covered property compensation, and Part 5 provides no applicable exception."
+  }
+ ]
+}

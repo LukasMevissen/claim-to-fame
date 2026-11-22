@@ -1,0 +1,152 @@
+{
+ "game": 23,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Shipping\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 4 \"Vehicle costs\": indemnified in 6 of 12 earlier cases, t = 0 in 6; when indemnified t per pc about 78 (80% range 68 to 88); revealed per pc: 12.9-16.1 (case 14), >=60 (case 16), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21)\n- line 9 \"Vehicle costs\": indemnified in 6 of 12 earlier cases, t = 0 in 6; when indemnified t per pc about 78 (80% range 68 to 88); revealed per pc: 12.9-16.1 (case 14), >=60 (case 16), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.3,
+   "rationale": "The bicycle is not insured property under this buildings policy (4.3(b)), and all outlay directed at it is excluded (7.1.8(a), 3.1.5)."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.3,
+   "rationale": "The bicycle is not insured property under this buildings policy (4.3(b)), and all outlay directed at it is excluded (7.1.8(a), 3.1.5)."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping (bicycle)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.3,
+   "rationale": "Ancillary charge for non-insured property (the bicycle); not indemnified (7.1.8(a), 7.1.8(d))."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 78.0,
+   "price_log_sd": 0.2,
+   "rationale": "Attendance charge for non-insured property (the bicycle); not indemnified (7.1.8(a), 7.1.8(f))."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bicycle)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "Assembly of non-insured property (the bicycle); not indemnified (7.1.8(a))."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bicycle)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sundry materials for non-insured property (the bicycle); not indemnified (7.1.8(a))."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bicycle)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Labour for non-insured property (the bicycle); not indemnified (7.1.8(a))."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bicycle)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.3,
+   "rationale": "Labour for non-insured property (the bicycle); not indemnified (7.1.8(a))."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 78.0,
+   "price_log_sd": 0.15,
+   "rationale": "Attendance for insured work (lock replacement at affected door); indemnified as first attendance for the trade (7.1.7(g)), price per reference cases (about 78)."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Assembly/fitting of new lock at affected door, which is insured property and was damaged in the break-in (2.6.2, 7.1.7(d))."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sundry materials for insured work (lock replacement at affected door); indemnified (7.1.7(f))."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour for insured work (lock replacement at affected door); indemnified (7.1.7(e)), price moderate for 1 hr."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour for insured work (lock replacement at affected door); indemnified (7.1.7(e)), price moderate for 1 hr."
+  }
+ ]
+}

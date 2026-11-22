@@ -1,0 +1,75 @@
+{
+ "game": 20,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.10 and 5.2.6(b) preserve cover for assessing the cause and extent of the loss despite gradual pipe ageing. Allow €300 gross for one ordinary assessment, below the €3,000 event cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection with technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 460.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.10 and 5.2.6(a), (c) cover locating the porous sections and one vehicle charge. Allow €390 gross for testing and technician time, plus €70 gross for travel, below the respective limits of €1,000 and €83.30 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor and skirting removal, preparation and disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.005,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.10 excludes reinstatement and debris removal for moisture damage from gradual leakage. The combined line describes whole-floor work, with no separately identified access work necessary to repair the leaking pipe sections."
+  },
+  {
+   "item_id": "4",
+   "description": "Work crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) excludes provisions for contractor personnel. No amount for the three catering units is payable."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3200.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.10 excludes the moisture remediation otherwise covered under 7.1.7. The bundled drying, labour, dust protection and disinfection do not repair the leaking pipe sections."
+  },
+  {
+   "item_id": "6",
+   "description": "Separately metered drying electricity",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 772.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.10 excludes the underlying drying work, and 7.1.7(b) independently excludes electricity billed separately in addition to a lump-sum drying charge. None of the 2,412.1 kWh is payable."
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "game": 45,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 6 \"Shipping\": indemnified in 1 of 8 earlier cases, t = 0 in 7; when indemnified t per pc about 27 (80% range 7.8 to 82); revealed per pc: 24-27 (case 24*) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.3,
+   "rationale": "The police report is required under 2.3.3, but 3.1.6 and 7.1.8(f) expressly exclude the cost of translating it for the claim."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 7.1.8(e) and (f) exclude provider working materials and ancillary charges billed alongside the excluded translation."
+  },
+  {
+   "item_id": "3",
+   "description": "Stolen watch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.999,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2375.0,
+   "price_log_sd": 0.05,
+   "rationale": "The watch was taken by force under 2.3.1. The equivalent pre-loss model sets the valuation under 7.1.9, but the €2,500 unscheduled valuables cap controls; its rateable share of the single €150 deductible is €125, leaving €2,375."
+  },
+  {
+   "item_id": "4",
+   "description": "Cash taken in robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 475.0,
+   "price_log_sd": 0.05,
+   "rationale": "The approximately €900 in stolen cash is capped at €500 under 2.3.2 and 4.2.3. The combined capped loss of €3,000 is below the €5,000 away-from-home limit; the cash line's rateable share of the single deductible is €25, leaving €475."
+  },
+  {
+   "item_id": "5",
+   "description": "Separately mislaid designer sunglasses",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.5,
+   "rationale": "The sunglasses were mislaid later, not taken in the robbery, so 2.3.4(a) and 7.1.5 exclude them."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.9,
+   "rationale": "Section 7.1.8(b) excludes shipping and forwarding even when billed alongside covered property, and 5.2.3 does not cover delivery of replacements or forwarding of documents."
+  }
+ ]
+}

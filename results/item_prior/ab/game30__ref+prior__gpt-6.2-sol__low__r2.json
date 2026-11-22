@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)\n- line 10 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for testing and rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1140.0,
+   "price_log_sd": 0.25,
+   "rationale": "Rainwater entering from outside is flood under §2.5, not escape of water under §2.4. No group (c2) cover is evidenced, so §3.6 bars the labour; if covered, 12 hours at €95 gross would total €1,140."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars all journey charges for the uninsured flood. If covered, this first listed attendance would be the single journey allowed under §7.1.7(g), estimated at €79 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 3.6.2(d) bars pumping equipment for the uninsured flood. Even on a covered loss, §5.2.2 folds equipment procurement into the extraction charge; €250 is a notional standalone gross cost."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.6.2(d) and 5.2.2 bar this separate equipment charge: the flood is uninsured, and the pump would otherwise be included in the extraction measure. €85 is a notional standalone gross deployment charge."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6.2(d) bars extraction even when urgently needed; the mitigation duty in §9.2 does not create cover. If the flood were covered, €600 gross would be an allowance for the extraction measure including labour and equipment under §5.2.2."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6.2(c) bars materials for repairing damage from the uninsured flood. If covered, €150 gross would allow for ordinary consumables incorporated into the affected circuits under §7.1.7(c)."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9500.0,
+   "price_log_sd": 0.35,
+   "rationale": "The fixed heating system is insured property under §4.2.2, but §3.6.2(a) bars replacement after an uninsured flood. If covered, €9,500 gross is an allowance for an installed, like-for-like system under §§7.1.1(c) and 7.1.9, excluding the separately billed adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(a) expressly bars adaptation work for the uninsured flood. If covered, €650 gross would allow for the necessary adjustments to immediately adjoining pipework under §7.1.7(d)."
+  },
+  {
+   "item_id": "9",
+   "description": "Disposal of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(e) bars removal and disposal after the uninsured flood. If covered, €350 gross would allow for ordinary haulage and disposal under §5.2.1."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars the charge, and §7.1.8(d) would also exclude it as a second journey even if the event were covered. €79 gross is the benchmark for one eligible attendance, not an additional allowance."
+  }
+ ]
+}

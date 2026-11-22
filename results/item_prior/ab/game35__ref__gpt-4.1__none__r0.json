@@ -1,0 +1,31 @@
+{
+ "game": 35,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.05,
+   "rationale": "Per 3.1.4 and 4.3(d), loss of or damage to property taken away by a third party is not covered, regardless of means or location, and personal belongings (clothing, jewellery) are not insured property under this residential dwelling policy. Reference Case 31 and 29 confirm such losses are not indemnified under this policy type."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.05,
+   "rationale": "Per 5.2.5 and 4.3(e), any expenditure connected with a conveyance (vehicle) is expressly excluded, whether for use, running, repair, or travel. Reference Case 30 and 26 confirm vehicle-related costs are not indemnified under this policy."
+  }
+ ]
+}

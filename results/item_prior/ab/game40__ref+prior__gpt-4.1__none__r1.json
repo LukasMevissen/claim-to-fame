@@ -1,0 +1,196 @@
+{
+ "game": 40,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 7 \"Service technician hours\": indemnified in all 3 earlier cases; when indemnified t per hr about 84 (80% range 56 to 106); revealed per hr: 44-49 (case 21), >=81 (case 39), >=81 (case 39), so this line (6.75 hr) about 566 (381 to 715)\n- line 8 \"Helper hours\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 68 (80% range 27 to 173), so this line (5.75 hr) about 394 (156 to 992)\n- line 9 \"Rock wool pipe insulation\": indemnified in the one earlier case; when indemnified t per pc about 24 (80% range 17.9 to 37); revealed per pc: >=22 (case 39), so this line (6 pc) about 146 (107 to 222)\n- line 12 \"Vehicle costs\": indemnified in 13 of 28 earlier cases, t = 0 in 15; when indemnified t per pc about 80 (80% range 72 to 88); revealed per pc: >=76 (case 21), >=76 (case 21), >=74 (case 27), >=83 (case 34), >=76 (case 34), >=65 (case 39)\n- line 13 \"Construction waste disposal\": indemnified in the one earlier case; when indemnified t per pc about 62 (80% range 45 to 94); revealed per pc: >=57 (case 18)\n- line 17 \"Processing flat fee\": NOT indemnified (t = 0) in all 6 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 32.0,
+   "price_log_sd": 0.2,
+   "rationale": "Only fittings directly used in the repair of the failed heating pipe in the boiler room are indemnified (7.1.5, 7.1.7(c)). These are standard repair parts for the affected pipework."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 28mm (5 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.2,
+   "rationale": "As above, fittings used in the repair of the affected pipework are indemnified (7.1.5, 7.1.7(c))."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 45° copper 28mm (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.2,
+   "rationale": "Standard fitting for the repair of the affected pipework (7.1.5, 7.1.7(c))."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screw (8 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.0,
+   "price_log_sd": 0.2,
+   "rationale": "Minor fixings and fastenings used in the repair are indemnified (7.1.7(c))."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamp 25 mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.2,
+   "rationale": "Pipe clamps are standard consumables for securing new pipework in the affected area (7.1.7(c))."
+  },
+  {
+   "item_id": "6",
+   "description": "Copper pipe 15x1 (6.4 m)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 77.0,
+   "price_log_sd": 0.2,
+   "rationale": "Replacement copper pipe for the section cut out and replaced in the affected boiler room (7.1.5, 7.1.7(c))."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician hours (6.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 566.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour for the repair of the failed pipe in the affected area is indemnified (7.1.7(g)). Use price prior: about 566 for 6.75 hrs."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper hours (5.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 394.0,
+   "price_log_sd": 0.3,
+   "rationale": "Helper labour for the repair in the affected area is indemnified (7.1.7(g)). Use price prior: about 394 for 5.75 hrs."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation (6 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 146.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement insulation for the repaired pipe is indemnified (7.1.7(c)). Use price prior: about 146 for 6 pcs."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire (2 kg)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.25,
+   "rationale": "Consumable for securing insulation or pipework, standard for this repair (7.1.7(c))."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.25,
+   "rationale": "Minor fixings and consumables for the repair are indemnified (7.1.7(c))."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.1,
+   "rationale": "One call-out charge per contractor per invoice is indemnified (7.1.7(f)). Use price prior: about 80."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.2,
+   "rationale": "Disposal of debris from the repair is indemnified (5.2.1, 7.1.7(a)). Use price prior: about 62."
+  },
+  {
+   "item_id": "14",
+   "description": "Repainting of basement hallway (outside boiler room, 12 m²)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Work outside the affected area is not covered (7.1.5). The hallway was not affected by the leak."
+  },
+  {
+   "item_id": "15",
+   "description": "Laminate flooring replacement – adjacent storage room (15 m²)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.3,
+   "rationale": "Work in the storage room is not covered (7.1.5), as it was not affected by the leak."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service (1 flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "Servicing the outdoor tap is unrelated to the insured event (7.1.5, 7.1.8(a))."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.05,
+   "rationale": "General administrative/processing fees are not indemnified (7.1.8(b))."
+  }
+ ]
+}

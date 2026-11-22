@@ -1,0 +1,97 @@
+{
+ "game": 33,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 8 \"Administration fee\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Equivalent laptop replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.45,
+   "rationale": "The swerve impact is covered under 2.6.2 and 4.5.2, and the battery health waiver overrides the below-80% exclusion in 2.6.8. The supplier's report supports replacement under 7.1.10; an estimated €750 for an equivalent new unit less €50 in salvage gives €700 gross before any unstated event deductible."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.9 limits settlement to the pre-loss specification, already accounted for on line 1. This line is solely the elective upgrade difference, so the payable threshold is zero."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.35,
+   "rationale": "The cracked screen is covered impact damage under 2.6.2–2.6.4. A standard screen replacement with labour and testing is estimated at €170 gross under 7.1.7 and 7.1.10, with no separate tablet deductible."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostics for both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 5.2.3 covers necessary diagnostics on both devices, including the laptop found uneconomic to repair. At about €35 per device, the €70 gross total is below the shared €250 event cap; any credit against the repair invoice would reduce reimbursement."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 4.2.6 and 7.1.5 cover a carrying case only if it was itself damaged by the event. The bag was undamaged, so the payable threshold is zero."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 3.5(f) and 7.1.8(e) expressly exclude extended warranties, including those sold with a covered replacement. The payable threshold is zero."
+  },
+  {
+   "item_id": "7",
+   "description": "Laptop data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(d) and 4.3(c) exclude data recovery unless separately agreed. The battery waiver does not add data cover, and no data restoration endorsement is stated, so the payable threshold is zero."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) excludes separate administrative charges, including those billed by another provider. The fee also relates to excluded data recovery, so the payable threshold is zero."
+  }
+ ]
+}

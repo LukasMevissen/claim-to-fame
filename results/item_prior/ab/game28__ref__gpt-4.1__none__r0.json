@@ -1,0 +1,20 @@
+{
+ "game": 28,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit - replacement including installation and delivery (3 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1800.0,
+   "price_log_sd": 0.3,
+   "rationale": "The insured peril is overvoltage caused by lightning (2.3.3), which is covered for insured electrical installations. The fixed kitchen AC unit is a technical installation firmly connected to the building (4.2.3) and is not excluded by the general exclusions. However, 2.3.10(c) specifically excludes overvoltage damage to climate-control equipment installed within five metres of a cooking appliance, measured in a straight line, unless a kitchen climate endorsement is present. The description and photo confirm the AC unit is mounted close to the hob, and the policy schedule has no endorsements. Therefore, the entire line is excluded by 2.3.10(c), regardless of the surge cause or the fact that the unit was replaced like-for-like. All elements and ancillary charges (installation, delivery) are also excluded by 3.5 and 7.1.11."
+  }
+ ]
+}

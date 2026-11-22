@@ -1,0 +1,20 @@
+{
+ "game": 28,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen AC replacement, including installation and delivery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2400.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.3.10(c) excludes lightning-surge damage to climate-control equipment within five metres of a cooking appliance without the kitchen climate endorsement; the pictured unit is within that distance and no endorsement applies. Under §§7.1.11 and 9.5, installation and delivery follow the excluded replacement, leaving €0 payable for the combined line; €2,400 is the conditional gross estimate for the one documented unit."
+  }
+ ]
+}

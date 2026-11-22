@@ -1,0 +1,207 @@
+{
+ "game": 41,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 133.3,
+   "price_log_sd": 0.32,
+   "rationale": "Theft damage to the frame is covered under 2.3.1(b), with replacement limited to the pre-loss grade under 7.1.9. The €245 gross estimate is reduced by the shared €500 mobility cap under 4.2.2, using an estimated factor of 500/919."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.63,
+   "price_log_sd": 0.19,
+   "rationale": "The brakes sustained theft damage, so like-for-like parts are covered under 7.1.7(b). The €139 gross estimate is prorated by 500/919 under 4.2.2."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.2,
+   "rationale": "The tracker helped locate the bicycle, but no separate loss or damage to it is established. Sections 3.1.7 and 4.2.3 exclude its replacement on these facts."
+  },
+  {
+   "item_id": "4",
+   "description": "Service of second household bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "Routine servicing is excluded under 3.1.6, and the second bicycle was unaffected under 7.1.5."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "Neither accessory is identified as stolen or damaged. Sections 3.1.7 and 4.2.3 exclude new accessories supplied in connection with the claim."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.6,
+   "price_log_sd": 0.21,
+   "rationale": "Necessary carriage of replacement parts is covered under 7.1.7(f), but shipping for the elective purchases is not. If attributable to the covered repair, €25 gross is prorated by 500/919."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle shop vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.29,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.24,
+   "price_log_sd": 0.38,
+   "rationale": "Sections 7.1.7(g) and 7.1.10 require a necessary attendance attributable to covered work, which this generic line does not establish. If a separate €25 attendance is substantiated, the revised cap factor is 500/944."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.17,
+   "price_log_sd": 0.32,
+   "rationale": "Fitting and aligning the replacement frame and brakes is covered under 7.1.7(c), provided it does not duplicate separately billed labour. The €140 gross estimate is prorated by 500/919."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3.81,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(e) allows sundries consumed in the theft repair, subject to allocation under 7.1.10. If the €7 gross charge is for covered repair materials, it is prorated by 500/919."
+  },
+  {
+   "item_id": "10",
+   "description": "Bicycle shop apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.68,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.79,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(d) covers apprentice labour actually used on the theft repair; 7.1.8(g) excludes any time already included in assembly. One distinct hour at €18 gross is prorated by 500/919."
+  },
+  {
+   "item_id": "11",
+   "description": "Bicycle shop skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.67,
+   "price_log_sd": 0.23,
+   "rationale": "Skilled labour is covered under 7.1.7(d) if attributable to the theft repair and not already billed as assembly. One distinct hour at €38 gross is prorated by 500/919."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.41,
+   "price_log_sd": 0.28,
+   "rationale": "The initial locksmith attendance was necessary to release the bicycle and is separately covered under 5.2.2(a). The €32 gross estimate is prorated by 500/919 under the mobility cap."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 54.41,
+   "price_log_sd": 0.23,
+   "rationale": "Section 5.2.2(b) expressly covers cutting and removing the lock to release the recovered bicycle. The €100 gross estimate for the whole line is prorated by 500/919."
+  },
+  {
+   "item_id": "14",
+   "description": "Locksmith return-visit vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.14,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.81,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 5.2.2(a) and 7.1.8(f) allow a second attendance only if it was necessary; the account establishes only the initial visit. If a distinct €30 return visit is substantiated, the revised cap factor is 500/949."
+  },
+  {
+   "item_id": "15",
+   "description": "Mandatory impound release and storage fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 64.74,
+   "price_log_sd": 0.16,
+   "rationale": "The yard required payment before releasing the bicycle, so the fee is covered under 5.2.2(c), not excluded as administration. €100 plus 19% VAT is €119 gross; the recovery subtotal is below €1,000, but the shared mobility cap prorates this line by 500/919."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.1.5 and 7.1.8(d) expressly exclude claim-processing charges. This is separate from the yard's mandatory release fee."
+  },
+  {
+   "item_id": "17",
+   "description": "Locksmith apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.67,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.79,
+   "price_log_sd": 0.29,
+   "rationale": "Section 5.2.2(b) covers all labour grades used for lock removal, but 7.1.8(g) bars any time already included in the cutting charge. One distinct hour at €18 gross is prorated by 500/919."
+  },
+  {
+   "item_id": "18",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.67,
+   "price_log_sd": 0.21,
+   "rationale": "Skilled recovery labour is covered under 5.2.2(b) to the extent it does not duplicate the cutting charge. One distinct hour at €38 gross is prorated by 500/919."
+  }
+ ]
+}

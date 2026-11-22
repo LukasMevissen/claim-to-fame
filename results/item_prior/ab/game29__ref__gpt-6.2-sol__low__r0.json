@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen everyday household contents",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 2.2 and 2.6.3 require the schedule to include movable contents under forcible removal; the description does not confirm that election. If covered, §§4.4.5–4.4.6 and 7.1.1(d) support an estimated €650 gross for like-for-like replacement, without the high-value per-article cap, subject to an itemised loss list."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of forced door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 390.0,
+   "price_log_sd": 0.35,
+   "rationale": "If forcible removal cover is in force, §2.6.2 covers the forced door damage and §5.2.2 covers necessary immediate securing, with no duplicate payment under Part 7. Ordinary attendance, boarding and local lock or frame work are estimated at €390 gross, below the €1,000 securing cap; no deductible is stated."
+  }
+ ]
+}

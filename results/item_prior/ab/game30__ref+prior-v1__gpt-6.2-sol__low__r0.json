@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)\n- line 10 \"Vehicle costs\": indemnified in 9 of 19 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 71 to 87); revealed per pc: 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for flooded circuits, 12 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1080.0,
+   "price_log_sd": 0.2,
+   "rationale": "Rainwater entered from outside, so this is flood under §2.5, not escape of water under §2.4. No group (c2) cover is shown, so §3.6.2(b) bars the labour; if covered, 12 hours at €90 gross would total €1,080."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars all journey charges for the uninsured flood. If the flood were covered, this first recorded journey charge would be eligible under §7.1.7(g), at about €79 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.6.2(d) bars pumping equipment for the uninsured flood. Even for a covered flood, §§4.3(d) and 5.2.2 exclude separate reimbursement of the pump; €250 is an indicative gross purchase price only."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.6.2(d) bars this equipment charge, and §5.2.2 treats pump use as part of the extraction measure rather than a separately payable line. An indicative standalone deployment charge is €90 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.6.2(d) and 5.1 bar mitigation costs because no flood cover is shown. For a covered event, an ordinary extraction service including labour and pump use would be about €450 gross, before any scheduled limit."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 125.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(c) bars materials used to repair uninsured flood damage. If covered, §7.1.7(c) would allow about €125 gross for standard consumables actually installed in the affected circuits."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10500.0,
+   "price_log_sd": 0.35,
+   "rationale": "The fixed heating system is insured property under §4.2.2, but §3.6.2(a) bars replacement because no flood cover is shown. Under §7.1.1(c), an installed like-for-like system would otherwise be about €10,500 gross, excluding the separately listed pipe adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(a) expressly bars adaptation work for an uninsured replacement. If covered, §7.1.7(d) would allow about €650 gross for necessary changes to the immediately adjoining connections."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system removal and disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(e) bars removal and disposal for the uninsured flood. Under §5.2.1, reasonable removal, haulage and disposal of the old system would otherwise be about €450 gross, before any scheduled limit."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars all travel for the uninsured flood, and §7.1.8(d) would also bar a second journey charge if the first were paid. The standalone benchmark for one eligible journey is €79 gross."
+  }
+ ]
+}

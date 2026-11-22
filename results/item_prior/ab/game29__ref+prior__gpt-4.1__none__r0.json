@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen household contents (clothing, personal effects and everyday jewellery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1800.0,
+   "price_log_sd": 0.25,
+   "rationale": "The policy covers forcible removal of insured property (2.6) and includes ordinary clothing and everyday jewellery as movable property of the household (4.2.6, 4.4.5, 4.4.6). The description and police reference confirm forced entry. The policy excludes high-value jewellery above the sub-limit, but here only modest, everyday pieces are claimed, so no sub-limit applies (4.4.5, 4.4.6). Indemnity is for the replacement cost of comparable new items (7.1.1(d)), within the sum insured. Reference cases show that for ordinary clothing and modest jewellery, the full replacement value is indemnified if properly documented. No evidence of betterment or upgrades. Estimate based on a moderate wardrobe and some everyday jewellery, not exceeding typical contents sub-limits."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of the forced entry door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.05,
+   "rationale": "The policy covers immediate securing and provisional protection after a break-in (5.2.2), including temporary boarding and restoring the closure element to a lockable state. The invoice and photo confirm the door was forced and re-secured. Indemnity is capped at EUR 1,000 per event for this head (5.2.2). Reference cases for similar emergency repairs (e.g., glass replacement, boarding, lock replacement) show indemnity up to the cap for necessary work. Estimate at the policy cap, as the work appears to include both boarding and lock/closure restoration."
+  }
+ ]
+}

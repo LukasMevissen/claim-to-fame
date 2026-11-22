@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen household contents (clothing, personal effects and everyday jewellery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.25,
+   "rationale": "The policy covers forcible removal of insured property (2.6) and includes ordinary clothing and everyday jewellery as movable property of the household (4.2.6, 4.4.5, 4.4.6). The description confirms the jewellery is not of a high-value kind, so no per-article sub-limit applies (4.4.5, 4.4.6). Indemnity is for the replacement cost of articles of the same kind and quality in new condition (7.1.1(d)), within the sum insured for contents. No evidence of underinsurance or sub-limits. Probability is high as all requirements are met and police were called (2.6.5, 9.2.2). Reference cases show similar claims for everyday contents are indemnified in full."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of the forced entry door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.05,
+   "rationale": "The policy covers immediate securing and provisional protection of the insured location after a break-in (5.2.2), including restoring a closure element to a lockable state. Indemnity is capped at EUR 1,000 per event for this head (5.2.2). The work is directly related to the insured peril and is necessary to restore security. Reference cases confirm this is indemnified up to the cap."
+  }
+ ]
+}

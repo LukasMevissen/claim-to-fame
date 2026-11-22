@@ -1,0 +1,152 @@
+{
+ "game": 24,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.15,
+   "rationale": "The bicycle is scheduled at an agreed value (EUR 3,500) under a Bicycle Endorsement, overriding the standard EUR 500 sub-limit for mobility equipment. The frame was damaged in the theft event and is an affected item (2.3.1(b), 7.1.1(b)). Indemnity is capped at the agreed value, but repair/replacement is covered up to the necessary cost or the agreed value, whichever is lower."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.15,
+   "rationale": "Brakes are a permanently fitted part of the scheduled bicycle and were damaged in the theft (2.3.1(b), 7.1.1(b)). Covered as part of the repair up to the agreed value. Reference cases confirm this is indemnifiable when the item is scheduled and damaged."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.1,
+   "rationale": "Shipping of the affected item for repair is a necessary element of restoring the item (7.1.7(f)), and is covered up to the agreed value. Reference cases show shipping is not indemnified for replacement-only claims, but is for repair of an affected item."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.1,
+   "rationale": "Vehicle costs for the trade attending to repair the affected item are covered as part of the repair (7.1.7(g)), up to the agreed value. Reference cases for similar work show vehicle costs for repair are indemnified."
+  },
+  {
+   "item_id": "5",
+   "description": "Assembly costs (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.1,
+   "rationale": "Assembly costs for fitting the replacement frame and brakes are part of the necessary repair (7.1.7(c)), covered up to the agreed value. Reference cases confirm assembly is indemnified for repair of an affected item."
+  },
+  {
+   "item_id": "6",
+   "description": "Miscellaneous items (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sundry materials consumed in the repair (7.1.7(e)) are covered if they relate to the affected item. Reference cases suggest these are indemnified if reasonable and not a disguised admin fee."
+  },
+  {
+   "item_id": "7",
+   "description": "Apprentice hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for repair of the affected item are covered (7.1.7(d)), at customary rates. Reference cases for similar work show apprentice hours are indemnified for repair."
+  },
+  {
+   "item_id": "8",
+   "description": "Skilled worker hours (bicycle service)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for repair of the affected item are covered (7.1.7(d)), at customary rates. Reference cases for similar work show skilled worker hours are indemnified for repair."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.1,
+   "rationale": "Vehicle costs for the locksmith attending to recover the stolen bicycle are covered as a recovery cost (5.2.2(a)), subject to the agreed value sub-limit. Reference cases confirm vehicle costs for recovery are indemnified."
+  },
+  {
+   "item_id": "10",
+   "description": "Assembly costs (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.1,
+   "rationale": "Assembly costs here refer to the work of cutting the seized lock to recover the bicycle, which is a necessary recovery cost (5.2.2(b)), covered up to the agreed value. Reference cases confirm this is indemnified."
+  },
+  {
+   "item_id": "11",
+   "description": "Miscellaneous items (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sundry materials consumed in the lock removal (5.2.2(b), 7.1.7(e)) are covered if reasonable. Reference cases suggest these are indemnified if not a disguised admin fee."
+  },
+  {
+   "item_id": "12",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for the recovery of the affected item are covered (5.2.2(b), 7.1.7(d)), at customary rates. Reference cases for similar work show apprentice hours are indemnified for recovery."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour hours for the recovery of the affected item are covered (5.2.2(b), 7.1.7(d)), at customary rates. Reference cases for similar work show skilled worker hours are indemnified for recovery."
+  }
+ ]
+}

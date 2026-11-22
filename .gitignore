@@ -236,3 +236,6 @@ dashboard/data.js
 dashboard/*.tmp
 dashboard/briefings/
 dashboard/artifact/
+
+# item prior A/B: transaction summary rebuilt on every run of scripts/item_prior_ab.py
+results/item_prior/ab/_summary.json

@@ -1,0 +1,97 @@
+{
+ "game": 33,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 8 \"Administration fee\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Equivalent laptop replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 800.0,
+   "price_log_sd": 0.4,
+   "rationale": "The swerve impact is covered under §§2.6.2 and 4.5.2, and the battery waiver disapplies the 80% cutoff in §2.6.8. The supplier's uneconomic-repair report supports settlement under §7.1.10 at an estimated €850 for an equivalent new laptop less €50 in salvage; no deductible amount is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.9 limits replacement to the pre-loss specification. Line 1 already accounts for the equivalent unit, so none of the separately billed elective upgrade is payable."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.38,
+   "rationale": "The cracked screen is covered under §§2.6.3–2.6.4 as damage to a second unit in the same event. Under §§7.1.7(e) and 7.1.10, allow about €220 gross for an ordinary screen repair including labour and testing, subject to the equivalent replacement ceiling; no separate deductible applies."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostics for both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 5.2.3 covers necessary diagnostics for both units, including the laptop found uneconomic to repair, up to €250 gross for the event. Allow about €45 per device, or €90 total, assuming neither charge was credited against the repair."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.45,
+   "rationale": "Under §§4.2.6 and 7.1.5, a carry bag must itself have suffered insured damage. The old bag was undamaged, so no replacement allowance applies."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended laptop warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5(f) and 7.1.8(e) expressly exclude undertakings as to future performance, so none of the warranty premium is payable."
+  },
+  {
+   "item_id": "7",
+   "description": "Laptop data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.65,
+   "rationale": "Sections 3.5(d) and 4.3(c) exclude data recovery unless separately agreed in the schedule. Only a battery health waiver is identified, so no recovery cost is payable."
+  },
+  {
+   "item_id": "8",
+   "description": "Data-services administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) excludes separately billed general administration charges, including those of a separate provider. The fee also relates to excluded data recovery."
+  }
+ ]
+}

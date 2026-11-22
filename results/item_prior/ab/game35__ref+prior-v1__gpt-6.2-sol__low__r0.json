@@ -1,0 +1,31 @@
+{
+ "game": 35,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds revealed in\nearlier games; gross amounts). How to use them:\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only tells you how often this line type was paid at all.\n- If you decide the line is indemnified and no cap, sub-limit or percentage reduction applies,\n  take the stated amount as t and give a price_log_sd that matches the stated range. These\n  amounts are before such policy arithmetic; apply caps and reductions on top.\n- A line type that was never indemnified before is usually an ancillary charge the policies\n  do not carry; price it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 12 of 24 earlier cases, t = 0 in 12; when indemnified t per pc about 79 (80% range 68 to 89); revealed per pc: 34-45 (case 23), 38-44 (case 25), >=74 (case 27), 37-41 (case 32), >=83 (case 34), >=76 (case 34)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is excluded under §§2.1 and 3.1.4. Clothing and jewellery are also excluded personal property, and the items were in a vehicle away from the insured location (§§4.3(d)–(f), 4.5); the payable amount is €0."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.11,
+   "rationale": "Vehicle and journey costs are excluded under §5.2.5, and the car itself is not insured property under §4.3(e). No insured building repair or debris transport is involved, so the payable amount is €0."
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour checking and rewiring the flooded basement circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.2,
+   "rationale": "The policy (WD-2026) excludes indemnity for damage caused by inundation (surface water/rainwater flooding) unless the natural hazards group (c2) is recorded as insured in the schedule. Here, the cause is established as inundation (rainwater from outside, not plumbing), so 3.6.1 and 3.6.2 bar all indemnity for repair, labour, and materials."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (electrician)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Journey/vehicle charges are explicitly barred under 3.6.2(f) when the claim is excluded for inundation. No indemnity."
+  },
+  {
+   "item_id": "3",
+   "description": "Procurement of a motor pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Working equipment (1.3, 4.3(d)) and its procurement are not insured property, and all costs for measures, equipment, and labour for inundation are barred by 3.6.2(d)."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.3,
+   "rationale": "As above, working equipment and its use for water removal in an inundation claim are not indemnified (3.6.2(d), 4.3(d))."
+  },
+  {
+   "item_id": "5",
+   "description": "Water extraction from the flooded basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.2,
+   "rationale": "Measures to remove standing water from inundation are specifically barred by 3.6.2(d), regardless of necessity or urgency."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for the rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Materials for repair or replacement of installations affected by inundation are barred by 3.6.2(c)."
+  },
+  {
+   "item_id": "7",
+   "description": "Renew boiler system including flue gas system and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7000.0,
+   "price_log_sd": 0.3,
+   "rationale": "The boiler and its components were damaged by inundation (surface water/rainwater flooding), not by an insured peril. 3.6.2(a) bars indemnity for repair or replacement of installations in such cases."
+  },
+  {
+   "item_id": "8",
+   "description": "Adjust supply pipework to fit the replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.2,
+   "rationale": "Ancillary work to adapt pipework for a replacement installation is also barred under 3.6.2(a) when the underlying claim is excluded for inundation."
+  },
+  {
+   "item_id": "9",
+   "description": "Dispose of the old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.2,
+   "rationale": "Disposal of damaged installations is an ancillary cost barred by 3.6.2(e) in inundation claims."
+  },
+  {
+   "item_id": "10",
+   "description": "Vehicle costs (heating contractor)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Journey/vehicle charges are barred by 3.6.2(f) when the claim is excluded for inundation."
+  }
+ ]
+}

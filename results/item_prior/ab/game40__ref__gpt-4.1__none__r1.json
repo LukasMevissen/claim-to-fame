@@ -1,0 +1,196 @@
+{
+ "game": 40,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 32.0,
+   "price_log_sd": 0.15,
+   "rationale": "These fittings are necessary for the repair of the failed copper heating pipe in the plant room, which is directly related to the insured escape of water peril (2.4.2). Indemnified as part of the repair cost (7.1.1(b), 7.1.7(c))."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 28mm (5 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.15,
+   "rationale": "Same as above: fittings required for the pipe repair in the affected plant room. Covered under the escape of water peril and repair cost clauses."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 45° copper 28mm (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 11.0,
+   "price_log_sd": 0.15,
+   "rationale": "Also a necessary fitting for the pipe repair in the affected area. Covered as above."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screw (8 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.0,
+   "price_log_sd": 0.15,
+   "rationale": "Minor fixings and fastenings required for the pipe repair are covered as part of the necessary repair cost (7.1.7(c))."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamp 25 mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.15,
+   "rationale": "Pipe clamps are necessary for securing the new pipework during the repair. Covered under repair costs."
+  },
+  {
+   "item_id": "6",
+   "description": "Copper pipe 15x1 (6.4 m)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 64.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement copper pipe is directly required for the repair of the failed section. Covered under repair costs."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician hours (6.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 513.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour for the pipe repair in the affected plant room is covered (7.1.7(g)). Only the portion relating to the insured repair is indemnified; hours spent on unrelated jobs are not."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper hours (5.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 230.0,
+   "price_log_sd": 0.2,
+   "rationale": "Helper labour for the pipe repair is covered, but only for work on the affected plant room. If any hours relate to unrelated jobs, those are not indemnified. Estimate assumes all hours relate to the repair."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation (6 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement insulation for the repaired pipe is necessary and covered under repair costs (7.1.7(c))."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire (2 kg)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.2,
+   "rationale": "Consumable installation material for securing insulation or pipework, covered as part of the repair (7.1.7(c))."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.2,
+   "rationale": "Minor fixings and consumables for the repair are covered (7.1.7(c))."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.05,
+   "rationale": "One travel/call-out charge per contractor per invoice is covered (7.1.7(f))."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.15,
+   "rationale": "Disposal of debris from the pipe repair is covered as necessary ancillary work (7.1.7(a), 5.2.1)."
+  },
+  {
+   "item_id": "14",
+   "description": "Repainting of basement hallway (outside boiler room, 12 m²)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.15,
+   "rationale": "Work outside the affected plant room is not covered (7.1.5); hallway was not itself damaged by the leak."
+  },
+  {
+   "item_id": "15",
+   "description": "Laminate flooring replacement – adjacent storage room (15 m²)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 375.0,
+   "price_log_sd": 0.2,
+   "rationale": "Storage room was not affected by the leak; work is not covered (7.1.5)."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service (1 flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.2,
+   "rationale": "Servicing the outdoor tap is unrelated to the insured event and is not covered (7.1.8(a))."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.05,
+   "rationale": "General administrative/processing fees are not indemnified (7.1.8(b))."
+  }
+ ]
+}

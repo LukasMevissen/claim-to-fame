@@ -1,0 +1,75 @@
+{
+ "game": 20,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.6(b) covers costs of inspecting and assessing the damage to determine cause and extent, up to EUR 3,000 per event. Reference Case 2 shows t between 60 and 84 for a similar assessment. This is a standard, single assessment call."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection incl. measurement technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 5.2.6(a) covers leak location (acoustic, thermographic, etc.) and technician time up to EUR 1,000 per event, and 5.2.6(c) allows one vehicle charge per invoice up to EUR 70 net. Reference Case 2 (diagnostic inspection) t between 60 and 84, and Case 16 (thermal imaging) t below 57. This is a combined line, so a moderate single charge is reasonable."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor covering removal incl. linoleum and skirting, surface preparation and construction-waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 7.1.7(a) covers dismantling and disposal of affected finishes, and 7.1.7(b) covers necessary substrate prep. 7.1.5 restricts to affected parts only. Reference Case 12 (skirting removal/replacement, cleaning, prep) t between 423 and 514 for a similar scope but including more. Here, only removal/prep/disposal, so a moderate portion of that range is fair."
+  },
+  {
+   "item_id": "4",
+   "description": "Catering for work crew",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.8(b) excludes contractor provisioning for its own personnel (meals, etc.), which is not a repair cost. Reference cases consistently exclude such lines."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying (large-area, cavity and borehole) incl. labour, dust protection and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.15,
+   "rationale": "Policy 7.1.7(b) covers drying, including labour and dust protection, and 7.1.7(e) covers disinfection of affected areas. Reference Case 12 (moisture measurement and drying, incl. skilled labour) t between 605 and 680 for a similar open-plan area. This line includes all drying and disinfection, so a value in that range is justified."
+  },
+  {
+   "item_id": "6",
+   "description": "Electricity for drying equipment (separately metered)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(b) states that a drying charge (day/area/unit/lump sum) is deemed to include utilities consumed by the equipment; a separately metered utility charge in addition is not indemnified. Reference cases consistently exclude such lines."
+  }
+ ]
+}

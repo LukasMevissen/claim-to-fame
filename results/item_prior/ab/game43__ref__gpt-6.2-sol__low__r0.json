@@ -1,0 +1,196 @@
+{
+ "game": 43,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Chrome-plated 15 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 96.0,
+   "price_log_sd": 0.19,
+   "rationale": "Sections 2.4.3(a) and 7.1.9 cover the necessary replacement of the failed heating-pipe section at the plain-copper rate. The 6.4 m line is valued at about €15/m gross, with no allowance for chrome plating or renewal beyond the necessary repair."
+  },
+  {
+   "item_id": "2",
+   "description": "15 mm 90° elbows",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.18,
+   "rationale": "Under §§7.1.7(c) and 7.1.9, necessary fittings are valued at the standard copper price: four at about €10.50 gross each."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm 90° elbows",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.21,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow the standard-grade equivalents where needed to reconnect the repaired run: five at about €21 gross each."
+  },
+  {
+   "item_id": "4",
+   "description": "28 mm 45° elbow",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 limit this fitting to the cost of one ordinary 28 mm copper elbow, excluding the chrome premium."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(c) covers minor repair fasteners. Eight screws at about €1.10 each match the comparable boiler-room repair."
+  },
+  {
+   "item_id": "6",
+   "description": "10 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.8(e) excludes dimensions not attributable to the documented repair; no 10 mm pipe is identified. If their use is substantiated, four ordinary clamps would cost about €4.50 each."
+  },
+  {
+   "item_id": "7",
+   "description": "25 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 7.1.7(c) covers necessary supports for the repaired run. Four at about €6.25 each are consistent with the comparable boiler-room repair."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 607.5,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 7.1.7(g) and 7.1.9 allow customary labour for the equivalent standard repair, not extra time for the new devices or designer finish. The comparable standard repair supports up to 6.75 hours at €90 gross per hour."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 396.75,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 7.1.7(g) and 7.1.9 cover helper time needed for the standard repair only. The comparable repair supports up to 5.75 hours at €69 gross per hour."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad Armaflex insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.17,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 limit reimbursement to the former rock-wool specification. Six equivalent shells at €20 gross each give a €120 ceiling."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(c) permits consumables used in restoring the insulation. The two-kilogram line is valued at about €9.50/kg gross, consistent with the comparable repair."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.9 excludes the sensor entirely because none was installed before the loss. The positive figure is a conditional price estimate, not a covered allowance."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.9 excludes the valve entirely because it was not part of the pre-loss installation. The positive figure is a conditional price estimate, not a covered allowance."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow a reasonable lump sum for minor installation materials attributable to the standard repair. The comparable repair supports about €35 gross."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice. This is the only such line, valued at €74 gross using the comparable repair."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of pipe and insulation removed for the necessary repair. The comparable boiler-room job supports €60 gross."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(b) excludes general processing charges billed on top of itemised labour and materials. The positive figure is a conditional estimate, not a covered allowance."
+  }
+ ]
+}

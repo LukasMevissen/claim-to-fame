@@ -1,0 +1,251 @@
+{
+ "game": 21,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 5 \"Vehicle costs\": indemnified in 3 of 9 earlier cases, t = 0 in 6; when indemnified t per pc about 71 (80% range 54 to 95); revealed per pc: 12.9-16.1 (case 14*), >=60 (case 16*), >=68 (case 18) (* = other policy wording)\n- line 14 \"Vehicle costs\": indemnified in 3 of 9 earlier cases, t = 0 in 6; when indemnified t per pc about 71 (80% range 54 to 95); revealed per pc: 12.9-16.1 (case 14*), >=60 (case 16*), >=68 (case 18) (* = other policy wording)\n- line 20 \"Vehicle costs\": indemnified in 3 of 9 earlier cases, t = 0 in 6; when indemnified t per pc about 71 (80% range 54 to 95); revealed per pc: 12.9-16.1 (case 14*), >=60 (case 16*), >=68 (case 18) (* = other policy wording)\n- line 21 \"Vehicle costs – return visit\": NOT indemnified (t = 0) in all 2 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 481.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(e) covers the investigation necessary to locate the source of damage; reference case 20 shows t >= 481 for a similar call-out."
+  },
+  {
+   "item_id": "2",
+   "description": "Electro-acoustic pinpointing of the leak beneath the kitchen sink",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 707.0,
+   "price_log_sd": 0.05,
+   "rationale": "Covered as part of necessary leak detection under 7.1.7(e); reference case 20 shows t >= 707 for a similar specialist detection line."
+  },
+  {
+   "item_id": "3",
+   "description": "Moisture measurement of the kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Covered as measurement to establish extent of moisture per 7.1.7(e); reference case 20 includes this in the leak detection threshold."
+  },
+  {
+   "item_id": "4",
+   "description": "Service technician hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour for leak detection and survey is included in the flat-rate call-out and detection lines (see reference case 20); separate hours are not indemnified."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.33,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.7(f) allows one travel/call-out charge per contractor per invoice; reference cases show t >= 68 for vehicle costs when indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Freeing the affected pipe run beneath the kitchen sink",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 221.0,
+   "price_log_sd": 0.05,
+   "rationale": "Necessary preparatory work for pipe repair, covered under 7.1.7(a); reference case 18 supports inclusion."
+  },
+  {
+   "item_id": "7",
+   "description": "Removal and disposal of damaged insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 57.0,
+   "price_log_sd": 0.05,
+   "rationale": "Removal of affected insulation is necessary for repair (7.1.7(a)); reference case 18 supports inclusion."
+  },
+  {
+   "item_id": "8",
+   "description": "Repair of the confirmed leak and replacement copper pipe section with standard insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 221.0,
+   "price_log_sd": 0.05,
+   "rationale": "Direct repair of insured pipework (2.4.2, 7.1.1(b)); reference case 18 shows t >= 221 for similar work."
+  },
+  {
+   "item_id": "9",
+   "description": "Room drying line item for the roof space (Dachstuhl)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "No evidence of roof space being affected by this kitchen leak (7.1.5: only affected parts covered); reference case 20 excludes drying of unaffected areas."
+  },
+  {
+   "item_id": "10",
+   "description": "Condensation dryer (kitchen)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "Drying equipment for affected kitchen area is necessary (7.1.7(b)); reference case 20 shows t below 200 for large-area drying, so for a single kitchen area, t likely below 200."
+  },
+  {
+   "item_id": "11",
+   "description": "Room drying of the kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "Drying of affected kitchen floor and wall base is necessary (7.1.7(b)); reference case 20 shows t below 200 for large-area drying, so for a single kitchen area, t likely below 200."
+  },
+  {
+   "item_id": "12",
+   "description": "Transition pieces and standard insulation for the repaired section",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 107.0,
+   "price_log_sd": 0.05,
+   "rationale": "Consumables and insulation for pipe repair are covered (7.1.7(c)); reference case 18 supports inclusion."
+  },
+  {
+   "item_id": "13",
+   "description": "Final site cleaning of the covered work area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.3,
+   "rationale": "Cleaning of the immediate work area after repair is customary and included (7.1.7(h)); reference case 18 shows t below 60 for tile cleaning, so cleaning only the work area is likely below 60."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs (drying technology)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.33,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.7(f) allows one travel/call-out charge per contractor per invoice; reference cases show t >= 68 for vehicle costs when indemnified."
+  },
+  {
+   "item_id": "15",
+   "description": "Removal of the water-damaged wooden kitchen table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Removal of destroyed furnishing item is covered under 7.1.7(h) as part of replacement."
+  },
+  {
+   "item_id": "16",
+   "description": "Transport and disposal of the damaged table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 34.0,
+   "price_log_sd": 0.3,
+   "rationale": "Transport and disposal of destroyed furnishing item is covered under 7.1.7(h); reference case 13 shows t between 30 and 34 for glass pane disposal, so for a table, t likely similar."
+  },
+  {
+   "item_id": "17",
+   "description": "Supply of replacement kitchen table, comparable specification to the original",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 523.6,
+   "price_log_sd": 0.05,
+   "rationale": "Furnishing items are covered on a new-for-old basis as per the schedule; invoice states EUR 440 before VAT, so gross with 19% VAT is 523.60."
+  },
+  {
+   "item_id": "18",
+   "description": "Delivery of the replacement table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.3,
+   "rationale": "Delivery of replacement furnishing item is covered under 7.1.7(h); reference case 11 shows t between 13 and 16 for vehicle costs, so delivery likely similar."
+  },
+  {
+   "item_id": "19",
+   "description": "Assembly and cleaning of the installation area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Assembly and cleaning for replacement furnishing item is covered under 7.1.7(h); reference case 11 shows t below 41 for installation, so assembly and cleaning likely below 41."
+  },
+  {
+   "item_id": "20",
+   "description": "Vehicle costs (carpentry)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.33,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.7(f) allows one travel/call-out charge per contractor per invoice; reference cases show t >= 68 for vehicle costs when indemnified."
+  },
+  {
+   "item_id": "21",
+   "description": "Vehicle costs – return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Return visit vehicle costs are not indemnified (see 7.1.7(f) and reference cases 11 and 17: t = 0 for return visit vehicle costs)."
+  },
+  {
+   "item_id": "22",
+   "description": "Inspection of further furniture items stored in the garden for moisture",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Inspection of unaffected property is not covered (7.1.8(f)); reference case 11: t = 0 for similar lines."
+  }
+ ]
+}

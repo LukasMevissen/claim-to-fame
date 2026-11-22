@@ -1,0 +1,53 @@
+{
+ "game": 31,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation from Spanish to English",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(f): translation of documents for the purposes of the claim is not indemnifiable, regardless of necessity or who performs it."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 7.1.8(e) and 7.1.8(f): working materials and ancillary charges raised alongside a non-indemnifiable translation charge are not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for robbery damage (watch and cash)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.1,
+   "rationale": "Indemnified under 2.3.1, 4.2.2, 4.2.3, 4.2.4, 7.1.1, 7.1.5, 7.1.10: both the watch (valuables) and cash (means of payment) were taken by force while away from the insured premises and reported to the police. Sub-limits apply: EUR 2,500 for the watch (valuables, per item, no separate schedule), EUR 500 for cash (means of payment), and EUR 5,000 aggregate for property carried outside the premises. Deductible of EUR 50 applies once per event."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 7.1.8(b): carriage, shipping, delivery and comparable charges for bringing replacement property or forwarding documents are not indemnified."
+  }
+ ]
+}

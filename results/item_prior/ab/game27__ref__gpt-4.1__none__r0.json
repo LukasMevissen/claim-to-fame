@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection and moisture measurement for the kitchen sink supply leak, incl. technician labour and call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 229.0,
+   "price_log_sd": 0.08,
+   "rationale": "Insured peril is escape of water (2.4.2), and leak detection is necessary to locate the source (7.1.7(e)). Reference Case 21 shows similar work (leak detection call-out, moisture measurement) is indemnified, with thresholds at t >= 229 for call-out and t between 153 and 178 for moisture measurement. This invoice combines both into a single flat rate, so the fair threshold is the sum of those proven fair rates."
+  },
+  {
+   "item_id": "2",
+   "description": "Freeing, repair and re-insulation of the leaking kitchen sink supply pipe, incl. replacement copper section",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.12,
+   "rationale": "Direct repair of the affected pipe is covered (2.4.2, 7.1.1(b), 7.1.7(a), (c)), including necessary removal and reinstallation of lagging. Reference Case 21 (repair of leak and replacement copper pipe section with standard insulation) gives t between 157 and 220 for a similar flat rate. The photo and description confirm standard materials and no improvement."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy covers one travel/call-out charge per contractor per invoice (7.1.7(f)). Reference Case 21 shows t >= 76 for vehicle costs for similar plumbing work. This is the only vehicle charge on this invoice."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of the kitchen floor and wall base, incl. condensation dryer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 148.0,
+   "price_log_sd": 0.12,
+   "rationale": "Drying of affected areas is necessary and covered (7.1.7(b)), and the description and photo confirm the affected parts. Reference Case 21 (room drying of kitchen floor and wall base) gives t between 20 and 148, and condensation dryer hire t between 20 and 65. As this is a combined flat rate for both, the upper end of the proven fair range is appropriate."
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "game": 24,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.4,
+   "rationale": "The theft-damaged frame is covered at the cost of a like-for-like replacement under 7.1.7(b) and 7.1.9. The EUR 3,500 agreed value replaces the EUR 500 mobility cap under 4.4; EUR 1,200 is the estimated gross frame cost before fitting."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(b) and 7.1.9 cover brakes matching the pre-theft specification, without any upgrade allowance. EUR 220 estimates the gross parts cost for the replacement brakes."
+  },
+  {
+   "item_id": "3",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.83,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(f) covers necessary carriage of replacement parts or the bicycle, but 7.1.8(g) excludes any transport already billed elsewhere. Allow EUR 35 for one ordinary, distinct shipment."
+  },
+  {
+   "item_id": "4",
+   "description": "Bicycle service vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.62,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.7(g) and 7.1.8(f) cover a necessary repair attendance, not a routine trip or duplicate transport charge. If the bicycle shop's separate trip was necessary, allow EUR 40 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Bicycle assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers fitting, alignment and testing after the frame and brake replacement. Allow EUR 180 for that work to the extent it is distinct from the separately billed hours under 7.1.8(g)."
+  },
+  {
+   "item_id": "6",
+   "description": "Bicycle repair sundries",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.7(e) covers fixings and lubricants consumed in the repair, while 7.1.8(d) excludes shop overhead and tools. Allow EUR 12 gross if the line is attributable to repair materials."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.86,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(d) covers necessary apprentice labour at the customary rate. Allow one hour at EUR 35 gross if not already included in assembly."
+  },
+  {
+   "item_id": "8",
+   "description": "Bicycle skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(d) covers necessary skilled repair labour, subject to the duplicate-charge exclusion in 7.1.8(g). Allow one separately documented hour at EUR 65 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.14,
+   "rationale": "The locksmith's attendance to release the recovered bicycle is covered under 5.2.2(a). Allow EUR 40 gross, consistent with Case 23; the estimated recovery total is below the EUR 1,000 recovery cap."
+  },
+  {
+   "item_id": "10",
+   "description": "Locksmith lock-release work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.18,
+   "rationale": "Under 5.2.2(b) and 7.1.10, this charge is covered if it is for cutting and removing the seized lock rather than fitting new hardware. Allow EUR 105 gross, calibrated to Case 23, excluding any labour billed twice."
+  },
+  {
+   "item_id": "11",
+   "description": "Locksmith sundries",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 5.2.2(b) covers materials consumed in releasing the lock, but 7.1.8(d) excludes the locksmith's own tools and equipment. Allow EUR 8 gross if the charge is for covered materials, consistent with Case 23."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.5,
+   "price_log_sd": 0.05,
+   "rationale": "Section 5.2.2(b) covers labour of every grade needed to release the bicycle. Allow one apprentice hour at EUR 35.50 gross, matching Case 23, if separately charged for necessary work."
+  },
+  {
+   "item_id": "13",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.74,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 5.2.2(b) covers necessary skilled lock-release labour, but 7.1.8(g) bars hours already included in the operation charge. Allow EUR 42 gross for one distinct hour if supported, consistent with Case 23's upper bound."
+  }
+ ]
+}

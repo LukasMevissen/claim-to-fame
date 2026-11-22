@@ -1,0 +1,196 @@
+{
+ "game": 40,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.25,
+   "rationale": "The indoor heating-pipe repair is covered under 2.4.3(a), and 7.1.7(c) allows like-for-like fittings. Four elbows at €9 gross each total €36."
+  },
+  {
+   "item_id": "2",
+   "description": "28 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.28,
+   "rationale": "Under 7.1.7(c) and 7.1.8(e), the fittings qualify if the heating-pipe repair used 28 mm connections; the listed 15 mm tube does not establish that. Five elbows at €19 gross each total €95."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper press elbow, 45°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow this fitting only if the repaired run used a 28 mm connection of this type. The allowance for one fitting is €19 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.2,
+   "price_log_sd": 0.35,
+   "rationale": "Minor fixings used in the repair are covered under 7.1.7(c). Eight screws at €0.65 gross each total €5.20."
+  },
+  {
+   "item_id": "5",
+   "description": "25 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.3,
+   "rationale": "Pipe supports used to reinstate the repaired run qualify under 7.1.7(c), subject to the dimensional match required by 7.1.8(e). Four clamps at €4.50 gross each total €18."
+  },
+  {
+   "item_id": "6",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 89.6,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the copper used to replace the failed indoor heating-pipe section, not any unrelated renewal. At €14 gross per metre, 6.4 m totals €89.60."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 328.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(g) allows customary labour for the pipe repair, while 7.1.5 excludes time spent on the other jobs. Allow about 4 hours of the 6.75 billed at €82 gross per hour, or €328."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 156.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.5 and 7.1.7(g) allow necessary assistance with cutting out, reconnecting and insulating the pipe, but not assistance with the unrelated work. Allow about 3 hours of the 5.75 billed at €52 gross per hour, or €156."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 132.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(c) covers reinstating the original rock wool insulation on the repaired run. Six pieces at €22 gross each, in line with Case 39, total €132."
+  },
+  {
+   "item_id": "10",
+   "description": "Insulation binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.83,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(c) covers binding wire used to secure the replacement insulation, but 7.1.8(e) excludes excess quantity. Allow €5 gross for a modest amount used on this repair rather than the full 2 kg."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.7(c) expressly permits a lump sum for minor installation consumables. Allow €18 gross for repair supplies not already billed elsewhere, as required by 7.1.8(c)."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.22,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice, and this is the only one listed. Allow €65 gross, consistent with the first vehicle charge in Case 39."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of the removed pipe and insulation, but not waste from the unrelated flooring work. If the repair debris can be separated from the combined charge, allow €25 gross for that share."
+  },
+  {
+   "item_id": "14",
+   "description": "Basement hallway repainting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 240.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 3.5 and 7.1.5 exclude painting in the unaffected hallway. The conditional estimate is €240 gross at €20 per m² for 12 m²."
+  },
+  {
+   "item_id": "15",
+   "description": "Storage-room laminate replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 750.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude the undamaged floor in a separate room. The conditional estimate is €750 gross at €50 per m² for 15 m², including removal and like-for-like replacement."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(a) excludes unrelated maintenance, and no insured damage to the tap is reported. The conditional estimate is €75 gross for the service, excluding a separate trip."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(b) expressly excludes processing fees charged on top of itemised labour and materials. The conditional estimate for one fee is €10 gross."
+  }
+ ]
+}

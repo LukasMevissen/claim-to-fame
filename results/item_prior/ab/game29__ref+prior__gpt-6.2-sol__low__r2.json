@@ -1,0 +1,31 @@
+{
+ "game": 29,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement of stolen everyday contents",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.7,
+   "rationale": "Forced-entry theft is covered for household contents only if the schedule includes them under §§2.6.3 and 4.2.6; that cover is not confirmed. If it applies, €650 is a provisional like-for-like replacement estimate under §7.1.1(d), with no €1,000 high-value article cap on the everyday items described (§§4.4.5–4.4.6)."
+  },
+  {
+   "item_id": "2",
+   "description": "Emergency repair and re-securing of back door",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 320.0,
+   "price_log_sd": 0.36,
+   "rationale": "The forced door and lock are covered building damage under §2.6.2 if the forcible-removal peril is in force. An estimated €320 gross for attendance, boarding and like-for-like work to make the door lockable is below the €1,000 event cap in §5.2.2 and is counted only once."
+  }
+ ]
+}

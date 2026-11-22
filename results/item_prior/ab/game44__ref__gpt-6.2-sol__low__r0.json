@@ -1,0 +1,251 @@
+{
+ "game": 44,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper 90° elbows, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.18,
+   "rationale": "The failed heating-pipe joint and necessary reconnection fall under §§2.4.2–2.4.3 and 7.1.7(c). Allow about €10 each for the first set of four, consistent with Case 40."
+  },
+  {
+   "item_id": "2",
+   "description": "15 mm copper 90° elbows, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.25,
+   "rationale": "A second set of four same-size elbows is not substantiated for the one-metre repair under §7.1.8(c), (e). If separately documented as necessary, four would cost about €40 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper 90° elbows, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.7(c) covers 28 mm fittings only if needed at the reconnection; five are not established by the claim description. If some were needed, allow about €21 each, or €42 for two."
+  },
+  {
+   "item_id": "4",
+   "description": "28 mm copper 45° elbows, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.4,
+   "rationale": "Five additional 28 mm bends are not supported by the documented repair under §7.1.8(e). If one distinct bend is verified as necessary, allow about €22."
+  },
+  {
+   "item_id": "5",
+   "description": "28 mm copper 45° elbow, model 03",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.68,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.25,
+   "rationale": "A single transition bend is plausible but must correspond to the actual reconnection under §§7.1.7(c) and 7.1.8(e). Case 40 supports about €22 for one."
+  },
+  {
+   "item_id": "6",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.2,
+   "rationale": "Necessary fixings are covered by §7.1.7(c). Case 40 supports about €9 gross for eight screws."
+  },
+  {
+   "item_id": "7",
+   "description": "10 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 7.1.8(e) requires the clamp size to match the documented work; no 10 mm pipe is documented. If a distinct use is established, Case 43 supports €19 for four."
+  },
+  {
+   "item_id": "8",
+   "description": "15 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.25,
+   "rationale": "Matching supports for the repaired 15 mm pipe are allowed under §7.1.7(c). Allow about €20 gross for the four-clamp line."
+  },
+  {
+   "item_id": "9",
+   "description": "Service technician, 6.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 614.0,
+   "price_log_sd": 0.14,
+   "rationale": "Necessary plumbing labour is covered at customary rates under §7.1.7(g). At about €91 gross per hour, 6.75 hours comes to €614, consistent with Cases 40 and 43."
+  },
+  {
+   "item_id": "10",
+   "description": "Helper, 5.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 388.0,
+   "price_log_sd": 0.14,
+   "rationale": "The description confirms a helper for part of the repair, and §7.1.7(g) covers necessary trade labour. At about €67.50 gross per hour, 5.75 hours comes to €388."
+  },
+  {
+   "item_id": "11",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow the approximately one metre installed, not the unsupported 6.4 m billed. Case 40's €90 for 6.4 m implies about €15 gross for the documented length."
+  },
+  {
+   "item_id": "12",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 77.0,
+   "price_log_sd": 0.14,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice. Cases 40 and 43 support about €77 gross for this first charge."
+  },
+  {
+   "item_id": "13",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers repair consumables not already itemised, subject to the duplicate-cost exclusion in §7.1.8(c). Allow €35 gross for the flat-rate line, near Case 40."
+  },
+  {
+   "item_id": "14",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.8(b) expressly excludes processing charges added to itemised labour and materials. The positive figure is nominal only."
+  },
+  {
+   "item_id": "15",
+   "description": "Rock-wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(c) covers like-for-like insulation on the repaired section, but §7.1.8(e) excludes unsupported length. Allow €22 gross for about one metre, in line with Case 39."
+  },
+  {
+   "item_id": "16",
+   "description": "Rock-wool mats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.42,
+   "rationale": "No separate use for six mats is documented beyond the pipe insulation already billed, so §§7.1.8(c), (e) weigh against payment. If a separate fitting wrap is verified, allow about €18 gross for the necessary material."
+  },
+  {
+   "item_id": "17",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.89,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.35,
+   "rationale": "Wire used to secure the replacement insulation is a covered fastening under §7.1.7(c). Allow about €12 gross for the quantity attributable to this short repair; the two pieces are not equivalent to the two kilograms in Case 40."
+  },
+  {
+   "item_id": "18",
+   "description": "Service technician, additional 7 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.79,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 478.0,
+   "price_log_sd": 0.3,
+   "rationale": "The reported day and a half on site supports additional technician time under §7.1.7(g), provided the hours are distinct from line 9 under §7.1.8(c). Allow about 5.25 additional hours at €91 gross, or €478."
+  },
+  {
+   "item_id": "19",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.7(f) limits this contractor to one travel charge on the invoice, even if a return visit was necessary for the same repair. The positive figure is nominal only."
+  },
+  {
+   "item_id": "20",
+   "description": "Hygiene set including gloves",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.1,
+   "rationale": "Contractor protective equipment is excluded by §7.1.8(b), and no eligible consumable is separately priced. The positive figure is nominal only."
+  },
+  {
+   "item_id": "21",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 58.0,
+   "price_log_sd": 0.17,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover necessary disposal of the cut-out pipe and removed insulation. Allow €58 gross for the small load, consistent with Case 40."
+  },
+  {
+   "item_id": "22",
+   "description": "Tile cleaning, disinfection and coating",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.23,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 5.2.1 and 7.1.8(a) allow necessary removal of leak residues, but the combined line adds an undocumented coating and does not separate the eligible work. If itemised, allow about €100 gross for local cleaning and disinfection only, consistent with Case 36."
+  }
+ ]
+}

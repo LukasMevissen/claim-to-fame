@@ -1,0 +1,97 @@
+{
+ "game": 34,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 490.0,
+   "price_log_sd": 0.17,
+   "rationale": "Cause-and-extent inspection is covered under 5.2.6(b), and the €490 estimate follows Case 20 and is below the €3,000 cap. The €500 deductible under 7.8 applies once to the combined event, not separately to each invoice line."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 460.0,
+   "price_log_sd": 0.25,
+   "rationale": "Pinpointing the porous spots is covered under 5.2.6(a). Allow €460 for the survey scope distinct from technician time; the two lines total €635, below their shared €1,000 cap."
+  },
+  {
+   "item_id": "3",
+   "description": "Measurement technician",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 175.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 5.2.6(a) covers on-site technician time to the extent it is not already included in the leak-detection fee under 7.1.8(c). At €70 gross per hour, 2.5 hours comes to €175 within the shared cap."
+  },
+  {
+   "item_id": "4",
+   "description": "Leak-detection vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.1,
+   "rationale": "Section 5.2.6(c) allows one vehicle charge on this contractor's invoice. The €76 estimate follows the comparable detection visits and is below the €83.30 gross cap (€70 × 1.19)."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of two actively leaking copper joints",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 260.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 2.4.3(a) treats age-related leakage as fracture damage only where leakage is verified, and 9.1.1 does not treat ordinary ageing alone as a duty breach. Allow €260 gross for sealing or locally renewing two joints, excluding the wider pipe replacement and the separately billed van."
+  },
+  {
+   "item_id": "6",
+   "description": "Precautionary replacement of non-leaking copper",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1600.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 2.4.3(a) and 7.1.5 exclude the remaining run because those sections were not shown to be leaking. If that finding were reversed, €1,600 gross is a rough allowance for like-for-like replacement only."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium composite piping upgrade surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.9 limits covered repairs to the pre-loss standard, so the standalone premium surcharge has no covered share. The positive figure is a placeholder, not an allowance."
+  },
+  {
+   "item_id": "8",
+   "description": "Plumber vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.14,
+   "rationale": "Section 5.2.6(c) allows this plumber's single vehicle charge because the visit included covered joint repairs. Allow €76 gross, below the €83.30 gross cap, with no additional trip for the elective work."
+  }
+ ]
+}

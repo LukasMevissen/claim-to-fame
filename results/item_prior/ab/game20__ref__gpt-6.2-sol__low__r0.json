@@ -1,0 +1,75 @@
+{
+ "game": 20,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.10 and 5.2.6(b) preserve cover for necessary assessment of the cause and extent of the loss despite the gradual-leakage exclusion. A routine site inspection is estimated at €300 gross, below the €3,000 event cap."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection, technician and vehicle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 460.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3, 7.1.10 and 5.2.6(a) cover locating the porous pipe sections that were leaking, including technician time. The €460 gross estimate includes about €70 for one vehicle charge under 5.2.6(c), within the €83.30 gross travel cap and the separate €1,000 leak-location cap."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor removal, screed preparation and disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1700.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.10 excludes dismantling, preparation and debris removal for building moisture damage caused by gradual pipe porosity. This whole-floor line identifies no separable work needed to access or repair the leaking pipe sections."
+  },
+  {
+   "item_id": "4",
+   "description": "Crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.8(b) expressly excludes provisioning for contractor personnel. The conditional estimate is €15 gross per unit for three units."
+  },
+  {
+   "item_id": "5",
+   "description": "Technical drying and kitchen disinfection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3600.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.10 excludes the drying and disinfection measures under 7.1.7 for moisture damage caused by gradual leakage. The bundled labour and dust protection serve the same excluded work."
+  },
+  {
+   "item_id": "6",
+   "description": "Separately metered drying electricity",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 772.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.10 excludes the underlying drying, and 7.1.7(b) independently bars separate electricity charges when drying is billed as a lump sum. At €0.32 gross per kWh, 2,412.1 kWh would cost about €772."
+  }
+ ]
+}

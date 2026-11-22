@@ -1,0 +1,229 @@
+{
+ "game": 46,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Wall tile covering 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.18,
+   "rationale": "Panel tiling in the damage area is reinstatement in the same kind and quality (plain white, DIY range), directly related to the escape of water. Policy 7.1.1(b), 7.1.5, 7.1.6, 3.5(a) (no upgrade). Reference: similar tiling in Case 39 (painting and closing wall opening t >= 416 for a larger area, but tiling is cheaper per m²)."
+  },
+  {
+   "item_id": "2",
+   "description": "Hole drilling 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drilling a hole through a new tile for the pipe is necessary for reinstatement in the damage area (7.1.5). Small, routine task. Reference: Case 39, similar minor works included in wall reinstatement."
+  },
+  {
+   "item_id": "3",
+   "description": "Wall tiles 60x30 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.12,
+   "rationale": "Material cost for standard-grade tiles, matching what was removed. Covered under 7.1.6, 3.5(a). Reference: Case 39, standard materials included."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall levelling material 1 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.18,
+   "rationale": "Levelling compound for patching render where it was soft/damp is necessary for reinstatement (7.1.5). Reference: Case 39, wall repair included."
+  },
+  {
+   "item_id": "5",
+   "description": "Wall tiles 1000x5000 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "No such tile size exists (1000x5000mm = 5m x 1m), likely a mis-entry or placeholder. If this is a duplicate or error, t = 0 per 3.5(d). If it refers to a real material, only standard tiles are covered (3.5(a))."
+  },
+  {
+   "item_id": "6",
+   "description": "Silicone joints 3.6 linear m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.15,
+   "rationale": "Silicone for internal corners and panel ends is necessary for reinstatement (7.1.5). Reference: Case 39, similar finishing included."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium silicone sealant 12 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.25,
+   "rationale": "Only standard-grade materials are covered (3.5(a)). If this is an upgrade or covers more than the actual joints, only the standard equivalent is indemnified. Reference: Case 39, standard materials only."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 71.0,
+   "price_log_sd": 0.08,
+   "rationale": "One vehicle charge per contractor per document is covered (7.4.2). Reference: Case 40, t >= 71 for similar."
+  },
+  {
+   "item_id": "9",
+   "description": "Skilled worker hours 14 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1200.0,
+   "price_log_sd": 0.12,
+   "rationale": "Labour for reinstatement in the damage area is covered at local rates (7.4.1). Reference: Case 40, 6.75 hrs t >= 593; 14 hrs is about double, so t ≈ 1200."
+  },
+  {
+   "item_id": "10",
+   "description": "Clean wall tile covering 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.15,
+   "rationale": "Cleaning of reinstated surfaces in the damage area is part of the repair cost (3.5(c)). Reference: Case 39, included in wall reinstatement."
+  },
+  {
+   "item_id": "11",
+   "description": "Remove drywall 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.18,
+   "rationale": "Removal of wet plasterboard boxing adjacent to the leak is necessary to address water damage (7.1.5). Reference: Case 36, similar removal covered."
+  },
+  {
+   "item_id": "12",
+   "description": "Removal and disposal of damaged insulation 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.12,
+   "rationale": "Removal and disposal of wet mineral wool from the boxing is necessary and covered under 5.1(a), 5.2.1. Reference: Case 36, similar disposal t between 71 and 81."
+  },
+  {
+   "item_id": "13",
+   "description": "Remove damp plaster in basement rooms 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.18,
+   "rationale": "Removal of damp render in the damage area is necessary for reinstatement (7.1.5). Reference: Case 39, wall opening and repair included."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove damp plaster in attic 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 0.0,
+   "price_log_sd": 0.05,
+   "rationale": "Attic gable is unrelated to the insured event (pre-existing staining, not affected by this leak). Excluded by 3.5(b). Reference: Case 40, unrelated work t = 0."
+  },
+  {
+   "item_id": "15",
+   "description": "Wall rosette 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.15,
+   "rationale": "Replacement of the chrome cover ring (wall rosette) broken during necessary repair is covered (7.1.5). Reference: Case 44, small parts included."
+  },
+  {
+   "item_id": "16",
+   "description": "Disassembly and assembly service 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.18,
+   "rationale": "Covers the plumber's work to open and reassemble the joint, necessary for repair (7.1.5). Reference: Case 44, similar service hours covered."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction dryer 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 403.0,
+   "price_log_sd": 0.08,
+   "rationale": "Drying of the affected area is covered under 5.2.7. Reference: Case 39, construction dryer flat-rate t >= 403 for a week."
+  },
+  {
+   "item_id": "18",
+   "description": "Material surcharge 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.25,
+   "rationale": "Flat-rate surcharges are only covered if attributable to necessary materials/services (7.4.4). If not itemized, moderate allowance. Reference: Case 44, small parts and consumables t >= 45."
+  },
+  {
+   "item_id": "19",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.12,
+   "rationale": "Replacement of sodden lagging is necessary for reinstatement (7.1.5). Reference: Case 44, 6 m t >= 114, so 1 m ≈ 19."
+  },
+  {
+   "item_id": "20",
+   "description": "Construction waste disposal 1 flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 57.0,
+   "price_log_sd": 0.08,
+   "rationale": "Disposal of damaged tiles, render, and board is covered under 5.2.1. Reference: Case 44, construction waste disposal t >= 57."
+  }
+ ]
+}

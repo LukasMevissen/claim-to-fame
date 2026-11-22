@@ -1,0 +1,130 @@
+{
+ "game": 26,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Elective premium carbon frame upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.55,
+   "rationale": "The bicycle was recovered undamaged, so §§2.3.3 and 7.1.8(c) exclude the entire elective swap, not just the premium over a standard frame."
+  },
+  {
+   "item_id": "2",
+   "description": "Brake replacement during routine service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 139.0,
+   "price_log_sd": 0.25,
+   "rationale": "Under §§3.1.6 and 7.1.10, renewing brakes during routine service is maintenance, not repair of theft damage."
+  },
+  {
+   "item_id": "3",
+   "description": "Drivetrain service and tune-up",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.1.6 and 7.1.8(a) exclude routine servicing and tuning; no theft damage to the drivetrain was established."
+  },
+  {
+   "item_id": "4",
+   "description": "Bicycle-shop shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under §7.1.10, shipping on the elective service invoice follows the excluded work. Nothing identifies it as transport from the recovery site under §5.2.2(d)."
+  },
+  {
+   "item_id": "5",
+   "description": "Bicycle-shop vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.8(f) excludes attendance charges on an invoice with no covered work; the recovery attendance is separately billed by the locksmith."
+  },
+  {
+   "item_id": "6",
+   "description": "Bicycle-shop assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under §§7.1.8(a) and 7.1.10, assembly follows the elective upgrade and service it supports, not a covered repair."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle-shop apprentice labour, one hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 3.1.6 and 7.1.10 exclude labour of every grade when it serves elective work on an undamaged bicycle."
+  },
+  {
+   "item_id": "8",
+   "description": "Bicycle-shop skilled labour, one hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 3.1.6 and 7.1.10 exclude this hour because it serves the elective upgrade and maintenance, not recovery or theft repair."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 5.2.2(a) covers the necessary attendance even though the bicycle was recovered undamaged. Estimated covered recovery costs of €199 in total are below the €500 aggregate mobility limit, so no proration applies."
+  },
+  {
+   "item_id": "10",
+   "description": "Cut and remove seized lock, two units",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.2(b) covers the necessary lock removal. At €60 per billed unit, the whole line is €120, assuming the operation charge does not duplicate the separately billed labour (§7.1.8(g))."
+  },
+  {
+   "item_id": "11",
+   "description": "Locksmith skilled labour, one hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.89,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 5.2.2(b) covers necessary labour to release the bicycle; one hour is estimated at €39 gross if not already included in the cutting charge (§7.1.8(g))."
+  }
+ ]
+}

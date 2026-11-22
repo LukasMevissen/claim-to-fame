@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection and moisture measurement for the kitchen sink supply leak, incl. technician labour and call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 229.0,
+   "price_log_sd": 0.05,
+   "rationale": "Insured peril is escape of water (2.4.2), and leak detection is necessary to locate the source (7.1.7(e)). Reference Case 21 shows a similar kitchen leak detection flat rate at t >= 229, and the work here is comparable in scope (full day, two technicians, moisture measurement included)."
+  },
+  {
+   "item_id": "2",
+   "description": "Freeing, repair and re-insulation of the leaking kitchen sink supply pipe, incl. replacement copper section",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.1,
+   "rationale": "Direct repair of the affected pipe (2.4.2, 7.1.5, 7.1.7(a)(c)), including necessary removal and reinstallation of lagging. Reference Case 21 (similar kitchen pipe repair) gives t between 117 and 158 for freeing the pipe, and 157–220 for repair and replacement. This line combines both, so t should be at the upper end of that range."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(f) allows one travel/call-out charge per contractor per invoice. Reference Case 21 shows t >= 76 for vehicle costs for similar work."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of the kitchen floor and wall base, incl. condensation dryer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 148.0,
+   "price_log_sd": 0.1,
+   "rationale": "Drying of affected areas is necessary and covered (7.1.7(b)), and the description and photo confirm the affected parts. Reference Case 21 gives t between 20 and 148 for drying of kitchen floor and wall base, so use the upper end for a full week of drying."
+  }
+ ]
+}

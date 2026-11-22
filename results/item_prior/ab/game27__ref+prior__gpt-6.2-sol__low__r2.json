@@ -1,0 +1,53 @@
+{
+ "game": 27,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 3 \"Vehicle costs\": indemnified in 8 of 18 earlier cases, t = 0 in 10; when indemnified t per pc about 79 (80% range 69 to 89); revealed per pc: 34-45 (case 23*), 38-44 (case 25*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen leak detection and moisture measurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1040.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 2.4.2 and 7.1.7(e)–(g) cover locating the supply leak, measuring the affected floor and wall base, and one call-out. Allow €650 for 14 technician-hours, plus €390 for the call-out and specialist testing, without counting labour twice."
+  },
+  {
+   "item_id": "2",
+   "description": "Access, copper pipe repair and re-insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 2.4.3(a) and 7.1.7 cover access and local repair of the perforated indoor supply pipe; §7.1.9 limits reinstatement to the original specification. Allow €135 for access and stripping and €215 for replacing about 1.5 m of copper, fittings and matching foam lagging."
+  },
+  {
+   "item_id": "3",
+   "description": "Plumber's vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.1,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on the plumber's invoice. The leak detection firm's call-out is on a separate invoice, so allow the customary €79 in full."
+  },
+  {
+   "item_id": "4",
+   "description": "Drying of kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 195.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.5 and 7.1.7(b), (e) cover drying the verified wet floor and wall base and hiring the equipment needed. Allow €85 for about one week of dryer hire and €110 for setup, collection and the final moisture check."
+  }
+ ]
+}

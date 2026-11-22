@@ -1,0 +1,251 @@
+{
+ "game": 44,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm model 01 (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.05,
+   "rationale": "Directly related to repair of the leaking copper pipe (escape of water peril, 2.4.2/2.4.3). Reference Case 40: t >= 38 for 4 pcs."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 15mm model 02 (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.05,
+   "rationale": "Assumed same as previous line, likely same fittings for the repair. Reference Case 40: t >= 38 for 4 pcs."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 90° copper 28mm model 01 (5 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.05,
+   "rationale": "Directly related to pipe repair. Reference Case 40: t >= 95 for 5 pcs."
+  },
+  {
+   "item_id": "4",
+   "description": "Profipress elbow 45° copper 28mm model 02 (5 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.1,
+   "rationale": "Directly related to pipe repair. Reference Case 40: t >= 95 for 5 pcs (90°), 1 pc 45° t >= 19; 5 pcs 45° likely similar to 5 pcs 90°."
+  },
+  {
+   "item_id": "5",
+   "description": "Profipress elbow 45° copper 28mm model 03 (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.05,
+   "rationale": "Directly related to pipe repair. Reference Case 40: 1 pc 45° t >= 19."
+  },
+  {
+   "item_id": "6",
+   "description": "Grub screw (8 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.05,
+   "rationale": "Small parts for pipe repair. Reference Case 40: 8 pcs t between 7 and 10."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamp 10 mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.05,
+   "rationale": "Pipe clamps for securing new pipe. Reference Case 43: 4 pcs 10 mm t = 19."
+  },
+  {
+   "item_id": "8",
+   "description": "Two-screw pipe clamp 15 mm (4 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.1,
+   "rationale": "Pipe clamps for securing new pipe. Reference Case 43: 4 pcs 10 mm t = 19; 4 pcs 25 mm t >= 23. 15 mm likely similar to 10 mm."
+  },
+  {
+   "item_id": "9",
+   "description": "Service technician hours (6.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 593.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour for pipe repair. Reference Case 40: 6.75 hrs t >= 593."
+  },
+  {
+   "item_id": "10",
+   "description": "Helper hours (5.75 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 387.0,
+   "price_log_sd": 0.05,
+   "rationale": "Labour for pipe repair. Reference Case 40: 5.75 hrs t >= 387."
+  },
+  {
+   "item_id": "11",
+   "description": "Copper pipe 15x1 (6.4 m)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.05,
+   "rationale": "Replacement pipe for repair. Reference Case 40: 6.4 m t >= 90."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 71.0,
+   "price_log_sd": 0.05,
+   "rationale": "First call-out charge for repair. Reference Case 40: 1 pcs t >= 71."
+  },
+  {
+   "item_id": "13",
+   "description": "Small parts and consumables (1 flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 33.0,
+   "price_log_sd": 0.05,
+   "rationale": "Consumables for repair. Reference Case 40: 1 pcs t >= 33."
+  },
+  {
+   "item_id": "14",
+   "description": "Processing flat fee (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2.0,
+   "price_log_sd": 0.05,
+   "rationale": "General admin/processing fee. Reference Case 40: t = 0 (not indemnified, 7.1.8b)."
+  },
+  {
+   "item_id": "15",
+   "description": "Rock wool pipe insulation (6 m)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 116.0,
+   "price_log_sd": 0.05,
+   "rationale": "Insulation for repaired pipe. Reference Case 40: 6 pcs t >= 116."
+  },
+  {
+   "item_id": "16",
+   "description": "Rock wool mat (6 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 116.0,
+   "price_log_sd": 0.3,
+   "rationale": "Likely used for pipe insulation in the repair area. Reference Case 40: 6 pcs t >= 116 (if not duplicative with line 15)."
+  },
+  {
+   "item_id": "17",
+   "description": "Binding wire (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.2,
+   "rationale": "Used to secure insulation. Reference Case 40: 2 kg t >= 18; assume 2 pcs is a small quantity, scale down."
+  },
+  {
+   "item_id": "18",
+   "description": "Service technician hours (7 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 614.0,
+   "price_log_sd": 0.1,
+   "rationale": "Additional technician hours for repair. Reference Case 39: 9 hrs t >= 732; 6.75 hrs t >= 593. 7 hrs ≈ 614."
+  },
+  {
+   "item_id": "19",
+   "description": "Vehicle costs (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2.0,
+   "price_log_sd": 0.05,
+   "rationale": "Second vehicle charge for same repair visit. Policy 7.1.7f: only first vehicle charge per contractor per invoice is indemnified; this is not."
+  },
+  {
+   "item_id": "20",
+   "description": "Hygiene set incl. gloves (1 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2.0,
+   "price_log_sd": 0.05,
+   "rationale": "Protective equipment for contractor's own personnel, not a repair cost (7.1.8b). Reference Case 40: not indemnified."
+  },
+  {
+   "item_id": "21",
+   "description": "Construction waste disposal (1 flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.05,
+   "rationale": "Disposal of debris from pipe repair. Reference Case 40: 1 pcs t between 58 and 61."
+  },
+  {
+   "item_id": "22",
+   "description": "Tile cleaning, disinfection and coating (5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 99.0,
+   "price_log_sd": 0.1,
+   "rationale": "Cleaning and disinfection of affected area after water leak. Reference Case 36: cleaning of affected floor areas t >= 99; 5 hrs is reasonable for a small area."
+  }
+ ]
+}

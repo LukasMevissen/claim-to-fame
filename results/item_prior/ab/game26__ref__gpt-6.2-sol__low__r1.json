@@ -1,0 +1,130 @@
+{
+ "game": 26,
+ "arm": "ref",
+ "run": 1,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Premium carbon frame upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.7,
+   "rationale": "The bicycle was recovered undamaged. Sections 2.3.3 and 7.1.8(c) exclude the entire elective frame swap, not just the premium over a standard frame."
+  },
+  {
+   "item_id": "2",
+   "description": "Routine brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 139.0,
+   "price_log_sd": 0.2,
+   "rationale": "The brakes were replaced as part of routine servicing, not to repair theft damage. Sections 3.1.6 and 7.1.10 exclude the full line."
+  },
+  {
+   "item_id": "3",
+   "description": "Drivetrain service and tune-up",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.1.6 and 7.1.8(a) exclude maintenance and tuning unrelated to theft damage."
+  },
+  {
+   "item_id": "4",
+   "description": "Bicycle shop shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under 7.1.8(a) and 7.1.10, shipping follows the excluded shop work. The invoice does not identify it as transport from the recovery site under 5.2.2(d)."
+  },
+  {
+   "item_id": "5",
+   "description": "Bicycle shop vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.8(f) excludes attendance on an invoice with no covered work. The locksmith's recovery attendance is separately billed."
+  },
+  {
+   "item_id": "6",
+   "description": "Bicycle shop assembly",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 145.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under 7.1.8(a) and 7.1.10, fitting charges follow the excluded upgrade and servicing they support."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle shop apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.1.6 and 7.1.10 exclude labour of every grade on the elective upgrade and service invoice."
+  },
+  {
+   "item_id": "8",
+   "description": "Bicycle shop skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under 7.1.8(a) and 7.1.10, skilled labour follows the excluded work it serves; no theft repair is established."
+  },
+  {
+   "item_id": "9",
+   "description": "Locksmith recovery call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 5.2.2(a) covers necessary attendance at the recovery site even when the bicycle is undamaged. The estimated recovery total of €194 is below both the €1,000 recovery cap and the €500 aggregate mobility cap; no deductible amount is stated."
+  },
+  {
+   "item_id": "10",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.2(b) covers cutting and removing the lock to release the bicycle. Allow €55 per billed unit for the two-unit line, excluding any duplication of the separately billed hour under 7.1.8(g); neither cap reduces the estimate."
+  },
+  {
+   "item_id": "11",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 5.2.2(b) covers necessary lock-release labour if it is distinct from the operation charge; 7.1.8(g) bars duplicate billing. Allow €39 for one hour, consistent with Case 24, with no cap reduction."
+  }
+ ]
+}

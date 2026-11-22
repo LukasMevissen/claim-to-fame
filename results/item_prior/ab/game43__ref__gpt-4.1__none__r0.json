@@ -1,0 +1,196 @@
+{
+ "game": 43,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Premium chrome-plated designer copper pipe 15mm (upgrade from plain copper), 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: No improvement on pre-loss standard. Only standard-grade plain copper pipe is indemnified, not premium chrome-plated designer pipe. Reference Case 40: copper pipe 15x1, 6.4 m, t >= 90."
+  },
+  {
+   "item_id": "2",
+   "description": "Premium chrome-plated Profipress elbow 90° 15mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: Only standard-grade fittings are indemnified, not premium chrome-plated. Reference Case 40: Profipress elbow 90° copper 15mm, 4 pcs, t >= 38."
+  },
+  {
+   "item_id": "3",
+   "description": "Premium chrome-plated Profipress elbow 90° 28mm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: Only standard-grade fittings are indemnified, not premium chrome-plated. Reference Case 40: Profipress elbow 90° copper 28mm, 5 pcs, t >= 95."
+  },
+  {
+   "item_id": "4",
+   "description": "Premium chrome-plated Profipress elbow 45° 28mm, 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: Only standard-grade fittings are indemnified, not premium chrome-plated. Reference Case 40: Profipress elbow 45° copper 28mm, 1 pcs, t >= 19."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screw, 8 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(c): Minor fixings and consumables are indemnified if used for the repair. Reference Case 40: Grub screw 8 pcs, t between 7 and 10."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamp 10 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.1,
+   "rationale": "Policy 7.1.7(c): Standard fixings for pipework are indemnified. Reference Case 40: Two-screw pipe clamp 25 mm, 4 pcs, t >= 23. 10 mm likely similar or slightly less."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamp 25 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(c): Standard fixings for pipework are indemnified. Reference Case 40: Two-screw pipe clamp 25 mm, 4 pcs, t >= 23."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician hours, 6.75 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 593.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(g): Labour for repair is indemnified, but only for work on the affected section, not for upgrades or additions. Reference Case 40: Service technician hours 6.75 hrs, t >= 593."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper hours, 5.75 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 387.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(g): Labour for repair is indemnified, but only for work on the affected section, not for upgrades or additions. Reference Case 40: Helper hours 5.75 hrs, t >= 387."
+  },
+  {
+   "item_id": "10",
+   "description": "High-performance aluminium-clad Armaflex insulation shell (upgrade from rock wool), 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 116.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.9: Only standard-grade insulation (rock wool) is indemnified, not premium upgrades. Reference Case 40: Rock wool pipe insulation 6 pcs, t >= 116."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire, 2 kg",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(c): Consumables for pipe repair are indemnified. Reference Case 40: Binding wire 2 kg, t >= 18."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor with app connectivity (new addition), 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.9: Not present before the loss, so not indemnified. New addition, not a repair."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve (new addition), 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.9: Not present before the loss, so not indemnified. New addition, not a repair."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables, 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 33.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(c): Lump sum for minor fixings and consumables is indemnified if used for the repair. Reference Case 40: Small parts and consumables 1 pcs, t >= 33."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs, 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 71.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(f): One travel/call-out charge per contractor per invoice is indemnified. Reference Case 40: Vehicle costs 1 pcs, t >= 71."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal, 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 5.2.1 and 7.1.7(a): Disposal of debris from repair is indemnified. Reference Case 40: Construction waste disposal 1 pcs, t between 58 and 61."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee, 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 7.1.8(b): General administrative/processing charges are not indemnified."
+  }
+ ]
+}

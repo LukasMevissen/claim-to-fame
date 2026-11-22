@@ -1,0 +1,119 @@
+{
+ "game": 30,
+ "arm": "ref",
+ "run": 2,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for flooded circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1080.0,
+   "price_log_sd": 0.25,
+   "rationale": "The established cause is external surface flooding under §2.5, and no group (c2) cover is shown. §3.6.2(b) bars the labour; the conditional estimate is 12 hours at €90 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.25,
+   "rationale": "§3.6.2(f) bars all journey charges for this flood. If the event were covered, §7.1.7(g) would allow only one journey charge, estimated at €75 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.65,
+   "rationale": "§3.6.2(d) bars pumping equipment for this flood. Even for an insured event, §§4.3(d) and 5.2.2 would bar separate reimbursement for working equipment billed alongside extraction; €350 is a nominal gross procurement estimate."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.55,
+   "rationale": "§3.6.2(d) bars this equipment charge, and §5.2.2 independently prevents separate payment for a pump used in the billed extraction. The €110 gross figure is a nominal short-term equipment charge."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.5,
+   "rationale": "§§3.6.2(d) and 5.1 bar mitigation costs for this uninsured flood despite the need for prompt pumping. The conditional €550 gross estimate includes labour and pumping equipment as one measure under §5.2.2."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.45,
+   "rationale": "§3.6.2(c) bars installed materials for this uninsured flood. The conditional €150 gross estimate covers only materials incorporated into the affected circuits under §7.1.7(c)."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12000.0,
+   "price_log_sd": 0.45,
+   "rationale": "Fixed heating plant is insured property under §4.2.2, but §3.6.2(a) bars replacement after this uninsured flood. The conditional €12,000 gross estimate is for like-for-like installed renewal under §7.1.1(c), excluding separately listed adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Boiler supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "§3.6.2(a) expressly bars adaptation work associated with replacement after this uninsured flood. The conditional €650 gross estimate is limited to immediately adjoining connections needed for a like-for-like replacement under §7.1.7(d)."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.4,
+   "rationale": "§3.6.2(e) bars removal and disposal for this uninsured flood. The conditional €450 gross estimate allows for hauling out and disposing of the old boiler, flue and tank under §5.2.1."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.25,
+   "rationale": "§3.6.2(f) bars this charge, and §7.1.8(d) would also bar it as a second journey charge if the first were allowed. The nominal gross estimate for a single attendance is €75."
+  }
+ ]
+}

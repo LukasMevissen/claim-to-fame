@@ -1,0 +1,207 @@
+{
+ "game": 41,
+ "arm": "ref+prior",
+ "run": 2,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Bicycle frame replacement\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 229 (80% range 142 to 392); revealed per pc: 142-349 (case 24)\n- line 2 \"Bicycle brake replacement\": indemnified in 1 of 2 earlier cases, t = 0 in 1; when indemnified t per pc about 140 (80% range 104 to 211); revealed per pc: 130-148 (case 24)\n- line 6 \"Shipping\": indemnified in 1 of 8 earlier cases, t = 0 in 7; when indemnified t per pc about 26 (80% range 19.2 to 39); revealed per pc: 24-27 (case 24)\n- line 7 \"Vehicle costs\": indemnified in 14 of 29 earlier cases, t = 0 in 15; when indemnified t per pc about 77 (80% range 57 to 95); revealed per pc: >=74 (case 27*), 37-41 (case 32*), >=83 (case 34*), >=76 (case 34*), >=65 (case 39*), >=71 (case 40*) (* = other policy wording)\n- line 8 \"Assembly costs\": indemnified in 3 of 5 earlier cases, t = 0 in 2; when indemnified t per pc about 113 (80% range 92 to 151); revealed per pc: >=100 (case 23*), 106-209 (case 24), >=97 (case 24) (* = other policy wording)\n- line 9 \"Miscellaneous items\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 10 \"Apprentice hours\": indemnified in 1 of 5 earlier cases, t = 0 in 4; when indemnified t per hr about 55 (80% range 29 to 139); revealed per hr: 35-36 (case 23*) (* = other policy wording)\n- line 11 \"Skilled worker hours\": indemnified in 3 of 7 earlier cases, t = 0 in 4; when indemnified t per hr about 39 (80% range 32 to 50); revealed per hr: 50-58 (case 36*), 35-42 (case 24), 35-40 (case 26) (* = other policy wording)\n- line 13 \"Cut and remove seized lock to release bicycle\": indemnified in the one earlier case; when indemnified t per pc about 54 (80% range 40 to 82); revealed per pc: >=50 (case 26), so this line (2 pc) about 108 (80 to 165)\n- line 14 \"Vehicle costs – return visit\": NOT indemnified (t = 0) in all 4 earlier cases; no price evidence\n- line 16 \"Administrative and claim-processing fee\": NOT indemnified (t = 0) in all 7 earlier cases; no price evidence\n- line 17 \"Apprentice hours\": indemnified in 1 of 5 earlier cases, t = 0 in 4; when indemnified t per hr about 55 (80% range 29 to 139); revealed per hr: 35-36 (case 23*) (* = other policy wording)\n- line 18 \"Skilled worker hours\": indemnified in 3 of 7 earlier cases, t = 0 in 4; when indemnified t per hr about 39 (80% range 32 to 50); revealed per hr: 50-58 (case 36*), 35-42 (case 24), 35-40 (case 26) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 118.53,
+   "price_log_sd": 0.34,
+   "rationale": "The frame sustained theft damage; §§7.1.1(b) and 7.1.9 cover a pre-loss equivalent. The €229 gross estimate is reduced to €118.53 by the shared €500 mobility limit (§4.2.2), using an estimated €966 eligible total."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 72.46,
+   "price_log_sd": 0.24,
+   "rationale": "The brakes sustained theft damage, so like-for-like replacement is covered under §§7.1.1(b) and 7.1.9. The €140 estimate is reduced to €72.46 by the shared mobility limit."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under §§4.2.3 and 7.1.5, the tracker must itself have been taken or damaged. It helped locate the bicycle, but no unrecovered loss or theft damage to the tracker is established."
+  },
+  {
+   "item_id": "4",
+   "description": "Service of second bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.45,
+   "rationale": "The second bicycle was unaffected, and routine servicing is independently excluded under §§3.1.6 and 7.1.5."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.1.7 and 4.2.3 exclude supplementary equipment not itself lost or damaged in the theft."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 13.46,
+   "price_log_sd": 0.28,
+   "rationale": "Necessary carriage for the covered repair is payable under §7.1.7(f), but shipping for the new accessories is not. If allocated to the repair, the €26 estimate becomes €13.46 under the mobility limit."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.16,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.91,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.8(f) and 7.1.10 require a necessary attendance attributable to covered work; no separate bicycle-shop attendance is established. If substantiated, €77 would be about €36.91 after adding it to the shared-limit calculation."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.89,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 58.49,
+   "price_log_sd": 0.26,
+   "rationale": "Necessary fitting of the replacement frame and brakes is covered under §7.1.7(c), but assembly for unrelated work or labour billed twice is not. The €113 estimate becomes €58.49 under the mobility limit."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.45,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.18,
+   "price_log_sd": 0.56,
+   "rationale": "Section 7.1.7(e) covers sundries consumed in the insured repair, but the generic line does not identify their use as required by §7.1.10. If allocated to that repair, an estimated €10 becomes €5.18 under the mobility limit."
+  },
+  {
+   "item_id": "10",
+   "description": "Bicycle-shop apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.66,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.47,
+   "price_log_sd": 0.56,
+   "rationale": "Section 7.1.7(d) covers necessary apprentice labour allocated to theft repairs, not servicing or hours already charged as assembly. The €55 estimate becomes €28.47 under the mobility limit."
+  },
+  {
+   "item_id": "11",
+   "description": "Bicycle-shop skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.19,
+   "price_log_sd": 0.24,
+   "rationale": "Separate skilled labour on theft repairs is covered under §7.1.7(d), subject to allocation and no duplicate billing. The €39 estimate becomes €20.19 under the mobility limit."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.08,
+   "price_log_sd": 0.32,
+   "rationale": "The first attendance was necessary to release the bicycle and is expressly covered by §5.2.2(a). An estimated €33 gross becomes €17.08 under the mobility limit."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.9,
+   "price_log_sd": 0.29,
+   "rationale": "Section 5.2.2(b) expressly covers releasing the seized lock. The €108 estimate for the full two-unit line becomes €55.90 under the mobility limit."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs for return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.52,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 5.2.2(a) and 7.1.8(f) cover a second attendance only if it was actually required; the bicycle was released on site and no reason for returning is given. If substantiated, a €33 charge would become about €16.52 under the recalculated mobility limit."
+  },
+  {
+   "item_id": "15",
+   "description": "Mandatory impound storage and release fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.59,
+   "price_log_sd": 0.2,
+   "rationale": "The yard required payment before release, so the fee is covered under §5.2.2(c), not excluded as administration. €100 plus 19% VAT is €119 gross, reduced to €61.59 by the shared mobility limit; the €1,000 recovery limit does not bind."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sections 3.1.5 and 7.1.8(e) expressly exclude claim-processing fees, even when the same invoice contains covered recovery work."
+  },
+  {
+   "item_id": "17",
+   "description": "Locksmith apprentice labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.74,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.47,
+   "price_log_sd": 0.56,
+   "rationale": "Section 5.2.2(b) covers necessary lock-release labour at every grade, provided it is not already included in the cutting charge. The €55 estimate becomes €28.47 under the mobility limit."
+  },
+  {
+   "item_id": "18",
+   "description": "Locksmith skilled labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.18,
+   "price_log_sd": 0.23,
+   "rationale": "Necessary skilled labour to release the recovered bicycle is covered under §5.2.2(b), subject to the bar on duplicate charges. The €39 estimate becomes €20.18 under the shared mobility limit."
+  }
+ ]
+}

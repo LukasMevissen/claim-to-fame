@@ -1,0 +1,251 @@
+{
+ "game": 21,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Leak detection call-out",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 481.0,
+   "price_log_sd": 0.05,
+   "rationale": "Policy 7.1.7(e) covers the investigation necessary to locate the source of damage; reference case 20 shows t >= 481 for a similar call-out."
+  },
+  {
+   "item_id": "2",
+   "description": "Electro-acoustic pinpointing of the leak beneath the kitchen sink",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.15,
+   "rationale": "Covered as part of necessary leak detection under 7.1.7(e); reference case 20 shows t >= 707 for a combined detection/technician/vehicle line, so for just the pinpointing, t is likely lower."
+  },
+  {
+   "item_id": "3",
+   "description": "Moisture measurement of the kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered under 7.1.7(e) as measurement necessary to establish extent of moisture; reference case 20 includes this in the main detection line, but as a separate line, t is likely moderate."
+  },
+  {
+   "item_id": "4",
+   "description": "Service technician hours (14 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour for covered detection and measurement is indemnified under 7.1.7(g); reference case 18 shows t between 966 and 1100 for a day and a half with a helper, so for 14 hours solo, t is likely around 900."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.05,
+   "rationale": "First vehicle/call-out charge per contractor is covered (7.1.7(f)); reference case 18 shows t >= 68 for vehicle costs."
+  },
+  {
+   "item_id": "6",
+   "description": "Freeing the affected pipe run beneath the kitchen sink",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.2,
+   "rationale": "Necessary preparatory work for repair (7.1.7(a)); reference case 18 includes similar work in the main repair line."
+  },
+  {
+   "item_id": "7",
+   "description": "Removal and disposal of damaged insulation (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 57.0,
+   "price_log_sd": 0.05,
+   "rationale": "Removal/disposal of affected material is covered (7.1.7(a)); reference case 18 shows t >= 57 for construction waste disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Repair of the confirmed leak and replacement copper pipe section with standard insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 221.0,
+   "price_log_sd": 0.05,
+   "rationale": "Direct repair of insured damage (2.4.2, 7.1.1(b)); reference case 18 shows t >= 221 for similar copper pipe repair."
+  },
+  {
+   "item_id": "9",
+   "description": "Room drying line item for the roof space (Dachstuhl)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.3,
+   "rationale": "No evidence of roof space damage in the loss description or photo; 7.1.5 excludes work beyond affected parts."
+  },
+  {
+   "item_id": "10",
+   "description": "Condensation dryer (kitchen)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drying equipment for affected kitchen area is covered (7.1.7(b)); reference case 20 shows t below 200 for large-area drying, so for a single kitchen, t is likely lower."
+  },
+  {
+   "item_id": "11",
+   "description": "Room drying of the kitchen floor and wall base",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.15,
+   "rationale": "Drying of affected areas is covered (7.1.7(b)); reference case 20 shows t below 200 for large-area drying, so for a single kitchen, t is likely lower."
+  },
+  {
+   "item_id": "12",
+   "description": "Transition pieces and standard insulation for the repaired section",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 107.0,
+   "price_log_sd": 0.05,
+   "rationale": "Consumables and standard insulation for repair are covered (7.1.7(c)); reference case 18 shows t >= 107 for pipe re-insulation."
+  },
+  {
+   "item_id": "13",
+   "description": "Final site cleaning of the covered work area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Cleaning of the work area after repair is covered (7.1.7(h)); reference case 18 shows t below 60 for tile cleaning, so for basic site cleaning, t is likely similar or lower."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs (drying technology)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.05,
+   "rationale": "First vehicle/call-out charge per contractor is covered (7.1.7(f)); reference case 18 shows t >= 68 for vehicle costs."
+  },
+  {
+   "item_id": "15",
+   "description": "Removal of the water-damaged wooden kitchen table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Removal of destroyed furnishing item is covered (7.1.7(h)); reference case 12 includes removal in the main replacement line, but as a separate line, t is likely modest."
+  },
+  {
+   "item_id": "16",
+   "description": "Transport and disposal of the damaged table (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Transport/disposal of destroyed furnishing item is covered (7.1.7(h)); reference case 12 includes this in the main replacement line, but as a separate line, t is likely modest."
+  },
+  {
+   "item_id": "17",
+   "description": "Supply of replacement kitchen table, comparable specification to the original",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 523.6,
+   "price_log_sd": 0.05,
+   "rationale": "Replacement of destroyed furnishing item is covered (7.1.1(d)), and new-for-old option is in force; invoice states EUR 440 before VAT, so t = 440 + 19% VAT = 523.60."
+  },
+  {
+   "item_id": "18",
+   "description": "Delivery of the replacement table",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Delivery of replacement furnishing item is covered (7.1.7(h)); reference case 12 includes delivery in the main replacement line, but as a separate line, t is likely modest."
+  },
+  {
+   "item_id": "19",
+   "description": "Assembly and cleaning of the installation area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Assembly and cleaning for replacement furnishing item is covered (7.1.7(h)); reference case 12 includes this in the main replacement line, but as a separate line, t is likely modest."
+  },
+  {
+   "item_id": "20",
+   "description": "Vehicle costs (carpentry)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.05,
+   "rationale": "First vehicle/call-out charge per contractor is covered (7.1.7(f)); reference case 14 shows t between 13 and 16 for vehicle costs."
+  },
+  {
+   "item_id": "21",
+   "description": "Vehicle costs – return visit (carpentry)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.05,
+   "rationale": "Second vehicle/call-out charge per contractor is excluded (7.1.8(b)); reference cases 11, 17 show t = 0 for return visit vehicle costs."
+  },
+  {
+   "item_id": "22",
+   "description": "Inspection of further furniture items stored in the garden for moisture",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.05,
+   "rationale": "Inspection of unaffected property is excluded (7.1.8(f)); reference cases 11, 17 show t = 0 for similar lines."
+  }
+ ]
+}

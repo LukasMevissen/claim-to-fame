@@ -1,0 +1,97 @@
+{
+ "game": 34,
+ "arm": "ref+prior",
+ "run": 0,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Damage assessment and inspection\": indemnified in the one earlier case; when indemnified t per unit about 524 (80% range 386 to 799); revealed per unit: >=481 (case 20)\n- line 3 \"Measurement technician\": no earlier line of this grade; level of the other hourly grades; when indemnified t per hr about 60 (80% range 20 to 177), so this line (2.5 hr) about 150 (51 to 442)\n- line 4 \"Vehicle costs\": indemnified in 10 of 22 earlier cases, t = 0 in 12; when indemnified t per hr about 79 (80% range 71 to 87); revealed per hr: 37-41 (case 32*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)\n- line 8 \"Vehicle costs\": indemnified in 10 of 22 earlier cases, t = 0 in 12; when indemnified t per unit about 79 (80% range 71 to 87); revealed per unit: 37-41 (case 32*), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), >=74 (case 27) (* = other policy wording)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 524.0,
+   "price_log_sd": 0.25,
+   "rationale": "Policy 5.2.6(b) covers inspection and assessment of damage to determine cause and extent, up to EUR 3,000 per event. Reference case 20 shows this line is indemnified at about 524 gross per unit."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 707.0,
+   "price_log_sd": 0.25,
+   "rationale": "Policy 5.2.6(a) covers leak location (acoustic, thermographic, etc.) and technician time, up to EUR 1,000 per event. Reference cases 21 and 20 show this is indemnified, with typical thresholds around 707–1400 gross per event. As this is a single flat rate for the main leak detection, 707 is a moderate estimate."
+  },
+  {
+   "item_id": "3",
+   "description": "Measurement technician (2.5 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.3,
+   "rationale": "Policy 5.2.6(a) covers technician time for leak location. Price prior for this grade is about 60 per hour, so for 2.5 hours, about 150 gross. This is within the per-event cap."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 83.0,
+   "price_log_sd": 0.1,
+   "rationale": "Policy 5.2.6(c) allows one vehicle charge per contractor per invoice, up to EUR 70 net (about 83 gross). Reference cases show typical indemnified values between 74 and 87 gross. This is the only vehicle charge on this invoice."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of the copper joints verified as actively leaking (seal/renew failed sections)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.2,
+   "rationale": "Policy 2.4.3 and 7.1.1(b) cover repair of pipe sections shown to be leaking due to material ageing. Reference cases 21 and 27 show similar repairs indemnified at 157–220 gross per flat rate."
+  },
+  {
+   "item_id": "6",
+   "description": "Precautionary replacement of the remaining original copper supply run across the ground floor (sections not themselves shown to be leaking)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.7,
+   "rationale": "Policy 2.4.3 and 7.1.5 confine indemnity to parts actually affected by the insured event. Prophylactic replacement of undamaged sections is not covered. Reference cases (21, 27) confirm this."
+  },
+  {
+   "item_id": "7",
+   "description": "Upgrade surcharge – premium multilayer composite piping in lieu of standard copper",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.7,
+   "rationale": "Policy 7.1.9: No betterment over pre-loss standard. Upgrade surcharges for higher-spec materials are not indemnified. Reference cases confirm this."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs (plumbing)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 83.0,
+   "price_log_sd": 0.1,
+   "rationale": "Policy 5.2.6(c) allows one vehicle charge per contractor per invoice, up to EUR 70 net (about 83 gross). This is the only vehicle charge on this invoice."
+  }
+ ]
+}

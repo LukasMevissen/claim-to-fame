@@ -1,0 +1,75 @@
+{
+ "game": 45,
+ "arm": "ref",
+ "run": 0,
+ "meta": {},
+ "prior_block": "",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation from Spanish to English, 2 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(f): translation of police reports and supporting documents for the claim is not indemnifiable, even if necessary for substantiation."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 3.1.6 and 7.1.8(f): working materials and ancillary charges for translation are not indemnifiable."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for stolen watch (premium replacement model, upgrade on the one taken)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.05,
+   "rationale": "Indemnified as a valuable (4.2.2) taken by force (2.3.1), but capped at the EUR 2,500 per-item valuables sub-limit (4.2.2, 6.3, 7.1.1). Upgrade over pre-loss standard is not indemnified (7.1.9); only the cost of an equivalent standard-grade replacement is covered, subject to the sub-limit and deductible (7.8)."
+  },
+  {
+   "item_id": "4",
+   "description": "Compensation for cash taken in robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.05,
+   "rationale": "Indemnified as means of payment (4.2.3) taken by force (2.3.1), but capped at the EUR 500 means-of-payment sub-limit (4.2.3, 6.3, 7.1.1)."
+  },
+  {
+   "item_id": "5",
+   "description": "Replacement of designer sunglasses (mislaid separately, not taken in robbery)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.05,
+   "rationale": "Not indemnified: item was not taken in the insured event (2.3.4(a), 7.1.5, 7.1.10); mislaid property is excluded."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.05,
+   "rationale": "Excluded by 7.1.8(b): shipping, carriage, delivery and comparable charges are not indemnified, even if related to replacement property."
+  }
+ ]
+}

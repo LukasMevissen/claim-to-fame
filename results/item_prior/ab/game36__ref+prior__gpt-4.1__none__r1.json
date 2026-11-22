@@ -1,0 +1,196 @@
+{
+ "game": 36,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 10 \"Skilled worker hours\": indemnified in 2 of 6 earlier cases, t = 0 in 4; when indemnified t per hr about 38 (80% range 32 to 45); revealed per hr: 35-42 (case 24), 35-40 (case 26), so this line (4 hr) about 152 (129 to 181)\n- line 17 \"Administrative and claim-processing fee\": NOT indemnified (t = 0) in all 5 earlier cases; no price evidence",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Cleaning of affected floor areas in the utility room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary cleaning of surfaces affected by the insured water escape event (7.1.7(h), 2.4.2). Utility room is documented as affected."
+  },
+  {
+   "item_id": "2",
+   "description": "Cleaning of affected floor areas in the adjoining hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary cleaning of surfaces affected by the insured water escape event (7.1.7(h), 2.4.2). Hallway is documented as affected."
+  },
+  {
+   "item_id": "3",
+   "description": "Inspection of the washing machine and supply/drain connection to confirm no further leakage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary investigation to confirm the source and cessation of the leak (7.1.7(e))."
+  },
+  {
+   "item_id": "4",
+   "description": "Removal and disposal of water-damaged skirting boards",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as removal/disposal of damaged building components affected by the insured event (7.1.7(a), 7.1.5)."
+  },
+  {
+   "item_id": "5",
+   "description": "Replace skirting boards",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as reinstatement of damaged building components to pre-loss standard (7.1.1(b), 7.1.9)."
+  },
+  {
+   "item_id": "6",
+   "description": "Cleaning and repainting of the upstairs bedroom not reached by the water",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not indemnified: work in a room not affected by the insured event is excluded (7.1.5)."
+  },
+  {
+   "item_id": "7",
+   "description": "Moisture measurement of the utility room and hallway floor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.1,
+   "rationale": "Covered as necessary measurement to establish extent of damage and confirm drying (7.1.7(b), 7.1.7(e))."
+  },
+  {
+   "item_id": "8",
+   "description": "Drying of the affected floor area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.15,
+   "rationale": "Covered as necessary drying of affected areas (7.1.7(b)), limited to utility room and hallway."
+  },
+  {
+   "item_id": "9",
+   "description": "Drying unit rental",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary equipment hire for drying affected areas (7.1.7(b)), provided it relates to utility room/hallway."
+  },
+  {
+   "item_id": "10",
+   "description": "Skilled worker hours (4 hrs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.33,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 152.0,
+   "price_log_sd": 0.15,
+   "rationale": "Indemnified as necessary labour for covered drying/measurement work (7.1.7(g)); price per hr per prior: 38, so 4 hrs ≈ 152."
+  },
+  {
+   "item_id": "11",
+   "description": "Moisture measurement and drying of the basement storage room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not indemnified: basement storage room not documented as affected by the insured event (7.1.5)."
+  },
+  {
+   "item_id": "12",
+   "description": "Transport of the high-value painting to the specialist restorer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as necessary transport for restoration of an item of particular value affected by the insured event (5.2.6, 7.1.7(e))."
+  },
+  {
+   "item_id": "13",
+   "description": "Professional assessment of the high-value painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as specialist assessment of an item of particular value affected by the insured event (5.2.6)."
+  },
+  {
+   "item_id": "14",
+   "description": "Conservatory drying and stabilisation of the painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.2,
+   "rationale": "Covered as drying/stabilisation of an item of particular value affected by the insured event (5.2.6)."
+  },
+  {
+   "item_id": "15",
+   "description": "Full restoration of the painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 1.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.05,
+   "rationale": "Covered as restoration of an item of particular value affected by the insured event (5.2.6), but capped at EUR 1,000 + VAT as not scheduled."
+  },
+  {
+   "item_id": "16",
+   "description": "Restoration of a second painting stored in the basement, unaffected by the utility-room leak",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.3,
+   "rationale": "Not indemnified: painting in basement not affected by the insured event (7.1.5, 5.2.6)."
+  },
+  {
+   "item_id": "17",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.05,
+   "rationale": "Not indemnified: administrative/processing fees are not covered (7.1.8(b)); never indemnified in prior cases."
+  }
+ ]
+}

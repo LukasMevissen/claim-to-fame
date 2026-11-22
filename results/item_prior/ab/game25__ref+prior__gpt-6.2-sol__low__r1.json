@@ -1,0 +1,185 @@
+{
+ "game": 25,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 1 \"Filling valve (internal frost-burst fitting)\": indemnified in the one earlier case; when indemnified t per pc about 52 (80% range 38 to 79); revealed per pc: 48-55 (case 16)\n- line 2 \"Connection hose\": indemnified in the one earlier case; when indemnified t per pc about 30 (80% range 22 to 45); revealed per pc: 27-33 (case 16)\n- line 3 \"Senior installer hours\": indemnified in the one earlier case; when indemnified t per hr about 97 (80% range 69 to 131); revealed per hr: >=91 (case 16), so this line (3 hr) about 290 (208 to 393)\n- line 5 \"Vehicle costs\": indemnified in 7 of 16 earlier cases, t = 0 in 9; when indemnified t per pc about 77 (80% range 65 to 88); revealed per pc: >=60 (case 16), >=68 (case 18), >=76 (case 21), >=76 (case 21), >=76 (case 21), 34-45 (case 23)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the fractured valve; one valve at the reference price is €52 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.9 covers connection elements that must be renewed with the fractured valve; one hose is €30 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.995,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 290.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover the necessary repair labour; the three-hour reference threshold is €290 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.7(e) and 7.1.9 cover consumables actually used in the repair, but §3.6(c) excludes the contractor's own small equipment. Allow €10 gross for ordinary repair consumables."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 77.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.9 and 7.1.11 cover one attendance for the insured fitting repair; the gross reference threshold is €77."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging used to locate the internal escape. A €50 gross equipment allowance is well within the €2,500 aggregate leak-location cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade damage from outdoor freeze-thaw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "No external-frost endorsement is shown, and no escaped water reached the facade. Sections 2.6.4 and 3.5(a) exclude the line in full."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes removal of render loosened by uninsured outdoor frost; no part of the line is payable."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes substrate reinstatement for uninsured exterior frost damage; there is no payable share."
+  },
+  {
+   "item_id": "10",
+   "description": "Premium insulated render system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5 and 7.1.10 exclude the entire upgrade because the underlying facade damage is uninsured; even the like-for-like cost is not payable."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes preparation and re-forming of the substrate beneath the uninsured facade damage; no share is payable."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) excludes finish coats on the uninsured facade regardless of the number applied; all four coats are excluded."
+  },
+  {
+   "item_id": "13",
+   "description": "Repainting undamaged elevations",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate undamaged elevations for uniform appearance, so none of the lump sum is payable."
+  },
+  {
+   "item_id": "14",
+   "description": "Facade priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.5(b) expressly excludes priming associated with uninsured exterior frost work; the full line is excluded."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(c) and 7.1.11 exclude labour attached to uninsured facade work; none of the five hours is payable."
+  },
+  {
+   "item_id": "16",
+   "description": "Painting contractor flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.5(c) and 7.1.12 exclude lump sums for uninsured facade work, and §9.6 provides no basis to allocate this charge to any covered work."
+  }
+ ]
+}

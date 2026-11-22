@@ -1,0 +1,31 @@
+{
+ "game": 35,
+ "arm": "ref+prior",
+ "run": 1,
+ "meta": {},
+ "prior_block": "PRICE PRIORS for recurring line types (statistical model fitted on the thresholds t revealed\nin earlier games; gross amounts). How to use them:\n- The amounts are final thresholds as they were revealed: they already contain whatever\n  deductible, VAT and customary-price judgement applied in those cases, and they were computed\n  from the full invoiced quantity (the whole quantity was indemnified there). For an\n  indemnified line of this type take the stated amount for the line as t as it stands and give\n  a price_log_sd that matches the stated range. Do not deduct a deductible from it and do not\n  cut the invoiced quantity.\n- Deviate only for something this case has and those cases did not: an aggregate cap or\n  sub-limit that the lines of this invoice must share, a percentage reduction for a breached\n  duty, or a purchase price or sum insured stated in the claim that limits the line.\n- Whether a line is indemnified in THIS case is decided by the policy and the claim, not by\n  the history. The history only says how often this line type was paid at all. A line type\n  that was never indemnified before is usually an ancillary charge the policies do not carry;\n  treat it as indemnified only if this policy clearly says so.\n- line 2 \"Vehicle costs\": indemnified in 12 of 24 earlier cases, t = 0 in 12; when indemnified t per pc about 79 (80% range 68 to 89); revealed per pc: 34-45 (case 23), 38-44 (case 25), >=74 (case 27), 37-41 (case 32), >=83 (case 34), >=76 (case 34)",
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1532.0,
+   "price_log_sd": 0.05,
+   "rationale": "Per 3.1.4 and 4.3(d), loss of or damage to property taken away by a third party is not covered, regardless of means or location, and personal articles (clothing, jewellery) are not insured property under this policy. Reference cases 29 and 31 confirm that theft of personal effects and jewellery is always excluded under this residential dwelling policy."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.2,
+   "rationale": "Per 5.2.5 and 4.3(e), expenditure connected with a conveyance (vehicle) is not an insured cost, and vehicles and their costs are not insured property. Reference cases (e.g., 30, 26, 24, 23) show vehicle costs are never indemnified under this policy."
+  }
+ ]
+}
