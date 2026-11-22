@@ -7,6 +7,17 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 <!-- new entries below -->
 
+## unreleased: charge agent stays in shadow, takeover off (2026-11-22, no change to quotes)
+
+- `[charge_agent] takeover = false`: the agent keeps running in shadow and is scored after every
+  round, but its charges are not submitted whatever the streak.
+- Reason: replay of games 56 to 63 through the live workflow (dry runs, each game priced from
+  earlier games only, same assessment for both): fixed rule 308.1k, agent 291.7k (-16.3k), 3 of
+  8 rounds won. Losses on a few lines: uncertain lines charged far above t (game 62 line 3:
+  1,040 against t between 621 and 732) and large lines charged below the fixed rule (game 60
+  line 1: 1,246 against 1,610, t at least 1,981). Seven of the eight games were answered by
+  `claude-opus-5-5`; the agent is calibrated on `gpt-6.2-sol` assessments.
+
 ## Overhaul of the case analysis (2026-11-22)
 
 - **Live: `[llm] analyst = "rel"`.** The model now sees the earlier cases most similar to the

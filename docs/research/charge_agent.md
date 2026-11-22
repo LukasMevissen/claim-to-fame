@@ -177,7 +177,7 @@ expected score, for example in the last games when only a rank change counts.
     mode = "rule"        # or "llm"
     risk = "neutral"     # or "loving"
     shadow = true        # false: submit the agent's charges at once
-    takeover = true      # false: stay in shadow whatever the score
+    takeover = false     # true: submit the agent's charges after takeover_rounds wins in a row
     takeover_rounds = 3
 
 - **In shadow** the agent prices every live game, but the fixed rule's charges are submitted.
@@ -197,6 +197,23 @@ expected score, for example in the last games when only a rank change counts.
   by hand, or `takeover = false` to return to shadow.
 - **After the takeover** the fixed rule's search for a is skipped (faster), so there is no
   further comparison.
+
+**Takeover is off since 2026-11-22.** Replay of games 56 to 63 through the live workflow (dry
+runs, each game priced from earlier games only, the same assessment for both; where only a
+lower bound of t is known, t = 1.15 x the bound):
+
+| Game | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63 | Sum |
+|---|---|---|---|---|---|---|---|---|---|
+| Fixed rule | 38.7k | 37.9k | 29.3k | 30.2k | 55.8k | 35.2k | 33.6k | 47.5k | 308.1k |
+| Agent | 40.3k | 36.1k | 24.9k | 33.6k | 48.8k | 39.1k | 25.7k | 43.2k | 291.7k |
+| Difference | +1.6k | -1.7k | -4.4k | +3.4k | -7.0k | +3.9k | -7.8k | -4.3k | -16.3k |
+
+With t at the bound itself the difference is -7.3k. The loss sits on a few lines: uncertain
+lines charged far above t (game 62 line 3: 1,040 against t between 621 and 732) and large lines
+charged below the fixed rule (game 60 line 1: 1,246 against 1,610, t at least 1,981). Seven of
+the eight games were answered by `claude-opus-5-5` with the ranked-reference analyst, while the
+agent is calibrated on `gpt-6.2-sol` assessments (limit 4 in section 7); that this is the cause
+is not tested. One replay per game; the opponent belief was not refitted after game 57.
 
 **How strong is the criterion?** Weak. In the backtest the agent earned more in 19 of 35
 rounds with a difference: its gain is in the size of the wins, not in how often it wins.

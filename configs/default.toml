@@ -146,7 +146,9 @@ risk = "neutral"             # "neutral" (maximise expected revenue) | "loving" 
 # from the next game on (not taken back automatically). shadow = false: submit the agent's
 # charges at once. takeover = false: stay in shadow whatever the score.
 shadow = true
-takeover = true
+# false since 2026-11-22: replay of games 56-63 through the live workflow, agent 291.7k vs fixed
+# rule 308.1k (-16.3k, 3 of 8 rounds won). Stays in shadow until the live record says otherwise.
+takeover = false
 takeover_rounds = 3
 gamma_loving = 2.0
 judge_model = "gpt-4.1"      # or "gpt-6.2-sol@low"; backtest: median 3.4 s / 4.8 s, max 9.8 s / 12.7 s
