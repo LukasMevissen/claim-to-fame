@@ -17,6 +17,21 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 - Off by default: analyst `x5`, decision table (`c2f/decision.py`), case memory (`c2f/memory.py`).
 - The running scheduler loads code and config at start: restart it to pick this up.
 
+## unreleased: belief behind every quote is recorded and backfilled (2026-11-22, quotes unchanged)
+
+- Problem: from game 26 on the submitted answer usually came from the backup stage
+  (claude-opus-5-5), whose estimates were stored nowhere; `results/extractions/` only holds the
+  OpenAI stages and the run log only kept the quotes until game 44. So for games 26 to 43 the
+  stored estimate was not the one we priced from.
+- `c2f/__main__.py`: every stage that priced lines is written to
+  `results/live/game<N>__<role>.json` (median, sigma, p_zero, a, b per line, model, whether it was
+  submitted). One file per game and machine, so a second machine cannot overwrite or lose it.
+- `c2f/live_estimates.py`, `scripts/backfill_live_estimates.py`: one table for all games in
+  `results/live_estimates/` (`lines.csv`, `games.json`). Games 26 to 43 are reconstructed from
+  the submitted quotes with the config and opponent belief of that game; on the 100 lines whose
+  belief was logged (games 44 to 55) the method returns the right median on 99 and flags the
+  other one as ambiguous.
+
 ## unreleased: charge agent as shadow run with takeover (2026-11-22, changes quotes after the takeover)
 
 - `[charge_agent] mode = "rule"`, `risk = "neutral"`, `shadow = true`: the agent prices every

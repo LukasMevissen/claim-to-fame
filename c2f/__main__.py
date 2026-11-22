@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import tempfile
 import time
@@ -28,6 +29,11 @@ from .versioning import stamp
 from . import evaluate as ev
 
 RUN_LOG = REPO_ROOT / "runs" / "submissions.jsonl"
+# One file per game and machine with the belief and quotes of EVERY stage that priced lines
+# (c2f/live_estimates.py reads it). The run log only keeps the submitted stage, and only on
+# the machine that wrote it; games 26-43 had to be reconstructed from the quotes because the
+# backup stage's answer was stored nowhere.
+LIVE_DIR = REPO_ROOT / "results" / "live"
 
 
 def _table(priced) -> str:
@@ -47,6 +53,40 @@ def _estimates(priced) -> list[dict]:
                  "sigma": round(p.belief["sigma"], 4)} for p in priced]
     except Exception:  # noqa: BLE001
         return []
+
+
+def _stage_record(name: str, info: dict, priced, timing: dict | None) -> dict:
+    """Belief and quotes of one stage, for results/live/. Never raises."""
+    try:
+        from .agent import _index
+        lines = [{"index": _index(p.item_id, k), "description": p.description[:80],
+                  "median": round(p.belief["median"], 2), "sigma": round(p.belief["sigma"], 4),
+                  "p_zero": round(p.belief["p_zero"], 4),
+                  "a": p.charge_price, "b": p.acceptance_limit} for k, p in enumerate(priced, 1)]
+    except Exception:  # noqa: BLE001
+        lines = []
+    return {"stage": name, "model": (timing or {}).get("model"), "submitted": bool(info.get("submitted")),
+            "since_start_s": info.get("since_start_s"), "lines": lines}
+
+
+def _save_live(game_id: int, dry_run: bool, stamp: dict, stages: list[dict]) -> None:
+    """results/live/game<N>__<role>.json. The role is in the name so that two machines
+    (C2F_ROLE primary / standby) never write the same file. Never raises: a record must not
+    cost a game. Dry runs are not recorded."""
+    if dry_run or not any(s["lines"] for s in stages):
+        return
+    try:
+        role = re.sub(r"[^a-z0-9]+", "", os.environ.get("C2F_ROLE", "primary").strip().lower()) or "primary"
+        LIVE_DIR.mkdir(parents=True, exist_ok=True)
+        path = LIVE_DIR / f"game{game_id}__{role}.json"
+        tmp = path.with_suffix(".json.tmp")
+        submitted = [s["stage"] for s in stages if s["submitted"]]
+        tmp.write_text(json.dumps({"game": game_id, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "role": role,
+                                   "stamp": stamp, "final_stage": submitted[-1] if submitted else None,
+                                   "stages": stages}, indent=1, ensure_ascii=False), encoding="utf-8")
+        os.replace(tmp, path)
+    except Exception as e:  # noqa: BLE001
+        print(f"[game {game_id}] live record not saved: {e!r}")
 
 
 def cmd_version(args, cfg) -> int:
@@ -142,6 +182,7 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
     zip_path = zip_path or REPO_ROOT / cfg.section("api").get("cases_dir", "data/cases") / f"case_{game_id:03d}.zip"
     rec = {"game_id": game_id, "dry_run": dry_run, "stamp": st.as_dict(), "zip": str(zip_path)}
     t0 = None
+    detail: list[dict] = []          # every stage's belief and quotes, for results/live/
     try:
         if not zip_path.exists():
             raise FileNotFoundError(f"missing {zip_path}")
@@ -173,6 +214,8 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
                 except Exception as e:  # noqa: BLE001
                     info["submitted"], info["error"] = False, repr(e)[:200]
             stages.append(info)
+            if priced:
+                detail.append(_stage_record(name, info, priced, timing))
             print(f"[game {game_id}] stage {name}: {info}")
 
         tmpdir = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
@@ -235,6 +278,7 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
         finally:
             tmpdir.cleanup()
 
+        _save_live(game_id, dry_run, rec["stamp"], detail)
         if best["rank"] < 0:
             raise RuntimeError(f"nothing submitted; stages: {stages}")
         timing = {**best["timing"], "n_invoice_lines": len(positions),
