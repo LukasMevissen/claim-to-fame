@@ -10,6 +10,20 @@ from c2f.config import load_config
 FB = load_config().section("fallback")["charge_price"]   # stage 0: fixed fallback charge
 
 
+def _backup_cfg(**runtime):
+    """The live config with a backup stage switched on (the live default has none since
+    2026-11-22), so the backup tests do not depend on it."""
+    base = load_config()
+    def section(name):
+        s = base.section(name)
+        if name == "llm":
+            s = {**s, "backup": "anthropic:test-model", "prefer_backup": True}
+        if name == "runtime":
+            s = {**s, **runtime}
+        return s
+    return SimpleNamespace(section=section)
+
+
 class FakeClient:
     def __init__(self):
         self.calls = []
@@ -85,7 +99,7 @@ def _run_backup(monkeypatch, tmp_path, role=None):
     zip_path = tmp_path / "case.zip"
     zip_path.write_bytes(b"")
     client = FakeClient()
-    assert m.play_game(client, load_config(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
+    assert m.play_game(client, _backup_cfg(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
     return [c[0]["charge_price"] for c in client.calls]
 
 
@@ -110,7 +124,7 @@ def test_preferred_backup_is_not_overwritten_by_a_later_full_stage(monkeypatch, 
         v = 200.0 if with_image else 100.0
         return [PricedItem("1", "", {"p_zero": 0, "median": v}, v, v)], {}
 
-    assert load_config().section("llm").get("prefer_backup") is False
+    assert _backup_cfg().section("llm").get("prefer_backup") is True
     case = SimpleNamespace(image=None, invoice_text="")
     monkeypatch.setattr(m, "decrypt", lambda z, k, d: d)
     monkeypatch.setattr(m, "load_case", lambda root, cid: case)
@@ -122,7 +136,7 @@ def test_preferred_backup_is_not_overwritten_by_a_later_full_stage(monkeypatch, 
     zip_path = tmp_path / "case.zip"
     zip_path.write_bytes(b"")
     client = FakeClient()
-    assert m.play_game(client, load_config(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
+    assert m.play_game(client, _backup_cfg(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
     assert [c[0]["charge_price"] for c in client.calls] == [FB, 100.0, 150.0]
 
 
@@ -137,9 +151,7 @@ def test_standby_sends_after_the_hold(monkeypatch, tmp_path):
     monkeypatch.setattr(m, "price_case_backup",
                         lambda case, cfg, budget: ([PricedItem("1", "", {"p_zero": 0, "median": 300.0}, 300.0, 300.0)], {}))
     monkeypatch.setenv("C2F_ROLE", "standby")
-    base = load_config()
-    cfg = SimpleNamespace(section=lambda name: {**base.section(name), "standby_hold_seconds": 0.6}
-                          if name == "runtime" else base.section(name))
+    cfg = _backup_cfg(standby_hold_seconds=0.6)
     zip_path = tmp_path / "case.zip"
     zip_path.write_bytes(b"")
     sent = []
