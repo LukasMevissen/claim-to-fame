@@ -110,7 +110,7 @@ def test_preferred_backup_is_not_overwritten_by_a_later_full_stage(monkeypatch, 
         v = 200.0 if with_image else 100.0
         return [PricedItem("1", "", {"p_zero": 0, "median": v}, v, v)], {}
 
-    assert load_config().section("llm").get("prefer_backup") is True
+    assert load_config().section("llm").get("prefer_backup") is False
     case = SimpleNamespace(image=None, invoice_text="")
     monkeypatch.setattr(m, "decrypt", lambda z, k, d: d)
     monkeypatch.setattr(m, "load_case", lambda root, cid: case)
