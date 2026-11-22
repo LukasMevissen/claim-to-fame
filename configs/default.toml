@@ -137,7 +137,7 @@ miss_zero = 0.5
 #   llm  / neutral +18k (gpt-4.1) to +29k (gpt-6.2-sol@low)    llm / loving +5k to +7k
 # "off" | "rule" (no model call, milliseconds) | "llm" (a judge model weighs the earlier rounds,
 # in parallel to the assessment; rule weights when it is late or fails).
-mode = "rule"
+mode = "off"                 # off since 2026-11-22 07:30 (user request): no shadow charges, fixed rule only
 risk = "neutral"             # "neutral" (maximise expected revenue) | "loving" (revenue ** gamma_loving)
 # Shadow run: the agent prices every game, but only the fixed rule's charges are submitted; the
 # agent's are recorded (runs/submissions.jsonl, timing.charge_agent.shadow_charges). After each

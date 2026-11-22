@@ -314,7 +314,7 @@ def test_shadow_records_the_agents_charges_and_submits_the_fixed_rule_until_take
     assert timing["charge_agent"]["submitted"] == "legacy"
 
 
-def test_default_config_runs_rule_neutral_in_shadow():
+def test_default_config_has_charge_agent_off():
     from c2f.config import load_config
     sec = load_config().section("charge_agent")
-    assert (sec["mode"], sec["risk"], sec["shadow"], sec["takeover_rounds"]) == ("rule", "neutral", True, 3)
+    assert sec["mode"] == "off"   # switched off 2026-11-22 (user request)
