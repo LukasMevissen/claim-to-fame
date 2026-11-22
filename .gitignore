@@ -232,7 +232,7 @@ data/cases/
 
 # dashboard data, rebuilt locally by scripts/dashboard.py
 dashboard/data.json
-dashboard/data.js
+# dashboard/data.js is committed so teammates can open dashboard/index.html straight from the checkout
 dashboard/*.tmp
 dashboard/briefings/
 dashboard/artifact/
