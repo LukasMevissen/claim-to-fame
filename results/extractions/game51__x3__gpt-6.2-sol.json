@@ -1,0 +1,62 @@
+{
+  "case_id": "game51",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Replacement pipe, sealing and insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 88.0,
+      "price_log_sd": 0.28,
+      "rationale": "The failed indoor supply pipe is treated as covered under §2.4.3(a), with like-for-like materials allowed under §§7.1.7(c) and 7.1.9. Case 39 supports about €42 for one short pipe section, €24 for sealing and €22 for insulation, or €88 gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Installation and technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 814.0,
+      "price_log_sd": 0.31,
+      "rationale": "Section 7.1.7(g) covers customary labour for the time reasonably needed to open the wall and replace the pipe. For this localized repair, one installer hour at €76 plus one nine-hour technician block at about €82 per hour, benchmarked to Case 39, gives about €814 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.13,
+      "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice regardless of the number of visits. This is the only such line on the repair invoice; Case 39 supports €65 gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Construction dryer flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 405.0,
+      "price_log_sd": 0.19,
+      "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per drying operation. The comparable bathroom-wall drying charge in Case 39 supports about €405 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Close and repaint the wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 420.0,
+      "price_log_sd": 0.16,
+      "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the disturbed patch, not the unaffected bathroom. Case 39 supports about €420 gross for the combined work."
+    }
+  ]
+}

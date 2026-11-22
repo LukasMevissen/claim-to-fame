@@ -1,2 +1,53 @@
 severity,kind,game,item,team,detail
 info,our_a_capped,30,7,GemischtesHack,"we sent a = 7830.0, paid 2000.00: c = 2000.00"
+error,our_a_mismatch,50,1,GemischtesHack,"rejected at 128.25 = 1.5 x 85.50, we sent a = 78.3"
+error,our_a_mismatch,50,1,GemischtesHack,"rejected at 128.25 = 1.5 x 85.50, we sent a = 78.3"
+error,our_a_mismatch,50,1,GemischtesHack,"rejected at 128.25 = 1.5 x 85.50, we sent a = 78.3"
+error,our_a_mismatch,50,1,GemischtesHack,"rejected at 128.25 = 1.5 x 85.50, we sent a = 78.3"
+error,our_a_mismatch,50,1,GemischtesHack,"rejected at 128.25 = 1.5 x 85.50, we sent a = 78.3"
+error,our_a_mismatch,50,1,GemischtesHack,paid 85.50 > our a = 78.3
+error,our_b_mismatch,50,2,Kiebler Software Solutions,we rejected a = 280.00 with b = 282.23
+error,our_b_mismatch,50,4,404,we accepted a >= 24.96 with b = 24.46
+error,our_b_mismatch,50,4,FDN,we accepted a >= 25.11 with b = 24.46
+error,our_b_mismatch,50,4,Humble Legends,we accepted a >= 24.51 with b = 24.46
+error,our_b_mismatch,50,4,Kiebler Software Solutions,we accepted a >= 25.00 with b = 24.46
+error,our_a_mismatch,50,6,GemischtesHack,"rejected at 52.20 = 1.5 x 34.80, we sent a = 33.06"
+error,our_a_mismatch,50,6,GemischtesHack,"rejected at 52.20 = 1.5 x 34.80, we sent a = 33.06"
+error,our_a_mismatch,50,6,GemischtesHack,paid 34.80 > our a = 33.06
+error,our_b_mismatch,50,6,FDN,we accepted a >= 35.34 with b = 34.41
+error,our_a_mismatch,50,7,GemischtesHack,"rejected at 127.29 = 1.5 x 84.86, we sent a = 78.3"
+error,our_a_mismatch,50,7,GemischtesHack,"rejected at 127.29 = 1.5 x 84.86, we sent a = 78.3"
+error,our_a_mismatch,50,7,GemischtesHack,"rejected at 127.29 = 1.5 x 84.86, we sent a = 78.3"
+error,our_a_mismatch,50,7,GemischtesHack,paid 84.86 > our a = 78.3
+error,our_a_mismatch,50,8,GemischtesHack,"rejected at 48.96 = 1.5 x 32.64, we sent a = 52.2"
+error,our_a_mismatch,50,8,GemischtesHack,"rejected at 48.96 = 1.5 x 32.64, we sent a = 52.2"
+error,our_a_mismatch,50,8,GemischtesHack,"rejected at 48.96 = 1.5 x 32.64, we sent a = 52.2"
+info,our_a_capped,50,8,GemischtesHack,"we sent a = 52.2, paid 32.64: c = 32.64"
+error,our_b_mismatch,50,8,CHOOMS,we rejected a = 14.80 with b = 32.63
+error,our_b_mismatch,50,8,Humble Legends,we rejected a = 17.60 with b = 32.63
+error,our_a_mismatch,50,9,GemischtesHack,"rejected at 215.33 = 1.5 x 143.55, we sent a = 208.8"
+info,our_a_capped,50,9,GemischtesHack,"we sent a = 208.8, paid 143.55: c = 143.55"
+error,our_b_mismatch,50,9,CHOOMS,we rejected a = 192.00 with b = 200.91
+error,our_b_mismatch,50,9,FDN,we rejected a = 195.30 with b = 200.91
+error,our_b_mismatch,50,9,Kiebler Software Solutions,we rejected a = 150.00 with b = 200.91
+error,our_a_mismatch,50,11,GemischtesHack,"rejected at 58.72 = 1.5 x 39.15, we sent a = 41.76"
+error,our_a_mismatch,50,11,GemischtesHack,"rejected at 58.72 = 1.5 x 39.15, we sent a = 41.76"
+error,our_a_mismatch,50,11,GemischtesHack,"rejected at 58.72 = 1.5 x 39.15, we sent a = 41.76"
+error,our_a_mismatch,50,11,GemischtesHack,"rejected at 58.72 = 1.5 x 39.15, we sent a = 41.76"
+info,our_a_capped,50,11,GemischtesHack,"we sent a = 41.76, paid 39.15: c = 39.15"
+error,our_b_mismatch,50,11,404,we rejected a = 42.30 with b = 44.25
+error,our_b_mismatch,50,11,Asgardians,we rejected a = 43.09 with b = 44.25
+error,our_b_mismatch,50,11,FDN,we rejected a = 41.85 with b = 44.25
+error,our_b_mismatch,50,11,Kiebler Software Solutions,we rejected a = 42.00 with b = 44.25
+info,our_a_capped,50,14,GemischtesHack,"we sent a = 85.26, paid 82.65: c = 82.65"
+error,our_b_mismatch,50,14,CHOOMS,we rejected a = 76.80 with b = 88.75
+error,our_b_mismatch,50,14,FDN,we rejected a = 88.35 with b = 88.75
+error,our_b_mismatch,50,14,Humble Legends,we rejected a = 83.04 with b = 88.75
+error,our_b_mismatch,50,14,Kiebler Software Solutions,we rejected a = 88.00 with b = 88.75
+error,our_b_mismatch,50,14,TRINNERS4WINNERS,we rejected a = 76.95 with b = 88.75
+error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
+error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
+error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
+error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
+error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
+info,our_a_capped,50,15,GemischtesHack,"we sent a = 74.82, paid 73.95: c = 73.95"

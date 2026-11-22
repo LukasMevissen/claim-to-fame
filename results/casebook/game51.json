@@ -1,0 +1,12 @@
+{
+ "game": 51,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Bathroom leak upstairs — cold water supply pipe in the 1st-floor bathroom failed and leaked into the wall. Straightforward fix: opened the wall, replaced the failed pipe section like-for-like with sealing and standard insulation, ran a blower to dry it out, then closed and repainted the opening. Localised damage, nothing beyond the immediate wall patch. One firm did the repair and drying, the painter closed up. A couple of visits, all standard materials. Invoices came in as a few summary lines rather than fully itemised.",
+ "lines": {
+  "1": "Pipe repair – replacement pipe section (standard spec), sealing material and standard rock-wool insulation | 1 flat rate",
+  "2": "Installation and service-technician labour hours 1 flat rate",
+  "3": "Vehicle costs 1 flat rate",
+  "4": "Construction dryer flat-rate charge 1 flat rate",
+  "5": "Painting the disturbed wall area and closing the wall opening | 1 pcs"
+ }
+}

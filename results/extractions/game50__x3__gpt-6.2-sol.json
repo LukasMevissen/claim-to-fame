@@ -1,0 +1,194 @@
+{
+  "case_id": "game50",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disassembly and assembly service",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.93,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.1,
+      "rationale": "Necessary dismantling and refitting for access or drying is covered under §§5.2.6–5.2.7 if not already included in the dryer charge. One service is estimated at €90 gross, in line with Case 46."
+    },
+    {
+      "item_id": "2",
+      "description": "Construction dryer, 7 days",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 294.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 5.2.7 covers the necessary drying period supported by moisture readings. The claim describes about two weeks of drying, but this line bills only seven days, estimated at 7 × €42 = €294 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Material surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.4.4 bars an unexplained surcharge without an itemised material list. The €36 conditional estimate uses Case 46 and would apply only if necessary materials were substantiated."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.91,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 26.0,
+      "price_log_sd": 0.18,
+      "rationale": "Sections 5.2.6 and 7.14(c) allow reinstatement of disturbed pipe insulation with a standard mineral-wool shell of the original diameter. One short section is estimated at €26 gross, consistent with Case 46."
+    },
+    {
+      "item_id": "5",
+      "description": "First construction waste disposal charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.1,
+      "rationale": "Under §5.2.2, disposal of insured debris is paid once, based on actual volume. This is the first-listed charge for the shared disposal, estimated at €60 gross using Case 46."
+    },
+    {
+      "item_id": "6",
+      "description": "Wall levelling material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.18,
+      "rationale": "Levelling the affected substrate is covered making good under §§5.2.6 and 7.1.5. One lot of standard levelling material is estimated at €36 gross using Case 46."
+    },
+    {
+      "item_id": "7",
+      "description": "Rough renovation, 2.78 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.44,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 5.2.6 covers necessary substrate preparation, but §§3.5(d) and 7.4.1 bar charging again for removal, levelling or labour billed elsewhere. If this is distinct work, 2.78 m² at about €30 per m² gives €83 gross."
+    },
+    {
+      "item_id": "8",
+      "description": "Mounting / service opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 19.0,
+      "price_log_sd": 0.12,
+      "rationale": "Section 5.2.6 expressly covers a necessary service opening to reach or make good the damaged pipe area. One opening is estimated at €19 gross using the comparable drilling line in Case 46."
+    },
+    {
+      "item_id": "9",
+      "description": "90 × 90 cm wall tiles, 5 pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 162.0,
+      "price_log_sd": 0.19,
+      "rationale": "The tiles are within the §7.14(d) format limit; §§3.5(a) and 7.1.6 restrict pricing to standard grade. Five tiles cover 4.05 m² including cutting allowance, at about €40 per m² gross."
+    },
+    {
+      "item_id": "10",
+      "description": "130 × 130 cm designer wall tiles, 5 pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 162.0,
+      "price_log_sd": 0.2,
+      "rationale": "These tiles exceed the 90 × 90 cm threshold in §7.14(d), triggering §3.5(f)'s no-partial-payment rule; the line also overlaps the standard tile allowance. The €162 conditional figure represents standard tiles for the same repair, not the designer order."
+    },
+    {
+      "item_id": "11",
+      "description": "Silicone joints, 3.6 linear metres",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 43.0,
+      "price_log_sd": 0.13,
+      "rationale": "Section 7.14(a) permits standard sanitary silicone for necessary reinstatement joints. At €12 per linear metre, 3.6 metres comes to about €43 gross, consistent with Case 46."
+    },
+    {
+      "item_id": "12",
+      "description": "Tiling contractor vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.08,
+      "rationale": "Section 7.4.2 permits the first travel charge per contractor per document. The single tiling travel line is estimated at €83 gross using Case 46."
+    },
+    {
+      "item_id": "13",
+      "description": "Skilled worker labour, 14 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1260.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.4.1 allows necessary hours at the customary trade rate, excluding labour already billed in other lines. Case 46 supports 14 hours × €90 gross = €1,260 for distinct reinstatement labour."
+    },
+    {
+      "item_id": "14",
+      "description": "Remove basement drywall and insulation wool",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.84,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 5.2.6 covers dismantling within the documented damage area, subject to substantiation of the flat rate under §7.4.4 and no duplicate disposal. Case 46 supports about €50 for drywall removal plus €40 for stripping insulation, excluding waste haulage."
+    },
+    {
+      "item_id": "15",
+      "description": "Remove damp basement plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 78.0,
+      "price_log_sd": 0.2,
+      "rationale": "Sections 5.2.6 and 7.1.5 cover removal of affected plaster only within the cellar damage area. Using Case 46 as a benchmark, about 2.8 m² at €28 per m² gives €78 gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Remove attic plaster",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 3.5(b) excludes work outside the documented damage area, and the claim identifies the attic work as unrelated. The €80 conditional figure is a benchmark for a small plaster removal job only."
+    },
+    {
+      "item_id": "17",
+      "description": "Duplicate construction waste disposal charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.02,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.1,
+      "rationale": "Sections 3.5(d) and 5.2.2 bar the second charge for the same disposal already listed at item 5. The €60 conditional benchmark would apply only if this were established as the first eligible charge."
+    }
+  ]
+}

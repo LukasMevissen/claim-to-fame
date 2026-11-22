@@ -1,0 +1,194 @@
+{
+  "case_id": "game50-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disassembly and assembly service",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered as necessary access and reinstatement work (policy 5.2.6, 7.1.5) for drying; reference Case 46 shows t between 84 and 95 for similar work."
+    },
+    {
+      "item_id": "2",
+      "description": "Construction dryer 7 days",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 287.0,
+      "price_log_sd": 0.05,
+      "rationale": "Drying of affected area is covered (policy 5.2.7, 7.1.5); reference Case 46 t >= 287 for 7 days, so t = 287 is fair."
+    },
+    {
+      "item_id": "3",
+      "description": "Material surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.4.4: Surcharges/flat rates only reimbursed if itemised list of materials is provided; none is shown, so t = 0."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 26.0,
+      "price_log_sd": 0.05,
+      "rationale": "Replacement of insulation after water damage is covered (policy 7.1.5); reference Case 46 t >= 26 per m, but only 1 pcs here, so t = 26."
+    },
+    {
+      "item_id": "5",
+      "description": "Construction waste disposal (drying contractor)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 5.2.1, 7.4.2: Only one disposal reimbursed per event; both contractors charged, so only the first in invoice order is paid. Reference Case 46 t = 60."
+    },
+    {
+      "item_id": "6",
+      "description": "Wall levelling material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered as necessary substrate repair after tile removal (policy 7.1.5); reference Case 46 t >= 35 for 1 m², so for 1 pcs (likely similar), t = 35."
+    },
+    {
+      "item_id": "7",
+      "description": "Rough renovation 2.78 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered as necessary making good after opening up for repair (policy 7.1.5); reference Case 46 'remove damp plaster' t ~27–30 per m², so for 2.78 m², t = 80."
+    },
+    {
+      "item_id": "8",
+      "description": "Mounting / service opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 19.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as necessary access for repair (policy 5.2.6, 7.1.5); reference Case 46 'hole drilling' t = 18–19, so t = 19."
+    },
+    {
+      "item_id": "9",
+      "description": "Large-format wall tiles 90 x 90 cm 5 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 210.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered as replacement of damaged tiles (policy 7.1.5, 7.1.6); 90x90 cm is within standard threshold (policy 7.14), so t = 155 for 3 m² in Case 46, here 5 tiles = 4.05 m², so t = 210."
+    },
+    {
+      "item_id": "10",
+      "description": "Designer wall tiles 130 x 130 cm 5 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 250.0,
+      "price_log_sd": 0.7,
+      "rationale": "Policy 3.5(a), 7.14(d): Tiles above 90x90 cm and designer grade are above standard threshold; not indemnified."
+    },
+    {
+      "item_id": "11",
+      "description": "Silicone joints 3.6 linear m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 43.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as necessary for tile reinstatement (policy 7.1.5, 7.14(a)); reference Case 46 t >= 43 for 3.6 m, so t = 43."
+    },
+    {
+      "item_id": "12",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered once per contractor per document (policy 7.4.2); reference Case 46 t = 83 for similar, so t = 83."
+    },
+    {
+      "item_id": "13",
+      "description": "Skilled worker hours 14 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1260.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as necessary labour for reinstatement (policy 7.4.1); reference Case 46 t >= 1260 for 14 hrs, so t = 1260."
+    },
+    {
+      "item_id": "14",
+      "description": "Remove drywall and insulation wool in basement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 46.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered as necessary removal of damaged material in the damage area (policy 7.1.5); reference Case 46 t = 44–48 for similar, so t = 46."
+    },
+    {
+      "item_id": "15",
+      "description": "Remove damp plaster in basement rooms",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary removal of damaged plaster in the damage area (policy 7.1.5); reference Case 46 t = 79–91 for 3 m², here likely 1 pcs = 1 m², so t = 30."
+    },
+    {
+      "item_id": "16",
+      "description": "Remove damp plaster in attic",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 3.5(b): No damage established in attic, so not indemnified; reference Case 46 t below 2, possibly 0."
+    },
+    {
+      "item_id": "17",
+      "description": "Construction waste disposal (tiling contractor)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 5.2.1, 7.4.2: Only one disposal reimbursed per event; already paid to drying contractor, so t = 0."
+    }
+  ]
+}

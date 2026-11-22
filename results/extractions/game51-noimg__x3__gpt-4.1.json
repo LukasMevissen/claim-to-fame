@@ -1,0 +1,62 @@
+{
+  "case_id": "game51-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Pipe repair – replacement pipe section (standard spec), sealing material and standard rock-wool insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as repair to affected pipework and associated insulation under escape of water (2.4.2, 7.1.5, 7.1.7). No improvement, all standard materials, and all work is to the affected area. Reference Case 39 and 46 for similar scope: stainless/copper pipe, sealing, insulation, all indemnified at €42–€51 for pipe, €22–€36 for insulation, and €24 for sealing material, but this is a flat rate for the combined work. Reference Case 39's 'Pipe repair' and 'sealing material' lines suggest a fair total for this combined line is in the €80–€110 range."
+    },
+    {
+      "item_id": "2",
+      "description": "Installation and service-technician labour hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.2,
+      "rationale": "Labour for repair to affected pipe and wall is covered (7.1.7(g)), as long as it is not excessive and relates to the affected area only. Reference Case 39 and 46: 9 hrs service technician = €732, 14 hrs = €1260, but this is a flat rate for a small, localised job (likely 2–4 hours). A fair estimate for a flat-rate labour charge for this scope is €150–€250."
+    },
+    {
+      "item_id": "3",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.05,
+      "rationale": "One travel/call-out charge per contractor per invoice is covered (7.1.7(f)). Reference Case 39: vehicle costs flat rate €65–€71. This is a single contractor's invoice, so one charge is indemnified."
+    },
+    {
+      "item_id": "4",
+      "description": "Construction dryer flat-rate charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 400.0,
+      "price_log_sd": 0.05,
+      "rationale": "Drying of the affected wall area is necessary and covered (7.1.7(b), 7.1.7(e)). Reference Case 39: construction dryer flat-rate €403. This is a similar, localised drying job."
+    },
+    {
+      "item_id": "5",
+      "description": "Painting the disturbed wall area and closing the wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 416.0,
+      "price_log_sd": 0.05,
+      "rationale": "Repair and repainting of the disturbed wall area is covered as reinstatement of the affected part (7.1.5, 7.1.7(a), 7.1.7(g)). Reference Case 39: 'Painting the disturbed wall area and closing the wall opening' €416. This is a direct match."
+    }
+  ]
+}
