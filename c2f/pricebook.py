@@ -52,7 +52,7 @@ def save_digest(game_id: int, case) -> None:
     (CASEBOOK / f"game{game_id}.json").write_text(json.dumps({
         "game": game_id, "policy": policy_title(case.policy),
         "description": " ".join(case.description.split()),
-        "lines": invoice_lines(case.invoice_text)}, indent=1, ensure_ascii=False))
+        "lines": invoice_lines(case.invoice_text)}, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
 def _bounds(it: dict) -> str:
@@ -97,7 +97,7 @@ def reference(before_game: int | None = None, max_chars: int = 24000, case=None)
     the newest 15 cases fitted, and the older, often more similar ones were lost."""
     if not SUMMARY.exists() or not CASEBOOK.exists():
         return ""
-    summary = json.loads(SUMMARY.read_text())
+    summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
     blocks = []
     for g in sorted((int(k) for k in summary), reverse=True):
         if before_game is not None and g >= before_game:
@@ -105,7 +105,7 @@ def reference(before_game: int | None = None, max_chars: int = 24000, case=None)
         f = CASEBOOK / f"game{g}.json"
         if not f.exists():
             continue
-        d = json.loads(f.read_text())
+        d = json.loads(f.read_text(encoding="utf-8"))
         rows = [f"  - {d['lines'].get(str(i), d['lines'].get(i, '?'))} => {_bounds(it)}"
                 for i, it in sorted(((int(k), v) for k, v in summary[str(g)].items()))]
         text = f"Case {g} [{d['policy']}]\n  Claim: {d['description'][:600]}\n" + "\n".join(rows)
