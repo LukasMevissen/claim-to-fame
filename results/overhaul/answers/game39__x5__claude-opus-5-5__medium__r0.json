@@ -1,0 +1,179 @@
+{
+ "game": 39,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31460,
+  "output_tokens": 2336,
+  "seconds": 20.2,
+  "ref_chars": 26679
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Painting the disturbed wall area and closing the wall opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.4,
+   "rationale": "Opening the wall to reach the leak and making it good afterwards is a repair cost under 7.1.7(a). Priced at a customary small patch-and-paint rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.12,
+   "rationale": "First travel charge on invoice 2026-0010, so indemnified under 7.1.7(f). Full rate of about 80."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.45,
+   "rationale": "Consumable installation material is covered under 7.1.7(c). Small amount."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.45,
+   "rationale": "Replacement pipe section for the failed cold-water line, covered under 7.1.7(c). Installed rate for 1 m."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.4,
+   "rationale": "Insulation that formed part of the component as installed, covered under 7.1.7(c). About 18 per unit, as in case 18."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer hours 1 hr",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour of the trade engaged is covered under 7.1.7(g). One hour at a customary installer rate."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "The contractor's own diagnostic and measuring devices are not a repair cost under 7.1.8(b)."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician hours 9 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour covered under 7.1.7(g). Price prior gives about 47 per hour, so 9 hrs x 47 = about 425."
+  },
+  {
+   "item_id": "9",
+   "description": "Vehicle costs (second)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "Second travel charge on the same invoice. Under 7.1.7(f) only the first charge is indemnified, so t = 0."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.4,
+   "rationale": "Drying before closing the wall is covered under 7.1.7(b), and the equipment flat rate once per drying operation under 7.1.7(e)."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "The contractor's own blades are excluded under 7.1.8(b)."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.45,
+   "rationale": "Fittings used to connect the repaired section are covered under 7.1.7(c). Two pieces at about 25 each."
+  },
+  {
+   "item_id": "13",
+   "description": "Stainless steel pipe 1 m (repeat)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.45,
+   "rationale": "This appears to repeat line 4, so it is likely a duplicate under 7.1.8(c) or material exceeding the documented repair under 7.1.8(d)."
+  },
+  {
+   "item_id": "14",
+   "description": "Pipe insulation shell 100 cm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.45,
+   "rationale": "Second insulation item for the same short repaired section, likely a duplicate of line 5 under 7.1.8(c)/(d)."
+  },
+  {
+   "item_id": "15",
+   "description": "Service technician hours 9 hrs (repeat)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.2,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.25,
+   "rationale": "This appears to duplicate line 8, so it is likely not indemnified under 7.1.8(c) and the 7.1.7(g) time limit. If paid, 9 x 47 = about 425."
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "game": 39,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 19.2,
+  "ref_chars": 26679
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Close wall opening and repaint affected area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover closing the access opening and repainting the disturbed wall area. Estimate €420 gross for the single combined repair."
+  },
+  {
+   "item_id": "2",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on the building-services invoice. One flat rate at the gross reference level is €81."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers sealing consumables used in the pipe repair. Estimate €24 gross for the invoiced unit."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the first pipe section on a like-for-like basis. One metre at €45 per metre gives €45 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation on the repaired pipe. One metre at €24 per metre gives €24 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.79,
+   "rationale": "Section 7.1.7(g) covers necessary installer labour. The invoiced hour at the gross prior rate gives €63."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(e) covers necessary investigation, but 7.1.8(b) excludes a separate charge for the contractor's own measuring device. If shown to be a covered third-party charge, estimate €35 gross for one unit."
+  },
+  {
+   "item_id": "8",
+   "description": "First service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(g) covers technician labour attributable to the repair. The gross prior for the full nine hours is €425."
+  },
+  {
+   "item_id": "9",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge on the same contractor invoice, even if there were separate visits. The conditional gross rate for one charge is €81."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 72.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per operation. Estimate €72 gross for the single unit."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) expressly excludes the contractor's blades as business overhead. The conditional gross estimate for one blade is €15."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.7(c) covers ordinary fittings attributable to the pipe repair. Two fittings at €38 each give €76 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Second stainless steel pipe charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.8(c) and (d) exclude duplicate or unsupported charges; the invoice does not distinguish this metre from the first. If documented as a distinct installed section, one metre would be €45 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "One-metre pipe insulation shell",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.8(c) and (d) exclude duplicate or unsupported costs; no separate insulated section is documented beyond the first insulation charge. If separately attributable, one metre would be €24 gross."
+  },
+  {
+   "item_id": "15",
+   "description": "Second service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.8(c) excludes duplicate labour charges, and this repeated nine-hour entry does not identify distinct work. If shown to represent separate necessary labour under 7.1.7(g), the nine-hour gross prior is €425."
+  }
+ ]
+}

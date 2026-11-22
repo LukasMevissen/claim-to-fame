@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 7.5,
+  "ref_chars": 25576
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 4.2.2 and 7.1.9–7.1.10 allow like-for-like replacement of a fixed unit damaged beyond repair, with no kitchen-location exclusion in this wording. The €1,413 gross estimate assumes the fire group was selected and the surge was caused by lightning or other atmospheric electricity under §2.3.3; neither is confirmed."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.62,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Under §§7.1.11 and 9.5, labour to install a covered replacement follows the unit, but any unrelated wiring check must be separated. Allow €480 gross for one standard installation if the underlying loss is covered."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.32,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.9–7.1.10 allow €61 gross for an equivalent console if the original was damaged or replacement was necessary to reinstate the covered unit. The description confirms a pre-loss console but does not show that it was damaged or could not be reused."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.63,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under §7.1.11, ordinary freight follows the covered replacement; any share attributable to unrelated equipment must be apportioned out. Allow €43 gross for one standard shipment attributable to the kitchen unit if covered."
+  }
+ ]
+}

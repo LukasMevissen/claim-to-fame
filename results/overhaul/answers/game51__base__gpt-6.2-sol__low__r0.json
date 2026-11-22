@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "base",
+ "run": 0,
+ "meta": {
+  "seconds": 8.5,
+  "ref_chars": 25775
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement pipe section, sealing and insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 88.0,
+   "price_log_sd": 0.26,
+   "rationale": "The internal supply-pipe failure is consistent with covered fracture damage under §2.4.3(a), though the precise failure mode is not stated. Section 7.1.7(c) allows like-for-like materials; comparable gross allowances are €42 for pipe, €24 for sealing and €22 for insulation."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 760.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 7.1.7(a) and (g) cover necessary access and repair labour at customary rates. The single flat rate is not one hour; using the comparable bathroom repair as a guide, 10 hours at €76 gross gives €760."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice regardless of the number of visits. This is the only travel line on the repair invoice, so the €81 gross benchmark applies once."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one equipment flat rate per operation. The comparable bathroom drying charge supports €439 gross for this single operation."
+  },
+  {
+   "item_id": "5",
+   "description": "Close the wall opening and repaint the patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the necessary opening and repainting the disturbed patch, not the rest of the bathroom. The comparable combined closure and painting line supports €453 gross."
+  }
+ ]
+}

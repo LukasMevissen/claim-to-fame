@@ -1,0 +1,198 @@
+{
+ "game": 43,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 20.7,
+  "ref_chars": 27285
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Chrome-plated 15 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 96.0,
+   "price_log_sd": 0.16,
+   "rationale": "The failed indoor heating pipe is covered under §2.4.3(a). Section 7.1.9 limits payment to plain copper: 6.4 m × €15 = €96."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome-plated 15 mm 90° elbows",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.16,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow the standard copper equivalents, not the chrome premium: 4 × €10 = €40."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome-plated 28 mm 90° elbows",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.16,
+   "rationale": "Section 7.1.9 limits these replacement fittings to the standard copper rate: 5 × €20 = €100."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome-plated 28 mm 45° elbow",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.16,
+   "rationale": "Section 7.1.9 allows the standard copper equivalent: 1 × €20 = €20."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.1,
+   "rationale": "Minor repair fixings are covered under §7.1.7(c): 8 × €1.10 = €8.80, within the range revealed in Case 40."
+  },
+  {
+   "item_id": "6",
+   "description": "10 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.25,
+   "rationale": "The 10 mm clamps do not match the documented repair dimensions and are likely excluded under §7.1.8(e). If shown to be repair fixings, 4 × €5.50 = €22."
+  },
+  {
+   "item_id": "7",
+   "description": "25 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.8,
+   "price_log_sd": 0.28,
+   "rationale": "Repair fixings are covered under §7.1.7(c); the reference rate gives 4 × €6.20 = €24.80."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.14,
+   "rationale": "Section 7.1.7(g) covers customary repair labour. No separate upgrade labour is itemised, so the full billed quantity is priced at 6.75 hours × €88, approximately €595."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 418.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(g) covers the helper's repair labour at the reference rate: 5.75 hours × about €73, or approximately €418."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad Armaflex insulation shells",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.16,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 limit re-insulation to the cost of the original rock-wool specification: 6 × €20 = €120."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.28,
+   "rationale": "Binding wire is a repair consumable under §7.1.7(c): 2 kg × €9.80 = €19.60."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.9 excludes the sensor because none was installed before the loss. The conditional gross estimate is €110 for one app-connected sensor."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 165.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9 excludes the valve because it is a new addition, not a replacement. The conditional gross estimate is €165 for one comparable brass mixing valve."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow minor repair consumables billed as a lump sum: 1 × €36 = €36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the contractor's first travel charge on this invoice: 1 × €79 = €79."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of the removed repair debris. The single charge is estimated at €60, within the €58–€61 range in Case 40."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.8(b) expressly excludes separately billed processing charges. The conditional estimate is €30 for one fee."
+  }
+ ]
+}

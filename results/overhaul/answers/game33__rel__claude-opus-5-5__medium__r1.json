@@ -1,0 +1,102 @@
+{
+ "game": 33,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 36405,
+  "output_tokens": 1229,
+  "seconds": 11.4,
+  "ref_chars": 24726
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop replacement, equivalent model",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1450.0,
+   "price_log_sd": 0.35,
+   "rationale": "The battery health waiver is on the schedule, so 2.6.8 does not apply and the laptop is insured. The supplier report shows repair is uneconomic, so 7.1.10 pays an equivalent new unit at the upper end of the customary price."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.9 the extra cost of a better model is betterment and is borne by the policyholder."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 320.0,
+   "price_log_sd": 0.35,
+   "rationale": "The tablet was struck in the same event, so it is a second unit assessed under 2.6.4 and the cracked screen is covered under 2.6.3(a). Priced at the upper customary level for a tablet screen repair."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic of both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.35,
+   "rationale": "Examination of both affected units is covered under 5.2.3, which caps the head at EUR 250 per event. A single-device diagnostic was accepted at about EUR 60-84 in Case 2, so roughly double that for two devices."
+  },
+  {
+   "item_id": "5",
+   "description": "New carry bag (undamaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "The bag was not damaged in the event, so its renewal is not covered under 4.2.6 and the final paragraph of 7.1.5."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "Warranties and undertakings on future performance are excluded by 3.5(f) and 7.1.8(e)."
+  },
+  {
+   "item_id": "7",
+   "description": "Data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.6,
+   "rationale": "Data recovery is excluded by 3.5(d) and 4.3(c) unless separately agreed. Nothing on the schedule or in the description shows that cover was taken."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative charges are not a repair cost under 7.1.8(b). This line type was also declined in all four earlier cases."
+  }
+ ]
+}

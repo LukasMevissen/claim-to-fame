@@ -1,0 +1,201 @@
+{
+ "game": 43,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31741,
+  "output_tokens": 2323,
+  "seconds": 18.4,
+  "ref_chars": 27265
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Premium chrome-plated copper pipe 15mm (upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.2,
+   "rationale": "7.1.9 limits the upgrade to the cost of standard-grade plain copper pipe. Case 40 showed at least 90 for 6.4 m of the same pipe."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome Profipress elbow 90° 15mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Indemnified at the standard copper elbow price under 7.1.9. Case 40 showed at least 38 for the same 4 pcs."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome Profipress elbow 90° 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.2,
+   "rationale": "Indemnified at the standard elbow price under 7.1.9. Case 40 showed at least 95 for the same 5 pcs."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome Profipress elbow 45° 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.2,
+   "rationale": "Indemnified at the standard elbow price under 7.1.9. Case 40 showed at least 19."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.15,
+   "rationale": "Consumable fixing covered under 7.1.7(c). Price prior about 1.10/pc x 8."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamp 10 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.35,
+   "rationale": "A 10 mm clamp does not match the documented 15/28 mm pipe run, so 7.1.8(e) may exclude it. If allowed, about 5/pc x 4."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamp 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.2,
+   "rationale": "Fixing material under 7.1.7(c). Prior about 6.2/pc x 4."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.15,
+   "rationale": "Trade labour under 7.1.7(g). Full rate about 88/hr x 6.75 hrs."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 410.0,
+   "price_log_sd": 0.18,
+   "rationale": "Labour under 7.1.7(g). Prior about 73/hr x 5.75 hrs; case 40 showed at least 387."
+  },
+  {
+   "item_id": "10",
+   "description": "Armaflex aluminium-clad insulation (upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.2,
+   "rationale": "7.1.9 limits this to standard rock wool insulation. Case 40 showed at least 116 for 6 pcs."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.2,
+   "rationale": "Consumable under 7.1.7(c). Prior about 9.8/kg x 2."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor (new)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "Not present before the loss, so excluded entirely under 7.1.9."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve (new)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.5,
+   "rationale": "Not present before the loss, so excluded entirely under 7.1.9."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.2,
+   "rationale": "Consumable installation material, assessed under 7.1.7(c) and 7.1.8(e). Prior about 36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.12,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f). Prior about 79."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.12,
+   "rationale": "Debris removal under 5.2.1 and 7.1.7(a). Prior about 60."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "An administrative charge excluded under 7.1.8(b). It was never indemnified in earlier cases."
+  }
+ ]
+}

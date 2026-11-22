@@ -1,0 +1,121 @@
+{
+ "game": 55,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 14.2,
+  "ref_chars": 26435
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. One flat-rate charge is estimated at €81 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers consumables needed for the like-for-like pipe repair. One unit is estimated at €26 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) support like-for-like replacement of the failed indoor supply-pipe section. One metre is estimated at €40 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation on the repaired section to its pre-loss specification. One metre is estimated at €23 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.16,
+   "rationale": "Section 7.1.7(g) allows necessary installer labour if it is distinct from the technician time; §7.1.8(c) bars duplicate billing. The expressly hourly entry matches Case 39's one installer hour, estimated at €80 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 750.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 7.1.7(g) allows reasonable labour to access and repair the failed pipe. Treating the nine units as hours, the close Case 39 comparison supports about €750 gross for the line."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 548.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per operation. The single flat rate is estimated at €548 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "Close and repaint the wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 588.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the disturbed patch. The combined patch repair is estimated at €588 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Repaint the entire affected wall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 176.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.6 does not extend cover beyond the patch because matching paint was still available, and line 8 already covers the patch under §7.1.8(c). If the full scope were accepted, 8 m² at about €22/m² would be €176 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint remaining bathroom walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 420.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 7.1.5–7.1.6 exclude separate undamaged surfaces repainted only to match. If accepted, the repaint would be estimated at €420 gross for the flat-rate line."
+  }
+ ]
+}

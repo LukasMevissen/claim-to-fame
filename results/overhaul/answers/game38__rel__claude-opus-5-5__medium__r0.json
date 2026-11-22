@@ -1,0 +1,80 @@
+{
+ "game": 38,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 33381,
+  "output_tokens": 1328,
+  "seconds": 13.7,
+  "ref_chars": 25388
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit - living room (like-for-like)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1600.0,
+   "price_log_sd": 0.35,
+   "rationale": "Lightning overvoltage is covered under 2.3.3. The unit is about 7 m from the hob, so the 5 m exclusion in 2.3.10(c) does not apply. It is a fixed, wired installation that could not be repaired, so a like-for-like replacement is due under 7.1.1(c) and 7.1.9(a)."
+  },
+  {
+   "item_id": "2",
+   "description": "Air conditioning unit - kitchen",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1300.0,
+   "price_log_sd": 0.4,
+   "rationale": "The unit is climate-control equipment a couple of metres from the hob, inside 5 m. Overvoltage damage to it is excluded outright by 2.3.10(c), and no kitchen climate endorsement is on the schedule."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation - living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.45,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.45,
+   "rationale": "The wording supports cover: 7.1.9(c) pays the labour of fitting a replacement for an affected installation, and 7.1.11 lets the charge follow its covered principal. Against that, the price history shows this line type unpaid in all 4 earlier cases, possibly because the floor unit was treated as not firmly connected, so cover is uncertain."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation - kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is an ancillary charge to the excluded kitchen unit, so it falls with its principal item under 7.1.11 and 3.5(e)."
+  },
+  {
+   "item_id": "5",
+   "description": "Floor console for living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.45,
+   "rationale": "The existing stand was scorched and cannot be reused. An equivalent support needed to set the replacement in place is covered under 7.1.9(b)."
+  },
+  {
+   "item_id": "6",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.5,
+   "rationale": "Ordinary carriage is covered under 7.1.9(e) and 7.1.12, but it relates to both units. Under 7.1.11 it is apportioned by value, so roughly half (the living-room unit's share) is indemnified."
+  }
+ ]
+}

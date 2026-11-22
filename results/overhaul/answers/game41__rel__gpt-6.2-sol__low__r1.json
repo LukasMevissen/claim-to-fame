@@ -1,0 +1,209 @@
+{
+ "game": 41,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 21.7,
+  "ref_chars": 27635
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 142.06,
+   "price_log_sd": 0.34,
+   "rationale": "The frame sustained theft damage, so §§ 7.1.1(b) and 7.1.9 cover a pre-loss-equivalent replacement. The €229 gross benchmark is reduced to €142.06 by the shared €500 mobility limit (€500/€806)."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 86.85,
+   "price_log_sd": 0.19,
+   "rationale": "The brakes sustained theft damage and are covered at the pre-loss specification under §§ 7.1.1(b) and 7.1.9. The €140 gross benchmark is reduced to €86.85 by the rateable mobility limit."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.61,
+   "price_log_sd": 0.35,
+   "rationale": "Under § 4.2.3, the tracker must itself have been taken and not recovered, or damaged. It worked during recovery, and no separate loss or damage is established; €18.61 is conditional on proof of covered damage (€30 × €500/€806)."
+  },
+  {
+   "item_id": "4",
+   "description": "Service of second household bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 3.1.6 and 7.1.5 exclude servicing an unaffected bicycle. The positive figure is a hypothetical service price only."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.1.7 and 4.2.3 exclude additional protective equipment and accessories without a demonstrated loss of the originals. The positive figure is a hypothetical gross price for both items."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.13,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(f) covers necessary carriage for the damaged bicycle or its repair parts, but § 7.1.10 excludes carriage attributable to elective work. The €26 benchmark becomes €16.13 after rateable allocation."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle service vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.19,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.61,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.8(f)–(g) and 7.1.10 require a distinct, necessary attendance attributable to the covered repair; the generic line does not establish one. If supported, a €30 gross allowance would be about €18.61 at the estimated allocation rate."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.1,
+   "price_log_sd": 0.23,
+   "rationale": "Section 7.1.7(c) covers fitting and testing the replacement frame and brakes, but not assembly for the unaffected bicycle or new accessories. The €113 benchmark becomes €70.10 under the shared mobility limit."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.16,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.34,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(e) covers consumables used in the repair, but § 7.1.10 requires a link to covered work that this generic entry does not establish. A €7 supported charge would be about €4.34 at the estimated allocation rate."
+  },
+  {
+   "item_id": "10",
+   "description": "Bicycle service apprentice hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.71,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(d) allows apprentice labour, but § 7.1.10 requires proof that this hour served the theft repair and was not already included in assembly. A €35 gross hour would be about €21.71 at the estimated allocation rate."
+  },
+  {
+   "item_id": "11",
+   "description": "Bicycle service skilled worker hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.34,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.19,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.7(d) and 7.1.8(g) allow distinct repair labour, not labour already included in assembly or used on elective work. A separately supported €39 hour would be about €24.19 at the estimated allocation rate."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.85,
+   "price_log_sd": 0.29,
+   "rationale": "Section 5.2.2(a) expressly covers the initial attendance needed to release the bicycle. The €32 gross benchmark becomes €19.85 under the shared mobility limit."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 67.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 5.2.2(b) covers cutting and removing the lock to free the bicycle. The €108 gross estimate for both units becomes €67.00 under the shared mobility limit."
+  },
+  {
+   "item_id": "14",
+   "description": "Locksmith return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.61,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 5.2.2(a) and 7.1.8(f) cover a further visit only if required for recovery, and the description does not show why it was needed. A €30 gross attendance would be about €18.61 at the estimated allocation rate if necessity were shown."
+  },
+  {
+   "item_id": "15",
+   "description": "Mandatory impound release and storage fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 73.82,
+   "price_log_sd": 0.18,
+   "rationale": "Section 5.2.2(c) covers the yard's unavoidable third-party release charge. The stated €100 plus 19% VAT is €119 gross, reduced to €73.82 by the shared €500 mobility limit; the €1,000 recovery cap does not bind."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.1.5 and 7.1.8(d) exclude claim processing; this is distinct from the mandatory yard release charge. The positive figure is a hypothetical fee only."
+  },
+  {
+   "item_id": "17",
+   "description": "Locksmith apprentice hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.33,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.71,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.2(b) covers necessary release labour at every grade, but §§ 7.1.8(g) and 7.1.10 require this hour to be separately supported rather than included in lock cutting. A €35 gross hour would be about €21.71 at the estimated allocation rate."
+  },
+  {
+   "item_id": "18",
+   "description": "Locksmith skilled worker hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.19,
+   "price_log_sd": 0.22,
+   "rationale": "Section 5.2.2(b) covers skilled release labour if it is distinct from the separately billed cutting operation. The €39 gross benchmark becomes €24.19 under the shared mobility limit."
+  }
+ ]
+}

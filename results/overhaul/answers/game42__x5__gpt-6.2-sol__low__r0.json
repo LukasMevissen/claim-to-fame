@@ -1,0 +1,77 @@
+{
+ "game": 42,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 9.4,
+  "ref_chars": 25733
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1411.0,
+   "price_log_sd": 0.05,
+   "rationale": "The fixed unit suffered lightning overvoltage under 2.3.3 and was nine metres from the hob, outside the five-metre exclusion in 2.3.10(c). Sections 7.1.9–7.1.10 limit the one-unit replacement to the gross cost of an equivalent 3.5 kW unit (€1,411), not the 7.1 kW upgrade."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 482.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 7.1.9(c) and 7.1.11 cover the labour needed to install and commission an equivalent replacement, but not any extra labour attributable to the upgrade. One standard installation is estimated at €482 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.10 excludes the whole console charge because it was chosen for appearance and was not needed to install the replacement. The €61 estimate is a conditional benchmark for one console, not a payable amount."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 cover ordinary carriage for the equivalent replacement. One shipment is estimated at €42 gross, excluding the separately billed express surcharge."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.12 excludes timed or expedited surcharges unless agreed in advance or necessary to mitigate further loss; neither is established. The €50 estimate is conditional on coverage for the single surcharge."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.8(b) excludes separate contractor administration and paperwork fees in full. The €35 estimate is conditional on coverage for the single flat fee."
+  }
+ ]
+}

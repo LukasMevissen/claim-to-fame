@@ -1,0 +1,198 @@
+{
+ "game": 40,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 22.0,
+  "ref_chars": 26640
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 56.0,
+   "price_log_sd": 0.3,
+   "rationale": "Like-for-like fittings for the indoor heating-pipe repair are covered under §§2.4.3(a) and 7.1.7(c). Four at €14 gross each total €56."
+  },
+  {
+   "item_id": "2",
+   "description": "28 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(c) covers fittings used in the repair; §7.1.8(e) would exclude these if the 28 mm size did not match the repaired connections. Five at €24 gross each total €120."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper press elbow, 45°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(c) covers this fitting if used in the repaired connections, subject to the dimensional match required by §7.1.8(e). One at €25 gross totals €25."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.4,
+   "rationale": "Minor fasteners used in the repair are covered under §7.1.7(c). Eight at €1.50 gross each total €12."
+  },
+  {
+   "item_id": "5",
+   "description": "25 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 32.0,
+   "price_log_sd": 0.3,
+   "rationale": "Pipe supports used to secure the repaired section are covered under §7.1.7(c). Four at €8 gross each total €32."
+  },
+  {
+   "item_id": "6",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 128.0,
+   "price_log_sd": 0.3,
+   "rationale": "Like-for-like pipe used to repair the failed indoor heating line is covered under §§2.4.3(a) and 7.1.7(c). The full invoiced 6.4 m at €20 gross per metre totals €128."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 566.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(g) covers customary trade labour for the insured pipe repair. The full 6.75 billed hours at the gross prior of about €84 per hour give approximately €566."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 394.0,
+   "price_log_sd": 0.72,
+   "rationale": "Section 7.1.7(g) covers customary helper labour for the insured pipe repair. Applying the gross helper-rate prior to all 5.75 billed hours gives €394."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 146.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers reinstating the pre-loss insulation on the repaired section. The gross prior for all six pieces is €146."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.35,
+   "rationale": "Wire used to secure the replacement insulation is a covered installation consumable under §7.1.7(c). Two kilograms at €12 gross per kilogram total €24."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow lump-sum minor repair consumables, provided they do not duplicate separately billed items under §7.1.8(c). One gross allowance is estimated at €25."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice, and this is the only one listed. The gross prior is €80 for one charge."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of debris from the insured pipe repair, not waste from the unrelated flooring work. The gross prior for one covered disposal charge is €62."
+  },
+  {
+   "item_id": "14",
+   "description": "Basement hallway repainting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 264.0,
+   "price_log_sd": 0.35,
+   "rationale": "The hallway was not affected, so §§3.5 and 7.1.5 exclude repainting even though it was billed with the covered repair. If eligible, 12 m² at €22 gross per m² would total €264."
+  },
+  {
+   "item_id": "15",
+   "description": "Adjacent storage room laminate replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 975.0,
+   "price_log_sd": 0.35,
+   "rationale": "The leak did not reach the storage room, and §§7.1.5–7.1.6 do not extend coverage to this separate, undamaged room. If eligible, 15 m² at €65 gross per m² would total €975."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "The tap service was unrelated maintenance, excluded under §§7.1.5 and 7.1.8(a). If eligible, the single service would be estimated at €120 gross."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) expressly excludes processing fees billed on top of itemised labour and materials. The positive conditional estimate for one fee is €25 gross."
+  }
+ ]
+}

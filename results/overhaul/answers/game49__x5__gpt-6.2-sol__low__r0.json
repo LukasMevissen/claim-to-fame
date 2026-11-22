@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 7.4,
+  "ref_chars": 25576
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "The fixed kitchen unit qualifies as a building component under §4.2.2, with no kitchen-location exclusion. If the surge is confirmed as atmospheric overvoltage under the insured fire group (§2.3.3), §§7.1.9–7.1.10 allow one like-for-like replacement at €1,413 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.77,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Under §§7.1.1(b) and 7.1.11, fitting a covered replacement is a repair cost: 1 installation × €480 gross. Any unrelated wiring check must be separated under §9.5 if included in this charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.47,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.25,
+   "rationale": "A like-for-like console is payable at 1 × €61 gross if the surge damaged the original or replacement was necessary to reinstate the affected unit. The description establishes that a console was present, but not that it was damaged or could not be reused (§§7.1.5, 7.1.7 and 7.1.9)."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.15,
+   "rationale": "Freight follows the covered replacement under §7.1.11: 1 consignment × €43 gross. If the shipment also carried unrelated equipment, only the portion attributable to covered replacements is payable."
+  }
+ ]
+}

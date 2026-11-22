@@ -1,0 +1,77 @@
+{
+ "game": 38,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 9.8,
+  "ref_chars": 25388
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1650.0,
+   "price_log_sd": 0.35,
+   "rationale": "The permanently wired floor-console unit is insured under §§2.3.3 and 4.2.3 and is outside the five-metre exclusion in §2.3.10(c). Under §7.1.9(a), the estimate is €1,650 gross for one equivalent unit, excluding the separately billed fitting, stand and freight."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1250.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 2.3.10(c) excludes surge damage to climate-control equipment within five metres of the hob, and no kitchen endorsement applies. The conditional estimate is €1,250 gross for one equivalent wall-mounted unit."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation of living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.9(c) expressly covers the labour to fit, connect and commission the covered replacement. One installation is estimated at €650 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation of kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under §7.1.11, installation follows the principal item, which is excluded by §2.3.10(c). The conditional estimate for one installation is €600 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 240.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(b) covers an equivalent support needed to fit the replacement when the original cannot be reused. The original stand was scorched, so one like-for-like stand is estimated at €240 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight for both units",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.9(e), 7.1.11 and 7.1.12 cover only the living-room unit's share of ordinary freight. Using relative equipment values because no weight- or volume-based split is given, €150 gross × €1,650 / (€1,650 + €1,250) gives approximately €85."
+  }
+ ]
+}

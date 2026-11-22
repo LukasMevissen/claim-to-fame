@@ -1,0 +1,77 @@
+{
+ "game": 42,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 9.3,
+  "ref_chars": 25733
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room AC replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1411.0,
+   "price_log_sd": 0.27,
+   "rationale": "Lightning overvoltage damaged a fixed installation covered under §§2.3.3 and 4.2.3, and its location nine metres from the hob puts it outside the five-metre exclusion in §2.3.10(c). Under §§7.1.9–7.1.10, indemnity is limited to €1,411 for an equivalent 3.5 kW unit, not the chosen 7.1 kW upgrade."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 482.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.9(c) and 7.1.10 cover ordinary replacement labour at the pre-loss standard. The €482 benchmark excludes any extra labour attributable to the upgrade or decorative console."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.10 excludes a support chosen for appearance and not required for installation. The entire line is excluded, not just the difference from a standard bracket; €60 is a conditional estimate only."
+  },
+  {
+   "item_id": "4",
+   "description": "Ordinary freight",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 cover ordinary carriage attributable to the equivalent replacement. The gross freight benchmark is €42, excluding the separately billed express surcharge."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.12 excludes express and timed-delivery surcharges unless agreed in advance or necessary to prevent further loss; neither is shown. The €30 estimate is conditional only."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) excludes separately billed contractor administration and paperwork charges. The €25 estimate is conditional only."
+  }
+ ]
+}

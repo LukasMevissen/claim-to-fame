@@ -1,0 +1,77 @@
+{
+ "game": 38,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 10.0,
+  "ref_chars": 25388
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1350.0,
+   "price_log_sd": 0.35,
+   "rationale": "The permanently wired unit is an insured building installation under §4.2.3, and the lightning surge is covered under §2.3.3. At about seven metres from the hob it is outside the §2.3.10(c) exclusion; €1,350 estimates one like-for-like unit under §7.1.9(a), excluding separately billed fitting and freight."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 2.3.10(c) excludes surge damage to climate-control equipment within five metres of a cooking appliance, and no kitchen climate endorsement applies. €950 is the conditional estimate for one equivalent wall-mounted unit, not a payable amount under the stated facts."
+  },
+  {
+   "item_id": "3",
+   "description": "Living-room unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(c) expressly covers the labour to fit, connect and commission the covered replacement despite the nonpayment history for this line type. €380 estimates ordinary fitting labour for one unit, excluding a separate general wiring check."
+  },
+  {
+   "item_id": "4",
+   "description": "Kitchen unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 330.0,
+   "price_log_sd": 0.35,
+   "rationale": "Under §7.1.11, fitting follows the principal item, which is excluded by §2.3.10(c). €330 is the conditional estimate for ordinary installation of one wall-mounted replacement."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(b) covers a necessary equivalent support when the original cannot be reused; the old console was scorched. €150 estimates one standard replacement support without a decorative upgrade under §7.1.10."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.9(e), 7.1.11 and 7.1.12 cover only the living-room unit’s share of ordinary freight. Using relative unit values in the absence of a weight-based freight breakdown, €120 × €1,350 ÷ (€1,350 + €950) is about €70."
+  }
+ ]
+}

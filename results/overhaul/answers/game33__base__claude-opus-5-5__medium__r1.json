@@ -1,0 +1,102 @@
+{
+ "game": 33,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 36741,
+  "output_tokens": 912,
+  "seconds": 9.8,
+  "ref_chars": 25200
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop replacement, equivalent model",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.4,
+   "rationale": "Insured event under 2.6.2/2.6.4; battery waiver disapplies 2.6.8. Repair uneconomic per supplier report, so 7.1.10 replacement amount for an equivalent laptop applies; no deductible or sub-limit is stated."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.5,
+   "rationale": "7.1.9 bars betterment: the upgrade difference is borne by the policyholder."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.4,
+   "rationale": "Second unit struck in the same event (2.6.4) with a cracked screen (2.6.3(a)), so the repair cost is covered."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic of both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "5.2.3 covers examination of each affected unit, including where repair proves uneconomic, capped at EUR 250 per event; the reference price level (Case 22) suggests a lower actual charge."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag (undamaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "4.2.6 and 7.1.5: a carrying case not itself damaged by the event is not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "Excluded by 3.5(f), 4.3(f) and 7.1.8(e) as an undertaking as to future performance."
+  },
+  {
+   "item_id": "7",
+   "description": "Data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.6,
+   "rationale": "3.5(d) excludes data recovery unless agreed under 4.3(c); no such agreement is shown in the schedule."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "7.1.8(b) excludes administrative charges, and this line type was never indemnified in earlier cases."
+  }
+ ]
+}

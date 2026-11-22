@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 8.1,
+  "ref_chars": 26041
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Replacement pipe section, sealing and insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the failed indoor supply pipe and the like-for-like materials needed to repair it. Case 39 supports about €90 gross for one short pipe section, sealing material and standard insulation."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.59,
+   "rationale": "Section 7.1.7(g) covers necessary trade labour at customary rates. Applying the supplied €76 prior to the single billed flat-rate unit gives €76 gross; no separate hours are stated."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice regardless of the number of visits. This is the only travel charge on the repair firm's invoice, so the €81 gross prior applies."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per operation. One flat rate at the Case 39 calibrated level gives €439 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the affected wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the necessary access opening and repainting the affected patch, not the rest of the bathroom. One patch at the Case 39 calibrated level gives €453 gross."
+  }
+ ]
+}

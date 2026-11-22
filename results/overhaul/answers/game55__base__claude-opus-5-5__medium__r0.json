@@ -1,0 +1,124 @@
+{
+ "game": 55,
+ "arm": "base",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31476,
+  "output_tokens": 1090,
+  "seconds": 11.0,
+  "ref_chars": 26673
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 82.0,
+   "price_log_sd": 0.15,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f); priced at the reference level of about 81."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sealing and consumable material is covered under 7.1.7(c); case 39 accepted at least 24."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.25,
+   "rationale": "Like-for-like pipe replacement is a necessary repair cost; reference about 40 per m."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.25,
+   "rationale": "Standard insulation that formed part of the installation is covered under 7.1.7(c); reference about 23 per m."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation 1 hr",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.3,
+   "rationale": "Installer labour is covered under 7.1.7(g); case 39 accepted at least 76 for one installer hour. Some risk it duplicates the technician hours."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician hours 9",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 790.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour for the repair is covered under 7.1.7(g); case 39 accepted at least 732 for 9 hours."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 560.0,
+   "price_log_sd": 0.3,
+   "rationale": "Drying needed before the repair is covered under 7.1.7(b)/(e), one flat rate per drying operation; references at least 403 and at least 580."
+  },
+  {
+   "item_id": "8",
+   "description": "Painting disturbed area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.3,
+   "rationale": "Making good the opening is covered under 7.1.7(a); references at least 416 and at least 633."
+  },
+  {
+   "item_id": "9",
+   "description": "Full repaint of entire wall 8 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Only the patch was affected and the same paint was still available, so the 7.1.6 continuous-surface extension does not apply; 7.1.5(a) excludes repainting for a matching appearance."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint remaining walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.6,
+   "rationale": "Unaffected separate surfaces are excluded under 7.1.5 and 7.1.6."
+  }
+ ]
+}

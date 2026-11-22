@@ -1,0 +1,256 @@
+{
+ "game": 44,
+ "arm": "base",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 32344,
+  "output_tokens": 3618,
+  "seconds": 32.6,
+  "ref_chars": 29082
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm model 01, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.3,
+   "rationale": "Fittings for the insured escape-of-water repair (7.1.7(c)). The price prior gives about 42 for 4 pcs."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 15mm model 02, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.35,
+   "rationale": "This repeats line 1 for a cut-out of about one metre. It is likely a double charge or material not matching the documented work (7.1.8(c),(e))."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 90° copper 28mm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 104.0,
+   "price_log_sd": 0.3,
+   "rationale": "Repair fittings, as accepted in reference case 40. The prior gives about 104."
+  },
+  {
+   "item_id": "4",
+   "description": "Profipress elbow 45° copper 28mm model 02, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.4,
+   "rationale": "The reference job used only one 45° elbow, and line 5 already covers that. These extra five pieces are likely not attributable to the documented work (7.1.8(e))."
+  },
+  {
+   "item_id": "5",
+   "description": "Profipress elbow 45° copper 28mm model 03, 1 pc",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.3,
+   "rationale": "A single 45° elbow, as in case 40 (accepted at 19 or more). Covered repair material."
+  },
+  {
+   "item_id": "6",
+   "description": "Grub screw, 8 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.5,
+   "price_log_sd": 0.25,
+   "rationale": "Fixings are covered under 7.1.7(c). The prior gives about 9.3."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamp 10 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.25,
+   "rationale": "Fixings are covered under 7.1.7(c). Case 43 put this at about 19."
+  },
+  {
+   "item_id": "8",
+   "description": "Two-screw pipe clamp 15 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.3,
+   "rationale": "Clamps for the 15 mm pipe are covered fixings. Priced between the 10 mm and 25 mm references."
+  },
+  {
+   "item_id": "9",
+   "description": "Service technician hours, 6.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 619.0,
+   "price_log_sd": 0.2,
+   "rationale": "Trade labour is covered under 7.1.7(g). The claim describes about a day and a half on site. The prior gives about 619."
+  },
+  {
+   "item_id": "10",
+   "description": "Helper hours, 5.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 405.0,
+   "price_log_sd": 0.2,
+   "rationale": "The claim confirms a helper for part of the job. The prior gives about 409."
+  },
+  {
+   "item_id": "11",
+   "description": "Copper pipe 15x1, 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.6,
+   "rationale": "The claim says only about one metre of pipe was cut out. Quantities beyond the documented work are excluded (7.1.8(e)), so I cap at roughly 1–2 m at about 15/m."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "The first travel charge per contractor per invoice is covered (7.1.7(f)). The prior gives about 80."
+  },
+  {
+   "item_id": "13",
+   "description": "Small parts and consumables, flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.3,
+   "rationale": "Consumable installation material is covered under 7.1.7(c). The prior gives about 43."
+  },
+  {
+   "item_id": "14",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative and processing charges are not repair costs (7.1.8(b)). Never indemnified in earlier cases."
+  },
+  {
+   "item_id": "15",
+   "description": "Rock wool pipe insulation, 6 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Re-insulation of the repaired section is like-for-like and covered. However, only about one metre of pipe was renewed, so the expert may cut the length; I discount from the prior's 135."
+  },
+  {
+   "item_id": "16",
+   "description": "Rock wool mat, 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is extra insulation on top of line 15 and is not part of the documented work. Likely a duplicate or non-attributable charge (7.1.8(c),(e))."
+  },
+  {
+   "item_id": "17",
+   "description": "Binding wire, 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.3,
+   "rationale": "Fastening material is covered under 7.1.7(c). The prior gives about 26."
+  },
+  {
+   "item_id": "18",
+   "description": "Service technician hours, 7 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 642.0,
+   "price_log_sd": 0.2,
+   "rationale": "With line 9 this makes up the day and a half of technician time the claim describes. The prior gives about 642."
+  },
+  {
+   "item_id": "19",
+   "description": "Vehicle costs (second)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.3,
+   "rationale": "Only one travel charge per contractor per invoice is indemnified (7.1.7(f), 7.1.8(c))."
+  },
+  {
+   "item_id": "20",
+   "description": "Hygiene set incl. gloves",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Protective equipment for the contractor's own personnel is business outlay, not a repair cost (7.1.8(b))."
+  },
+  {
+   "item_id": "21",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.15,
+   "rationale": "Removal of debris from the repair is covered (5.2.1, 7.1.7(a)). The prior gives about 60."
+  },
+  {
+   "item_id": "22",
+   "description": "Tile cleaning, disinfection and coating, 5 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.5,
+   "rationale": "Cleaning and hygiene measures, plus a coating that improves the tiles, fall under 7.1.8(a) and are not repair costs. No physical damage to the tiles is reported."
+  }
+ ]
+}

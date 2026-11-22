@@ -1,0 +1,253 @@
+{
+ "game": 44,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 26.8,
+  "ref_chars": 30130
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper 90° elbow, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.28,
+   "rationale": "The indoor heating-pipe repair is covered under §2.4.3, and §7.1.7(c) covers like-for-like fittings. Four at €10.50 gross give €42."
+  },
+  {
+   "item_id": "2",
+   "description": "15 mm copper 90° elbow, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers the separately specified repair fittings; the different model number does not establish duplication. Four at €10.50 gross give €42."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper 90° elbow, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 104.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers like-for-like repair fittings. Five at about €20.80 gross give €104."
+  },
+  {
+   "item_id": "4",
+   "description": "28 mm copper 45° elbow, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 103.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers these repair fittings. Five at about €20.60 gross give €103."
+  },
+  {
+   "item_id": "5",
+   "description": "28 mm copper 45° elbow, model 03",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers this separately specified fitting. One at the reference gross rate gives €21."
+  },
+  {
+   "item_id": "6",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.3,
+   "price_log_sd": 0.16,
+   "rationale": "Section 7.1.7(c) covers repair fasteners. Eight at approximately €1.16 gross give €9.30."
+  },
+  {
+   "item_id": "7",
+   "description": "10 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.2,
+   "price_log_sd": 0.05,
+   "rationale": "Section 7.1.7(c) covers repair fixings. Four at €4.80 gross give €19.20."
+  },
+  {
+   "item_id": "8",
+   "description": "15 mm two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.22,
+   "rationale": "Section 7.1.7(c) covers repair fixings. Using the nearby clamp sizes as references, four at about €5.50 gross give €22."
+  },
+  {
+   "item_id": "9",
+   "description": "Service technician, 6.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 630.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers customary repair labour. The full 6.75 hours at about €93.30 gross per hour give €630."
+  },
+  {
+   "item_id": "10",
+   "description": "Helper, 5.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 409.0,
+   "price_log_sd": 0.14,
+   "rationale": "Section 7.1.7(g) covers the helper's repair labour. The full 5.75 hours at about €71.10 gross per hour give €409."
+  },
+  {
+   "item_id": "11",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 99.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3 and 7.1.7(c) cover like-for-like pipe replacement. The 6.4 m billed at approximately €15.47 gross per metre give €99."
+  },
+  {
+   "item_id": "12",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 82.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge for this contractor's invoice. One charge at the full-cover reference rate gives €82."
+  },
+  {
+   "item_id": "13",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.23,
+   "rationale": "Section 7.1.7(c) covers installation consumables attributable to the repair. One flat rate at the comparable gross level gives €45."
+  },
+  {
+   "item_id": "14",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) excludes separate processing and administrative charges. The €25 estimate is conditional only."
+  },
+  {
+   "item_id": "15",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 135.0,
+   "price_log_sd": 0.17,
+   "rationale": "Section 7.1.7(c) covers reinstating the original type of insulation. Six metres at €22.50 gross per metre give €135."
+  },
+  {
+   "item_id": "16",
+   "description": "Rock wool mat",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.24,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(c), (e) allow distinct repair material but exclude duplication or unsubstantiated use. If the mats are established as separate from line 15, six at about €20 gross give €120."
+  },
+  {
+   "item_id": "17",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.31,
+   "rationale": "Section 7.1.7(c) covers wire used to secure the replacement insulation. Two at €13 gross give €26."
+  },
+  {
+   "item_id": "18",
+   "description": "Service technician, 7 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 652.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers repair labour, and the reported day and a half supports treating this as a separate block of time rather than a duplicate. Seven hours at approximately €93.15 gross per hour give €652."
+  },
+  {
+   "item_id": "19",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 82.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge for this contractor's invoice. The conditional amount for one otherwise eligible charge is €82."
+  },
+  {
+   "item_id": "20",
+   "description": "Hygiene set including gloves",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) excludes contractor protective equipment. The conditional estimate is €20 for one set."
+  },
+  {
+   "item_id": "21",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of debris from the affected pipe and its repair. One flat charge at the reference level gives €60."
+  },
+  {
+   "item_id": "22",
+   "description": "Tile cleaning, disinfection and coating",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 7.1.5 and 7.1.8(a) exclude hygiene and coating work not shown to be necessary to repair established tile damage. The same line in Case 18 was below €60 or unpaid, so €45 is a low-confidence conditional estimate."
+  }
+ ]
+}

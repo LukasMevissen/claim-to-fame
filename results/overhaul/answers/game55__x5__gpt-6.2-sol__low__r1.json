@@ -1,0 +1,121 @@
+{
+ "game": 55,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 13.5,
+  "ref_chars": 27241
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.07,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. One flat-rate charge at €81 is allowed."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers sealing material used in the like-for-like repair. One piece at €26 gives €26."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) support like-for-like replacement of the failed indoor supply pipe. One metre at the full-cover rate gives €42."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation on the repaired section. One metre at the full-cover rate gives €26."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers distinct installer labour; §7.1.8(c) would exclude it if it duplicated the technician charge. The stated Installation prior gives 1 hour × €480."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 732.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers technician labour for the pipe repair. Case 39 supports €732 for the same nine-unit line."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 580.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per operation. One flat rate at the full-cover level gives €580."
+  },
+  {
+   "item_id": "8",
+   "description": "Close and repaint the wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 633.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and finishing the affected patch. One patch repair at the full-cover level gives €633."
+  },
+  {
+   "item_id": "9",
+   "description": "Repaint the entire affected wall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.6 does not extend cover to the undamaged part of the wall because the original paint was still available; the patch is already covered by line 8. If allowed, 8 m² at €25/m² would be €200."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint the other walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.005,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 7.1.5–7.1.6 exclude repainting separate, undamaged surfaces merely to match. If allowed, the single flat-rate line is estimated at €650."
+  }
+ ]
+}

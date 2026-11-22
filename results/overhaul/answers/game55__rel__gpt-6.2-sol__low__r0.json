@@ -1,0 +1,121 @@
+{
+ "game": 55,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 14.0,
+  "ref_chars": 26435
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. This is the only travel charge on the plumbing invoice; the gross benchmark is €81."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers sealing material needed for the local supply-pipe repair. The benchmark for the one billed piece is €26 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) support like-for-like replacement of the failed indoor supply-pipe section. One metre is estimated at €40 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.18,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation on the repaired section to its pre-loss specification. One metre is estimated at €23 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(g) covers necessary installer labour, but §7.1.8(c) bars overlap with the separately billed technician time. If this is a distinct hour, the closely matching bathroom repair in Case 39 supports €76 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 747.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers the reasonable labour needed to access and repair the failed pipe. Case 39 supports approximately €83 per unit for nine comparable units, or €747 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 548.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.7(b) and (e) allow necessary drying and one equipment deployment charge per drying operation. The single deployment is estimated at €548 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "Close and repaint the wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 588.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the disturbed patch. The €588 gross benchmark is for local reinstatement only."
+  },
+  {
+   "item_id": "9",
+   "description": "Full repaint of the affected wall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 144.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.6 does not extend cover to the undamaged portion because matching paint is still available, and the patch is already billed on line 8. If the full 8 m² were eligible, €18/m² would give €144 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint remaining walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 7.1.5 and 7.1.6 exclude repainting separate, undamaged surfaces for visual matching. The conditional €400 gross estimate is for the full flat-rate repaint, not an expected payment."
+  }
+ ]
+}

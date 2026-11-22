@@ -1,0 +1,198 @@
+{
+ "game": 43,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 22.2,
+  "ref_chars": 26716
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Chrome-plated designer copper pipe, 15 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.28,
+   "rationale": "The failed indoor heating joint falls under the escape-of-water provisions in §2.4. Under §§7.1.5 and 7.1.9, only the length needed for the repair is payable at the plain-copper rate, estimated at €95 for 6.4 m if the full length is substantiated."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome-plated 90° elbows, 15 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow necessary fittings at standard copper prices, not the chrome premium. Four ordinary elbows at about €10 each give €40."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome-plated 90° elbows, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.68,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.23,
+   "rationale": "Under §§7.1.8(e) and 7.1.9, these are payable only if the 28 mm fittings were needed for the repair, rather than for the new valve or other upgrade work. Five standard copper equivalents at €20 each give €100."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome-plated 45° elbow, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.68,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 7.1.8(e) and 7.1.9 require a demonstrated repair need for this size and exclude the chrome premium. One ordinary copper elbow is estimated at €20."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.3,
+   "rationale": "Necessary minor fixings are allowed under §7.1.7(c); §7.1.8(e) does not require each fixing to be individually matched. Eight at €1.10 give €8.80."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamps, 10 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.35,
+   "rationale": "No 10 mm pipe is documented as repaired, so the dimensional mismatch points to exclusion under §7.1.8(e). If shown to be needed for the repair, four clamps at €5 each would total €20."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamps, 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) permits ordinary supports needed for the repaired run, but not supports attributable solely to the upgrades. The four-clamp reference estimate is €25."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.17,
+   "rationale": "Sections 7.1.7(g) and 7.1.9 allow customary labour for the ordinary repair but not extra time fitting the sensor, valve or other upgrades. The reference threshold for 6.75 hours is €595."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 418.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(g) allows helper time reasonably needed for the pipe repair, excluding time spent solely on upgrades under §7.1.9. The reference threshold for 5.75 hours is €418."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad Armaflex insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 116.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow reinstatement of the prior insulation, capped at the cost of rock wool. Case 40 supports about €116 for six pieces."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.89,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) allows binding wire as a standard insulation fixing to the extent needed for the repair. Two kilograms at €9.80 per kilogram give €19.60."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.9 excludes installations not present before the loss, so the new sensor has no payable like-for-like equivalent. €100 is a conditional price estimate only."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.45,
+   "rationale": "The valve was not part of the pre-loss installation and is excluded outright by §7.1.9. €130 is a conditional price estimate only."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow a reasonable lump sum for minor repair consumables, excluding any upgrade-only materials. The reference allowance is €36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice. This is the only travel line, and the reference allowance is €79."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) allow disposal of pipe and insulation removed for the covered repair. The comparable small-load allowance is €60."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) expressly excludes separate contractor processing charges on top of itemised labour and materials. €20 is a conditional price estimate only."
+  }
+ ]
+}

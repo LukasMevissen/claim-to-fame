@@ -1,0 +1,58 @@
+{
+ "game": 31,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 24742,
+  "output_tokens": 770,
+  "seconds": 7.5,
+  "ref_chars": 25218
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation of police report from Spanish to English (68 lines)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Translating documents to substantiate the claim is excluded under 3.1.6 and 7.1.8(f); this is not an indemnity for property."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "These are working materials raised alongside an excluded translation charge, so they are excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for robbery damage (watch and cash)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.08,
+   "rationale": "Robbery under 2.3.1 away from home is covered, with 4.2.4 capping it at 5,000. The expensive watch is limited to the valuables per-item sub-limit of 2,500 (4.2.2, no valuables schedule), and the cash (over 800) to the means-of-payment sub-limit of 500 (4.2.3). That gives 3,000, less the 50 deductible (7.8) = 2,950."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Forwarding and shipping charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

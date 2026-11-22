@@ -1,0 +1,99 @@
+{
+ "game": 33,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 11.4,
+  "ref_chars": 24726
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Equivalent laptop replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1150.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.6.2 and 4.5.2 cover the impact during travel in Germany, and the battery health waiver overrides the cutoff in 2.6.8. The supplier's report supports replacement under 7.1.10; estimate EUR 1,200 for an equivalent new laptop less EUR 50 in salvage, with no upgrade allowance under 7.1.9."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec laptop upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.9 limits payment to the pre-loss specification. This line is solely the elective upgrade difference, so it is excluded."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 230.0,
+   "price_log_sd": 0.38,
+   "rationale": "The cracked tablet screen is covered impact damage under 2.6.3–2.6.4. Estimate EUR 230 gross for a like-for-like screen repair under 7.1.10; there is no separate deductible for the tablet."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostics for both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 144.0,
+   "price_log_sd": 0.22,
+   "rationale": "Section 5.2.3 covers necessary diagnostics on both units, including the laptop deemed uneconomic to repair. Estimate EUR 72 per device, or EUR 144 total, below the shared EUR 250 event cap and assuming no diagnostic credit."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 4.2.6 and 7.1.5 cover a carry bag only if it was itself damaged by the event. The original bag was undamaged, so no replacement cost is payable."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.5(f) and 7.1.8(e) expressly exclude extended warranties, including those bought with a covered replacement."
+  },
+  {
+   "item_id": "7",
+   "description": "Laptop data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sections 3.5(d) and 4.3(c) exclude data recovery unless separately agreed. The battery health waiver does not add data restoration cover, and no such cover is stated."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.8(b) excludes separately billed administration fees, including fees from third-party providers."
+  }
+ ]
+}

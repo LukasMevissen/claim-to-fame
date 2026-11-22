@@ -1,0 +1,201 @@
+{
+ "game": 40,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31294,
+  "output_tokens": 2470,
+  "seconds": 20.2,
+  "ref_chars": 26640
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.35,
+   "rationale": "Fitting used in the insured heating-pipe fracture repair, covered as repair material under 2.4.3 and 7.1.7(c). Estimate is 4 pcs at about 10 € installed rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.35,
+   "rationale": "Repair material for the insured pipe fracture (7.1.7(c)). Estimate is 5 pcs at about 20 €."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 45° copper 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.35,
+   "rationale": "Repair material for the insured pipe fracture (7.1.7(c)). Estimate is 1 pc at about 20 €."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screw",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.45,
+   "rationale": "Minor fixing, which 7.1.7(c) and 7.1.8(e) expressly cover. Estimate is 8 pcs at about 2 €."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamp 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 28.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fixing for the repaired pipe run (7.1.7(c)). Estimate is 4 pcs at about 7 €."
+  },
+  {
+   "item_id": "6",
+   "description": "Copper pipe 15x1",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 96.0,
+   "price_log_sd": 0.4,
+   "rationale": "Replacement pipe section for the insured fracture; the invoiced 6.4 m is kept, not trimmed. Estimate is about 15 €/m."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 566.0,
+   "price_log_sd": 0.25,
+   "rationale": "Trade labour is covered under 7.1.7(g). The price prior gives 6.75 h at about 84 €/h."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 380.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour is covered under 7.1.7(g); case 18 also paid technician plus helper. Estimate is 5.75 h at about 66 €/h."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 146.0,
+   "price_log_sd": 0.25,
+   "rationale": "Insulation that was in place before the loss is restored under 7.1.7(c). The price prior gives 6 pcs at about 24 €."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.45,
+   "rationale": "Consumable installation material is covered under 7.1.7(c). Estimate is 2 kg at about 10 €/kg."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "A lump-sum consumables charge is expressly not excluded (7.1.8(e)). Estimated at a customary flat amount of about 30 €."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "This is the first and only travel charge on the invoice, so it is covered under 7.1.7(f). Estimate is about 80 € per the price prior."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.3,
+   "rationale": "Removal of debris from the repair is covered under 5.2.1 and 7.1.8(a). Estimate is about 62 € per the price prior."
+  },
+  {
+   "item_id": "14",
+   "description": "Repainting basement hallway outside boiler room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.5,
+   "rationale": "The hallway was not affected by the leak, so the work falls outside the repair scope under 7.1.5 and 3.5 and counts as maintenance under 7.1.8(a); t=0. Price shown is only a hypothetical."
+  },
+  {
+   "item_id": "15",
+   "description": "Laminate replacement in undamaged storage room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.5,
+   "rationale": "The storage room was undamaged by the leak, so 7.1.5 excludes it; t=0. Price shown is only a hypothetical."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is maintenance unrelated to the insured event (7.1.8(a)); t=0. Price shown is only a hypothetical."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "An administrative or processing charge is not a repair cost under 7.1.8(b); t=0. Price shown is only a hypothetical."
+  }
+ ]
+}

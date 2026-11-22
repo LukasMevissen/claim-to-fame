@@ -1,0 +1,58 @@
+{
+ "game": 49,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 32156,
+  "output_tokens": 984,
+  "seconds": 10.0,
+  "ref_chars": 25352
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit (kitchen)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1420.0,
+   "price_log_sd": 0.12,
+   "rationale": "A fixed, permanently wired AC unit is a building component (4.2.2) and was replaced like-for-like after surge damage. This policy has no kitchen-specific exclusion, so it is covered if the surge is lightning-related overvoltage (2.3.3); priced at the reference level."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.1,
+   "rationale": "Labour to fit the replacement unit is an ancillary charge that follows its covered principal item (7.1.11). Priced at the reference level of about 480."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.15,
+   "rationale": "An equivalent replacement of the damaged console the unit stood on is reinstatement, not new equipment (7.1.9 last paragraph). Priced in line with case 38."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.12,
+   "rationale": "Freight is an ancillary charge that follows the covered replacement units (7.1.11). Priced in line with cases 38 and 42."
+  }
+ ]
+}

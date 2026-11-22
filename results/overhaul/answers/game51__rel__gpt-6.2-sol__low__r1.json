@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 8.5,
+  "ref_chars": 26041
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Like-for-like pipe repair materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.3,
+   "rationale": "The failed indoor supply pipe falls under §2.4.3(a). Sections 7.1.7(c) and 7.1.9 allow standard-grade materials; comparable pipe, sealing, insulation and fittings total about €140 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.58,
+   "rationale": "Section 7.1.7(g) covers necessary labour at customary rates. The invoice lists one flat-rate unit without an hour count, so the supplied gross prior of €76 per billed unit gives €76 for the line."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.063,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice regardless of the number of visits. This is the only travel charge on the repair invoice, estimated at €81 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying before reinstatement and allow one flat-rate deployment charge per drying operation. One operation at the comparable rate gives €439 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the wall opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(a) covers making good the necessary access opening, and §7.1.5 limits repainting to the disturbed patch. One localized repair at the comparable rate gives €453 gross."
+  }
+ ]
+}

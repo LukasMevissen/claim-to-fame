@@ -1,0 +1,33 @@
+{
+ "game": 35,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 4.8,
+  "ref_chars": 25492
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is excluded under §§2.1 and 3.1.4. The clothing and jewellery are also excluded under §§4.3(d) and 4.3(f) as personal belongings taken from a vehicle away from the insured location; the positive estimate is a hypothetical value for the single lot."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.1,
+   "rationale": "Sections 4.3(e) and 5.2.5 exclude the private vehicle and journey-related charges, and no insured building damage occurred. The hypothetical estimate uses the prior of €79 gross for one charge."
+  }
+ ]
+}

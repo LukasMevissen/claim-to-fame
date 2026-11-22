@@ -1,0 +1,33 @@
+{
+ "game": 37,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 4.5,
+  "ref_chars": 25859
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 5.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is not an insured peril under §2.1 and is expressly excluded under §3.1.4. Sections 4.3(d)–(f) also exclude personal belongings taken from a car away from the insured site, so the payable threshold is €0."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 3.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 4.3(e) excludes the private car, and §5.2.5 expressly excludes vehicle-related expenses. The payable threshold is €0."
+  }
+ ]
+}

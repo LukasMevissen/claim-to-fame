@@ -1,0 +1,201 @@
+{
+ "game": 40,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 30750,
+  "output_tokens": 2369,
+  "seconds": 115.8,
+  "ref_chars": 26091
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.35,
+   "rationale": "These are fittings for the insured heating-pipe fracture repair (2.4.3, 7.1.7(c)). Upper customary price is about 7 EUR each."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 28mm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "These are repair fittings under 7.1.7(c). There is some risk of a dimension mismatch with the 15mm pipe (7.1.8(e)). Upper price is about 18 EUR each."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 45° copper 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is a repair fitting under 7.1.7(c), with the same possible dimension issue as line 2."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws, 8 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.45,
+   "rationale": "Minor fixings are covered under 7.1.7(c)."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamps 25mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fixings for the repaired run are covered under 7.1.7(c), at about 6 EUR each."
+  },
+  {
+   "item_id": "6",
+   "description": "Copper pipe 15x1, 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.4,
+   "rationale": "Replacement pipe for the insured fracture is covered under 7.1.7(c), at about 12 EUR/m gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician hours, 6.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 566.0,
+   "price_log_sd": 0.3,
+   "rationale": "Labour for the insured repair is covered under 7.1.7(g). The prior gives about 84 EUR/h, so about 566 EUR."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper hours, 5.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 375.0,
+   "price_log_sd": 0.35,
+   "rationale": "Helper labour is covered under 7.1.7(g), at about 65 EUR/h. This is in line with the Case 18 combined labour level."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation, 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.25,
+   "rationale": "Re-insulating the repaired section restores the pre-loss standard (7.1.7(c)). Case 18 showed at least 107 EUR; the prior gives about 146 EUR."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire, 2 kg",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.45,
+   "rationale": "Consumable installation material is covered under 7.1.7(c) and 7.1.8(e)."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.45,
+   "rationale": "Lump-sum consumables are expressly not excluded (7.1.8(e)) and are assessed under 7.1.7(c)."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "This is the first and only travel charge on the invoice, so it is covered under 7.1.7(f). Prior is about 80 EUR."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.3,
+   "rationale": "Debris from the repair is covered under 5.2.1 and 7.1.8(a). Case 18 showed at least 57 EUR."
+  },
+  {
+   "item_id": "14",
+   "description": "Repainting basement hallway outside boiler room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.5,
+   "rationale": "This area was not affected by the water, so it falls outside the repair under 3.5 and 7.1.5 and is maintenance under 7.1.8(a)."
+  },
+  {
+   "item_id": "15",
+   "description": "Laminate replacement in undamaged storage room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.5,
+   "rationale": "The room was untouched by the leak. Under 7.1.5 work on unaffected parts is not covered, even when done on the same invoice."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is maintenance unrelated to the loss (7.1.8(a))."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "General administrative and processing charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

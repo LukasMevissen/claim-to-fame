@@ -1,0 +1,69 @@
+{
+ "game": 51,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 30961,
+  "output_tokens": 974,
+  "seconds": 10.9,
+  "ref_chars": 25775
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Pipe repair: replacement section, sealing, rock-wool insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 210.0,
+   "price_log_sd": 0.35,
+   "rationale": "Covered escape of water; like-for-like materials are repair costs under 7.1.7(c). Priced from the near-identical case 39 (pipe, gunmetal fittings, sealing, insulation totalling about 190)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1100.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour is covered under 7.1.7(g) at customary rates for the time reasonably required. In case 39 the same job took a couple of visits, with the technician-hour lines revealed at 732 or more each; as a single flat rate the estimate is moderated."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.15,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f), and this is the only one on the invoice. The prior is about 81."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.25,
+   "rationale": "Necessary drying and the equipment for it are covered under 7.1.7(b) and (e), once per drying operation. The prior is about 439 (case 39: 403 or more)."
+  },
+  {
+   "item_id": "5",
+   "description": "Painting disturbed wall area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.25,
+   "rationale": "Making good the opening is covered under 7.1.7(a), limited to the affected patch. The prior is about 453 (case 39: 416 or more)."
+  }
+ ]
+}

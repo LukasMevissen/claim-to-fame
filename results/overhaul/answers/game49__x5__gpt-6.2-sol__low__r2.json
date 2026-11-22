@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 7.0,
+  "ref_chars": 25576
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "Under §§2.3.3 and 4.2.2, the fixed kitchen unit is eligible if the surge was atmospheric in origin and the fire group was in force; neither is confirmed. The like-for-like allowance under §§7.1.9–7.1.10 is 1 × €1,413 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.73,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Under §7.1.11, necessary installation follows the covered replacement at 1 × €480 gross. If the line also includes unrelated equipment installation or a general wiring check, §9.5 requires those costs to be separated."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.49,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.18,
+   "rationale": "Under §§7.1.5 and 7.1.9, the console is eligible only if it was damaged or its replacement was necessary for covered reinstatement; the description establishes that a console existed, but not that it needed replacing. If payable, the allowance is 1 × €61 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.74,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under §7.1.11, necessary freight for covered AC replacement is eligible at 1 × €43 gross. Any share attributable to unrelated or excluded equipment must be separated before payment."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "seconds": 8.4,
+  "ref_chars": 25775
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Standard pipe section, sealant and insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 88.0,
+   "price_log_sd": 0.27,
+   "rationale": "The failed indoor supply-pipe section is consistent with covered pipe damage under §2.4.3(a), and §7.1.7(c) allows like-for-like repair materials. Comparable materials in Case 39 support €42 for the pipe, €24 for sealing and €22 for insulation."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 808.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(g) covers the time reasonably needed to open the wall and repair the pipe, excluding closure and painting billed separately. The comparable Case 39 supports about €808 gross for one installer hour and nine technician hours as a benchmark for this flat rate."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.07,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice regardless of the number of visits. This is the only such charge on the repair firm's invoice, so one gross allowance of €81 applies."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per drying operation. The single flat rate is estimated at €439 gross using Case 39."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the disturbed wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the necessary access opening and repainting the affected patch, not undamaged areas. The comparable bundled line in Case 39 supports €453 gross."
+  }
+ ]
+}

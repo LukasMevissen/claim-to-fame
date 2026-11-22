@@ -1,0 +1,198 @@
+{
+ "game": 36,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 109.4,
+  "ref_chars": 24987
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Utility-room floor cleaning",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.22,
+   "rationale": "The washing-machine leak is an escape of water under §2.4.2, and §7.1.7(h) covers necessary cleaning of the wetted floor. Estimate €85 for one cleaning item, benchmarked against Case 12's combined charge."
+  },
+  {
+   "item_id": "2",
+   "description": "Hallway floor cleaning",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.24,
+   "rationale": "The hallway floor was also wetted, so its cleaning qualifies separately under §7.1.7(h). Estimate €95 for one cleaning item within the Case 12 combined benchmark."
+  },
+  {
+   "item_id": "3",
+   "description": "Washing-machine and connection inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(e) covers inspecting the source to confirm that it no longer leaks, even if the appliance itself is not insured. Estimate €90 for one inspection."
+  },
+  {
+   "item_id": "4",
+   "description": "Remove and dispose of damaged skirting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.24,
+   "rationale": "Damaged fixed skirting is a building component under §4.2.2, and §7.1.7(a) covers its removal and disposal. Estimate €65 for one item."
+  },
+  {
+   "item_id": "5",
+   "description": "Replace damaged skirting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 135.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 cover like-for-like replacement of the damaged fixed trim. Estimate €135 installed for one item, bringing positions 1–5 to €470, within Case 12's combined range."
+  },
+  {
+   "item_id": "6",
+   "description": "Clean and repaint unaffected upstairs bedroom",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5 and 7.1.5 exclude both tasks because the bedroom was not reached by the water. The conditional estimate is €650 for one combined cleaning and repainting item."
+  },
+  {
+   "item_id": "7",
+   "description": "Moisture measurement in utility room and hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(b) covers moisture measurement on both affected floors. Estimate €170 for the single invoiced measurement item, consistent with Case 21."
+  },
+  {
+   "item_id": "8",
+   "description": "Drying of affected floors",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(b) covers necessary drying of the affected floors, but §7.1.8(c) bars paying the same cost again. Estimate €190 for the drying service itself, excluding the separately listed rental and labour."
+  },
+  {
+   "item_id": "9",
+   "description": "Drying-unit rental",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(e) covers equipment hire for necessary drying, provided the rental is not already included in position 8. Estimate €130 for one rental item; positions 7–10 together total €642, within Case 12's combined range."
+  },
+  {
+   "item_id": "10",
+   "description": "Skilled worker labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 152.0,
+   "price_log_sd": 0.13,
+   "rationale": "Section 7.1.7(g) covers skilled labour attributable to the affected areas, subject to the duplicate-cost exclusion in §7.1.8(c). At the stated gross prior of €38 per hour, four invoiced hours total €152."
+  },
+  {
+   "item_id": "11",
+   "description": "Basement moisture measurement and drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 7.1.5 and 7.1.7(b) exclude measurement and drying in a separate room with no documented leak damage. The conditional estimate is €350 for one combined item."
+  },
+  {
+   "item_id": "12",
+   "description": "Transport of hallway painting to restorer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.18,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 5.2.6 covers specialist transport in principle, but restoration takes first priority and is expected to exhaust the shared €1,190 gross limit. If restoration leaves a balance, transport is next in invoice order, with an estimated ceiling of €120."
+  },
+  {
+   "item_id": "13",
+   "description": "Specialist assessment of hallway painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 5.2.6 covers the assessment, but only from the balance left after restoration and transport. The conditional estimate is up to €180 for one assessment, subject to that balance."
+  },
+  {
+   "item_id": "14",
+   "description": "Drying and stabilisation of hallway painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 240.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 5.2.6 covers stabilisation in principle, but this line receives only what remains after restoration, transport and assessment. The conditional estimate is up to €240 for one treatment, subject to that balance."
+  },
+  {
+   "item_id": "15",
+   "description": "Full restoration of hallway painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1190.0,
+   "price_log_sd": 0.08,
+   "rationale": "Under §5.2.6, restoration has first claim on the single €1,000 net limit for this affected, unscheduled painting. Full specialist restoration is estimated to reach the limit, giving €1,190 gross at 19% VAT under §7.7."
+  },
+  {
+   "item_id": "16",
+   "description": "Restoration of unaffected basement painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1190.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 5.2.6 applies only to an item affected by the insured event; the second painting was expressly unaffected. The conditional estimate for one comparable restoration is €1,190 gross at the unscheduled-item limit."
+  },
+  {
+   "item_id": "17",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) expressly excludes separate administrative and processing charges. The €35 conditional estimate is a nominal amount for one flat fee, not an allowance."
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "game": 34,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 34406,
+  "output_tokens": 1427,
+  "seconds": 13.6,
+  "ref_chars": 25813
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Damage assessment and inspection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 524.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 5.2.6(b), inspecting and assessing the damage, capped at EUR 3,000; the price prior and Case 20 point to about 524."
+  },
+  {
+   "item_id": "2",
+   "description": "Indoor leak detection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.3,
+   "rationale": "Covered under 5.2.6(a), leak location. This line shares the EUR 1,000 sub-limit with line 3, and the combined estimate stays below it."
+  },
+  {
+   "item_id": "3",
+   "description": "Measurement technician 2.5 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.4,
+   "rationale": "On-site time of the leak-location technician is covered under 5.2.6(a), within the shared EUR 1,000 cap; 2.5 hrs at roughly 60/hr."
+  },
+  {
+   "item_id": "4",
+   "description": "Vehicle costs (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.1,
+   "rationale": "Under 5.2.6(c), one vehicle charge per contractor per invoice is reimbursed, up to EUR 70 net (83.30 gross). The price prior is about 79."
+  },
+  {
+   "item_id": "5",
+   "description": "Repair of actively leaking copper joints",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 2.4.3, leakage from material ageing counts as fracture damage for the sections shown to be leaking. Repair of the two weeping joints at the customary upper price."
+  },
+  {
+   "item_id": "6",
+   "description": "Precautionary replacement of non-leaking copper run",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.6,
+   "rationale": "Under 2.4.3, sections not themselves shown to be leaking are not covered; 3.5 and 7.1.5 also exclude work beyond the affected parts."
+  },
+  {
+   "item_id": "7",
+   "description": "Upgrade surcharge premium multilayer pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.6,
+   "rationale": "Under 7.1.9 (no improvement on the pre-loss standard), the betterment difference is borne by the policyholder."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs (plumber)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.1,
+   "rationale": "Under 5.2.6(c), one vehicle charge per contractor per invoice is allowed, capped at EUR 70 net (83.30 gross)."
+  }
+ ]
+}

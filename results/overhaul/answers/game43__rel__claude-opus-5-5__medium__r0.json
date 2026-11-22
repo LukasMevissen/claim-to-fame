@@ -1,0 +1,201 @@
+{
+ "game": 43,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31197,
+  "output_tokens": 2537,
+  "seconds": 21.0,
+  "ref_chars": 26716
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Premium chrome-plated copper pipe 15mm, 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.2,
+   "rationale": "Under 7.1.9 the upgrade is limited to the cost of standard plain copper pipe. Case 40 shows 6.4 m of 15x1 copper at t ≥ 90."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome Profipress elbow 90° 15mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.2,
+   "rationale": "Under 7.1.9 indemnity is capped at standard copper elbows. Case 40 shows t ≥ 38 for the same quantity."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome Profipress elbow 90° 28mm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.2,
+   "rationale": "Under 7.1.9 indemnity is capped at standard copper elbows. Case 40 shows t ≥ 95 for the same quantity."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome Profipress elbow 45° 28mm, 1 pc",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.2,
+   "rationale": "Under 7.1.9 indemnity is capped at a standard copper elbow. Case 40 shows t ≥ 19."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screw, 8 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.15,
+   "rationale": "Consumable installation material is covered under 7.1.7(c). Case 40 put the same quantity at t between 7 and 10."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamp 10 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.35,
+   "rationale": "This clamp size does not appear in the near-identical case 40, and a 10 mm clamp does not fit the 15/28 mm pipework. It may therefore be excluded under 7.1.8(e) as a dimension not matching the repair; if paid, priced like small clamps."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamp 25 mm, 4 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.2,
+   "rationale": "Fixings are covered under 7.1.7(c). Case 40 shows t ≥ 23; the price prior is about 25."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician hours, 6.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.15,
+   "rationale": "Trade labour is covered under 7.1.7(g). Case 40 shows t ≥ 593 for the same hours; the prior is about 595."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper hours, 5.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 410.0,
+   "price_log_sd": 0.2,
+   "rationale": "Trade labour is covered under 7.1.7(g). Case 40 shows t ≥ 387; the prior is about 418."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad Armaflex insulation, 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 118.0,
+   "price_log_sd": 0.2,
+   "rationale": "Under 7.1.9 the upgrade is capped at the rock wool insulation that was in place before. Case 40 shows 6 pcs of rock wool at t ≥ 116."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire, 2 kg",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.2,
+   "rationale": "Consumable material is covered under 7.1.7(c). Case 40 shows t ≥ 18; the prior is about 19.6."
+  },
+  {
+   "item_id": "12",
+   "description": "Smart leak-detection sensor (new addition)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.9 a component not present before the loss is not indemnified at all. The amount shown is only a nominal estimate."
+  },
+  {
+   "item_id": "13",
+   "description": "Thermostatic mixing valve (new addition)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.9 a component not present before the loss is not indemnified at all. The amount shown is only a nominal estimate."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.2,
+   "rationale": "Lump-sum consumables are covered under 7.1.7(c) and 7.1.8(e). Case 40 shows t ≥ 33; the prior is about 36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.12,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f). The prior is about 79."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.1,
+   "rationale": "Debris removal is covered under 7.1.7(a) and 5.2.1. Case 40 put this at t between 58 and 61."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative charges are excluded under 7.1.8(b). This line was never indemnified in earlier cases."
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "game": 55,
+ "arm": "base",
+ "run": 2,
+ "meta": {
+  "seconds": 14.3,
+  "ref_chars": 26673
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. This is the only travel charge on the building-services invoice; the benchmark is €81 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers sealing material needed for the pipe repair. The gross benchmark for one piece is €26."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) support like-for-like replacement of the failed indoor supply-pipe section. One metre is estimated at €40 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow reinstatement of the original insulation standard. One metre of standard rock wool insulation is estimated at €23 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.86,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.19,
+   "rationale": "Section 7.1.7(g) covers necessary installation labour, but section 7.1.8(c) bars duplicate billing if this hour is already included in the technician line. If distinct, one plumbing installer hour is approximately €80 gross using Case 39 rather than the AC installation benchmark."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 765.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 7.1.7(g) covers reasonable trade labour for access and pipe repair. The comparable nine-hour charge in Case 39 supports a gross estimate of €765 for the nine billed units."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 548.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one flat-rate equipment charge per drying operation. The gross benchmark for this single operation is €548."
+  },
+  {
+   "item_id": "8",
+   "description": "Close wall opening and repaint affected patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 588.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the affected patch. The gross benchmark for that combined local repair is €588."
+  },
+  {
+   "item_id": "9",
+   "description": "Full repaint of affected wall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.34,
+   "rationale": "Sections 7.1.5–7.1.6 exclude repainting the unaffected portion because the original paint was still available; section 7.1.8(c) also bars paying again for the patch already billed on line 8. If the full 8 m² were separately eligible, the work would be about €160 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint remaining bathroom walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 7.1.5–7.1.6 exclude repainting separate, undamaged surfaces merely to match the repair. If eligible, the remaining walls and ceiling would be roughly €400 gross given the unspecified area."
+  }
+ ]
+}

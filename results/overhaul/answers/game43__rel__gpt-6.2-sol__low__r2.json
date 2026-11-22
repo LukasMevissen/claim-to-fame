@@ -1,0 +1,198 @@
+{
+ "game": 43,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 23.3,
+  "ref_chars": 26716
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Chrome-plated 15 mm copper pipe, 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 96.0,
+   "price_log_sd": 0.27,
+   "rationale": "The failed indoor heating pipe falls under §2.4.3(a). Sections 7.1.5 and 7.1.9 limit payment to pipe needed for the repair at the plain-copper rate, estimated at €15/m × 6.4 m if the full length is substantiated."
+  },
+  {
+   "item_id": "2",
+   "description": "Chrome-plated 90° elbows, 15 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.18,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 cover necessary fittings at the standard copper equivalent, not the chrome premium. Case 40 supports about €10 per elbow × 4."
+  },
+  {
+   "item_id": "3",
+   "description": "Chrome-plated 90° elbows, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 allow standard copper elbows where needed to reconnect the affected run, but not fittings used solely for the upgrade. Case 40 supports about €20 per elbow × 5."
+  },
+  {
+   "item_id": "4",
+   "description": "Chrome-plated 45° elbow, 28 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.22,
+   "rationale": "Under §§7.1.7(c) and 7.1.9, a necessary elbow is payable at the plain-copper equivalent. Case 40 supports about €20 for one."
+  },
+  {
+   "item_id": "5",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.8,
+   "price_log_sd": 0.3,
+   "rationale": "Minor fixings used in the repair are covered under §§7.1.7(c) and 7.1.8(e). The calibrated gross allowance is €1.10 × 8."
+  },
+  {
+   "item_id": "6",
+   "description": "Two-screw pipe clamps, 10 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.8(e) excludes materials whose dimensions do not match the documented repair; no 10 mm pipework is identified. If a repair use is established, allow about €5 per clamp × 4."
+  },
+  {
+   "item_id": "7",
+   "description": "Two-screw pipe clamps, 25 mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.28,
+   "rationale": "Necessary pipe supports are covered fixings under §7.1.7(c). The Case 40 calibration gives about €25 gross for four clamps."
+  },
+  {
+   "item_id": "8",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 595.0,
+   "price_log_sd": 0.19,
+   "rationale": "Section 7.1.7(g) covers customary labour for the repair; §§7.1.5 and 7.1.9 exclude time attributable solely to the new equipment or upgrade. The calibrated gross total for 6.75 repair hours is €595."
+  },
+  {
+   "item_id": "9",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 418.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(g) covers helper time needed for the repair, not time spent on elective additions under §7.1.9. The calibrated gross total for 5.75 repair hours is €418."
+  },
+  {
+   "item_id": "10",
+   "description": "Aluminium-clad Armaflex insulation shells",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.19,
+   "rationale": "Sections 7.1.7(c) and 7.1.9 limit re-insulation to the cost of the original rock-wool specification. Cases 18 and 40 support about €20 per piece × 6."
+  },
+  {
+   "item_id": "11",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.6,
+   "price_log_sd": 0.28,
+   "rationale": "Under §§7.1.7(c) and 7.1.9, binding wire is allowable as a consumable for like-for-like rock-wool reinstatement. The calibrated price is €9.80/kg × 2 kg."
+  },
+  {
+   "item_id": "12",
+   "description": "New smart leak-detection sensor",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.9 excludes new installations with no pre-loss equivalent. The €95 figure is a conditional gross price for one sensor, not an allowance under this policy."
+  },
+  {
+   "item_id": "13",
+   "description": "New thermostatic mixing valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.9 excludes the valve because it was not present before the loss. The €130 figure is a conditional gross price for one valve, not an allowance under this policy."
+  },
+  {
+   "item_id": "14",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) permit a lump sum for minor repair consumables, provided it does not duplicate other charges or fund the additions. The calibrated gross allowance is €36."
+  },
+  {
+   "item_id": "15",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows one travel charge per contractor per invoice. This is the only such charge, so the calibrated gross allowance is €79."
+  },
+  {
+   "item_id": "16",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of pipe and insulation removed for the necessary repair. Cases 18 and 40 support €60 gross for one disposal charge."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) expressly excludes separate administrative and processing fees. The conditional figure is €20 gross for one fee."
+  }
+ ]
+}

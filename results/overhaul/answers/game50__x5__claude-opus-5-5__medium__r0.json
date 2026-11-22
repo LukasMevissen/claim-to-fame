@@ -1,0 +1,201 @@
+{
+ "game": 50,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 32679,
+  "output_tokens": 2902,
+  "seconds": 25.6,
+  "ref_chars": 28035
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disassembly and assembly service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 92.0,
+   "price_log_sd": 0.12,
+   "rationale": "Dismantling and refitting needed to place drying equipment is part of technical drying (5.2.7). The case 46 rate of about 90 per piece applies."
+  },
+  {
+   "item_id": "2",
+   "description": "Construction dryer 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 315.0,
+   "price_log_sd": 0.15,
+   "rationale": "Technical drying is covered under 5.1(g)/5.2.7. Invoiced 7 days x about 45/day; case 46 revealed at least 287."
+  },
+  {
+   "item_id": "3",
+   "description": "Material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.3,
+   "rationale": "The claim calls this surcharge unexplained, so no itemised list exists. Under 7.4.4 a surcharge without an itemised list is not paid."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation 1 pc",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.15,
+   "rationale": "Standard mineral-wool shell, within threshold 7.14(c), on the repaired pipe. About 26 per piece."
+  },
+  {
+   "item_id": "5",
+   "description": "Construction waste disposal (drying invoice)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.08,
+   "rationale": "Debris removal is covered under 5.2.1, but only the first charge for the same removal is paid. The drying invoice comes first, so this one is paid at about 60."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall levelling material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.15,
+   "rationale": "Re-levelling the substrate is making good within the damage area (5.2.6). Case 46 revealed at least 35."
+  },
+  {
+   "item_id": "7",
+   "description": "Rough renovation 2.78 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 115.0,
+   "price_log_sd": 0.45,
+   "rationale": "Substrate reinstatement in the damage area counts as making good. No reference line exists, so I estimate about 40/m² x 2.78."
+  },
+  {
+   "item_id": "8",
+   "description": "Mounting / service opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.45,
+   "rationale": "Creating the service opening needed to reach the leaking joint is covered under 5.2.6. Customary flat rate estimated."
+  },
+  {
+   "item_id": "9",
+   "description": "Wall tiles 90x90 cm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 320.0,
+   "price_log_sd": 0.35,
+   "rationale": "90x90 is within the tile threshold of 7.14(d), so these reinstate the removed tiles. Estimated at an installed rate of about 65 per tile x 5."
+  },
+  {
+   "item_id": "10",
+   "description": "Designer tiles 130x130 cm, 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Exceeds the 90x90 threshold, so 3.5(f) allows no payment at all. It also duplicates line 9 and is a betterment under 3.5(a)."
+  },
+  {
+   "item_id": "11",
+   "description": "Silicone joints 3.6 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 47.0,
+   "price_log_sd": 0.12,
+   "rationale": "Standard sanitary silicone for the reinstated tiling. About 13/m x 3.6, as in case 46."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 83.0,
+   "price_log_sd": 0.08,
+   "rationale": "Under 7.4.2 travel is paid once per contractor per document. Full rate is about 82."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours 14 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1290.0,
+   "price_log_sd": 0.12,
+   "rationale": "Labour for the tiling and making-good work, at the full rate of about 90/h x 14. Case 46 revealed at least 1260."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove drywall and insulation wool in basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.3,
+   "rationale": "Opening up within the basement damage area is covered under 5.2.6. Case 46 revealed drywall at 44-55 plus insulation at 44-48 as separate lines; combined here."
+  },
+  {
+   "item_id": "15",
+   "description": "Remove damp plaster in basement rooms",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.82,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.2,
+   "rationale": "Within the basement damage area and covered. About 29 per unit, as in case 46."
+  },
+  {
+   "item_id": "16",
+   "description": "Remove damp plaster in attic",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "No damage was established in the attic, so 3.5(b) and 7.1.5 exclude it. The claim also calls this work unrelated."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction waste disposal (tiling invoice)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.1,
+   "rationale": "This duplicates the disposal already charged on the drying invoice. Under 5.2.1 and 3.5(d) only the first charge is paid."
+  }
+ ]
+}

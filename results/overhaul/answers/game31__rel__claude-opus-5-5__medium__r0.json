@@ -1,0 +1,58 @@
+{
+ "game": 31,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 24742,
+  "output_tokens": 787,
+  "seconds": 8.5,
+  "ref_chars": 25218
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation of police report Spanish to English, 68 lines",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.5,
+   "rationale": "Translating documents for the claim is excluded under 3.1.6 and 7.1.8(f), as Part 11.2 confirms."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs (translation)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "These are working materials raised alongside the translation charge, excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for robbery damage (watch + cash)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.08,
+   "rationale": "Robbery under threat with a weapon is covered under 2.3.1. The expensive watch is capped at the EUR 2,500 per-item valuables sub-limit (no valuables schedule), and the cash (>EUR 800) at the EUR 500 means-of-payment sub-limit. The total of EUR 3,000 is within the EUR 5,000 away-from-premises limit; less the EUR 50 deductible this gives EUR 2,950."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Forwarding and carriage charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

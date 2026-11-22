@@ -1,0 +1,187 @@
+{
+ "game": 47,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 18.9,
+  "ref_chars": 27757
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 2.4.4(b) and 7.1.9 cover like-for-like renewal of the fractured internal valve: 1 × €52."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.09,
+   "rationale": "Section 7.1.9 covers the connection hose if it had to be renewed with the valve: 1 × €27."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 299.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover the repair labour at the gross benchmark of about €100 per hour for all 3 invoiced hours."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 7.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.7(e) covers consumables actually used in the repair, but the generic line does not establish what was used or distinguish it from excluded contractor supplies under 3.6(c). If substantiated, the conditional estimate is €7 for the single line."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 83.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 7.1.9 and 7.1.11 cover one attendance for the insured repair. With no stated monetary reduction, use the full-rate benchmark of €83 for one vehicle charge."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.6,
+   "price_log_sd": 0.23,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging used to locate the internal escape. One use at the €17.60 benchmark is below the €2,500 gross event cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Façade damage from freezing escaped water",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.48,
+   "rationale": "Section 2.4.3 treats freezing of water that escaped inside and saturated the render as escape-of-water damage, so optional external-frost cover is not needed. If this line prices a distinct repair rather than repeating the breakdown below, estimate one localized repair charge at €160."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 2.4.3 and 7.1.7(a) cover removal of failed plaster from the affected area. Use about €160 for one removal unit, based on the comparable two-unit removal line, provided it is not billed twice."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 7.1.7(c)–(d) covers like-for-like base plaster on the affected area: 1 × €38."
+  },
+  {
+   "item_id": "10",
+   "description": "Unspecified additional work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 7.1.7 and 9.6 require the work to be identified and allocated to the insured damage; this label does neither. If shown to be distinct covered preparatory work, estimate €45 for one charge."
+  },
+  {
+   "item_id": "11",
+   "description": "Re-formed plaster substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 31.0,
+   "price_log_sd": 0.2,
+   "rationale": "Section 7.1.7(c) covers preparation and re-forming of the affected substrate: 1 × €31."
+  },
+  {
+   "item_id": "12",
+   "description": "Façade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 59.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7(d) cover the required coats of the like-for-like finish on the damaged area. The four-coat system is billed as one unit at €59."
+  },
+  {
+   "item_id": "13",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 254.0,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(c) covers drying needed before repairing the water-saturated wall and render: 1 × €254."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 117.0,
+   "price_log_sd": 0.23,
+   "rationale": "Section 7.1.7(c)–(d) covers priming needed to restore the finish on the affected area: 1 × €117."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 277.0,
+   "price_log_sd": 0.09,
+   "rationale": "Section 7.1.7(f) covers labour for the insured façade repair. All 5 billed hours at about €55.40 per hour give €277."
+  },
+  {
+   "item_id": "16",
+   "description": "Unspecified flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.7,
+   "rationale": "Sections 3.6(b), 7.1.12 and 9.6 exclude administrative add-ons and require a lump sum to identify the covered work it prices. If documented as distinct covered work, estimate €40 for one charge."
+  }
+ ]
+}

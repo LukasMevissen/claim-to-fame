@@ -1,0 +1,212 @@
+{
+ "game": 41,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 26907,
+  "output_tokens": 3028,
+  "seconds": 25.9,
+  "ref_chars": 27635
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 137.0,
+   "price_log_sd": 0.35,
+   "rationale": "Genuine theft damage on the recovered bike is covered under 2.3.1(b) and 7.1.1(b). All mobility repair and recovery lines exceed the EUR 500 aggregate sub-limit (4.2.2), so roughly 300 is scaled by about 0.46."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 66.0,
+   "price_log_sd": 0.35,
+   "rationale": "Theft damage to the brakes is a repair cost under 7.1.7. About 145 is scaled rateably under the EUR 500 sub-limit."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "A tracking device that was not itself taken or damaged is excluded by 4.2.3 and 3.1.7."
+  },
+  {
+   "item_id": "4",
+   "description": "Service of second household bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is servicing of an unaffected item, excluded by 3.1.6, 7.1.5 and 7.1.8(a)(b)."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "These are protective and supplementary items bought in connection with the loss, excluded by 4.2.3 and 3.1.7."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.4,
+   "rationale": "Carriage of parts for the covered repair falls under 7.1.7(f). About 26 is scaled rateably under the sub-limit."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 34.0,
+   "price_log_sd": 0.45,
+   "rationale": "Attendance for the covered repair falls under 7.1.7(g). About 75 is scaled by the sub-limit factor."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fitting the replacement frame and brakes is part of the repair under 7.1.7(c). About 115 is scaled rateably."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sundries could in principle fall under 7.1.7(e), but this line type was never paid before and is mostly treated as unspecified. Any amount would be tiny after scaling."
+  },
+  {
+   "item_id": "10",
+   "description": "Apprentice hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.45,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour on the covered repair counts under 7.1.7(d), though the invoice mixes in excluded work. A low rate of about 30 is scaled rateably."
+  },
+  {
+   "item_id": "11",
+   "description": "Skilled worker hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.4,
+   "rationale": "Skilled labour for the frame and brake repair counts under 7.1.7(d). About 42 is scaled under the sub-limit."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.5,
+   "rationale": "Attendance at the find location is a recovery cost under 5.2.2(a), but references show low acceptance. About 50 is scaled rateably by the shared EUR 500 sub-limit."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock (2 pcs)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.35,
+   "rationale": "Cutting the seized lock is a recovery cost under 5.2.2(b). About 110 is scaled by the sub-limit factor."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs – return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "The second call-out is not shown to be required by the recovery, so it is excluded under 7.1.8(f) and (g)."
+  },
+  {
+   "item_id": "15",
+   "description": "Impound/storage release fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 54.0,
+   "price_log_sd": 0.3,
+   "rationale": "A third-party release charge is covered under 5.2.2(c): 100 plus VAT is 119. It is scaled rateably within the EUR 500 mobility sub-limit."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Claim-processing and administration charges are excluded by 3.1.5 and 7.1.8(d)."
+  },
+  {
+   "item_id": "17",
+   "description": "Apprentice hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.55,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.0,
+   "price_log_sd": 0.45,
+   "rationale": "Labour of every grade on the lock removal counts under 5.2.2(b). About 36 is scaled rateably."
+  },
+  {
+   "item_id": "18",
+   "description": "Skilled worker hours (locksmith)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.4,
+   "rationale": "Skilled labour on the recovery counts under 5.2.2(b); the reference rate is 35 to 40. About 40 is scaled rateably."
+  }
+ ]
+}

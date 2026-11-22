@@ -1,0 +1,80 @@
+{
+ "game": 45,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 25254,
+  "output_tokens": 1055,
+  "seconds": 9.5,
+  "ref_chars": 25318
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation from Spanish to English",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Translating the police report is claim substantiation, excluded under 3.1.6 and 7.1.8(f)."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "These are working materials raised alongside the translation charge, excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation for stolen watch (premium upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.08,
+   "rationale": "The robbery is covered under 2.3.1. 7.1.9 limits the indemnity to an equivalent watch (about EUR 7,000), and the valuables sub-limit of EUR 2,500 per item under 4.2.2 then caps it at 2,500. Reference case 31 points to no separate deductible cut."
+  },
+  {
+   "item_id": "4",
+   "description": "Compensation for cash taken in robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.1,
+   "rationale": "The roughly EUR 900 of cash is capped by the means-of-payment sub-limit of EUR 500 under 2.3.2 and 4.2.3."
+  },
+  {
+   "item_id": "5",
+   "description": "Designer sunglasses mislaid separately",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.6,
+   "rationale": "The sunglasses were mislaid on a separate occasion, so they are excluded under 2.3.4(a) and are not an affected item."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage and forwarding charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

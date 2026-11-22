@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "base",
+ "run": 2,
+ "meta": {
+  "seconds": 8.1,
+  "ref_chars": 25775
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Pipe section, sealant and insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 88.0,
+   "price_log_sd": 0.3,
+   "rationale": "The failed indoor supply pipe is assessed under §2.4.3(a), and §7.1.7(c) covers like-for-like repair materials. Comparable gross allowances of €42 for the pipe, €24 for sealant and €22 for insulation total €88 for the single flat-rate line."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.59,
+   "rationale": "Section 7.1.7(g) covers customary labour for the necessary repair. The invoice gives one flat-rate unit and no hour count, so the supplied €76 per-unit prior is applied once."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice, regardless of the number of visits. The single charge is estimated at €81 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one equipment deployment charge per drying operation. One flat rate at the supplied prior is €439 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the affected wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover making good the access opening and repainting the affected patch, not undamaged surfaces. The single reinstatement line is estimated at €453 gross using the supplied prior."
+  }
+ ]
+}

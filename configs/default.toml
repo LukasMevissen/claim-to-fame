@@ -34,6 +34,19 @@ pricebook_max_chars = 24000
 # (scripts/item_prior_ab.py, docs/research/item_prior.md). Not tested on claude-opus-5-5
 # (no Anthropic credit on 2026-11-22): set to false if its shadow results get worse.
 use_item_prior = true
+# Analyst (c2f/analyst.py, docs/research/overhaul.md): which earlier cases the model is shown
+# and how it is told to build a threshold.
+#   "x3"   the newest earlier cases that fit into pricebook_max_chars (14 of 50+ by game 47)
+#   "rel"  the same prompt, but the earlier cases most similar to the current one first
+#   "x5"   rel + a prompt that states t = unit rate x invoiced quantity x policy arithmetic
+# Walk-forward games 30-55 on the live model (claude-opus-5-5@medium, 2 runs per arm, every
+# game assessed with earlier games only, replayed against the real opponents):
+#   x3 70.0k   rel 130.1k (+60.1k, 90 % interval +21k to +109k, better in 15 games, worse in 5)
+#   x5 109.4k (+39.3k). Both runs of rel (124k, 136k) lie above both runs of x3 (64k, 76k).
+# gpt-6.2-sol@low, 3 runs: x3 115.3k, rel 120.5k, x5 117.8k (inside its run-to-run spread).
+# The gain comes from the price level of large new items: with similar cases in view the
+# model stops overpricing them (game 38 air conditioner 1,900 -> 1,600 for t 1,352-1,445).
+analyst = "rel"
 
 [shadow]
 # Models that assess every case in parallel to the live workflow. Never submitted; scored
@@ -145,3 +158,7 @@ max_sigma = 1.2
 # 80.7k -> 89.2k / 91.2k. Less than the prompt block ([llm] use_item_prior), and the same
 # evidence would count twice with both on, so this stays off while the block is on.
 item_prior = "off"
+# Case memory (c2f/memory.py): a line with a precedent of a class that named the later
+# threshold often enough on all earlier games takes the precedent's amount and its narrow
+# spread. "off" | "case" | "case+wording". See docs/research/overhaul.md for the backtest.
+memory = "off"

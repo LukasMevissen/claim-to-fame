@@ -1,0 +1,176 @@
+{
+ "game": 39,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 20.3,
+  "ref_chars": 26181
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Close and repaint the disturbed wall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.5 and 7.1.7(a) cover closing the necessary access opening and repainting the affected patch. The estimate allows €170 for patching and €110 for local preparation and painting."
+  },
+  {
+   "item_id": "2",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on this contractor's invoice. The gross estimate uses the €81 reference for one charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(d) allow minor consumables used in the pipe repair. The estimate allows €10 for one small quantity of sealing material."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the necessary replacement section of the failed indoor supply pipe. One metre is estimated at €27 gross at equivalent pre-loss specification under §7.1.9."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(c) covers reinstating insulation on the repaired pipe where it was present before the loss. The estimate allows €18 for one metre, consistent with Case 18."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer labour, 1 hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.79,
+   "rationale": "Section 7.1.7(g) covers customary labour reasonably required for the repair. One installer hour at the supplied €63 rate gives €63 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.8(b) excludes a separately charged contractor-owned measuring device, even when the investigation itself is necessary. The €18 conditional estimate would apply if this were documented as necessary third-party hire rather than the contractor's own device."
+  },
+  {
+   "item_id": "8",
+   "description": "First service technician labour entry, 9 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Section 7.1.7(g) covers reasonable technician time for opening the wall, accessing the pipe and carrying out the repair. The supplied gross benchmark for the full nine-hour line is €425."
+  },
+  {
+   "item_id": "9",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge per contractor per invoice, even when there were multiple visits. The €81 figure is the conditional benchmark for a single eligible trip, not an additional allowance."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.7(b) and (e) cover one equipment deployment charge for necessary drying. A short deployment for the localized wall damage is estimated at €65 gross."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) expressly excludes a contractor's own blades as business equipment. The €9 figure is a conditional gross value for one blade, not an allowance under this wording."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings, 2 pieces",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 44.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers fittings needed to reconnect the repaired pipe at the pre-loss standard. Two ordinary fittings at €22 each give €44 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Second stainless steel pipe entry, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.8(c) and (d) exclude duplicate or unsupported quantities; this repeats the one-metre pipe entry at position 4 without a separately documented length. If an additional metre is substantiated, the conditional estimate is €27 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "Pipe insulation shell, 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.8(c) and (d) exclude duplicate or unsupported insulation costs; position 5 already bills one metre for the localized repair. If this shell is shown to cover a distinct necessary metre, the conditional estimate is €18 gross."
+  },
+  {
+   "item_id": "15",
+   "description": "Second service technician labour entry, 9 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.8(c) and 7.1.7(g) bar duplicate or unsupported labour; multiple visits do not by themselves substantiate a second identical nine-hour entry. If separate necessary hours are documented, the supplied gross benchmark for the full line is €425."
+  }
+ ]
+}

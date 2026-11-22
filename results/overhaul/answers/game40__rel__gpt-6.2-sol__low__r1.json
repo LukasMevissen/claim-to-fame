@@ -1,0 +1,198 @@
+{
+ "game": 40,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 22.5,
+  "ref_chars": 26091
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover like-for-like fittings used to repair the failed indoor heating pipe. Allow €9 gross each for four elbows."
+  },
+  {
+   "item_id": "2",
+   "description": "28 mm copper press elbows, 90°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(c) covers fittings needed to reconnect the affected pipe, but §7.1.8(e) requires the 28 mm fittings to match the repair, which also lists 15 mm pipe. If used in the reconnection, allow five at €16 gross each."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm copper press elbow, 45°",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.0,
+   "price_log_sd": 0.3,
+   "rationale": "The elbow qualifies under §7.1.7(c) if used in the heating-pipe reconnection; §7.1.8(e) excludes fittings not attributable to that repair. Allow €17 gross for one."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.7(c) includes minor fastenings used in the pipe repair. Allow eight at €1.50 gross each."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.32,
+   "rationale": "Section 7.1.7(c) covers the clamps needed to support the repaired pipe. Allow four at €5.50 gross each."
+  },
+  {
+   "item_id": "6",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover like-for-like replacement pipe, while §7.1.8(e) limits the allowance to the quantity attributable to the repair. If the billed 6.4 m was needed, allow about €11 gross per metre."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 566.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(g) covers customary repair labour, but §7.1.5 excludes time spent on unrelated jobs. Use the €566 whole-line prior if the 6.75 hours are attributable to the pipe repair."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 394.0,
+   "price_log_sd": 0.72,
+   "rationale": "Sections 7.1.5 and 7.1.7(g) cover helper time needed for the pipe repair, not for work elsewhere. Use the €394 whole-line prior if the 5.75 hours are attributable to that repair."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 146.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers reinstating the insulation removed for the repair. Use the €146 gross prior for all six pieces."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.42,
+   "rationale": "Binding wire used to secure the reinstated insulation is a covered consumable under §7.1.7(c), but §7.1.8(e) excludes excess quantity unrelated to the repair. Allow €20 gross if the billed 2 kg is justified."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.38,
+   "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow a modest lump sum for repair consumables, provided it does not duplicate separately billed materials. Allow €18 gross."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. This is the only one listed; use the €80 gross prior."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 62.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of removed pipe and insulation, but not waste from the unrelated flooring work. Use the €62 gross prior for a charge attributable to the covered repair."
+  },
+  {
+   "item_id": "14",
+   "description": "Basement hallway repainting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.5 and 7.1.5 exclude repainting the unaffected hallway. The conditional market allowance is €180 gross for 12 m² at €15 per m²."
+  },
+  {
+   "item_id": "15",
+   "description": "Adjacent storage-room laminate replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 825.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 7.1.5–7.1.6 exclude replacement in a separate room that the leak did not reach. The conditional market allowance is €825 gross for 15 m² at €55 per m²."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 7.1.8(a) excludes routine upkeep, and no insured damage to the garden tap is reported. The conditional allowance for the service is €95 gross."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 7.1.8(b) expressly excludes processing fees billed in addition to labour and materials. The €15 gross figure is a conditional estimate only."
+  }
+ ]
+}

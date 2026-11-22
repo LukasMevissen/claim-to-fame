@@ -1,0 +1,223 @@
+{
+ "game": 32,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 35085,
+  "output_tokens": 2554,
+  "seconds": 22.9,
+  "ref_chars": 26581
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 53.0,
+   "price_log_sd": 0.08,
+   "rationale": "Frost fracture of an internal fitting is covered under 2.4.4 and 7.1.9. Price is taken from the reference cases (51-54)."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.1,
+   "rationale": "A connection element renewed with the fractured fitting is covered under 7.1.9. Reference cases put it at about 27."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours 3h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour on the covered fitting repair is covered under 7.1.7(f). Reference cases proved at least 279-295 fair for 3 hours."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 6.0,
+   "price_log_sd": 0.5,
+   "rationale": "Consumables actually used are covered in principle under 7.1.7(e), but references show it was not paid or was below 8."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.15,
+   "rationale": "One attendance per undertaking is covered under 7.1.11. Same-wording reference was 38-44."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.5,
+   "rationale": "Leak location equipment is covered under 2.4.6 and 5.2.2 (cap 2,500), but references show the line was refused or valued very low."
+  },
+  {
+   "item_id": "7",
+   "description": "Vehicle costs - return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "A return visit is not separately indemnified without the insurer's prior agreement (7.1.11)."
+  },
+  {
+   "item_id": "8",
+   "description": "Remove loose/spalled plaster 2 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.45,
+   "rationale": "The facade frost endorsement is agreed, so taking off failed material on the damaged elevation is covered under 2.6.2."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.45,
+   "rationale": "Re-forming the substrate is covered under 2.6.2 and 7.1.7(c)."
+  },
+  {
+   "item_id": "10",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.5,
+   "rationale": "Substrate preparation of the damaged area is covered under 2.6.2."
+  },
+  {
+   "item_id": "11",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.45,
+   "rationale": "Priming is expressly part of the frost indemnity in 2.6.2."
+  },
+  {
+   "item_id": "12",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Drying is covered under 2.6.2 where needed before new work can proceed; necessity is uncertain."
+  },
+  {
+   "item_id": "13",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 230.0,
+   "price_log_sd": 0.45,
+   "rationale": "The finish system is covered in the coats the system requires (2.6.2, 7.1.7(d))."
+  },
+  {
+   "item_id": "14",
+   "description": "Painter hours 5h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 280.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour on the covered frost repair is covered under 2.6.2. Some risk the hours partly relate to the uncovered rear elevation."
+  },
+  {
+   "item_id": "15",
+   "description": "Scaffolding hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 800.0,
+   "price_log_sd": 0.45,
+   "rationale": "Access provision for the damaged elevation only (two storeys, ~8 m) is covered under 2.6.2 and 7.1.8. It was struck before the rear repaint, so no apportionment is needed."
+  },
+  {
+   "item_id": "16",
+   "description": "Repaint undamaged rear elevation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Work on an undamaged elevation is excluded (2.6.3(a), 7.1.5)."
+  },
+  {
+   "item_id": "17",
+   "description": "Waste disposal of removed plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.45,
+   "rationale": "Disposal of removed material from the covered frost repair is covered under 2.6.2. It was a few rubble sacks, so the cost is moderate."
+  },
+  {
+   "item_id": "18",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administration charges are excluded (3.6(b), 7.1.12)."
+  },
+  {
+   "item_id": "19",
+   "description": "Catering for work crew",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Catering for the undertaking's own personnel is excluded (3.6(a))."
+  }
+ ]
+}

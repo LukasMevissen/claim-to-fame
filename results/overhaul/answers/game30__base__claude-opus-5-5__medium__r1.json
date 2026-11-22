@@ -1,0 +1,124 @@
+{
+ "game": 30,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 23382,
+  "output_tokens": 1402,
+  "seconds": 21.6,
+  "ref_chars": 25224
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour checking and rewiring flooded circuits, 12 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.3,
+   "rationale": "Surface-water inundation falls under c2 further natural hazards, which the schedule is not shown to record. Under 3.6.1/3.6.2(b) the bar applies to the whole claim, including all labour."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (electrician)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "3.6.2(f) excludes every journey charge where the inundation bar applies. If indemnified, this would be the single journey charge at about 79."
+  },
+  {
+   "item_id": "3",
+   "description": "Procurement of motor pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.6,
+   "rationale": "Inundation bar applies. In any case this is working equipment, not separately indemnified under 4.3(d), 5.2.2 and 7.1.8(b)."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.6,
+   "rationale": "Inundation bar applies. Working equipment is excluded anyway under 4.3(d) and 5.2.2."
+  },
+  {
+   "item_id": "5",
+   "description": "Water extraction from flooded basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.45,
+   "rationale": "This is a measure barred by 3.6.2(d) because the c2 inundation peril is not recorded. Otherwise it would be indemnifiable as a measure."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Materials are barred by 3.6.2(c) for an uninsured inundation."
+  },
+  {
+   "item_id": "7",
+   "description": "Renew boiler incl. flue and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12000.0,
+   "price_log_sd": 0.4,
+   "rationale": "Replacement of building plant is barred by 3.6.2(a). The flood is not escape of water, and the c2 group is not recorded."
+  },
+  {
+   "item_id": "8",
+   "description": "Adjust supply pipework to replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.45,
+   "rationale": "Adaptation work belonging to the replacement is barred by 3.6.2(a)."
+  },
+  {
+   "item_id": "9",
+   "description": "Disposal of old boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Removal and disposal are barred by 3.6.2(e)."
+  },
+  {
+   "item_id": "10",
+   "description": "Vehicle costs (heating)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "Every journey charge is barred by 3.6.2(f). Even if the claim were covered, this is the second journey charge and is excluded by 7.1.8(d)."
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "game": 38,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 33500,
+  "output_tokens": 1520,
+  "seconds": 14.9,
+  "ref_chars": 25405
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit - living room, like-for-like replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2200.0,
+   "price_log_sd": 0.4,
+   "rationale": "Overvoltage caused by lightning is covered (2.3.3). The unit is about 7 m from the hob, so the 5 m climate-equipment exclusion in 2.3.10(c) does not apply. It is described as a fixed, permanently wired unit, so it is a like-for-like replacement under 7.1.9(a); the residual doubt is whether a floor-standing unit counts as firmly connected (4.2.3(a))."
+  },
+  {
+   "item_id": "2",
+   "description": "Air conditioning unit - kitchen, wall-mounted near hob",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1800.0,
+   "price_log_sd": 0.4,
+   "rationale": "The unit is a couple of metres from the hob, inside the 5 m distance. Under 2.3.10(c) it is conclusively excluded for overvoltage damage, and no kitchen climate endorsement is on the schedule."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation - living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.4,
+   "rationale": "Labour to remove, fit, connect and commission a covered replacement is part of the repair cost (7.1.9(c)). It follows the principal item under 7.1.11, so it stands or falls with line 1; earlier cases never paid this line type."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation - kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is an ancillary charge to the excluded kitchen unit, so it falls with it under 7.1.11 and 2.3.10(c)."
+  },
+  {
+   "item_id": "5",
+   "description": "Floor console for living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.45,
+   "rationale": "The old stand was scorched and could not be reused, so an equivalent support is covered under 7.1.9(b). It is covered only if the living-room unit itself is."
+  },
+  {
+   "item_id": "6",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.5,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.5,
+   "rationale": "Freight is shared between the covered living-room unit and the excluded kitchen unit. Under 7.1.11 only the covered share is paid, apportioned by value at roughly half of a modest freight charge."
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 7.2,
+  "ref_chars": 25576
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 2.3.3 and 4.2.2 cover lightning-induced surge damage to fixed climate-control equipment if the fire group is in force; the description does not confirm the surge source or schedule. If covered, §§7.1.9–7.1.10 allow one like-for-like replacement at €1,413, with no kitchen-location exclusion."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.77,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Under §§7.1.1(b) and 7.1.11, fitting the insured replacement follows the unit's coverage: 1 × €480. Any unrelated wiring check bundled into this line must be separated under §9.5."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.15,
+   "rationale": "Sections 7.1.5 and 7.1.7 allow €61 for one equivalent console if the original was damaged or could not be reused in the covered repair. The description establishes that a console was used, but not that it needed replacement."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under §7.1.11, necessary freight for an insured replacement is payable at 1 × €43; any share attributable to non-covered equipment must be separated."
+  }
+ ]
+}

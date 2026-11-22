@@ -1,0 +1,201 @@
+{
+ "game": 50,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 32679,
+  "output_tokens": 2321,
+  "seconds": 19.5,
+  "ref_chars": 28035
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disassembly and assembly service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.15,
+   "rationale": "Necessary dismantling for drying under 5.2.7. Reference rate is about 90 per piece."
+  },
+  {
+   "item_id": "2",
+   "description": "Construction dryer 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 313.0,
+   "price_log_sd": 0.2,
+   "rationale": "Technical drying is covered under 5.2.7. 7 days at about 45 per day gives about 313."
+  },
+  {
+   "item_id": "3",
+   "description": "Material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.3,
+   "rationale": "Under 7.4.4, surcharges are paid only against an itemised list. The surcharge is flagged as unexplained, so nothing is paid."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation 1 pc",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.2,
+   "rationale": "A standard mineral-wool shell, within threshold 7.14(c). Rate is about 26 per piece."
+  },
+  {
+   "item_id": "5",
+   "description": "Construction waste disposal (drying)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.1,
+   "rationale": "Under 5.2.1 only the first disposal charge per event is reimbursed. This is the first one, at about 60."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall levelling material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.2,
+   "rationale": "Making good of the substrate is covered under 5.2.6. Rate is about 38."
+  },
+  {
+   "item_id": "7",
+   "description": "Rough renovation 2.78 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.45,
+   "rationale": "Substrate preparation in the damage area. There is no reference rate; I assume about 36 per m² x 2.78."
+  },
+  {
+   "item_id": "8",
+   "description": "Mounting / service opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "Access opening is covered under 5.2.6. There is no direct reference, so the customary charge is estimated."
+  },
+  {
+   "item_id": "9",
+   "description": "Wall tiles 90x90 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 220.0,
+   "price_log_sd": 0.35,
+   "rationale": "Tiles of 90x90 are within the 7.14(d) threshold. About 4 m² at roughly 55 per m²."
+  },
+  {
+   "item_id": "10",
+   "description": "Designer tiles 130x130 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.5,
+   "rationale": "These exceed the 90x90 threshold. Under 3.5(f), items above threshold receive no payment at all."
+  },
+  {
+   "item_id": "11",
+   "description": "Silicone joints 3.6 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 47.0,
+   "price_log_sd": 0.2,
+   "rationale": "Standard sanitary silicone. 3.6 m at about 13 per m gives about 47."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 83.0,
+   "price_log_sd": 0.1,
+   "rationale": "This is the first travel charge on this document (7.4.2). Full rate is about 83."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker hours 14 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1260.0,
+   "price_log_sd": 0.2,
+   "rationale": "Tiling labour in the damage area. The full rate of about 90 per hour x 14 gives about 1260."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove drywall and insulation in basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.3,
+   "rationale": "Opening up in the damage area under 5.2.6. Combines the drywall (about 50) and insulation removal (about 46) rates from case 46."
+  },
+  {
+   "item_id": "15",
+   "description": "Remove damp plaster basement 1 pc",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 29.0,
+   "price_log_sd": 0.2,
+   "rationale": "Within the damage area. Rate is about 29 per piece."
+  },
+  {
+   "item_id": "16",
+   "description": "Remove damp plaster attic",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "No damage was established in the attic, so this is unrelated work excluded under 3.5(b)."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction waste disposal (tiling)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.1,
+   "rationale": "This duplicates the disposal already charged on the drying invoice. Only the first charge is paid under 5.2.1 and 3.5(d)."
+  }
+ ]
+}

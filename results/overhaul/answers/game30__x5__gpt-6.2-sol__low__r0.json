@@ -1,0 +1,121 @@
+{
+ "game": 30,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 17.1,
+  "ref_chars": 26221
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour to check and rewire flooded circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1260.0,
+   "price_log_sd": 0.28,
+   "rationale": "Surface rainwater is flood under §2.5, not escape of water, and no schedule entry for group (c2) is shown. Section 3.6 bars the labour on the supplied record; if covered, 12 hours at €105 gross would total €1,260."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrician vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars journey charges for the uncovered flood. If group (c2) were confirmed, this is the first listed journey and would be priced at 1 × €79 under §7.1.7(g)."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 3.6 bars the flood claim, and §§4.3(d) and 5.2.2 independently exclude separate payment for pump procurement alongside the extraction measure. The positive estimate is a notional gross charge for one procurement line."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 3.6 bars the flood claim, and §5.2.2 includes temporary pump use in the extraction measure rather than paying it separately. The positive estimate is a notional gross charge for one pump deployment."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 750.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 5.2.2 would cover extraction as one measure inclusive of labour and equipment, estimated at €750 gross. It is barred by §3.6 because flood cover under group (c2) is not shown."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6.2(c) bars materials for the uncovered flood. If covered, §7.1.7(c) would allow one lot of comparable materials actually installed, estimated at €180 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler system renewal with flue and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12500.0,
+   "price_log_sd": 0.35,
+   "rationale": "Fixed plant is insured property, but §3.6 bars its replacement where flood cover is not shown. Under §7.1.1(c), the conditional estimate is €12,500 gross for one installed equivalent residential boiler system, including flue and tank."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(a) bars adaptation work for the uncovered flood. If covered, §7.1.7(d) would allow one necessary adaptation of the immediately adjoining supply pipework, estimated at €950 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(e) bars removal and disposal for the uncovered flood. If covered, §5.2.1 would allow one system removal and disposal charge, estimated at €650 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars journey charges, and §7.1.8(d) would independently exclude this second listed journey even if flood cover were confirmed. The conditional benchmark for one eligible journey is €79 gross."
+  }
+ ]
+}

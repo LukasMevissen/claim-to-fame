@@ -1,0 +1,190 @@
+{
+ "game": 47,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 35582,
+  "output_tokens": 2181,
+  "seconds": 20.1,
+  "ref_chars": 27616
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve (internal frost-burst fitting)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 53.0,
+   "price_log_sd": 0.12,
+   "rationale": "Frost fracture of a fitting inside the building is covered under 2.4.4 and 7.1.9 (escape of water peril). Priced at the customary level from earlier cases."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.12,
+   "rationale": "Connection element renewed together with the fractured fitting, covered under 7.1.9."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours 3 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 299.0,
+   "price_log_sd": 0.15,
+   "rationale": "Labour on covered pipe repair is indemnified under 7.1.7(f): 3 h at about 100/h."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Consumables used in covered work are nominally covered under 7.1.7(e). However, this line type was declined in all earlier cases under this wording."
+  },
+  {
+   "item_id": "5",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.15,
+   "rationale": "One attendance per undertaking is indemnified under 7.1.11; the level follows cases 25 and 32 at about 40."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging camera (leak detection)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.25,
+   "rationale": "Leak-location equipment is covered under 2.4.6 and 5.2.2 and is expressly not an own-tool charge under 3.6. Well within the EUR 2,500 cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade damage lump sum (frozen from internal escape)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.45,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.6,
+   "rationale": "The render was saturated by the internal escape and then froze, which counts as escape of water under 2.4.3. As a lump sum it may duplicate the itemised work, so coverage is uncertain under 7.1.12."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster removal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.55,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "Taking off the damaged render on the affected part is covered under 7.1.7(a), via 2.4.3."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.25,
+   "rationale": "Re-forming the substrate of the affected area is covered under 7.1.7(c); price follows case 32."
+  },
+  {
+   "item_id": "10",
+   "description": "Additional work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.25,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "This line is unspecified and cannot be allocated to the affected area, so it is likely declined under 9.6 and 7.1.5."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 31.0,
+   "price_log_sd": 0.25,
+   "rationale": "Preparation of the affected substrate is covered under 7.1.7(c); price follows case 32."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint (4 coats)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 59.0,
+   "price_log_sd": 0.3,
+   "rationale": "Finish restoration of the affected area is covered under 7.1.1(b) and 7.1.7(d); price follows case 32."
+  },
+  {
+   "item_id": "13",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.25,
+   "rationale": "Drying needed before repair of the affected part is covered under 7.1.7(c); price follows case 32."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 115.0,
+   "price_log_sd": 0.25,
+   "rationale": "Priming of the affected area is covered under 7.1.7(c)/(d); price follows case 32."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours 5 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 277.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour on covered facade work is indemnified under 7.1.7(f): 5 h at about 55/h."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "An unspecified surcharge that prices no work is excluded under 3.6(b) and 7.1.12; it was never paid in earlier cases."
+  }
+ ]
+}

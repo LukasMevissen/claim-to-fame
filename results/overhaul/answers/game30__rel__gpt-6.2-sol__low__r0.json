@@ -1,0 +1,121 @@
+{
+ "game": 30,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 17.6,
+  "ref_chars": 25707
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for flooded circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1080.0,
+   "price_log_sd": 0.25,
+   "rationale": "The established cause is external surface flooding, not escape of water under 2.4.3. No scheduled flood cover is shown, so 3.6 bars the labour; €1,080 is conditional on cover at 12 hours × €90 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Clause 3.6.2(f) bars journey charges without a covered event. If flood cover were confirmed, this first listed journey would be eligible under 7.1.7(g), at the €79 gross reference level."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.45,
+   "rationale": "Clause 3.6 bars the claim as presented. Even with flood cover, 4.3(d) and 5.2.2 exclude separate procurement of working equipment used for the billed extraction measure; €250 is a notional gross price only."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "Clause 3.6 bars the claim as presented, and 5.2.2 independently rules out a separate pump charge alongside the extraction measure. The €90 gross figure is a notional deployment charge only."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.4,
+   "rationale": "Pumping out standing water is a mitigation measure under 5.2.2, but 3.6 bars it because scheduled flood cover is not shown. The conditional €450 gross covers the extraction operation, including labour and pump use."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.4,
+   "rationale": "Clause 3.6.2(c) bars materials for damage from an uninsured peril. If flood cover were confirmed, 7.1.7(c) would allow an estimated €150 gross for standard materials actually installed in the affected circuits."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9500.0,
+   "price_log_sd": 0.35,
+   "rationale": "The fixed system is insured property under 4.2.2, but 3.6 bars replacement because scheduled flood cover is not shown. The conditional €9,500 gross is for an equivalent standard boiler, flue and tank installed and commissioned under 7.1.1(c), excluding the separately listed adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.35,
+   "rationale": "Clause 3.6.2(a) expressly bars adaptation work when the underlying loss is not covered. If flood cover were confirmed, 7.1.7(d) would allow about €600 gross for necessary changes to the immediately adjoining pipework."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.35,
+   "rationale": "Disposal of unusable fixed plant falls under 5.2.1 only after an insured event, and 3.6.2(e) bars it here. The conditional €300 gross allows for ordinary removal, haulage and disposal of the old assembly."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Clause 3.6.2(f) bars the charge, and even if flood cover were confirmed, 7.1.7(g) and 7.1.8(d) allow only the first journey across both trades. The €79 gross figure is the reference value for one otherwise eligible journey."
+  }
+ ]
+}

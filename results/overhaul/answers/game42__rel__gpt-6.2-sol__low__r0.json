@@ -1,0 +1,77 @@
+{
+ "game": 42,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 9.3,
+  "ref_chars": 25733
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1411.0,
+   "price_log_sd": 0.28,
+   "rationale": "The fixed unit suffered covered lightning overvoltage under 2.3.3 and was nine metres from the hob, outside the five-metre exclusion in 2.3.10(c). Under 7.1.9–7.1.10, the 7.1 kW upgrade is payable only up to the cost of an equivalent 3.5 kW unit, estimated at €1,411 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 482.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.9(c) and 7.1.10 cover ordinary installation labour at the pre-loss specification. The €482 gross estimate excludes any extra work required by the higher-output model or decorative console."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.5(d) and 7.1.10 exclude the whole console because it was chosen for appearance and was not needed to install the replacement."
+  },
+  {
+   "item_id": "4",
+   "description": "Ordinary freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.9(e) and 7.1.11–7.1.12 cover ordinary carriage attributable to the equivalent replacement. The estimated base freight is €42 gross, excluding the separately billed express surcharge."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.12 excludes the separate express and timed delivery surcharge; neither advance insurer approval nor a need to prevent further loss is stated."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.6,
+   "rationale": "Section 7.1.8(b) excludes separately billed contractor administration and paperwork charges in full."
+  }
+ ]
+}

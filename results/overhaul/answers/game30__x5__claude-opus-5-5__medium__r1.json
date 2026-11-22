@@ -1,0 +1,124 @@
+{
+ "game": 30,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 23844,
+  "output_tokens": 1533,
+  "seconds": 22.4,
+  "ref_chars": 26221
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour checking/rewiring flooded circuits, 12 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1020.0,
+   "price_log_sd": 0.3,
+   "rationale": "Surface-water flooding is inundation under 2.1(c2), and the schedule is not said to record that group. The 3.6 bar therefore removes all labour (3.6.2(b)). If it were covered: 12 hrs x ~85."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (electrician)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "Every journey charge is barred under 3.6.2(f) because the inundation peril is not insured. If covered, this would be the one journey charge allowed under 7.1.7(g), at about 79."
+  },
+  {
+   "item_id": "3",
+   "description": "Procurement of a motor pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "This is working equipment: not insured property (4.3(d)) and not indemnified alongside the measure it served (5.2.2). The 3.6 bar also applies."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 350.0,
+   "price_log_sd": 0.5,
+   "rationale": "Working equipment used for the water-extraction measure, excluded under 5.2.2 and 7.1.8(b). The 3.6 bar also applies."
+  },
+  {
+   "item_id": "5",
+   "description": "Water extraction from flooded basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.45,
+   "rationale": "This is a loss-mitigation measure, barred by 3.6.2(d)/(g) because inundation (c2) is not recorded as insured. If covered, priced as a measure."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.45,
+   "rationale": "Materials are barred under 3.6.2(c). If covered, small consumables would be allowed under 7.1.7(c)."
+  },
+  {
+   "item_id": "7",
+   "description": "Renew boiler incl. flue and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12000.0,
+   "price_log_sd": 0.4,
+   "rationale": "Replacement of building plant is barred under 3.6.2(a); the rain flooding is not an insured peril here. If covered, renewal at standard grade."
+  },
+  {
+   "item_id": "8",
+   "description": "Adjust supply pipework for replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.45,
+   "rationale": "Adaptation work belonging to the replacement is barred under 3.6.2(a). If covered, it would be allowed under 7.1.7(d)."
+  },
+  {
+   "item_id": "9",
+   "description": "Dispose of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.45,
+   "rationale": "Disposal is barred under 3.6.2(e). If covered, it would fall under 5.2.1."
+  },
+  {
+   "item_id": "10",
+   "description": "Vehicle costs (heating)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "Barred under 3.6.2(f). Even if the claim were covered, this is a second journey charge for the same event and excluded under 7.1.8(d)."
+  }
+ ]
+}

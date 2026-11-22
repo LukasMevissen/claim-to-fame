@@ -1,0 +1,55 @@
+{
+ "game": 31,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 7.0,
+  "ref_chars": 25218
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English translation of police report",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.35,
+   "rationale": "The police report is required under §2.3.3, but §§3.1.6 and 7.1.8(f) expressly exclude the cost of translating it, so the covered amount is zero."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.5,
+   "rationale": "The translator’s working materials are excluded under §§7.1.8(e)–(f), both as business supplies and as charges ancillary to excluded translation work."
+  },
+  {
+   "item_id": "3",
+   "description": "Robbery settlement for stolen watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.08,
+   "rationale": "The reported robbery away from home is covered under §§2.3 and 11.1, subject to item evidence under §7.1.10; the pictured Tudor is estimated to reach the €2,500 unscheduled-watch cap, and the cash exceeds its €500 cap. The €5,000 away-from-home limit does not bind, so the estimate is €2,500 + €500 − the single €50 deductible = €2,950."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping and forwarding",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.8(b) excludes forwarding and shipping even when billed alongside a covered property settlement, so the covered amount is zero."
+  }
+ ]
+}

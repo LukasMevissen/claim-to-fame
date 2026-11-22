@@ -1,0 +1,234 @@
+{
+ "game": 46,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 32117,
+  "output_tokens": 3753,
+  "seconds": 34.0,
+  "ref_chars": 26389
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Wall tile covering 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 210.0,
+   "price_log_sd": 0.3,
+   "rationale": "The tiled panel (2.4×0.85 + 2.4×0.4 ≈ 3 m²) was in the damage area, so relaying it is covered repair cost. Priced at the upper customary tiling rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Hole drilling 1 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 68.0,
+   "price_log_sd": 0.3,
+   "rationale": "One hole was needed through a new tile for the pipe, so this is necessary repair work. Price taken from the prior (about 70 per hole)."
+  },
+  {
+   "item_id": "3",
+   "description": "Wall tiles 60x30 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.35,
+   "rationale": "Replacement tiles of the same cheap standard size; 3 m² matches the damaged area. Cheapest-range tile price."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall levelling material 1 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.35,
+   "rationale": "About 1 m² of render around the bend had gone soft to the brick and was built back up before tiling."
+  },
+  {
+   "item_id": "5",
+   "description": "Wall tiles 1000x5000 5 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.6,
+   "rationale": "Tiles are already charged in line 3. This oversized, non-standard format is a duplicate and an upgrade under 3.5(a) and 3.5(d)."
+  },
+  {
+   "item_id": "6",
+   "description": "Silicone joints 3.6 lm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.35,
+   "rationale": "Matches the documented joints: 2.4 m corner plus about 1.25 m up the panel end. Customary silicone joint rate."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium silicone sealant 12 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.6,
+   "rationale": "Duplicates the silicone in line 6, uses a premium grade and a quantity inconsistent with the damage (3.5(a), (d), (e))."
+  },
+  {
+   "item_id": "8",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.15,
+   "rationale": "First travel charge on the tiler's document, so reimbursable under 7.4.2. Price from the prior (about 80)."
+  },
+  {
+   "item_id": "9",
+   "description": "Skilled worker hours 14 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.5,
+   "rationale": "Labour for tiling is already in the unit rates (7.4.1). 14 h is excessive for a 3 m² panel and likely includes the uninsured attic work (3.5(e)). If paid at all, a reduced share."
+  },
+  {
+   "item_id": "10",
+   "description": "Clean wall tile covering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.55,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.4,
+   "rationale": "Wiping down the reinstated tiles within the damage area stays part of repair cost (3.5(c)). It may, however, be treated as included in the tiling rate."
+  },
+  {
+   "item_id": "11",
+   "description": "Remove drywall",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.4,
+   "rationale": "The wet plasterboard boxing was in the damage area. Its removal falls under demolition / opening up (5.1)."
+  },
+  {
+   "item_id": "12",
+   "description": "Removal and disposal of damaged insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.3,
+   "rationale": "The wet mineral wool was disposed of separately from the container load, so it is not a duplicate. Price from the prior (about 74)."
+  },
+  {
+   "item_id": "13",
+   "description": "Remove damp plaster basement 3 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.35,
+   "rationale": "Damp render behind the panel over about 3 m² was hacked off; this is necessary demolition in the damage area."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove damp plaster in attic",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.6,
+   "rationale": "Old staining from the roof re-felting is unrelated to this leak and is upkeep in an undamaged element (3.5(b))."
+  },
+  {
+   "item_id": "15",
+   "description": "Wall rosette",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.4,
+   "rationale": "The cover ring cracked when the tiles were removed, so it is consequential repair. A standard chrome ring is cheap."
+  },
+  {
+   "item_id": "16",
+   "description": "Disassembly and assembly service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covers undoing and remaking the leaking joint with a new olive, which earlier cases indemnified as joint repair. Moderate flat charge."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction dryer 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.35,
+   "rationale": "Technical drying (5.2.7) supported by readings: normal after one week, machine collected the next morning. The owner's own dehumidifier is not billed."
+  },
+  {
+   "item_id": "18",
+   "description": "Material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.5,
+   "rationale": "Reimbursable only if attributable to materials actually used, such as the olive and sealing paste (7.4.4); otherwise it is an overhead."
+  },
+  {
+   "item_id": "19",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.15,
+   "rationale": "About 1 m of sodden lagging was replaced like for like. Price from the prior (about 22 per m)."
+  },
+  {
+   "item_id": "20",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.12,
+   "rationale": "The drying firm's container took the tiles, render and board: debris removal reimbursed once (5.2.1). Price from the prior (about 60)."
+  }
+ ]
+}

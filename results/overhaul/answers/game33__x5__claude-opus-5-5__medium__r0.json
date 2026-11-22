@@ -1,0 +1,102 @@
+{
+ "game": 33,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 36717,
+  "output_tokens": 1405,
+  "seconds": 14.1,
+  "ref_chars": 24726
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Laptop replacement, equivalent model",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1550.0,
+   "price_log_sd": 0.35,
+   "rationale": "The battery health waiver is on the schedule, so 2.6.8 does not bite and the gateway is passed. The repair is uneconomic per the supplier report, so 7.1.10 pays the acquisition amount of an equivalent unit; no deductible or sub-limit figure is given."
+  },
+  {
+   "item_id": "2",
+   "description": "Higher-spec upgrade difference",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.6,
+   "rationale": "7.1.9: the difference for a higher specification is borne by the policyholder and is not indemnified under any head."
+  },
+  {
+   "item_id": "3",
+   "description": "Tablet screen repair",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.35,
+   "rationale": "Under 2.6.4 a second unit hit in the same event is assessed on its own, and 2.6.3(a) covers screen breakage; priced at a typical installed tablet screen repair rate."
+  },
+  {
+   "item_id": "4",
+   "description": "Diagnostic inspection of both devices",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 110.0,
+   "price_log_sd": 0.35,
+   "rationale": "5.2.3 covers examination of each affected unit, payable even where the repair is uneconomic, capped at EUR 250 per event. Estimate based on the comparable diagnostic rate in Case 2."
+  },
+  {
+   "item_id": "5",
+   "description": "New laptop carry bag (undamaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.5,
+   "rationale": "4.2.6 and 7.1.5: an accessory or case not itself damaged is not indemnified."
+  },
+  {
+   "item_id": "6",
+   "description": "Extended warranty",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.5,
+   "rationale": "3.5(f), 4.3(f) and 7.1.8(e) exclude warranties and undertakings as to future performance."
+  },
+  {
+   "item_id": "7",
+   "description": "Data recovery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.6,
+   "rationale": "3.5(d) and 4.3(c) exclude data recovery unless additionally agreed, and no such agreement is stated."
+  },
+  {
+   "item_id": "8",
+   "description": "Administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.6,
+   "rationale": "7.1.8(b) excludes administrative charges, and the fee also attaches to the excluded data work."
+  }
+ ]
+}

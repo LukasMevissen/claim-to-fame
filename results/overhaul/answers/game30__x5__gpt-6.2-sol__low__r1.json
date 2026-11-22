@@ -1,0 +1,121 @@
+{
+ "game": 30,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 14.3,
+  "ref_chars": 26221
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour to check and rewire flooded circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1140.0,
+   "price_log_sd": 0.22,
+   "rationale": "Rainwater flooding falls under group (c2), which is not shown as insured, so §3.6 bars the claim. If covered, the 12 invoiced hours would be €1,140 at €95/hour under §7.1.7(e)–(f)."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrician vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars journey charges for this uninsured flood. If the flood were covered, the first journey charge would be eligible under §7.1.7(g), at 1 × €79."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 3.6 bars the flood claim, and §§4.3(d) and 5.2.2 independently exclude separately billed pump procurement alongside water extraction. The gross benchmark for one procurement charge is €250."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.5,
+   "rationale": "Section 3.6 bars the flood claim, and §5.2.2 includes the pump in the extraction measure rather than paying for it separately. The gross benchmark for one pump deployment is €300."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.6 and 5.1 bar mitigation costs for flooding not shown as insured. If covered, the single extraction charge would be about €650 under §5.2.2, including labour and pumping equipment."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(c) bars materials costs for this uninsured flood. If covered, the one lot of materials incorporated into the affected circuits would be about €180 under §7.1.7(c)."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12500.0,
+   "price_log_sd": 0.3,
+   "rationale": "The boiler system is insured building plant, but §3.6.2(a) bars replacement after flooding not shown as insured. If covered, one comparable installed residential boiler system with flue and storage tank would be about €12,500 under §7.1.1(c)."
+  },
+  {
+   "item_id": "8",
+   "description": "Adapt supply pipework to replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(a) bars adaptation work for this uninsured flood. If covered, the single flat-rate adjustment of adjoining pipework would be about €950 under §7.1.7(d)."
+  },
+  {
+   "item_id": "9",
+   "description": "Remove and dispose of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(e) bars removal and disposal for this uninsured flood. If covered, one removal and disposal job for the old boiler system would be about €650 under §5.2.1."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars this journey charge; even with flood cover, §7.1.8(d) excludes the second journey charge for the same event. The gross benchmark is 1 × €79."
+  }
+ ]
+}

@@ -1,0 +1,220 @@
+{
+ "game": 32,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 20.1,
+  "ref_chars": 26581
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.19,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the frost-fractured valve. The same-wording reference supports €52 gross for one valve."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.22,
+   "rationale": "Section 7.1.9 covers the hose if it had to be renewed with the fractured valve. The same-wording reference supports €27 gross for one hose."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 295.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary repair labour. The reference rate of about €98 gross per hour gives €295 for the three-hour line, rounded."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.6(c) and 7.1.7(e) distinguish actual repair consumables from general shop supplies. The generic billing and unpaid references make separate payment uncertain; €8 allows for a small quantity of documented consumables."
+  },
+  {
+   "item_id": "5",
+   "description": "Initial plumbing attendance",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.1,
+   "rationale": "Sections 7.1.9 and 7.1.11 allow one attendance for the covered repair. The same-wording reference supports €41 gross for this visit."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.72,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging equipment used to trace the leak, but the references make a separate equipment charge less certain. Estimate €25 for incremental use if separately payable, below the €2,500 gross event cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Return-visit vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.11 excludes a return attendance by the same plumber unless agreed in advance, and no approval is reported. If approval were established, one trip is estimated at €41 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "Removal of loose and spalled plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.35,
+   "rationale": "The facade frost endorsement activates §2.6.2, which covers stripping failed material from the damaged area. Allow €90 gross for the two small removal units, excluding separately billed disposal."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) cover like-for-like base plaster on the frost-damaged area. Allow €45 gross for the material needed for local patching, without duplicating billed labour."
+  },
+  {
+   "item_id": "10",
+   "description": "Re-forming the plaster substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 105.0,
+   "price_log_sd": 0.42,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover re-forming the damaged substrate. Allow €105 gross for localized making good to the extent it is distinct from the base plaster and hourly labour lines."
+  },
+  {
+   "item_id": "11",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) cover primer needed for the original finish system on the damaged area. Allow €30 gross for the local primer requirement, with labour billed separately."
+  },
+  {
+   "item_id": "12",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover drying only where necessary before reinstatement. Allow €65 gross for a modest drying measure if a separate intervention was needed rather than ordinary curing time."
+  },
+  {
+   "item_id": "13",
+   "description": "Facade paint, four coats billed",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.43,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) pay only for the coats the like-for-like finish system requires on the damaged area. Allow €85 gross for ordinary finish materials without assuming all four billed coats were necessary."
+  },
+  {
+   "item_id": "14",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 325.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 2.6.2 and 7.1.7(f) cover labour on the damaged elevation, not the separately billed rear repaint. Five hours at €65 gross per hour gives €325 for the line."
+  },
+  {
+   "item_id": "15",
+   "description": "Scaffold hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 2.6.2 and 7.1.8 cover necessary access; the scaffold served only the damaged elevation and was struck before rear work. About 48 m² at €13.50 gross per m² gives approximately €650 for ordinary hire, erection and dismantling."
+  },
+  {
+   "item_id": "16",
+   "description": "Repainting undamaged rear elevation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 2.6.3(a), 7.1.5 and 7.1.6 exclude repainting a separate undamaged elevation, even for a colour match. The €550 figure is a conditional gross estimate only, not an allowance."
+  },
+  {
+   "item_id": "17",
+   "description": "Disposal of removed plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 2.6.2 and 5.2.1 cover disposal of material removed from the insured frost-damaged area. A few rubble sacks warrant about €55 gross for handling and disposal."
+  },
+  {
+   "item_id": "18",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.6(b) and 7.1.12 exclude a separate administration fee because it prices no repair work. The €10 figure is a conditional estimate only."
+  },
+  {
+   "item_id": "19",
+   "description": "Crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 3.6(a) and 7.1.12 exclude crew subsistence even when the work itself is covered. The conditional estimate is three portions at €8 gross each, or €24."
+  }
+ ]
+}

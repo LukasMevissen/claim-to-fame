@@ -1,0 +1,231 @@
+{
+ "game": 46,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 23.2,
+  "ref_chars": 27025
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Wall tile covering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 285.0,
+   "price_log_sd": 0.24,
+   "rationale": "The failed joint caused covered water damage under §2.4.2. Reinstating the damaged panel is covered under §§5.2.6 and 7.1.1(b), at 3 m² × €95 for setting and grouting, excluding separately billed tile supply."
+  },
+  {
+   "item_id": "2",
+   "description": "Drill pipe hole in tile",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.0,
+   "price_log_sd": 0.28,
+   "rationale": "One pipe penetration is necessary to reinstate the panel under §5.2.6. Allow 1 × €70 if the drilling is not already included in the tile-setting rate under §3.5(d)."
+  },
+  {
+   "item_id": "3",
+   "description": "Standard wall tiles, 60 × 30",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 84.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.6 allows comparable plain white tiles, not a premium finish. Allow 3 m² × €28 for the separately invoiced supply."
+  },
+  {
+   "item_id": "4",
+   "description": "Wall levelling material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 25.0,
+   "price_log_sd": 0.3,
+   "rationale": "The documented patch around the bend needed rebuilding before tiling, so the levelling material is covered under §§5.2.6 and 7.1.5. Allow 1 m² × €25."
+  },
+  {
+   "item_id": "5",
+   "description": "Oversize wall tiles",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.45,
+   "rationale": "The same-size standard tiles went back and are already listed at position 3; there is no separate need for these oversize pieces under §§3.5(a), (d) and (e). If shown to be distinct replacement pieces, the conditional estimate is 5 × €8 at standard grade."
+  },
+  {
+   "item_id": "6",
+   "description": "Silicone joints",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 54.0,
+   "price_log_sd": 0.25,
+   "rationale": "The panel's internal corner and end joint required silicone as part of making good under §5.2.6. Allow the invoiced 3.6 m × €15 for standard installed joints."
+  },
+  {
+   "item_id": "7",
+   "description": "Premium silicone sealant",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 36.0,
+   "price_log_sd": 0.38,
+   "rationale": "The sealant for the documented joints is included in position 6, and no separate 12 m run is established under §3.5(d)–(e). If separately justified, §3.5(a) would limit the material to standard grade, estimated at 12 m × €3."
+  },
+  {
+   "item_id": "8",
+   "description": "Tiler vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 82.0,
+   "price_log_sd": 0.08,
+   "rationale": "This is the first and only travel charge on the tiler's document, as permitted by §7.4.2. Allow 1 × €82 at the full-cover gross rate."
+  },
+  {
+   "item_id": "9",
+   "description": "Skilled worker labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.08,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 756.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.4.1 bars separate hours for work already priced in unit rates or flat fees, and §3.5(b) excludes the unrelated attic work. No distinct covered labour is identified; if the hours were documented as separate covered work, 14 × €54 would be €756."
+  },
+  {
+   "item_id": "10",
+   "description": "Clean reinstated tile panel",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 82.0,
+   "price_log_sd": 0.15,
+   "rationale": "Section 3.5(c) permits cleaning reinstated surfaces, but §§3.5(d) and 7.4.4 do not support charging separately for the routine wipe-down if it is included in tile setting. If separately substantiated, allow 1 flat rate of €82."
+  },
+  {
+   "item_id": "11",
+   "description": "Remove wet plasterboard boxing",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.33,
+   "rationale": "Removing the water-damaged board is covered demolition under §§5.1(a) and 5.2.1 even though the boxing has not yet been rebuilt. Allow 1 flat rate of €120 for dismantling, excluding container disposal."
+  },
+  {
+   "item_id": "12",
+   "description": "Remove and dispose of wet boxing insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 74.0,
+   "price_log_sd": 0.28,
+   "rationale": "The tiler separately removed and hauled away the wet mineral wool, so this is not the same waste as the container debris under §5.2.1. Allow 1 × €74."
+  },
+  {
+   "item_id": "13",
+   "description": "Remove damp cellar plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.28,
+   "rationale": "The render behind the panel was damp over the documented damage area, so removal is covered under §§5.2.1 and 5.2.6. Allow 3 m² × €40; the smaller deep repair patch does not reduce the render removal quantity."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove attic plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 157.0,
+   "price_log_sd": 0.4,
+   "rationale": "The attic staining predates the cellar leak, and no damage from this event reached the attic; §3.5(b) excludes the work. The conditional estimate for one comparable removal lot is €157."
+  },
+  {
+   "item_id": "15",
+   "description": "Replacement wall rosette",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.32,
+   "rationale": "The existing cover ring cracked during necessary tile removal, so like-for-like replacement is part of making good under §5.2.6. Allow 1 × €12 for the ring, without adding a separate labour charge."
+  },
+  {
+   "item_id": "16",
+   "description": "Disassemble and reassemble compression joint",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.27,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 2.4.2 covers the resulting water damage, but §2.4.3 does not separately insure a non-frost seal failure with no pipe fracture. If the service is accepted as necessary access or refitting under §5.2.6, allow 1 × €95."
+  },
+  {
+   "item_id": "17",
+   "description": "Construction dryer hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 175.0,
+   "price_log_sd": 0.3,
+   "rationale": "The moisture readings support seven billed days of technical drying under §5.2.7. Allow 7 × €25; the owner's later use of a private dehumidifier is not billed."
+  },
+  {
+   "item_id": "18",
+   "description": "Material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.4.4 requires the surcharge to be tied to necessary covered materials, and this line does not identify any beyond the separately listed items. If qualifying repair consumables are documented, allow 1 flat rate of €45."
+  },
+  {
+   "item_id": "19",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 22.0,
+   "price_log_sd": 0.14,
+   "rationale": "The soaked lagging was itself damaged by escaping water under §2.4.2 and is covered on a like-for-like basis under §7.1.6. Allow 1 m × €22, with no allowance for the owner's removal labour."
+  },
+  {
+   "item_id": "20",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 5.2.1 covers disposal of the tile, render and board debris in the container, distinct from the wool the tiler took away. Allow 1 flat rate of €60."
+  }
+ ]
+}

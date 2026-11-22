@@ -1,0 +1,220 @@
+{
+ "game": 32,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 25.3,
+  "ref_chars": 26581
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like replacement of the internal frost-fractured valve. One valve is estimated at €52 gross using the reference price."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover connection elements that need renewal with the fractured fitting. One standard hose is estimated at €27 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 295.0,
+   "price_log_sd": 0.2,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary repair labour. Three hours at the reference rate of about €98 gross give approximately €295; the separate return-trip charge is assessed on its own."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.38,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 8.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 7.1.7(e) and 7.1.9 cover consumables actually used in the repair, but §3.6(c) excludes the contractor's own small equipment. The generic line does not establish what was used; €8 gross allows for minor documented consumables if accepted."
+  },
+  {
+   "item_id": "5",
+   "description": "Initial plumbing attendance",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.15,
+   "rationale": "Sections 7.1.9 and 7.1.11 allow one attendance for covered repair work. The closest same-wording reference supports €41 gross for the initial vehicle charge."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 2.4.6, 3.6(c) and 5.2.2 expressly cover imaging equipment used to locate the insured escape. An equipment-use charge of €45 gross is within the €2,500 per-event leak-location cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Return-visit vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 41.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.11 excludes a separately billed return attendance unless agreed in advance, and no approval is stated. If approval were documented, €41 gross is the allowance for one comparable trip."
+  },
+  {
+   "item_id": "8",
+   "description": "Remove loose and spalled facade plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "The facade frost endorsement activates §2.6.2, which covers removal of failed material from the damaged area. Two localized removals at about €45 each total €90 gross, excluding separately billed access and disposal."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 2.6.2 and 7.1.7(d) cover like-for-like base plaster on the frost-damaged patches. Allow €65 gross for the material, with substrate work and painter labour billed separately."
+  },
+  {
+   "item_id": "10",
+   "description": "Re-form plaster substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover re-forming the damaged substrate. Allow €130 gross for localized preparation and levelling, without paying again for base plaster or separately billed hours."
+  },
+  {
+   "item_id": "11",
+   "description": "Prime repaired facade area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.4,
+   "rationale": "Sections 2.6.2 and 7.1.7 cover priming required by the existing finish system. Allow €45 gross for the affected area, without duplicating separately billed labour."
+  },
+  {
+   "item_id": "12",
+   "description": "Dry repaired facade area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.72,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 2.6.2 and 7.1.7(c) cover necessary drying before reinstatement, but not ordinary waiting for plaster to cure. If an active drying measure was needed and performed, allow €65 gross for a modest localized treatment."
+  },
+  {
+   "item_id": "13",
+   "description": "Facade paint, four coats billed",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 125.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 2.6.2, 7.1.5 and 7.1.7(d) cover only the coats required by the pre-loss finish system on the damaged area, not automatically all four billed coats. Allow €125 gross for the necessary finish, with labour billed separately."
+  },
+  {
+   "item_id": "14",
+   "description": "Painter labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 325.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.6.2 and 7.1.7(f) cover labour attributable to the damaged elevation, not the undamaged rear. Five covered hours at €65 gross give €325; any rear-elevation hours must be removed from the allowance."
+  },
+  {
+   "item_id": "15",
+   "description": "Scaffolding hire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 675.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.6.2 and 7.1.8 cover necessary access, with no split for rear work because the scaffold was struck before that work began. About 48 m² of two-storey scaffold at roughly €14/m² gross gives an allowance of €675."
+  },
+  {
+   "item_id": "16",
+   "description": "Repaint undamaged rear elevation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sections 2.6.3(a), 7.1.5 and 7.1.6 exclude repainting a separate undamaged elevation, even for colour matching. €600 gross is a conditional market estimate only, not an allowance under this policy."
+  },
+  {
+   "item_id": "17",
+   "description": "Dispose of removed plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.6.2 and 5.2.1 cover transport and disposal of material removed from the frost-damaged area. A few rubble sacks support a €55 gross disposal allowance rather than a skip charge."
+  },
+  {
+   "item_id": "18",
+   "description": "Administrative flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sections 3.6(b) and 7.1.12 exclude administrative charges that price no repair work. €10 gross is a conditional estimate only."
+  },
+  {
+   "item_id": "19",
+   "description": "Work crew catering",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 3.6(a) and 7.1.12 exclude contractor subsistence even when the underlying work is covered. Three refreshments at €7 each give a conditional estimate of €21 gross only."
+  }
+ ]
+}

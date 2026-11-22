@@ -1,0 +1,80 @@
+{
+ "game": 45,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 25254,
+  "output_tokens": 1056,
+  "seconds": 10.9,
+  "ref_chars": 25318
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation Spanish to English, 2 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.4,
+   "rationale": "Translating the police report is claim substantiation, excluded under 3.1.6 and 7.1.8(f)."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Working material raised alongside the translation charge is excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation stolen watch (premium upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2500.0,
+   "price_log_sd": 0.08,
+   "rationale": "The watch is a valuable under 4.2.2 with no valuables schedule, so the EUR 2,500 per-item sub-limit applies after the 7.1.9 betterment cut. An equivalent watch would cost about EUR 7,000, well above the cap; Case 31 suggests the deductible is not visibly deducted."
+  },
+  {
+   "item_id": "4",
+   "description": "Compensation cash taken in robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.08,
+   "rationale": "About EUR 900 cash was taken, but means of payment away from the premises are capped at EUR 500 under 2.3.2 and 4.2.3."
+  },
+  {
+   "item_id": "5",
+   "description": "Designer sunglasses mislaid separately",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.5,
+   "rationale": "Mislaid on a separate occasion, so excluded under 2.3.4(a); not an affected item."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage and dispatch charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

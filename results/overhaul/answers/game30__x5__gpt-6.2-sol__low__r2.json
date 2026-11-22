@@ -1,0 +1,121 @@
+{
+ "game": 30,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 15.0,
+  "ref_chars": 26221
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for flooded circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1260.0,
+   "price_log_sd": 0.25,
+   "rationale": "Rainwater entering from outside is flood under §2.5, not escape of water under §2.4; the schedule does not establish c2 cover, so §3.6 bars the labour. If flood cover were confirmed, 12 hours at €105 would be €1,260 under §7.1.7(e)–(f)."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Without scheduled c2 flood cover, §3.6.2(f) bars even the first journey charge. If flood cover were confirmed, the first journey would be eligible under §7.1.7(g) at 1 × €79."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 3.6 bars the claim without scheduled flood cover, and §§4.3(d) and 5.2.2 independently exclude separate procurement of working equipment used for the billed extraction. The positive estimate is a notional gross value for one pump procurement, not an allowance."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 175.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 3.6 bars the claim without scheduled flood cover; even with that cover, §5.2.2 includes the pump in the extraction charge and does not pay it separately. The positive estimate is a notional charge for one pump deployment."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 850.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6 bars mitigation costs when c2 flood cover is not established. If flood cover were confirmed, §5.2.2 would treat extraction as one operation, including labour and equipment, estimated at €850."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 3.6.2(c) bars materials because c2 flood cover is not established. If flood cover were confirmed, the materials built into the affected circuits would fall under §7.1.7(c), at an estimated €180 for the invoiced lot."
+  },
+  {
+   "item_id": "7",
+   "description": "Boiler, flue and storage tank renewal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12500.0,
+   "price_log_sd": 0.33,
+   "rationale": "The fixed boiler system is insured property under §4.2.2, but §3.6.2(a) bars its replacement without scheduled c2 flood cover. If flood cover were confirmed, §7.1.1(c) would allow one equivalent installed domestic boiler package, including flue and storage tank, estimated at €12,500."
+  },
+  {
+   "item_id": "8",
+   "description": "Supply pipework adaptation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(a) bars adaptation work without scheduled c2 flood cover. If flood cover were confirmed, §7.1.7(d) would allow the necessary adaptation of the immediately adjoining connections, estimated at €950 for the invoiced flat rate."
+  },
+  {
+   "item_id": "9",
+   "description": "Old boiler system disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(e) bars removal and disposal without scheduled c2 flood cover. If flood cover were confirmed, §5.2.1 would allow necessary removal and disposal of the unusable system, estimated at €650 for one system."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars the charge without scheduled c2 flood cover, and §7.1.8(d) independently excludes a second journey for the same event, even from another trade. The conditional estimate for one eligible journey is €79."
+  }
+ ]
+}

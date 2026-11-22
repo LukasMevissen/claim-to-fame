@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "base",
+ "run": 2,
+ "meta": {
+  "seconds": 7.4,
+  "ref_chars": 25352
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "The existing fixed kitchen unit qualifies as a building component under §4.2.2, with no kitchen-specific exclusion. If the surge is confirmed to be atmospheric under §2.3.3 and the fire group is in force, §§7.1.9–7.1.10 allow one equivalent replacement at €1,413 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.12,
+   "rationale": "Necessary installation of a covered replacement follows the unit under §7.1.11, at €480 gross for one installation. Any labour for unrelated or uninsured equipment must be separated under §9.5."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.45,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.28,
+   "rationale": "The claim establishes that a floor-standing console was already in use, but not that it was damaged or could not be reused. Under §§7.1.5 and 7.1.7, one equivalent console is estimated at €61 gross if its replacement is shown to be necessary for the covered repair."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.15,
+   "rationale": "Under §7.1.11, freight is covered to the extent it relates to covered replacement equipment: one shipment at €43 gross. Freight for any non-covered items must be apportioned out."
+  }
+ ]
+}

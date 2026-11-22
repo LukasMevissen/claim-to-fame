@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "seconds": 8.6,
+  "ref_chars": 26395
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Standard pipe repair materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.22,
+   "rationale": "Section 2.4.3 covers the failed indoor supply pipe, and §7.1.7(c) covers like-for-like pipe, seals and insulation. The comparable material lines in Case 39 total at least €190 gross, supporting €200 for the single billed package."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 76.0,
+   "price_log_sd": 0.58,
+   "rationale": "Section 7.1.7(g) covers necessary trade labour for the repair. The invoice bills one flat rate rather than an hourly quantity, so the supplied €76 unit benchmark is applied once."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice, regardless of the number of visits. One billed charge at €81 gross gives €81."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and one equipment deployment charge per drying operation. One flat-rate deployment at the €439 benchmark gives €439 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the wall opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(a) covers making good the necessary access opening, and §7.1.5 confines the work to the affected area. One localized closure and repainting at the €453 benchmark gives €453 gross."
+  }
+ ]
+}

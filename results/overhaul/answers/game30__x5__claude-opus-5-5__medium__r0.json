@@ -1,0 +1,124 @@
+{
+ "game": 30,
+ "arm": "x5",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 23844,
+  "output_tokens": 1592,
+  "seconds": 24.7,
+  "ref_chars": 26221
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour checking and rewiring flooded basement circuits, 12 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.3,
+   "rationale": "Surface rainwater flooding is inundation, a further natural hazard under 2.1(c2). Nothing shows that group was taken, so the 3.6 bar removes all labour under 3.6.2(b). If it were covered, 12 h × ~75 = 900."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs (electrician)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "Every journey charge is barred under 3.6.2(f) because the inundation peril is not recorded. If covered, this would be the one journey charge allowed under 7.1.7(g), at about 79."
+  },
+  {
+   "item_id": "3",
+   "description": "Procurement of a motor pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.6,
+   "rationale": "This is working equipment, which is not insured property (4.3(d)) and is not separately indemnified alongside the measure (5.2.2, 7.1.8(b)). The claim is also barred under 3.6."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.6,
+   "rationale": "Working equipment (4.3(d), 5.2.2), and it duplicates the procurement in line 3. The 3.6 bar also applies."
+  },
+  {
+   "item_id": "5",
+   "description": "Water extraction from the flooded basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.45,
+   "rationale": "Removal of standing water is a measure expressly barred under 3.6.2(d) when the inundation peril is uninsured. If covered, it would be a 5.2.2 measure at about 600."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical materials for rewiring",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.5,
+   "rationale": "Materials are barred under 3.6.2(c). If covered, roughly 80 for small materials built into the work."
+  },
+  {
+   "item_id": "7",
+   "description": "Renew boiler incl. flue gas system and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12000.0,
+   "price_log_sd": 0.4,
+   "rationale": "Replacement of building plant is barred under 3.6.2(a): the damage is inundation from flooding and no (c2) cover is shown. If covered, roughly 12,000 for a like-for-like gas boiler with flue and tank, installed."
+  },
+  {
+   "item_id": "8",
+   "description": "Adjust supply pipework to fit replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.45,
+   "rationale": "Adaptation work belonging to a replacement is barred under 3.6.2(a). If covered under 7.1.7(d), about 900."
+  },
+  {
+   "item_id": "9",
+   "description": "Dispose of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.05,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Disposal is barred under 3.6.2(e). If covered, about 400."
+  },
+  {
+   "item_id": "10",
+   "description": "Vehicle costs (heating)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.15,
+   "rationale": "Barred under 3.6.2(f). Even if the claim were covered, this is a second journey charge for the same event and is excluded by 7.1.8(d)."
+  }
+ ]
+}

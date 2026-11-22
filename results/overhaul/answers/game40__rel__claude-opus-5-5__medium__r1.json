@@ -1,0 +1,201 @@
+{
+ "game": 40,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 30750,
+  "output_tokens": 1850,
+  "seconds": 16.3,
+  "ref_chars": 26091
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Profipress elbow 90° copper 15mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.35,
+   "rationale": "Materials for covered heating pipe repair (2.4.3, 7.1.7(c)); press fittings ~12-15 EUR each gross. Note pipe is 15mm, so 15mm elbows match."
+  },
+  {
+   "item_id": "2",
+   "description": "Profipress elbow 90° copper 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.4,
+   "rationale": "28mm elbows do not match the 15mm pipe documented as replaced; 7.1.8(e) dimension mismatch may exclude. If paid, ~30 EUR each."
+  },
+  {
+   "item_id": "3",
+   "description": "Profipress elbow 45° copper 28mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.35,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.4,
+   "rationale": "28mm fitting not matching the 15mm repair; 7.1.8(e) likely excludes. If paid ~30 EUR."
+  },
+  {
+   "item_id": "4",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.45,
+   "rationale": "Minor fixings, 7.1.7(c)/7.1.8(e) last sentence keeps them covered."
+  },
+  {
+   "item_id": "5",
+   "description": "Two-screw pipe clamp 25mm",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.0,
+   "price_log_sd": 0.4,
+   "rationale": "Fixings for repaired run; 25mm clamp is a size mismatch to 15mm pipe but treated as minor fixings under 7.1.7(c)."
+  },
+  {
+   "item_id": "6",
+   "description": "Copper pipe 15x1, 6.4 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.4,
+   "rationale": "Description says a pipe section was cut out; reference case ~1 m. 6.4 m may exceed documented repair (7.1.8(e)); pipe ~10 EUR/m gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Service technician hours 6.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 540.0,
+   "price_log_sd": 0.35,
+   "rationale": "Labour for covered repair, 7.1.7(g); but invoice mixes maintenance work, possible pro-rata cut. Prior ~84/h."
+  },
+  {
+   "item_id": "8",
+   "description": "Helper hours 5.75 h",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 340.0,
+   "price_log_sd": 0.4,
+   "rationale": "Helper labour for repair, 7.1.7(g); ~60/h."
+  },
+  {
+   "item_id": "9",
+   "description": "Rock wool pipe insulation 6 pcs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 135.0,
+   "price_log_sd": 0.3,
+   "rationale": "Re-insulation like-for-like, 7.1.7(c); reference case 18 >=107, prior ~146."
+  },
+  {
+   "item_id": "10",
+   "description": "Binding wire 2 kg",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.65,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.45,
+   "rationale": "Consumable for insulation fixing, 7.1.7(c); 2 kg may be excessive; ~10 EUR/kg."
+  },
+  {
+   "item_id": "11",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.45,
+   "rationale": "Lump-sum consumables expressly covered by 7.1.8(e) last sentence."
+  },
+  {
+   "item_id": "12",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 75.0,
+   "price_log_sd": 0.2,
+   "rationale": "One travel charge per contractor per invoice, 7.1.7(f); prior ~80."
+  },
+  {
+   "item_id": "13",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 55.0,
+   "price_log_sd": 0.3,
+   "rationale": "Debris removal 5.2.1/7.1.8(a); reference >=57, prior ~62."
+  },
+  {
+   "item_id": "14",
+   "description": "Repainting basement hallway outside boiler room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.5,
+   "rationale": "Room not affected by water; 7.1.5/3.5 exclude work beyond affected parts."
+  },
+  {
+   "item_id": "15",
+   "description": "Laminate replacement storage room (undamaged)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 700.0,
+   "price_log_sd": 0.5,
+   "rationale": "Undamaged room, maintenance/improvement; 7.1.5, 7.1.8(a)."
+  },
+  {
+   "item_id": "16",
+   "description": "Outdoor garden tap service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.5,
+   "rationale": "Maintenance unrelated to the loss, 7.1.8(a)."
+  },
+  {
+   "item_id": "17",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative charge excluded by 7.1.8(b)."
+  }
+ ]
+}

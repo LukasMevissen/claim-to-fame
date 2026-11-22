@@ -1,0 +1,201 @@
+{
+ "game": 36,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31288,
+  "output_tokens": 2594,
+  "seconds": 23.7,
+  "ref_chars": 24987
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Cleaning of affected floor, utility room",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 95.0,
+   "price_log_sd": 0.35,
+   "rationale": "Escape of water from a washing machine hose (2.4.2(a)); cleaning of affected surfaces is covered under 7.1.7(h). Price is calibrated to Case 12's combined flat rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Cleaning of affected floor, hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 100.0,
+   "price_log_sd": 0.35,
+   "rationale": "The hallway was affected by the escaped water, so cleaning is covered under 7.1.7(h). Price is calibrated to Case 12."
+  },
+  {
+   "item_id": "3",
+   "description": "Inspection of washing machine connection",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.35,
+   "rationale": "Examining the source to confirm it no longer discharges is covered under 7.1.7(e), even though the appliance itself is not insured."
+  },
+  {
+   "item_id": "4",
+   "description": "Removal and disposal of skirting boards",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.35,
+   "rationale": "Dismantling and disposing of affected components is covered under 7.1.7(a) and 5.2.1."
+  },
+  {
+   "item_id": "5",
+   "description": "Replace skirting boards",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.35,
+   "rationale": "Skirting is fixed trim and therefore a building component (4.2.2); like-for-like replacement is covered. Case 12's combined flat rate of 423-514 is shared across lines 1-5."
+  },
+  {
+   "item_id": "6",
+   "description": "Cleaning/repainting upstairs bedroom",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.5,
+   "rationale": "The bedroom was not affected by the water, so this work is excluded under 7.1.5 and 3.5."
+  },
+  {
+   "item_id": "7",
+   "description": "Moisture measurement utility room and hallway",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 160.0,
+   "price_log_sd": 0.3,
+   "rationale": "Moisture measurement is covered under 7.1.7(b). Price is set at the level seen in Case 21."
+  },
+  {
+   "item_id": "8",
+   "description": "Drying of affected floor area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 190.0,
+   "price_log_sd": 0.35,
+   "rationale": "Necessary drying is covered under 7.1.7(b). Case 12 put the total drying package at 605-680, which lines 7-10 share."
+  },
+  {
+   "item_id": "9",
+   "description": "Drying unit rental",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 130.0,
+   "price_log_sd": 0.35,
+   "rationale": "Hire of drying equipment is covered under 7.1.7(e)."
+  },
+  {
+   "item_id": "10",
+   "description": "Skilled worker hours 4 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 152.0,
+   "price_log_sd": 0.15,
+   "rationale": "Trade labour is covered under 7.1.7(g). Per the price prior, about 38 per hour x 4 hours."
+  },
+  {
+   "item_id": "11",
+   "description": "Moisture measurement/drying basement storage",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.5,
+   "rationale": "The basement storage room was outside the affected rooms; under 7.1.7(b) drying does not extend to other rooms, and 7.1.5 confines indemnity to affected parts."
+  },
+  {
+   "item_id": "12",
+   "description": "Transport of painting to restorer",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.8,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.45,
+   "rationale": "Covered as conservation of an item of particular value under 5.2.6. The item was not scheduled, so the limit is EUR 1,000 net (1,190 gross) for all measures together, set first against restoration and the balance in invoice order. This line is first in that order, so it likely receives the balance."
+  },
+  {
+   "item_id": "13",
+   "description": "Assessment of painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.6,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.6,
+   "rationale": "Falls under the shared 5.2.6 limit of 1,190 gross. Only what remains after restoration and transport can be applied here."
+  },
+  {
+   "item_id": "14",
+   "description": "Drying and stabilisation of painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.4,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.7,
+   "rationale": "Falls under the shared 5.2.6 limit and is last in invoice order, so the limit is likely already exhausted."
+  },
+  {
+   "item_id": "15",
+   "description": "Full restoration of painting",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.25,
+   "rationale": "The 5.2.6 limit is set first against restoration, so this line is capped at 1,190 gross."
+  },
+  {
+   "item_id": "16",
+   "description": "Restoration of second painting in basement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.6,
+   "rationale": "This painting was not affected by the insured event, so there is no cover under 7.1.5 or 5.2.6."
+  },
+  {
+   "item_id": "17",
+   "description": "Administrative/claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative and handling charges are not repair costs under 7.1.8(b); this line type was never paid in earlier cases."
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "game": 47,
+ "arm": "base",
+ "run": 0,
+ "meta": {
+  "seconds": 17.2,
+  "ref_chars": 27616
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Internal frost-burst filling valve",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 52.0,
+   "price_log_sd": 0.11,
+   "rationale": "Sections 2.4.4 and 7.1.9 cover like-for-like renewal of the fractured internal valve. One valve is estimated at €52 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Connection hose",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.9 covers connection elements that need renewal with the fractured valve. One hose is estimated at €27 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Senior installer hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 299.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 7.1.7(f) and 7.1.9 cover necessary valve-repair labour. Three hours at about €100 gross per hour give €299 using the calibrated line estimate."
+  },
+  {
+   "item_id": "4",
+   "description": "Auxiliary and cleaning material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.24,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 7.1.7(e) and 7.1.9 cover consumables actually used in the repair, but the generic line does not distinguish them from excluded small equipment under 3.6(c). If substantiated, €18 gross is reasonable for a small quantity."
+  },
+  {
+   "item_id": "5",
+   "description": "Plumber vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.08,
+   "rationale": "Sections 7.1.9 and 7.1.11 allow one attendance by the plumber for covered work. Same-wording references support €40 gross for the visit."
+  },
+  {
+   "item_id": "6",
+   "description": "Thermal imaging for leak location",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 17.6,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.6 and 5.2.2 expressly cover imaging needed to trace the escape, notwithstanding the ordinary tools exclusion. The €17.60 gross equipment charge is well within the €2,500 aggregate leak-location cap."
+  },
+  {
+   "item_id": "7",
+   "description": "Facade damage from internally escaped water",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.55,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.65,
+   "rationale": "Section 2.4.3 covers render damaged when water from the internal escape froze, without the optional external-frost cover. Under 7.1.12, allow about €150 gross only if this line prices distinct local repair work rather than a heading or duplicate charge."
+  },
+  {
+   "item_id": "8",
+   "description": "Loose plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.4.3 and 7.1.7(a) cover removal of loose plaster in the area damaged by the internal escape. Allow €85 gross for local removal if separately charged without duplicating labour."
+  },
+  {
+   "item_id": "9",
+   "description": "Base plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3 and 7.1.7(c)–(d) cover like-for-like base plaster on the affected patch. The comparable gross line estimate is €38."
+  },
+  {
+   "item_id": "10",
+   "description": "Additional work",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.13,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.65,
+   "rationale": "Sections 7.1.12 and 9.6 require enough detail to allocate the charge to covered work on the affected patch. If itemisation establishes a distinct minor repair task, estimate €60 gross."
+  },
+  {
+   "item_id": "11",
+   "description": "Newly plastered substrate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 31.0,
+   "price_log_sd": 0.3,
+   "rationale": "Sections 7.1.5 and 7.1.7(c) cover necessary substrate preparation within the affected area. The comparable gross line estimate is €31."
+  },
+  {
+   "item_id": "12",
+   "description": "Facade paint, four coats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 59.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 7.1.5, 7.1.7(d) and 7.1.10 cover finishing the damaged patch only to the pre-loss specification and for the coats it requires. The comparable gross line estimate is €59."
+  },
+  {
+   "item_id": "13",
+   "description": "Drying",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 254.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3 and 7.1.7(c) cover necessary drying of the fabric saturated by the internal escape before reinstatement. The comparable gross line estimate is €254."
+  },
+  {
+   "item_id": "14",
+   "description": "Priming",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 117.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(c)–(d) cover necessary priming of the repaired area for the like-for-like finish. The comparable gross line estimate is €117."
+  },
+  {
+   "item_id": "15",
+   "description": "Painter hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 277.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 7.1.5 and 7.1.7(f) cover labour on the damaged patch, not work on unaffected facade areas. Five hours at about €55 gross per hour give €277 using the calibrated line estimate."
+  },
+  {
+   "item_id": "16",
+   "description": "Flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 40.0,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 3.6(b) and 7.1.12 exclude overhead charges, and this line identifies no covered task or attendance. If clarified as one eligible painter attendance under 7.1.11, estimate €40 gross."
+  }
+ ]
+}

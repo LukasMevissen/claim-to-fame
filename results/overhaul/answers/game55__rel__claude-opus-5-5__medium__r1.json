@@ -1,0 +1,124 @@
+{
+ "game": 55,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31240,
+  "output_tokens": 1028,
+  "seconds": 10.0,
+  "ref_chars": 26435
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.15,
+   "rationale": "One travel charge per contractor per invoice indemnified under 7.1.7(f); reference level ~81-90."
+  },
+  {
+   "item_id": "2",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 27.0,
+   "price_log_sd": 0.25,
+   "rationale": "Consumable installation material under 7.1.7(c); reference case 39 >=24."
+  },
+  {
+   "item_id": "3",
+   "description": "Stainless steel pipe 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.25,
+   "rationale": "Like-for-like replacement pipe section, 7.1.7(c); references 31-42."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation 1 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.0,
+   "price_log_sd": 0.2,
+   "rationale": "Standard insulation as installed before, 7.1.7(c); reference ~22-23."
+  },
+  {
+   "item_id": "5",
+   "description": "Installation 1 hr",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.75,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.3,
+   "rationale": "Installer labour 7.1.7(g); case 39 installer hour >=76. Possible duplication with technician hours but references paid it."
+  },
+  {
+   "item_id": "6",
+   "description": "Service technician hours 9",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 760.0,
+   "price_log_sd": 0.15,
+   "rationale": "Trade labour customary rate, 7.1.7(g); case 39 identical 9 hrs >=732."
+  },
+  {
+   "item_id": "7",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.25,
+   "rationale": "Drying equipment flat-rate deployment once per operation, 7.1.7(b),(e); references 403-580+."
+  },
+  {
+   "item_id": "8",
+   "description": "Painting disturbed area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 600.0,
+   "price_log_sd": 0.25,
+   "rationale": "Making good opening 7.1.7(a); references >=416 and >=633."
+  },
+  {
+   "item_id": "9",
+   "description": "Full repaint of entire wall 8 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.06,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "7.1.6: adjoining unaffected sections only if matching material unobtainable; same paint still available, so excluded under 7.1.5."
+  },
+  {
+   "item_id": "10",
+   "description": "Repaint remaining walls and ceiling",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 400.0,
+   "price_log_sd": 0.5,
+   "rationale": "Unaffected surfaces painted for matching; excluded by 7.1.5(a) and 7.1.6."
+  }
+ ]
+}

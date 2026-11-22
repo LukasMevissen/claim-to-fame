@@ -1,0 +1,77 @@
+{
+ "game": 45,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 9.0,
+  "ref_chars": 25666
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English police report translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.35,
+   "rationale": "Clauses 3.1.6 and 7.1.8(f) exclude claim-document translation even when the police report is required for cover. The conditional estimate is 2 hours × €90."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation working materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.6,
+   "rationale": "Clauses 7.1.8(e)–(f) exclude the translator's working materials and disbursements associated with the excluded translation. The conditional estimate is €15 for one charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Stolen watch, excluding the premium upgrade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2375.0,
+   "price_log_sd": 0.05,
+   "rationale": "Clause 7.1.9 values the watch at the pre-loss grade, and the unscheduled watch is capped at €2,500 under 4.2.2 and 4.4. Allocating the single €150 event deductible under 7.8 proportionally across the €3,000 covered loss gives €2,500 − €125 = €2,375."
+  },
+  {
+   "item_id": "4",
+   "description": "Cash taken in the robbery",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 475.0,
+   "price_log_sd": 0.05,
+   "rationale": "The approximately €900 in stolen cash is capped at €500 under 2.3.3 and 4.2.3. Its proportional share of the single €150 event deductible is €25, leaving €475."
+  },
+  {
+   "item_id": "5",
+   "description": "Designer sunglasses mislaid separately",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.55,
+   "rationale": "Clauses 2.3.4(a) and 7.1.10 exclude the sunglasses because they were mislaid separately, not taken in the robbery. The conditional estimate is €300 for one pair."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.08,
+   "rationale": "Clauses 5.2.3 and 7.1.8(b) exclude shipping for replacement property or documents, even when billed alongside a covered settlement. The conditional estimate is €26 for one shipment."
+  }
+ ]
+}

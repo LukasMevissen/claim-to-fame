@@ -1,0 +1,55 @@
+{
+ "game": 31,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "seconds": 7.0,
+  "ref_chars": 25218
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English police report translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.3,
+   "rationale": "The police report is required under §2.3.3, but §§3.1.6 and 7.1.8(f) exclude the cost of translating it for the claim. The conditional estimate is 68 lines at €2.50 per line."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation working materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 7.1.8(e)–(f) exclude the translator’s working materials and surcharges associated with the excluded translation. The conditional estimate is €10 for one charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Robbery settlement for stolen Tudor watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.05,
+   "rationale": "The reported armed robbery away from home is covered under §§2.3 and 11.1. Subject to the itemisation required by §7.1.10, the pictured Tudor Royal day-date watch reaches the €2,500 per-item cap and the cash loss exceeds its €500 cap; the €5,000 away-from-home limit does not reduce the €3,000 subtotal, and the single €50 deductible leaves €2,950."
+  },
+  {
+   "item_id": "4",
+   "description": "Settlement forwarding charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.8(b) excludes forwarding and shipping even when billed alongside covered property. The conditional estimate is €26 for one shipping charge."
+  }
+ ]
+}

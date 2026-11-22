@@ -1,0 +1,80 @@
+{
+ "game": 38,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 33693,
+  "output_tokens": 1209,
+  "seconds": 11.9,
+  "ref_chars": 25388
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit - living room, like-for-like",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1800.0,
+   "price_log_sd": 0.4,
+   "rationale": "Lightning overvoltage (2.3.3) to a fixed climate unit about 7 m from the hob, so the 5 m exclusion in 2.3.10(c) does not apply. Like-for-like replacement is indemnified under 7.1.9(a) at a customary installed-trade rate."
+  },
+  {
+   "item_id": "2",
+   "description": "Air conditioning unit - kitchen",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.04,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.4,
+   "rationale": "The unit sits about 2 m from the hob, so 2.3.10(c) excludes overvoltage damage to it, and no kitchen climate endorsement is on the schedule. Not indemnified."
+  },
+  {
+   "item_id": "3",
+   "description": "Installation - living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.55,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 550.0,
+   "price_log_sd": 0.45,
+   "rationale": "Under 7.1.9(c) the labour of removing, fitting, connecting and commissioning the covered replacement is indemnified. However, this line type was never paid in the earlier cases, so cover is uncertain."
+  },
+  {
+   "item_id": "4",
+   "description": "Installation - kitchen unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.45,
+   "rationale": "This is an ancillary charge to the excluded kitchen unit. Under 7.1.11 it follows its principal item, so it is not covered."
+  },
+  {
+   "item_id": "5",
+   "description": "Floor console for living-room unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 250.0,
+   "price_log_sd": 0.45,
+   "rationale": "The old stand was scorched and cannot be reused, and the replacement is an equivalent support needed to set the unit in place. It is indemnified under 7.1.9(b)."
+  },
+  {
+   "item_id": "6",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.5,
+   "rationale": "Ordinary carriage is covered for the living-room unit only. Under 7.1.11 the charge is apportioned by value, giving roughly 50-55% of a full freight charge of about 85 EUR."
+  }
+ ]
+}

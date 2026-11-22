@@ -1,0 +1,69 @@
+{
+ "game": 51,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 30846,
+  "output_tokens": 1160,
+  "seconds": 12.8,
+  "ref_chars": 26041
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Pipe repair – replacement section, sealing, rock-wool insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 175.0,
+   "price_log_sd": 0.35,
+   "rationale": "Escape of water from the supply pipe is covered (2.4.2/2.4.3). A like-for-like section with sealing and insulation falls under 7.1.7(c). Priced from the Case 39 materials (pipe, sealing, insulation, fittings)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 450.0,
+   "price_log_sd": 0.6,
+   "rationale": "Labour of the engaged trade at customary rates is covered under 7.1.7(g). A flat rate for opening, repairing and supporting over a couple of visits is estimated between the hourly prior and Case 39's much larger labour totals."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.1,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f), and this is the only one on the invoice. The price prior is about 81."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.25,
+   "rationale": "Drying before closing the wall is covered under 7.1.7(b), and one flat-rate equipment deployment per drying operation under 7.1.7(e). Case 39 proved at least 403; the prior is about 439."
+  },
+  {
+   "item_id": "5",
+   "description": "Painting disturbed wall area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.25,
+   "rationale": "Making good the opening needed to reach the pipe is covered under 7.1.7(a), limited to the affected patch. Case 39 proved at least 416; the prior is about 453."
+  }
+ ]
+}

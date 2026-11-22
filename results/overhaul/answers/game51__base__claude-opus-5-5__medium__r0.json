@@ -1,0 +1,69 @@
+{
+ "game": 51,
+ "arm": "base",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 30961,
+  "output_tokens": 1264,
+  "seconds": 14.3,
+  "ref_chars": 25775
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Pipe section, sealing material, rock-wool insulation (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.4,
+   "rationale": "This is an escape-of-water repair with like-for-like standard materials, so it is covered under 7.1.7(c). The amount is priced from the itemised materials of comparable case 39 (pipe, fittings, sealing and insulation, about 150–190)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 900.0,
+   "price_log_sd": 0.65,
+   "rationale": "Customary labour for the trade is covered under 7.1.7(g). This summary line bundles the labour for several visits; the same job in case 39 ran to about 1,500 in hours, while the price prior suggests only about 76 per unit. The estimate sits between the two with high uncertainty."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.12,
+   "rationale": "Under 7.1.7(f) one travel charge per contractor per invoice is covered, and this is the only one on the plumber's invoice. It is priced at the prior of about 81."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 440.0,
+   "price_log_sd": 0.25,
+   "rationale": "Drying needed before the repair is covered under 7.1.7(b), and 7.1.7(e) allows the flat-rate deployment charge once per drying operation. It is priced at the prior of about 440 (case 39: at least 403)."
+  },
+  {
+   "item_id": "5",
+   "description": "Painting disturbed wall area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.25,
+   "rationale": "Making good the opening is covered under 7.1.7(a), limited to the affected patch. It is priced at the prior of about 453 (case 39: at least 416)."
+  }
+ ]
+}

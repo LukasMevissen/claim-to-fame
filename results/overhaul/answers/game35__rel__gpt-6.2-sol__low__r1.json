@@ -1,0 +1,33 @@
+{
+ "game": 35,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 4.7,
+  "ref_chars": 25089
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Clothing and jewellery stolen from the car",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1000.0,
+   "price_log_sd": 0.7,
+   "rationale": "Theft is excluded under §§2.1 and 3.1.4. The clothing and jewellery are also excluded personal property under §4.3(d), and they were inside a vehicle away from the insured location (§§4.3(f), 4.5), so the payable threshold is €0."
+  },
+  {
+   "item_id": "2",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.11,
+   "rationale": "The private car is excluded under §4.3(e), and vehicle and journey charges are excluded under §§5.2.5 and 7.1.8(d). No insured repair or debris transport is involved, so the payable threshold is €0."
+  }
+ ]
+}

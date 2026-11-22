@@ -1,0 +1,69 @@
+{
+ "game": 51,
+ "arm": "x5",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 31294,
+  "output_tokens": 1324,
+  "seconds": 13.9,
+  "ref_chars": 26395
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Pipe repair – replacement pipe section, sealing, rock-wool insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 185.0,
+   "price_log_sd": 0.3,
+   "rationale": "Escape of water from the supply pipe is covered. Like-for-like materials, sealing and insulation are repair costs under 7.1.7(c). The flat rate is valued as the sum of the material lines revealed in the itemised draw of the same claim (case 39)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour (flat rate)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 808.0,
+   "price_log_sd": 0.45,
+   "rationale": "Trade labour is covered under 7.1.7(g). The flat rate summarises the installer and technician hours, valued at the case 39 level of about 76 + 732; earlier flat-rate labour summaries (case 18) matched the sum of the hours."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.1,
+   "rationale": "One travel charge per contractor per invoice is covered under 7.1.7(f), and this is the only one on the invoice; customary rate about 81."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer flat-rate charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.9,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.2,
+   "rationale": "Drying needed before closing the wall is covered under 7.1.7(b) and (e), with one flat-rate deployment per drying operation; prior level about 439."
+  },
+  {
+   "item_id": "5",
+   "description": "Painting disturbed wall area and closing opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.2,
+   "rationale": "Making good the opening created to reach the pipe is covered under 7.1.7(a), limited to the affected patch; prior level about 453 per piece."
+  }
+ ]
+}

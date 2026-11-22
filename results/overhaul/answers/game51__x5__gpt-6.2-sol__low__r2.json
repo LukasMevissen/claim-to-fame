@@ -1,0 +1,66 @@
+{
+ "game": 51,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 8.2,
+  "ref_chars": 26395
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Like-for-like pipe repair materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 180.0,
+   "price_log_sd": 0.25,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the failed indoor supply pipe and the standard sealing and insulation used to repair it. One materials flat rate is estimated at €180 gross using the comparable components in Case 39."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation and service-technician labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 825.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.7(g) covers the labour needed for the pipe repair. The invoice bills one flat rate, not one hour; €825 gross is based on the comparable installer and service-technician charges in Case 39."
+  },
+  {
+   "item_id": "3",
+   "description": "Vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.06,
+   "rationale": "Section 7.1.7(f) allows the first travel charge per contractor per invoice. The sole charge on this invoice is one flat rate at €81 gross."
+  },
+  {
+   "item_id": "4",
+   "description": "Construction dryer deployment",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 439.0,
+   "price_log_sd": 0.27,
+   "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one equipment deployment charge per drying operation. One flat rate at the reference level is €439 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "Close and repaint the disturbed wall patch",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 453.0,
+   "price_log_sd": 0.27,
+   "rationale": "Section 7.1.7(a) covers making good the necessary access opening, and §7.1.5 limits the work to the affected patch. One wall reinstatement item at the reference level is €453 gross."
+  }
+ ]
+}

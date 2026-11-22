@@ -1,0 +1,209 @@
+{
+ "game": 41,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 24.3,
+  "ref_chars": 27635
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Bicycle frame replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 142.06,
+   "price_log_sd": 0.31,
+   "rationale": "Theft damage to the frame is covered under 2.3.1(b) and 7.1.7(b), at the pre-loss grade. The EUR 500 shared mobility limit scales the EUR 229 estimate by 500/806, with no stated deductible."
+  },
+  {
+   "item_id": "2",
+   "description": "Bicycle brake replacement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 86.85,
+   "price_log_sd": 0.23,
+   "rationale": "The brakes sustained theft damage, so equivalent parts are covered under 7.1.7(b). The EUR 140 estimate is scaled by 500/806 under 4.2.2."
+  },
+  {
+   "item_id": "3",
+   "description": "Replacement AirTag tracker",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 35.0,
+   "price_log_sd": 0.25,
+   "rationale": "Under 4.2.3, the tracker must itself have been taken or damaged. Its use to locate the bicycle does not establish a loss requiring replacement."
+  },
+  {
+   "item_id": "4",
+   "description": "Service of second household bicycle",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.45,
+   "rationale": "The second bicycle was unaffected, and routine servicing is independently excluded under 3.1.6 and 7.1.5."
+  },
+  {
+   "item_id": "5",
+   "description": "New helmet and lights",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 85.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.1.7 and 4.2.3 exclude supplementary equipment unless it replaces equipment itself taken or damaged. No such loss is established for the helmet or lights."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.72,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 16.13,
+   "price_log_sd": 0.17,
+   "rationale": "Necessary carriage of repair parts or the damaged bicycle is covered under 7.1.7(f), but unrelated purchases must be separated under 7.1.10. The EUR 26 covered-shipping estimate is scaled by 500/806."
+  },
+  {
+   "item_id": "7",
+   "description": "Bicycle service vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.15,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.6,
+   "price_log_sd": 0.29,
+   "rationale": "Sections 7.1.7(g) and 7.1.8(f) require a distinct attendance necessary for the covered repair; this line does not establish one. If substantiated, EUR 77 would share the cap, giving about EUR 44 at 500/883."
+  },
+  {
+   "item_id": "8",
+   "description": "Assembly costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 70.1,
+   "price_log_sd": 0.22,
+   "rationale": "Fitting the replacement frame and brakes is covered under 7.1.7(c), but assembly for unrelated work is not. The EUR 113 repair assembly estimate is scaled by 500/806."
+  },
+  {
+   "item_id": "9",
+   "description": "Miscellaneous items",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.16,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 4.91,
+   "price_log_sd": 0.55,
+   "rationale": "Sections 7.1.7(e) and 7.1.10 cover sundries only when attributable to the insured repair. If EUR 8 of repair consumables is substantiated, the cap gives about EUR 5 at 500/814."
+  },
+  {
+   "item_id": "10",
+   "description": "Bicycle service apprentice hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.23,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 31.94,
+   "price_log_sd": 0.52,
+   "rationale": "Apprentice labour is eligible under 7.1.7(d), but 7.1.10 requires allocation to theft repair rather than the second bicycle's service. If one separate repair hour is established at EUR 55, it would receive about EUR 32 at 500/861."
+  },
+  {
+   "item_id": "11",
+   "description": "Bicycle service skilled worker hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.39,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 23.08,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 7.1.7(d) and 7.1.8(g) allow distinct repair labour but not hours already billed as assembly. If this is a separate covered EUR 39 hour, it would receive about EUR 23 at 500/845."
+  },
+  {
+   "item_id": "12",
+   "description": "Locksmith call-out to recovery site",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.85,
+   "price_log_sd": 0.27,
+   "rationale": "The initial attendance was necessary to release the bicycle and is separately covered by 5.2.2(a). The EUR 32 call-out estimate is scaled by 500/806."
+  },
+  {
+   "item_id": "13",
+   "description": "Cut and remove seized lock",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 67.0,
+   "price_log_sd": 0.24,
+   "rationale": "Lock cutting and removal needed to release the bicycle are expressly covered by 5.2.2(b). The EUR 108 estimate for both units is scaled by 500/806."
+  },
+  {
+   "item_id": "14",
+   "description": "Vehicle costs for return visit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.1,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.09,
+   "price_log_sd": 0.35,
+   "rationale": "A second attendance is covered under 5.2.2(a) only if actually required for recovery, which is not established here. If a distinct EUR 32 attendance is substantiated, it would receive about EUR 19 at 500/838."
+  },
+  {
+   "item_id": "15",
+   "description": "Mandatory yard storage and release fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 73.82,
+   "price_log_sd": 0.15,
+   "rationale": "The yard required payment before releasing the bicycle, making this a covered third-party charge under 5.2.2(c). EUR 100 plus 19% VAT is EUR 119, scaled by 500/806 under the shared mobility limit."
+  },
+  {
+   "item_id": "16",
+   "description": "Administrative and claim-processing fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.5,
+   "rationale": "Sections 3.1.5 and 7.1.8(d) exclude claim-processing fees. This is separate from the mandatory yard release fee."
+  },
+  {
+   "item_id": "17",
+   "description": "Locksmith apprentice hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.34,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 31.94,
+   "price_log_sd": 0.52,
+   "rationale": "Section 5.2.2(b) covers necessary release labour at every grade, but 7.1.8(g) bars duplicate billing. If this is a separate EUR 55 hour, it would receive about EUR 32 at 500/861."
+  },
+  {
+   "item_id": "18",
+   "description": "Locksmith skilled worker hour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 24.19,
+   "price_log_sd": 0.19,
+   "rationale": "Section 5.2.2(b) covers necessary locksmith labour to release the bicycle, provided it is not already included in the cutting charge. The EUR 39 estimate for the hour is scaled by 500/806."
+  }
+ ]
+}

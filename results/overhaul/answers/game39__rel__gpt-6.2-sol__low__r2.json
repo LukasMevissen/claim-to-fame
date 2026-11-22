@@ -1,0 +1,176 @@
+{
+ "game": 39,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 19.1,
+  "ref_chars": 26181
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Close wall opening and repaint affected area",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 290.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 2.4.2 and 7.1.7(a) cover making good the access opening and restoring the water-damaged finish. €290 gross allows for a small patch and local repainting, not the full room."
+  },
+  {
+   "item_id": "2",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows the first travel charge on this contractor's invoice. The gross reference allowance is €81."
+  },
+  {
+   "item_id": "3",
+   "description": "Sealing material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 12.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.7(c) covers minor consumables used to seal the repaired pipe. €12 gross is a reasonable allowance for one small lot."
+  },
+  {
+   "item_id": "4",
+   "description": "Stainless steel pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.33,
+   "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the replacement section of the failed indoor supply pipe. €30 gross allows for one metre at an equivalent pre-loss specification under 7.1.9."
+  },
+  {
+   "item_id": "5",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.25,
+   "rationale": "Section 7.1.7(c) covers like-for-like reinstatement of the insulation on the repaired section. Case 18 supports about €18 gross for this one-metre line."
+  },
+  {
+   "item_id": "6",
+   "description": "Installer labour",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 63.0,
+   "price_log_sd": 0.79,
+   "rationale": "Section 7.1.7(g) covers necessary installer labour at customary rates. The supplied prior gives €63 gross for one hour."
+  },
+  {
+   "item_id": "7",
+   "description": "Measuring device",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.7(e) covers necessary investigation, but 7.1.8(b) excludes a separate charge for the contractor's own measuring device. €20 gross is conditional on proof of a necessary external hire."
+  },
+  {
+   "item_id": "8",
+   "description": "First service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Sections 7.1.7(a), (e) and (g) cover necessary access, investigation and repair labour. The supplied nine-hour gross prior is €425."
+  },
+  {
+   "item_id": "9",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge per contractor per invoice, even when multiple visits were necessary. €81 is the gross benchmark if separately eligible."
+  },
+  {
+   "item_id": "10",
+   "description": "Construction dryer flat rate",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 65.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.7(b) and (e) cover one dryer deployment for necessary drying before reinstatement. €65 gross reflects brief use on the localized wall damage."
+  },
+  {
+   "item_id": "11",
+   "description": "Short saw blade",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 14.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.8(b) expressly excludes contractor blades as business equipment. €14 gross is the conditional price benchmark for one blade."
+  },
+  {
+   "item_id": "12",
+   "description": "Gunmetal fittings",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.33,
+   "rationale": "Section 7.1.7(c) covers fittings needed to reconnect the replacement pipe. Two standard fittings at about €19 each give €38 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Second stainless steel pipe charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.07,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.33,
+   "rationale": "This repeats line 4, and no separate installed metre is documented. Sections 7.1.8(c)–(d) exclude the apparent duplicate; €30 gross applies if a distinct necessary metre is substantiated."
+  },
+  {
+   "item_id": "14",
+   "description": "One-metre pipe insulation shell",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 18.0,
+   "price_log_sd": 0.3,
+   "rationale": "This appears to repeat the insulation already charged in line 5 for the same localized repair. Under 7.1.8(c)–(d), €18 gross would apply only if a distinct necessary section is documented."
+  },
+  {
+   "item_id": "15",
+   "description": "Second service technician labour charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.26,
+   "rationale": "Section 7.1.8(c) bars duplicate billing, and the second nine-hour entry is not tied to distinct work. If shown to be separate and necessary under 7.1.7(g), the supplied gross prior is €425."
+  }
+ ]
+}

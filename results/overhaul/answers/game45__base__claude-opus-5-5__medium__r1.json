@@ -1,0 +1,80 @@
+{
+ "game": 45,
+ "arm": "base",
+ "run": 1,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 25212,
+  "output_tokens": 1166,
+  "seconds": 11.2,
+  "ref_chars": 24852
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Translation Spanish to English, 2 hrs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 120.0,
+   "price_log_sd": 0.4,
+   "rationale": "Translating the police report for the claim is a substantiation cost the policyholder bears (3.1.6, 7.1.8(f)), so it is not indemnified."
+  },
+  {
+   "item_id": "2",
+   "description": "Material costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.5,
+   "rationale": "Working materials raised alongside an excluded translation charge are excluded under 7.1.8(e) and (f)."
+  },
+  {
+   "item_id": "3",
+   "description": "Compensation stolen watch (premium upgrade)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2350.0,
+   "price_log_sd": 0.08,
+   "rationale": "Robbery abroad is covered. 7.1.9 first limits the line to a like-for-like replacement (about EUR 7,000), then the valuables sub-limit of EUR 2,500 per item applies (4.2.2/4.4), within the EUR 5,000 away-from-home limit. Deducting the EUR 150 deductible once per event, here on this line (7.8), gives 2,500 - 150 = EUR 2,350."
+  },
+  {
+   "item_id": "4",
+   "description": "Compensation for cash taken",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.15,
+   "rationale": "About EUR 900 cash was taken, but the means-of-payment sub-limit is EUR 500 per event (2.3.2, 4.2.3), so the line is EUR 500. The deductible was assumed to come off the watch line."
+  },
+  {
+   "item_id": "5",
+   "description": "Designer sunglasses mislaid separately",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 200.0,
+   "price_log_sd": 0.6,
+   "rationale": "The sunglasses were lost on a separate occasion without force or threat, so they are excluded under 2.3.4(a) and are not an affected item under 7.1.10."
+  },
+  {
+   "item_id": "6",
+   "description": "Shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.5,
+   "rationale": "Carriage and delivery charges are excluded under 7.1.8(b)."
+  }
+ ]
+}

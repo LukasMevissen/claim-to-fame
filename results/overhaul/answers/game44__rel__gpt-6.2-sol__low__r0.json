@@ -1,0 +1,253 @@
+{
+ "game": 44,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 28.0,
+  "ref_chars": 29087
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "15 mm copper elbows, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 2.4.3 and 7.1.7(c) support standard fittings needed to repair the failed indoor heating joint. Four elbows benchmark at €42 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "15 mm copper elbows, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.16,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.8(c) and (e) excludes duplicate or undocumented material; a second set of four same-size elbows is not established by the short repair description. If separately needed, four benchmark at €42 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "28 mm 90° copper elbows, model 01",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.76,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 104.0,
+   "price_log_sd": 0.29,
+   "rationale": "Section 7.1.7(c) covers fittings used in the reinstatement, but §7.1.8(e) requires the 28 mm fittings to be attributable to the documented repair. Five would benchmark at €104 gross if supported."
+  },
+  {
+   "item_id": "4",
+   "description": "28 mm 45° copper elbows, model 02",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 103.0,
+   "price_log_sd": 0.28,
+   "rationale": "The short joint repair does not establish the need for five additional bends under §7.1.8(e). If their use is documented, the five-piece benchmark is €103 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "28 mm 45° copper elbow, model 03",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.78,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 21.0,
+   "price_log_sd": 0.28,
+   "rationale": "A single transition bend is plausible as a necessary fitting under §7.1.7(c), subject to confirming that it was used on the repaired run. The reference supports €21 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Grub screws",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.93,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 9.3,
+   "price_log_sd": 0.16,
+   "rationale": "Section 7.1.7(c) includes ordinary fastenings used in the repair. Eight screws benchmark at €9.30 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "10 mm two-screw clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.18,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.2,
+   "price_log_sd": 0.27,
+   "rationale": "Section 7.1.8(e) requires dimensions that match the documented work; no 10 mm pipe is identified. If the clamps are shown to fit the repair, four benchmark at €19.20 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "15 mm two-screw clamps",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.8,
+   "price_log_sd": 0.24,
+   "rationale": "Section 7.1.7(c) covers necessary pipe fixings, and these match the listed 15 mm copper. Four clamps at about €5.20 each total €20.80 gross."
+  },
+  {
+   "item_id": "9",
+   "description": "Technician labour, 6.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.96,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 619.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers necessary plumbing labour at customary rates. The reference benchmark for 6.75 hours is €619 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "Helper labour, 5.75 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 409.0,
+   "price_log_sd": 0.14,
+   "rationale": "Section 7.1.7(g) permits necessary helper labour, and the claim confirms the helper attended for part of the job. The benchmark for 5.75 hours is €409 gross."
+  },
+  {
+   "item_id": "11",
+   "description": "15 × 1 mm copper pipe",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.7,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 99.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.1.7(c) covers like-for-like copper, but §7.1.8(e) requires support for billing 6.4 m when about 1 m was cut out. The full-line benchmark is €99 gross if the billed length is justified."
+  },
+  {
+   "item_id": "12",
+   "description": "First vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.07,
+   "rationale": "Section 7.1.7(f) permits the first travel charge for this contractor and invoice. One charge benchmarks at €80 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Small parts and consumables",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.23,
+   "rationale": "Section 7.1.7(c) covers installation consumables not already billed elsewhere. The customary lump sum is €43 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "Processing flat fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 15.0,
+   "price_log_sd": 0.55,
+   "rationale": "Section 7.1.8(b) expressly excludes a separate processing charge. The €15 figure is a conditional estimate only."
+  },
+  {
+   "item_id": "15",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.86,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 135.0,
+   "price_log_sd": 0.17,
+   "rationale": "Section 7.1.7(c) covers like-for-like insulation needed on the repaired run, but the six metres need support under §7.1.8(e). The full-line benchmark is €135 gross."
+  },
+  {
+   "item_id": "16",
+   "description": "Rock wool mats",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.09,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 108.0,
+   "price_log_sd": 0.32,
+   "rationale": "Sections 7.1.8(c) and (e) bar duplicate or undocumented insulation, and the claim identifies no separate use for the mats beyond the pipe insulation already billed. Six mats would be about €108 gross if justified separately."
+  },
+  {
+   "item_id": "17",
+   "description": "Binding wire",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.91,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.31,
+   "rationale": "Section 7.1.7(c) covers wire used to secure the replacement insulation. Two units benchmark at €26 gross."
+  },
+  {
+   "item_id": "18",
+   "description": "Technician labour, 7 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.79,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 642.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 7.1.7(g) covers separate necessary repair hours, and the combined 13.75 technician hours broadly fit the reported day and a half. The seven-hour benchmark is €642 gross if this block is distinct repair labour rather than duplicate labour or cleaning."
+  },
+  {
+   "item_id": "19",
+   "description": "Second vehicle charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.002,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 80.0,
+   "price_log_sd": 0.07,
+   "rationale": "Section 7.1.7(f) allows only the first travel charge for this contractor's invoice for the same repair. The conditional one-charge benchmark is €80 gross."
+  },
+  {
+   "item_id": "20",
+   "description": "Hygiene set including gloves",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.006,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 20.0,
+   "price_log_sd": 0.45,
+   "rationale": "Section 7.1.8(b) excludes the contractor's protective equipment, and no separately attributable repair consumables are identified in the kit. The conditional estimate is €20 gross."
+  },
+  {
+   "item_id": "21",
+   "description": "Construction waste disposal",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.09,
+   "rationale": "Sections 5.2.1 and 7.1.7(a) cover necessary disposal of removed pipe and insulation. The closely comparable flat-rate benchmark is €60 gross."
+  },
+  {
+   "item_id": "22",
+   "description": "Tile cleaning, disinfection and coating",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.12,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.36,
+   "rationale": "Sections 7.1.5 and 7.1.8(a) exclude general cleaning and improvement, and the combined line does not establish a need to coat the tiles. If limited removal of leak residue is separable and covered, Case 18 supports a threshold below €60; €45 gross is the estimate."
+  }
+ ]
+}

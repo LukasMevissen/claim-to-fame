@@ -1,0 +1,198 @@
+{
+ "game": 50,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "seconds": 22.7,
+  "ref_chars": 27423
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Disassembly and assembly service",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.88,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 5.2.6 and 5.2.7 cover necessary dismantling and refitting for access or drying, but not repair of the failed seal itself absent an insured fracture. Case 46 supports €90 for the separate access service."
+  },
+  {
+   "item_id": "2",
+   "description": "Construction dryer, 7 days",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 313.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 5.2.7 covers necessary drying supported by moisture readings. The seven billed days fall within the reported drying period and are estimated at €313 gross, with no addition for the unbilled days."
+  },
+  {
+   "item_id": "3",
+   "description": "Unexplained material surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 39.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 7.4.4 bars an unitemised material surcharge. The €39 estimate applies only if an itemised breakdown establishes that the materials were necessary and not already included elsewhere."
+  },
+  {
+   "item_id": "4",
+   "description": "Rock wool pipe insulation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.87,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.22,
+   "rationale": "Sections 5.2.6 and 7.14(c) allow like-for-like mineral-wool insulation if it was damaged or necessarily removed for access. One unit is estimated at €26 gross."
+  },
+  {
+   "item_id": "5",
+   "description": "First construction waste disposal charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.12,
+   "rationale": "Section 5.2.2 allows disposal of the actual insured debris once and gives priority to the first charge. The first-listed disposal charge is estimated at €60 gross for the small load."
+  },
+  {
+   "item_id": "6",
+   "description": "Wall levelling material",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.97,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 38.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 5.2.6 covers levelling needed to make good the affected basement wall. The comparable material line supports €38 gross."
+  },
+  {
+   "item_id": "7",
+   "description": "Rough renovation, 2.78 m²",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.58,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 5.2.6 covers necessary preparation of the damaged wall, but sections 3.5(d) and 7.4.1 bar overlap with the separate levelling and labour charges. If this is distinct preparation, 2.78 m² at about €29/m² gives €81 gross."
+  },
+  {
+   "item_id": "8",
+   "description": "Mounting / service opening",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 19.0,
+   "price_log_sd": 0.1,
+   "rationale": "Section 5.2.6 expressly covers a necessary service opening, provided its labour is not already charged elsewhere. Case 46 supports about €19 gross for one opening."
+  },
+  {
+   "item_id": "9",
+   "description": "90 × 90 cm wall tiles, 5 pieces",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.79,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.27,
+   "rationale": "The tiles are at the inclusive limit in section 7.14(d), but sections 3.5(a) and 7.1.5 still require comparable grade and a justified quantity, including cuts. At about €42/m² for standard-grade tile, five pieces covering 4.05 m² give €170 gross."
+  },
+  {
+   "item_id": "10",
+   "description": "130 × 130 cm designer tiles, 5 pieces",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.32,
+   "rationale": "The tiles exceed the 90 × 90 cm limit in section 7.14(d), and section 3.5(f) bars partial payment on a line that exceeds the standard threshold. The €170 conditional figure reflects a standard-grade equivalent for the damaged area, not the designer order."
+  },
+  {
+   "item_id": "11",
+   "description": "Silicone joints, 3.6 m",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.95,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 47.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 5.2.6 and 7.14(a) allow standard sanitary silicone joints in the reinstated area. At about €13 per metre, 3.6 m gives €47 gross."
+  },
+  {
+   "item_id": "12",
+   "description": "Tiling contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 81.0,
+   "price_log_sd": 0.11,
+   "rationale": "Section 7.4.2 allows the first necessary travel charge per contractor per document. The single tiling travel charge is estimated at €81 gross."
+  },
+  {
+   "item_id": "13",
+   "description": "Skilled worker labour, 14 hours",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.84,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1239.0,
+   "price_log_sd": 0.38,
+   "rationale": "Section 7.4.1 allows customary labour for necessary basement work, excluding hours included in other lines or spent on the attic. For 14 qualifying hours, the supplied prior gives €1,239 gross."
+  },
+  {
+   "item_id": "14",
+   "description": "Remove basement drywall and insulation wool",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.72,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 90.0,
+   "price_log_sd": 0.24,
+   "rationale": "Sections 5.2.1 and 5.2.6 cover necessary removal in the affected basement, subject to adequate breakdown under section 7.4.4 and no duplicate disposal. Case 46 supports about €50 for drywall and €40 for insulation removal, or €90 gross."
+  },
+  {
+   "item_id": "15",
+   "description": "Remove damp basement plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 29.0,
+   "price_log_sd": 0.28,
+   "rationale": "Section 5.2.6 covers necessary removal of damp plaster in the documented basement damage area. The supplied prior assigns €29 gross to the one billed unit."
+  },
+  {
+   "item_id": "16",
+   "description": "Remove attic plaster",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 29.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 3.5(b) and 7.1.5 exclude the unrelated attic work because no leak damage was established there. The €29 conditional figure uses the comparable single-unit plaster removal rate."
+  },
+  {
+   "item_id": "17",
+   "description": "Duplicate construction waste disposal charge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.12,
+   "rationale": "Sections 3.5(d) and 5.2.2 exclude this second charge for the same disposal, even though a different contractor billed it. The €60 conditional figure is the benchmark for one eligible disposal charge."
+  }
+ ]
+}

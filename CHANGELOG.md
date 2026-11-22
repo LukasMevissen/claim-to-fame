@@ -7,6 +7,16 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 <!-- new entries below -->
 
+## Overhaul of the case analysis (2026-11-22)
+
+- **Live: `[llm] analyst = "rel"`.** The model now sees the earlier cases most similar to the
+  current one first instead of the newest 14. Replay of games 30-55 on claude-opus-5-5@medium,
+  2 runs: 69.7k -> 130.1k. Details and the rejected variants: `docs/research/overhaul.md`.
+- Charge search cached per sigma (`c2f/pricing.py`): same quotes, pricing of a 20-line invoice
+  drops from seconds per line to one search per distinct sigma.
+- Off by default: analyst `x5`, decision table (`c2f/decision.py`), case memory (`c2f/memory.py`).
+- The running scheduler loads code and config at start: restart it to pick this up.
+
 ## unreleased: charge agent as shadow run with takeover (2026-11-22, changes quotes after the takeover)
 
 - `[charge_agent] mode = "rule"`, `risk = "neutral"`, `shadow = true`: the agent prices every

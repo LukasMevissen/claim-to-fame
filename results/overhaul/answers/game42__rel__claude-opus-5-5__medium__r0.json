@@ -1,0 +1,80 @@
+{
+ "game": 42,
+ "arm": "rel",
+ "run": 0,
+ "meta": {
+  "served_by": "claude-opus-5-5",
+  "input_tokens": 33509,
+  "output_tokens": 809,
+  "seconds": 8.2,
+  "ref_chars": 25733
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Air conditioning unit - living room (higher-output 7.1 kW replacement)",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.92,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1400.0,
+   "price_log_sd": 0.2,
+   "rationale": "Surge damage covered under 2.3.3; unit 9 m from hob so 2.3.10(c) does not apply. Per 7.1.9/7.1.10 the upgraded unit is not new equipment but is indemnified only up to an equivalent 3.5 kW like-for-like unit (reference case 38: ~1352-1445)."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 470.0,
+   "price_log_sd": 0.2,
+   "rationale": "Labour of removing the old unit and installing and commissioning the replacement is covered under 7.1.9(c), as an ancillary charge following a covered principal item; priced at the reference case 38 level, possibly limited to an equivalent unit."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under 7.1.10 (last paragraph), a console chosen for appearance and not required for the unit is not a replacement cost at all; it falls under 3.5(d)/7.1.8(a), so t = 0."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.85,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.15,
+   "rationale": "Ordinary carriage of a covered replacement is covered under 7.1.9(e)/7.1.12; priced at the reference case 38 level of about 40-43."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.03,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.5,
+   "rationale": "Under 7.1.12, surcharges for expedited or timed delivery are not indemnified unless the insurer agreed in advance, which did not happen here."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.02,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 30.0,
+   "price_log_sd": 0.5,
+   "rationale": "Administrative and handling charges are excluded under 7.1.8(b); this line type was never indemnified in earlier cases."
+  }
+ ]
+}

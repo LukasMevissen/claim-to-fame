@@ -1,0 +1,77 @@
+{
+ "game": 38,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 9.4,
+  "ref_chars": 25388
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1500.0,
+   "price_log_sd": 0.38,
+   "rationale": "The fixed unit suffered lightning-overvoltage damage under §§2.3.3 and 4.2.3 and sits outside the five-metre exclusion in §2.3.10(c). The estimate covers like-for-like equipment only under §7.1.9(a), with no deductible amount supplied."
+  },
+  {
+   "item_id": "2",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 950.0,
+   "price_log_sd": 0.4,
+   "rationale": "The unit is within five metres of the hob, so §2.3.10(c) excludes its surge damage without a kitchen climate endorsement. The positive figure is a conditional equipment estimate, not a payable amount."
+  },
+  {
+   "item_id": "3",
+   "description": "Living-room unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 475.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(c) expressly covers ordinary removal, fitting, connection and commissioning labour for this covered replacement. The estimate is for labour only, excluding the separately billed console and freight."
+  },
+  {
+   "item_id": "4",
+   "description": "Kitchen unit installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 425.0,
+   "price_log_sd": 0.4,
+   "rationale": "Under §7.1.11, installation follows the principal item, which §2.3.10(c) excludes. The positive figure is a conditional labour estimate only."
+  },
+  {
+   "item_id": "5",
+   "description": "Living-room floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.98,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 140.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 7.1.9(b) covers the equivalent support needed to mount the insured replacement because the scorched original could not be reused. The estimate allows for a standard console, not a decorative upgrade."
+  },
+  {
+   "item_id": "6",
+   "description": "Shared freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.94,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 7.1.9(e), 7.1.11 and 7.1.12 cover only the living-room unit's share of ordinary freight. Using relative equipment values absent a weight-based charge breakdown, about 61% of estimated €100 freight is payable."
+  }
+ ]
+}

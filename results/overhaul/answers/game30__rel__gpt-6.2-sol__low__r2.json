@@ -1,0 +1,121 @@
+{
+ "game": 30,
+ "arm": "rel",
+ "run": 2,
+ "meta": {
+  "seconds": 17.9,
+  "ref_chars": 25707
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Electrician labour for flooded basement circuits",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1020.0,
+   "price_log_sd": 0.25,
+   "rationale": "Rainwater entering from outside is inundation under §§2.4–2.5, not escape of water, and no scheduled c2 cover is evidenced. Section 3.6.2(b) therefore bars the labour; the conditional estimate is 12 hours at €85 gross."
+  },
+  {
+   "item_id": "2",
+   "description": "Electrical contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.009,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars journey charges for this inundation absent evidence of scheduled c2 cover. If cover were established, this first listed journey would qualify under §7.1.7(g) at the €79 gross prior."
+  },
+  {
+   "item_id": "3",
+   "description": "Motor pump procurement",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 3.6.2(d) bars the pumping costs absent evidenced c2 cover. Even with flood cover, §§4.3(d) and 5.2.2 exclude separate procurement of working equipment used for the billed extraction measure; the positive figure is a nominal placeholder."
+  },
+  {
+   "item_id": "4",
+   "description": "Submersible pump",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1.0,
+   "price_log_sd": 0.05,
+   "rationale": "Section 3.6.2(d) bars this charge absent evidenced c2 cover. Sections 4.3(d) and 5.2.2 also preclude separate payment for the pump alongside the extraction charge; the positive figure is a nominal placeholder."
+  },
+  {
+   "item_id": "5",
+   "description": "Basement water extraction",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 500.0,
+   "price_log_sd": 0.45,
+   "rationale": "Sections 3.6.2(d) and 5.1 bar this mitigation measure because no scheduled c2 cover is evidenced. If covered, §5.2.2 would allow one gross charge of about €500 for the extraction, including labour and pump use."
+  },
+  {
+   "item_id": "6",
+   "description": "Small electrical rewiring materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 150.0,
+   "price_log_sd": 0.4,
+   "rationale": "Section 3.6.2(c) bars materials for the inundation loss absent evidenced c2 cover. If covered, §7.1.7(c) would allow about €150 gross for standard materials actually incorporated into the flooded circuits."
+  },
+  {
+   "item_id": "7",
+   "description": "Replace boiler, flue and storage tank",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10500.0,
+   "price_log_sd": 0.35,
+   "rationale": "The fixed boiler system is insured property, but §3.6.2(a) bars replacement for inundation absent evidenced c2 cover. If covered, §§7.1.1(c) and 7.1.9 would allow about €10500 gross for a like-for-like installed system, excluding the separately billed pipework adaptation and disposal."
+  },
+  {
+   "item_id": "8",
+   "description": "Adapt supply pipework to replacement boiler",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 650.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(a) expressly bars adaptation work absent evidenced c2 cover. If covered, §7.1.7(d) would allow about €650 gross for necessary alterations to the immediately adjoining pipework."
+  },
+  {
+   "item_id": "9",
+   "description": "Dispose of old boiler system",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.01,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 300.0,
+   "price_log_sd": 0.35,
+   "rationale": "Section 3.6.2(e) bars disposal absent evidenced c2 cover. If covered, §5.2.1 would allow about €300 gross for ordinary haul-away and disposal of the ruined plant."
+  },
+  {
+   "item_id": "10",
+   "description": "Heating contractor vehicle costs",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.001,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 79.0,
+   "price_log_sd": 0.08,
+   "rationale": "Section 3.6.2(f) bars all journeys absent evidenced c2 cover, and §§7.1.7(g) and 7.1.8(d) allow only the first journey across both trades. The €79 gross prior would apply only if this were established as the first eligible charge instead of line 2."
+  }
+ ]
+}

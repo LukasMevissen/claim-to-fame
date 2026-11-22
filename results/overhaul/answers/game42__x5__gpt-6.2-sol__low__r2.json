@@ -1,0 +1,77 @@
+{
+ "game": 42,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 9.4,
+  "ref_chars": 25733
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Living-room air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1411.0,
+   "price_log_sd": 0.06,
+   "rationale": "The fixed unit is covered for lightning overvoltage under 2.3.3 and 4.2.3, and at nine metres from the hob it falls outside the five-metre exclusion. Under 7.1.9–7.1.10, one replacement is valued at €1,411 gross for the pre-loss 3.5 kW equivalent, not the upgraded 7.1 kW model."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 482.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 7.1.9(c) and 7.1.10 cover ordinary installation at the pre-loss standard, but not any extra labour attributable to the upgrade. One installation at the reference rate is €482 gross."
+  },
+  {
+   "item_id": "3",
+   "description": "Decorative floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 60.0,
+   "price_log_sd": 0.3,
+   "rationale": "Section 7.1.10 excludes the entire console charge because it was chosen for appearance and was not required to install the replacement. The €60 gross estimate is conditional only, using one console from the reference case."
+  },
+  {
+   "item_id": "4",
+   "description": "Ordinary freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 42.0,
+   "price_log_sd": 0.05,
+   "rationale": "Sections 7.1.9(e), 7.1.11 and 7.1.12 cover ordinary carriage of the equivalent replacement, with the express premium billed separately. One ordinary shipment is €42 gross at the reference rate."
+  },
+  {
+   "item_id": "5",
+   "description": "Express delivery surcharge",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 50.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.12 excludes the express and timed delivery premium because neither advance approval nor a need to prevent further loss is shown. The conditional estimate for one surcharge is €50 gross."
+  },
+  {
+   "item_id": "6",
+   "description": "Contractor administration fee",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 45.0,
+   "price_log_sd": 0.7,
+   "rationale": "Section 7.1.8(b) excludes separately billed contractor administration and paperwork charges. The conditional estimate for one flat fee is €45 gross."
+  }
+ ]
+}

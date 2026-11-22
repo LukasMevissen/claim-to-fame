@@ -1,0 +1,55 @@
+{
+ "game": 31,
+ "arm": "x5",
+ "run": 2,
+ "meta": {
+  "seconds": 7.5,
+  "ref_chars": 25218
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Spanish-to-English police report translation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 170.0,
+   "price_log_sd": 0.35,
+   "rationale": "Sections 2.3.3, 3.1.6 and 7.1.8(f) make the police report a condition of cover but exclude the cost of translating it. The conditional estimate is 68 lines × €2.50."
+  },
+  {
+   "item_id": "2",
+   "description": "Translation materials",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 10.0,
+   "price_log_sd": 0.6,
+   "rationale": "Sections 7.1.8(e)–(f) exclude the provider’s working materials and any surcharge attached to the excluded translation. The conditional estimate is €10 for the single charge."
+  },
+  {
+   "item_id": "3",
+   "description": "Robbery loss: Tudor watch and cash",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.99,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 2950.0,
+   "price_log_sd": 0.05,
+   "rationale": "The reported robbery is covered under §§2.3 and 11.1; the pictured Tudor Royal day-date watch is estimated to reach the €2,500 unscheduled valuables cap, and the cash loss exceeds the €500 cash cap. The €5,000 away-from-home limit does not bind, so the estimate is €2,500 + €500 − the single €50 deductible = €2,950, subject to the itemisation required by §7.1.10."
+  },
+  {
+   "item_id": "4",
+   "description": "Shipping and forwarding",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.0,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 26.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 5.2.3 and 7.1.8(b) exclude forwarding charges even when they appear on the covered property settlement statement. The conditional estimate is 1 × €26 from the shipping prior."
+  }
+ ]
+}

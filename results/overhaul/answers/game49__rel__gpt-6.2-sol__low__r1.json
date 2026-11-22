@@ -1,0 +1,55 @@
+{
+ "game": 49,
+ "arm": "rel",
+ "run": 1,
+ "meta": {
+  "seconds": 7.3,
+  "ref_chars": 25576
+ },
+ "items": [
+  {
+   "item_id": "1",
+   "description": "Kitchen air conditioning unit",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.72,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 1413.0,
+   "price_log_sd": 0.13,
+   "rationale": "Sections 4.2.2 and 7.1.9–7.1.10 cover like-for-like replacement of a fixed unit damaged beyond repair, with no kitchen-location exclusion. The €1,413 estimate assumes the surge was atmospheric and the fire group was selected, neither of which is confirmed in the claim description."
+  },
+  {
+   "item_id": "2",
+   "description": "Installation",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.69,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 480.0,
+   "price_log_sd": 0.14,
+   "rationale": "Under §7.1.11, necessary installation follows the covered replacement at €480 for one ordinary installation. Any separate wiring check or work on other equipment must be allocated before payment under §9.5."
+  },
+  {
+   "item_id": "3",
+   "description": "Floor console",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.3,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 61.0,
+   "price_log_sd": 0.28,
+   "rationale": "Sections 7.1.5 and 7.1.7 limit payment to a damaged pre-loss console or one that necessarily had to be removed and could not be refitted. The description confirms a console existed but not that it needed replacing; the conditional estimate is €61 for one equivalent console."
+  },
+  {
+   "item_id": "4",
+   "description": "Freight shipping",
+   "quantity": 1.0,
+   "unit": "",
+   "covered_prob": 0.68,
+   "related_prob": 1.0,
+   "unit_price_gross_eur": 43.0,
+   "price_log_sd": 0.16,
+   "rationale": "Under §7.1.11, ordinary freight for the covered AC replacement is payable at about €43 for one shipment. Any freight attributable to unrelated equipment must be apportioned out."
+  }
+ ]
+}
