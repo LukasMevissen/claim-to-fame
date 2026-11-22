@@ -227,12 +227,13 @@ details.defs dd { margin: 0; }
         <dt>Threshold hunter</dt><dd>Prices close to t: a/t ≥ 0.75 and more than 30% above t.</dd>
         <dt>Fair pricer</dt><dd>a/t ≥ 0.75 and at most 30% above t.</dd>
         <dt>Undercutter</dt><dd>a/t &lt; 0.75: almost always fair, gives away margin.</dd>
-        <dt>Paid as insurer</dt><dd>Everything the team paid out as insurer over the whole tournament.</dd>
+        <dt>Paid as insurer</dt><dd>Everything the team paid out as insurer in the analysed games.</dd>
         <dt>Strict / Lenient</dt><dd>Accept rate at least 5 points below / above the field median. Otherwise <i>Selective</i>.</dd>
         <dt>Fair accepted</dt><dd>Share of that total paid for fair bills they accepted (a ≤ t): money that is owed anyway.</dd>
         <dt>Inflated paid</dt><dd>Share paid for bills they accepted although the charge was above t (the cost of being too lenient).</dd>
         <dt>Fair rejected</dt><dd>Share paid as penalties for fair bills they rejected (1.5a each: the cost of being too strict).</dd>
         <dt>Unclassified</dt><dd>Accepted bills on lines whose t is not pinned down yet; shown grey in the bar.</dd>
+        <dt>Window</dt><dd>All figures and labels use only the last 10 completed games, so they describe how teams play now, not earlier in the tournament.</dd>
         <dt>Last N games</dt><dd>The same labels on the most recent games only. Shown when the strategy changed.</dd>
       </dl>
     </details>
@@ -680,7 +681,7 @@ function costBar(a) {
 }
 function renderStrategies() {
   const S = DATA.strategies, cum = cumulative(), n = DATA.scores.games.length - 1;
-  $("#strat-sub").textContent = `Games 1–${S.last_game}, read off the public transactions; "last ${S.recent_games}" flags teams whose behaviour changed recently. Sorted by total score.`;
+  $("#strat-sub").textContent = `Last ${S.window_games || 10} games only (games ${S.first_game ?? 1}–${S.last_game}), read off the public transactions; "last ${S.recent_games}" flags teams whose behaviour changed recently. Sorted by total score.`;
   const teams = Object.keys(S.teams).sort((a, b) => ((cum[b] || [])[n] ?? 0) - ((cum[a] || [])[n] ?? 0));
   const shift = (now, rec) => rec && rec !== now ? `<div class="shift">last ${S.recent_games}: <b>${esc(rec)}</b></div>` : "";
   $("#strat").innerHTML = `<thead>
