@@ -1,0 +1,47 @@
+name: dashboard
+# Builds the team dashboard and publishes the static page to the PUBLIC repo
+# LukasMevissen/claim-to-fame-dashboard (GitHub Pages, branch gh-pages).
+# Pages cannot serve a private repo on a free plan, hence the second repo.
+# Needs the secret DASHBOARD_DEPLOY_KEY (private half of a write deploy key on that repo).
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "*/30 * * * *"      # new games / leaderboard changes between pushes
+  workflow_dispatch:
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: Build data.js
+        run: python scripts/dashboard.py
+      - name: Assemble site
+        run: |
+          mkdir site
+          cp dashboard/index.html dashboard/data.js site/
+          touch site/.nojekyll
+      - name: Publish to gh-pages of the dashboard repo
+        env:
+          KEY: ${{ secrets.DASHBOARD_DEPLOY_KEY }}
+        run: |
+          install -m 600 /dev/null key
+          printf '%s\n' "$KEY" > key
+          export GIT_SSH_COMMAND="ssh -i $PWD/key -o StrictHostKeyChecking=accept-new"
+          cd site
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name=dashboard-bot -c user.email=bot@users.noreply.github.com \
+              commit -qm "dashboard $(date -u +%FT%TZ) @ ${GITHUB_SHA::7}"
+          git push -f git@github.com:LukasMevissen/claim-to-fame-dashboard.git gh-pages
