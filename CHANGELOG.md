@@ -26,6 +26,8 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 - `c2f/__main__.py`: every stage that priced lines is written to
   `results/live/game<N>__<role>.json` (median, sigma, p_zero, a, b per line, model, whether it was
   submitted). One file per game and machine, so a second machine cannot overwrite or lose it.
+  Each stage also carries the charge agent's answer (shadow charges), and a stage that answers
+  after the deadline is added to the file as `late` instead of being dropped.
 - `c2f/live_estimates.py`, `scripts/backfill_live_estimates.py`: one table for all games in
   `results/live_estimates/` (`lines.csv`, `games.json`). Games 26 to 43 are reconstructed from
   the submitted quotes with the config and opponent belief of that game; on the 100 lines whose

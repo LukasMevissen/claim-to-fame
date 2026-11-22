@@ -32,7 +32,9 @@ case zips into `data/cases/` as `case_000.zip` ... `case_100.zip`.
     python -m c2f run  --allow-untagged                         # unattended: plays every upcoming game
 
 Every live run appends to `runs/submissions.jsonl` (what was sent, timing, errors) and saves the
-model's output to `results/extractions/`. If the model fails, every invoice line still gets the
+model's output to `results/extractions/`. The estimates and quotes of every stage (fast, full,
+backup, including the charge agent's answer and stages that finish after the deadline) go to
+`results/live/game<N>__<role>.json`. If the model fails, every invoice line still gets the
 `[fallback]` prices from `configs/default.toml`.
 
 ## Team dashboard

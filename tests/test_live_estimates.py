@@ -98,3 +98,23 @@ def test_every_stage_is_recorded_per_game(monkeypatch, tmp_path):
 def test_dry_run_writes_no_live_record(monkeypatch, tmp_path):
     _play(monkeypatch, tmp_path, dry_run=True)
     assert not m.LIVE_DIR.exists()
+
+
+def test_charge_agent_answer_is_kept_per_stage():
+    priced = [PricedItem("2", "Tiles", {"p_zero": 0.0, "median": 50.0, "sigma": 0.2}, 45.0, 40.0)]
+    r = m._stage_record("backup", {"submitted": True}, priced, {"model": "x", "charge_agent": {"shadow_charges": {"2": 47.0}}})
+    assert r["charge_agent"] == {"shadow_charges": {"2": 47.0}} and r["lines"][0]["index"] == 2
+
+
+def test_stage_that_misses_the_deadline_is_still_recorded(tmp_path):
+    from concurrent.futures import Future
+    priced = [PricedItem("1", "Pipe repair", {"p_zero": 0.1, "median": 200.0, "sigma": 0.3}, 174.0, 160.0)]
+    detail = [m._stage_record("fast", {"submitted": True, "since_start_s": 9.0}, priced, {"model": "fast-model"})]
+    fut = Future()
+    fut.add_done_callback(lambda f: m._record_late(f, "backup", lambda: 61.5, detail,
+                                                   lambda: m._save_live(7, False, {}, detail, tmp_path)))
+    fut.set_result((priced, {"model": "late-model"}))
+    doc = json.loads((tmp_path / "game7__primary.json").read_text(encoding="utf-8"))
+    late = doc["stages"][-1]
+    assert (late["stage"], late["late"], late["submitted"], late["model"]) == ("backup", True, False, "late-model")
+    assert doc["final_stage"] == "fast" and late["lines"][0]["median"] == 200.0

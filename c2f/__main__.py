@@ -17,6 +17,7 @@ import os
 import re
 import sys
 import tempfile
+import threading
 import time
 from pathlib import Path
 
@@ -34,6 +35,7 @@ RUN_LOG = REPO_ROOT / "runs" / "submissions.jsonl"
 # the machine that wrote it; games 26-43 had to be reconstructed from the quotes because the
 # backup stage's answer was stored nowhere.
 LIVE_DIR = REPO_ROOT / "results" / "live"
+_LIVE_LOCK = threading.Lock()
 
 
 def _table(priced) -> str:
@@ -65,28 +67,55 @@ def _stage_record(name: str, info: dict, priced, timing: dict | None) -> dict:
                   "a": p.charge_price, "b": p.acceptance_limit} for k, p in enumerate(priced, 1)]
     except Exception:  # noqa: BLE001
         lines = []
-    return {"stage": name, "model": (timing or {}).get("model"), "submitted": bool(info.get("submitted")),
-            "since_start_s": info.get("since_start_s"), "lines": lines}
+    rec = {"stage": name, "model": (timing or {}).get("model"), "submitted": bool(info.get("submitted")),
+           "since_start_s": info.get("since_start_s"), "lines": lines}
+    # The charge agent's answer for this stage (its shadow charges, or the charges it set).
+    # The run log only has it for the submitted stage.
+    if isinstance((timing or {}).get("charge_agent"), dict):
+        rec["charge_agent"] = timing["charge_agent"]
+    return rec
 
 
-def _save_live(game_id: int, dry_run: bool, stamp: dict, stages: list[dict]) -> None:
+def _record_late(fut, name: str, since, detail: list[dict], save) -> None:
+    """A stage that answered after the deadline: nothing is submitted any more, but its
+    estimates are added to the game's record. Runs in the stage's thread. Never raises."""
+    try:
+        if fut.cancelled():
+            return
+        priced, timing = fut.result()
+        if priced:
+            detail.append({**_stage_record(name, {"submitted": False, "since_start_s": since()}, priced, timing),
+                           "late": True})
+            save()
+    except Exception as e:  # noqa: BLE001
+        print(f"[late stage {name}] not recorded: {e!r}")
+
+
+def _save_live(game_id: int, dry_run: bool, stamp: dict, stages: list[dict],
+               directory: Path | None = None) -> None:
     """results/live/game<N>__<role>.json. The role is in the name so that two machines
     (C2F_ROLE primary / standby) never write the same file. Never raises: a record must not
     cost a game. Dry runs are not recorded."""
+    stages = list(stages)                  # a late stage may append while this runs
     if dry_run or not any(s["lines"] for s in stages):
         return
     try:
-        role = re.sub(r"[^a-z0-9]+", "", os.environ.get("C2F_ROLE", "primary").strip().lower()) or "primary"
-        LIVE_DIR.mkdir(parents=True, exist_ok=True)
-        path = LIVE_DIR / f"game{game_id}__{role}.json"
-        tmp = path.with_suffix(".json.tmp")
-        submitted = [s["stage"] for s in stages if s["submitted"]]
-        tmp.write_text(json.dumps({"game": game_id, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "role": role,
-                                   "stamp": stamp, "final_stage": submitted[-1] if submitted else None,
-                                   "stages": stages}, indent=1, ensure_ascii=False), encoding="utf-8")
-        os.replace(tmp, path)
+        with _LIVE_LOCK:
+            _write_live(game_id, stamp, stages, directory or LIVE_DIR)
     except Exception as e:  # noqa: BLE001
         print(f"[game {game_id}] live record not saved: {e!r}")
+
+
+def _write_live(game_id: int, stamp: dict, stages: list[dict], directory: Path) -> None:
+    role = re.sub(r"[^a-z0-9]+", "", os.environ.get("C2F_ROLE", "primary").strip().lower()) or "primary"
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"game{game_id}__{role}.json"
+    tmp = path.with_suffix(".json.tmp")
+    submitted = [s["stage"] for s in stages if s["submitted"]]
+    tmp.write_text(json.dumps({"game": game_id, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "role": role,
+                               "stamp": stamp, "final_stage": submitted[-1] if submitted else None,
+                               "stages": stages}, indent=1, ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def cmd_version(args, cfg) -> int:
@@ -183,6 +212,7 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
     rec = {"game_id": game_id, "dry_run": dry_run, "stamp": st.as_dict(), "zip": str(zip_path)}
     t0 = None
     detail: list[dict] = []          # every stage's belief and quotes, for results/live/
+    live_dir = LIVE_DIR              # fixed now: a late stage writes after this function returned
     try:
         if not zip_path.exists():
             raise FileNotFoundError(f"missing {zip_path}")
@@ -274,11 +304,13 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
                 stages.append({"stage": futs[f][1], "since_start_s": since(), "submitted": False,
                                "error": "missed deadline"})
                 print(f"[game {game_id}] stage {futs[f][1]}: missed deadline")
+                f.add_done_callback(lambda fut, name=futs[f][1]: _record_late(
+                    fut, name, since, detail, lambda: _save_live(game_id, dry_run, rec["stamp"], detail, live_dir)))
             pool.shutdown(wait=False, cancel_futures=True)
         finally:
             tmpdir.cleanup()
 
-        _save_live(game_id, dry_run, rec["stamp"], detail)
+        _save_live(game_id, dry_run, rec["stamp"], detail, live_dir)
         if best["rank"] < 0:
             raise RuntimeError(f"nothing submitted; stages: {stages}")
         timing = {**best["timing"], "n_invoice_lines": len(positions),
