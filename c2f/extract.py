@@ -146,21 +146,21 @@ def _parse(payload: str) -> list[ItemEstimate]:
     return out
 
 
-def cache_path(case_id: str, model: str) -> Path:
-    return CACHE_DIR / f"{case_id}__{EXTRACTOR_VERSION}__{model}.json"
+def cache_path(case_id: str, model: str, version: str | None = None) -> Path:
+    return CACHE_DIR / f"{case_id}__{version or EXTRACTOR_VERSION}__{model}.json"
 
 
-def load_cached(case_id: str, model: str) -> list[ItemEstimate] | None:
-    p = cache_path(case_id, model)
+def load_cached(case_id: str, model: str, version: str | None = None) -> list[ItemEstimate] | None:
+    p = cache_path(case_id, model, version)
     if not p.exists():
         return None
     return [ItemEstimate(**d) for d in json.loads(p.read_text())["items"]]
 
 
-def save_cache(case_id: str, model: str, items: list[ItemEstimate]) -> None:
+def save_cache(case_id: str, model: str, items: list[ItemEstimate], version: str | None = None) -> None:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache_path(case_id, model).write_text(json.dumps(
-        {"case_id": case_id, "extractor_version": EXTRACTOR_VERSION, "model": model,
+    cache_path(case_id, model, version).write_text(json.dumps(
+        {"case_id": case_id, "extractor_version": version or EXTRACTOR_VERSION, "model": model,
          "items": [asdict(i) for i in items]}, indent=2, ensure_ascii=False))
 
 
@@ -216,22 +216,24 @@ def _create_with_failover(timeout: float, **kwargs):
 
 def extract(case: Case, model: str, timeout: float, temperature: float = 0.0,
             use_cache: bool = True, with_image: bool = True, reference: str = "",
-            effort: str | None = None, tag: str = "", save: bool = True) -> list[ItemEstimate]:
+            effort: str | None = None, tag: str = "", save: bool = True,
+            system: str | None = None, version: str | None = None) -> list[ItemEstimate]:
     """with_image=False skips the photo: faster, used as the first-stage submission.
-    reference: price-book text (c2f/pricebook.py). tag: extra cache-key suffix."""
+    reference: price-book text (c2f/pricebook.py). tag: extra cache-key suffix.
+    system / version: another analyst prompt (c2f/analyst.py) and its name for the cache."""
     cid = case.case_id if (with_image or case.image is None) else f"{case.case_id}-noimg"
     cid += tag
-    if use_cache and (hit := load_cached(cid, model)) is not None:
+    if use_cache and (hit := load_cached(cid, model, version)) is not None:
         return hit
     resp = _create_with_failover(
         timeout,
         model=model,
         response_format={"type": "json_object"},
-        messages=[{"role": "system", "content": SYSTEM},
+        messages=[{"role": "system", "content": system or SYSTEM},
                   {"role": "user", "content": _user_content(case, with_image, reference)}],
         **_model_args(model, temperature, effort),
     )
     items = _parse(resp.choices[0].message.content)
     if save:
-        save_cache(cid, model, items)
+        save_cache(cid, model, items, version)
     return items

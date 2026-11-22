@@ -94,6 +94,41 @@ def _with_item_prior(reference: str, case: Case, llm: dict, errors: list[str]) -
         return reference
 
 
+def _analyst(llm: dict) -> str | None:
+    """[llm] analyst = "rel" | "x5": an analyst prompt of the overhaul (c2f/analyst.py)
+    instead of the x3 prompt with the newest cases. None = the x3 path."""
+    name = llm.get("analyst", "x3")
+    try:
+        from . import analyst
+        return name if name in analyst.PROMPTS else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _reference(case: Case, llm: dict, errors: list[str], claude: bool = False
+               ) -> tuple[str, str | None, str | None]:
+    """(reference text, system prompt or None for the default, analyst name or None).
+    claude: the system text for the Claude stage (its x3 variant asks for the upper end of the
+    price range). Never raises: if the analyst's reference cannot be built, the x3 path is used."""
+    name = _analyst(llm)
+    if name:
+        try:
+            from . import analyst
+            return (analyst.reference(case, name, max_chars=llm.get("pricebook_max_chars", 24000),
+                                      with_prior=llm.get("use_item_prior", True)),
+                    analyst.system(name, claude), name)
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"analyst {name}: {e!r}"[:200])
+    reference = ""
+    if llm.get("use_pricebook", True):
+        try:
+            from . import pricebook
+            reference = pricebook.reference(max_chars=llm.get("pricebook_max_chars", 24000))
+        except Exception as e:  # noqa: BLE001  the price book is an extra, never a blocker
+            errors.append(f"pricebook: {e!r}"[:200])
+    return _with_item_prior(reference, case, llm, errors), None, None
+
+
 def _combine_item_prior(items: list[ItemEstimate], case: Case, cfg: Config) -> None:
     """Opt-in ([belief] item_prior = "fuse" | "replace"): combine the model's estimates with
     the item prior after the assessment (c2f/item_prior.py::combine). Never raises."""
@@ -105,6 +140,21 @@ def _combine_item_prior(items: list[ItemEstimate], case: Case, cfg: Config) -> N
         item_prior.combine_for_case(items, case, mode)
     except Exception as e:  # noqa: BLE001  an extra, never a blocker
         print(f"[agent] item prior not combined: {e!r}")
+
+
+def _apply_memory(items: list[ItemEstimate], case: Case, cfg: Config, timing: dict) -> None:
+    """Opt-in ([belief] memory = "case" | "case+wording"): lines with a trusted precedent take
+    the precedent's amount and its narrow spread (c2f/memory.py). Never raises."""
+    spec = str(cfg.section("belief").get("memory", "off"))
+    if spec in ("", "off") or not items:
+        return
+    try:
+        from . import memory
+        log = memory.apply_for_case(items, case, memory.options("mem:" + spec))
+        timing["memory"] = {"classes": spec, "lines": len(log)}
+    except Exception as e:  # noqa: BLE001  an extra, never a blocker
+        timing["memory"] = {"error": repr(e)[:200]}
+        print(f"[agent] memory skipped: {e!r}")
 
 
 def price_case(case: Case, cfg: Config, use_cache: bool = True,
@@ -137,14 +187,7 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
         charge_agent.begin(case, cfg.section("charge_agent"), cfg.section("llm").get("model", "gpt-6.2-sol"))
     except Exception as e:  # noqa: BLE001
         errors.append(f"charge_agent: {e!r}"[:200])
-    reference = ""
-    if llm.get("use_pricebook", True):
-        try:
-            from . import pricebook
-            reference = pricebook.reference(max_chars=llm.get("pricebook_max_chars", 24000))
-        except Exception as e:  # noqa: BLE001  the price book is an extra, never a blocker
-            errors.append(f"pricebook: {e!r}"[:200])
-    reference = _with_item_prior(reference, case, llm, errors)
+    reference, system, analyst_name = _reference(case, llm, errors)
     for model in models:
         timeout = min(rt.get("llm_timeout_seconds", 30), deadline - (time.monotonic() - t0) - 5)
         if timeout < 5:
@@ -153,7 +196,7 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
         try:
             items = extract(case, model, timeout, llm.get("temperature", 0.0), use_cache,
                             with_image=with_image, reference=reference,
-                            effort=llm.get("reasoning_effort"))
+                            effort=llm.get("reasoning_effort"), system=system, version=analyst_name)
             used = model
             break
         except Exception as e:  # noqa: BLE001  try the next model, then fall back to defaults
@@ -162,13 +205,15 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
     t1 = time.monotonic()
     _combine_item_prior(items, case, cfg)
     agent_info: dict = {}
+    _apply_memory(items, case, cfg, agent_info)
     # The quick safety-net stage never waits for the judge; the full stage waits at most
     # [charge_agent].judge_wait_seconds after the judge started and never into the last 6 s.
     charges = _agent_charges(items, case, cfg, agent_info, wait=with_image,
                              time_left=deadline - (time.monotonic() - t0))
     priced = price_items(items, cfg, charges)
     t2 = time.monotonic()
-    timing = {"model": used, "with_image": with_image and case.image is not None,
+    timing = {"model": used, "analyst": analyst_name or "x3",
+              "with_image": with_image and case.image is not None,
               "extract_s": round(t1 - t0, 2),
               "pricing_s": round(t2 - t1, 2), "total_s": round(t2 - t0, 2), **agent_info}
     if errors:
@@ -204,10 +249,12 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
         load_env(REPO_ROOT / ".env")
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise RuntimeError("ANTHROPIC_API_KEY not set")
-        from . import pricebook
         from .anthropic_extract import extract_claude
-        reference = pricebook.reference(max_chars=cfg.section("llm").get("pricebook_max_chars", 24000))
-        reference = _with_item_prior(reference, case, cfg.section("llm"), [])
+        ref_errors: list[str] = []
+        reference, system, analyst_name = _reference(case, cfg.section("llm"), ref_errors, claude=True)
+        timing["analyst"] = analyst_name or "x3"
+        if ref_errors:
+            timing["reference_errors"] = ref_errors
         # Large invoices at medium effort came close to the deadline (19 lines: 38 s; 22 lines:
         # 31 s against 19 s at low), so from [llm].low_effort_from_lines on the effort drops to low.
         from .pricebook import invoice_lines
@@ -215,12 +262,14 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
         if effort and n_lines >= cfg.section("llm").get("low_effort_from_lines", 10**6):
             effort = "low"
         timing["effort"], timing["n_lines"] = effort, n_lines
-        items, meta = extract_claude(case, model, max(budget - 4, 5), reference, effort or None)
+        items, meta = extract_claude(case, model, max(budget - 4, 5), reference, effort or None,
+                                     **({"system": system} if system else {}))
         timing.update(meta)
     except Exception as e:  # noqa: BLE001
         timing["model_errors"] = [f"{spec}: {e!r}"[:300]]
         print(f"[agent] backup {spec} failed: {e!r}")
     _combine_item_prior(items, case, cfg)
+    _apply_memory(items, case, cfg, timing)
     charges = _agent_charges(items, case, cfg, timing, wait=True,
                              time_left=budget - (time.monotonic() - t0))
     priced = price_items(items, cfg, charges)

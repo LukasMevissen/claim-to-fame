@@ -39,7 +39,7 @@ class Stamp:
 def stamp(cfg: Config) -> Stamp:
     return Stamp(
         agent_version=__version__,
-        extractor_version=EXTRACTOR_VERSION,
+        extractor_version=cfg.section("llm").get("analyst") or EXTRACTOR_VERSION,
         git_sha=_git("rev-parse", "HEAD"),
         git_dirty=bool(_git("status", "--porcelain", "--untracked-files=no")),
         git_tag=_git("describe", "--tags", "--exact-match"),

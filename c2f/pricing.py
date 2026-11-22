@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass, field
+from functools import lru_cache
 from statistics import NormalDist
 
 from .belief import TBelief
@@ -91,6 +92,20 @@ def expected_revenue(a: float, belief: TBelief, p: PricingParams) -> float:
 def charge_price(belief: TBelief, p: PricingParams) -> float:
     if belief.median <= 0:
         return 0.0
+    # The rule is scale-free: opponents' limits are multiples of t and the cap is 4t, so the
+    # charge is the median times a factor that depends on sigma only. The search for that
+    # factor takes seconds per line against the learned opponent population (22 types), and
+    # most lines of an invoice share a sigma, so the factor is computed once per sigma.
+    return belief.median * _charge_ratio(belief.sigma, p)
+
+
+@lru_cache(maxsize=4096)
+def _charge_ratio(sigma: float, p: PricingParams) -> float:
+    """charge / median of a covered belief with this log-sd (see charge_price)."""
+    return _charge_price_search(TBelief(1000.0, sigma, 0.0), p) / 1000.0
+
+
+def _charge_price_search(belief: TBelief, p: PricingParams) -> float:
     # Priced as if the line is covered, whatever P(t = 0): on an uncovered line a positive
     # charge costs nothing (rejected -> 0) and still pays min(a, c) wherever it is accepted,
     # so a = 0 only gives that chance away and loses everything when we misjudged coverage.
