@@ -1,0 +1,117 @@
+{
+  "case_id": "game55",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.13,
+      "rationale": "Section 7.1.7(f) allows the first travel charge on this contractor's invoice. €82 gross is consistent with comparable local pipe repairs."
+    },
+    {
+      "item_id": "2",
+      "description": "Sealing material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 26.0,
+      "price_log_sd": 0.18,
+      "rationale": "Section 7.1.7(c) covers consumables used in the pipe repair. Allow €26 gross for one lot, consistent with Case 39."
+    },
+    {
+      "item_id": "3",
+      "description": "Stainless steel pipe",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 44.0,
+      "price_log_sd": 0.19,
+      "rationale": "The failed supply-pipe section is treated as an internal pipe fracture under 2.4.3(a). Sections 7.1.7(c) and 7.1.9 limit the allowance to like-for-like material, estimated at €44 gross for one metre."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.17,
+      "rationale": "Section 7.1.7(c) covers reinstatement of the original insulation. Allow €25 gross for one metre of standard rock wool."
+    },
+    {
+      "item_id": "5",
+      "description": "Installation labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.1.7(g) allows one necessary installer hour at €82 gross, provided it is distinct from the technician time billed below."
+    },
+    {
+      "item_id": "6",
+      "description": "Service technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 810.0,
+      "price_log_sd": 0.15,
+      "rationale": "Sections 7.1.7(a) and (g) cover reasonable labour to access and repair the pipe. Treating the nine units as hours, consistent with Case 39, gives 9 × €90 gross."
+    },
+    {
+      "item_id": "7",
+      "description": "Construction dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 590.0,
+      "price_log_sd": 0.21,
+      "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one equipment flat rate per operation. Allow €590 gross for this single deployment, calibrated to Case 51."
+    },
+    {
+      "item_id": "8",
+      "description": "Close opening and paint affected patch",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 645.0,
+      "price_log_sd": 0.2,
+      "rationale": "Sections 7.1.5 and 7.1.7(a) cover closing the access opening and restoring the disturbed finish, not repainting the whole wall. Allow €645 gross for the combined local repair, consistent with Case 51."
+    },
+    {
+      "item_id": "9",
+      "description": "Full repaint of affected wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 7.1.5–7.1.6 exclude repainting the dry remainder of the wall because matching paint was still available. The patch is already covered by line 8, so 7.1.8(c) bars paying for it again."
+    },
+    {
+      "item_id": "10",
+      "description": "Repaint remaining walls and ceiling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 430.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 7.1.5–7.1.6 exclude matching work on separate, undamaged walls and ceilings. No part of this flat rate is attributable to the insured repair."
+    }
+  ]
+}

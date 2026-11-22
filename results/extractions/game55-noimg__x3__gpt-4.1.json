@@ -1,0 +1,117 @@
+{
+  "case_id": "game55-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 80.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(f): One travel/call-out charge per contractor per invoice is indemnified. Reference cases 51, 50, 46, 44, 43, 40, 39 show vehicle costs for similar claims are routinely indemnified at €65–98 per job."
+    },
+    {
+      "item_id": "2",
+      "description": "Sealing material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 24.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(c): Consumable installation material needed for the repair is covered. Reference 39: sealing material for pipe repair was indemnified at €24."
+    },
+    {
+      "item_id": "3",
+      "description": "Stainless steel pipe 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 36.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(c): Replacement pipe of equivalent spec is covered. Reference 39: stainless steel pipe 1 m was indemnified at €31–42."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 22.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(c): Standard insulation to match pre-loss is covered. Reference 39: rock wool pipe insulation 1 m was indemnified at €22."
+    },
+    {
+      "item_id": "5",
+      "description": "Installation 1 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 76.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(g): Labour for necessary repair is covered. Reference 39: installer hours for pipe repair were indemnified at €76/hr."
+    },
+    {
+      "item_id": "6",
+      "description": "Service technician hours 9 labor units",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 732.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(g): Labour for necessary repair is covered. Reference 39: service technician hours for similar work were indemnified at €732 for 9 hrs."
+    },
+    {
+      "item_id": "7",
+      "description": "Construction dryer flat-rate charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(b), (e): Necessary drying is covered, one flat-rate charge per drying operation. Reference 39: construction dryer flat-rate charge was indemnified at €403; 51 at €580+."
+    },
+    {
+      "item_id": "8",
+      "description": "Painting the disturbed wall area and closing the wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(a), (c): Making good the opening and repainting the disturbed area is covered. Reference 39: €416+; 51: €633+ for similar work."
+    },
+    {
+      "item_id": "9",
+      "description": "Full repaint of the entire wall on which the opening was located",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.6: Only the affected patch is covered unless a visible discontinuity would remain and matching material is unavailable. Here, the same paint was available, so full-wall repaint is not indemnified."
+    },
+    {
+      "item_id": "10",
+      "description": "Repaint of the remaining bathroom walls and ceiling to match",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.5, 7.1.6: Work beyond the affected wall is not covered, even for matching. The same paint was available, so no visible discontinuity. Not indemnified."
+    }
+  ]
+}
