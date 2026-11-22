@@ -7,6 +7,19 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 <!-- new entries below -->
 
+## unreleased: charge agent as shadow run with takeover (2026-11-22, changes quotes after the takeover)
+
+- `[charge_agent] mode = "rule"`, `risk = "neutral"`, `shadow = true`: the agent prices every
+  live game; the fixed rule's charges are still submitted and the agent's are recorded
+  (`runs/submissions.jsonl`, `timing.charge_agent.shadow_charges`).
+- After every published round the market refresh scores both against the real opponents and
+  writes `results/charge_agent/shadow.json` (`c2f/charge_agent.py::takeover_status`).
+- Takeover: after `takeover_rounds = 3` rounds in a row in which the agent's charges would have
+  earned more, they are submitted from the next game on. Not taken back automatically;
+  `takeover = false` keeps the shadow, `shadow = false` submits at once.
+- Note: in the backtest the agent won 19 of 35 rounds, so three in a row is a weak test
+  (`docs/research/charge_agent.md`, section 8).
+
 ## unreleased: charge agent (2026-11-22, off by default: quotes unchanged until `[charge_agent] mode` is set)
 
 - `c2f/charge_agent.py`: decides the charge a per line instead of the fixed 0.87 x estimate.

@@ -122,8 +122,14 @@ threshold (same line type, same policy wording, similar claim), and how the othe
 accept charges, and then picks the a with the highest expected revenue (`risk = "neutral"`)
 or with more weight on the high outcome (`risk = "loving"`). `mode = "rule"` needs no model
 call (milliseconds); `mode = "llm"` lets a judge model weigh the earlier rounds, in parallel
-to the assessment, with a hard time limit and the rule weights as fallback. Off by default
-(`[charge_agent]` in `configs/default.toml`); the limit b is not touched.
+to the assessment, with a hard time limit and the rule weights as fallback. The limit b is
+not touched.
+
+It runs as a **shadow** (`[charge_agent]` in `configs/default.toml`: `mode = "rule"`,
+`risk = "neutral"`, `shadow = true`): the fixed rule's charges are submitted, the agent's are
+recorded and scored after every round (`results/charge_agent/shadow.json`, scheduler log).
+After `takeover_rounds = 3` winning rounds in a row the agent's charges are submitted from the
+next game on. `shadow = false` submits them at once; `takeover = false` keeps the shadow.
 
     python scripts/charge_agent_backtest.py                  # walk-forward, rule mode, both settings
     python scripts/charge_agent_backtest.py --llm gpt-4.1    # + llm mode (judgements cached)

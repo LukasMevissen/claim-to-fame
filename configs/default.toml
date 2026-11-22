@@ -116,8 +116,17 @@ miss_zero = 0.5
 #   llm  / neutral +18k (gpt-4.1) to +29k (gpt-6.2-sol@low)    llm / loving +5k to +7k
 # "off" | "rule" (no model call, milliseconds) | "llm" (a judge model weighs the earlier rounds,
 # in parallel to the assessment; rule weights when it is late or fails).
-mode = "off"
+mode = "rule"
 risk = "neutral"             # "neutral" (maximise expected revenue) | "loving" (revenue ** gamma_loving)
+# Shadow run: the agent prices every game, but only the fixed rule's charges are submitted; the
+# agent's are recorded (runs/submissions.jsonl, timing.charge_agent.shadow_charges). After each
+# round is public both are scored against the real opponents (results/charge_agent/shadow.json).
+# Once the agent earned more in takeover_rounds scored rounds in a row, its charges are submitted
+# from the next game on (not taken back automatically). shadow = false: submit the agent's
+# charges at once. takeover = false: stay in shadow whatever the score.
+shadow = true
+takeover = true
+takeover_rounds = 3
 gamma_loving = 2.0
 judge_model = "gpt-4.1"      # or "gpt-6.2-sol@low"; backtest: median 3.4 s / 4.8 s, max 9.8 s / 12.7 s
 judge_timeout_seconds = 15   # the judge call is cut off after this
