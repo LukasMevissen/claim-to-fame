@@ -153,3 +153,20 @@ def test_standby_sends_after_the_hold(monkeypatch, tmp_path):
     assert m.play_game(client, cfg, SimpleNamespace(as_dict=lambda: {}), 1, t0, False, zip_path)
     assert [c[0]["charge_price"] for c in client.calls] == [300.0]      # no fixed, no fast stage
     assert sent[0] - t0 >= 0.6
+
+
+def test_no_sync_keeps_the_light_refresh(monkeypatch):
+    """--no-sync with [runtime] sync_without_refit: the refresh runs, without the belief refit."""
+    import c2f.market as market
+    calls = []
+    monkeypatch.setattr(market, "refresh", lambda **kw: calls.append(kw) or {})
+    args = SimpleNamespace(no_sync=True)
+    on = SimpleNamespace(section=lambda name: {"sync_without_refit": True})
+    off = SimpleNamespace(section=lambda name: {})
+    m._market_refresh(args, 123.0, off)
+    m._market_refresh(args, 123.0)
+    assert calls == []
+    m._market_refresh(args, 123.0, on)
+    assert len(calls) == 1 and calls[0]["refit"] is False and calls[0]["deadline"] == 123.0
+    m._market_refresh(SimpleNamespace(no_sync=False), 5.0, off)
+    assert calls[1]["refit"] is True

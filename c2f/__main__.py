@@ -308,15 +308,21 @@ def cmd_market(args, cfg) -> int:
     return 1 if rep["errors"] else 0
 
 
-def _market_refresh(args, deadline: float) -> None:
+def _market_refresh(args, deadline: float, cfg=None) -> None:
     """After a game: fetch newly completed games, rebuild the table and checks, refit the
     belief. Bounded by `deadline` (no request or refit starts too close to the next game)
-    and fully guarded: a failure is logged and retried on the next idle iteration."""
+    and fully guarded: a failure is logged and retried on the next idle iteration.
+    --no-sync skips it, except with [runtime] sync_without_refit: then only the belief refit
+    is skipped (13 min on the Windows laptop) and the transactions, the table and the summary
+    the reference cases are built from stay current."""
+    refit = True
     if args.no_sync:
-        return
+        if cfg is None or not cfg.section("runtime").get("sync_without_refit", False):
+            return
+        refit = False
     try:
         from . import market
-        market.refresh(deadline=deadline, log=lambda m: print(f"[market] {m}"))
+        market.refresh(refit=refit, deadline=deadline, log=lambda m: print(f"[market] {m}"))
     except Exception as e:  # noqa: BLE001  never let market data stop the scheduler
         print(f"[market] refresh failed: {e!r}")
 
@@ -395,7 +401,7 @@ def cmd_run(args, cfg) -> int:
         if start - now > 120:          # re-check the schedule periodically while idle
             # Idle: pull the games completed since (a game completes some minutes after its
             # start; until then it is not listed and the next idle iteration retries).
-            _market_refresh(args, deadline=start - 90)
+            _market_refresh(args, deadline=start - 90, cfg=cfg)
             now = time.time()
             print(f"[run] next: game {g['id']} at {g['start_time']} (in {int(start - now)}s)")
             time.sleep(max(0.0, min(start - now - 60, 600)))

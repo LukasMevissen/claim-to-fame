@@ -10,6 +10,10 @@ fixed_max_seconds = 12        # fixed fallback prices are only submitted this ea
 # the game start, so it lands after the primary's stages (their backup stage arrived after
 # 10-43 s in games 40-62) and stands. 0 = send as soon as it is ready.
 standby_hold_seconds = 47
+# With `run --no-sync`: still fetch the public transactions and rebuild the table and summary
+# between games (about 10 s per game), skip only the opponent-belief refit. Without it a
+# --no-sync runner prices every game with the reference cases of its last manual sync.
+sync_without_refit = true
 
 [llm]
 # full stage: reasoning model that applies the policy wording (sub-limits, reductions,
