@@ -124,3 +124,32 @@ def test_preferred_backup_is_not_overwritten_by_a_later_full_stage(monkeypatch, 
     client = FakeClient()
     assert m.play_game(client, load_config(), SimpleNamespace(as_dict=lambda: {}), 1, None, False, zip_path)
     assert [c[0]["charge_price"] for c in client.calls] == [FB, 100.0, 150.0]
+
+
+def test_standby_sends_after_the_hold(monkeypatch, tmp_path):
+    """Second machine: only the backup answer, and not before [runtime].standby_hold_seconds."""
+    case = SimpleNamespace(image=None, invoice_text="")
+    monkeypatch.setattr(m, "decrypt", lambda z, k, d: d)
+    monkeypatch.setattr(m, "load_case", lambda root, cid: case)
+    monkeypatch.setattr(m, "invoice_positions", lambda text: [1])
+    monkeypatch.setattr(m, "_log", lambda rec: None)
+    monkeypatch.setattr(m, "price_case", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no fast/full stage")))
+    monkeypatch.setattr(m, "price_case_backup",
+                        lambda case, cfg, budget: ([PricedItem("1", "", {"p_zero": 0, "median": 300.0}, 300.0, 300.0)], {}))
+    monkeypatch.setenv("C2F_ROLE", "standby")
+    base = load_config()
+    cfg = SimpleNamespace(section=lambda name: {**base.section(name), "standby_hold_seconds": 0.6}
+                          if name == "runtime" else base.section(name))
+    zip_path = tmp_path / "case.zip"
+    zip_path.write_bytes(b"")
+    sent = []
+
+    class Client(FakeClient):
+        def submit(self, game_id, payload):
+            sent.append(time.time())
+            return super().submit(game_id, payload)
+
+    client, t0 = Client(), time.time()
+    assert m.play_game(client, cfg, SimpleNamespace(as_dict=lambda: {}), 1, t0, False, zip_path)
+    assert [c[0]["charge_price"] for c in client.calls] == [300.0]      # no fixed, no fast stage
+    assert sent[0] - t0 >= 0.6

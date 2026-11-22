@@ -154,6 +154,7 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
         fallback = (fb.get("charge_price", 0.0), fb.get("acceptance_limit", 0.0))
         stages: list[dict] = []
         best = {"rank": -1, "payload": [], "priced": [], "timing": {}}
+        hold = {"until": 0.0}          # set below for the standby role
 
         def since() -> float:
             return round(time.time() - start, 2)
@@ -167,7 +168,15 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
             else:
                 try:
                     if not dry_run:
+                        # Second machine: send no earlier than [runtime].standby_hold_seconds
+                        # after the start, so this answer lands after the primary's stages
+                        # (last write wins) and well inside the 60 s window.
+                        wait_s = hold["until"] - (time.time() - start)
+                        if 0 < wait_s < 60:
+                            info["held_s"] = round(wait_s, 2)
+                            time.sleep(wait_s)
                         client.submit(game_id, payload)
+                        info["sent_at_s"] = since()
                     info["submitted"] = True
                     best.update(rank=rank, payload=payload, priced=priced, timing=timing or {})
                 except Exception as e:  # noqa: BLE001
@@ -193,7 +202,8 @@ def play_game(client, cfg, st, game_id: int, start_time: float | None, dry_run: 
             standby = os.environ.get("C2F_ROLE", "primary").strip().lower() == "standby"
             fixed_until = cfg.section("runtime").get("fixed_max_seconds", 12)
             if standby:
-                print(f"[game {game_id}] standby role: backup stage only")
+                hold["until"] = float(cfg.section("runtime").get("standby_hold_seconds", 0) or 0)
+                print(f"[game {game_id}] standby role: backup stage only, sent from {hold['until']:.0f}s on")
             elif since() <= fixed_until:
                 push(0, "fixed", [], None, submission_payload([], positions, fallback))
             else:

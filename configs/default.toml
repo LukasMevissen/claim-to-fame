@@ -6,6 +6,10 @@
 deadline_seconds = 54         # hard budget inside the 60 s window, leaves margin for submit
 llm_timeout_seconds = 38
 fixed_max_seconds = 12        # fixed fallback prices are only submitted this early (see play_game)
+# Second machine (C2F_ROLE=standby): its answer is sent no earlier than this many seconds after
+# the game start, so it lands after the primary's stages (their backup stage arrived after
+# 10-43 s in games 40-62) and stands. 0 = send as soon as it is ready.
+standby_hold_seconds = 47
 
 [llm]
 # full stage: reasoning model that applies the policy wording (sub-limits, reductions,

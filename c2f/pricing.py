@@ -89,6 +89,38 @@ def expected_revenue(a: float, belief: TBelief, p: PricingParams) -> float:
     return rev / len(ts)
 
 
+def expected_revenues(cands: list[float], belief: TBelief, p: PricingParams) -> list[float]:
+    """expected_revenue for every candidate at once (numpy). Same model and same numbers as
+    expected_revenue up to float summation order; about 100x faster. The pure-Python loop took
+    40 s and more per case on the Windows runner (games 52, 53: full and backup stage missed
+    the deadline because three stages price in parallel)."""
+    import numpy as np
+
+    ts = belief.grid(p.n_t_grid)
+    zs = [_STD.inv_cdf((i + 0.5) / p.n_opp_draws) for i in range(p.n_opp_draws)]
+    total_w = sum(o.weight for o in p.opponents)
+    a = np.asarray(cands, dtype=float)[:, None, None]            # candidates x t x draws
+    t = np.asarray(ts, dtype=float)[None, :, None]
+    fair = a <= t
+    capped = np.minimum(a, 4.0 * t)                              # payment cap c = 4t
+    rev = np.zeros(len(cands))
+    for opp in p.opponents:
+        # limits per t, built with the same arithmetic as _opp_limits
+        b = np.asarray([_opp_limits(x, belief, opp, zs) for x in ts], dtype=float)[None, :, :]
+        accepted = a <= b
+        pay = np.where(fair, np.where(accepted, a, 1.5 * a), np.where(accepted, capped, 0.0))
+        rev += opp.weight / total_w * pay.mean(axis=2).sum(axis=1)
+    return (rev / len(ts)).tolist()
+
+
+def _best_candidate(cands: list[float], belief: TBelief, p: PricingParams) -> float:
+    try:
+        revs = expected_revenues(cands, belief, p)
+        return cands[max(range(len(cands)), key=revs.__getitem__)]   # first maximum, like max()
+    except Exception:  # noqa: BLE001  numpy missing or failing must not cost a game
+        return max(cands, key=lambda a: expected_revenue(a, belief, p))
+
+
 def charge_price(belief: TBelief, p: PricingParams) -> float:
     if belief.median <= 0:
         return 0.0
@@ -115,7 +147,7 @@ def _charge_price_search(belief: TBelief, p: PricingParams) -> float:
     hi = pos.quantile(p.charge_ceiling_quantile)
     n = max(p.n_candidates, 2)
     cands = [lo * (hi / lo) ** (i / (n - 1)) for i in range(n)] if lo > 0 else [hi]
-    best = max(cands, key=lambda a: expected_revenue(a, belief, p))
+    best = _best_candidate(cands, belief, p)
     # Replay of games 1-12: the opponent model shades a to about 0.8 x estimate, yet our
     # charges were always proven fair with room above, so keep a at least this close.
     # Confident estimates (amount fixed by the policy or by a near-identical earlier case) are
