@@ -44,7 +44,8 @@ US = "GemischtesHack"
 TEAM_MEMBERS = ("LukasMevissen", "Diegocentrico2001", "milanova-n")
 # git author names that belong to the same person
 ALIASES = {"Lukas Mevissen": "LukasMevissen"}
-RECENT_GAMES = 5
+WINDOW_GAMES = 10    # handyman and insurer analysis: only the last 10 completed games
+RECENT_GAMES = 5     # inside that window: flag teams whose behaviour changed lately
 
 
 # ------------------------------------------------------------------ scores
@@ -142,7 +143,7 @@ def _field(ms: list[dict]) -> dict:
 
 
 def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
-    """Per opponent: what they do as handyman (a) and as insurer (b), whole tournament
+    """Per opponent: what they do as handyman (a) and as insurer (b), the last WINDOW_GAMES games
     and the last RECENT_GAMES games, so a change of strategy shows up."""
     a_vs_t = {}            # (team, game, item) -> fair / fraud / unknown
     by_team: dict[str, list[dict]] = defaultdict(list)
@@ -210,7 +211,8 @@ def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
         }
 
     teams = sorted(by_team, key=str.lower)
-    full = {t: metrics(t, 1) for t in teams}
+    first_game = max(1, last_game - WINDOW_GAMES + 1)
+    full = {t: metrics(t, first_game) for t in teams}
     recent = {t: metrics(t, last_game - RECENT_GAMES + 1) for t in teams}
     f_all, f_rec = _field(list(full.values())), _field(list(recent.values()))
     out = {}
@@ -230,7 +232,8 @@ def strategies(ab_rows: list[dict], tx_dir: Path, belief_path: Path) -> dict:
                         "model_limit": round(math.exp(b["beta"]), 2) if "beta" in b else None,
                         "model_spread": round(b["tau"], 2) if "tau" in b else None},
         }
-    return {"last_game": last_game, "recent_games": RECENT_GAMES, "field": f_all, "teams": out}
+    return {"first_game": first_game, "last_game": last_game, "window_games": WINDOW_GAMES,
+            "recent_games": RECENT_GAMES, "field": f_all, "teams": out}
 
 
 # ------------------------------------------------------------------ todo
