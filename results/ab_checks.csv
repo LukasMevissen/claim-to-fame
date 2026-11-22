@@ -51,3 +51,6 @@ error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we 
 error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
 error,our_a_mismatch,50,15,GemischtesHack,"rejected at 110.93 = 1.5 x 73.95, we sent a = 74.82"
 info,our_a_capped,50,15,GemischtesHack,"we sent a = 74.82, paid 73.95: c = 73.95"
+warn,our_unlogged_play,52,,GemischtesHack,"156 rows show a submission, but no live record in the log"
+warn,our_unlogged_play,53,,GemischtesHack,"146 rows show a submission, but no live record in the log"
+warn,our_unlogged_play,54,,GemischtesHack,"78 rows show a submission, but no live record in the log"
