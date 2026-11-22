@@ -1,7 +1,7 @@
 # Charge agent: the charge a per line, decided from all earlier rounds
 
 Status: 2026-11-22. Code `c2f/charge_agent.py`, switch `[charge_agent]` in
-`configs/default.toml` (**off** by default), backtest `scripts/charge_agent_backtest.py`,
+`configs/default.toml` (**shadow run** of rule / risk neutral since 2026-11-22, section 8), backtest `scripts/charge_agent_backtest.py`,
 tests `tests/test_charge_agent.py`. Data: transactions and case digests of games 1 to 48,
 stored `gpt-6.2-sol` assessments of games 10 to 47 (snapshot of `origin/main`).
 
@@ -171,11 +171,37 @@ expected score, for example in the last games when only a rank change counts.
 6. This checkout was 24 commits behind `origin/main` when tested; the baseline replicates the
    confident-line floor of `origin/main`, not its other changes.
 
-## 8. Switching it on
+## 8. Shadow run and takeover
 
     [charge_agent]
     mode = "rule"        # or "llm"
     risk = "neutral"     # or "loving"
+    shadow = true        # false: submit the agent's charges at once
+    takeover = true      # false: stay in shadow whatever the score
+    takeover_rounds = 3
 
-Every live run then records under `timing.charge_agent` in `runs/submissions.jsonl` the mode,
-which weights were used (`llm` or `rule`), the judge's time and the agent's time.
+- **In shadow** the agent prices every live game, but the fixed rule's charges are submitted.
+  The agent's charges are recorded per line in `runs/submissions.jsonl` under
+  `timing.charge_agent.shadow_charges`. A shadow run never waits for the judge and adds
+  about 0.2 s to pricing.
+- **Scoring.** When a round's transactions are public, the scheduler's market refresh scores
+  both sets of charges against the real opponents of that round (handyman revenue, rules of
+  section 3) and writes `results/charge_agent/shadow.json`: per round the fixed rule's revenue,
+  the agent's and the difference, the current streak and whether the agent is live. The same
+  line appears in the scheduler log.
+- **Takeover.** A round is a win when the agent's charges would have earned more. A round
+  without a difference (nothing covered) neither counts nor breaks the streak. After
+  `takeover_rounds` wins in a row the agent's charges are submitted from the next game on.
+  The decision is recomputed from the run log and the market summary, so both machines reach
+  the same answer. It is not taken back automatically: set `shadow = false` / `mode = "off"`
+  by hand, or `takeover = false` to return to shadow.
+- **After the takeover** the fixed rule's search for a is skipped (faster), so there is no
+  further comparison.
+
+**How strong is the criterion?** Weak. In the backtest the agent earned more in 19 of 35
+rounds with a difference: its gain is in the size of the wins, not in how often it wins.
+Three wins in a row would have first happened at the ninth scored round (game 21), and for a
+coin flip they happen within 14 rounds on average. The rule will therefore switch the agent
+live sooner or later almost regardless of its quality. A criterion on the summed difference
+(for example: ahead in total over the last 10 scored rounds) would test what the backtest
+measures.

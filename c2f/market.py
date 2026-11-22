@@ -180,6 +180,22 @@ def refresh(fetch: bool = True, refit: bool = True, deadline: float | None = Non
                         f"saving vs 1.0: {lf['saving_vs_1']})")
         except Exception as e:  # noqa: BLE001
             fail("limit factor", e)
+        try:                         # charge agent in shadow: score the finished rounds
+            from . import charge_agent
+            from .config import load_config
+            sec = load_config().section("charge_agent")
+            if (sec.get("shadow", False) and Path(summary) == charge_agent.SUMMARY
+                    and Path(quotes) == charge_agent.QUOTES):
+                st = charge_agent.write_shadow_report(int(sec.get("takeover_rounds", 3)))
+                rep["charge_agent"] = {k: st[k] for k in ("active", "since_game", "streak")}
+                last = st["rounds"][-1] if st["rounds"] else None
+                log("charge agent shadow: " + (
+                    f"live since game {st['since_game']}" if st["active"] else
+                    f"{len(st['rounds'])} rounds scored, {st['streak']} of {st['needed']} wins in a row"
+                    + (f"; game {last['game']}: agent {last['agent']:,.0f} vs fixed rule {last['legacy']:,.0f}"
+                       if last else "")))
+        except Exception as e:  # noqa: BLE001
+            fail("charge agent shadow", e)
 
     if refit and _stale(belief, txs_files):
         if deadline is not None and deadline - time.time() < REFIT_SECONDS:

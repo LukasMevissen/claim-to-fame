@@ -29,6 +29,10 @@ Two modes decide the relevance weights:
            assessment and has a hard time limit; without an answer in time the rule
            weights are used, so it can never delay a submission beyond that limit.
 
+Shadow run ([charge_agent] shadow = true): the agent's charges are recorded next to the
+submitted ones and scored after every round; after `takeover_rounds` winning rounds in a
+row they are submitted instead (see "shadow run and takeover" at the end of this file).
+
 Config: [charge_agent] in configs/default.toml. Backtest: scripts/charge_agent_backtest.py.
 Design and results: docs/research/charge_agent.md.
 """
@@ -834,6 +838,8 @@ def begin(case, cfg_section: dict, model: str = "gpt-6.2-sol") -> None:
         if mode not in ("rule", "llm"):
             return
         _judge_pool.submit(warm, cfg_section, model)
+        if cfg_section.get("shadow", False):
+            _judge_pool.submit(shared_takeover, int(cfg_section.get("takeover_rounds", 3)))
         if mode == "llm":
             from .pricebook import invoice_lines, policy_title
             jm, _, effort = str(cfg_section.get("judge_model", "gpt-4.1")).partition("@")
@@ -891,3 +897,117 @@ def live_charges(case, estimates: dict[int, tuple[float, float]], cfg_section: d
     info["lines_with_precedents"] = sum(d.n_precedents > 0 for d in dec.values())
     info["seconds"] = round(time.monotonic() - t0, 3)
     return dec, info
+
+
+# ------------------------------------------------------------------ shadow run and takeover
+#
+# [charge_agent] shadow = true: the agent prices every live game, but its charges are only
+# recorded (runs/submissions.jsonl, timing.charge_agent.shadow_charges) while the fixed rule's
+# charges are submitted. After a game's transactions are public, both sets of charges are
+# scored against the real opponents of that game. Once the agent has earned more than the
+# fixed rule in `takeover_rounds` scored rounds in a row, its charges are submitted from the
+# next game on. The decision is recomputed from the run log and the market summary, so every
+# machine that has both files reaches the same answer; nothing else is stored.
+
+QUOTES = REPO_ROOT / "runs" / "submissions.jsonl"
+SHADOW_REPORT = REPO_ROOT / "results" / "charge_agent" / "shadow.json"
+
+
+def line_revenue(a: float, s: dict, up: float = 1.15, cap: float | None = 4.0) -> float:
+    """Handyman revenue of charge a on a finished line against the real opponents
+    (c2f/replay.py rules). Where t is bracketed, the mean over t spread evenly across the
+    bracket (a single midpoint makes charges inside the bracket a coin flip); where only a
+    lower bound is known, t = up x that bound."""
+    from . import replay
+    lo, hi = s["t_low"], s["t_high"]
+    if lo > 0 and hi and hi > lo and any(v > 0 for v in s["charges"].values()):
+        ts = [lo + (hi - lo) * (i + 0.5) / 9 for i in range(9)]
+    else:
+        ts = [t_point(s, up)]
+    return sum(replay.item_net(a, 0.0, s, t, cap=cap) - replay.item_net(0.0, 0.0, s, t, cap=cap)
+               for t in ts) / len(ts)
+
+
+def _run_records(quotes: str | Path) -> dict[int, dict]:
+    """Game -> last successful live record with a payload (what stood on the server)."""
+    out: dict[int, dict] = {}
+    p = Path(quotes)
+    if not p.exists():
+        return out
+    for line in p.read_text(encoding="utf-8").splitlines():
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if r.get("game_id") is None or not r.get("payload") or r.get("dry_run") or not r.get("ok", True):
+            continue
+        out[int(r["game_id"])] = r
+    return out
+
+
+def takeover_status(quotes: str | Path | None = None, summary: dict | None = None, rounds: int = 3,
+                    min_diff: float = 1.0) -> dict:
+    """Score every finished shadow round and decide whether the agent has taken over.
+
+    A round counts when the agent ran in shadow and the game's transactions are public. It
+    is a win when the agent's charges would have earned more than the submitted ones by more
+    than min_diff, a loss when less; a round without a difference (nothing covered, or the
+    same charges) is left out and does not break a streak. `rounds` wins in a row switch the
+    agent live from the next game; the switch is not taken back automatically.
+    Returns {"active", "since_game", "streak", "needed", "rounds": [{game, legacy, agent, diff}]}."""
+    if summary is None:
+        summary = _load_json(SUMMARY) if SUMMARY.exists() else {}
+    records = _run_records(QUOTES if quotes is None else quotes)
+    out: dict = {"active": False, "since_game": None, "streak": 0, "needed": int(rounds), "rounds": []}
+    for g in sorted(records):
+        info = (records[g].get("timing") or {}).get("charge_agent") or {}
+        if info.get("submitted") == "agent" and info.get("takeover") and not out["active"]:
+            out.update(active=True, since_game=g)        # switched on a machine with more history
+        shadow = info.get("shadow_charges")
+        items = summary.get(str(g))
+        if out["active"] or not shadow or not items or g == 0:
+            continue
+        legacy = agent = 0.0
+        for q in records[g]["payload"]:
+            s = items.get(str(q.get("index")))
+            if s is None:
+                continue
+            a_old = float(q.get("charge_price") or 0.0)
+            a_new = float(shadow.get(str(q.get("index")), a_old))
+            legacy += line_revenue(a_old, s)
+            agent += line_revenue(a_new, s)
+        diff = agent - legacy
+        out["rounds"].append({"game": g, "legacy": round(legacy, 1), "agent": round(agent, 1),
+                              "diff": round(diff, 1)})
+        if diff > min_diff:
+            out["streak"] += 1
+        elif diff < -min_diff:
+            out["streak"] = 0
+        if rounds > 0 and out["streak"] >= rounds:
+            later = [h for h in records if h > g]
+            out.update(active=True, since_game=min(later) if later else g + 1)
+    return out
+
+
+_take_lock = threading.Lock()
+_take_cache: dict = {}
+
+
+def shared_takeover(rounds: int = 3) -> dict:
+    """takeover_status() on the files on disk, recomputed when one of them changes."""
+    stamp = (rounds, *(f.stat().st_mtime_ns if f.exists() else 0 for f in (QUOTES, SUMMARY)))
+    with _take_lock:
+        if _take_cache.get("stamp") != stamp:
+            _take_cache.update(stamp=stamp, status=takeover_status(rounds=rounds))
+        return _take_cache["status"]
+
+
+def write_shadow_report(rounds: int = 3, path: str | Path | None = None) -> dict:
+    """Score the shadow rounds and save the result for the team (results/charge_agent/shadow.json)."""
+    st = takeover_status(rounds=rounds)
+    path = Path(SHADOW_REPORT if path is None else path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(st, indent=1)
+    if not path.exists() or path.read_text(encoding="utf-8") != text:
+        path.write_text(text, encoding="utf-8")
+    return st

@@ -29,25 +29,11 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 
 from c2f import charge_agent as ca  # noqa: E402
-from c2f import replay  # noqa: E402
 from c2f.belief import TBelief  # noqa: E402
 from c2f.config import load_config  # noqa: E402
 from c2f.pricing import charge_price  # noqa: E402
 
 UPS = (1.0, 1.15, 1.4)
-
-
-def revenue(a: float, s: dict, up: float, cap: float | None) -> float:
-    """Handyman revenue of charge a on a finished line. Where t is bracketed, the mean over
-    t spread evenly across the bracket (a single midpoint makes charges inside the bracket a
-    coin flip); where only a lower bound is known, t = up x that bound."""
-    lo, hi = s["t_low"], s["t_high"]
-    if lo > 0 and hi and hi > lo and any(v > 0 for v in s["charges"].values()):
-        ts = [lo + (hi - lo) * (i + 0.5) / 9 for i in range(9)]
-    else:
-        ts = [replay.t_point(s, up)]
-    return sum(replay.item_net(a, 0.0, s, t, cap=cap) - replay.item_net(0.0, 0.0, s, t, cap=cap)
-               for t in ts) / len(ts)
 
 
 def fixed_charge(m: float, sigma_stated: float, pricing, conf: bool) -> float:
@@ -177,7 +163,7 @@ def main() -> None:
             rev = {}
             for arm in arms:
                 for up in UPS:
-                    r = revenue(a_of[arm], s, up, 4.0)
+                    r = ca.line_revenue(a_of[arm], s, up, 4.0)
                     pg[arm][up] += r
                     if up == 1.15:
                         rev[arm] = round(r, 1)

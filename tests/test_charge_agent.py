@@ -248,3 +248,73 @@ def test_price_items_takes_the_agents_charge_and_keeps_its_own_limit(monkeypatch
     assert priced[0].acceptance_limit == round(acceptance_limit(agent.to_belief(_items()[0], cfg), cfg.pricing), 2)
     assert (priced[1].charge_price, priced[1].acceptance_limit) == (1.0, 2.0)     # no agent charge: fixed rule
     assert len(calls) == 1                                  # the slow search ran only for line 2
+
+
+# ---------- shadow run and takeover ----------
+
+LINE = {"t_low": 100.0, "t_high": 110.0, "charges": {"A": 100.0, "B": 110.0},
+        "fair": {"A": True, "B": False}, "b_bounds": {"A": [90.0, None], "B": [0.0, 95.0]}}
+
+
+def _log(tmp_path, rounds):
+    """rounds: (game, submitted charge, shadow charge or None)."""
+    f = tmp_path / "submissions.jsonl"
+    rows = []
+    for g, a, shadow in rounds:
+        info = {"submitted": "legacy", "shadow_charges": {"1": shadow}} if shadow is not None else {}
+        rows.append({"game_id": g, "ok": True, "dry_run": False,
+                     "payload": [{"index": 1, "charge_price": a, "acceptance_limit": 0.0}],
+                     "timing": {"charge_agent": info} if info else {}})
+    f.write_text("\n".join(json.dumps(r) for r in rows))
+    return f
+
+
+def test_line_revenue_prefers_the_fair_higher_charge():
+    assert ca.line_revenue(100.0, LINE) > ca.line_revenue(80.0, LINE) > ca.line_revenue(130.0, LINE) > 0
+
+
+def test_takeover_needs_three_winning_rounds_in_a_row(tmp_path):
+    summary = {str(g): {"1": LINE} for g in range(60, 70)}
+    win, loss, tie = 100.0, 130.0, 80.0
+    # win, win, loss: the streak starts again
+    st = ca.takeover_status(_log(tmp_path, [(60, 80.0, win), (61, 80.0, win), (62, 80.0, loss),
+                                            (63, 80.0, win), (64, 80.0, win)]), summary, rounds=3)
+    assert not st["active"] and st["streak"] == 2 and len(st["rounds"]) == 5
+    assert st["rounds"][2]["diff"] < 0 < st["rounds"][0]["diff"]
+    # a round without a difference neither counts nor breaks the streak; the third win switches
+    st = ca.takeover_status(_log(tmp_path, [(60, 80.0, win), (61, 80.0, tie), (62, 80.0, win),
+                                            (63, 80.0, None), (64, 80.0, win), (65, 80.0, loss)]),
+                            summary, rounds=3)
+    assert st["active"] and st["since_game"] == 65       # live from the game after the third win
+    assert [r["game"] for r in st["rounds"]] == [60, 61, 62, 64]     # nothing is scored after the switch
+    # rounds whose transactions are not public yet are not scored
+    st = ca.takeover_status(_log(tmp_path, [(60, 80.0, win), (61, 80.0, win), (70, 80.0, win)]), summary, rounds=3)
+    assert not st["active"] and st["streak"] == 2
+    assert not ca.takeover_status(tmp_path / "missing.jsonl", summary)["active"]
+
+
+def test_shadow_records_the_agents_charges_and_submits_the_fixed_rule_until_takeover(synthetic, monkeypatch):
+    status = {"active": False}
+    monkeypatch.setattr(ca, "shared_takeover", lambda rounds=3: status)
+    cfg = _cfg(mode="rule", risk="neutral", shadow=True, takeover_rounds=3)
+    timing: dict = {}
+    assert _agent_charges(_items(), _case(), cfg, timing, True, 40.0) == {}         # fixed rule prices
+    info = timing["charge_agent"]
+    assert info["submitted"] == "legacy" and info["shadow_charges"]["1"] > 1000.0
+    assert set(info["shadow_charges"]) == {"1", "2"}
+
+    status["active"] = True
+    timing = {}
+    charges = _agent_charges(_items(), _case(), cfg, timing, True, 40.0)
+    assert charges[1] > 1000.0 and timing["charge_agent"]["submitted"] == "agent"
+    assert timing["charge_agent"]["takeover"] is True and "shadow_charges" not in timing["charge_agent"]
+
+    timing = {}                                             # takeover = false: shadow whatever the score
+    assert _agent_charges(_items(), _case(), _cfg(mode="rule", shadow=True, takeover=False), timing, True, 40.0) == {}
+    assert timing["charge_agent"]["submitted"] == "legacy"
+
+
+def test_default_config_runs_rule_neutral_in_shadow():
+    from c2f.config import load_config
+    sec = load_config().section("charge_agent")
+    assert (sec["mode"], sec["risk"], sec["shadow"], sec["takeover_rounds"]) == ("rule", "neutral", True, 3)

@@ -60,17 +60,37 @@ def _agent_charges(items: list[ItemEstimate], case: Case, cfg: Config, timing: d
                    time_left: float | None) -> dict[int, float]:
     """Opt-in ([charge_agent] mode = "rule" | "llm"): the charge a per line decided by the
     charge agent (c2f/charge_agent.py), as POS -> a for price_items. The limit b is not
-    touched. Never raises: on any error it returns {} and the fixed rule prices every line."""
+    touched. Never raises: on any error it returns {} and the fixed rule prices every line.
+
+    With [charge_agent] shadow = true the agent's charges are only recorded in the timing
+    (shadow_charges) and {} is returned, so the fixed rule's charges are submitted; once the
+    agent has won takeover_rounds scored rounds in a row (charge_agent.takeover_status) its
+    charges are returned and submitted. A shadow run never waits for the judge."""
     sec = cfg.section("charge_agent")
     if sec.get("mode", "off") not in ("rule", "llm") or not items:
         return {}
     try:
         from . import charge_agent
+        shadow = bool(sec.get("shadow", False))
+        taken = False
+        if shadow and sec.get("takeover", True):
+            try:
+                taken = bool(charge_agent.shared_takeover(int(sec.get("takeover_rounds", 3)))["active"])
+            except Exception as e:  # noqa: BLE001  no decision -> stay in shadow
+                print(f"[agent] takeover status unavailable: {e!r}")
+        wait = wait and (taken or not shadow)
         est = {_index(it.item_id, k): (it.quantity * it.unit_price_gross_eur, it.price_log_sd)
                for k, it in enumerate(items, 1)}
         dec, info = charge_agent.live_charges(case, est, sec, cfg.section("llm").get("model", "gpt-6.2-sol"),
                                               wait=wait, time_left=time_left)
         out = {pos: d.a for pos, d in dec.items() if d.a > 0 and math.isfinite(d.a)}
+        if shadow and not taken:
+            info["submitted"] = "legacy"
+            info["shadow_charges"] = {str(pos): a for pos, a in sorted(out.items())}
+            timing["charge_agent"] = info
+            return {}
+        info["submitted"] = "agent"
+        info["takeover"] = shadow
         info["lines_set"] = len(out)
         timing["charge_agent"] = info
         return out
