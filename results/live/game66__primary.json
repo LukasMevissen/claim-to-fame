@@ -1,0 +1,415 @@
+{
+ "game": 66,
+ "ts": "2026-11-22T04:27:04",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "961955e207ecb5d2a5196d70879f513afbb378bb",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "dea3a8c0cb12"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 13.36,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Leak detection pool pipeline",
+     "median": 534.0,
+     "sigma": 0.3,
+     "p_zero": 0.0,
+     "a": 464.58,
+     "b": 497.43
+    },
+    {
+     "index": 2,
+     "description": "Repair pool supply pipe connection",
+     "median": 339.0,
+     "sigma": 0.3,
+     "p_zero": 0.99,
+     "a": 294.93,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Skilled worker hours (leak detection invoice)",
+     "median": 346.0,
+     "sigma": 0.3,
+     "p_zero": 0.95,
+     "a": 301.02,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Material for pool pipe repair",
+     "median": 137.0,
+     "sigma": 0.3,
+     "p_zero": 0.99,
+     "a": 119.19,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Moisture measurement",
+     "median": 232.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 201.84,
+     "b": 225.62
+    },
+    {
+     "index": 6,
+     "description": "Vacuum water",
+     "median": 313.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 272.31,
+     "b": 304.4
+    },
+    {
+     "index": 7,
+     "description": "Room drying (pool/conservatory)",
+     "median": 571.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 496.77,
+     "b": 555.3
+    },
+    {
+     "index": 8,
+     "description": "Condensation dryer (1 day)",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 9,
+     "description": "Drying fan (3 days)",
+     "median": 81.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 70.47,
+     "b": 78.77
+    },
+    {
+     "index": 10,
+     "description": "Replace skirting boards (15 m)",
+     "median": 712.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 619.44,
+     "b": 677.67
+    },
+    {
+     "index": 11,
+     "description": "Clean / dry conservatory rug",
+     "median": 231.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 200.97,
+     "b": 224.65
+    },
+    {
+     "index": 12,
+     "description": "Inspect electrical systems",
+     "median": 350.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 304.5,
+     "b": 340.38
+    },
+    {
+     "index": 13,
+     "description": "Inspect pool technology",
+     "median": 422.0,
+     "sigma": 0.3,
+     "p_zero": 0.99,
+     "a": 367.14,
+     "b": 0.0
+    },
+    {
+     "index": 14,
+     "description": "Upgrade to high-quality natural stone floor (12 m²)",
+     "median": 0.01,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.01,
+     "b": 0.0
+    },
+    {
+     "index": 15,
+     "description": "Pool filter system maintenance",
+     "median": 0.01,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.01,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Restore wall surfaces (10 m²)",
+     "median": 688.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 598.56,
+     "b": 669.09
+    },
+    {
+     "index": 17,
+     "description": "Final site cleaning",
+     "median": 213.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 185.31,
+     "b": 207.14
+    },
+    {
+     "index": 18,
+     "description": "Vehicle costs (one per invoice)",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 7,
+    "seconds": 0.013,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 485.61,
+     "2": 314.51,
+     "3": 380.48,
+     "4": 115.01,
+     "5": 190.9,
+     "6": 290.38,
+     "7": 529.74,
+     "8": 55.11,
+     "9": 75.15,
+     "10": 524.83,
+     "11": 191.99,
+     "12": 324.71,
+     "13": 391.51,
+     "14": 0.01,
+     "15": 0.01,
+     "16": 589.21,
+     "17": 197.61,
+     "18": 76.24
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 24.94,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Locate pool pipeline leak",
+     "median": 534.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 507.3,
+     "b": 534.0
+    },
+    {
+     "index": 2,
+     "description": "Repair pool supply coupling",
+     "median": 339.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 322.05,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Fitter labour, 5 hours",
+     "median": 346.0,
+     "sigma": 0.38,
+     "p_zero": 1.0,
+     "a": 301.02,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Pool pipe repair materials",
+     "median": 137.0,
+     "sigma": 0.28,
+     "p_zero": 1.0,
+     "a": 119.19,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Moisture measurement",
+     "median": 232.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 201.84,
+     "b": 224.78
+    },
+    {
+     "index": 6,
+     "description": "Wet-vacuum standing water",
+     "median": 313.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 272.31,
+     "b": 292.56
+    },
+    {
+     "index": 7,
+     "description": "Set up and attend room drying",
+     "median": 571.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 496.77,
+     "b": 533.71
+    },
+    {
+     "index": 8,
+     "description": "Condensation dryer, 1 day",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 52.2,
+     "b": 58.13
+    },
+    {
+     "index": 9,
+     "description": "Drying fan, 3 days",
+     "median": 81.0,
+     "sigma": 0.32,
+     "p_zero": 0.01,
+     "a": 70.47,
+     "b": 74.36
+    },
+    {
+     "index": 10,
+     "description": "Replace softwood skirting, 15 m",
+     "median": 712.0,
+     "sigma": 0.43,
+     "p_zero": 0.01,
+     "a": 639.18,
+     "b": 622.12
+    },
+    {
+     "index": 11,
+     "description": "Clean and dry conservatory rug",
+     "median": 231.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 219.45,
+     "b": 231.0
+    },
+    {
+     "index": 12,
+     "description": "Test wetted building electrics",
+     "median": 350.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 304.5,
+     "b": 327.14
+    },
+    {
+     "index": 13,
+     "description": "Inspect pool pump and controls",
+     "median": 422.0,
+     "sigma": 0.28,
+     "p_zero": 1.0,
+     "a": 367.14,
+     "b": 0.0
+    },
+    {
+     "index": 14,
+     "description": "Natural-stone floor upgrade, 12 m²",
+     "median": 1560.0,
+     "sigma": 0.35,
+     "p_zero": 1.0,
+     "a": 1357.2,
+     "b": 0.0
+    },
+    {
+     "index": 15,
+     "description": "Annual pool filter service",
+     "median": 262.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 248.9,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Restore wetted wall render, 10 m²",
+     "median": 688.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 598.56,
+     "b": 666.6
+    },
+    {
+     "index": 17,
+     "description": "Final cleaning of covered work area",
+     "median": 213.0,
+     "sigma": 0.28,
+     "p_zero": 0.02,
+     "a": 185.31,
+     "b": 198.02
+    },
+    {
+     "index": 18,
+     "description": "Building-services van charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 78.85,
+     "b": 83.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 7,
+    "seconds": 0.011,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 490.49,
+     "2": 311.38,
+     "3": 380.48,
+     "4": 115.01,
+     "5": 190.9,
+     "6": 290.38,
+     "7": 529.74,
+     "8": 49.87,
+     "9": 75.15,
+     "10": 514.44,
+     "11": 212.18,
+     "12": 324.71,
+     "13": 391.51,
+     "14": 1447.28,
+     "15": 240.65,
+     "16": 583.35,
+     "17": 197.61,
+     "18": 76.24
+    }
+   }
+  }
+ ]
+}

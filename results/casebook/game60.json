@@ -1,0 +1,18 @@
+{
+ "game": 60,
+ "policy": "RESIDENTIAL DWELLING INSURANCE / Policy wording \"WD-2026\" - Technical Installations and Ancillary Charges Edition",
+ "description": "Electrical surge claim on the fixed building-services cover. Lightning hit the supply line in a storm, and the surge ran through the property and damaged two fixed air conditioning units, one on the kitchen wall near the hob and one in the hallway, along with a portable, remote-controlled split unit in the study. None could be economically repaired. The replacements are like-for-like: a 7.1 kW unit again for the open kitchen and a 3.5 kW unit again for the hallway, both permanently wired and fixed like the old ones. The study unit is the type that ships with a handheld wireless remote and can be unplugged and moved. The two wall units came in together on one heavy pallet, over 80 kilograms, on standard freight; the study unit travelled separately in the fitter's van. The owner also paid an express surcharge to bring one item forward. For the file: this policy carries a kitchen climate endorsement. The contractor's invoice also includes a return visit, an administration fee, and disposal of an old unrelated boiler that was cleared out at the same time.",
+ "lines": {
+  "1": "Air conditioning unit - kitchen (wall-fixed near the hob, surge damaged) | 1 pcs",
+  "2": "Air conditioning unit - hallway (wall-fixed, surge damaged) | 1 pcs",
+  "3": "Split unit - study (ships with handheld wireless remote, movable) | 1 pcs",
+  "4": "Installation - kitchen unit 1 pcs",
+  "5": "Installation - hallway unit 1 pcs",
+  "6": "Installation - study split unit 1 pcs",
+  "7": "Standard freight - replacement equipment pallet (over | 80 kg) | 1 pcs",
+  "8": "Express delivery surcharge 1 flat rate",
+  "9": "Vehicle costs – return visit 1 pcs",
+  "10": "Contractor administration fee 1 flat rate",
+  "11": "Disposal of old unrelated boiler 1 pcs"
+ }
+}

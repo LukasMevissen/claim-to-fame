@@ -1,0 +1,635 @@
+{
+ "game": 79,
+ "ts": "2026-11-22T07:20:31",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 19.05,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Indoor leak detection",
+     "median": 567.0,
+     "sigma": 0.3,
+     "p_zero": 0.0,
+     "a": 493.29,
+     "b": 523.18
+    },
+    {
+     "index": 2,
+     "description": "Moisture measurement",
+     "median": 229.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 199.23,
+     "b": 220.6
+    },
+    {
+     "index": 3,
+     "description": "Skilled worker hours (6 hrs)",
+     "median": 469.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 408.03,
+     "b": 451.8
+    },
+    {
+     "index": 4,
+     "description": "Helper hours (6 hrs)",
+     "median": 400.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 348.0,
+     "b": 385.33
+    },
+    {
+     "index": 5,
+     "description": "Vehicle costs",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 79.8,
+     "b": 84.0
+    },
+    {
+     "index": 6,
+     "description": "Small parts and consumables",
+     "median": 47.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 44.65,
+     "b": 47.0
+    },
+    {
+     "index": 7,
+     "description": "Expose pipeline",
+     "median": 124.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 117.8,
+     "b": 124.0
+    },
+    {
+     "index": 8,
+     "description": "Removal and disposal of damaged insulation (0.75 hrs)",
+     "median": 58.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 50.46,
+     "b": 55.87
+    },
+    {
+     "index": 9,
+     "description": "Removal and disposal of damaged insulation (6 hrs)",
+     "median": 464.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 403.68,
+     "b": 446.99
+    },
+    {
+     "index": 10,
+     "description": "Room drying up to 25 m² (roof space)",
+     "median": 56.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 59.38,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Condensation dryer",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 12,
+     "description": "Drying fan (roof space, 2 pcs)",
+     "median": 56.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 59.38,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Room drying up to 50 m² (kitchen)",
+     "median": 120.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 104.4,
+     "b": 115.6
+    },
+    {
+     "index": 14,
+     "description": "Pipe repair, copper pipe 22–28 mm (1 m)",
+     "median": 150.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 130.5,
+     "b": 144.5
+    },
+    {
+     "index": 15,
+     "description": "Transition piece, copper 22/28 mm (2 pcs)",
+     "median": 66.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 57.42,
+     "b": 63.58
+    },
+    {
+     "index": 16,
+     "description": "Copper pipe 28 mm (3 m)",
+     "median": 211.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 183.57,
+     "b": 203.26
+    },
+    {
+     "index": 17,
+     "description": "Pipe insulation 28 mm (3 m)",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 52.2,
+     "b": 57.8
+    },
+    {
+     "index": 18,
+     "description": "Service technician hours (4 hrs)",
+     "median": 360.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 313.2,
+     "b": 346.8
+    },
+    {
+     "index": 19,
+     "description": "Restore pipe insulation (installer, 6 hrs)",
+     "median": 400.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 348.0,
+     "b": 385.33
+    },
+    {
+     "index": 20,
+     "description": "Final measurement",
+     "median": 131.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 113.97,
+     "b": 126.2
+    },
+    {
+     "index": 21,
+     "description": "Final site cleaning",
+     "median": 206.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 195.7,
+     "b": 206.0
+    },
+    {
+     "index": 22,
+     "description": "Removal of the water-damaged wooden kitchen table",
+     "median": 57.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 49.59,
+     "b": 54.91
+    },
+    {
+     "index": 23,
+     "description": "Transport of the damaged table",
+     "median": 95.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 82.65,
+     "b": 91.52
+    },
+    {
+     "index": 24,
+     "description": "Disposal of the damaged table",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 52.2,
+     "b": 57.8
+    },
+    {
+     "index": 25,
+     "description": "Supply of replacement kitchen table, comparable specification to the original",
+     "median": 530.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 461.1,
+     "b": 510.57
+    },
+    {
+     "index": 26,
+     "description": "Delivery of the replacement table",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 27,
+     "description": "Assembly of the new table (2 hrs)",
+     "median": 80.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 69.6,
+     "b": 77.07
+    },
+    {
+     "index": 28,
+     "description": "Cleaning of the installation area",
+     "median": 41.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 35.67,
+     "b": 39.5
+    },
+    {
+     "index": 29,
+     "description": "Inspection of further furniture items stored in the garden for moisture",
+     "median": 0.1,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 0.11,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 19,
+    "seconds": 0.021,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 480.76,
+     "2": 204.12,
+     "3": 476.09,
+     "4": 360.13,
+     "5": 77.93,
+     "6": 43.17,
+     "7": 113.9,
+     "8": 53.27,
+     "9": 426.19,
+     "10": 89.6,
+     "11": 55.11,
+     "12": 42.54,
+     "13": 84.99,
+     "14": 133.7,
+     "15": 44.02,
+     "16": 106.36,
+     "17": 64.03,
+     "18": 324.12,
+     "19": 367.4,
+     "20": 120.33,
+     "21": 189.21,
+     "22": 52.36,
+     "23": 87.26,
+     "24": 55.11,
+     "25": 444.91,
+     "26": 55.11,
+     "27": 73.48,
+     "28": 40.39,
+     "29": 0.15
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 31.25,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Indoor leak detection",
+     "median": 567.0,
+     "sigma": 0.28,
+     "p_zero": 0.05,
+     "a": 493.29,
+     "b": 513.32
+    },
+    {
+     "index": 2,
+     "description": "Initial moisture measurement",
+     "median": 229.0,
+     "sigma": 0.2,
+     "p_zero": 0.02,
+     "a": 199.23,
+     "b": 218.94
+    },
+    {
+     "index": 3,
+     "description": "Skilled leak-detection labour",
+     "median": 469.0,
+     "sigma": 0.28,
+     "p_zero": 0.07,
+     "a": 408.03,
+     "b": 419.4
+    },
+    {
+     "index": 4,
+     "description": "Leak-detection helper labour",
+     "median": 400.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 348.0,
+     "b": 374.49
+    },
+    {
+     "index": 5,
+     "description": "Leak-detection vehicle charge",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.03,
+     "a": 79.8,
+     "b": 84.0
+    },
+    {
+     "index": 6,
+     "description": "Leak-detection consumables",
+     "median": 47.0,
+     "sigma": 0.2,
+     "p_zero": 0.06,
+     "a": 40.89,
+     "b": 44.2
+    },
+    {
+     "index": 7,
+     "description": "Expose leaking pipework",
+     "median": 245.0,
+     "sigma": 0.32,
+     "p_zero": 0.02,
+     "a": 213.15,
+     "b": 221.44
+    },
+    {
+     "index": 8,
+     "description": "Remove and dispose of soaked pipe lagging",
+     "median": 58.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 50.46,
+     "b": 55.67
+    },
+    {
+     "index": 9,
+     "description": "Remove and dispose of wet cavity wool",
+     "median": 464.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 403.68,
+     "b": 445.33
+    },
+    {
+     "index": 10,
+     "description": "Roof-space room drying",
+     "median": 380.0,
+     "sigma": 0.35,
+     "p_zero": 1.0,
+     "a": 330.6,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Kitchen condensation dryer",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 52.2,
+     "b": 57.59
+    },
+    {
+     "index": 12,
+     "description": "Roof-space drying fans",
+     "median": 56.0,
+     "sigma": 0.57,
+     "p_zero": 1.0,
+     "a": 51.72,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Kitchen floor and wall drying",
+     "median": 430.0,
+     "sigma": 0.25,
+     "p_zero": 0.02,
+     "a": 374.1,
+     "b": 401.6
+    },
+    {
+     "index": 14,
+     "description": "Copper pipe repair, one metre",
+     "median": 155.0,
+     "sigma": 0.2,
+     "p_zero": 0.04,
+     "a": 134.85,
+     "b": 147.01
+    },
+    {
+     "index": 15,
+     "description": "22/28 mm copper reducers",
+     "median": 48.0,
+     "sigma": 0.23,
+     "p_zero": 0.01,
+     "a": 41.76,
+     "b": 45.45
+    },
+    {
+     "index": 16,
+     "description": "28 mm copper pipe",
+     "median": 126.0,
+     "sigma": 0.24,
+     "p_zero": 0.01,
+     "a": 109.62,
+     "b": 118.78
+    },
+    {
+     "index": 17,
+     "description": "28 mm pipe insulation",
+     "median": 45.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 39.15,
+     "b": 41.85
+    },
+    {
+     "index": 18,
+     "description": "Service technician labour",
+     "median": 360.0,
+     "sigma": 0.2,
+     "p_zero": 0.13,
+     "a": 313.2,
+     "b": 326.87
+    },
+    {
+     "index": 19,
+     "description": "Installer labour to restore pipe lagging",
+     "median": 255.0,
+     "sigma": 0.4,
+     "p_zero": 0.15,
+     "a": 221.85,
+     "b": 195.45
+    },
+    {
+     "index": 20,
+     "description": "Final moisture measurement",
+     "median": 131.0,
+     "sigma": 0.27,
+     "p_zero": 0.02,
+     "a": 113.97,
+     "b": 121.21
+    },
+    {
+     "index": 21,
+     "description": "Kitchen repair-debris cleanup",
+     "median": 206.0,
+     "sigma": 0.1,
+     "p_zero": 0.03,
+     "a": 195.7,
+     "b": 205.99
+    },
+    {
+     "index": 22,
+     "description": "Remove damaged kitchen table",
+     "median": 57.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 49.59,
+     "b": 53.01
+    },
+    {
+     "index": 23,
+     "description": "Transport damaged table away",
+     "median": 60.0,
+     "sigma": 0.25,
+     "p_zero": 0.02,
+     "a": 52.2,
+     "b": 56.04
+    },
+    {
+     "index": 24,
+     "description": "Dispose of damaged kitchen table",
+     "median": 38.0,
+     "sigma": 0.31,
+     "p_zero": 0.03,
+     "a": 33.06,
+     "b": 34.3
+    },
+    {
+     "index": 25,
+     "description": "Comparable plain pine replacement table",
+     "median": 180.0,
+     "sigma": 0.31,
+     "p_zero": 0.01,
+     "a": 156.6,
+     "b": 164.43
+    },
+    {
+     "index": 26,
+     "description": "Deliver replacement table",
+     "median": 60.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 52.2,
+     "b": 55.8
+    },
+    {
+     "index": 27,
+     "description": "Assemble replacement table",
+     "median": 90.0,
+     "sigma": 0.22,
+     "p_zero": 0.02,
+     "a": 78.3,
+     "b": 85.25
+    },
+    {
+     "index": 28,
+     "description": "Clean table installation area",
+     "median": 41.0,
+     "sigma": 0.3,
+     "p_zero": 0.05,
+     "a": 35.67,
+     "b": 36.73
+    },
+    {
+     "index": 29,
+     "description": "Inspect weathered patio furniture",
+     "median": 75.0,
+     "sigma": 0.5,
+     "p_zero": 1.0,
+     "a": 69.95,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 19,
+    "seconds": 0.019,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 480.76,
+     "2": 204.12,
+     "3": 476.09,
+     "4": 360.13,
+     "5": 77.93,
+     "6": 41.48,
+     "7": 225.04,
+     "8": 48.2,
+     "9": 385.63,
+     "10": 381.9,
+     "11": 52.95,
+     "12": 42.54,
+     "13": 387.14,
+     "14": 138.16,
+     "15": 41.52,
+     "16": 91.04,
+     "17": 62.91,
+     "18": 324.12,
+     "19": 382.32,
+     "20": 120.33,
+     "21": 189.21,
+     "22": 52.36,
+     "23": 55.11,
+     "24": 34.9,
+     "25": 286.56,
+     "26": 96.0,
+     "27": 82.67,
+     "28": 40.39,
+     "29": 112.45
+    }
+   }
+  }
+ ]
+}

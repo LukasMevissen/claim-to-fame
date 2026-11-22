@@ -1,0 +1,235 @@
+{
+ "game": 71,
+ "ts": "2026-11-22T05:33:33",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 9.44,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 2,
+     "description": "Sealing material",
+     "median": 25.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 23.75,
+     "b": 25.0
+    },
+    {
+     "index": 3,
+     "description": "Premium large-diameter stainless steel pipe (upgraded from the original narrower",
+     "median": 54.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 51.3,
+     "b": 54.0
+    },
+    {
+     "index": 4,
+     "description": "Designer gunmetal fittings (higher specification than the original)",
+     "median": 51.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 44.37,
+     "b": 49.13
+    },
+    {
+     "index": 5,
+     "description": "Premium aluminium-clad insulation (upgraded from standard rock wool)",
+     "median": 33.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 31.35,
+     "b": 33.0
+    },
+    {
+     "index": 6,
+     "description": "Installation",
+     "median": 135.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 117.45,
+     "b": 130.05
+    },
+    {
+     "index": 7,
+     "description": "Service technician hours 9 labor units",
+     "median": 834.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 792.3,
+     "b": 834.0
+    },
+    {
+     "index": 8,
+     "description": "Construction dryer flat-rate charge",
+     "median": 595.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 565.25,
+     "b": 595.0
+    },
+    {
+     "index": 9,
+     "description": "Painting the disturbed wall area and closing the wall opening",
+     "median": 647.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 614.65,
+     "b": 647.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 8,
+    "seconds": 0.007,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 76.24,
+     "2": 22.96,
+     "3": 49.6,
+     "4": 42.39,
+     "5": 30.01,
+     "6": 125.25,
+     "7": 766.04,
+     "8": 552.01,
+     "9": 600.25
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 13.82,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 2,
+     "description": "Sealing material",
+     "median": 25.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 21.75,
+     "b": 23.99
+    },
+    {
+     "index": 3,
+     "description": "Premium large-diameter stainless steel pipe",
+     "median": 45.0,
+     "sigma": 0.23,
+     "p_zero": 0.02,
+     "a": 39.15,
+     "b": 42.42
+    },
+    {
+     "index": 4,
+     "description": "Designer gunmetal fittings",
+     "median": 51.0,
+     "sigma": 0.22,
+     "p_zero": 0.03,
+     "a": 44.37,
+     "b": 48.1
+    },
+    {
+     "index": 5,
+     "description": "Premium aluminium-clad insulation",
+     "median": 28.0,
+     "sigma": 0.21,
+     "p_zero": 0.01,
+     "a": 24.36,
+     "b": 26.75
+    },
+    {
+     "index": 6,
+     "description": "Installation",
+     "median": 110.0,
+     "sigma": 0.2,
+     "p_zero": 0.06,
+     "a": 95.7,
+     "b": 103.45
+    },
+    {
+     "index": 7,
+     "description": "Service technician labour",
+     "median": 834.0,
+     "sigma": 0.28,
+     "p_zero": 0.02,
+     "a": 725.58,
+     "b": 768.05
+    },
+    {
+     "index": 8,
+     "description": "Construction dryer flat rate",
+     "median": 595.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 517.65,
+     "b": 571.06
+    },
+    {
+     "index": 9,
+     "description": "Close and paint the disturbed wall area",
+     "median": 647.0,
+     "sigma": 0.21,
+     "p_zero": 0.01,
+     "a": 562.89,
+     "b": 618.18
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 8,
+    "seconds": 0.009,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 76.24,
+     "2": 21.63,
+     "3": 40.51,
+     "4": 48.76,
+     "5": 21.7,
+     "6": 91.42,
+     "7": 721.43,
+     "8": 541.08,
+     "9": 588.36
+    }
+   }
+  }
+ ]
+}

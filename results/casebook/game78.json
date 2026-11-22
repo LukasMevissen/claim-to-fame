@@ -1,0 +1,24 @@
+{
+ "game": 78,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Update on the open-plan ground-floor claim, it was built in 1994. Cause this time is a single sudden burst on the supply line, confirmed by the plumber, one failure, not gradual ageing. Water ran out across the main open living area and the floor there was lifted and dried. One thing to flag: the kitchen is tucked off to the far side behind a wall and stayed completely dry, no moisture readings there at all, so the kitchen disinfection line really shouldn't be on this claim. Both the floor-removal firm and the drying firm have also billed a construction-waste disposal for the same job, and the drying invoice has a second van charge for a return visit on top of its first. Assessment and leak detection up front as usual. Note the deductible on this policy is the higher band.",
+ "lines": {
+  "1": "Damage assessment and inspection 1 flat rate",
+  "2": "Indoor leak detection 1 flat rate",
+  "3": "Measurement technician 2.5 hrs",
+  "4": "Vehicle costs 1 hrs",
+  "5": "Fleece covering 25 m²",
+  "6": "Floor covering removal – removal of linoleum incl. skirting and transport to the container | 82.8 m²",
+  "7": "Preparation of floor surfaces for further processing 82.8 m²",
+  "8": "Construction waste disposal 1 pcs",
+  "9": "Staff costs 2 hrs",
+  "10": "Dust protection incl. material and labor 10 m²",
+  "11": "Kitchen disinfection 25 m²",
+  "12": "Large-area drying (from 50 m²) 121.9 m²",
+  "13": "Cavity drying 1 pcs",
+  "14": "Skilled worker hours 4 hrs",
+  "15": "Vehicle costs 1 –",
+  "16": "Vehicle costs – return visit 1 –",
+  "17": "Construction waste disposal 1 pcs"
+ }
+}

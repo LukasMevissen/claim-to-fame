@@ -1,0 +1,135 @@
+{
+ "game": 68,
+ "ts": "2026-11-22T04:53:28",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 5.51,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Hole drilling",
+     "median": 65.0,
+     "sigma": 0.3,
+     "p_zero": 0.99,
+     "a": 56.55,
+     "b": 0.0
+    },
+    {
+     "index": 2,
+     "description": "Installation of the new glass into the frame",
+     "median": 25.0,
+     "sigma": 0.2,
+     "p_zero": 0.99,
+     "a": 21.75,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Made-to-measure replacement glass pane",
+     "median": 53.0,
+     "sigma": 0.2,
+     "p_zero": 0.99,
+     "a": 46.11,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 78.85,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 4,
+    "seconds": 0.009,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 60.3,
+     "2": 21.2,
+     "3": 44.05,
+     "4": 77.0
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 8.6,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Mounting-hole drilling",
+     "median": 65.0,
+     "sigma": 0.4,
+     "p_zero": 1.0,
+     "a": 58.79,
+     "b": 0.0
+    },
+    {
+     "index": 2,
+     "description": "Fit replacement pane into frame",
+     "median": 25.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 23.75,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Made-to-measure replacement pane",
+     "median": 53.0,
+     "sigma": 0.2,
+     "p_zero": 1.0,
+     "a": 46.11,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs",
+     "median": 14.5,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 13.77,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 4,
+    "seconds": 0.004,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 61.52,
+     "2": 22.96,
+     "3": 44.49,
+     "4": 23.2
+    }
+   }
+  }
+ ]
+}

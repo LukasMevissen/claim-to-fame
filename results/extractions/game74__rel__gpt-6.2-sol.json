@@ -1,0 +1,117 @@
+{
+  "case_id": "game74",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Renew boiler, flue and storage tank",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 9800.0,
+      "price_log_sd": 0.38,
+      "rationale": "The burst fixed heating pipe establishes escape of water under 2.4.2(c). Sections 2.4.5 and 7.1.1(c) cover like-for-like replacement and installation of the damaged functional unit where a partial repair cannot restore it."
+    },
+    {
+      "item_id": "2",
+      "description": "Adapt supply pipework to replacement boiler",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 360.0,
+      "price_log_sd": 0.32,
+      "rationale": "Section 7.1.7(d) covers the necessary adaptation of immediately adjoining pipework, not a wider upgrade. The estimate allows about three hours of labour plus standard fittings."
+    },
+    {
+      "item_id": "3",
+      "description": "Dispose of old boiler system",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 5.2.1 and 7.1.7(a) cover removal and disposal of the unusable plant. The estimate allows for one ordinary haul and disposal charge, without duplicating installation labour."
+    },
+    {
+      "item_id": "4",
+      "description": "First vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(g) allows the first journey charge for the event. This is the first charge presented, at the reference rate of €83 for one journey."
+    },
+    {
+      "item_id": "5",
+      "description": "Test and rewire flooded circuits",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1080.0,
+      "price_log_sd": 0.19,
+      "rationale": "Sections 2.4.5 and 7.1.7(e)–(f) cover testing and repair of the exposed circuits. The estimate is 12 hours at €90 gross per hour."
+    },
+    {
+      "item_id": "6",
+      "description": "Electrical materials for rewiring",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 145.0,
+      "price_log_sd": 0.38,
+      "rationale": "Section 7.1.7(c) covers like-for-like materials actually installed in the affected circuits. The estimate allows one lot of standard wiring, terminals and fixings."
+    },
+    {
+      "item_id": "7",
+      "description": "Extract water from the plant room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 450.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 5.2.2 covers necessary standing-water removal as one operation, including pumping equipment and labour. The estimate is for one extraction operation, with no separate pump allowance."
+    },
+    {
+      "item_id": "8",
+      "description": "Procure motor pump",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 250.0,
+      "price_log_sd": 0.55,
+      "rationale": "Sections 4.3(d), 5.2.2 and 7.1.8(b) exclude separate payment for temporary pumping equipment, even if purchased for the job. Its cost is included in the extraction operation."
+    },
+    {
+      "item_id": "9",
+      "description": "Submersible pump",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 125.0,
+      "price_log_sd": 0.55,
+      "rationale": "Sections 5.2.2 and 7.1.8(b) treat the pump as working equipment included in the extraction operation, not as a separately payable building component."
+    },
+    {
+      "item_id": "10",
+      "description": "Second vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.8(d) bars the second journey charge even when billed by a different trade. The conditional estimate uses the €83 reference rate for one journey."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "case_id": "game59",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.7(b) covers readings in both affected rooms. The estimate allows €90 for a distinct measurement charge; §7.1.8(c) bars charging again for the same work under line 4."
+    },
+    {
+      "item_id": "2",
+      "description": "Drying the affected hall floor",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 242.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(b) covers drying mats on the wet strip of oak boards. The single flat rate follows the €242 prior and is distinct from utility-room dehumidification."
+    },
+    {
+      "item_id": "3",
+      "description": "Whole utility-room drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 250.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.7(b) expressly covers drying the air volume of the affected utility room. Allow about €250 gross for the separate dehumidifier charge, not for drying unaffected parts of the hall."
+    },
+    {
+      "item_id": "4",
+      "description": "Drying technicians' labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 246.0,
+      "price_log_sd": 0.39,
+      "rationale": "Section 7.1.7(g) covers the documented four technician-hours at about €61.50 per hour, or €246 gross. Section 7.1.8(c) excludes any overlap with work already charged on lines 1–3."
+    },
+    {
+      "item_id": "5",
+      "description": "Cleaning affected floors",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 7.1.7(h) covers removing the detergent and lint film from the wetted tiles and oak. Allow €110 gross for one targeted clean, not general housekeeping."
+    },
+    {
+      "item_id": "6",
+      "description": "Washer and connection inspection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 144.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(e) covers identifying the source and confirming that the washer and connections no longer leak, even if the appliance itself is uninsured. Allow €144 gross for the inspection and test, consistent with the prior."
+    },
+    {
+      "item_id": "7",
+      "description": "Remove and dispose of damaged skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 768.0,
+      "price_log_sd": 0.28,
+      "rationale": "Sections 7.1.7(a) and 5.2.1 cover removal and disposal of the damaged trim. The 4.5 m in the utility room plus 5.5 m along both sides of the wet hall stretch supports all 10 m and the €768 gross prior."
+    },
+    {
+      "item_id": "8",
+      "description": "Replace damaged skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1348.0,
+      "price_log_sd": 0.28,
+      "rationale": "Fixed skirting is insured under §4.2.2, and §§7.1.5 and 7.1.9 limit replacement to the damaged runs at the original profile and finish. All 10 m are supported, so the gross prior of €1,348 applies."
+    },
+    {
+      "item_id": "9",
+      "description": "Transport painting to restorer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 5.2.6 includes specialist transport but gives restoration first call on the shared €1,190 gross cap, leaving no expected balance. The €120 estimate is conditional on a balance being available."
+    },
+    {
+      "item_id": "10",
+      "description": "Specialist assessment of painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 5.2.6 requires a specialist assessment but pays it only from the balance left after restoration and earlier invoiced transport. No balance is expected; €180 is the conditional gross estimate."
+    },
+    {
+      "item_id": "11",
+      "description": "Dry and stabilise painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.005,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.45,
+      "rationale": "Section 5.2.6 covers conservation drying and stabilisation, but restoration is expected to exhaust the shared cap before this line is reached. The €300 estimate is conditional on sufficient cap remaining."
+    },
+    {
+      "item_id": "12",
+      "description": "Restore the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1190.0,
+      "price_log_sd": 0.05,
+      "rationale": "The painting is not individually recorded in the schedule, so §5.2.6 caps all conservation costs at €1,000 plus 19% VAT actually incurred under §7.7. Restoration takes priority and is expected to absorb the full €1,190 gross."
+    }
+  ]
+}

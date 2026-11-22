@@ -1,0 +1,106 @@
+{
+  "case_id": "game61-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disassembly and disposal of damaged floor tiles in bathroom",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 270.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary preparatory work for repair of water-damaged floor (7.1.7(a), 2.4.2). Scope matches affected area. Reference cases 50, 56, 46 show t per m² between 40 and 50; for 6 m², t ≈ 270."
+    },
+    {
+      "item_id": "2",
+      "description": "New installation of floor tiles in bathroom incl. material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 650.0,
+      "price_log_sd": 0.15,
+      "rationale": "Repair of water-damaged floor to pre-loss standard is covered (7.1.1(b), 7.1.7(c), 2.4.2). Reference cases 56, 50: supply & lay tiles 8 m² t ≈ 877, 5 m² t ≈ 433; for 6 m², interpolate t ≈ 650."
+    },
+    {
+      "item_id": "3",
+      "description": "Cleaning of entire apartment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.7,
+      "rationale": "General cleaning of unaffected areas is not a repair cost (7.1.8(a)); only cleaning of directly affected surfaces is covered. No evidence whole apartment was affected."
+    },
+    {
+      "item_id": "4",
+      "description": "Paint lower wall after water damage incl. surface preparation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 650.0,
+      "price_log_sd": 0.2,
+      "rationale": "Painting water-stained lower wall (20 m²) is repair of affected area (7.1.1(b), 7.1.5). Reference: painting disturbed wall area t ≈ 633–650 per wall, but here 20 m² is a large area; estimate t ≈ 650."
+    },
+    {
+      "item_id": "5",
+      "description": "Full ceiling paint living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Ceiling was not affected by water (description: 'looked completely fine'); work beyond affected parts is excluded (7.1.5)."
+    },
+    {
+      "item_id": "6",
+      "description": "Wallpapering work hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Hallway was not affected by water (description: 'nothing there either'); work beyond affected parts is excluded (7.1.5)."
+    },
+    {
+      "item_id": "7",
+      "description": "Remove water-damaged laminate in living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.2,
+      "rationale": "Removal of water-damaged laminate is necessary preparatory work (7.1.7(a), 2.4.2). Reference: removal of skirting/laminate t ≈ 80–93 per 10 m, so for 18 m², t ≈ 150."
+    },
+    {
+      "item_id": "8",
+      "description": "Supply & install laminate incl. impact sound insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1400.0,
+      "price_log_sd": 0.2,
+      "rationale": "Replacement of water-damaged laminate to pre-loss standard is covered (7.1.1(b), 7.1.7(c)). Reference: supply & lay tiles 8 m² t ≈ 877, so for 18 m² laminate (cheaper than tile), t ≈ 1400."
+    },
+    {
+      "item_id": "9",
+      "description": "Replace skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 3100.0,
+      "price_log_sd": 0.25,
+      "rationale": "Skirting along affected wall (25 m) was water-damaged. Reference: replace skirting boards t per m ≈ 124 (case 59), so for 25 m, t ≈ 3100."
+    }
+  ]
+}

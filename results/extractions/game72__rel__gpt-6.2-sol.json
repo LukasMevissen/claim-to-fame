@@ -1,0 +1,194 @@
+{
+  "case_id": "game72",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "First building-services vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) allows the first travel charge on this contractor’s invoice: one flat rate at €83 gross. The higher-band deductible applies once to the event under §§4.7 and 7.8, but its amount is not supplied, so no additional deduction is estimated."
+    },
+    {
+      "item_id": "2",
+      "description": "Sealing material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.12,
+      "rationale": "Section 7.1.7(c) covers sealing material used in the pipe repair; one unit at €25 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Stainless steel pipe, 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 47.0,
+      "price_log_sd": 0.28,
+      "rationale": "Sections 2.4.3(a), 7.1.7(c) and 7.1.9 cover replacement of the failed indoor supply section up to the like-for-like cost. Allow €47 gross for one metre as a standard-grade equivalent, subject to confirming compatibility with the documented repair."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation, 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 7.1.7(c) covers reinstating the original type of pipe insulation; one metre at €25 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Installer sign-off, 1 hour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.93,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.17,
+      "rationale": "Section 7.1.7(g) covers the documented one-hour sign-off if it was necessary and distinct from the technician’s testing. The comparable one-hour line in Case 55 supports €110 gross, rather than the broader installation prior."
+    },
+    {
+      "item_id": "6",
+      "description": "Measuring device",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.6,
+      "rationale": "Section 7.1.8(b) excludes the contractor’s own measuring devices, even though necessary diagnostic work can be covered. The €25 estimate is conditional on proof that this was a separately eligible external hire rather than a charge for the contractor’s own device."
+    },
+    {
+      "item_id": "7",
+      "description": "Technician labour, first 9-unit block",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 885.0,
+      "price_log_sd": 0.17,
+      "rationale": "Sections 7.1.7(a) and (g) cover the first day’s access and pipe removal. The gross estimate is €885 for the entire nine-unit block."
+    },
+    {
+      "item_id": "8",
+      "description": "Second building-services vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) allows only the first travel charge on this invoice, even for separate visits. The conditional value of one otherwise eligible trip is €83 gross."
+    },
+    {
+      "item_id": "9",
+      "description": "First construction dryer deployment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 610.0,
+      "price_log_sd": 0.14,
+      "rationale": "Sections 7.1.7(b) and (e) cover necessary drying and allow one flat-rate deployment per drying operation. The first deployment is estimated at €610 gross."
+    },
+    {
+      "item_id": "10",
+      "description": "Short saw blade",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.5,
+      "rationale": "Section 7.1.8(b) expressly excludes contractor blades as business equipment. The conditional gross price for one blade is €12."
+    },
+    {
+      "item_id": "11",
+      "description": "Gunmetal fittings, 2 pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.9,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 56.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.7(c) and 7.1.8(d) allow fittings used in the documented connection repair. The claim mentions one fitting, so payment for the full quantity is uncertain; if both were used, two at €28 give €56 gross."
+    },
+    {
+      "item_id": "12",
+      "description": "Technician labour, second 9-unit block",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 885.0,
+      "price_log_sd": 0.17,
+      "rationale": "Section 7.1.7(g) covers the separately documented day of fitting, testing and lagging; this is not a duplicate under §7.1.8(c). Estimate €885 gross for the whole nine-unit block."
+    },
+    {
+      "item_id": "13",
+      "description": "Close and paint the disturbed wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 664.0,
+      "price_log_sd": 0.15,
+      "rationale": "Sections 7.1.5 and 7.1.7(a) cover closing the necessary access opening and painting the disturbed patch. Allow €664 gross for the local repair only."
+    },
+    {
+      "item_id": "14",
+      "description": "Re-tile the disturbed splashback strip",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.32,
+      "rationale": "Section 7.1.7(a) covers making good the two tile rows removed for necessary pipe access, even though the strip is outside the photos. Allow €300 gross for like-for-like materials and installation on the one-metre strip, excluding the separately billed travel."
+    },
+    {
+      "item_id": "15",
+      "description": "Whole-bathroom re-tiling to match, 14 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1540.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.5–7.1.6 exclude matching work on undamaged surfaces; there is no evidence that matching tiles were unavailable, and the disturbed strip is already billed on line 14. The €1,540 conditional estimate values 14 m² at €110/m² gross and is not an allowance."
+    },
+    {
+      "item_id": "16",
+      "description": "Tiler’s construction dryer charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 610.0,
+      "price_log_sd": 0.14,
+      "rationale": "Sections 7.1.7(e) and 7.1.8(c) bar a second deployment charge for the same drying operation, including across trades. A separately substantiated necessary operation would be estimated at €610 gross, but none is described."
+    },
+    {
+      "item_id": "17",
+      "description": "Tiler’s vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) allows one travel charge for this separate contractor and invoice because the tiler performed covered splashback work. Allow €83 gross for one charge."
+    }
+  ]
+}

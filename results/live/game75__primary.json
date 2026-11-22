@@ -1,0 +1,695 @@
+{
+ "game": 75,
+ "ts": "2026-11-22T06:27:14",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 18.52,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Remove and transport rug",
+     "median": 55.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 47.85,
+     "b": 52.98
+    },
+    {
+     "index": 2,
+     "description": "High-quality LED lighting above billiard table",
+     "median": 200.0,
+     "sigma": 0.3,
+     "p_zero": 1.0,
+     "a": 174.0,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Specialist rug cleaning",
+     "median": 229.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 217.55,
+     "b": 229.0
+    },
+    {
+     "index": 4,
+     "description": "Electrical inspection of robot vacuum cleaner",
+     "median": 40.0,
+     "sigma": 0.3,
+     "p_zero": 0.8,
+     "a": 34.8,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Replacement robot vacuum cleaner (total loss)",
+     "median": 400.0,
+     "sigma": 0.2,
+     "p_zero": 1.0,
+     "a": 348.0,
+     "b": 0.0
+    },
+    {
+     "index": 6,
+     "description": "Disassemble billiard table",
+     "median": 120.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 104.4,
+     "b": 115.6
+    },
+    {
+     "index": 7,
+     "description": "Inspect billiard table for moisture damage",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 52.2,
+     "b": 57.8
+    },
+    {
+     "index": 8,
+     "description": "Replace damaged billiard cloth",
+     "median": 200.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 174.0,
+     "b": 192.67
+    },
+    {
+     "index": 9,
+     "description": "Replace old cue sets",
+     "median": 100.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 87.0,
+     "b": 96.33
+    },
+    {
+     "index": 10,
+     "description": "Align and reassemble billiard table",
+     "median": 80.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 69.6,
+     "b": 77.07
+    },
+    {
+     "index": 11,
+     "description": "Restore plasterboard ceiling 8 m²",
+     "median": 672.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 584.64,
+     "b": 647.36
+    },
+    {
+     "index": 12,
+     "description": "Fill ceiling and wall surfaces 15 m²",
+     "median": 450.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 391.5,
+     "b": 433.5
+    },
+    {
+     "index": 13,
+     "description": "Final site cleaning",
+     "median": 208.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 197.6,
+     "b": 208.0
+    },
+    {
+     "index": 14,
+     "description": "Drying fan 3 pcs",
+     "median": 234.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 222.3,
+     "b": 234.0
+    },
+    {
+     "index": 15,
+     "description": "Control measurement during drying 2 pcs",
+     "median": 466.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 442.7,
+     "b": 466.0
+    },
+    {
+     "index": 16,
+     "description": "Final measurement 1 pcs",
+     "median": 233.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 221.35,
+     "b": 233.0
+    },
+    {
+     "index": 17,
+     "description": "Remove floor covering in guest WC 5 m²",
+     "median": 280.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 243.6,
+     "b": 269.73
+    },
+    {
+     "index": 18,
+     "description": "Remove skirting boards 12 m",
+     "median": 96.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 83.52,
+     "b": 92.48
+    },
+    {
+     "index": 19,
+     "description": "Insulation layer drying",
+     "median": 150.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 130.5,
+     "b": 141.42
+    },
+    {
+     "index": 20,
+     "description": "Condensation dryer 2 pcs",
+     "median": 123.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 116.85,
+     "b": 123.0
+    },
+    {
+     "index": 21,
+     "description": "Side channel compressor 1 pcs",
+     "median": 90.0,
+     "sigma": 0.3,
+     "p_zero": 0.0,
+     "a": 78.3,
+     "b": 83.04
+    },
+    {
+     "index": 22,
+     "description": "Remove damaged parquet in drip zone below stairwell (migration path) 6 m²",
+     "median": 330.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 287.1,
+     "b": 317.9
+    },
+    {
+     "index": 23,
+     "description": "Renew parquet floor in drip zone below stairwell (migration path) 6 m²",
+     "median": 870.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 756.9,
+     "b": 838.1
+    },
+    {
+     "index": 24,
+     "description": "Remove and renew additional parquet area spread by robot vacuum",
+     "median": 400.0,
+     "sigma": 0.3,
+     "p_zero": 1.0,
+     "a": 348.0,
+     "b": 0.0
+    },
+    {
+     "index": 25,
+     "description": "Supply and install new skirting boards 12 m",
+     "median": 384.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 334.08,
+     "b": 369.92
+    },
+    {
+     "index": 26,
+     "description": "Open water-damaged ceiling surface 8 m²",
+     "median": 160.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 139.2,
+     "b": 154.13
+    },
+    {
+     "index": 27,
+     "description": "Leak detection / cause investigation",
+     "median": 700.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 665.0,
+     "b": 700.0
+    },
+    {
+     "index": 28,
+     "description": "Moisture measurement of multiple rooms",
+     "median": 233.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 221.35,
+     "b": 233.0
+    },
+    {
+     "index": 29,
+     "description": "Inspect and disassemble toilet cistern",
+     "median": 90.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 78.3,
+     "b": 86.7
+    },
+    {
+     "index": 30,
+     "description": "Replace fill valve in toilet cistern",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 52.2,
+     "b": 57.8
+    },
+    {
+     "index": 31,
+     "description": "Skilled worker hours 3 hrs",
+     "median": 226.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 196.62,
+     "b": 217.71
+    },
+    {
+     "index": 32,
+     "description": "Vehicle costs 1 pcs",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 79.8,
+     "b": 84.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 9,
+    "seconds": 0.02,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 45.71,
+     "2": 185.55,
+     "3": 210.34,
+     "4": 37.11,
+     "5": 371.1,
+     "6": 111.33,
+     "7": 55.66,
+     "8": 185.55,
+     "9": 92.77,
+     "10": 74.22,
+     "11": 558.5,
+     "12": 720.0,
+     "13": 191.05,
+     "14": 214.93,
+     "15": 428.03,
+     "16": 214.01,
+     "17": 259.77,
+     "18": 153.6,
+     "19": 139.16,
+     "20": 112.98,
+     "21": 83.5,
+     "22": 274.26,
+     "23": 723.06,
+     "24": 371.1,
+     "25": 378.28,
+     "26": 148.44,
+     "27": 642.96,
+     "28": 214.01,
+     "29": 83.5,
+     "30": 55.66,
+     "31": 227.13,
+     "32": 77.93
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 34.41,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Remove and transport rug",
+     "median": 85.0,
+     "sigma": 0.35,
+     "p_zero": 0.99,
+     "a": 73.95,
+     "b": 0.0
+    },
+    {
+     "index": 2,
+     "description": "LED lighting above billiard table",
+     "median": 185.0,
+     "sigma": 0.4,
+     "p_zero": 0.99,
+     "a": 163.64,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Specialist rug cleaning",
+     "median": 230.0,
+     "sigma": 0.2,
+     "p_zero": 0.99,
+     "a": 200.1,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Electrical inspection of robot vacuum",
+     "median": 95.0,
+     "sigma": 0.3,
+     "p_zero": 0.03,
+     "a": 82.65,
+     "b": 86.16
+    },
+    {
+     "index": 5,
+     "description": "Replacement robot vacuum",
+     "median": 350.0,
+     "sigma": 0.55,
+     "p_zero": 0.99,
+     "a": 324.17,
+     "b": 0.0
+    },
+    {
+     "index": 6,
+     "description": "Disassemble billiard table",
+     "median": 155.0,
+     "sigma": 0.35,
+     "p_zero": 0.99,
+     "a": 134.85,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Inspect billiard table for moisture",
+     "median": 110.0,
+     "sigma": 0.35,
+     "p_zero": 0.99,
+     "a": 95.7,
+     "b": 0.0
+    },
+    {
+     "index": 8,
+     "description": "Replace damaged billiard cloth",
+     "median": 500.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 475.0,
+     "b": 500.0
+    },
+    {
+     "index": 9,
+     "description": "Replace old cue sets",
+     "median": 110.0,
+     "sigma": 0.45,
+     "p_zero": 0.99,
+     "a": 100.75,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Align and reassemble billiard table",
+     "median": 250.0,
+     "sigma": 0.35,
+     "p_zero": 0.99,
+     "a": 217.5,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Restore plasterboard ceiling",
+     "median": 640.0,
+     "sigma": 0.26,
+     "p_zero": 0.02,
+     "a": 556.8,
+     "b": 594.94
+    },
+    {
+     "index": 12,
+     "description": "Fill ceiling and wall surfaces",
+     "median": 255.0,
+     "sigma": 0.4,
+     "p_zero": 0.18,
+     "a": 225.56,
+     "b": 187.62
+    },
+    {
+     "index": 13,
+     "description": "Final site cleaning",
+     "median": 208.0,
+     "sigma": 0.2,
+     "p_zero": 0.18,
+     "a": 180.96,
+     "b": 182.82
+    },
+    {
+     "index": 14,
+     "description": "Drying fans",
+     "median": 81.0,
+     "sigma": 0.22,
+     "p_zero": 0.04,
+     "a": 70.47,
+     "b": 76.05
+    },
+    {
+     "index": 15,
+     "description": "Control measurements during drying",
+     "median": 210.0,
+     "sigma": 0.27,
+     "p_zero": 0.03,
+     "a": 182.7,
+     "b": 193.27
+    },
+    {
+     "index": 16,
+     "description": "Final moisture measurement",
+     "median": 125.0,
+     "sigma": 0.26,
+     "p_zero": 0.03,
+     "a": 108.75,
+     "b": 115.61
+    },
+    {
+     "index": 17,
+     "description": "Remove guest WC floor covering",
+     "median": 225.0,
+     "sigma": 0.33,
+     "p_zero": 0.02,
+     "a": 195.75,
+     "b": 202.41
+    },
+    {
+     "index": 18,
+     "description": "Remove skirting boards",
+     "median": 85.0,
+     "sigma": 0.28,
+     "p_zero": 0.06,
+     "a": 73.95,
+     "b": 76.49
+    },
+    {
+     "index": 19,
+     "description": "Insulation-layer drying",
+     "median": 480.0,
+     "sigma": 0.35,
+     "p_zero": 0.04,
+     "a": 417.6,
+     "b": 421.83
+    },
+    {
+     "index": 20,
+     "description": "Condensation dryers",
+     "median": 123.0,
+     "sigma": 0.11,
+     "p_zero": 0.03,
+     "a": 116.85,
+     "b": 122.4
+    },
+    {
+     "index": 21,
+     "description": "Side-channel compressor",
+     "median": 155.0,
+     "sigma": 0.35,
+     "p_zero": 0.1,
+     "a": 134.85,
+     "b": 129.83
+    },
+    {
+     "index": 22,
+     "description": "Remove parquet in direct drip zone",
+     "median": 210.0,
+     "sigma": 0.25,
+     "p_zero": 0.01,
+     "a": 182.7,
+     "b": 197.07
+    },
+    {
+     "index": 23,
+     "description": "Renew parquet in direct drip zone",
+     "median": 720.0,
+     "sigma": 0.29,
+     "p_zero": 0.01,
+     "a": 626.4,
+     "b": 663.64
+    },
+    {
+     "index": 24,
+     "description": "Renew additional parquet wetted by robot",
+     "median": 850.0,
+     "sigma": 0.6,
+     "p_zero": 0.99,
+     "a": 893.74,
+     "b": 0.0
+    },
+    {
+     "index": 25,
+     "description": "Supply and install skirting boards",
+     "median": 350.0,
+     "sigma": 0.32,
+     "p_zero": 0.05,
+     "a": 304.5,
+     "b": 310.23
+    },
+    {
+     "index": 26,
+     "description": "Open water-damaged ceiling",
+     "median": 255.0,
+     "sigma": 0.27,
+     "p_zero": 0.03,
+     "a": 221.85,
+     "b": 234.69
+    },
+    {
+     "index": 27,
+     "description": "Leak detection and cause investigation",
+     "median": 195.0,
+     "sigma": 0.35,
+     "p_zero": 0.04,
+     "a": 169.65,
+     "b": 171.37
+    },
+    {
+     "index": 28,
+     "description": "Multi-room moisture measurement",
+     "median": 245.0,
+     "sigma": 0.2,
+     "p_zero": 0.02,
+     "a": 213.15,
+     "b": 234.24
+    },
+    {
+     "index": 29,
+     "description": "Inspect and disassemble cistern",
+     "median": 105.0,
+     "sigma": 0.32,
+     "p_zero": 0.12,
+     "a": 91.35,
+     "b": 88.17
+    },
+    {
+     "index": 30,
+     "description": "Replace cistern fill valve",
+     "median": 85.0,
+     "sigma": 0.29,
+     "p_zero": 0.02,
+     "a": 73.95,
+     "b": 77.91
+    },
+    {
+     "index": 31,
+     "description": "Skilled worker hours",
+     "median": 226.0,
+     "sigma": 0.36,
+     "p_zero": 0.27,
+     "a": 196.62,
+     "b": 145.38
+    },
+    {
+     "index": 32,
+     "description": "Vehicle costs",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.03,
+     "a": 79.8,
+     "b": 84.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 9,
+    "seconds": 0.018,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 78.86,
+     "2": 280.16,
+     "3": 213.38,
+     "4": 88.14,
+     "5": 530.03,
+     "6": 143.8,
+     "7": 102.05,
+     "8": 459.26,
+     "9": 166.58,
+     "10": 231.94,
+     "11": 593.76,
+     "12": 408.0,
+     "13": 179.92,
+     "14": 68.0,
+     "15": 194.83,
+     "16": 115.97,
+     "17": 208.74,
+     "18": 136.0,
+     "19": 445.32,
+     "20": 112.98,
+     "21": 143.8,
+     "22": 194.83,
+     "23": 667.98,
+     "24": 1287.22,
+     "25": 447.17,
+     "26": 236.57,
+     "27": 180.91,
+     "28": 209.82,
+     "29": 97.41,
+     "30": 78.86,
+     "31": 236.4,
+     "32": 77.93
+    }
+   }
+  }
+ ]
+}

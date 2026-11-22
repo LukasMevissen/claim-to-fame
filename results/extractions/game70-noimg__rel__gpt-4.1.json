@@ -1,0 +1,40 @@
+{
+  "case_id": "game70-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Remove & reinstall water-damaged laminate incl. impact sound insulation and skirting boards, living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2144.0,
+      "price_log_sd": 0.08,
+      "rationale": "The policy covers escape of water (2.4), and the damage description confirms water from a leaking pipe affected the living room floor. The line is for removal and reinstatement of laminate, insulation, and skirting, all of which are building components (4.2.2) and were directly affected (7.1.5). Reference Case 61 shows t >= 1305 for 18 m² of laminate incl. insulation, and t >= 839 for 25 m skirting; both were indemnified together for similar scope. No exclusion applies, and the line does not mix insured/uninsured work. No betterment is indicated."
+    },
+    {
+      "item_id": "2",
+      "description": "Remove & reinstall bathroom floor tiles incl. material and disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1275.0,
+      "price_log_sd": 0.08,
+      "rationale": "Escape of water peril applies (2.4), and the bathroom floor was directly affected (damage description, 7.1.5). The line includes removal, disposal, and reinstatement, which are all necessary repair costs (7.1.7). Reference Case 61: t >= 336 for removal/disposal 6 m², t >= 939 for new installation 6 m²; both were indemnified. This line combines both, so t >= 1275 is proven fair. No exclusion or betterment applies."
+    },
+    {
+      "item_id": "3",
+      "description": "Prepare & repaint water-damaged lower living-room wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 788.0,
+      "price_log_sd": 0.05,
+      "rationale": "The lower living-room wall was affected by water from the leak (damage description, 7.1.5). Painting and surface prep are necessary repair costs (7.1.7). Reference Case 61: t >= 788 for 20 m² of lower wall paint after water damage, which matches this line in scope and area. No exclusion or betterment applies."
+    }
+  ]
+}

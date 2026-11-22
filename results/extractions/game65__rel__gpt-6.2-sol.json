@@ -1,0 +1,205 @@
+{
+  "case_id": "game65",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection call-out and pinpointing",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 680.0,
+      "price_log_sd": 0.18,
+      "rationale": "The indoor supply leak triggers escape-of-water cover under §2.4.2. Necessary pinpointing and the first call-out on this invoice are covered under §7.1.7(e)–(f); the comparable combined charge is €680 gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Kitchen floor and wall-base moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 164.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.1.7(e) covers measurements needed to establish the extent of moisture from the leak. The gross benchmark for this survey is €164."
+    },
+    {
+      "item_id": "3",
+      "description": "Service technician labour, 14 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1305.0,
+      "price_log_sd": 0.08,
+      "rationale": "Sections 7.1.7(e) and (g) cover necessary diagnostic labour at customary rates, provided it does not duplicate the separately billed tasks. The supplied gross benchmark for all 14 hours is €1,305."
+    },
+    {
+      "item_id": "4",
+      "description": "Leak-detection vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.02,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.04,
+      "rationale": "Section 7.1.7(f) allows only the first travel, mileage or call-out charge on this contractor's invoice; line 1 already includes the call-out. If line 1 were treated solely as a diagnostic charge, the vehicle benchmark would be €83 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Expose affected pipe beneath sink",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 138.0,
+      "price_log_sd": 0.29,
+      "rationale": "Opening the wall and freeing the failed indoor supply pipe are necessary to repair it under §§2.4.3 and 7.1.7(a). The gross benchmark for this access work is €138."
+    },
+    {
+      "item_id": "6",
+      "description": "Remove and dispose of soaked pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 144.0,
+      "price_log_sd": 0.32,
+      "rationale": "Section 7.1.7(a) covers removal and disposal of the two affected sections of lagging. At €72 gross each, the whole-line estimate is €144."
+    },
+    {
+      "item_id": "7",
+      "description": "Repair confirmed leak at copper tee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.13,
+      "rationale": "Sections 2.4.3 and 7.1.1(b) support the local repair of the failed supply pipe. Allow about €150 gross for the repair work, excluding the materials billed on line 8."
+    },
+    {
+      "item_id": "8",
+      "description": "Replacement copper section and standard lagging",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 105.0,
+      "price_log_sd": 0.23,
+      "rationale": "Sections 7.1.7(c) and 7.1.9 cover like-for-like materials. Allow €105 gross for the short same-size copper section, tee and ordinary foam lagging, excluding the repair labour."
+    },
+    {
+      "item_id": "9",
+      "description": "Roof-space room drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) require moisture attributable to this event; the old chimney stain is unrelated. If loss-related moisture were established, a small-area drying service would be about €100 gross."
+    },
+    {
+      "item_id": "10",
+      "description": "Kitchen condensation dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 51.0,
+      "price_log_sd": 0.44,
+      "rationale": "Sections 7.1.7(b) and (e) cover necessary equipment hire for the documented kitchen moisture. The gross benchmark for one dryer is €51."
+    },
+    {
+      "item_id": "11",
+      "description": "Dry kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 102.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.1.7(b) covers drying the affected floor and wall base. Allow €102 gross for the drying service, without counting the separately billed dryer hire again under §7.1.8(c)."
+    },
+    {
+      "item_id": "12",
+      "description": "Roof-space drying fans",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 54.0,
+      "price_log_sd": 0.31,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) and (e) do not cover equipment used on unrelated historic moisture damage. If the fans were needed for this loss, the benchmark would be 2 × €27, or €54 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Clean up the kitchen repair area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 5.2.1 and the exception in §7.1.8(a) cover removal of repair dust and offcuts, not general housekeeping. The gross benchmark for the local cleanup is €82."
+    },
+    {
+      "item_id": "14",
+      "description": "Drying contractor vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.04,
+      "rationale": "This is the first and only travel charge on the drying contractor's invoice and supports covered kitchen drying under §7.1.7(f). Allow €83 gross."
+    },
+    {
+      "item_id": "15",
+      "description": "Whole-flat cleaning",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 230.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 3.5, 7.1.5 and 7.1.8(a) exclude general housekeeping and work in unaffected rooms; the covered kitchen cleanup is already on line 13. A conditional gross estimate for the whole-flat service is €230."
+    },
+    {
+      "item_id": "16",
+      "description": "Remove, transport and dispose of damaged table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 168.0,
+      "price_log_sd": 0.28,
+      "rationale": "The indoor table is insured furnishing under §4.2.6; §7.1.7(h) and §5.2.1 cover removal, hauling and disposal. The whole-line gross benchmark is 3 × €56 = €168, separate from the table's current value."
+    },
+    {
+      "item_id": "17",
+      "description": "Collect, deliver and assemble replacement table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 152.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 7.1.7(h) expressly covers delivery and setup even though the policyholder bought the table directly. Allow €152 gross for the service; the current-value deduction under §7.1.1(d) concerns the table itself."
+    },
+    {
+      "item_id": "18",
+      "description": "Moisture inspection of garden furniture",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.4,
+      "rationale": "The year-round outdoor furniture is not indoor furnishing under §4.2.6, and §7.1.8(f) excludes inspection of items unaffected by the kitchen leak. If covered, a brief inspection would be about €50 gross."
+    }
+  ]
+}

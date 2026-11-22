@@ -1,0 +1,194 @@
+{
+  "case_id": "game78-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Damage assessment and inspection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 530.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 5.2.6(b) and 7.1.1(b) as necessary to determine cause and extent of loss; reference cases 20 and 34 show this is always indemnified for a sudden burst. Policy sub-limit for assessment is EUR 3,000, but reference cases show fair market t per unit about 530."
+    },
+    {
+      "item_id": "2",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 567.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered under 5.2.6(a) and 7.1.1(b) as necessary to locate the burst; reference cases 27 and 34 show this is always indemnified for a single burst. Policy sub-limit for leak location is EUR 1,000, but reference cases show t per unit about 567."
+    },
+    {
+      "item_id": "3",
+      "description": "Measurement technician 2.5 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 254.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 5.2.6(a) as technician time for leak location; reference case 34 (2.5 hrs) shows t about 254 for this quantity."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs 1 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered under 5.2.6(c) as the first vehicle charge on this invoice; capped at EUR 70 net plus VAT, but reference cases show market t per unit about 84 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Fleece covering 25 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.7,
+      "rationale": "Ancillary site protection not specifically listed in 7.1.7 or 5.1; not a repair cost or necessary for reinstatement, and not indemnified in any reference case. Excluded by 7.1.8(b)."
+    },
+    {
+      "item_id": "6",
+      "description": "Floor covering removal – removal of linoleum incl. skirting and transport to the container 82.8 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.5,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.3,
+      "rationale": "Removal of affected floor covering is preparatory work under 7.1.7(a), but reference case 20 shows t for this line type is below 150, possibly 0, as the charge was found too high. Indemnified only up to a moderate market rate."
+    },
+    {
+      "item_id": "7",
+      "description": "Preparation of floor surfaces for further processing 82.8 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.7,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.3,
+      "rationale": "Preparation of substrate is necessary before reinstatement (7.1.7(b)), but must be limited to the affected area. Reference cases suggest this is usually included in the removal line or modestly priced."
+    },
+    {
+      "item_id": "8",
+      "description": "Construction waste disposal (floor removal firm)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Debris removal is covered under 5.2.1 and 7.1.7(a), but only one such charge per event is indemnified (7.1.8(c)). Reference cases show t per pc about 60. The first such charge (this one) is indemnified."
+    },
+    {
+      "item_id": "9",
+      "description": "Staff costs 2 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.7,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.3,
+      "rationale": "Labour for drying setup/removal is covered as part of necessary repair (7.1.7(b)), but reference cases show such hours are usually included in the drying lump sum or skilled worker lines. If not double-billed, indemnified at a moderate rate."
+    },
+    {
+      "item_id": "10",
+      "description": "Dust protection incl. material and labor 10 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.5,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.5,
+      "rationale": "Dust protection is not specifically listed in 7.1.7, but may be necessary for safe drying work. Reference cases do not show separate indemnification, but a modest allowance is sometimes accepted."
+    },
+    {
+      "item_id": "11",
+      "description": "Kitchen disinfection 25 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.7,
+      "rationale": "Kitchen was not affected by water (description: 'kitchen stayed completely dry, no moisture readings there at all'), so this is unrelated to the damage and excluded by 7.1.5."
+    },
+    {
+      "item_id": "12",
+      "description": "Large-area drying (from 50 m²) 121.9 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.5,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.3,
+      "rationale": "Drying of affected floor area is covered under 7.1.7(b), but reference case 20 (similar open-plan job) shows t for large-area drying was below 200, possibly 0, as the charge was found too high. Indemnified only up to a moderate market rate."
+    },
+    {
+      "item_id": "13",
+      "description": "Cavity drying 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.5,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.5,
+      "rationale": "Cavity drying is covered under 7.1.7(b) if the cavity was reached by water (description: water ran out across the main open living area, so likely yes). Reference cases show cavity drying is usually included in the main drying charge, but a modest separate allowance may be accepted."
+    },
+    {
+      "item_id": "14",
+      "description": "Skilled worker hours 4 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 349.0,
+      "price_log_sd": 0.15,
+      "rationale": "Labour for drying or reinstatement is covered under 7.1.7(b); reference cases show t per hr about 87, so for 4 hrs about 349."
+    },
+    {
+      "item_id": "15",
+      "description": "Vehicle costs 1 –",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "First vehicle charge on this invoice is covered under 5.2.6(c), capped at EUR 70 net plus VAT, but reference cases show t per unit about 84 gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Vehicle costs – return visit 1 –",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.7,
+      "rationale": "Second vehicle charge on the same invoice is excluded by 5.2.6(c) and 7.1.8(b); not indemnified in any reference case."
+    },
+    {
+      "item_id": "17",
+      "description": "Construction waste disposal (drying firm)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.7,
+      "rationale": "Second construction waste disposal charge for the same event is excluded by 7.1.8(c); only the first such charge is indemnified."
+    }
+  ]
+}

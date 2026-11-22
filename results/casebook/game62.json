@@ -1,0 +1,24 @@
+{
+ "game": 62,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Kitchen water damage, ground floor. A leak developed in the water supply pipe beneath the kitchen sink, causing moisture damage to the surrounding floor and the lower section of the adjacent wall. A leak-detection service was used to identify the exact source before the pipework was exposed, repaired, and re-insulated. Approximately one to two meters of copper piping were replaced. The affected floor area and wall base were dried for several days before the flooring was reinstated. A wooden kitchen table was also damaged by the water and warped beyond repair. It was a plain, untreated pine table that we bought new from a self-assembly furniture store in early 2019 and ate at every day since, so it had the usual dents, scratches and cup rings. It was subsequently replaced with a higher-quality solid-oak designer table, which represented an upgrade compared with the original standard table.",
+ "lines": {
+  "1": "Leak detection call-out and electro-acoustic pinpointing of the leak beneath the kitchen sink | 1 pcs",
+  "2": "Moisture measurement of the kitchen floor and wall base | 1 pcs",
+  "3": "Service technician hours 14 hrs",
+  "4": "Vehicle costs 1 pcs",
+  "5": "Mar 2026 TRADE Plumbing FROM Soggy Bottom Plumbing Ltd | 7 U-Bend Boulevard | 23456 Pipeville TO European Hackathon Main Street 1 | 80331 Munich ITEMS POS. DESCRIPTION AMOUNT UNIT TOTAL | 5 Freeing the affected pipe run beneath the kitchen sink 1 pcs",
+  "6": "Removal and disposal of damaged pipe insulation 2 pcs",
+  "7": "Repair of the confirmed leak on the copper supply pipe 1 pcs",
+  "8": "Replacement copper pipe section and transition fittings 1 flat rate",
+  "9": "Vehicle costs 1 pcs",
+  "10": "Condensation dryer for the kitchen, rental for the drying period | 1 pcs",
+  "11": "Room drying of the kitchen floor and wall base 1 pcs",
+  "12": "Vehicle costs 1 pcs",
+  "13": "Removal, transport and disposal of the water-damaged wooden kitchen table | 3 pcs",
+  "14": "Supply of replacement table - premium solid-oak designer model, higher specification than the original | 1 pcs",
+  "15": "Delivery and assembly of the replacement table 1 flat rate",
+  "16": "Cleaning of the installation area 1 pcs",
+  "17": "Vehicle costs 1 pcs"
+ }
+}

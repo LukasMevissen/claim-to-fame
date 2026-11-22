@@ -1,0 +1,128 @@
+{
+  "case_id": "game64",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Everyday clothing and personal effects",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 2.3 and 4.2.1 cover evidenced household effects stolen in the forced entry, with no class sub-limit. Like-for-like high-street replacements are estimated at €850, excluding the coat and jacket billed separately."
+    },
+    {
+      "item_id": "2",
+      "description": "Lightly worn winter coat",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 289.0,
+      "price_log_sd": 0.08,
+      "rationale": "Under §§6.2.1–6.2.2, brief seasonal use does not justify depreciation. The €289 purchase price is the best guide to like-for-like replacement."
+    },
+    {
+      "item_id": "3",
+      "description": "Designer replacement jacket",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 7.1.8(c) and 7.1.9 exclude the upgrade premium, not the underlying loss. An equivalent mid-range waterproof jacket is estimated at €150."
+    },
+    {
+      "item_id": "4",
+      "description": "Four unscheduled jewellery pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 575.0,
+      "price_log_sd": 0.3,
+      "rationale": "Under §§4.2.2 and 6.3, the chain, earrings, bracelet and watch are valued at like-for-like replacement cost. The estimated €575 total is below the €3,000 event limit, and each piece is below the €1,000 item limit."
+    },
+    {
+      "item_id": "5",
+      "description": "Scheduled ring",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6500.0,
+      "price_log_sd": 0.05,
+      "rationale": "Sections 4.2.3 and 6.2.3 fix indemnity at the €6,500 agreed value, outside the unscheduled valuables limits. No deductible applies."
+    },
+    {
+      "item_id": "6",
+      "description": "Unevidenced antique brooch",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 2.3.2(d) and 7.1.10 exclude the brooch because no supporting evidence is reported. The positive estimate is a rough conditional value if adequate evidence were supplied, subject to the €1,000 item limit."
+    },
+    {
+      "item_id": "7",
+      "description": "Personal mileage to police station",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 12.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 3.1.5 and 7.1.8(e) expressly exclude personal travel to report the theft. The positive figure is a nominal estimate for a local round trip."
+    },
+    {
+      "item_id": "8",
+      "description": "Time compiling and reporting claim",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.7,
+      "rationale": "Sections 3.1.5 and 7.1.8(e) exclude the policyholder's claim preparation and reporting time. The positive figure is a nominal estimate for the time claimed."
+    },
+    {
+      "item_id": "9",
+      "description": "Emergency boarding of forced door",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 290.0,
+      "price_log_sd": 0.2,
+      "rationale": "Section 5.2.2 covers necessary overnight provisional securing, including call-out. An ordinary boarding charge of €290 is below the €1,000 gross event cap."
+    },
+    {
+      "item_id": "10",
+      "description": "Replacement lock and cylinder",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 230.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 2.4.2 and 7.1.7 cover like-for-like replacement and fitting of the compromised lock and cylinder. The €230 estimate excludes any security upgrade or duplicate emergency attendance."
+    },
+    {
+      "item_id": "11",
+      "description": "Cleaning muddy hallway footprints",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.5,
+      "rationale": "Sections 3.1.7 and 7.1.8(a) exclude cleaning superficial footprints even when billed by the locksmith. The positive figure is a nominal estimate for spot cleaning."
+    }
+  ]
+}

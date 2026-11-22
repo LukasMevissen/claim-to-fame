@@ -1,0 +1,128 @@
+{
+  "case_id": "game60-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Air conditioning unit - kitchen (wall-fixed near the hob, surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1413.0,
+      "price_log_sd": 0.09,
+      "rationale": "Policy covers overvoltage from lightning (2.3.3) for fixed installations; kitchen climate endorsement overrides 2.3.10(c) exclusion for units near the hob. Like-for-like replacement is indemnified up to ordinary market price (7.1.9, 7.1.10). Reference cases 38 and 42 set t per pc at 1340–1536; price prior mean 1413."
+    },
+    {
+      "item_id": "2",
+      "description": "Air conditioning unit - hallway (wall-fixed, surge damaged)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1413.0,
+      "price_log_sd": 0.09,
+      "rationale": "Same as line 1: fixed installation, surge damage, like-for-like replacement, covered peril (2.3.3), no exclusion applies. Reference cases 38 and 42 set t per pc at 1340–1536; price prior mean 1413."
+    },
+    {
+      "item_id": "3",
+      "description": "Split unit - study (ships with handheld wireless remote, movable)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1413.0,
+      "price_log_sd": 0.7,
+      "rationale": "Movable, not firmly connected (1.3, 4.2.3, 4.3(d)), so not insured property. Excluded regardless of surge damage. Reference cases: such units always t = 0."
+    },
+    {
+      "item_id": "4",
+      "description": "Installation - kitchen unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 479.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour to install a covered replacement (line 1) is indemnified (7.1.9(c)), up to ordinary market price. Reference cases 38, 42: t per pc 468–505; price prior mean 479."
+    },
+    {
+      "item_id": "5",
+      "description": "Installation - hallway unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 479.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour to install a covered replacement (line 2) is indemnified (7.1.9(c)), up to ordinary market price. Reference cases 38, 42: t per pc 468–505; price prior mean 479."
+    },
+    {
+      "item_id": "6",
+      "description": "Installation - study split unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 479.0,
+      "price_log_sd": 0.7,
+      "rationale": "Principal item (line 3) is excluded (not insured property), so ancillary charge for its installation is also excluded (7.1.11). Reference cases: t = 0 for installation of non-fixed units."
+    },
+    {
+      "item_id": "7",
+      "description": "Standard freight - replacement equipment pallet (over 80 kg)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 47.0,
+      "price_log_sd": 0.1,
+      "rationale": "Ordinary carriage of covered replacement items (lines 1 and 2) is indemnified (7.1.9(e), 7.1.12). Reference cases 42, 38: t per shipment 42–51; moderate estimate for heavy pallet."
+    },
+    {
+      "item_id": "8",
+      "description": "Express delivery surcharge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 47.0,
+      "price_log_sd": 0.7,
+      "rationale": "Express/priority surcharges are excluded (7.1.12), unless agreed in advance or necessary to avert further loss, which is not stated here."
+    },
+    {
+      "item_id": "9",
+      "description": "Vehicle costs – return visit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.05,
+      "rationale": "Return visit charges are excluded (7.1.13); only one attendance per undertaking per event is indemnified. Reference cases: t = 0 in all 7 earlier cases."
+    },
+    {
+      "item_id": "10",
+      "description": "Contractor administration fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "General admin/processing fees are excluded (7.1.8(b)). Reference cases: t = 0 in all 12 earlier cases."
+    },
+    {
+      "item_id": "11",
+      "description": "Disposal of old unrelated boiler",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.3,
+      "rationale": "Disposal of property not damaged by the insured event and not replaced by a covered item is excluded (5.2.1, 3.5(a), 7.1.7(a))."
+    }
+  ]
+}

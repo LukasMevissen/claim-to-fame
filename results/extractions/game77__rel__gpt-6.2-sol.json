@@ -1,0 +1,139 @@
+{
+  "case_id": "game77",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Clean affected floors in utility room and hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 210.0,
+      "price_log_sd": 0.17,
+      "rationale": "The washing-machine leak qualifies as escape of water under 2.4.2, and 7.1.7(h) covers necessary cleaning of both affected floors. The combined estimate is €100 for the utility room plus €110 for the hallway, gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Inspect washing machine and connections",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 147.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 7.1.7(e) covers checking the source and confirming that it no longer leaks, even if the appliance itself is not insured. The estimate is €147 gross for one inspection."
+    },
+    {
+      "item_id": "3",
+      "description": "Remove and dispose of damaged skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 76.0,
+      "price_log_sd": 0.16,
+      "rationale": "Sections 7.1.7(a) and 5.2.1 cover removal and disposal of the damaged fixed trim. The comparable lump-sum job supports €76 gross for the whole line."
+    },
+    {
+      "item_id": "4",
+      "description": "Replace damaged skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 134.0,
+      "price_log_sd": 0.2,
+      "rationale": "Fixed skirting is insured under 4.2.2, and 7.1.5 and 7.1.9 limit replacement to affected trim of equivalent quality. The closest lump-sum reference supports €134 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Measure floor moisture in both affected rooms",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 126.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(b) covers moisture measurement needed to assess and dry the affected floors. One survey of both rooms is estimated at €126 gross."
+    },
+    {
+      "item_id": "6",
+      "description": "Dry affected floor area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 239.0,
+      "price_log_sd": 0.12,
+      "rationale": "Section 7.1.7(b) covers necessary drying in the affected rooms. The comparable flat-rate drying charge is €239 gross, with any duplicate cost excluded under 7.1.8(c)."
+    },
+    {
+      "item_id": "7",
+      "description": "Rent drying unit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 71.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.7(e) covers necessary equipment hire if it is not already included in the drying charge under 7.1.8(c). The separate rental is estimated at €71 gross."
+    },
+    {
+      "item_id": "8",
+      "description": "Skilled drying labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.9,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 304.0,
+      "price_log_sd": 0.32,
+      "rationale": "Section 7.1.7(g) covers necessary trade labour at customary rates, provided it does not duplicate the drying charge under 7.1.8(c). Four hours at €76 gross per hour total €304."
+    },
+    {
+      "item_id": "9",
+      "description": "Transport painting to specialist restorer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.45,
+      "rationale": "Section 5.2.6 expressly covers specialist transport of affected artwork despite the contents exclusion in 4.3(d). One local transfer is estimated at €45 gross; no agreed shared limit is evidenced."
+    },
+    {
+      "item_id": "10",
+      "description": "Specialist assessment of painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.45,
+      "rationale": "Section 5.2.6 expressly covers qualified examination, and the claim confirms that a professional restorer assessed the painting. One assessment is estimated at €70 gross; no agreed shared limit is evidenced."
+    },
+    {
+      "item_id": "11",
+      "description": "Dry and stabilise painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.5,
+      "rationale": "Section 5.2.6 expressly covers necessary drying and stabilisation of affected artwork. The distinct conservation treatment is estimated at €110 gross, provided it is not already included in restoration."
+    },
+    {
+      "item_id": "12",
+      "description": "Fully restore painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1262.0,
+      "price_log_sd": 0.19,
+      "rationale": "Section 5.2.6 covers restoration following specialist assessment, notwithstanding 4.3(d). Comparable restoration supports €1,262 gross; no scheduled agreed value is shown that would require this line to share a cap with the other conservation measures."
+    }
+  ]
+}

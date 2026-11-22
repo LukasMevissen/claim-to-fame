@@ -1,0 +1,205 @@
+{
+  "case_id": "game63-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Clean / dry carpet",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 108.0,
+      "price_log_sd": 0.1,
+      "rationale": "The soaked rug in the conservatory is a furnishing item in an affected room, and the policy schedule includes the optional extension for loose furnishings (4.4.1, 7.1.7(f)). Cleaning and drying of affected furnishings is covered as making good. Reference cases (e.g., 36, 12) show similar cleaning lines indemnified."
+    },
+    {
+      "item_id": "2",
+      "description": "Inspect electrical systems",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 142.0,
+      "price_log_sd": 0.1,
+      "rationale": "Inspection of building installations in an affected room is covered if necessary to establish whether they may safely be returned to service (7.1.7(g)). The plant room was wetted and electrical components were at risk, so this is indemnifiable. Reference: inspection lines in cases 36 and 59."
+    },
+    {
+      "item_id": "3",
+      "description": "Inspect pool technology",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 142.0,
+      "price_log_sd": 0.1,
+      "rationale": "The pool and its technical plant are insured property in this claim (optional extension 4.4.2 is in force per 11.1, 11.2). Inspection of the plant after an ingress is covered as making good (4.4.2(c), 7.1.7(g))."
+    },
+    {
+      "item_id": "4",
+      "description": "Upgrade to high-quality natural stone floor",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1200.0,
+      "price_log_sd": 0.7,
+      "rationale": "The upgrade element is not indemnified (7.1.8(d), 7.1.9): the policy only covers reinstatement to the pre-loss standard, and there is no evidence the previous floor was natural stone. The entire line is an improvement, not a repair cost."
+    },
+    {
+      "item_id": "5",
+      "description": "Pool filter system maintenance",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 162.0,
+      "price_log_sd": 0.15,
+      "rationale": "The pool and its plant are insured property (4.4.2 applies). Flushing and recommissioning the filter after it drew in dirty water is covered as making good after an ingress (4.4.2(c), 7.1.7(g))."
+    },
+    {
+      "item_id": "6",
+      "description": "Restore wall surfaces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 788.0,
+      "price_log_sd": 0.1,
+      "rationale": "Restoration of wet wall surfaces in affected rooms is a standard repair cost (2.4.2, 7.1.1(b), 7.1.7(c)). Reference: wall restoration/painting lines in cases 61 and 51."
+    },
+    {
+      "item_id": "7",
+      "description": "Final site cleaning",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 85.0,
+      "price_log_sd": 0.1,
+      "rationale": "Final cleaning of the working area after covered works is indemnified (7.1.7(h)). Reference: cleaning lines in cases 21 and 36."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "One vehicle/attendance charge per invoice with indemnifiable work is covered (7.1.8(g)). Reference: price prior and cases 34, 46, 62."
+    },
+    {
+      "item_id": "9",
+      "description": "Leak detection pool pipeline",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 520.0,
+      "price_log_sd": 0.1,
+      "rationale": "Locating the escape is covered (5.2.2), regardless of whether the source installation is insured property. Reference: leak detection lines in cases 21, 27, 62."
+    },
+    {
+      "item_id": "10",
+      "description": "Repair pool supply pipe connection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 162.0,
+      "price_log_sd": 0.1,
+      "rationale": "The pool and its plant are insured property (4.4.2 applies), so repair of the failed connection is covered (2.4.3, 2.4.4, 4.4.2(b)). Reference: pipe repair lines in cases 21, 51, 62."
+    },
+    {
+      "item_id": "11",
+      "description": "Skilled worker hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 351.0,
+      "price_log_sd": 0.2,
+      "rationale": "Labour hours for covered repair work are indemnified (7.1.1(b), 4.4.2(b)). Reference: price prior for skilled worker hours (5 hr = 351)."
+    },
+    {
+      "item_id": "12",
+      "description": "Material for pool pipe repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 104.0,
+      "price_log_sd": 0.15,
+      "rationale": "Materials for repair of the insured pool supply pipe are covered (2.4.3, 4.4.2(b)). Reference: material lines in cases 21, 62."
+    },
+    {
+      "item_id": "13",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 216.0,
+      "price_log_sd": 0.15,
+      "rationale": "Moisture measurement to establish the extent of wetting is covered (5.2.2). Reference: price prior for moisture measurement."
+    },
+    {
+      "item_id": "14",
+      "description": "Vacuum water",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.2,
+      "rationale": "Extraction and removal of standing water after an escape is covered as an emergency/mitigation measure (5.2.1, 7.1.7(b)). Reference: similar lines in cases 21, 36."
+    },
+    {
+      "item_id": "15",
+      "description": "Room drying (pool/conservatory)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.15,
+      "rationale": "Drying of affected rooms is covered (7.1.7(b)). Reference: drying lines in cases 36, 59, 21."
+    },
+    {
+      "item_id": "16",
+      "description": "Condensation dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.15,
+      "rationale": "Rental of drying equipment for affected rooms is covered (7.1.7(b)). Reference: price prior for condensation dryer (2 pcs = 75)."
+    },
+    {
+      "item_id": "17",
+      "description": "Drying fan",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.2,
+      "rationale": "Provision of drying fans for affected rooms is covered as part of drying (7.1.7(b)). Reference: similar equipment lines in cases 36, 21."
+    },
+    {
+      "item_id": "18",
+      "description": "Replace skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 761.0,
+      "price_log_sd": 0.25,
+      "rationale": "Replacement of skirting boards in affected rooms is covered (7.1.7(e)). Reference: price prior for skirting boards (15 m = 761)."
+    }
+  ]
+}

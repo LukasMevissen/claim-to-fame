@@ -1,0 +1,249 @@
+{
+  "case_id": "game81",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 518.0,
+      "price_log_sd": 0.2,
+      "rationale": "The concealed cold-water leak falls under §2.4.2 if escape-of-water cover is in force, and §7.1.7(e) covers the investigation needed to locate it. Allow €518 gross for one detection service."
+    },
+    {
+      "item_id": "2",
+      "description": "Skilled worker labour, 8 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 700.0,
+      "price_log_sd": 0.21,
+      "rationale": "Opening the partition for pipe access is covered under §7.1.7(a) and (g), and moving and propping shelving for access qualifies under §5.2.2. Allow €700 gross for eight hours of documented access and associated work."
+    },
+    {
+      "item_id": "3",
+      "description": "Materials for partition access and repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 129.0,
+      "price_log_sd": 0.29,
+      "rationale": "Section 7.1.7(c) covers screws, tape and other minor consumables used for the covered work, and §7.1.10 permits a lump sum for them. Allow €129 gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Building-services vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "The partition-access visit was a necessary attendance under §7.1.7(f), separate from the other trades' visits. Allow €84 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Initial drying of 30 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 457.0,
+      "price_log_sd": 0.09,
+      "rationale": "The initial moisture map established 30 m² of affected space under §7.1.5. Section 7.1.7(b) covers necessary drying of that area at €457 gross, separate from the equipment hire."
+    },
+    {
+      "item_id": "6",
+      "description": "First room dryer charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 444.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(e) covers hire of a dryer suited to the affected area. Allow the first equipment charge at €444 gross."
+    },
+    {
+      "item_id": "7",
+      "description": "Remove and dispose of 1 m² of insulation board",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 86.0,
+      "price_log_sd": 0.14,
+      "rationale": "Sections 7.1.5 and 7.1.7(a) cover removal and disposal of the affected wall insulation board, distinct from the stud-bay wool; they do not cover the old condensation marks. Allow 1 m² at €86 gross."
+    },
+    {
+      "item_id": "8",
+      "description": "Remove wet stud-bay insulation wool",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 215.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(a) covers clearing the wet wool from the stud bays as an operation distinct from removing the wall insulation board. Allow €215 gross for the lot."
+    },
+    {
+      "item_id": "9",
+      "description": "Expanded cellar drying to 50 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 7.1.7(b) and 7.1.8(c) allow drying work attributable to the revised moisture map, but not rebilling the initial 30 m². Allow €300 gross for the additional roughly 20 m² and the work needed to extend drying to it."
+    },
+    {
+      "item_id": "10",
+      "description": "Second room dryer charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 444.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.8(f) permits only one charge for the same dryer, even when moved to serve a larger area. The owner's unit was not invoiced, so €444 is only the conditional value of a separate eligible hire."
+    },
+    {
+      "item_id": "11",
+      "description": "Supplementary drying fan",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.02,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 28.0,
+      "price_log_sd": 0.58,
+      "rationale": "The blower was placed beside the charged dryer to assist the same drying operation, so §7.1.8(f) deems it included. If a distinct necessary use were established, the conditional allowance would be €28 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Five 15 mm press elbows, model 01",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 51.0,
+      "price_log_sd": 0.13,
+      "rationale": "The first repaired stretch required five bends, so these fittings correspond to the documented installation under §7.1.7(c). Allow five at €10.20 gross each."
+    },
+    {
+      "item_id": "14",
+      "description": "Five 15 mm press elbows, model 02",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.13,
+      "rationale": "The second repaired stretch needed its own five bends, and the different model is explained by stock availability. Under §§7.1.7(c) and 7.1.8(c), allow five at €10 gross each, not as a duplicate of position 13."
+    },
+    {
+      "item_id": "15",
+      "description": "One 28 mm press elbow",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 20.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.1.8(e) excludes material of a dimension that does not match the documented repair: the job used 15 mm copper, and no 28 mm line was opened. A matching claim for one such elbow would be worth about €20 gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Three metres of temporary bypass hose",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.03,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 24.0,
+      "price_log_sd": 0.35,
+      "rationale": "Under §§7.1.1(b) and 7.1.8(e), a hose used only to keep the washing machine running is not a necessary repair cost. If shown necessary for the repair itself, allow €24 gross for 3 m."
+    },
+    {
+      "item_id": "17",
+      "description": "Plumber's helper, 5 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 239.0,
+      "price_log_sd": 0.07,
+      "rationale": "Section 7.1.7(g) covers customary helper labour for the documented pipe works. The comparable five-hour line in Case 76 supports €239 gross."
+    },
+    {
+      "item_id": "18",
+      "description": "Plumbing vehicle charges, two visits",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 168.0,
+      "price_log_sd": 0.1,
+      "rationale": "The initial repair and the return visit to pressure-test and repair the second leak were distinct necessary attendances under §§7.1.7(f) and 7.1.8(c). Allow two at €84 gross each."
+    },
+    {
+      "item_id": "19",
+      "description": "Three 16 × 15 mm transition pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 69.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 7.1.7(c) covers the documented two transitions on the first repair and one additional transition on the second. Allow three at €23 gross each."
+    },
+    {
+      "item_id": "20",
+      "description": "Plumbing service technician, 5.5 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 458.0,
+      "price_log_sd": 0.07,
+      "rationale": "Section 7.1.7(g) covers customary labour for the pipe repairs and pressure testing. The 5.5-hour comparison in Case 76 supports €458 gross."
+    },
+    {
+      "item_id": "21",
+      "description": "Tiling labour, 14 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1232.0,
+      "price_log_sd": 0.17,
+      "rationale": "Sections 7.1.5 and 7.1.7(g) cover relaying the tiles loosened by the leak in both cellar areas, not tiling unaffected flooring. Allow 14 hours at €88 gross per hour."
+    },
+    {
+      "item_id": "22",
+      "description": "Tile adhesive and grout",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 95.0,
+      "price_log_sd": 0.19,
+      "rationale": "Sections 7.1.7(c) and 7.1.9 cover like-for-like installation materials. Allow €95 gross for adhesive and grout only, with no purchase allowance for the owner's spare tiles."
+    },
+    {
+      "item_id": "23",
+      "description": "Tiler vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "The tiler's visit was a separate necessary attendance for reinstatement under §7.1.7(f). Allow €84 gross."
+    }
+  ]
+}

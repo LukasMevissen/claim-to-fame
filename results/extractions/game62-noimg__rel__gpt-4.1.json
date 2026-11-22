@@ -1,0 +1,194 @@
+{
+  "case_id": "game62-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection call-out and electro-acoustic pinpointing of the leak beneath the kitchen sink",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1400.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(e) covers investigation to locate the source of damage; reference cases 21 and 27 show this line is indemnified at a combined rate for call-out and pinpointing, with t >= 1400 for a flat rate covering both."
+    },
+    {
+      "item_id": "2",
+      "description": "Moisture measurement of the kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 167.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 7.1.7(e) covers measurement to establish extent of moisture; reference case 21 and price prior indicate t per pc about 167 (range 123-253), so for 1 pc use 167."
+    },
+    {
+      "item_id": "3",
+      "description": "Service technician hours 14 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1307.0,
+      "price_log_sd": 0.08,
+      "rationale": "Policy 7.1.7(g) covers skilled labour at customary rates; price prior and reference cases (e.g., 21, 56) show t per hr about 93, so for 14 hrs use 1307 (range 1192-1427)."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Policy 7.1.7(f) covers one travel/call-out charge per contractor per invoice; price prior and references (e.g., 51, 56) show t per pc about 83 (range 78-88)."
+    },
+    {
+      "item_id": "5",
+      "description": "Freeing the affected pipe run beneath the kitchen sink",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 138.0,
+      "price_log_sd": 0.13,
+      "rationale": "Policy 7.1.7(a) covers dismantling to access affected components; reference case 21 shows t between 117 and 158 for this work."
+    },
+    {
+      "item_id": "6",
+      "description": "Removal and disposal of damaged pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 136.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(a) covers removal/disposal of affected materials; reference case 21 shows t >= 136 for 2 pcs, so use 136."
+    },
+    {
+      "item_id": "7",
+      "description": "Repair of the confirmed leak on the copper supply pipe",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 189.0,
+      "price_log_sd": 0.14,
+      "rationale": "Policy 7.1.7(c) covers repair of affected pipe; reference case 21 shows t between 157 and 220 for this work."
+    },
+    {
+      "item_id": "8",
+      "description": "Replacement copper pipe section and transition fittings",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 7.1.7(c) covers standard-grade replacement materials; reference case 21 shows t between 49 and 66 for transition pieces and insulation, but here the line is for a longer section (1-2m) so reference case 18 (>=221) and 56 (>=211 for 6.4m) suggest t about 220."
+    },
+    {
+      "item_id": "9",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Policy 7.1.7(f) covers one travel/call-out charge per contractor per invoice; price prior and references show t per pc about 83."
+    },
+    {
+      "item_id": "10",
+      "description": "Condensation dryer for the kitchen, rental for the drying period",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 43.0,
+      "price_log_sd": 0.35,
+      "rationale": "Policy 7.1.7(b) covers drying equipment rental for affected rooms; reference case 21 shows t between 20 and 65 for a condensation dryer."
+    },
+    {
+      "item_id": "11",
+      "description": "Room drying of the kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 57.0,
+      "price_log_sd": 0.4,
+      "rationale": "Policy 7.1.7(b) covers drying of affected areas; price prior and reference case 21 show t per pc about 57 (range 24-138)."
+    },
+    {
+      "item_id": "12",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Policy 7.1.7(f) covers one travel/call-out charge per contractor per invoice; price prior and references show t per pc about 83."
+    },
+    {
+      "item_id": "13",
+      "description": "Removal, transport and disposal of the water-damaged wooden kitchen table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 7.1.7(h) covers removal, transport and disposal of damaged furnishing items; reference case 21 shows removal (55-60) and disposal (>=95 for 2 pcs), so for 3 pcs (combined) estimate t about 150."
+    },
+    {
+      "item_id": "14",
+      "description": "Supply of replacement table - premium solid-oak designer model, higher specification than the original",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 210.0,
+      "price_log_sd": 0.25,
+      "rationale": "Policy 7.1.1(d) and 7.1.9: indemnity is limited to the current value of an item of the same kind and specification as the original (plain pine, 2019, daily use, visible wear); reference case 21 shows t between 524 and 527 for a comparable new table, but here must deduct for age and wear (table is 7 years old, well-used). Estimate current value at about 40% of new (210)."
+    },
+    {
+      "item_id": "15",
+      "description": "Delivery and assembly of the replacement table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.03,
+      "rationale": "Policy 7.1.7(h) covers delivery and assembly of replacement furnishing items; reference case 21 shows t between 59 and 60."
+    },
+    {
+      "item_id": "16",
+      "description": "Cleaning of the installation area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.04,
+      "rationale": "Policy 7.1.7(h) covers cleaning of the area where the damaged item stood; reference case 21 shows t between 78 and 85."
+    },
+    {
+      "item_id": "17",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Policy 7.1.7(f) covers one travel/call-out charge per contractor per invoice; price prior and references show t per pc about 83."
+    }
+  ]
+}

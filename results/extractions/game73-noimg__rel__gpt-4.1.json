@@ -1,0 +1,40 @@
+{
+  "case_id": "game73-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Stolen jewellery - several unscheduled pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 5000.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy section 2.6 (forcible removal) and 4.2.6 (movable property) apply; all jewellery was taken by force from the insured location. However, none of the items were scheduled, so the sub-limits in 4.4.2 (EUR 1,000 per article) and 4.4.3 (EUR 5,000 per event) apply. There are five pieces: engagement ring, gold bracelet, pearl earrings, silver pendant, wristwatch. The total indemnity is capped at EUR 5,000 for all unspecified valuables together, even though the per-article limit would allow up to EUR 5,000 (5 x 1,000). Reference case 64 confirms this logic and price level."
+    },
+    {
+      "item_id": "2",
+      "description": "Stolen clothing and personal effects (everyday wear)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 765.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy section 2.6 (forcible removal) and 4.2.6 (movable property) apply; clothing and personal effects are insured as everyday property, not subject to the valuables sub-limit. Reference cases 29 and 64 show t for similar lines between EUR 639 and 1,532. Given the moderate list (jeans, shirts, jumper, jacket, trainers), a fair estimate is at the lower end of this range."
+    },
+    {
+      "item_id": "3",
+      "description": "Emergency boarding and lock replacement for the forced front door",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 338.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy section 5.2.2 covers immediate securing and restoration of closure elements after a break-in, with a cap of EUR 1,000 per event. Reference cases 29 and 64 show t for similar lines (emergency boarding, lock replacement) between EUR 136 and 338. As this line combines both, the higher end of the range is justified but must not exceed the policy cap."
+    }
+  ]
+}

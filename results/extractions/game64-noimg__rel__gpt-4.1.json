@@ -1,0 +1,128 @@
+{
+  "case_id": "game64-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Replacement of stolen everyday clothing and personal effects (like-for-like)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1532.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered under 2.1(a) and 4.2.1 as ordinary household effects taken in a theft; indemnified at replacement value per 6.2.1, with no sub-limit for this class. Reference Case 29 supports t >= 1532 for similar claims."
+    },
+    {
+      "item_id": "2",
+      "description": "Replacement of a winter coat that had been worn only twice before the theft",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 289.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered under 2.1(a) and 4.2.1 as ordinary household effects; indemnified at replacement value per 6.2.1. The coat's purchase price (EUR 289) is the best reference, as it was nearly new."
+    },
+    {
+      "item_id": "3",
+      "description": "Premium designer jacket to replace a stolen mid-range one (upgrade on the original)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.9 and 7.1.8(c): indemnity is limited to the cost of a standard-grade replacement matching the original, not the premium upgrade. Estimate based on a mid-range high-street waterproof jacket (EUR 120)."
+    },
+    {
+      "item_id": "4",
+      "description": "Stolen jewellery - several unscheduled everyday pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 600.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered under 2.1(a) and 4.2.2 as valuables, subject to EUR 1,000 per item and EUR 3,000 per event sub-limits. Reference Case 29 supports indemnity for modest everyday jewellery; estimate for several pieces together (chain, earrings, bracelet, watch) is EUR 600, well within the per-item and event limits."
+    },
+    {
+      "item_id": "5",
+      "description": "Stolen jewellery - one high-value ring listed on the scheduled-articles endorsement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6500.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered under 2.1(a), 4.2.3 and 6.2.3: scheduled article is indemnified at the agreed value (EUR 6,500), not subject to the valuables sub-limit."
+    },
+    {
+      "item_id": "6",
+      "description": "Claimed antique brooch with no receipt, photograph or valuation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.7,
+      "rationale": "Excluded by 2.3.2(d) and 7.1.10: no evidence of existence, ownership or value provided; not indemnified."
+    },
+    {
+      "item_id": "7",
+      "description": "Personal mileage to and from the police station to report the theft",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.7,
+      "rationale": "Explicitly excluded by 3.1.5 and 7.1.8(e): outlay for reporting the event is not indemnifiable."
+    },
+    {
+      "item_id": "8",
+      "description": "Time spent compiling and reporting the claim",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.7,
+      "rationale": "Explicitly excluded by 3.1.5 and 7.1.8(e): time and effort in compiling the claim is not indemnifiable."
+    },
+    {
+      "item_id": "9",
+      "description": "Emergency boarding of the forced entry door on the night of the break-in",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 338.0,
+      "price_log_sd": 0.08,
+      "rationale": "Covered under 2.1(b), 2.4.2 and 5.2.2 as provisional securing after a break-in, capped at EUR 1,000 per event. Reference Case 29 supports t between 250 and 338 for similar work."
+    },
+    {
+      "item_id": "10",
+      "description": "Replacement lock and cylinder for the forced door",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered under 2.1(b), 2.4.2 and 7.1.7 as permanent repair of break-in damage to fittings/locks. Estimate based on ordinary lock and cylinder replacement (EUR 220)."
+    },
+    {
+      "item_id": "11",
+      "description": "Cleaning of muddy footprints tracked through the hallway by the intruders",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.7,
+      "rationale": "Explicitly excluded by 3.1.7 and 7.1.8(a): soiling and cleaning are not physical damage and are not indemnifiable."
+    }
+  ]
+}

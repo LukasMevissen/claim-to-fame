@@ -1,0 +1,16 @@
+{
+ "game": 80,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Leaking bathtub supply pipe, discovered end of July after a few days of seeping. The whole bathroom floor (about 6 m² of tiling) was wet and had to be taken out and relaid. Water reached the living room through the shared wall: about 18 m² of laminate had to be removed and reinstalled together with the skirting, and the lower part of the living-room wall along the partition had to be prepared and repainted. Ceiling and hallway were both checked and were dry — nothing done there. Pipe repaired promptly; drying ran a few days before the trades started.",
+ "lines": {
+  "1": "Remove water-damaged laminate in living room 18 m²",
+  "2": "Supply & install premium oak laminate incl. impact sound insulation, living room | 18 m²",
+  "3": "Supply and install skirting boards (premium solid oak, upgrade) | 25 linear m",
+  "4": "Disassembly and disposal of damaged floor tiles in bathroom | 6 m²",
+  "5": "Supply & install premium large-format Italian porcelain tiles in bathroom incl. material | 6 m²",
+  "6": "Cleaning of entire apartment 1 flat rate",
+  "7": "Paint lower wall after water damage incl. surface preparation | 20 m²",
+  "8": "Full ceiling paint living room 15 m²",
+  "9": "Wallpapering work hallway 8 m²"
+ }
+}

@@ -1,0 +1,139 @@
+{
+  "case_id": "game67",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disassembly and assembly service",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 102.0,
+      "price_log_sd": 0.25,
+      "rationale": "The leaking fitting caused covered escape-of-water damage under §2.4.2. Necessary dismantling and refitting for access or drying is covered under §§5.2.6–5.2.7 at €102 for one service."
+    },
+    {
+      "item_id": "2",
+      "description": "Construction dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 302.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 5.2.7 covers drying for the period supported by moisture readings. The seven billed days are consistent with the reported drying period; the calibrated gross total is €302."
+    },
+    {
+      "item_id": "3",
+      "description": "Rock wool pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.27,
+      "rationale": "Section 5.2.6 covers like-for-like restoration of insulation disturbed during necessary access, regardless of whether the fitting itself suffered a covered fracture. One piece is estimated at €30."
+    },
+    {
+      "item_id": "4",
+      "description": "Construction waste disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.08,
+      "rationale": "Section 5.2.2 covers actual debris disposal once per event. This is the only disposal charge shown, and €60 is consistent with comparable small cellar jobs."
+    },
+    {
+      "item_id": "5",
+      "description": "Wall levelling material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 113.0,
+      "price_log_sd": 0.49,
+      "rationale": "Sections 5.2.6 and 7.1.5 cover the levelling material needed to restore the stripped wall panel. The flat amount is €113, consistent with the comparable repair in Case 50."
+    },
+    {
+      "item_id": "6",
+      "description": "Rough renovation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 206.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 5.2.6 covers substrate preparation in the damaged area. The measured 2.40 × 1.16 m rounds to 2.78 m², giving about €206 at €74/m², without paying twice for any included labour."
+    },
+    {
+      "item_id": "7",
+      "description": "Mounting / service opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 154.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 5.2.6 expressly covers a service opening necessary to reach the damaged element. The comparable charge is €154 for one opening."
+    },
+    {
+      "item_id": "8",
+      "description": "Premium designer wall tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 156.0,
+      "price_log_sd": 0.24,
+      "rationale": "Sections 3.5(a), 3.5(e) and 7.1.6 limit payment to ordinary tiles for the 2.78 m² damaged panel plus normal cutting allowance, not the five designer slabs. About 3 m² of standard tile at €52/m² gives €156."
+    },
+    {
+      "item_id": "9",
+      "description": "Premium grout",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 22.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 3.5(a) and 7.1.6 exclude the premium uplift but allow the standard grout needed to finish the reinstated panel. One small pack is estimated at €22 gross."
+    },
+    {
+      "item_id": "10",
+      "description": "Premium silicone sealant",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.91,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 16.0,
+      "price_log_sd": 0.29,
+      "rationale": "Sections 3.5(a), 3.5(e) and 7.1.5 limit payment to standard sealant for the 2.40 m bottom joint and 1.16 m corner joint; the other edge was grouted. One standard cartridge for the 3.56 m run is estimated at €16 gross, excluding labour."
+    },
+    {
+      "item_id": "11",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.4.2 permits the first travel charge for the tiling contractor on this invoice. One charge is estimated at €83 gross."
+    },
+    {
+      "item_id": "12",
+      "description": "Skilled worker hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1267.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.4.1 allows necessary skilled labour at customary rates but excludes hours already included in other charges. Comparable cellar repairs support €1,267 for 14 hours, or about €90.50 per hour."
+    }
+  ]
+}

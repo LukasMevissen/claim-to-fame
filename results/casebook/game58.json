@@ -1,0 +1,23 @@
+{
+ "game": 58,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Storm claim, the full job this time. A large tree came down in the storm onto the declared garden shed and caved in one section of the roof. Three different firms ended up working the loss. A carpenter repaired the damaged roof section back to how it was. The caved-in part was about 4 m along the ridge and 2.5 m down the slope: new rafters, new boarding and new bitumen shingles over that patch, the rest of the roof was fine. Two of his men spent one full working day on it, and he billed the roof material and their hours on separate lines. But while on site he also gave the whole shed a full repaint - undamaged walls included - added an ultraviolet-resistant protective coat, and renewed all the trim rather than just the damaged pieces. A separate tree service cut the tree up and lifted it off the roof with machinery, and a recycling service then hauled the debris away and put the churned-up ground back to how it was. Worth noting for this one: the policy carries a grounds-reinstatement endorsement (GR-2026), so ground disturbed by an insured tree impact is put back at the insurer's cost. The recycler's paperwork also carried a transport line for the tree waste that the tree service had already charged for, and the carpenter's invoice included hand tools, a second call-out for a return visit, and catering for the crew.",
+ "lines": {
+  "1": "Repair of the storm-damaged shed roof section (timber and covering, restored to the pre-loss standard) | 1 flat rate",
+  "2": "Full repaint of the entire shed, including the undamaged walls | 32 m²",
+  "3": "Ultraviolet-resistant protective exterior coating 32 m²",
+  "4": "Renewal of all shed trim, including undamaged trim 1 flat rate",
+  "5": "Skilled carpentry labour for the roof repair 1 pcs",
+  "6": "Contractor hand tools and reusable equipment 1 flat rate",
+  "7": "Vehicle costs 1 pcs",
+  "8": "Vehicle costs – return visit 1 pcs",
+  "9": "Catering for work crew 1 pcs",
+  "10": "Cutting and removal of the storm-felled tree from the shed roof | 1 flat rate",
+  "11": "Lifting and earth-moving machinery hire 1 flat rate",
+  "12": "Vehicle costs 1 pcs",
+  "13": "Disposal of shed roof timber and the broken glass pane (building debris) | 2 pcs",
+  "14": "Disposal of felled-tree green waste and root ball (single mass under one cubic metre) | 2 pcs",
+  "15": "Disposal and reinstatement of excavated soil and displaced paving around the shed | 2 pcs",
+  "16": "Transport charge for the tree waste (already billed by the tree service) | 1 pcs"
+ }
+}

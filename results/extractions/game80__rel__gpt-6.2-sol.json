@@ -1,0 +1,106 @@
+{
+  "case_id": "game80",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Remove damaged living-room laminate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 583.0,
+      "price_log_sd": 0.28,
+      "rationale": "The bathtub supply leak qualifies as escape of water under §2.4.2, and §7.1.7(a) covers removal of the damaged flooring. The 18 m² line is estimated at €583 gross using the matched price prior."
+    },
+    {
+      "item_id": "2",
+      "description": "Install living-room laminate and sound underlay",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1350.0,
+      "price_log_sd": 0.22,
+      "rationale": "Sections 7.1.7(c) and 7.1.9 cover like-for-like laminate and equivalent underlay, not the premium oak upgrade. Case 61 supports €1,350 gross for the full 18 m² at the pre-loss standard."
+    },
+    {
+      "item_id": "3",
+      "description": "Replace living-room skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.25,
+      "rationale": "Section 7.1.7 covers damaged trim and trim that must be removed and cannot be refitted; §7.1.9 excludes the solid-oak upgrade cost. Case 61 supports €850 gross for 25 linear metres of equivalent skirting."
+    },
+    {
+      "item_id": "4",
+      "description": "Remove and dispose of damaged bathroom tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 366.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(a) covers dismantling and disposal because the entire bathroom floor was affected. The matched price prior gives €366 gross for 6 m²."
+    },
+    {
+      "item_id": "5",
+      "description": "Supply and install bathroom floor tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 950.0,
+      "price_log_sd": 0.26,
+      "rationale": "Sections 7.1.7(c) and 7.1.9 limit payment to tiles and installation equivalent to the pre-loss floor, excluding the premium large-format porcelain uplift. Case 61 supports €950 gross for 6 m² of like-for-like supply and installation, with removal priced separately."
+    },
+    {
+      "item_id": "6",
+      "description": "Clean entire apartment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.45,
+      "rationale": "Section 7.1.8(a) excludes general cleaning, and this flat rate does not isolate covered repair debris or residue removal. The conditional €100 gross estimate reflects only a necessary, documented cleanup of the affected work area."
+    },
+    {
+      "item_id": "7",
+      "description": "Prepare and repaint water-damaged lower wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 858.0,
+      "price_log_sd": 0.28,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) cover preparation and repainting of the affected lower wall along the partition. The matched price prior gives €858 gross for 20 m²."
+    },
+    {
+      "item_id": "8",
+      "description": "Repaint entire living-room ceiling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.4,
+      "rationale": "The ceiling was dry and no work was done there; §§7.1.5–7.1.6 also rule out extending the wall repair to this separate surface. The €180 gross figure is conditional on proof of covered ceiling work."
+    },
+    {
+      "item_id": "9",
+      "description": "Wallpaper hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 270.0,
+      "price_log_sd": 0.45,
+      "rationale": "The hallway was dry and no work was done there, so §§7.1.5–7.1.6 exclude it from the repair. The €270 gross figure is conditional on proof of covered wallpapering for the 8 m² line."
+    }
+  ]
+}

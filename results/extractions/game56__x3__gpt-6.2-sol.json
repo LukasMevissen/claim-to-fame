@@ -1,0 +1,282 @@
+{
+  "case_id": "game56",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "15 mm copper 90° elbows",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 42.0,
+      "price_log_sd": 0.1,
+      "rationale": "Assuming escape-of-water cover is in force, the failed internal heating pipe is assessed under 2.4.3(a). Like-for-like fittings under 7.1.7(c) are estimated at 4 × €10.50."
+    },
+    {
+      "item_id": "2",
+      "description": "28 mm copper 90° elbows",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.38,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 104.0,
+      "price_log_sd": 0.29,
+      "rationale": "Under 7.1.7(c) and 7.1.8(e), the five elbows are payable only if the 28 mm fittings were needed for the documented reconnection; the invoice lists 15 mm replacement pipe. The conditional gross estimate is €104 for all five."
+    },
+    {
+      "item_id": "3",
+      "description": "28 mm copper 45° elbow",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.34,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 21.0,
+      "price_log_sd": 0.28,
+      "rationale": "Under 7.1.8(e), this elbow is excluded unless the 28 mm size can be tied to the actual repair. If verified, one elbow is estimated at €21 gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Grub screws",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 9.6,
+      "price_log_sd": 0.12,
+      "rationale": "Minor repair fasteners are covered under 7.1.7(c) without individual tracing under 7.1.8(e). Eight screws at €1.20 total €9.60."
+    },
+    {
+      "item_id": "5",
+      "description": "10 mm two-screw pipe clamps",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.89,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.8,
+      "price_log_sd": 0.12,
+      "rationale": "Repair fixings are eligible under 7.1.7(c), subject to their use on the repaired assembly. Four clamps at €4.70 total €18.80."
+    },
+    {
+      "item_id": "6",
+      "description": "25 mm two-screw pipe clamps",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.85,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.1.7(c) covers necessary support fixings, although 7.1.8(e) excludes sizes unrelated to the documented repair. Four clamps are estimated at €25 gross."
+    },
+    {
+      "item_id": "7",
+      "description": "15 × 1 mm copper pipe",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.45,
+      "rationale": "Sections 2.4.3(a) and 7.1.7(c) cover the like-for-like internal heating-pipe repair. The calibrated gross estimate for the invoiced 6.4 m is €200."
+    },
+    {
+      "item_id": "8",
+      "description": "Service technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 628.0,
+      "price_log_sd": 0.09,
+      "rationale": "Section 7.1.7(g) covers necessary labour on both visits; the one-charge limit in 7.1.7(f) applies to travel, not labour. The gross estimate for 6.75 hours is €628."
+    },
+    {
+      "item_id": "9",
+      "description": "Helper labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 388.0,
+      "price_log_sd": 0.13,
+      "rationale": "Necessary helper labour is payable at customary rates under 7.1.7(g). The gross estimate for 5.75 hours is €388."
+    },
+    {
+      "item_id": "10",
+      "description": "Rock-wool pipe insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 154.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(c) covers reinstatement of the pre-loss insulation on the repaired pipe. The gross estimate for six pieces is €154."
+    },
+    {
+      "item_id": "11",
+      "description": "Rock-wool mats",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.88,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 55.0,
+      "price_log_sd": 0.28,
+      "rationale": "Under 7.1.7(c), the mats are payable if used to reinstate existing insulation rather than duplicating the pipe insulation charge. The gross estimate for six mats is €55."
+    },
+    {
+      "item_id": "12",
+      "description": "Binding wire",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 28.0,
+      "price_log_sd": 0.22,
+      "rationale": "Binding wire used to refit the insulation is a covered fastening under 7.1.7(c). Two kilograms at about €13.90 total approximately €28."
+    },
+    {
+      "item_id": "13",
+      "description": "Small parts and consumables",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.17,
+      "rationale": "Sections 7.1.7(c) and 7.1.8(e) allow a reasonable lump sum for minor installation materials. The calibrated gross allowance is €45."
+    },
+    {
+      "item_id": "14",
+      "description": "Plumber's first vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.06,
+      "rationale": "Section 7.1.7(f) allows the first travel charge on the plumbing invoice. One charge is estimated at €82 gross."
+    },
+    {
+      "item_id": "15",
+      "description": "Plumber's return-visit vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 7.1.7(f) excludes a second travel charge on the same contractor's invoice even when the return visit was necessary. The conditional benchmark for one trip is €82."
+    },
+    {
+      "item_id": "16",
+      "description": "Plumbing debris disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.07,
+      "rationale": "Sections 5.2.1 and 7.1.7(a) cover necessary disposal of removed pipe and insulation; the photo shows this waste separately from tile debris. One disposal charge is estimated at €60 gross."
+    },
+    {
+      "item_id": "17",
+      "description": "Crew catering",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 40.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.8(b) excludes provisioning for the contractor's own personnel. The conditional benchmark for the flat charge is €40."
+    },
+    {
+      "item_id": "18",
+      "description": "Processing fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.8(b) excludes processing fees added to itemised labour and materials. The conditional benchmark for the fee is €25."
+    },
+    {
+      "item_id": "19",
+      "description": "Remove water-damaged floor tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.5 and 7.1.7(a) cover lifting tiles in the documented damaged patch. Eight square metres at €30 per square metre total €240 gross, excluding separately charged disposal."
+    },
+    {
+      "item_id": "20",
+      "description": "Supply and lay replacement floor tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 340.0,
+      "price_log_sd": 0.3,
+      "rationale": "Sections 7.1.5 and 7.1.9 limit reinstatement to the damaged 8 m² at the pre-loss tile grade. The conditional allowance is 8 × €42.50 for standard tiles, with adhesive, grout and installation labour assessed separately to avoid duplication under 7.1.8(c)."
+    },
+    {
+      "item_id": "21",
+      "description": "Tile adhesive and grout",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.93,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 64.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(c) covers standard adhesive and grout for the affected patch if not charged elsewhere. The materials allowance is about 8 × €8, or €64 gross."
+    },
+    {
+      "item_id": "22",
+      "description": "Tiler installation labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.76,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 479.0,
+      "price_log_sd": 0.62,
+      "rationale": "Section 7.1.7(g) covers customary labour for laying the damaged patch, but 7.1.8(c) bars a second payment if the supply-and-lay line already includes those hours. If separately chargeable, six hours are estimated at €479 gross."
+    },
+    {
+      "item_id": "23",
+      "description": "Clean, disinfect and recoat undamaged tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 300.0,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 7.1.5 and 7.1.8(a) exclude treatment of surrounding tiles that were never wet. The conditional benchmark for five hours is €300."
+    },
+    {
+      "item_id": "24",
+      "description": "Tile debris disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.07,
+      "rationale": "Sections 5.2.1 and 7.1.7(a) cover disposal of the removed tiles. The separate ceramic waste shown in the photo supports a distinct €60 charge rather than a duplicate under 7.1.8(c)."
+    },
+    {
+      "item_id": "25",
+      "description": "Tiler's vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.06,
+      "rationale": "Section 7.1.7(f) allows the tiler's first travel charge on its separate invoice; the plumber's charge does not count against it. One charge is estimated at €82 gross."
+    }
+  ]
+}

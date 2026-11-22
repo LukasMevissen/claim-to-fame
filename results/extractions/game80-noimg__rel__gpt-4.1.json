@@ -1,0 +1,106 @@
+{
+  "case_id": "game80-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Remove water-damaged laminate in living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 583.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered under escape of water (2.4.2), as the laminate was physically damaged by water from a leaking pipe; removal is necessary preparatory work (7.1.7). Reference cases (61, 70) show this line is indemnified at about 32 EUR/m²."
+    },
+    {
+      "item_id": "2",
+      "description": "Supply & install premium oak laminate incl. impact sound insulation, living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1305.0,
+      "price_log_sd": 0.25,
+      "rationale": "Only standard-grade replacement is indemnified (7.1.9); premium upgrade is not. Reference cases (61, 70) show standard laminate + insulation for 18 m² at about 1305–2675 EUR. Indemnity is capped at the cost of standard-grade material and installation for 18 m²."
+    },
+    {
+      "item_id": "3",
+      "description": "Supply and install skirting boards (premium solid oak, upgrade)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 839.0,
+      "price_log_sd": 0.15,
+      "rationale": "Skirting boards are building components (4.2.2) and were affected by water (damage description). Only standard-grade is indemnified (7.1.9); premium upgrade is not. Reference cases (61, 70) show 25 m at about 839 EUR for standard skirting."
+    },
+    {
+      "item_id": "4",
+      "description": "Disassembly and disposal of damaged floor tiles in bathroom",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 366.0,
+      "price_log_sd": 0.15,
+      "rationale": "Bathroom floor tiles were physically damaged by water (damage description), so removal is necessary preparatory work (7.1.7). Reference case 61: 6 m² at 336–366 EUR."
+    },
+    {
+      "item_id": "5",
+      "description": "Supply & install premium large-format Italian porcelain tiles in bathroom incl. material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1034.0,
+      "price_log_sd": 0.15,
+      "rationale": "Only standard-grade replacement is indemnified (7.1.9); premium upgrade is not. Reference cases (61, 70) show 6 m² of standard tiles at 939–1109 EUR. Indemnity is capped at the cost of standard-grade tile and installation."
+    },
+    {
+      "item_id": "6",
+      "description": "Cleaning of entire apartment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.7,
+      "rationale": "General cleaning is not a repair cost (7.1.8a) and is not indemnified unless specifically covered, which it is not. Reference cases (61, 65) show t = 0."
+    },
+    {
+      "item_id": "7",
+      "description": "Paint lower wall after water damage incl. surface preparation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 858.0,
+      "price_log_sd": 0.2,
+      "rationale": "Lower wall was physically damaged by water (damage description); painting and prep are necessary repair (7.1.1b, 7.1.7). Reference cases (61, 70) show 20 m² at 618–858 EUR."
+    },
+    {
+      "item_id": "8",
+      "description": "Full ceiling paint living room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.7,
+      "rationale": "Ceiling was not affected by water (damage description); work beyond affected parts is excluded (7.1.5). Reference case 61: t below 181, possibly 0."
+    },
+    {
+      "item_id": "9",
+      "description": "Wallpapering work hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.7,
+      "rationale": "Hallway was not affected by water (damage description); work beyond affected parts is excluded (7.1.5). Reference case 61: t = 0."
+    }
+  ]
+}

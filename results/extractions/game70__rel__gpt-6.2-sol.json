@@ -1,0 +1,40 @@
+{
+  "case_id": "game70",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Remove and replace living-room laminate, underlay and skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2679.0,
+      "price_log_sd": 0.15,
+      "rationale": "The bathtub supply leak qualifies as escape of water under §2.4.2, and §§4.2.2 and 7.1.5–7.1.9 cover removal and like-for-like reinstatement of the affected flooring, underlay and skirting. Case 61 supports €535 for removal, €1,305 for laminate and underlay, and €839 for skirting, totaling €2,679 gross."
+    },
+    {
+      "item_id": "2",
+      "description": "Remove, dispose of and replace bathroom floor tiles",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1275.0,
+      "price_log_sd": 0.14,
+      "rationale": "The full 6 m² tiled floor was affected, so §§5.2.1 and 7.1.5–7.1.9 support necessary removal, disposal and like-for-like retiling. Case 61 supports €336 for removal and disposal plus €939 for supply and installation, totaling €1,275 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Prepare and repaint the damaged lower living-room wall",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 788.0,
+      "price_log_sd": 0.14,
+      "rationale": "Sections 7.1.5 and 7.1.7 cover preparation and repainting of the damaged lower wall, not the dry ceiling or hallway. Case 61 supports €39.40 gross per m² for the same work, or €788 for 20 m²."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+ "game": 72,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Bathroom leak was upstairs, cold water supply pipe in the 1st-floor bathroom failed and leaked into the wall. The repair itself was normal: wall opened, pipe fixed, blower in to dry, opening closed and painted. Localised to the wall patch. The opening is behind the basin, inside the vanity unit, which is what the photos show. To get the new section up to the tap connections, the bottom two rows of the tiled splashback above the worktop also had to come off, a strip about a metre wide; that part is not in the pictures. This one's got a lot going on on the invoices though. The building-services lot itemised every last thing, a measuring device, a saw blade, two separate van charges on the one invoice, a gunmetal fitting. Their technician was there two full days, the first cutting in and getting the old section out, the second fitting, testing and lagging the new one, and the installer looked in for an hour at the end to sign the connection off. On top of that a tiler came in: fair enough to re-tile the disturbed bit around the opening, but they also re-tiled the whole bathroom 'to match', and billed their own blower and van as well. Note the deductible on this policy is the higher band. Took a few visits.",
+ "lines": {
+  "1": "Vehicle costs 1 flat rate",
+  "2": "Sealing material 1 pcs",
+  "3": "Stainless steel pipe 1 m",
+  "4": "Rock wool pipe insulation 1 m",
+  "5": "Installation 1 hrs",
+  "6": "Measuring device 1 pcs",
+  "7": "Service technician hours 9 labor units",
+  "8": "Vehicle costs 1 pcs",
+  "9": "Construction dryer flat-rate charge 1 flat rate",
+  "10": "Short saw blade 1 pcs",
+  "11": "Gunmetal 2 pcs",
+  "12": "Service technician hours 9 labor units",
+  "13": "Painting the disturbed wall area and closing the wall opening | 1 pcs",
+  "14": "Re-tiling of the disturbed wall section around the opening | 1 flat rate",
+  "15": "Re-tiling of the entire bathroom to match 14 m²",
+  "16": "Construction dryer flat-rate charge 1 flat rate",
+  "17": "Vehicle costs 1 pcs"
+ }
+}

@@ -1,0 +1,128 @@
+{
+  "case_id": "game69-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Compensation for stolen watch",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2500.0,
+      "price_log_sd": 0.05,
+      "rationale": "Insured peril (robbery) and insured property (valuables, timepiece) under 2.3, 4.2.2, 4.2.4. Sub-limit of €2,500 per item and €5,000 per event applies (no schedule). Policy pays replacement value up to sub-limit (6.2.3, 6.3, 7.1.1). Reference cases (45, 31, 57) show t per watch at sub-limit, not actual value. No deductible."
+    },
+    {
+      "item_id": "2",
+      "description": "Compensation for stolen diamond ring",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 2500.0,
+      "price_log_sd": 0.05,
+      "rationale": "Insured peril (robbery) and insured property (valuables, jewellery) under 2.3, 4.2.2, 4.2.4. Sub-limit of €2,500 per item and €5,000 per event applies (no schedule). Receipt shows higher value, but policy pays up to sub-limit only (6.3, 7.1.1). Reference case 64 (unscheduled jewellery) supports this logic."
+    },
+    {
+      "item_id": "3",
+      "description": "Compensation for stolen gold necklace",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Necklace was not taken in the robbery but found missing later, so not an 'affected item' under 2.3.4(a), 7.1.5, 7.1.10. Policy excludes property missing on a separate occasion."
+    },
+    {
+      "item_id": "4",
+      "description": "Compensation for cash taken in robbery",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.05,
+      "rationale": "Insured peril (robbery) and insured property (means of payment) under 2.3, 4.2.3, 4.2.4. Sub-limit of €500 per event for cash applies (schedule, 6.3, 7.1.1(c)). Reference cases (45, 57) confirm t at sub-limit."
+    },
+    {
+      "item_id": "5",
+      "description": "Compensation for stolen mobile phone",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 700.0,
+      "price_log_sd": 0.15,
+      "rationale": "Insured peril (robbery) and insured property (general household effects, 4.2.1, 4.2.4). No sub-limit for this class, but €10,000 aggregate for property away from home applies (schedule). Market value capped at replacement value for similar model (6.2.1, 7.1.1). Purchase price €700 two years ago; moderate depreciation, but replacement value for similar model likely close to €700. Aggregate event cap not reached."
+    },
+    {
+      "item_id": "6",
+      "description": "Replacement travel and extra hotel nights after the incident",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Consequential disruption (travel, accommodation) is expressly excluded (3.1.7, 5.1(e)). Not an insured cost head. Reference cases confirm t = 0 for similar lines."
+    },
+    {
+      "item_id": "7",
+      "description": "Shipping",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Ancillary charge for shipping is excluded (7.1.8(b)), not an insured cost head under 5.1. Reference cases: t = 0 in 8 of 9 similar lines under this wording."
+    },
+    {
+      "item_id": "8",
+      "description": "Translation from Spanish to English",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Translation of documents for the claim is excluded (3.1.6, 7.1.8(f)). Reference cases: t = 0 in all similar lines."
+    },
+    {
+      "item_id": "9",
+      "description": "Notary certification of translated documents",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Certification of documents for the claim is excluded (3.1.6, 7.1.8(f)). Not an insured cost head. Reference cases: t = 0 for all similar lines."
+    },
+    {
+      "item_id": "10",
+      "description": "Material costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Material costs for claim substantiation are excluded (3.1.6, 7.1.8(e), 7.1.8(f)). Reference cases: t = 0 for all similar lines."
+    },
+    {
+      "item_id": "11",
+      "description": "Administrative and claim-processing fee",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Administrative/claim-processing fees are excluded (3.1.5, 7.1.8(e)). Reference cases: t = 0 for all similar lines."
+    }
+  ]
+}

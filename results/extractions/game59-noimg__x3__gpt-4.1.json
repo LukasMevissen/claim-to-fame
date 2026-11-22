@@ -1,0 +1,139 @@
+{
+  "case_id": "game59-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 18.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(e) covers necessary investigation to locate and confirm the source and extent of damage, including moisture measurement; price level per reference cases (thermal imaging, moisture readings) is modest."
+    },
+    {
+      "item_id": "2",
+      "description": "Drying of the affected floor area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 242.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 7.1.7(b) covers drying of the affected area; price prior and reference case 36 show t per unit about 242, so for 1 flat rate (one area) about 242."
+    },
+    {
+      "item_id": "3",
+      "description": "Flat-rate drying of the entire room",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.1,
+      "price_log_sd": 0.7,
+      "rationale": "Policy 7.1.7(b) allows drying for the room containing affected components, but only one drying measure per room is indemnified (7.1.8(c)); as line 2 already covers the affected area, a second drying charge for the same room is not indemnified."
+    },
+    {
+      "item_id": "4",
+      "description": "Skilled worker hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 246.0,
+      "price_log_sd": 0.22,
+      "rationale": "Policy 7.1.7(g) covers necessary labour at customary rates; price prior for 4 hrs is about 246 (range 157–432); no policy cap or reduction applies."
+    },
+    {
+      "item_id": "5",
+      "description": "Cleaning of affected floor areas",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.2,
+      "rationale": "Policy 7.1.7(h) covers cleaning of surfaces affected by the escaped water before repair or reuse; both the utility room tiles and the affected hall boards qualify."
+    },
+    {
+      "item_id": "6",
+      "description": "Inspection of the washing machine and supply/drain connection to confirm no further leakage",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 144.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 7.1.7(e) covers inspection of the installation and appliance to confirm the source and that it no longer leaks; price prior for this line type is about 144."
+    },
+    {
+      "item_id": "7",
+      "description": "Removal and disposal of water-damaged skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 768.0,
+      "price_log_sd": 0.22,
+      "rationale": "Policy 7.1.7(a) and 5.2.1 cover removal and disposal of damaged building components; price prior for 10 m is about 768."
+    },
+    {
+      "item_id": "8",
+      "description": "Replace skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1348.0,
+      "price_log_sd": 0.22,
+      "rationale": "Policy 7.1.7(c) covers replacement of damaged components to pre-loss standard; price prior for 10 m is about 1348."
+    },
+    {
+      "item_id": "9",
+      "description": "Transport of the high-value painting to the specialist restorer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 50.0,
+      "price_log_sd": 0.25,
+      "rationale": "Policy 5.2.6 covers transport to/from a specialist for an affected item of particular value; as the painting was not individually notified and scheduled, the total for all measures (items 9–12) is capped at EUR 1,000 plus VAT (EUR 1,190 gross), to be apportioned in invoice order."
+    },
+    {
+      "item_id": "10",
+      "description": "Professional assessment of the high-value painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.25,
+      "rationale": "Policy 5.2.6 covers assessment by a qualified specialist; as above, subject to the EUR 1,190 gross aggregate cap for all painting measures, apportioned in invoice order."
+    },
+    {
+      "item_id": "11",
+      "description": "Conservatory drying and stabilisation of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 140.0,
+      "price_log_sd": 0.25,
+      "rationale": "Policy 5.2.6 covers drying and stabilisation; as above, subject to the EUR 1,190 gross aggregate cap for all painting measures, apportioned in invoice order."
+    },
+    {
+      "item_id": "12",
+      "description": "Full restoration of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 900.0,
+      "price_log_sd": 0.25,
+      "rationale": "Policy 5.2.6 covers restoration, but as the painting was not individually notified and scheduled, the total for all measures (items 9–12) is capped at EUR 1,190 gross; the remainder of the cap (900) is allocated here."
+    }
+  ]
+}

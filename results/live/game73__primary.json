@@ -1,0 +1,115 @@
+{
+ "game": 73,
+ "ts": "2026-11-22T06:00:07",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 7.42,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Stolen jewellery - several unscheduled pieces",
+     "median": 5000.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 4750.0,
+     "b": 5000.0
+    },
+    {
+     "index": 2,
+     "description": "Stolen clothing and personal effects (everyday wear)",
+     "median": 765.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 665.55,
+     "b": 736.95
+    },
+    {
+     "index": 3,
+     "description": "Emergency boarding and lock replacement for the forced front door",
+     "median": 338.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 321.1,
+     "b": 338.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 3,
+    "seconds": 0.008,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 4638.72,
+     "2": 629.47,
+     "3": 310.46
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 7.84,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Five unscheduled jewellery and watch items",
+     "median": 2200.0,
+     "sigma": 0.11,
+     "p_zero": 0.01,
+     "a": 2090.0,
+     "b": 2198.6
+    },
+    {
+     "index": 2,
+     "description": "Stolen everyday clothing",
+     "median": 560.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 487.2,
+     "b": 537.46
+    },
+    {
+     "index": 3,
+     "description": "Emergency boarding and lock replacement",
+     "median": 330.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 287.1,
+     "b": 316.72
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 3,
+    "seconds": 0.004,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 2020.73,
+     "2": 591.66,
+     "3": 274.26
+    }
+   }
+  }
+ ]
+}

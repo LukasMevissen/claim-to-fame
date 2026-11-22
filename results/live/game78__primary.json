@@ -1,0 +1,395 @@
+{
+ "game": 78,
+ "ts": "2026-11-22T07:07:04",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 15.05,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Damage assessment and inspection",
+     "median": 530.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 461.1,
+     "b": 510.57
+    },
+    {
+     "index": 2,
+     "description": "Indoor leak detection",
+     "median": 567.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 493.29,
+     "b": 534.57
+    },
+    {
+     "index": 3,
+     "description": "Measurement technician 2.5 hrs",
+     "median": 254.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 220.98,
+     "b": 244.69
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs 1 hrs",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 79.8,
+     "b": 84.0
+    },
+    {
+     "index": 5,
+     "description": "Fleece covering 25 m²",
+     "median": 40.0,
+     "sigma": 0.7,
+     "p_zero": 0.95,
+     "a": 42.41,
+     "b": 0.0
+    },
+    {
+     "index": 6,
+     "description": "Floor covering removal – removal of linoleum incl. skirting and transport to the",
+     "median": 120.0,
+     "sigma": 0.3,
+     "p_zero": 0.5,
+     "a": 104.4,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Preparation of floor surfaces for further processing 82.8 m²",
+     "median": 100.0,
+     "sigma": 0.3,
+     "p_zero": 0.3,
+     "a": 87.0,
+     "b": 63.65
+    },
+    {
+     "index": 8,
+     "description": "Construction waste disposal (floor removal firm)",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 9,
+     "description": "Staff costs 2 hrs",
+     "median": 60.0,
+     "sigma": 0.3,
+     "p_zero": 0.3,
+     "a": 52.2,
+     "b": 38.19
+    },
+    {
+     "index": 10,
+     "description": "Dust protection incl. material and labor 10 m²",
+     "median": 40.0,
+     "sigma": 0.5,
+     "p_zero": 0.5,
+     "a": 37.31,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Kitchen disinfection 25 m²",
+     "median": 50.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 53.01,
+     "b": 0.0
+    },
+    {
+     "index": 12,
+     "description": "Large-area drying (from 50 m²) 121.9 m²",
+     "median": 180.0,
+     "sigma": 0.3,
+     "p_zero": 0.5,
+     "a": 156.6,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Cavity drying 1 pcs",
+     "median": 60.0,
+     "sigma": 0.5,
+     "p_zero": 0.5,
+     "a": 55.96,
+     "b": 0.0
+    },
+    {
+     "index": 14,
+     "description": "Skilled worker hours 4 hrs",
+     "median": 349.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 303.63,
+     "b": 336.2
+    },
+    {
+     "index": 15,
+     "description": "Vehicle costs 1 –",
+     "median": 84.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 79.8,
+     "b": 84.0
+    },
+    {
+     "index": 16,
+     "description": "Vehicle costs – return visit 1 –",
+     "median": 84.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 89.06,
+     "b": 0.0
+    },
+    {
+     "index": 17,
+     "description": "Construction waste disposal (drying firm)",
+     "median": 60.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 63.62,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 7,
+    "seconds": 0.017,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 467.72,
+     "2": 480.76,
+     "3": 224.15,
+     "4": 77.93,
+     "5": 59.97,
+     "6": 110.22,
+     "7": 91.85,
+     "8": 55.11,
+     "9": 55.11,
+     "10": 59.97,
+     "11": 74.97,
+     "12": 165.33,
+     "13": 89.96,
+     "14": 317.37,
+     "15": 77.16,
+     "16": 125.94,
+     "17": 51.38
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 24.38,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Damage assessment and inspection",
+     "median": 530.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 461.1,
+     "b": 508.67
+    },
+    {
+     "index": 2,
+     "description": "Indoor leak detection",
+     "median": 567.0,
+     "sigma": 0.26,
+     "p_zero": 0.01,
+     "a": 493.29,
+     "b": 529.71
+    },
+    {
+     "index": 3,
+     "description": "Measurement technician",
+     "median": 254.0,
+     "sigma": 0.22,
+     "p_zero": 0.03,
+     "a": 220.98,
+     "b": 239.54
+    },
+    {
+     "index": 4,
+     "description": "Leak detection vehicle charge",
+     "median": 83.3,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 79.13,
+     "b": 83.3
+    },
+    {
+     "index": 5,
+     "description": "Protective fleece covering",
+     "median": 87.5,
+     "sigma": 0.35,
+     "p_zero": 0.37,
+     "a": 76.12,
+     "b": 0.0
+    },
+    {
+     "index": 6,
+     "description": "Remove linoleum and skirting",
+     "median": 1159.2,
+     "sigma": 0.29,
+     "p_zero": 0.02,
+     "a": 1008.5,
+     "b": 1062.54
+    },
+    {
+     "index": 7,
+     "description": "Prepare affected floor substrate",
+     "median": 579.6,
+     "sigma": 0.33,
+     "p_zero": 0.06,
+     "a": 504.25,
+     "b": 507.38
+    },
+    {
+     "index": 8,
+     "description": "Demolition waste disposal",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.12,
+     "a": 57.0,
+     "b": 58.75
+    },
+    {
+     "index": 9,
+     "description": "Drying staff costs",
+     "median": 110.0,
+     "sigma": 0.3,
+     "p_zero": 0.46,
+     "a": 95.7,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Dust protection including materials and labour",
+     "median": 90.0,
+     "sigma": 0.35,
+     "p_zero": 0.18,
+     "a": 78.3,
+     "b": 69.23
+    },
+    {
+     "index": 11,
+     "description": "Kitchen disinfection",
+     "median": 125.0,
+     "sigma": 0.34,
+     "p_zero": 1.0,
+     "a": 108.75,
+     "b": 0.0
+    },
+    {
+     "index": 12,
+     "description": "Large-area drying",
+     "median": 1462.8,
+     "sigma": 0.32,
+     "p_zero": 0.05,
+     "a": 1272.64,
+     "b": 1296.56
+    },
+    {
+     "index": 13,
+     "description": "Cavity drying",
+     "median": 340.0,
+     "sigma": 0.37,
+     "p_zero": 0.13,
+     "a": 295.8,
+     "b": 272.84
+    },
+    {
+     "index": 14,
+     "description": "Skilled drying labour",
+     "median": 349.0,
+     "sigma": 0.2,
+     "p_zero": 0.06,
+     "a": 303.63,
+     "b": 328.21
+    },
+    {
+     "index": 15,
+     "description": "Drying contractor vehicle charge",
+     "median": 83.3,
+     "sigma": 0.1,
+     "p_zero": 0.02,
+     "a": 79.13,
+     "b": 83.3
+    },
+    {
+     "index": 16,
+     "description": "Return-visit vehicle charge",
+     "median": 83.3,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 79.13,
+     "b": 0.0
+    },
+    {
+     "index": 17,
+     "description": "Drying contractor waste disposal",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.88,
+     "a": 57.0,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 7,
+    "seconds": 0.005,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 467.72,
+     "2": 480.76,
+     "3": 226.41,
+     "4": 77.28,
+     "5": 80.37,
+     "6": 1064.74,
+     "7": 532.37,
+     "8": 55.11,
+     "9": 101.04,
+     "10": 82.67,
+     "11": 114.81,
+     "12": 1343.6,
+     "13": 312.29,
+     "14": 317.37,
+     "15": 76.51,
+     "16": 76.51,
+     "17": 55.11
+    }
+   }
+  }
+ ]
+}

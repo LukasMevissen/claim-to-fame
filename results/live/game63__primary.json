@@ -1,0 +1,614 @@
+{
+ "game": 63,
+ "ts": "2026-11-22T03:47:06",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "4efa243eeeb07cd0f68969a558fd772ba712bb71",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "189f8d473b55"
+ },
+ "final_stage": "backup",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 14.79,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Clean / dry carpet",
+     "median": 108.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 102.6,
+     "b": 108.0
+    },
+    {
+     "index": 2,
+     "description": "Inspect electrical systems",
+     "median": 142.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 134.9,
+     "b": 142.0
+    },
+    {
+     "index": 3,
+     "description": "Inspect pool technology",
+     "median": 142.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 134.9,
+     "b": 142.0
+    },
+    {
+     "index": 4,
+     "description": "Upgrade to high-quality natural stone floor",
+     "median": 1200.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1272.35,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Pool filter system maintenance",
+     "median": 162.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 140.94,
+     "b": 157.55
+    },
+    {
+     "index": 6,
+     "description": "Restore wall surfaces",
+     "median": 788.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 748.6,
+     "b": 788.0
+    },
+    {
+     "index": 7,
+     "description": "Final site cleaning",
+     "median": 85.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 80.75,
+     "b": 85.0
+    },
+    {
+     "index": 8,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.2,
+     "a": 78.85,
+     "b": 79.87
+    },
+    {
+     "index": 9,
+     "description": "Leak detection pool pipeline",
+     "median": 520.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 494.0,
+     "b": 520.0
+    },
+    {
+     "index": 10,
+     "description": "Repair pool supply pipe connection",
+     "median": 162.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 153.9,
+     "b": 162.0
+    },
+    {
+     "index": 11,
+     "description": "Skilled worker hours",
+     "median": 351.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 305.37,
+     "b": 341.35
+    },
+    {
+     "index": 12,
+     "description": "Material for pool pipe repair",
+     "median": 104.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 90.48,
+     "b": 101.14
+    },
+    {
+     "index": 13,
+     "description": "Moisture measurement",
+     "median": 216.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 187.92,
+     "b": 210.06
+    },
+    {
+     "index": 14,
+     "description": "Vacuum water",
+     "median": 120.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 104.4,
+     "b": 116.7
+    },
+    {
+     "index": 15,
+     "description": "Room drying (pool/conservatory)",
+     "median": 240.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 208.8,
+     "b": 233.4
+    },
+    {
+     "index": 16,
+     "description": "Condensation dryer",
+     "median": 75.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 65.25,
+     "b": 72.94
+    },
+    {
+     "index": 17,
+     "description": "Drying fan",
+     "median": 60.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 52.2,
+     "b": 58.35
+    },
+    {
+     "index": 18,
+     "description": "Replace skirting boards",
+     "median": 761.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 662.07,
+     "b": 724.31
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 6,
+    "seconds": 0.012,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 99.2,
+     "2": 130.43,
+     "3": 130.43,
+     "4": 1853.96,
+     "5": 134.64,
+     "6": 723.79,
+     "7": 77.3,
+     "8": 77.0,
+     "9": 477.63,
+     "10": 148.8,
+     "11": 389.86,
+     "12": 86.43,
+     "13": 151.45,
+     "14": 111.33,
+     "15": 199.47,
+     "16": 63.59,
+     "17": 55.66,
+     "18": 502.52
+    }
+   }
+  },
+  {
+   "stage": "backup",
+   "model": "anthropic:claude-opus-5-5@medium",
+   "submitted": true,
+   "since_start_s": 23.02,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Clean / dry carpet",
+     "median": 160.0,
+     "sigma": 0.4,
+     "p_zero": 0.15,
+     "a": 139.2,
+     "b": 123.8
+    },
+    {
+     "index": 2,
+     "description": "Inspect electrical systems",
+     "median": 180.0,
+     "sigma": 0.4,
+     "p_zero": 0.25,
+     "a": 156.6,
+     "b": 117.09
+    },
+    {
+     "index": 3,
+     "description": "Inspect pool technology",
+     "median": 180.0,
+     "sigma": 0.4,
+     "p_zero": 0.2,
+     "a": 156.6,
+     "b": 129.57
+    },
+    {
+     "index": 4,
+     "description": "Upgrade to natural stone floor",
+     "median": 1200.0,
+     "sigma": 0.5,
+     "p_zero": 0.93,
+     "a": 1119.21,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Pool filter system maintenance",
+     "median": 220.0,
+     "sigma": 0.45,
+     "p_zero": 0.3,
+     "a": 196.51,
+     "b": 110.07
+    },
+    {
+     "index": 6,
+     "description": "Restore wall surfaces 10 m²",
+     "median": 420.0,
+     "sigma": 0.4,
+     "p_zero": 0.12,
+     "a": 365.4,
+     "b": 336.67
+    },
+    {
+     "index": 7,
+     "description": "Final site cleaning",
+     "median": 90.0,
+     "sigma": 0.35,
+     "p_zero": 0.15,
+     "a": 78.3,
+     "b": 72.43
+    },
+    {
+     "index": 8,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.12,
+     "a": 78.85,
+     "b": 82.04
+    },
+    {
+     "index": 9,
+     "description": "Leak detection pool pipeline",
+     "median": 480.0,
+     "sigma": 0.4,
+     "p_zero": 0.1,
+     "a": 417.6,
+     "b": 393.0
+    },
+    {
+     "index": 10,
+     "description": "Repair pool supply pipe connection",
+     "median": 200.0,
+     "sigma": 0.4,
+     "p_zero": 0.15,
+     "a": 174.0,
+     "b": 154.76
+    },
+    {
+     "index": 11,
+     "description": "Skilled worker hours 5 hrs",
+     "median": 351.0,
+     "sigma": 0.35,
+     "p_zero": 0.18,
+     "a": 305.37,
+     "b": 272.57
+    },
+    {
+     "index": 12,
+     "description": "Material for pool pipe repair",
+     "median": 80.0,
+     "sigma": 0.45,
+     "p_zero": 0.15,
+     "a": 71.46,
+     "b": 59.51
+    },
+    {
+     "index": 13,
+     "description": "Moisture measurement",
+     "median": 216.0,
+     "sigma": 0.3,
+     "p_zero": 0.1,
+     "a": 187.92,
+     "b": 188.64
+    },
+    {
+     "index": 14,
+     "description": "Vacuum water",
+     "median": 250.0,
+     "sigma": 0.4,
+     "p_zero": 0.1,
+     "a": 217.5,
+     "b": 204.69
+    },
+    {
+     "index": 15,
+     "description": "Room drying pool/conservatory",
+     "median": 400.0,
+     "sigma": 0.4,
+     "p_zero": 0.1,
+     "a": 348.0,
+     "b": 327.5
+    },
+    {
+     "index": 16,
+     "description": "Condensation dryer 2 pcs",
+     "median": 75.0,
+     "sigma": 0.4,
+     "p_zero": 0.12,
+     "a": 65.25,
+     "b": 60.12
+    },
+    {
+     "index": 17,
+     "description": "Drying fan 3 pcs",
+     "median": 120.0,
+     "sigma": 0.45,
+     "p_zero": 0.12,
+     "a": 107.19,
+     "b": 92.89
+    },
+    {
+     "index": 18,
+     "description": "Replace skirting boards 15 m",
+     "median": 761.0,
+     "sigma": 0.45,
+     "p_zero": 0.12,
+     "a": 679.75,
+     "b": 589.08
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 6,
+    "seconds": 0.006,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 247.19,
+     "2": 278.09,
+     "3": 278.09,
+     "4": 1853.96,
+     "5": 339.89,
+     "6": 648.88,
+     "7": 71.87,
+     "8": 77.0,
+     "9": 741.58,
+     "10": 308.99,
+     "11": 389.86,
+     "12": 123.6,
+     "13": 139.81,
+     "14": 386.24,
+     "15": 617.99,
+     "16": 108.04,
+     "17": 185.4,
+     "18": 497.52
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": false,
+   "since_start_s": 26.66,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Clean and dry conservatory rug",
+     "median": 185.0,
+     "sigma": 0.36,
+     "p_zero": 0.01,
+     "a": 160.95,
+     "b": 166.81
+    },
+    {
+     "index": 2,
+     "description": "Inspect electrical systems",
+     "median": 170.0,
+     "sigma": 0.29,
+     "p_zero": 0.08,
+     "a": 147.9,
+     "b": 151.57
+    },
+    {
+     "index": 3,
+     "description": "Inspect pool technology",
+     "median": 145.0,
+     "sigma": 0.3,
+     "p_zero": 0.03,
+     "a": 126.15,
+     "b": 132.76
+    },
+    {
+     "index": 4,
+     "description": "Upgrade to natural stone flooring",
+     "median": 900.0,
+     "sigma": 0.55,
+     "p_zero": 0.999,
+     "a": 833.58,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Flush and recommission pool filter",
+     "median": 235.0,
+     "sigma": 0.3,
+     "p_zero": 0.01,
+     "a": 204.45,
+     "b": 217.69
+    },
+    {
+     "index": 6,
+     "description": "Restore damaged wall surfaces",
+     "median": 400.0,
+     "sigma": 0.25,
+     "p_zero": 0.01,
+     "a": 348.0,
+     "b": 378.95
+    },
+    {
+     "index": 7,
+     "description": "Final site cleaning",
+     "median": 82.0,
+     "sigma": 0.2,
+     "p_zero": 0.03,
+     "a": 71.34,
+     "b": 78.83
+    },
+    {
+     "index": 8,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 9,
+     "description": "Locate leak in pool pipeline",
+     "median": 350.0,
+     "sigma": 0.35,
+     "p_zero": 0.01,
+     "a": 304.5,
+     "b": 317.01
+    },
+    {
+     "index": 10,
+     "description": "Repair separated pool supply connection",
+     "median": 150.0,
+     "sigma": 0.29,
+     "p_zero": 0.02,
+     "a": 130.5,
+     "b": 138.8
+    },
+    {
+     "index": 11,
+     "description": "Skilled worker labour",
+     "median": 351.0,
+     "sigma": 0.41,
+     "p_zero": 0.03,
+     "a": 305.37,
+     "b": 304.57
+    },
+    {
+     "index": 12,
+     "description": "Pool pipe repair materials",
+     "median": 90.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 78.3,
+     "b": 84.12
+    },
+    {
+     "index": 13,
+     "description": "Moisture measurement",
+     "median": 216.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 187.92,
+     "b": 201.89
+    },
+    {
+     "index": 14,
+     "description": "Extract standing water",
+     "median": 220.0,
+     "sigma": 0.31,
+     "p_zero": 0.01,
+     "a": 191.4,
+     "b": 202.88
+    },
+    {
+     "index": 15,
+     "description": "Dry pool room and conservatory",
+     "median": 400.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 348.0,
+     "b": 375.56
+    },
+    {
+     "index": 16,
+     "description": "Condensation dryers",
+     "median": 75.0,
+     "sigma": 0.46,
+     "p_zero": 0.02,
+     "a": 68.56,
+     "b": 64.09
+    },
+    {
+     "index": 17,
+     "description": "Drying fans",
+     "median": 105.0,
+     "sigma": 0.36,
+     "p_zero": 0.03,
+     "a": 91.35,
+     "b": 93.36
+    },
+    {
+     "index": 18,
+     "description": "Replace damaged skirting boards",
+     "median": 761.0,
+     "sigma": 0.58,
+     "p_zero": 0.01,
+     "a": 701.9,
+     "b": 621.6
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 6,
+    "seconds": 0.013,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 171.63,
+     "2": 157.72,
+     "3": 134.52,
+     "4": 1390.47,
+     "5": 218.02,
+     "6": 371.1,
+     "7": 70.23,
+     "8": 77.0,
+     "9": 324.71,
+     "10": 139.16,
+     "11": 397.74,
+     "12": 83.5,
+     "13": 139.81,
+     "14": 204.1,
+     "15": 371.1,
+     "16": 108.04,
+     "17": 97.41,
+     "18": 497.52
+    }
+   }
+  }
+ ]
+}

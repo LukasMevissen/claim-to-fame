@@ -1,0 +1,17 @@
+{
+ "game": 74,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Escape-of-water claim in the basement plant room. A fixed heating pipe running down there let go suddenly and burst, and before anyone could reach the stopcock it had flooded the room - close to a meter of water standing by the time it was shut off. The boiler sat in that water along with its flue and storage tank and stopped working, so the whole unit needed renewing rather than repairing. The old one was hauled out and disposed of, and the supply pipework was adjusted to fit the replacement. Clearing the water took a fair bit of pumping, so a submersible pump was procured for the job. Once the water was down, an electrician spent the better part of a day and a half checking and rewiring the circuits that had been under water. Both firms were on site the same day.",
+ "lines": {
+  "1": "Renew boiler system including flue gas system and storage tank | 1 flat rate",
+  "2": "Adjust supply pipework to fit the replacement boiler 1 flat rate",
+  "3": "Dispose of the old boiler system 1 –",
+  "4": "Vehicle costs 1 pcs",
+  "5": "Electrician labour checking and rewiring the flooded basement circuits | 12 hrs",
+  "6": "Small electrical materials for the rewiring 1 pcs",
+  "7": "Water extraction from the flooded plant room 1 pcs",
+  "8": "Procurement of a motor pump 1 pcs",
+  "9": "Submersible pump 1 pcs",
+  "10": "Vehicle costs 1 pcs"
+ }
+}

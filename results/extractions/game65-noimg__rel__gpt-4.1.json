@@ -1,0 +1,205 @@
+{
+  "case_id": "game65-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection call-out and pinpointing of the sink supply leak",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 680.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary investigation to locate the source of water damage (7.1.7(e)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21, 27, and 62. Price level: t >= 680 (case 62), t >= 1400 (case 27, but that included more work)."
+    },
+    {
+      "item_id": "2",
+      "description": "Moisture measurement of the kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 164.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary measurement to establish extent of moisture (7.1.7(e)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 164 (80% range 138-197)."
+    },
+    {
+      "item_id": "3",
+      "description": "Service technician hours 14 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1305.0,
+      "price_log_sd": 0.12,
+      "rationale": "Covered as necessary skilled labour for leak detection and measurement (7.1.7(g)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 1305 (80% range 1182-1432)."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as one travel/call-out charge per contractor per invoice (7.1.7(f)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21, 27, and 62. Price prior: about 83 (80% range 79-87)."
+    },
+    {
+      "item_id": "5",
+      "description": "Freeing the affected pipe run beneath the kitchen sink",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 138.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered as necessary preparatory work to access the damaged pipe (7.1.7(a)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 138 (80% range 100-212)."
+    },
+    {
+      "item_id": "6",
+      "description": "Removal and disposal of damaged insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 144.0,
+      "price_log_sd": 0.22,
+      "rationale": "Covered as necessary removal/disposal of affected material (7.1.7(a)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 144 (80% range 96-215) for 2 pcs."
+    },
+    {
+      "item_id": "7",
+      "description": "Repair of the confirmed leak",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary repair of the damaged pipe (7.1.1(b)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21, 27, 62, and 51. Price prior: about 180 (range 140-220)."
+    },
+    {
+      "item_id": "8",
+      "description": "Replacement copper pipe section and standard insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.13,
+      "rationale": "Covered as necessary material for like-for-like repair (7.1.7(c)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21, 27, 62, and 51. Price prior: about 90 (range 76-104)."
+    },
+    {
+      "item_id": "9",
+      "description": "Room drying line item for the roof space (Dachstuhl)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 54.0,
+      "price_log_sd": 0.7,
+      "rationale": "Not indemnified: no new water damage to the roof space from this event, only an old tide mark from a previous leak (7.1.5, 7.1.8(e)), and reference case 21 confirms t = 0 for drying of unaffected areas."
+    },
+    {
+      "item_id": "10",
+      "description": "Condensation dryer (kitchen)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 51.0,
+      "price_log_sd": 0.22,
+      "rationale": "Covered as necessary drying equipment for affected area (7.1.7(b)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 51 (80% range 25-77)."
+    },
+    {
+      "item_id": "11",
+      "description": "Room drying of the kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 102.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered as necessary drying of affected area (7.1.7(b)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21 and 62. Price prior: about 102 (80% range 75-133)."
+    },
+    {
+      "item_id": "12",
+      "description": "Drying fan (roof space)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 54.0,
+      "price_log_sd": 0.7,
+      "rationale": "Not indemnified: no new water damage to the roof space from this event, only an old tide mark from a previous leak (7.1.5, 7.1.8(e)), and reference case 21 confirms t = 0 for drying of unaffected areas."
+    },
+    {
+      "item_id": "13",
+      "description": "Final site cleaning of the covered work area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered as cleaning of the area where insured repairs were carried out (7.1.7(h)), peril is escape of water (2.4.2), and this line is directly analogous to reference case 21. Price prior: about 82 (80% range 61-124)."
+    },
+    {
+      "item_id": "14",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Covered as one travel/call-out charge per contractor per invoice (7.1.7(f)), peril is escape of water (2.4.2), and this line is directly analogous to reference cases 21, 27, and 62. Price prior: about 83 (80% range 79-87)."
+    },
+    {
+      "item_id": "15",
+      "description": "Cleaning of entire apartment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 250.0,
+      "price_log_sd": 0.7,
+      "rationale": "Not indemnified: cleaning of unaffected rooms is not a repair cost (7.1.8(a)), and reference cases 61 and 36 confirm t = 0 for whole-apartment cleaning."
+    },
+    {
+      "item_id": "16",
+      "description": "Removal, transport and disposal of the water-damaged wooden kitchen table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 168.0,
+      "price_log_sd": 0.22,
+      "rationale": "Covered as removal and disposal of a furnishing item destroyed by the insured event (7.1.7(h)), peril is escape of water (2.4.2), and this line is directly analogous to reference case 62. Price prior: about 168 (80% range 124-256) for 3 pcs."
+    },
+    {
+      "item_id": "17",
+      "description": "Delivery and assembly of the replacement table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 152.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered as delivery and assembly of a replacement furnishing item (7.1.7(h)), peril is escape of water (2.4.2), and this line is directly analogous to reference case 62. Price prior: about 152 (80% range 113-228)."
+    },
+    {
+      "item_id": "18",
+      "description": "Inspection of further furniture items stored in the garden for moisture",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.7,
+      "rationale": "Not indemnified: inspection of unaffected property is not a repair cost (7.1.8(f)), and reference case 21 confirms t = 0 for such inspections."
+    }
+  ]
+}

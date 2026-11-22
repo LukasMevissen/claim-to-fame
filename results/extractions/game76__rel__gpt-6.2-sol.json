@@ -1,0 +1,172 @@
+{
+  "case_id": "game76",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Partition opening and reinstatement labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 608.0,
+      "price_log_sd": 0.31,
+      "rationale": "Sections 7.1.7(a) and (g) cover opening the partition for access and reinstating it after the pipe test. The documented eight hours are estimated at €76 gross per hour."
+    },
+    {
+      "item_id": "2",
+      "description": "Partition repair consumables",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 35.0,
+      "price_log_sd": 0.31,
+      "rationale": "Sections 7.1.7(c) and 7.1.10 allow the documented screws, tape and filler to be billed as one lump sum. Allow €35 gross for these consumables, with no allowance for new boards."
+    },
+    {
+      "item_id": "3",
+      "description": "Building services vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) covers the necessary attendance to open and reinstate the partition. One vehicle charge is estimated at €84 gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 700.0,
+      "price_log_sd": 0.18,
+      "rationale": "The concealed cold-water leak falls within section 2.4.2, and section 7.1.7(e) covers the investigation needed to locate it before opening the partition. Allow €700 gross for one indoor tracing visit, in line with comparable pinpointing work."
+    },
+    {
+      "item_id": "5",
+      "description": "Room drying, 30 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 230.0,
+      "price_log_sd": 0.24,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) cover drying the measured 6 m × 5 m wet laundry area. Allow €230 gross for the drying service, separate from the active dryer hire."
+    },
+    {
+      "item_id": "6",
+      "description": "One active room dryer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 70.0,
+      "price_log_sd": 0.22,
+      "rationale": "Section 7.1.7(e) covers the one dryer used on the measured wet area; the unplugged standby equipment was not necessary. Allow €70 gross for the single billed unit."
+    },
+    {
+      "item_id": "7",
+      "description": "Removal of wet mineral wool",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.32,
+      "rationale": "Section 7.1.7(a) covers taking out and bagging the damaged mineral wool from the affected stud bays. Allow €75 gross for this small removal line, without assuming replacement insulation."
+    },
+    {
+      "item_id": "8",
+      "description": "Five 28 mm copper press elbows",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 106.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 7.1.7(c) covers matching repair fittings, and the documented 28 mm run required five bends. The comparable gross threshold for all five is €106."
+    },
+    {
+      "item_id": "9",
+      "description": "Three 15 × 19 mm transition pieces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.17,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 45.0,
+      "price_log_sd": 0.29,
+      "rationale": "The claim supports three connections, but it does not establish that the billed 15 × 19 mm fittings match the 28 mm run and its 15 mm branch, as required by section 7.1.8(e). If the dimensions are substantiated or the description corrected, allow €45 gross for three standard fittings."
+    },
+    {
+      "item_id": "10",
+      "description": "Plumber's helper labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 341.0,
+      "price_log_sd": 0.11,
+      "rationale": "Section 7.1.7(g) covers the apprentice's carrying and holding work at the separately billed helper grade. The five-hour gross benchmark is €341."
+    },
+    {
+      "item_id": "11",
+      "description": "Plumbing technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 508.0,
+      "price_log_sd": 0.15,
+      "rationale": "Section 7.1.7(g) covers the technician's pipe replacement, pressing and pressure-test work. The gross benchmark for 5.5 hours is €508."
+    },
+    {
+      "item_id": "12",
+      "description": "Two plumbing vehicle attendances",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.96,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 167.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) covers the installation visit and the distinct return visit to read the pressure gauge and sign off before the partition was closed. The two attendances are not duplicates under section 7.1.8(c) and total €167 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Tiling labour, 14 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1064.0,
+      "price_log_sd": 0.31,
+      "rationale": "Sections 7.1.5 and 7.1.7(g) cover relaying the loosened tiles, but the invoice does not split the tiler and journeyman grades. Apply the customary lower journeyman rate of €76 gross to all 14 hours, for €1,064."
+    },
+    {
+      "item_id": "14",
+      "description": "Tile adhesive and grout",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 94.0,
+      "price_log_sd": 0.23,
+      "rationale": "The claim identifies the lump sum as adhesive and grout, which sections 7.1.7(c) and 7.1.10 allow as installation consumables. Allow €94 gross, using Case 56 as a benchmark and excluding any charge for the owner's spare tiles."
+    },
+    {
+      "item_id": "15",
+      "description": "Tiling vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) covers the necessary tiling attendance. Both workers arrived in one van, so allow one charge of €84 gross."
+    }
+  ]
+}

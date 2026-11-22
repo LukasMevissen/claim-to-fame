@@ -1,0 +1,139 @@
+{
+  "case_id": "game67-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Disassembly and assembly service",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 102.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered as necessary opening up and making good (policy 5.2.6, 7.1.5); price level matches reference cases 46 and 50; no exclusion applies."
+    },
+    {
+      "item_id": "2",
+      "description": "Construction dryer 7 days",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 302.0,
+      "price_log_sd": 0.13,
+      "rationale": "Drying of affected building elements is covered (policy 5.2.7, 7.1.5); reference cases 46 and 50 confirm 7-day charge is standard and indemnified."
+    },
+    {
+      "item_id": "3",
+      "description": "Rock wool pipe insulation 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.18,
+      "rationale": "Replacement of pipe insulation after leak repair is standard and covered (policy 7.1.5, 7.1.6); reference cases 46, 50, 55, etc. confirm indemnity."
+    },
+    {
+      "item_id": "4",
+      "description": "Construction waste disposal 1 flat rate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.08,
+      "rationale": "Debris removal/disposal for damaged materials is covered (policy 5.2.1, 7.1.5); reference cases 46, 50, 40, etc. confirm indemnity for one such line per event."
+    },
+    {
+      "item_id": "5",
+      "description": "Wall levelling material 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 113.0,
+      "price_log_sd": 0.25,
+      "rationale": "Levelling substrate after tile removal is necessary repair (policy 7.1.5); reference cases 46 and 50 confirm indemnity."
+    },
+    {
+      "item_id": "6",
+      "description": "Rough renovation 2.78 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 206.0,
+      "price_log_sd": 0.25,
+      "rationale": "Rough renovation (patching, prepping wall) is part of reinstatement (policy 7.1.5); reference case 50 confirms indemnity at this scale."
+    },
+    {
+      "item_id": "7",
+      "description": "Mounting / service opening 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 154.0,
+      "price_log_sd": 0.25,
+      "rationale": "Creation and closing of service opening is necessary to access damage (policy 5.2.6, 7.1.5); reference case 50 confirms indemnity."
+    },
+    {
+      "item_id": "8",
+      "description": "Premium large-format designer wall tiles 120 x 120 cm (upgraded from the original standard basement tiles) 5 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 433.0,
+      "price_log_sd": 0.18,
+      "rationale": "Policy 3.5(a), 7.1.6: indemnity is limited to the cost of standard-grade, commercially usual tiles matching the original; the upgrade to premium/designer is not covered. Reference cases (esp. 50, 55) confirm only standard tile cost is indemnified."
+    },
+    {
+      "item_id": "9",
+      "description": "Premium grout 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.3,
+      "rationale": "Policy 3.5(a), 7.1.6: only standard grout cost is indemnified, not premium; reference cases (46, 50, 55) show premium upgrades are not covered, but standard grout is."
+    },
+    {
+      "item_id": "10",
+      "description": "Premium silicone sealant 12 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 48.0,
+      "price_log_sd": 0.08,
+      "rationale": "Policy 3.5(a), 7.1.6: only standard silicone is indemnified, not premium; reference cases (46, 50, 55) show premium upgrades are not covered, but standard silicone is."
+    },
+    {
+      "item_id": "11",
+      "description": "Vehicle costs 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "First vehicle/call-out charge per contractor per document is covered (policy 7.4.2); reference cases 46, 50, 55 confirm indemnity."
+    },
+    {
+      "item_id": "12",
+      "description": "Skilled worker hours 14 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1267.0,
+      "price_log_sd": 0.18,
+      "rationale": "Labour for necessary reinstatement is covered (policy 7.4.1, 7.1.5); reference cases 46, 50, 55 confirm indemnity at this scale."
+    }
+  ]
+}

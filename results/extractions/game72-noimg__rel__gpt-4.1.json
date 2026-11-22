@@ -1,0 +1,194 @@
+{
+  "case_id": "game72-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Vehicle costs (Handy Hans, 1 flat rate)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(f): Only one travel/call-out charge per contractor per invoice is indemnified. This is the first vehicle charge on this invoice, so it is covered. Reference cases (e.g., 65, 71) show t ≈ 83 per unit."
+    },
+    {
+      "item_id": "2",
+      "description": "Sealing material 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(c): Consumable installation material for the repair is covered. Reference cases (39, 55, 71) show t ≈ 25 per pc."
+    },
+    {
+      "item_id": "3",
+      "description": "Stainless steel pipe 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 47.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(c): Standard pipe replacement for the repair is covered. Reference cases (39, 55) show t ≈ 47 per m."
+    },
+    {
+      "item_id": "4",
+      "description": "Rock wool pipe insulation 1 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(c): Standard insulation for the repaired section is covered. Reference cases (39, 55, 56, 44) show t ≈ 25 per m."
+    },
+    {
+      "item_id": "5",
+      "description": "Installation 1 hrs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.2,
+      "rationale": "Policy 7.1.7(g): Installer's time for connection sign-off is covered if reasonable. Reference case 55 (86–135 per hr) and 71 (≥410 per hr, but likely higher spec). Here, 1 hr for sign-off is reasonable, so t ≈ 110."
+    },
+    {
+      "item_id": "6",
+      "description": "Measuring device 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.8(b): Contractor's own diagnostic/measuring devices are not indemnified. Reference cases (39, 55) show t = 0."
+    },
+    {
+      "item_id": "7",
+      "description": "Service technician hours 9 labor units (Handy Hans)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 885.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(g): Technician's labor for the repair is covered. Reference cases (55, 71) show t ≈ 885 per 9 units."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs (Handy Hans, 1 pcs, second charge)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(f): Only the first vehicle/call-out charge per contractor per invoice is indemnified. This is a second charge on the same invoice, so t = 0."
+    },
+    {
+      "item_id": "9",
+      "description": "Construction dryer flat-rate charge (Handy Hans)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 610.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(e): One flat-rate deployment charge per drying operation is indemnified. Reference cases (55, 71) show t ≈ 610 per unit."
+    },
+    {
+      "item_id": "10",
+      "description": "Short saw blade 1 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.8(b): Contractor's own tools/blades are not indemnified. Reference cases (39) show t = 0."
+    },
+    {
+      "item_id": "11",
+      "description": "Gunmetal 2 pcs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 56.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.7(c): Fittings needed for the repair are covered. Reference case (39) shows t ≈ 56 for 2 pcs."
+    },
+    {
+      "item_id": "12",
+      "description": "Service technician hours 9 labor units (Handy Hans, duplicate)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.8(c): Only the first charge for the same item per event is indemnified. This is a duplicate of line 7, so t = 0."
+    },
+    {
+      "item_id": "13",
+      "description": "Painting the disturbed wall area and closing the wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 664.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.7(a), 7.1.5: Making good the opening and repainting the disturbed area is covered. Reference cases (51, 55, 71) show t ≈ 664 per job."
+    },
+    {
+      "item_id": "14",
+      "description": "Re-tiling of the disturbed wall section around the opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 200.0,
+      "price_log_sd": 0.3,
+      "rationale": "Policy 7.1.7(a), 7.1.5: Making good the disturbed tiled area is covered. Reference cases for similar localised tiling (not full rooms) suggest t ≈ 200 (moderate estimate for a small patch, as no direct reference for this exact line)."
+    },
+    {
+      "item_id": "15",
+      "description": "Re-tiling of the entire bathroom to match (14 m²)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.5, 7.1.6: Work beyond the affected area is excluded, even if for matching. Reference cases (55, 61) show t = 0 for full-room matching."
+    },
+    {
+      "item_id": "16",
+      "description": "Construction dryer flat-rate charge (Tiler)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(e): Only one flat-rate deployment charge per drying operation is indemnified. Already claimed by Handy Hans (line 9), so this is a duplicate and t = 0."
+    },
+    {
+      "item_id": "17",
+      "description": "Vehicle costs (Tiler, 1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(f): One travel/call-out charge per contractor per invoice is indemnified. Reference cases (65, 71) show t ≈ 83 per unit."
+    }
+  ]
+}

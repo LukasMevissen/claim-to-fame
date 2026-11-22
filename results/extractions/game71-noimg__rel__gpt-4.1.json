@@ -1,0 +1,106 @@
+{
+  "case_id": "game71-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Policy 7.1.7(f) allows one travel/call-out charge per contractor per invoice; vehicle costs are a standard, indemnified ancillary charge for necessary repair visits. Reference cases (e.g., 62, 65) and price priors show t per unit about 83."
+    },
+    {
+      "item_id": "2",
+      "description": "Sealing material",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.05,
+      "rationale": "Sealing material is a necessary consumable for pipe repair, covered under 7.1.7(c). Reference cases (39, 55) and price priors show t per pc about 25."
+    },
+    {
+      "item_id": "3",
+      "description": "Premium large-diameter stainless steel pipe (upgraded from the original narrower-bore installation)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 54.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.9: indemnity is limited to the cost of a standard-grade, original-bore equivalent; the upgrade to premium/wider pipe is excluded betterment. Reference cases (39, 55) show standard stainless pipe t per m about 42–54."
+    },
+    {
+      "item_id": "4",
+      "description": "Designer gunmetal fittings (higher specification than the original)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 51.0,
+      "price_log_sd": 0.15,
+      "rationale": "Policy 7.1.9: indemnity is limited to standard-grade fittings, not designer upgrades. Reference cases (39, 43, 44, 56) show standard fittings (e.g., Profipress elbows, grub screws) t per 2 pcs about 9–51."
+    },
+    {
+      "item_id": "5",
+      "description": "Premium aluminium-clad insulation (upgraded from standard rock wool)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 33.0,
+      "price_log_sd": 0.1,
+      "rationale": "Policy 7.1.9: indemnity is limited to the cost of standard rock wool insulation, not premium upgrades. Reference cases (39, 44, 56) show standard rock wool insulation t per m about 20–33."
+    },
+    {
+      "item_id": "6",
+      "description": "Installation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 135.0,
+      "price_log_sd": 0.2,
+      "rationale": "Installation is only indemnified for the work needed to restore to pre-loss standard, not for upgraded work. Reference case 55 (bathroom pipe repair) shows t per hr 86–135; here, 1 m of pipework is likely 1–2 hrs, so use upper end for a complex job."
+    },
+    {
+      "item_id": "7",
+      "description": "Service technician hours 9 labor units",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 834.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour for necessary repair is covered under 7.1.7(g), but only for the time reasonably required to restore to pre-loss standard. Reference case 55 (9 units) t >= 765; price prior per 9 units about 834."
+    },
+    {
+      "item_id": "8",
+      "description": "Construction dryer flat-rate charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 595.0,
+      "price_log_sd": 0.1,
+      "rationale": "Drying is necessary preparatory work under 7.1.7(b), indemnified once per drying operation. Reference cases (39, 51, 55) and price prior show t per unit about 595."
+    },
+    {
+      "item_id": "9",
+      "description": "Painting the disturbed wall area and closing the wall opening",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 647.0,
+      "price_log_sd": 0.1,
+      "rationale": "Restoration of the disturbed area is covered under 7.1.7(a) and (c), but only for the affected patch, not the whole wall. Reference cases (39, 51, 55) and price prior show t per pc about 647."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "case_id": "game68",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Mounting-hole drilling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.4,
+      "rationale": "The hole was drilled for the replacement pane, not to repair separate non-glass damage under Clause 2.3. The work follows the glazing exclusion in Clause 2.2, so the payable threshold is €0."
+    },
+    {
+      "item_id": "2",
+      "description": "Fit replacement pane into frame",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.08,
+      "rationale": "Fitting the pane into the existing frame is part of the excluded glazing work under Clause 2.2, not a repair to the frame under Clause 2.3. The payable threshold is €0."
+    },
+    {
+      "item_id": "3",
+      "description": "Made-to-measure replacement pane",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 53.0,
+      "price_log_sd": 0.17,
+      "rationale": "Clause 2.2 excludes furniture glass breakage even when caused by an accident under Clause 1.1, because the declarations do not include Glass Breakage Cover. The payable threshold is €0."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 14.5,
+      "price_log_sd": 0.1,
+      "rationale": "The visit relates solely to glazing work excluded under Clause 2.2, with no covered non-glass repair under Clause 2.3. There is no covered travel cost to which the €50 claim deductible could apply, so the payable threshold is €0."
+    }
+  ]
+}

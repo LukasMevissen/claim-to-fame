@@ -1,0 +1,614 @@
+{
+ "game": 65,
+ "ts": "2026-11-22T04:13:46",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "961955e207ecb5d2a5196d70879f513afbb378bb",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "dea3a8c0cb12"
+ },
+ "final_stage": "backup",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 14.86,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Leak detection call-out and pinpointing of the sink supply leak",
+     "median": 680.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 591.6,
+     "b": 661.31
+    },
+    {
+     "index": 2,
+     "description": "Moisture measurement of the kitchen floor and wall base",
+     "median": 164.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 142.68,
+     "b": 159.49
+    },
+    {
+     "index": 3,
+     "description": "Service technician hours 14 hrs",
+     "median": 1305.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 1135.35,
+     "b": 1269.12
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 5,
+     "description": "Freeing the affected pipe run beneath the kitchen sink",
+     "median": 138.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 120.06,
+     "b": 134.21
+    },
+    {
+     "index": 6,
+     "description": "Removal and disposal of damaged insulation",
+     "median": 144.0,
+     "sigma": 0.22,
+     "p_zero": 0.0,
+     "a": 125.28,
+     "b": 138.84
+    },
+    {
+     "index": 7,
+     "description": "Repair of the confirmed leak",
+     "median": 180.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 156.6,
+     "b": 175.05
+    },
+    {
+     "index": 8,
+     "description": "Replacement copper pipe section and standard insulation",
+     "median": 90.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 78.3,
+     "b": 87.53
+    },
+    {
+     "index": 9,
+     "description": "Room drying line item for the roof space (Dachstuhl)",
+     "median": 54.0,
+     "sigma": 0.7,
+     "p_zero": 0.99,
+     "a": 57.26,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Condensation dryer (kitchen)",
+     "median": 51.0,
+     "sigma": 0.22,
+     "p_zero": 0.0,
+     "a": 44.37,
+     "b": 49.17
+    },
+    {
+     "index": 11,
+     "description": "Room drying of the kitchen floor and wall base",
+     "median": 102.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 88.74,
+     "b": 99.2
+    },
+    {
+     "index": 12,
+     "description": "Drying fan (roof space)",
+     "median": 54.0,
+     "sigma": 0.7,
+     "p_zero": 0.99,
+     "a": 57.26,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Final site cleaning of the covered work area",
+     "median": 82.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 71.34,
+     "b": 79.75
+    },
+    {
+     "index": 14,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 15,
+     "description": "Cleaning of entire apartment",
+     "median": 250.0,
+     "sigma": 0.7,
+     "p_zero": 0.99,
+     "a": 265.07,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Removal, transport and disposal of the water-damaged wooden kitchen table",
+     "median": 168.0,
+     "sigma": 0.22,
+     "p_zero": 0.0,
+     "a": 146.16,
+     "b": 161.98
+    },
+    {
+     "index": 17,
+     "description": "Delivery and assembly of the replacement table",
+     "median": 152.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 132.24,
+     "b": 147.82
+    },
+    {
+     "index": 18,
+     "description": "Inspection of further furniture items stored in the garden for moisture",
+     "median": 30.0,
+     "sigma": 0.7,
+     "p_zero": 0.99,
+     "a": 31.81,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 15,
+    "seconds": 0.022,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 612.22,
+     "2": 143.29,
+     "3": 1163.23,
+     "4": 77.0,
+     "5": 113.55,
+     "6": 130.95,
+     "7": 138.1,
+     "8": 77.85,
+     "9": 83.43,
+     "10": 52.29,
+     "11": 88.23,
+     "12": 47.18,
+     "13": 70.93,
+     "14": 77.0,
+     "15": 386.24,
+     "16": 142.45,
+     "17": 131.48,
+     "18": 46.35
+    }
+   }
+  },
+  {
+   "stage": "backup",
+   "model": "anthropic:claude-opus-5-5@medium",
+   "submitted": true,
+   "since_start_s": 24.17,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Leak detection call-out and pinpointing",
+     "median": 720.0,
+     "sigma": 0.2,
+     "p_zero": 0.05,
+     "a": 626.4,
+     "b": 686.52
+    },
+    {
+     "index": 2,
+     "description": "Moisture measurement kitchen floor/wall base",
+     "median": 170.0,
+     "sigma": 0.2,
+     "p_zero": 0.05,
+     "a": 147.9,
+     "b": 162.09
+    },
+    {
+     "index": 3,
+     "description": "Service technician hours 14 h",
+     "median": 680.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 591.6,
+     "b": 642.69
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs leak detection",
+     "median": 82.0,
+     "sigma": 0.1,
+     "p_zero": 0.2,
+     "a": 77.9,
+     "b": 78.91
+    },
+    {
+     "index": 5,
+     "description": "Freeing pipe run under sink",
+     "median": 132.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 114.84,
+     "b": 124.76
+    },
+    {
+     "index": 6,
+     "description": "Removal/disposal of damaged insulation 2 pcs",
+     "median": 155.0,
+     "sigma": 0.2,
+     "p_zero": 0.08,
+     "a": 134.85,
+     "b": 145.82
+    },
+    {
+     "index": 7,
+     "description": "Repair of confirmed leak",
+     "median": 150.0,
+     "sigma": 0.2,
+     "p_zero": 0.05,
+     "a": 130.5,
+     "b": 143.02
+    },
+    {
+     "index": 8,
+     "description": "Replacement copper section and standard insulation",
+     "median": 88.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 76.56,
+     "b": 83.17
+    },
+    {
+     "index": 9,
+     "description": "Roof space drying line (plumber)",
+     "median": 100.0,
+     "sigma": 0.5,
+     "p_zero": 0.97,
+     "a": 93.27,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Condensation dryer kitchen",
+     "median": 60.0,
+     "sigma": 0.3,
+     "p_zero": 0.08,
+     "a": 52.2,
+     "b": 53.18
+    },
+    {
+     "index": 11,
+     "description": "Room drying kitchen floor/wall base",
+     "median": 105.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 91.35,
+     "b": 99.24
+    },
+    {
+     "index": 12,
+     "description": "Drying fans roof space 2 pcs",
+     "median": 54.0,
+     "sigma": 0.4,
+     "p_zero": 0.97,
+     "a": 46.98,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Final site cleaning of work area",
+     "median": 82.0,
+     "sigma": 0.2,
+     "p_zero": 0.12,
+     "a": 71.34,
+     "b": 75.59
+    },
+    {
+     "index": 14,
+     "description": "Vehicle costs drying firm",
+     "median": 82.0,
+     "sigma": 0.1,
+     "p_zero": 0.2,
+     "a": 77.9,
+     "b": 78.91
+    },
+    {
+     "index": 15,
+     "description": "Cleaning of entire apartment",
+     "median": 200.0,
+     "sigma": 0.5,
+     "p_zero": 0.98,
+     "a": 186.54,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Removal, transport, disposal of damaged table 3 pcs",
+     "median": 165.0,
+     "sigma": 0.2,
+     "p_zero": 0.1,
+     "a": 143.55,
+     "b": 153.71
+    },
+    {
+     "index": 17,
+     "description": "Delivery and assembly of replacement table",
+     "median": 150.0,
+     "sigma": 0.1,
+     "p_zero": 0.12,
+     "a": 142.5,
+     "b": 148.27
+    },
+    {
+     "index": 18,
+     "description": "Inspection of garden furniture",
+     "median": 60.0,
+     "sigma": 0.5,
+     "p_zero": 0.98,
+     "a": 55.96,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 15,
+    "seconds": 0.007,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 629.08,
+     "2": 144.14,
+     "3": 1082.57,
+     "4": 76.84,
+     "5": 111.92,
+     "6": 132.74,
+     "7": 128.46,
+     "8": 84.97,
+     "9": 154.5,
+     "10": 52.95,
+     "11": 89.03,
+     "12": 47.18,
+     "13": 70.93,
+     "14": 76.84,
+     "15": 308.99,
+     "16": 142.73,
+     "17": 137.78,
+     "18": 92.7
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": false,
+   "since_start_s": 26.12,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Leak detection call-out and pinpointing",
+     "median": 680.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 591.6,
+     "b": 658.85
+    },
+    {
+     "index": 2,
+     "description": "Kitchen floor and wall-base moisture measurement",
+     "median": 164.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 142.68,
+     "b": 158.9
+    },
+    {
+     "index": 3,
+     "description": "Service technician labour, 14 hours",
+     "median": 1305.0,
+     "sigma": 0.1,
+     "p_zero": 0.04,
+     "a": 1239.75,
+     "b": 1305.0
+    },
+    {
+     "index": 4,
+     "description": "Leak-detection vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.98,
+     "a": 78.85,
+     "b": 0.0
+    },
+    {
+     "index": 5,
+     "description": "Expose affected pipe beneath sink",
+     "median": 138.0,
+     "sigma": 0.29,
+     "p_zero": 0.01,
+     "a": 120.06,
+     "b": 128.41
+    },
+    {
+     "index": 6,
+     "description": "Remove and dispose of soaked pipe insulation",
+     "median": 144.0,
+     "sigma": 0.32,
+     "p_zero": 0.01,
+     "a": 125.28,
+     "b": 132.2
+    },
+    {
+     "index": 7,
+     "description": "Repair confirmed leak at copper tee",
+     "median": 150.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 130.5,
+     "b": 145.33
+    },
+    {
+     "index": 8,
+     "description": "Replacement copper section and standard lagging",
+     "median": 105.0,
+     "sigma": 0.23,
+     "p_zero": 0.01,
+     "a": 91.35,
+     "b": 100.37
+    },
+    {
+     "index": 9,
+     "description": "Roof-space room drying",
+     "median": 100.0,
+     "sigma": 0.45,
+     "p_zero": 0.999,
+     "a": 91.59,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Kitchen condensation dryer",
+     "median": 51.0,
+     "sigma": 0.44,
+     "p_zero": 0.01,
+     "a": 46.8,
+     "b": 44.36
+    },
+    {
+     "index": 11,
+     "description": "Dry kitchen floor and wall base",
+     "median": 102.0,
+     "sigma": 0.22,
+     "p_zero": 0.01,
+     "a": 88.74,
+     "b": 97.94
+    },
+    {
+     "index": 12,
+     "description": "Roof-space drying fans",
+     "median": 54.0,
+     "sigma": 0.31,
+     "p_zero": 0.999,
+     "a": 46.98,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Clean up the kitchen repair area",
+     "median": 82.0,
+     "sigma": 0.27,
+     "p_zero": 0.02,
+     "a": 71.34,
+     "b": 76.59
+    },
+    {
+     "index": 14,
+     "description": "Drying contractor vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 15,
+     "description": "Whole-flat cleaning",
+     "median": 230.0,
+     "sigma": 0.45,
+     "p_zero": 0.999,
+     "a": 210.66,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Remove, transport and dispose of damaged table",
+     "median": 168.0,
+     "sigma": 0.28,
+     "p_zero": 0.01,
+     "a": 146.16,
+     "b": 157.03
+    },
+    {
+     "index": 17,
+     "description": "Collect, deliver and assemble replacement table",
+     "median": 152.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 132.24,
+     "b": 142.71
+    },
+    {
+     "index": 18,
+     "description": "Moisture inspection of garden furniture",
+     "median": 50.0,
+     "sigma": 0.4,
+     "p_zero": 0.999,
+     "a": 43.5,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 15,
+    "seconds": 0.012,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 612.22,
+     "2": 143.29,
+     "3": 1210.71,
+     "4": 77.0,
+     "5": 111.3,
+     "6": 130.95,
+     "7": 128.46,
+     "8": 91.74,
+     "9": 154.5,
+     "10": 52.82,
+     "11": 88.23,
+     "12": 44.88,
+     "13": 70.93,
+     "14": 77.0,
+     "15": 355.34,
+     "16": 142.45,
+     "17": 130.18,
+     "18": 77.25
+    }
+   }
+  }
+ ]
+}

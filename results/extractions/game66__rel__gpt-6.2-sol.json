@@ -1,0 +1,205 @@
+{
+  "case_id": "game66",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Locate pool pipeline leak",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 534.0,
+      "price_log_sd": 0.08,
+      "rationale": "Clause 5.2.2 covers locating the escape even though the pool pipework is excluded. The gross estimate for the single flat rate is €534, consistent with Case 63."
+    },
+    {
+      "item_id": "2",
+      "description": "Repair pool supply coupling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 339.0,
+      "price_log_sd": 0.08,
+      "rationale": "Clauses 4.3(b), 2.4.4 and 7.1.8(a) exclude repair of the pool coupling, even though the escape caused covered damage. The €339 figure is conditional only."
+    },
+    {
+      "item_id": "3",
+      "description": "Fitter labour, 5 hours",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 346.0,
+      "price_log_sd": 0.38,
+      "rationale": "The description attributes the fitter's hours to remaking the excluded coupling, so clauses 7.1.8(a) and 7.1.10 bar payment. The conditional benchmark is €346 for all five hours."
+    },
+    {
+      "item_id": "4",
+      "description": "Pool pipe repair materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 137.0,
+      "price_log_sd": 0.28,
+      "rationale": "The fittings are materials for repairing the excluded source installation and are not payable under clauses 2.4.4 and 7.1.8(a). The conditional gross benchmark is €137."
+    },
+    {
+      "item_id": "5",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 232.0,
+      "price_log_sd": 0.16,
+      "rationale": "Clause 5.2.2 covers mapping the wetting and follow-up readings to confirm drying. The gross estimate is €232 for the single flat rate."
+    },
+    {
+      "item_id": "6",
+      "description": "Wet-vacuum standing water",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 313.0,
+      "price_log_sd": 0.28,
+      "rationale": "Extraction from the affected room is covered under clauses 5.2.1 and 7.1.7(b). The €313 gross estimate is below the €2,500 mitigation cap."
+    },
+    {
+      "item_id": "7",
+      "description": "Set up and attend room drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 571.0,
+      "price_log_sd": 0.28,
+      "rationale": "Clauses 7.1.5 and 7.1.7(b) cover drying the connected space because it was wetted throughout. The €571 gross flat rate covers setup and attendance, not the separately billed equipment rental."
+    },
+    {
+      "item_id": "8",
+      "description": "Condensation dryer, 1 day",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.14,
+      "rationale": "Clause 7.1.7(b) covers necessary equipment rental during measured drying. The dryer was used for one day, at an estimated €60 gross."
+    },
+    {
+      "item_id": "9",
+      "description": "Drying fan, 3 days",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 81.0,
+      "price_log_sd": 0.32,
+      "rationale": "Clause 7.1.7(b) covers the fan through the third-day readings that confirmed drying was complete. Three days at €27 gross gives €81."
+    },
+    {
+      "item_id": "10",
+      "description": "Replace softwood skirting, 15 m",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 712.0,
+      "price_log_sd": 0.43,
+      "rationale": "The swollen fixed skirting is insured under clause 4.2.2, and like-for-like softwood replacement meets clauses 7.1.1 and 7.1.9. The gross estimate is €712 for 15 m, or about €47.47 per metre."
+    },
+    {
+      "item_id": "11",
+      "description": "Clean and dry conservatory rug",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 231.0,
+      "price_log_sd": 0.08,
+      "rationale": "The scheduled loose-furnishings extension covers the soaked rug under clause 4.4, and clause 7.1.7(f) covers cleaning and drying it. The comparable Case 63 range of €218–€244 supports €231 gross."
+    },
+    {
+      "item_id": "12",
+      "description": "Test wetted building electrics",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.28,
+      "rationale": "The switch, socket and floor box were directly wetted and serve the building. Clauses 4.2.4 and 7.1.7(g) cover the necessary safety tests at an estimated €350 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Inspect pool pump and controls",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 422.0,
+      "price_log_sd": 0.28,
+      "rationale": "The pump and controls are excluded pool plant under clause 4.3(b), so their inspection is barred by clause 7.1.8(b) and does not qualify under 7.1.7(g). The €422 figure is conditional only."
+    },
+    {
+      "item_id": "14",
+      "description": "Natural-stone floor upgrade, 12 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1560.0,
+      "price_log_sd": 0.35,
+      "rationale": "Clauses 7.1.8(c) and 7.1.9 exclude the separately itemised upgrade in full. The conditional €1,560 is a benchmark for 12 m² of standard tile reinstatement, not an allowance on this line."
+    },
+    {
+      "item_id": "15",
+      "description": "Annual pool filter service",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 262.0,
+      "price_log_sd": 0.08,
+      "rationale": "This is scheduled upkeep under clause 3.1.5 and concerns equipment excluded by clause 4.3(b). The €262 figure is conditional only."
+    },
+    {
+      "item_id": "16",
+      "description": "Restore wetted wall render, 10 m²",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 688.0,
+      "price_log_sd": 0.14,
+      "rationale": "Clauses 2.4.2 and 7.1.5 cover the wetted band only: about 20 m × 0.5 m = 10 m². At about €68.80 gross per m², the estimated total is €688."
+    },
+    {
+      "item_id": "17",
+      "description": "Final cleaning of covered work area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 213.0,
+      "price_log_sd": 0.28,
+      "rationale": "Clause 7.1.7(h) covers final cleaning attributable to the covered works, not cleanup for the excluded upgrade or pool service. The €213 gross estimate is for the covered work area."
+    },
+    {
+      "item_id": "18",
+      "description": "Building-services van charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clause 7.1.8(e) and section 11.3 allow one attendance charge on an invoice containing covered work. The single van charge is estimated at €83 gross."
+    }
+  ]
+}

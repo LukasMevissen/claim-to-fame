@@ -1,0 +1,294 @@
+{
+ "game": 67,
+ "ts": "2026-11-22T04:40:17",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "961955e207ecb5d2a5196d70879f513afbb378bb",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "dea3a8c0cb12"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 11.61,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Disassembly and assembly service",
+     "median": 102.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 88.74,
+     "b": 99.2
+    },
+    {
+     "index": 2,
+     "description": "Construction dryer 7 days",
+     "median": 302.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 262.74,
+     "b": 293.7
+    },
+    {
+     "index": 3,
+     "description": "Rock wool pipe insulation 1 pcs",
+     "median": 30.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 26.1,
+     "b": 29.18
+    },
+    {
+     "index": 4,
+     "description": "Construction waste disposal 1 flat rate",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 5,
+     "description": "Wall levelling material 1 pcs",
+     "median": 113.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 98.31,
+     "b": 107.55
+    },
+    {
+     "index": 6,
+     "description": "Rough renovation 2.78 m²",
+     "median": 206.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 179.22,
+     "b": 196.07
+    },
+    {
+     "index": 7,
+     "description": "Mounting / service opening 1 pcs",
+     "median": 154.0,
+     "sigma": 0.25,
+     "p_zero": 0.0,
+     "a": 133.98,
+     "b": 146.58
+    },
+    {
+     "index": 8,
+     "description": "Premium large-format designer wall tiles 120 x 120 cm (upgraded from the origina",
+     "median": 433.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 376.71,
+     "b": 421.1
+    },
+    {
+     "index": 9,
+     "description": "Premium grout 1 pcs",
+     "median": 0.0,
+     "sigma": 0.3,
+     "p_zero": 0.0,
+     "a": 0.0,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Premium silicone sealant 12 m",
+     "median": 48.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 45.6,
+     "b": 48.0
+    },
+    {
+     "index": 11,
+     "description": "Vehicle costs 1 pcs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 12,
+     "description": "Skilled worker hours 14 hrs",
+     "median": 1267.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 1102.29,
+     "b": 1232.17
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 10,
+    "seconds": 0.015,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 85.62,
+     "2": 266.51,
+     "3": 20.41,
+     "4": 55.11,
+     "5": 104.84,
+     "6": 178.19,
+     "7": 133.21,
+     "8": 385.96,
+     "10": 44.09,
+     "11": 77.0,
+     "12": 1129.36
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 17.74,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Disassembly and assembly service",
+     "median": 102.0,
+     "sigma": 0.25,
+     "p_zero": 0.02,
+     "a": 88.74,
+     "b": 96.17
+    },
+    {
+     "index": 2,
+     "description": "Construction dryer",
+     "median": 302.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 262.74,
+     "b": 292.61
+    },
+    {
+     "index": 3,
+     "description": "Rock wool pipe insulation",
+     "median": 30.0,
+     "sigma": 0.27,
+     "p_zero": 0.05,
+     "a": 26.1,
+     "b": 27.56
+    },
+    {
+     "index": 4,
+     "description": "Construction waste disposal",
+     "median": 60.0,
+     "sigma": 0.1,
+     "p_zero": 0.02,
+     "a": 57.0,
+     "b": 60.0
+    },
+    {
+     "index": 5,
+     "description": "Wall levelling material",
+     "median": 113.0,
+     "sigma": 0.49,
+     "p_zero": 0.02,
+     "a": 105.54,
+     "b": 95.21
+    },
+    {
+     "index": 6,
+     "description": "Rough renovation",
+     "median": 206.0,
+     "sigma": 0.28,
+     "p_zero": 0.03,
+     "a": 179.22,
+     "b": 190.46
+    },
+    {
+     "index": 7,
+     "description": "Mounting / service opening",
+     "median": 154.0,
+     "sigma": 0.28,
+     "p_zero": 0.04,
+     "a": 133.98,
+     "b": 141.58
+    },
+    {
+     "index": 8,
+     "description": "Premium designer wall tiles",
+     "median": 156.0,
+     "sigma": 0.24,
+     "p_zero": 0.02,
+     "a": 135.72,
+     "b": 147.78
+    },
+    {
+     "index": 9,
+     "description": "Premium grout",
+     "median": 22.0,
+     "sigma": 0.3,
+     "p_zero": 0.04,
+     "a": 19.14,
+     "b": 20.02
+    },
+    {
+     "index": 10,
+     "description": "Premium silicone sealant",
+     "median": 16.0,
+     "sigma": 0.29,
+     "p_zero": 0.09,
+     "a": 13.92,
+     "b": 14.17
+    },
+    {
+     "index": 11,
+     "description": "Vehicle costs",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.02,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 12,
+     "description": "Skilled worker hours",
+     "median": 1267.0,
+     "sigma": 0.22,
+     "p_zero": 0.03,
+     "a": 1102.29,
+     "b": 1206.26
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 10,
+    "seconds": 0.012,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 84.77,
+     "2": 266.51,
+     "3": 18.66,
+     "4": 55.11,
+     "5": 106.95,
+     "6": 178.19,
+     "7": 133.21,
+     "8": 164.82,
+     "9": 20.41,
+     "10": 14.84,
+     "11": 77.0,
+     "12": 1118.12
+    }
+   }
+  }
+ ]
+}

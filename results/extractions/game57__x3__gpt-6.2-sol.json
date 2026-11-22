@@ -1,0 +1,29 @@
+{
+  "case_id": "game57",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Compensation for watch and cash taken in robbery",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 500.0,
+      "price_log_sd": 0.05,
+      "rationale": "The reported robbery is covered away from home. Because the invoice bundles the watch and cash without a separable split, clause 7.1.10 applies the lower class ceiling of €500 to the whole line; the €10,000 away-from-home limit does not reduce it, and there is no deductible."
+    },
+    {
+      "item_id": "2",
+      "description": "Translation and handling of police report",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clauses 3.1.6 and 7.1.8(e)–(f) exclude report translation and claim handling, even when billed alongside covered compensation. No amount is payable; €1 is a placeholder."
+    }
+  ]
+}

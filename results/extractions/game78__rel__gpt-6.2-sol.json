@@ -1,0 +1,194 @@
+{
+  "case_id": "game78",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Damage assessment and inspection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 530.0,
+      "price_log_sd": 0.15,
+      "rationale": "The confirmed supply-line burst is insured under 2.4.2–2.4.3. The €530 assessment estimate is below the separate €3,000 cap in 5.2.6(b); the €500 deductible applies once to the event, not to each line."
+    },
+    {
+      "item_id": "2",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 567.0,
+      "price_log_sd": 0.26,
+      "rationale": "Indoor leak location is covered under 5.2.6(a). The €567 estimate plus €254 for technician time totals €821, below the shared €1,000 cap."
+    },
+    {
+      "item_id": "3",
+      "description": "Measurement technician",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 254.0,
+      "price_log_sd": 0.22,
+      "rationale": "On-site leak-location time is covered under 5.2.6(a). The 2.5 hours are estimated at €254 gross, and the combined €821 with line 2 is below the €1,000 cap."
+    },
+    {
+      "item_id": "4",
+      "description": "Leak detection vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.3,
+      "price_log_sd": 0.05,
+      "rationale": "This is the first vehicle charge on the leak-detection invoice. Under 5.2.6(c), the €70 net cap is €83.30 gross at 19% VAT."
+    },
+    {
+      "item_id": "5",
+      "description": "Protective fleece covering",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.63,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 87.5,
+      "price_log_sd": 0.35,
+      "rationale": "Sections 5.1(b) and 5.2.2 cover necessary protection of property during reinstatement, but the invoice does not identify what the fleece protected. If it protected a necessary access route or retained finishes, 25 m² at about €3.50/m² is €87.50."
+    },
+    {
+      "item_id": "6",
+      "description": "Remove linoleum and skirting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1159.2,
+      "price_log_sd": 0.29,
+      "rationale": "Sections 7.1.5 and 7.1.7(a), (d) cover removal of the damaged flooring and associated skirting that cannot be refitted. Estimate 82.8 m² at €14/m², including transport to the container but not final disposal."
+    },
+    {
+      "item_id": "7",
+      "description": "Prepare affected floor substrate",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 579.6,
+      "price_log_sd": 0.33,
+      "rationale": "Necessary substrate preparation on the affected floor is covered under 7.1.7(b) and is distinct from lifting the linoleum. Estimate 82.8 m² at €7/m²."
+    },
+    {
+      "item_id": "8",
+      "description": "Demolition waste disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.88,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "Disposal of insured flooring debris is covered under 5.2.1 at an estimated €60. Line 17 duplicates it under 7.1.8(c), so only the lower charge is payable, or this first charge if equal."
+    },
+    {
+      "item_id": "9",
+      "description": "Drying staff costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.54,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 110.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.7(b) allows separate drying-equipment labour, but 7.1.8(b)–(c) excludes overhead and duplicate labour. If these two hours represent distinct on-site support rather than work already billed in line 14, allow about €55/hour."
+    },
+    {
+      "item_id": "10",
+      "description": "Dust protection including materials and labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.82,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.35,
+      "rationale": "Necessary dust barriers protecting retained property during repairs are covered under 5.2.2 if distinct from the fleece floor protection. Estimate 10 m² at €9/m² including materials and labour."
+    },
+    {
+      "item_id": "11",
+      "description": "Kitchen disinfection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 125.0,
+      "price_log_sd": 0.34,
+      "rationale": "Sections 7.1.5 and 7.1.7(e) require contact with escaping water; the separate kitchen stayed dry. The conditional estimate for 25 m² at €5/m² is €125."
+    },
+    {
+      "item_id": "12",
+      "description": "Large-area drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.95,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1462.8,
+      "price_log_sd": 0.32,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) allow drying of wetted screed and adjoining areas beyond the 82.8 m² stripped, but not the dry kitchen. If moisture records support the billed 121.9 m², a large-area rate of €12/m² gives €1,462.80, including utilities."
+    },
+    {
+      "item_id": "13",
+      "description": "Cavity drying",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.87,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 340.0,
+      "price_log_sd": 0.37,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) cover drying wetted cavities where it is a distinct measure from large-area floor drying. Allow about €340 gross for one cavity-drying setup."
+    },
+    {
+      "item_id": "14",
+      "description": "Skilled drying labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 349.0,
+      "price_log_sd": 0.19,
+      "rationale": "Section 7.1.7(b) expressly permits separate labour for installing, monitoring and removing drying equipment. The benchmark for four skilled hours is €349 gross, provided the same work is not also paid under line 9."
+    },
+    {
+      "item_id": "15",
+      "description": "Drying contractor vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.3,
+      "price_log_sd": 0.05,
+      "rationale": "The first drying-contractor vehicle charge is admissible for repair under 5.2.6(c), capped at €70 net × 1.19 = €83.30 gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Return-visit vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.3,
+      "price_log_sd": 0.05,
+      "rationale": "Section 5.2.6(c) excludes the second vehicle charge on the same contractor invoice. The conditional estimate is €83.30, the gross ceiling for an eligible first trip."
+    },
+    {
+      "item_id": "17",
+      "description": "Drying contractor waste disposal",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.12,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.05,
+      "rationale": "The claim identifies this as the same disposal billed on line 8. Under 7.1.8(c), this later charge is payable only if it is lower than line 8; the conditional disposal benchmark is €60."
+    }
+  ]
+}

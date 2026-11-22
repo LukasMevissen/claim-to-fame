@@ -1,0 +1,205 @@
+{
+  "case_id": "game63",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Clean and dry conservatory rug",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 185.0,
+      "price_log_sd": 0.36,
+      "rationale": "The scheduled loose-furnishings extension under 4.4.1 covers the soaked rug. Section 7.1.7(f) allows ordinary professional cleaning and drying of the one rug."
+    },
+    {
+      "item_id": "2",
+      "description": "Inspect electrical systems",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.92,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 170.0,
+      "price_log_sd": 0.29,
+      "rationale": "Sections 4.2.4 and 7.1.7(g) cover safety testing of the building electrical installation along the documented water path. The estimate allows one targeted inspection, not general testing or checks of stored components merely suspected of exposure."
+    },
+    {
+      "item_id": "3",
+      "description": "Inspect pool technology",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 145.0,
+      "price_log_sd": 0.3,
+      "rationale": "The scheduled pool extension and sections 4.4.2(c) and 7.1.7(g) cover examination of pool plant affected by the escape or ingress. The estimate allows one targeted inspection, separate from the filter flush."
+    },
+    {
+      "item_id": "4",
+      "description": "Upgrade to natural stone flooring",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.001,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 900.0,
+      "price_log_sd": 0.55,
+      "rationale": "Sections 7.1.8(d), 7.1.9 and 7.1.10 bar the upgrade, and the missing pre-loss specification prevents any allowance for an equivalent floor. The positive figure is conditional only, at roughly €75/m² for 12 m² if a standard equivalent were substantiated."
+    },
+    {
+      "item_id": "5",
+      "description": "Flush and recommission pool filter",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 235.0,
+      "price_log_sd": 0.3,
+      "rationale": "The filter drew in escaped dirty water, so the logged maintenance is loss-related flushing and recommissioning under 4.4.2(c), not routine upkeep under 3.1.5. The estimate allows one flush and return to service."
+    },
+    {
+      "item_id": "6",
+      "description": "Restore damaged wall surfaces",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 400.0,
+      "price_log_sd": 0.25,
+      "rationale": "Sections 7.1.5 and 7.1.7(c)–(d) cover preparation and like-for-like restoration of the wetted walls. Ten square metres at about €40/m² gives €400, consistent with Case 61."
+    },
+    {
+      "item_id": "7",
+      "description": "Final site cleaning",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 82.0,
+      "price_log_sd": 0.16,
+      "rationale": "Section 7.1.7(h) covers cleanup of the working area after covered repairs, not general cleaning or cleanup attributable solely to the floor upgrade. The €82 allowance follows Case 21."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.8(g) allows one attendance charge on an invoice containing covered work. This is the only such charge on this invoice, so the €83 gross prior applies."
+    },
+    {
+      "item_id": "9",
+      "description": "Locate leak in pool pipeline",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.35,
+      "rationale": "Section 5.2.2 covers locating the escape regardless of the source installation's status. The estimate allows one targeted trace of the failed connection, excluding separately billed moisture mapping and labour."
+    },
+    {
+      "item_id": "10",
+      "description": "Repair separated pool supply connection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.29,
+      "rationale": "The scheduled pool extension covers comparable connection failure under 4.4.2(b) and 2.4.4. The estimate is for the local connection repair only, without duplicating the separately billed hours and materials."
+    },
+    {
+      "item_id": "11",
+      "description": "Skilled worker labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 351.0,
+      "price_log_sd": 0.41,
+      "rationale": "Sections 2.4.4 and 4.4.2(b) cover labour on the insured pool connection, and 5.2.2 covers necessary tracing labour. The five-hour gross prior is €351, subject to the no-duplication rule in 7.1.8(f)."
+    },
+    {
+      "item_id": "12",
+      "description": "Pool pipe repair materials",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.28,
+      "rationale": "Sections 2.4.4 and 4.4.2(b) cover fittings and sealing materials for the failed connection. The €90 allowance is for one local repair, not renewal of the supply run."
+    },
+    {
+      "item_id": "13",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 216.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 5.2.2 covers measurement to establish the extent of wetting. The €216 gross prior applies to the single measurement line."
+    },
+    {
+      "item_id": "14",
+      "description": "Extract standing water",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.31,
+      "rationale": "Section 5.2.1 covers emergency vacuum extraction of escaped water. The estimated €220 is below the €2,500 gross event cap, with no other emergency charge shown."
+    },
+    {
+      "item_id": "15",
+      "description": "Dry pool room and conservatory",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 400.0,
+      "price_log_sd": 0.27,
+      "rationale": "Sections 7.1.5 and 7.1.7(b) cover necessary drying of both wetted rooms. The €400 allowance is for drying service and monitoring, excluding the equipment rental charged separately."
+    },
+    {
+      "item_id": "16",
+      "description": "Condensation dryers",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 75.0,
+      "price_log_sd": 0.46,
+      "rationale": "Section 7.1.7(b) covers necessary dehumidification equipment during drying. The gross prior for both units together is €75."
+    },
+    {
+      "item_id": "17",
+      "description": "Drying fans",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 105.0,
+      "price_log_sd": 0.36,
+      "rationale": "Section 7.1.7(b) covers necessary air-circulation equipment. At about €35 per fan for this hire, three fans total €105, provided their hire is not already included in the room-drying charge."
+    },
+    {
+      "item_id": "18",
+      "description": "Replace damaged skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 761.0,
+      "price_log_sd": 0.58,
+      "rationale": "Sections 4.2.2 and 7.1.7(d) cover like-for-like replacement of affected fixed edging. The gross prior for the full 15 metres is €761."
+    }
+  ]
+}

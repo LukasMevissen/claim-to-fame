@@ -1,0 +1,395 @@
+{
+ "game": 72,
+ "ts": "2026-11-22T05:47:03",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 11.94,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Vehicle costs (Handy Hans, 1 flat rate)",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 2,
+     "description": "Sealing material 1 pcs",
+     "median": 25.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 23.75,
+     "b": 25.0
+    },
+    {
+     "index": 3,
+     "description": "Stainless steel pipe 1 m",
+     "median": 47.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 44.65,
+     "b": 47.0
+    },
+    {
+     "index": 4,
+     "description": "Rock wool pipe insulation 1 m",
+     "median": 25.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 23.75,
+     "b": 25.0
+    },
+    {
+     "index": 5,
+     "description": "Installation 1 hrs",
+     "median": 110.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 95.7,
+     "b": 105.97
+    },
+    {
+     "index": 6,
+     "description": "Measuring device 1 pcs",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Service technician hours 9 labor units (Handy Hans)",
+     "median": 885.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 769.95,
+     "b": 852.55
+    },
+    {
+     "index": 8,
+     "description": "Vehicle costs (Handy Hans, 1 pcs, second charge)",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "Construction dryer flat-rate charge (Handy Hans)",
+     "median": 610.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 579.5,
+     "b": 610.0
+    },
+    {
+     "index": 10,
+     "description": "Short saw blade 1 pcs",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Gunmetal 2 pcs",
+     "median": 56.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 48.72,
+     "b": 53.95
+    },
+    {
+     "index": 12,
+     "description": "Service technician hours 9 labor units (Handy Hans, duplicate)",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 13,
+     "description": "Painting the disturbed wall area and closing the wall opening",
+     "median": 664.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 630.8,
+     "b": 664.0
+    },
+    {
+     "index": 14,
+     "description": "Re-tiling of the disturbed wall section around the opening",
+     "median": 200.0,
+     "sigma": 0.3,
+     "p_zero": 0.0,
+     "a": 174.0,
+     "b": 184.54
+    },
+    {
+     "index": 15,
+     "description": "Re-tiling of the entire bathroom to match (14 m²)",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Construction dryer flat-rate charge (Tiler)",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 17,
+     "description": "Vehicle costs (Tiler, 1 pcs)",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 78.85,
+     "b": 83.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 11,
+    "seconds": 0.008,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 77.0,
+     "2": 22.96,
+     "3": 43.6,
+     "4": 22.96,
+     "5": 89.61,
+     "6": 0.92,
+     "7": 773.24,
+     "8": 1.6,
+     "9": 565.92,
+     "10": 0.92,
+     "11": 47.96,
+     "12": 0.92,
+     "13": 616.02,
+     "14": 185.55,
+     "15": 0.92,
+     "16": 0.92,
+     "17": 77.78
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 23.91,
+   "lines": [
+    {
+     "index": 1,
+     "description": "First building-services vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 2,
+     "description": "Sealing material",
+     "median": 25.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 21.75,
+     "b": 23.99
+    },
+    {
+     "index": 3,
+     "description": "Stainless steel pipe, 1 m",
+     "median": 47.0,
+     "sigma": 0.28,
+     "p_zero": 0.04,
+     "a": 40.89,
+     "b": 42.8
+    },
+    {
+     "index": 4,
+     "description": "Rock wool pipe insulation, 1 m",
+     "median": 25.0,
+     "sigma": 0.27,
+     "p_zero": 0.01,
+     "a": 21.75,
+     "b": 23.25
+    },
+    {
+     "index": 5,
+     "description": "Installer sign-off, 1 hour",
+     "median": 110.0,
+     "sigma": 0.2,
+     "p_zero": 0.07,
+     "a": 95.7,
+     "b": 102.98
+    },
+    {
+     "index": 6,
+     "description": "Measuring device",
+     "median": 25.0,
+     "sigma": 0.6,
+     "p_zero": 0.99,
+     "a": 26.29,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Technician labour, first 9-unit block",
+     "median": 885.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 769.95,
+     "b": 849.39
+    },
+    {
+     "index": 8,
+     "description": "Second building-services vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 78.85,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "First construction dryer deployment",
+     "median": 610.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 530.7,
+     "b": 585.45
+    },
+    {
+     "index": 10,
+     "description": "Short saw blade",
+     "median": 12.0,
+     "sigma": 0.5,
+     "p_zero": 1.0,
+     "a": 11.19,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Gunmetal fittings, 2 pieces",
+     "median": 56.0,
+     "sigma": 0.3,
+     "p_zero": 0.1,
+     "a": 48.72,
+     "b": 48.45
+    },
+    {
+     "index": 12,
+     "description": "Technician labour, second 9-unit block",
+     "median": 885.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 769.95,
+     "b": 849.39
+    },
+    {
+     "index": 13,
+     "description": "Close and paint the disturbed wall opening",
+     "median": 664.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 577.68,
+     "b": 637.28
+    },
+    {
+     "index": 14,
+     "description": "Re-tile the disturbed splashback strip",
+     "median": 300.0,
+     "sigma": 0.32,
+     "p_zero": 0.03,
+     "a": 261.0,
+     "b": 269.44
+    },
+    {
+     "index": 15,
+     "description": "Whole-bathroom re-tiling to match, 14 m²",
+     "median": 1540.0,
+     "sigma": 0.3,
+     "p_zero": 1.0,
+     "a": 1339.8,
+     "b": 0.0
+    },
+    {
+     "index": 16,
+     "description": "Tiler’s construction dryer charge",
+     "median": 610.0,
+     "sigma": 0.2,
+     "p_zero": 0.99,
+     "a": 530.7,
+     "b": 0.0
+    },
+    {
+     "index": 17,
+     "description": "Tiler’s vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.02,
+     "a": 78.85,
+     "b": 83.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 13,
+    "seconds": 0.016,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 77.0,
+     "2": 22.06,
+     "3": 46.3,
+     "4": 22.73,
+     "5": 91.42,
+     "6": 37.86,
+     "7": 773.24,
+     "8": 77.78,
+     "9": 549.2,
+     "10": 18.17,
+     "11": 47.96,
+     "12": 773.24,
+     "13": 597.82,
+     "14": 278.32,
+     "15": 1428.72,
+     "16": 549.2,
+     "17": 77.78
+    }
+   }
+  }
+ ]
+}

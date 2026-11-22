@@ -1,0 +1,255 @@
+{
+ "game": 74,
+ "ts": "2026-11-22T06:13:34",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 8.56,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Renew boiler system including flue gas system and storage tank",
+     "median": 1999.0,
+     "sigma": 0.7,
+     "p_zero": 0.8,
+     "a": 2119.53,
+     "b": 0.0
+    },
+    {
+     "index": 2,
+     "description": "Adjust supply pipework to fit the replacement boiler",
+     "median": 299.0,
+     "sigma": 0.7,
+     "p_zero": 0.8,
+     "a": 317.03,
+     "b": 0.0
+    },
+    {
+     "index": 3,
+     "description": "Dispose of the old boiler system",
+     "median": 149.0,
+     "sigma": 0.7,
+     "p_zero": 0.8,
+     "a": 157.98,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Vehicle costs (Heating contractor)",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.3,
+     "a": 78.85,
+     "b": 73.76
+    },
+    {
+     "index": 5,
+     "description": "Electrician labour checking and rewiring the flooded basement circuits",
+     "median": 1000.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 950.0,
+     "b": 0.0
+    },
+    {
+     "index": 6,
+     "description": "Small electrical materials for the rewiring",
+     "median": 50.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 47.5,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Water extraction from the flooded plant room",
+     "median": 200.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 190.0,
+     "b": 0.0
+    },
+    {
+     "index": 8,
+     "description": "Procurement of a motor pump",
+     "median": 100.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 95.0,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "Submersible pump",
+     "median": 150.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 142.5,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Vehicle costs (Electrical contractor)",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 78.85,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 2,
+    "seconds": 0.023,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 3027.23,
+     "2": 452.8,
+     "3": 225.64,
+     "4": 77.78,
+     "5": 918.51,
+     "6": 45.93,
+     "7": 183.7,
+     "8": 91.85,
+     "9": 137.78,
+     "10": 77.78
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 14.08,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Renew boiler, flue and storage tank",
+     "median": 9800.0,
+     "sigma": 0.38,
+     "p_zero": 0.01,
+     "a": 8526.0,
+     "b": 8674.87
+    },
+    {
+     "index": 2,
+     "description": "Adapt supply pipework to replacement boiler",
+     "median": 360.0,
+     "sigma": 0.32,
+     "p_zero": 0.02,
+     "a": 313.2,
+     "b": 325.38
+    },
+    {
+     "index": 3,
+     "description": "Dispose of old boiler system",
+     "median": 220.0,
+     "sigma": 0.35,
+     "p_zero": 0.02,
+     "a": 191.4,
+     "b": 196.07
+    },
+    {
+     "index": 4,
+     "description": "First vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.02,
+     "a": 78.85,
+     "b": 83.0
+    },
+    {
+     "index": 5,
+     "description": "Test and rewire flooded circuits",
+     "median": 1080.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 939.6,
+     "b": 1036.54
+    },
+    {
+     "index": 6,
+     "description": "Electrical materials for rewiring",
+     "median": 145.0,
+     "sigma": 0.38,
+     "p_zero": 0.02,
+     "a": 126.15,
+     "b": 127.42
+    },
+    {
+     "index": 7,
+     "description": "Extract water from the plant room",
+     "median": 450.0,
+     "sigma": 0.35,
+     "p_zero": 0.01,
+     "a": 391.5,
+     "b": 403.74
+    },
+    {
+     "index": 8,
+     "description": "Procure motor pump",
+     "median": 250.0,
+     "sigma": 0.55,
+     "p_zero": 1.0,
+     "a": 231.55,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "Submersible pump",
+     "median": 125.0,
+     "sigma": 0.55,
+     "p_zero": 1.0,
+     "a": 115.77,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Second vehicle charge",
+     "median": 83.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 78.85,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 2,
+    "seconds": 0.01,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 9091.89,
+     "2": 333.99,
+     "3": 204.1,
+     "4": 77.78,
+     "5": 897.59,
+     "6": 134.52,
+     "7": 417.48,
+     "8": 378.59,
+     "9": 189.3,
+     "10": 77.78
+    }
+   }
+  }
+ ]
+}

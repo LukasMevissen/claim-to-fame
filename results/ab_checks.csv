@@ -98,3 +98,143 @@ error,our_a_mismatch,55,8,GemischtesHack,"rejected at 587.25 = 1.5 x 391.50, we 
 error,our_a_mismatch,55,8,GemischtesHack,"rejected at 587.25 = 1.5 x 391.50, we sent a = 522.0"
 info,our_a_capped,55,8,GemischtesHack,"we sent a = 522.0, paid 391.50: c = 391.50"
 error,our_b_mismatch,55,8,alpha,we rejected a = 525.78 with b = 547.87
+error,our_a_mismatch,62,1,GemischtesHack,"rejected at 456.75 = 1.5 x 304.50, we sent a = 626.4"
+error,our_a_mismatch,62,1,GemischtesHack,"rejected at 456.75 = 1.5 x 304.50, we sent a = 626.4"
+error,our_a_mismatch,62,1,GemischtesHack,"rejected at 456.75 = 1.5 x 304.50, we sent a = 626.4"
+info,our_a_capped,62,1,GemischtesHack,"we sent a = 626.4, paid 304.50: c = 304.50"
+error,our_b_mismatch,62,1,404,we rejected a = 362.02 with b = 692.21
+error,our_b_mismatch,62,1,alpha,we rejected a = 374.85 with b = 692.21
+error,our_b_mismatch,62,1,chineseModels,we rejected a = 401.90 with b = 692.21
+error,our_b_mismatch,62,1,CHOOMS,we rejected a = 621.00 with b = 692.21
+error,our_b_mismatch,62,1,FDN,we rejected a = 616.50 with b = 692.21
+error,our_b_mismatch,62,1,Humble Legends,we rejected a = 643.82 with b = 692.21
+error,our_b_mismatch,62,1,Kiebler Software Solutions,we rejected a = 680.00 with b = 692.21
+error,our_b_mismatch,62,1,TRINNERS4WINNERS,we rejected a = 398.48 with b = 692.21
+error,our_a_mismatch,62,2,GemischtesHack,"rejected at 156.60 = 1.5 x 104.40, we sent a = 147.9"
+error,our_a_mismatch,62,2,GemischtesHack,"rejected at 156.60 = 1.5 x 104.40, we sent a = 147.9"
+error,our_a_mismatch,62,2,GemischtesHack,"rejected at 156.60 = 1.5 x 104.40, we sent a = 147.9"
+info,our_a_capped,62,2,GemischtesHack,"we sent a = 147.9, paid 104.40: c = 104.40"
+error,our_b_mismatch,62,2,chineseModels,we rejected a = 149.87 with b = 162.78
+error,our_b_mismatch,62,2,CHOOMS,we rejected a = 148.50 with b = 162.78
+error,our_b_mismatch,62,2,FDN,we rejected a = 149.40 with b = 162.78
+error,our_b_mismatch,62,2,Humble Legends,we rejected a = 148.41 with b = 162.78
+error,our_b_mismatch,62,2,Kiebler Software Solutions,we rejected a = 152.00 with b = 162.78
+error,our_b_mismatch,62,2,Lumenauts,we rejected a = 145.46 with b = 162.78
+error,our_b_mismatch,62,2,TRINNERS4WINNERS,we rejected a = 151.47 with b = 162.78
+error,our_a_mismatch,62,3,GemischtesHack,paid 1000.50 > our a = 578.55
+error,our_b_mismatch,62,3,404,we accepted a >= 779.03 with b = 628.51
+error,our_b_mismatch,62,3,Lumenauts,we accepted a >= 731.78 with b = 628.51
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,4,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+info,our_a_capped,62,4,GemischtesHack,"we sent a = 78.85, paid 69.60: c = 69.60"
+error,our_b_mismatch,62,4,Kiebler Software Solutions,we rejected a = 80.00 with b = 82.48
+error,our_a_mismatch,62,5,GemischtesHack,paid 130.50 > our a = 126.15
+error,our_b_mismatch,62,5,404,we rejected a = 127.00 with b = 138.26
+error,our_b_mismatch,62,5,CHOOMS,we rejected a = 126.00 with b = 138.26
+error,our_a_mismatch,62,6,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 126.15"
+error,our_a_mismatch,62,6,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 126.15"
+error,our_a_mismatch,62,6,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 126.15"
+info,our_a_capped,62,6,GemischtesHack,"we sent a = 126.15, paid 69.60: c = 69.60"
+error,our_b_mismatch,62,6,CHOOMS,we rejected a = 126.00 with b = 138.26
+error,our_b_mismatch,62,6,FDN,we rejected a = 131.40 with b = 138.26
+error,our_b_mismatch,62,6,Humble Legends,we rejected a = 129.20 with b = 138.26
+error,our_b_mismatch,62,6,Kiebler Software Solutions,we rejected a = 138.00 with b = 138.26
+error,our_b_mismatch,62,6,Lumenauts,we rejected a = 71.53 with b = 138.26
+error,our_a_mismatch,62,7,GemischtesHack,paid 191.40 > our a = 130.5
+error,our_b_mismatch,62,7,404,we accepted a >= 175.60 with b = 136.5
+error,our_b_mismatch,62,7,CHOOMS,we accepted a >= 166.50 with b = 136.5
+error,our_b_mismatch,62,7,Humble Legends,we accepted a >= 159.36 with b = 136.5
+error,our_b_mismatch,62,7,Kiebler Software Solutions,we accepted a >= 140.00 with b = 136.5
+error,our_a_mismatch,62,8,GemischtesHack,paid 104.40 > our a = 95.7
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+error,our_a_mismatch,62,9,GemischtesHack,"rejected at 104.40 = 1.5 x 69.60, we sent a = 78.85"
+info,our_a_capped,62,9,GemischtesHack,"we sent a = 78.85, paid 69.60: c = 69.60"
+error,our_b_mismatch,62,9,Kiebler Software Solutions,we rejected a = 80.00 with b = 82.48
+error,our_a_mismatch,62,10,GemischtesHack,paid 243.60 > our a = 47.85
+error,our_b_mismatch,62,10,404,we accepted a >= 101.07 with b = 47.7
+error,our_b_mismatch,62,10,alpha,we accepted a >= 128.52 with b = 47.7
+error,our_b_mismatch,62,10,chineseModels,we accepted a >= 127.50 with b = 47.7
+error,our_b_mismatch,62,10,CHOOMS,we accepted a >= 54.00 with b = 47.7
+error,our_b_mismatch,62,10,FDN,we accepted a >= 48.40 with b = 47.7
+error,our_b_mismatch,62,10,Lumenauts,we accepted a >= 228.80 with b = 47.7
+error,our_b_mismatch,62,10,TRINNERS4WINNERS,we accepted a >= 114.15 with b = 47.7
+error,our_a_mismatch,62,11,GemischtesHack,paid 174.22 > our a = 69.69
+error,our_a_mismatch,62,12,GemischtesHack,"rejected at 97.88 = 1.5 x 65.25, we sent a = 78.85"
+error,our_a_mismatch,62,12,GemischtesHack,"rejected at 97.88 = 1.5 x 65.25, we sent a = 78.85"
+error,our_a_mismatch,62,12,GemischtesHack,"rejected at 97.88 = 1.5 x 65.25, we sent a = 78.85"
+error,our_a_mismatch,62,12,GemischtesHack,"rejected at 97.88 = 1.5 x 65.25, we sent a = 78.85"
+info,our_a_capped,62,12,GemischtesHack,"we sent a = 78.85, paid 65.25: c = 65.25"
+error,our_b_mismatch,62,12,404,we rejected a = 73.68 with b = 82.48
+error,our_b_mismatch,62,12,CHOOMS,we rejected a = 70.20 with b = 82.48
+error,our_b_mismatch,62,12,FDN,we rejected a = 72.60 with b = 82.48
+error,our_b_mismatch,62,12,Humble Legends,we rejected a = 72.67 with b = 82.48
+error,our_b_mismatch,62,12,Kiebler Software Solutions,we rejected a = 80.00 with b = 82.48
+error,our_a_mismatch,62,13,GemischtesHack,"rejected at 78.41 = 1.5 x 52.27, we sent a = 139.2"
+error,our_a_mismatch,62,13,GemischtesHack,"rejected at 78.41 = 1.5 x 52.27, we sent a = 139.2"
+info,our_a_capped,62,13,GemischtesHack,"we sent a = 139.2, paid 52.27: c = 52.27"
+error,our_b_mismatch,62,13,alpha,we rejected a = 53.55 with b = 151.22
+error,our_b_mismatch,62,13,chineseModels,we rejected a = 149.84 with b = 151.22
+error,our_b_mismatch,62,13,CHOOMS,we rejected a = 139.50 with b = 151.22
+error,our_b_mismatch,62,13,FDN,we rejected a = 144.00 with b = 151.22
+error,our_b_mismatch,62,13,Humble Legends,we rejected a = 142.22 with b = 151.22
+error,our_b_mismatch,62,13,Kiebler Software Solutions,we rejected a = 150.00 with b = 151.22
+error,our_b_mismatch,62,13,Lumenauts,we rejected a = 125.81 with b = 151.22
+error,our_b_mismatch,62,13,TRINNERS4WINNERS,we rejected a = 148.50 with b = 151.22
+error,our_a_mismatch,62,14,GemischtesHack,"rejected at 139.91 = 1.5 x 93.27, we sent a = 121.25"
+error,our_a_mismatch,62,14,GemischtesHack,"rejected at 139.91 = 1.5 x 93.27, we sent a = 121.25"
+error,our_a_mismatch,62,14,GemischtesHack,"rejected at 139.91 = 1.5 x 93.27, we sent a = 121.25"
+error,our_a_mismatch,62,14,GemischtesHack,"rejected at 139.91 = 1.5 x 93.27, we sent a = 121.25"
+info,our_a_capped,62,14,GemischtesHack,"we sent a = 121.25, paid 93.27: c = 93.27"
+error,our_b_mismatch,62,14,CHOOMS,we rejected a = 86.40 with b = 99.78
+error,our_b_mismatch,62,14,Kiebler Software Solutions,we rejected a = 90.00 with b = 99.78
+error,our_a_mismatch,62,15,GemischtesHack,"rejected at 104.53 = 1.5 x 69.69, we sent a = 100.05"
+error,our_a_mismatch,62,15,GemischtesHack,"rejected at 104.53 = 1.5 x 69.69, we sent a = 100.05"
+error,our_a_mismatch,62,15,GemischtesHack,"rejected at 104.53 = 1.5 x 69.69, we sent a = 100.05"
+error,our_a_mismatch,62,15,GemischtesHack,"rejected at 104.53 = 1.5 x 69.69, we sent a = 100.05"
+info,our_a_capped,62,15,GemischtesHack,"we sent a = 100.05, paid 69.69: c = 69.69"
+error,our_b_mismatch,62,15,Lumenauts,we rejected a = 73.29 with b = 95.46
+error,our_b_mismatch,62,15,TRINNERS4WINNERS,we rejected a = 83.80 with b = 95.46
+error,our_a_mismatch,62,16,GemischtesHack,"rejected at 52.26 = 1.5 x 34.84, we sent a = 43.5"
+error,our_a_mismatch,62,16,GemischtesHack,"rejected at 52.26 = 1.5 x 34.84, we sent a = 43.5"
+error,our_a_mismatch,62,16,GemischtesHack,"rejected at 52.26 = 1.5 x 34.84, we sent a = 43.5"
+error,our_a_mismatch,62,16,GemischtesHack,"rejected at 52.26 = 1.5 x 34.84, we sent a = 43.5"
+info,our_a_capped,62,16,GemischtesHack,"we sent a = 43.5, paid 34.84: c = 34.84"
+error,our_a_mismatch,62,17,GemischtesHack,"rejected at 91.35 = 1.5 x 60.90, we sent a = 78.85"
+error,our_a_mismatch,62,17,GemischtesHack,"rejected at 91.35 = 1.5 x 60.90, we sent a = 78.85"
+error,our_a_mismatch,62,17,GemischtesHack,"rejected at 91.35 = 1.5 x 60.90, we sent a = 78.85"
+info,our_a_capped,62,17,GemischtesHack,"we sent a = 78.85, paid 60.90: c = 60.90"
+error,our_b_mismatch,62,17,404,we rejected a = 71.44 with b = 82.04
+error,our_b_mismatch,62,17,CHOOMS,we rejected a = 70.20 with b = 82.04
+error,our_b_mismatch,62,17,FDN,we rejected a = 72.60 with b = 82.04
+error,our_b_mismatch,62,17,Humble Legends,we rejected a = 72.67 with b = 82.04
+error,our_b_mismatch,62,17,Kiebler Software Solutions,we rejected a = 80.00 with b = 82.04
+error,our_b_mismatch,62,17,Lumenauts,we rejected a = 58.71 with b = 82.04
+error,our_b_mismatch,62,17,TRINNERS4WINNERS,we rejected a = 65.84 with b = 82.04
+info,our_a_capped,64,1,GemischtesHack,"we sent a = 957.0, paid 783.00: c = 783.00"
+error,our_b_mismatch,64,1,CHOOMS,we rejected a = 765.00 with b = 946.24
+error,our_b_mismatch,64,1,Kiebler Software Solutions,we rejected a = 800.00 with b = 946.24
+error,our_a_mismatch,64,3,GemischtesHack,paid 191.40 > our a = 156.6
+error,our_b_mismatch,64,3,FDN,we accepted a >= 154.00 with b = 150.68
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+error,our_a_mismatch,64,4,GemischtesHack,"rejected at 783.00 = 1.5 x 522.00, we sent a = 609.0"
+info,our_a_capped,64,4,GemischtesHack,"we sent a = 609.0, paid 522.00: c = 522.00"
+error,our_b_mismatch,64,4,alpha,we rejected a = 405.00 with b = 581.07
+error,our_b_mismatch,64,4,CHOOMS,we rejected a = 477.00 with b = 581.07
+error,our_b_mismatch,64,4,FDN,we rejected a = 492.80 with b = 581.07
+error,our_b_mismatch,64,4,Kiebler Software Solutions,we rejected a = 400.00 with b = 581.07
+error,our_b_mismatch,64,5,chineseModels,we rejected a = 6500.00 with b = 6500.0
+error,our_a_mismatch,64,9,GemischtesHack,paid 391.50 > our a = 295.8
+error,our_b_mismatch,64,9,404,we accepted a >= 322.00 with b = 303.43
+error,our_a_mismatch,64,10,GemischtesHack,paid 278.40 > our a = 234.9

@@ -1,0 +1,183 @@
+{
+  "case_id": "game58-noimg",
+  "extractor_version": "x3",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Repair of the storm-damaged shed roof section",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 650.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered peril (storm), insured property (shed roof, ancillary structure per 4.2.5), repair to pre-loss standard (1.1, 7.1.5, 7.1.9). Indemnified at ordinary market price for the patch repair, not a full re-roof. Reference: similar roof repairs in earlier cases (e.g., wall/roof patching in cases 55, 51, 46)."
+    },
+    {
+      "item_id": "2",
+      "description": "Full repaint of the entire shed, including the undamaged walls",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Work on undamaged parts is excluded (7.1.5, 7.1.6); only the affected area is indemnified, and this line covers the whole shed. Combined position (1.3, 7.1.10): as stated, not indemnified."
+    },
+    {
+      "item_id": "3",
+      "description": "Ultraviolet-resistant protective exterior coating",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Protective treatments for future influences are excluded (7.1.8(a)), even if applied to affected parts."
+    },
+    {
+      "item_id": "4",
+      "description": "Renewal of all shed trim, including undamaged trim",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Work on undamaged parts is excluded (7.1.5, 7.1.10); combined position covers both damaged and undamaged trim, so not indemnified as stated."
+    },
+    {
+      "item_id": "5",
+      "description": "Skilled carpentry labour for the roof repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 640.0,
+      "price_log_sd": 0.1,
+      "rationale": "Labour for repair of affected part is covered (7.1.7(d)), at ordinary market rate for two skilled workers for one day. Reference: skilled worker/service technician hours in cases 56, 55, 51."
+    },
+    {
+      "item_id": "6",
+      "description": "Contractor hand tools and reusable equipment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Ordinary equipment of the trade is excluded (1.3, 7.1.8(b)); deemed included in labour rate."
+    },
+    {
+      "item_id": "7",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.08,
+      "rationale": "One vehicle/call-out charge per trade invoice is covered (7.1.7(f)), reference price per vehicle cost line (see price priors and cases 43, 44, 51, 55, 56)."
+    },
+    {
+      "item_id": "8",
+      "description": "Vehicle costs – return visit",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Return visit/call-out charges are excluded (7.1.8(d)), not indemnified."
+    },
+    {
+      "item_id": "9",
+      "description": "Catering for work crew",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Catering/refreshment for contractor personnel is excluded (7.1.8(b)), not indemnified."
+    },
+    {
+      "item_id": "10",
+      "description": "Cutting and removal of the storm-felled tree from the shed roof",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 400.0,
+      "price_log_sd": 0.2,
+      "rationale": "Removal of storm-felled tree from insured property is covered as emergency/loss-mitigation and clearance (5.2.1, 5.2.3), at ordinary market rate for tree service. Reference: similar tree removal in storm claims."
+    },
+    {
+      "item_id": "11",
+      "description": "Lifting and earth-moving machinery hire",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 220.0,
+      "price_log_sd": 0.2,
+      "rationale": "Hire of heavy plant required for covered work is indemnified (7.1.7(e)), at ordinary market rate for machinery hire for tree removal."
+    },
+    {
+      "item_id": "12",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.8,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.08,
+      "rationale": "One vehicle/call-out charge per trade invoice is covered (7.1.7(f)), reference price per vehicle cost line (see price priors and cases 43, 44, 51, 55, 56)."
+    },
+    {
+      "item_id": "13",
+      "description": "Disposal of shed roof timber and the broken glass pane (building debris)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.15,
+      "rationale": "Disposal of material arising from damaged insured property is covered (5.2.1), at ordinary market rate for building debris disposal. Reference: construction waste disposal in cases 56, 50, 46."
+    },
+    {
+      "item_id": "14",
+      "description": "Disposal of felled-tree green waste and root ball (single mass under one cubic metre)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.2,
+      "rationale": "Disposal of storm-felled tree and root mass under 1 m³ is covered as material arising (5.2.1(b)), at ordinary market rate for green waste disposal."
+    },
+    {
+      "item_id": "15",
+      "description": "Disposal and reinstatement of excavated soil and displaced paving around the shed",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 180.0,
+      "price_log_sd": 0.2,
+      "rationale": "Grounds-reinstatement endorsement (GR-2026) brings ground reinstatement after insured tree impact into cover; disposal and reinstatement of soil/paving is indemnified at ordinary market rate."
+    },
+    {
+      "item_id": "16",
+      "description": "Transport charge for the tree waste (already billed by the tree service)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.0,
+      "price_log_sd": 0.05,
+      "rationale": "Duplicate charge for same material transport is excluded (7.1.8(c)), not indemnified."
+    }
+  ]
+}

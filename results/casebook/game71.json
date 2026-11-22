@@ -1,0 +1,16 @@
+{
+ "game": 71,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Bathroom leak upstairs, the cold water supply pipe in the 1st-floor bathroom gave way and leaked into the wall. Usual access-and-repair job: wall opened, pipe sorted, a blower in for a bit to dry it, then the opening closed and painted. Localised, nothing past the immediate wall area. Thing is, while it was open the owner took the chance to upgrade. Instead of a like-for-like swap they had a wider-bore premium stainless line put in, designer gunmetal fittings and a fancier clad insulation rather than the plain rock wool that was there before. Better than the original setup, basically. Took a couple of visits.",
+ "lines": {
+  "1": "Vehicle costs 1 flat rate",
+  "2": "Sealing material 1 pcs",
+  "3": "Premium large-diameter stainless steel pipe (upgraded from the original narrower-bore installation) | 1 m",
+  "4": "Designer gunmetal fittings (higher specification than the original) | 2 pcs",
+  "5": "Premium aluminium-clad insulation (upgraded from standard rock wool) | 1 m",
+  "6": "Installation 1 m",
+  "7": "Service technician hours 9 labor units",
+  "8": "Construction dryer flat-rate charge 1 flat rate",
+  "9": "Painting the disturbed wall area and closing the wall opening | 1 pcs"
+ }
+}

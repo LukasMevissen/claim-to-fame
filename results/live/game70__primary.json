@@ -1,0 +1,115 @@
+{
+ "game": 70,
+ "ts": "2026-11-22T05:20:07",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 6.8,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Remove & reinstall water-damaged laminate incl. impact sound insulation and skir",
+     "median": 2144.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 2036.8,
+     "b": 2144.0
+    },
+    {
+     "index": 2,
+     "description": "Remove & reinstall bathroom floor tiles incl. material and disposal",
+     "median": 1275.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 1211.25,
+     "b": 1275.0
+    },
+    {
+     "index": 3,
+     "description": "Prepare & repaint water-damaged lower living-room wall",
+     "median": 788.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 748.6,
+     "b": 788.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 1,
+    "seconds": 0.006,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 1969.29,
+     "2": 1171.1,
+     "3": 716.59
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 7.83,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Remove and replace living-room laminate, underlay and skirting",
+     "median": 2679.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 2330.73,
+     "b": 2595.68
+    },
+    {
+     "index": 2,
+     "description": "Remove, dispose of and replace bathroom floor tiles",
+     "median": 1275.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 1109.25,
+     "b": 1235.35
+    },
+    {
+     "index": 3,
+     "description": "Prepare and repaint the damaged lower living-room wall",
+     "median": 788.0,
+     "sigma": 0.2,
+     "p_zero": 0.01,
+     "a": 685.56,
+     "b": 763.49
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 1,
+    "seconds": 0.002,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 2226.53,
+     "2": 1059.66,
+     "3": 610.63
+    }
+   }
+  }
+ ]
+}

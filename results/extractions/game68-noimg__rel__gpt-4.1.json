@@ -1,0 +1,51 @@
+{
+  "case_id": "game68-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Hole drilling",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.3,
+      "rationale": "Clause 2.2 excludes breakage of glass components, and Clause 2.3 clarifies that only non-glass components are covered. Drilling a hole is part of fitting the replacement glass, which is excluded."
+    },
+    {
+      "item_id": "2",
+      "description": "Installation of the new glass into the frame",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 25.0,
+      "price_log_sd": 0.2,
+      "rationale": "Clause 2.2 excludes all work relating to glass components, including installation of replacement glass. Only non-glass components could be covered, but this line is solely for the glass."
+    },
+    {
+      "item_id": "3",
+      "description": "Made-to-measure replacement glass pane",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 53.0,
+      "price_log_sd": 0.2,
+      "rationale": "Clause 2.2 and 2.3: Glass Breakage Cover is not included, so any replacement of glass components is excluded regardless of cause."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Clause 2.2: As all work performed relates to excluded glass breakage, ancillary charges (vehicle costs) are also excluded as they are not incurred for an indemnifiable loss."
+    }
+  ]
+}

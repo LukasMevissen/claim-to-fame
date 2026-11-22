@@ -1,0 +1,139 @@
+{
+  "case_id": "game77-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Cleaning of affected floor areas in the utility room and adjoining hallway",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 210.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as cleaning of surfaces affected by the insured escape of water event (7.1.7(h), 7.1.5); reference cases 36 and 59 show this line is indemnified at about 100–110 per room, so for both rooms together t ≈ 210."
+    },
+    {
+      "item_id": "2",
+      "description": "Inspection of the washing machine and supply/drain connection to confirm no further leakage",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 147.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary investigation to confirm the source and cessation of the leak (7.1.7(e)); reference cases 36 and 59 show t per pc ≈ 147 (range 122–180)."
+    },
+    {
+      "item_id": "3",
+      "description": "Removal and disposal of water-damaged skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 71.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered as removal/disposal of affected building components (7.1.7(a)); reference cases 36 and 59 show t per pc ≈ 71 (range 31–92)."
+    },
+    {
+      "item_id": "4",
+      "description": "Replace skirting boards",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 48.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered as reinstatement of affected building components (7.1.7(c)); reference cases 36 and 59 show t per pc ≈ 48 (range 32–115), but for a single unit likely at the lower end."
+    },
+    {
+      "item_id": "5",
+      "description": "Moisture measurement of the utility room and hallway floor",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 126.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary technical measurement to establish extent of damage (7.1.7(b)); reference case 36 shows t per pc ≈ 126 (range 92–192)."
+    },
+    {
+      "item_id": "6",
+      "description": "Drying of the affected floor area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 239.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered as necessary drying of affected area (7.1.7(b)); reference cases 36 and 59 show t per pc ≈ 239 (range 205–280)."
+    },
+    {
+      "item_id": "7",
+      "description": "Drying unit rental",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 71.0,
+      "price_log_sd": 0.25,
+      "rationale": "Covered as equipment hire necessary for drying (7.1.7(b)); reference case 36 shows t per pc ≈ 71 (range 51–109)."
+    },
+    {
+      "item_id": "8",
+      "description": "Skilled worker hours (4 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 304.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as necessary labour for repair (7.1.7(g)); reference cases show t for 4 hrs ≈ 304 (range 195–435)."
+    },
+    {
+      "item_id": "9",
+      "description": "Transport of the high-value painting to the specialist restorer",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.7,
+      "rationale": "NOT indemnified: reference cases 36 and 59 show this line is always t = 0 (not indemnified under 5.2.6, as the cap applies to all measures together and this line is below the lowest proven threshold)."
+    },
+    {
+      "item_id": "10",
+      "description": "Professional assessment of the high-value painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 32.0,
+      "price_log_sd": 0.7,
+      "rationale": "NOT indemnified: reference cases 36 and 59 show this line is always t = 0 (not indemnified under 5.2.6, as the cap applies to all measures together and this line is below the lowest proven threshold)."
+    },
+    {
+      "item_id": "11",
+      "description": "Conservatory drying and stabilisation of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 65.0,
+      "price_log_sd": 0.7,
+      "rationale": "NOT indemnified: reference cases 36 and 59 show this line is always t = 0 (not indemnified under 5.2.6, as the cap applies to all measures together and this line is below the lowest proven threshold)."
+    },
+    {
+      "item_id": "12",
+      "description": "Full restoration of the painting",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1262.0,
+      "price_log_sd": 0.2,
+      "rationale": "Indemnified as restoration of an individual item of particular value affected by the insured event (5.2.6); reference cases 36 and 59 show t per pc ≈ 1262 (range 1033–1658)."
+    }
+  ]
+}

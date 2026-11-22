@@ -1,0 +1,25 @@
+{
+ "game": 65,
+ "policy": "RESIDENTIAL DWELLING INSURANCE",
+ "description": "Ground-floor flat in a two-flat house, kitchen at the front with the double doors out to the street. I noticed the grout in front of the sink staying dark and a musty smell from the sink cabinet. When I emptied the cabinet the back panel was black with damp and there was standing water on the tiles. Nobody could see where it was coming from, so a leak detection firm came out. One technician, over two long days: he metered the kitchen floor and the wall under the window, went over the units with a thermal camera and in the end found the supply pipe to the sink leaking at a copper tee just inside the wall. The plumber opened the wall and cut the pipe free under the sink. The foam lagging on it was soaked in two places and was thrown away. He cut out the bad section with the tee, soldered in a new piece of copper of the same size and put ordinary foam lagging back on (second photo). The drying firm put one condensation dryer in the kitchen and dried the tiled floor and the wall base until the readings were back to normal. At the end they cleaned up the dust and offcuts in the kitchen where the work had been. While they were here anyway I asked them to clean the whole flat through, hall, living room, bedrooms and bathroom, since I had not had time for weeks. Our kitchen table stood right next to the sink cabinet and its legs were in the water for days before I found it. The legs swelled and split and the top lifted, so the carpenter carried it out and took it away. It was a plain beech table from a flat-pack furniture store, about six years old and well used. I bought a similar plain wooden table myself at the same store and paid for it at the till; the carpenter's lads fetched it in their van and put it together in the kitchen (last photo). With the house we also have half of the roof space above the upstairs flat, reached by a ladder from the stairwell, which we use for storage. There is an old tide mark on the boards up there from when the chimney flashing leaked three winters ago; the roofer fixed that the same spring. I asked the drying firm to set up some kit up there while they had their van outside. The bench and two chairs that stand in our part of the back garden all year have gone grey and soft in places, so I also asked the carpenter to check them for damp.",
+ "lines": {
+  "1": "Leak detection call-out and pinpointing of the sink supply leak | 1 pcs",
+  "2": "Moisture measurement of the kitchen floor and wall base | 1 pcs",
+  "3": "Service technician hours 14 hrs",
+  "4": "Vehicle costs 1 pcs",
+  "5": "Freeing the affected pipe run beneath the kitchen sink 1 pcs",
+  "6": "Removal and disposal of damaged insulation 2 pcs",
+  "7": "Repair of the confirmed leak 1 pcs",
+  "8": "Replacement copper pipe section and standard insulation | 1 flat rate",
+  "9": "Room drying line item for the roof space (Dachstuhl) 1 pcs",
+  "10": "Condensation dryer (kitchen) 1 pcs",
+  "11": "Room drying of the kitchen floor and wall base 1 pcs",
+  "12": "Drying fan (roof space) 2 pcs",
+  "13": "Final site cleaning of the covered work area 1 pcs",
+  "14": "Vehicle costs 1 pcs",
+  "15": "Cleaning of entire apartment 1 pcs",
+  "16": "Removal, transport and disposal of the water-damaged wooden kitchen table | 3 pcs",
+  "17": "Delivery and assembly of the replacement table 1 flat rate",
+  "18": "Inspection of further furniture items stored in the garden for moisture | 1 pcs"
+ }
+}

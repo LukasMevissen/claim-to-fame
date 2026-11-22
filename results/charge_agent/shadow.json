@@ -1,0 +1,92 @@
+{
+ "active": true,
+ "since_game": 73,
+ "streak": 3,
+ "needed": 3,
+ "rounds": [
+  {
+   "game": 59,
+   "legacy": 28062.7,
+   "agent": 33219.0,
+   "diff": 5156.2
+  },
+  {
+   "game": 60,
+   "legacy": 49833.6,
+   "agent": 47615.6,
+   "diff": -2218.0
+  },
+  {
+   "game": 61,
+   "legacy": 52799.5,
+   "agent": 55051.5,
+   "diff": 2252.0
+  },
+  {
+   "game": 62,
+   "legacy": 33714.6,
+   "agent": 25780.7,
+   "diff": -7933.8
+  },
+  {
+   "game": 63,
+   "legacy": 47897.4,
+   "agent": 42427.5,
+   "diff": -5469.9
+  },
+  {
+   "game": 64,
+   "legacy": 94959.0,
+   "agent": 90489.4,
+   "diff": -4469.6
+  },
+  {
+   "game": 65,
+   "legacy": 31721.5,
+   "agent": 25917.1,
+   "diff": -5804.4
+  },
+  {
+   "game": 66,
+   "legacy": 45651.8,
+   "agent": 45214.5,
+   "diff": -437.3
+  },
+  {
+   "game": 67,
+   "legacy": 27699.6,
+   "agent": 27969.0,
+   "diff": 269.5
+  },
+  {
+   "game": 68,
+   "legacy": 112.2,
+   "agent": 87.8,
+   "diff": -24.4
+  },
+  {
+   "game": 69,
+   "legacy": 71473.3,
+   "agent": 69798.6,
+   "diff": -1674.7
+  },
+  {
+   "game": 70,
+   "legacy": 38588.0,
+   "agent": 48537.7,
+   "diff": 9949.7
+  },
+  {
+   "game": 71,
+   "legacy": 26807.2,
+   "agent": 27253.6,
+   "diff": 446.4
+  },
+  {
+   "game": 72,
+   "legacy": 42340.6,
+   "agent": 43577.8,
+   "diff": 1237.2
+  }
+ ]
+}

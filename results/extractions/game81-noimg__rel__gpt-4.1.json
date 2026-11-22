@@ -1,0 +1,249 @@
+{
+  "case_id": "game81-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Indoor leak detection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 518.0,
+      "price_log_sd": 0.18,
+      "rationale": "Covered under 7.1.7(e) as necessary investigation to locate the source of damage; price level set by reference cases 76, 78, 79, 65, 27 and price prior."
+    },
+    {
+      "item_id": "2",
+      "description": "Skilled worker hours (Handy Hans, 8 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 700.0,
+      "price_log_sd": 0.18,
+      "rationale": "Labour for opening partition and making pipe accessible is necessary preparatory work under 7.1.7(a), (g); price level set by reference cases 76, 79, 78, 59 and price prior."
+    },
+    {
+      "item_id": "3",
+      "description": "Material for the work (Handy Hans)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 129.0,
+      "price_log_sd": 0.18,
+      "rationale": "Consumables for opening/closing partition and fixing battens are necessary for access and reinstatement (7.1.7(a), (c)); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "4",
+      "description": "Vehicle costs (Handy Hans)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 84.0,
+      "price_log_sd": 0.05,
+      "rationale": "Travel/call-out for attendance required for covered work (7.1.7(f)); price level set by reference cases 76, 78, 79 and price prior."
+    },
+    {
+      "item_id": "5",
+      "description": "Room drying 30 m² (initial phase)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 457.0,
+      "price_log_sd": 0.18,
+      "rationale": "Drying of affected back room is necessary under 7.1.7(b); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "6",
+      "description": "Room dryer unit (initial phase)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 444.0,
+      "price_log_sd": 0.18,
+      "rationale": "Dryer hire for affected area is necessary under 7.1.7(e); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "7",
+      "description": "Removal and disposal of damaged insulation (1 m²)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 86.0,
+      "price_log_sd": 0.18,
+      "rationale": "Removal of wet insulation board from affected wall is necessary under 7.1.7(a); price level set by reference cases 65, 79, 21 and price prior."
+    },
+    {
+      "item_id": "8",
+      "description": "Wet insulation wool from basement (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 215.0,
+      "price_log_sd": 0.18,
+      "rationale": "Removal of wet insulation wool from stud bays is necessary under 7.1.7(a); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "9",
+      "description": "Room drying 50 m² (whole cellar, later phase)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 650.0,
+      "price_log_sd": 0.22,
+      "rationale": "Drying extended to whole affected cellar as readings showed spread; necessary under 7.1.7(b); price level interpolated from case 76 (30 m²) and 79 (up to 50 m²)."
+    },
+    {
+      "item_id": "10",
+      "description": "Room dryer unit (later phase)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 444.0,
+      "price_log_sd": 0.18,
+      "rationale": "Dryer hire for extended drying; necessary under 7.1.7(e); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "11",
+      "description": "Drying fan (later phase)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.7,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 28.0,
+      "price_log_sd": 0.3,
+      "rationale": "Blower to assist drying is necessary under 7.1.7(e); price level set by price prior and cases 63, 66 (other wordings), but accepted here as part of necessary drying."
+    },
+    {
+      "item_id": "13",
+      "description": "Profipress elbow 90° copper 15mm model 01 (5 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 38.0,
+      "price_log_sd": 0.18,
+      "rationale": "Fittings for pipe repair are necessary under 7.1.7(c); price level set by case 40 and price prior."
+    },
+    {
+      "item_id": "14",
+      "description": "Profipress elbow 90° copper 15mm model 02 (5 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 38.0,
+      "price_log_sd": 0.18,
+      "rationale": "Second set of elbows for second repair, same function as above; price level as above."
+    },
+    {
+      "item_id": "15",
+      "description": "Profipress elbow 45° copper 28mm model 03 (1 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.1,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 6.0,
+      "price_log_sd": 0.7,
+      "rationale": "No 28mm pipe or fittings are described as used in this claim; only 15mm and 16mm mentioned. This appears unrelated or a mis-invoicing (7.1.8(e))."
+    },
+    {
+      "item_id": "16",
+      "description": "Hose (3 m)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 15.0,
+      "price_log_sd": 0.3,
+      "rationale": "Temporary bypass hose for washing machine is a necessary measure to maintain use during repair (7.1.7(c)); price estimated from market for 3m utility hose."
+    },
+    {
+      "item_id": "17",
+      "description": "Helper hours (5 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 240.0,
+      "price_log_sd": 0.05,
+      "rationale": "Helper for pipe repair and access is necessary under 7.1.7(g); price level set by reference cases 76, 79, 40, 44."
+    },
+    {
+      "item_id": "18",
+      "description": "Vehicle costs (2 pcs, plumber)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 168.0,
+      "price_log_sd": 0.18,
+      "rationale": "Travel/call-out for two plumber attendances required for covered work (7.1.7(f)); price level set by reference cases 76, 78, 79 and price prior."
+    },
+    {
+      "item_id": "19",
+      "description": "Transition piece 16x15mm (3 pcs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 66.0,
+      "price_log_sd": 0.18,
+      "rationale": "Transition fittings for joining composite to copper are necessary under 7.1.7(c); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "20",
+      "description": "Service technician hours (5.5 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 458.0,
+      "price_log_sd": 0.05,
+      "rationale": "Plumber's skilled labour for pipe repair is necessary under 7.1.7(g); price level set by reference cases 76, 79, 40, 44."
+    },
+    {
+      "item_id": "21",
+      "description": "Skilled worker hours (tiler, 14 hrs)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1217.0,
+      "price_log_sd": 0.18,
+      "rationale": "Labour for relaying loose tiles in affected areas is necessary under 7.1.7(g); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "22",
+      "description": "Material costs (tiler)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 92.0,
+      "price_log_sd": 0.18,
+      "rationale": "Adhesive and grout for relaying tiles are necessary under 7.1.7(c); price level set by case 76 and price prior."
+    },
+    {
+      "item_id": "23",
+      "description": "Vehicle costs (tiler)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 81.0,
+      "price_log_sd": 0.05,
+      "rationale": "Travel/call-out for tiler attendance required for covered work (7.1.7(f)); price level set by reference cases 76, 78, 79 and price prior."
+    }
+  ]
+}

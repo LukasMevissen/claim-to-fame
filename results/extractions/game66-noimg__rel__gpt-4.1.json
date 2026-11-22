@@ -1,0 +1,205 @@
+{
+  "case_id": "game66-noimg",
+  "extractor_version": "rel",
+  "model": "gpt-4.1",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection pool pipeline",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 534.0,
+      "price_log_sd": 0.3,
+      "rationale": "Covered under 5.2.2 as technical measures to locate the escape and establish wetting; not excluded by 4.3(b) as this is not repair of the pool installation but detection. Reference case 63 and price prior."
+    },
+    {
+      "item_id": "2",
+      "description": "Repair pool supply pipe connection",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 339.0,
+      "price_log_sd": 0.3,
+      "rationale": "Repair of the source installation (pool supply pipe) is excluded by 2.4.4 and 4.3(b); the pool and its pipework are not insured property, so neither repair nor associated labour/materials are indemnified."
+    },
+    {
+      "item_id": "3",
+      "description": "Skilled worker hours (leak detection invoice)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.05,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 346.0,
+      "price_log_sd": 0.3,
+      "rationale": "Labour hours on an invoice predominantly for detection and repair of the excluded pool pipe; under 7.1.10 and 7.1.8(a), hours are allocated to the non-indemnifiable element when the invoice is mainly for excluded work."
+    },
+    {
+      "item_id": "4",
+      "description": "Material for pool pipe repair",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 137.0,
+      "price_log_sd": 0.3,
+      "rationale": "Materials for repair of the excluded pool supply pipe are not indemnified per 2.4.4, 4.3(b), and 7.1.8(a)."
+    },
+    {
+      "item_id": "5",
+      "description": "Moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 232.0,
+      "price_log_sd": 0.15,
+      "rationale": "Covered under 5.2.2 as technical measures to establish extent of wetting; not excluded. Reference cases 63, 59, and price prior."
+    },
+    {
+      "item_id": "6",
+      "description": "Vacuum water",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 313.0,
+      "price_log_sd": 0.2,
+      "rationale": "Covered as emergency/mitigation under 5.2.1 and 7.1.7(b); removal of standing water from affected rooms is indemnified. Reference case 63 and price prior."
+    },
+    {
+      "item_id": "7",
+      "description": "Room drying (pool/conservatory)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 571.0,
+      "price_log_sd": 0.2,
+      "rationale": "Drying of affected rooms is covered under 7.1.7(b); both pool and conservatory are one affected room per 7.1.5. Reference case 63 and price prior."
+    },
+    {
+      "item_id": "8",
+      "description": "Condensation dryer (1 day)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 60.0,
+      "price_log_sd": 0.1,
+      "rationale": "Rental of drying equipment for affected room is covered under 7.1.7(b); reference cases 63, 65, 21 and price prior."
+    },
+    {
+      "item_id": "9",
+      "description": "Drying fan (3 days)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 81.0,
+      "price_log_sd": 0.2,
+      "rationale": "Rental of drying equipment for affected room is covered under 7.1.7(b); reference case 63 and price prior."
+    },
+    {
+      "item_id": "10",
+      "description": "Replace skirting boards (15 m)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 712.0,
+      "price_log_sd": 0.25,
+      "rationale": "Replacement of affected skirting in the conservatory is covered under 7.1.7(e) and 7.1.5; reference cases 63, 59, 36, 61 and price prior."
+    },
+    {
+      "item_id": "11",
+      "description": "Clean / dry conservatory rug",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 231.0,
+      "price_log_sd": 0.15,
+      "rationale": "Loose-furnishings extension for the conservatory is on the schedule (per damage description); cleaning/drying of affected insured furnishing is covered under 7.1.7(f). Reference case 63."
+    },
+    {
+      "item_id": "12",
+      "description": "Inspect electrical systems",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 350.0,
+      "price_log_sd": 0.2,
+      "rationale": "Inspection/testing of building's own electrical installation reached by water is covered under 7.1.7(g); reference case 63 and price prior."
+    },
+    {
+      "item_id": "13",
+      "description": "Inspect pool technology",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.01,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 422.0,
+      "price_log_sd": 0.3,
+      "rationale": "Inspection of the pool plant is not indemnified: the pool and its technical plant are excluded property under 4.3(b), and 7.1.8(b) excludes inspection/testing of an excluded installation even if in the affected room."
+    },
+    {
+      "item_id": "14",
+      "description": "Upgrade to high-quality natural stone floor (12 m²)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Upgrade to a higher-grade floor is not indemnified per 7.1.9 and 7.1.8(c); only the standard-grade equivalent is covered, and this line is itemised as an upgrade."
+    },
+    {
+      "item_id": "15",
+      "description": "Pool filter system maintenance",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 0.01,
+      "price_log_sd": 0.05,
+      "rationale": "Servicing/maintenance of the pool filter is not indemnified per 3.1.5 and 7.1.8(b); maintenance of an excluded installation is always excluded, even if performed after a loss."
+    },
+    {
+      "item_id": "16",
+      "description": "Restore wall surfaces (10 m²)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 688.0,
+      "price_log_sd": 0.2,
+      "rationale": "Making good affected wall render is covered under 7.1.7(a) and (c); only the wetted band is included per 7.1.5. Reference case 63 and price prior."
+    },
+    {
+      "item_id": "17",
+      "description": "Final site cleaning",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 213.0,
+      "price_log_sd": 0.2,
+      "rationale": "Final cleaning of the working area after covered works is indemnified under 7.1.7(h); reference case 63 and price prior."
+    },
+    {
+      "item_id": "18",
+      "description": "Vehicle costs (one per invoice)",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 1.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "One attendance/vehicle charge per invoice with indemnifiable work is covered under 7.1.8(e) and 11.3; this invoice contains covered work."
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "case_id": "game62",
+  "extractor_version": "rel",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Leak detection call-out and pinpointing",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 678.0,
+      "price_log_sd": 0.17,
+      "rationale": "The supply-pipe leak qualifies as escape of water under §2.4.2. Sections 7.1.7(e)–(f) cover necessary pinpointing and the first call-out; the comparable charges total €229 + €449 = €678, excluding labour billed separately."
+    },
+    {
+      "item_id": "2",
+      "description": "Kitchen floor and wall-base moisture measurement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 167.0,
+      "price_log_sd": 0.28,
+      "rationale": "Section 7.1.7(e) covers measurement of the documented affected areas. The directly comparable measurement is estimated at €167 gross."
+    },
+    {
+      "item_id": "3",
+      "description": "Service technician labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.94,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1307.0,
+      "price_log_sd": 0.07,
+      "rationale": "Section 7.1.7(g) covers necessary technician labour at customary rates, provided it does not duplicate the pinpointing charge under §7.1.8(c). The supplied whole-line estimate for 14 hours is €1,307 gross."
+    },
+    {
+      "item_id": "4",
+      "description": "Leak detection vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.03,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) allows only the first travel, mileage or call-out charge on this invoice, and line 1 already includes the call-out. If the line 1 fee is treated solely as a diagnostic service, the conditional vehicle allowance is €83 gross."
+    },
+    {
+      "item_id": "5",
+      "description": "Expose affected pipe run",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 138.0,
+      "price_log_sd": 0.15,
+      "rationale": "Sections 2.4.3(a) and 7.1.7(a) cover the access work needed to repair the failed indoor supply pipe. The midpoint of the matching €117–€158 reference is about €138 gross."
+    },
+    {
+      "item_id": "6",
+      "description": "Remove and dispose of damaged insulation",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 140.0,
+      "price_log_sd": 0.18,
+      "rationale": "Sections 7.1.7(a) and 5.2.1 cover dismantling and disposal of the damaged insulation. The matching two-piece reference supports a gross allowance of about €140."
+    },
+    {
+      "item_id": "7",
+      "description": "Repair confirmed copper supply leak",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 145.0,
+      "price_log_sd": 0.23,
+      "rationale": "Sections 2.4.3(a) and 7.1.7(g) cover the local repair of the failed pipe. Allow €145 gross for the repair itself, excluding access and the materials billed on other lines."
+    },
+    {
+      "item_id": "8",
+      "description": "Replacement copper and transition fittings",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 90.0,
+      "price_log_sd": 0.23,
+      "rationale": "Sections 7.1.7(c) and 7.1.9 allow like-for-like materials for the documented 1–2 m repair. About 1.5 m at €33 plus roughly €40 for transition fittings gives €90 gross."
+    },
+    {
+      "item_id": "9",
+      "description": "Plumbing vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "This is the first travel charge on the plumbing invoice and is covered under §7.1.7(f) at €83 gross."
+    },
+    {
+      "item_id": "10",
+      "description": "Kitchen condensation dryer rental",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 42.0,
+      "price_log_sd": 0.42,
+      "rationale": "Section 7.1.7(e) covers necessary equipment hire for the documented wet areas. The matching €20–€65 reference supports €42 gross for the rental period."
+    },
+    {
+      "item_id": "11",
+      "description": "Drying of kitchen floor and wall base",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 57.0,
+      "price_log_sd": 0.68,
+      "rationale": "Section 7.1.7(b) covers necessary drying of the documented wet floor and wall base. Allow €57 gross for the drying service, distinct from the equipment rental under §7.1.8(c)."
+    },
+    {
+      "item_id": "12",
+      "description": "Drying contractor vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "This is the first travel charge on the drying invoice and is covered under §7.1.7(f) at €83 gross."
+    },
+    {
+      "item_id": "13",
+      "description": "Remove, transport and dispose of damaged table",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 155.0,
+      "price_log_sd": 0.17,
+      "rationale": "Sections 7.1.7(h) and 5.2.1 cover removal, transport and disposal of the ruined furnishing. Comparable allowances of €58 for removal and €97 for transport and disposal give €155 gross."
+    },
+    {
+      "item_id": "14",
+      "description": "Replacement table, limited to worn pine value",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 100.0,
+      "price_log_sd": 0.42,
+      "rationale": "Sections 7.1.1(d) and 7.1.9 exclude the oak upgrade and limit payment to the pre-loss current value of the pine table; no new-for-old extension is shown. An estimated €250 new equivalent less 60% for seven years of daily use and visible wear gives €100 gross."
+    },
+    {
+      "item_id": "15",
+      "description": "Replacement table delivery and assembly",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 150.0,
+      "price_log_sd": 0.21,
+      "rationale": "Sections 7.1.7(h) and 7.1.9 allow delivery and setup at the level needed for an equivalent pine table, not any designer-table surcharge. Allow €60 for delivery and €90 for assembly, or €150 gross."
+    },
+    {
+      "item_id": "16",
+      "description": "Clean table installation area",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.93,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 30.0,
+      "price_log_sd": 0.3,
+      "rationale": "Section 7.1.7(h) covers cleaning the spot where the damaged table stood, but §7.1.8(a) excludes general cleaning. Allow €30 gross for the local work."
+    },
+    {
+      "item_id": "17",
+      "description": "Carpentry vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.89,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.05,
+      "rationale": "Section 7.1.7(f) allows the first contractor travel charge at €83 gross. Section 7.1.8(c) would bar it if it duplicated the table delivery already billed on line 15."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+ "game": 69,
+ "ts": "2026-11-22T05:06:56",
+ "role": "primary",
+ "stamp": {
+  "agent_version": "0.1.0",
+  "extractor_version": "rel",
+  "git_sha": "bb5c7f0656c3229ccbd194f0104145ec4904ffab",
+  "git_dirty": true,
+  "git_tag": "",
+  "config_path": "configs/default.toml",
+  "config_sha": "bb18134b7b7e"
+ },
+ "final_stage": "full",
+ "stages": [
+  {
+   "stage": "fast",
+   "model": "gpt-4.1",
+   "submitted": true,
+   "since_start_s": 11.05,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Compensation for stolen watch",
+     "median": 2500.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 2375.0,
+     "b": 2500.0
+    },
+    {
+     "index": 2,
+     "description": "Compensation for stolen diamond ring",
+     "median": 2500.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 2375.0,
+     "b": 2500.0
+    },
+    {
+     "index": 3,
+     "description": "Compensation for stolen gold necklace",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Compensation for cash taken in robbery",
+     "median": 500.0,
+     "sigma": 0.1,
+     "p_zero": 0.0,
+     "a": 475.0,
+     "b": 500.0
+    },
+    {
+     "index": 5,
+     "description": "Compensation for stolen mobile phone",
+     "median": 700.0,
+     "sigma": 0.2,
+     "p_zero": 0.0,
+     "a": 609.0,
+     "b": 680.76
+    },
+    {
+     "index": 6,
+     "description": "Replacement travel and extra hotel nights after the incident",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Shipping",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 0.99,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 8,
+     "description": "Translation from Spanish to English",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "Notary certification of translated documents",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Material costs",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.95,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Administrative and claim-processing fee",
+     "median": 1.0,
+     "sigma": 0.1,
+     "p_zero": 1.0,
+     "a": 0.95,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 3,
+    "seconds": 0.011,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 2296.28,
+     "2": 2296.28,
+     "3": 0.92,
+     "4": 459.26,
+     "5": 581.77,
+     "6": 0.92,
+     "7": 0.92,
+     "8": 0.92,
+     "9": 0.92,
+     "10": 0.92,
+     "11": 0.92
+    }
+   }
+  },
+  {
+   "stage": "full",
+   "model": "gpt-6.2-sol",
+   "submitted": true,
+   "since_start_s": 16.61,
+   "lines": [
+    {
+     "index": 1,
+     "description": "Stolen watch",
+     "median": 2500.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 2375.0,
+     "b": 2500.0
+    },
+    {
+     "index": 2,
+     "description": "Stolen diamond ring",
+     "median": 2500.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 2375.0,
+     "b": 2500.0
+    },
+    {
+     "index": 3,
+     "description": "Missing gold necklace",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    },
+    {
+     "index": 4,
+     "description": "Cash taken in robbery",
+     "median": 500.0,
+     "sigma": 0.1,
+     "p_zero": 0.01,
+     "a": 475.0,
+     "b": 500.0
+    },
+    {
+     "index": 5,
+     "description": "Stolen mobile phone",
+     "median": 475.0,
+     "sigma": 0.35,
+     "p_zero": 0.01,
+     "a": 413.25,
+     "b": 430.23
+    },
+    {
+     "index": 6,
+     "description": "Replacement travel and extra hotel nights",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    },
+    {
+     "index": 7,
+     "description": "Shipping",
+     "median": 27.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 28.63,
+     "b": 0.0
+    },
+    {
+     "index": 8,
+     "description": "Spanish-to-English translation",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    },
+    {
+     "index": 9,
+     "description": "Notary certification",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    },
+    {
+     "index": 10,
+     "description": "Translation materials",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    },
+    {
+     "index": 11,
+     "description": "Administrative and claim-processing fee",
+     "median": 1.0,
+     "sigma": 0.7,
+     "p_zero": 1.0,
+     "a": 1.06,
+     "b": 0.0
+    }
+   ],
+   "charge_agent": {
+    "mode": "rule",
+    "risk": "neutral",
+    "gamma": 1.0,
+    "weights": "rule",
+    "lines_with_precedents": 3,
+    "seconds": 0.008,
+    "submitted": "legacy",
+    "shadow_charges": {
+     "1": 2296.28,
+     "2": 2296.28,
+     "3": 1.53,
+     "4": 459.26,
+     "5": 440.68,
+     "6": 1.53,
+     "7": 22.89,
+     "8": 1.53,
+     "9": 1.53,
+     "10": 1.53,
+     "11": 1.53
+    }
+   }
+  }
+ ]
+}

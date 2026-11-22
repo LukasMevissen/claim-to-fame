@@ -1,0 +1,183 @@
+{
+  "case_id": "game58",
+  "extractor_version": "x3",
+  "model": "gpt-6.2-sol",
+  "items": [
+    {
+      "item_id": "1",
+      "description": "Materials for the damaged shed roof section",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 550.0,
+      "price_log_sd": 0.3,
+      "rationale": "The storm-felled tree struck a declared ancillary structure, so §§2.5.3(c) and 2.5.5 cover the damage. Allow €550 for like-for-like rafters, boarding, bitumen shingles and fixings over 10 m² under §§7.1.7(c) and 7.1.9, excluding labour billed on line 5."
+    },
+    {
+      "item_id": "2",
+      "description": "Full shed repaint",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.5 excludes painting undamaged walls, and §7.1.6 does not extend roof repairs to separate wall surfaces. Section 7.1.10 bars the entire mixed line as billed."
+    },
+    {
+      "item_id": "3",
+      "description": "UV-resistant protective coating",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.8(a) expressly excludes treatments intended to protect against future UV exposure, even when applied during a covered repair."
+    },
+    {
+      "item_id": "4",
+      "description": "Renewal of all shed trim",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.5 limits repair to damaged trim. Because the line also includes undamaged trim without a price split, §7.1.10 excludes it in full as billed."
+    },
+    {
+      "item_id": "5",
+      "description": "Skilled carpentry labour",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1440.0,
+      "price_log_sd": 0.14,
+      "rationale": "Section 7.1.7(d) covers necessary labour on the damaged roof section. Two carpenters for eight hours each at €90 gross per hour give €1,440."
+    },
+    {
+      "item_id": "6",
+      "description": "Hand tools and reusable equipment",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.8(b) treats ordinary hand tools and reusable equipment as included in the contractor's labour rate."
+    },
+    {
+      "item_id": "7",
+      "description": "Carpenter vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Section 7.1.7(f) allows one vehicle charge on the carpenter's invoice. The reference amount is €83 gross for one charge."
+    },
+    {
+      "item_id": "8",
+      "description": "Carpenter return-visit vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Line 7 uses the one travel charge allowed on this invoice under §7.1.7(f). Section 7.1.8(d) excludes the second charge."
+    },
+    {
+      "item_id": "9",
+      "description": "Crew catering",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "Section 7.1.8(b) expressly excludes catering for contractor personnel as a business expense."
+    },
+    {
+      "item_id": "10",
+      "description": "Cutting and removing the tree from the roof",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.4,
+      "rationale": "Sections 5.2.1 and 5.2.3 cover cutting up and removing the tree deposited on the insured shed. Allow €850 gross for the crew work and initial haulage, excluding the separately billed plant hire and disposal."
+    },
+    {
+      "item_id": "11",
+      "description": "Lifting and earth-moving machinery hire",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.97,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1150.0,
+      "price_log_sd": 0.4,
+      "rationale": "Sections 5.2.3 and 7.1.7(e) cover necessary special plant for lifting the tree, and GR-2026 covers plant needed for the ground reinstatement. Estimate €1,150 gross for the combined hire, subject to the actual charge incurred."
+    },
+    {
+      "item_id": "12",
+      "description": "Tree service vehicle charge",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 83.0,
+      "price_log_sd": 0.06,
+      "rationale": "Section 7.1.7(f) allows one vehicle charge on this separate trade invoice. Allow €83 gross at the reference rate for attendance, distinct from debris haulage."
+    },
+    {
+      "item_id": "13",
+      "description": "Disposal of damaged roof timber and glass",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 120.0,
+      "price_log_sd": 0.35,
+      "rationale": "Both materials are remnants of insured property under §5.2.1(a), so the combined line passes §7.1.10. Allow €120 gross for disposal of both debris types."
+    },
+    {
+      "item_id": "14",
+      "description": "Disposal of green waste and root ball",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.99,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 195.0,
+      "price_log_sd": 0.4,
+      "rationale": "Section 5.2.1(b) covers the storm-felled green waste and the single root mass under 1 m³. Allow €195 gross for disposal of both, without charging for haulage again."
+    },
+    {
+      "item_id": "15",
+      "description": "Soil disposal and ground and paving reinstatement",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.98,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 850.0,
+      "price_log_sd": 0.45,
+      "rationale": "GR-2026 covers reinstatement of ground disturbed by the insured tree impact, and this line combines disposal with making the soil and paving good rather than billing standalone clearance under §5.2.2. Allow €850 gross for both operations, excluding machine hire billed separately."
+    },
+    {
+      "item_id": "16",
+      "description": "Duplicate tree-waste transport",
+      "quantity": 1.0,
+      "unit": "",
+      "covered_prob": 0.0,
+      "related_prob": 1.0,
+      "unit_price_gross_eur": 1.0,
+      "price_log_sd": 0.7,
+      "rationale": "The tree service already charged for this haulage. Section 7.1.8(c) excludes the duplicate transport charge while allowing separate disposal fees."
+    }
+  ]
+}
