@@ -107,6 +107,22 @@ mu = 0.0
 s = 0.35
 miss_zero = 0.5
 
+[charge_agent]
+# Charge agent (c2f/charge_agent.py): decides the charge a per line from all earlier rounds
+# instead of the fixed share of the estimate above (charge_min_ratio, tuned on games 1-12).
+# The limit b is not touched. Walk-forward backtest on games 13-47 against the fixed rule
+# incl. the confident-line floor (scripts/charge_agent_backtest.py, docs/research/charge_agent.md):
+#   rule / neutral +23k (90% interval -6k to +53k)    rule / loving +15k (-35k to +63k)
+#   llm  / neutral +18k (gpt-4.1) to +29k (gpt-6.2-sol@low)    llm / loving +5k to +7k
+# "off" | "rule" (no model call, milliseconds) | "llm" (a judge model weighs the earlier rounds,
+# in parallel to the assessment; rule weights when it is late or fails).
+mode = "off"
+risk = "neutral"             # "neutral" (maximise expected revenue) | "loving" (revenue ** gamma_loving)
+gamma_loving = 2.0
+judge_model = "gpt-4.1"      # or "gpt-6.2-sol@low"; backtest: median 3.4 s / 4.8 s, max 9.8 s / 12.7 s
+judge_timeout_seconds = 15   # the judge call is cut off after this
+judge_wait_seconds = 20      # the full stage waits for the judge at most until this long after its start
+
 [belief]
 # Floors applied to the LLM's stated uncertainty.
 min_sigma = 0.2

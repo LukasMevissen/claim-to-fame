@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 1.67,
+  "input_tokens": 8924,
+  "output_tokens": 135
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 15,
+    "line": 4,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 17,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 19,
+    "line": 2,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ]
+ }
+}

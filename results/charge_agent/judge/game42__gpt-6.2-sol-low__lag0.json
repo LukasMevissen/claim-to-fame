@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "model": "gpt-6.2-sol",
+  "seconds": 3.2,
+  "input_tokens": 13965,
+  "output_tokens": 168
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 38,
+    "line": 1,
+    "w": 0.95,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 38,
+    "line": 3,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [],
+  "4": [
+   {
+    "game": 38,
+    "line": 6,
+    "w": 0.95,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [],
+  "6": []
+ }
+}

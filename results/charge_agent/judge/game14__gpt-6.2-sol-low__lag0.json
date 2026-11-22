@@ -1,0 +1,14 @@
+{
+ "meta": {
+  "model": "gpt-6.2-sol",
+  "seconds": 2.08,
+  "input_tokens": 3739,
+  "output_tokens": 63
+ },
+ "weights": {
+  "1": [],
+  "2": [],
+  "3": [],
+  "4": []
+ }
+}

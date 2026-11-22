@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "model": "gpt-6.2-sol",
+  "seconds": 7.2,
+  "input_tokens": 9452,
+  "output_tokens": 548
+ },
+ "weights": {
+  "1": [],
+  "2": [
+   {
+    "game": 18,
+    "line": 4,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 0.45,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 3,
+    "w": 0.45,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 5,
+    "w": 0.4,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 0.35,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [],
+  "4": [],
+  "5": [],
+  "6": [],
+  "7": [],
+  "8": [
+   {
+    "game": 18,
+    "line": 1,
+    "w": 0.35,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 8,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 2,
+    "w": 0.2,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [
+   {
+    "game": 18,
+    "line": 5,
+    "w": 0.2,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "10": [
+   {
+    "game": 18,
+    "line": 4,
+    "w": 0.6,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 3,
+    "w": 0.45,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 5,
+    "w": 0.45,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 0.4,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ]
+ }
+}

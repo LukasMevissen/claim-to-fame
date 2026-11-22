@@ -1,0 +1,265 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 6.86,
+  "input_tokens": 12400,
+  "output_tokens": 1455
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 32,
+    "line": 10,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 32,
+    "line": 9,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 34,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 8,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 3,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 32,
+    "line": 5,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [],
+  "4": [],
+  "5": [
+   {
+    "game": 18,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "6": [
+   {
+    "game": 25,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 32,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "7": [],
+  "8": [
+   {
+    "game": 21,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 36,
+    "line": 10,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [
+   {
+    "game": 34,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 8,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 3,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 32,
+    "line": 5,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "10": [
+   {
+    "game": 36,
+    "line": 8,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 36,
+    "line": 9,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 11,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 12,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "11": [],
+  "12": [],
+  "13": [],
+  "14": [
+   {
+    "game": 18,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "15": [
+   {
+    "game": 21,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 36,
+    "line": 10,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ]
+ }
+}

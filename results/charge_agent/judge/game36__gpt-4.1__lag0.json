@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 4.08,
+  "input_tokens": 11614,
+  "output_tokens": 767
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "4": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "6": [],
+  "7": [
+   {
+    "game": 12,
+    "line": 2,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "8": [
+   {
+    "game": 12,
+    "line": 2,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 4,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 11,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [
+   {
+    "game": 21,
+    "line": 10,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "10": [
+   {
+    "game": 21,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 3,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "11": [],
+  "12": [],
+  "13": [],
+  "14": [],
+  "15": [],
+  "16": [],
+  "17": []
+ }
+}

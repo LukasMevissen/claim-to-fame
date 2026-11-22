@@ -7,6 +7,24 @@ Each release is a git tag `vX.Y.Z`, created with `scripts/release.py`.
 
 <!-- new entries below -->
 
+## unreleased: charge agent (2026-11-22, off by default: quotes unchanged until `[charge_agent] mode` is set)
+
+- `c2f/charge_agent.py`: decides the charge a per line instead of the fixed 0.87 x estimate.
+  Belief of the assessment calibrated per class of stated uncertainty on all earlier rounds;
+  earlier lines weighted by how often their match class predicted the later threshold;
+  a maximises expected revenue (`risk = "neutral"`) or revenue squared (`risk = "loving"`)
+  against the measured acceptance of the other teams.
+- `mode = "rule"`: no model call, 10-250 ms per invoice. `mode = "llm"`: a judge model names
+  the informative earlier lines, in parallel to the assessment; cut off after 15 s, pricing
+  waits at most 20 s after the start, rule weights otherwise.
+- With the agent on, `price_items` skips the fixed rule's search for a (about 3.6 s per line
+  against 22 learned opponent types): dry run of game 0 final answer after 12 s instead of 24 s.
+- Walk-forward games 13-47 against the fixed rule incl. the confident-line floor: rule/neutral
+  +23.5k (90 % interval -5.9k to +53.3k), rule/loving +15.0k, llm/neutral +17.5k (gpt-4.1) to
+  +29.5k (gpt-6.2-sol@low), llm/loving +4.5k to +6.7k.
+- `scripts/charge_agent_backtest.py`, `tests/test_charge_agent.py`, `docs/research/charge_agent.md`.
+
+
 ## unreleased: item prior (2026-11-22, changes quotes: `[llm] use_item_prior = true`)
 
 - `c2f/item_prior.py`: distribution of t per unit for every invoice line type that repeats

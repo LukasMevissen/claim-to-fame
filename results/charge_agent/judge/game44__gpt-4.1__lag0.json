@@ -1,0 +1,464 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 9.81,
+  "input_tokens": 15031,
+  "output_tokens": 2228
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 40,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 2,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 40,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 2,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [
+   {
+    "game": 40,
+    "line": 2,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 3,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "4": [
+   {
+    "game": 40,
+    "line": 3,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 4,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [
+   {
+    "game": 40,
+    "line": 3,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "6": [
+   {
+    "game": 40,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 5,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "7": [
+   {
+    "game": 43,
+    "line": 6,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "8": [
+   {
+    "game": 40,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 7,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [
+   {
+    "game": 40,
+    "line": 7,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 8,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 2,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 8,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "10": [
+   {
+    "game": 40,
+    "line": 8,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 9,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "11": [
+   {
+    "game": 40,
+    "line": 6,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "12": [
+   {
+    "game": 40,
+    "line": 12,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 15,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 4,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 2,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 8,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "13": [
+   {
+    "game": 40,
+    "line": 11,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 14,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "14": [],
+  "15": [
+   {
+    "game": 40,
+    "line": 9,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 3,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 5,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 14,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "16": [
+   {
+    "game": 40,
+    "line": 9,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 3,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 5,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 14,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "17": [
+   {
+    "game": 40,
+    "line": 10,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 11,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "18": [
+   {
+    "game": 40,
+    "line": 7,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 8,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 2,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 8,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "19": [
+   {
+    "game": 40,
+    "line": 12,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 15,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 4,
+    "w": 0.8,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 39,
+    "line": 2,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 4,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 34,
+    "line": 8,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "20": [],
+  "21": [
+   {
+    "game": 40,
+    "line": 13,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 43,
+    "line": 16,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 18,
+    "line": 5,
+    "w": 0.9,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "22": []
+ }
+}

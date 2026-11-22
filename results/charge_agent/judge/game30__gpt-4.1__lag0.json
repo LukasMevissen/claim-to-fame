@@ -1,0 +1,164 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 4.36,
+  "input_tokens": 9453,
+  "output_tokens": 897
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 18,
+    "line": 2,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 3,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 3,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 18,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [],
+  "4": [],
+  "5": [],
+  "6": [],
+  "7": [],
+  "8": [
+   {
+    "game": 18,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 8,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 12,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [],
+  "10": [
+   {
+    "game": 18,
+    "line": 4,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 14,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 21,
+    "line": 20,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 25,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 16,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ]
+ }
+}

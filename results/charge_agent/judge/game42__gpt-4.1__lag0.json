@@ -1,0 +1,48 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 2.8,
+  "input_tokens": 13966,
+  "output_tokens": 257
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 38,
+    "line": 1,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 38,
+    "line": 3,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [
+   {
+    "game": 38,
+    "line": 5,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "4": [
+   {
+    "game": 38,
+    "line": 6,
+    "w": 1.0,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [],
+  "6": []
+ }
+}

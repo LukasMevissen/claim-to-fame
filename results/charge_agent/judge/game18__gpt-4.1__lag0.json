@@ -1,0 +1,85 @@
+{
+ "meta": {
+  "model": "gpt-4.1",
+  "seconds": 3.47,
+  "input_tokens": 5207,
+  "output_tokens": 601
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 16,
+    "line": 1,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 7,
+    "line": 1,
+    "w": 0.6,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 16,
+    "line": 3,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 7,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [],
+  "4": [
+   {
+    "game": 16,
+    "line": 5,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [
+   {
+    "game": 8,
+    "line": 2,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 10,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 13,
+    "line": 1,
+    "w": 0.5,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "6": [],
+  "7": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.6,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ]
+ }
+}

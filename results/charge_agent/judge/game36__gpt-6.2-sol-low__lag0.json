@@ -1,0 +1,148 @@
+{
+ "meta": {
+  "model": "gpt-6.2-sol",
+  "seconds": 6.75,
+  "input_tokens": 11613,
+  "output_tokens": 497
+ },
+ "weights": {
+  "1": [
+   {
+    "game": 21,
+    "line": 13,
+    "w": 0.35,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "2": [
+   {
+    "game": 21,
+    "line": 13,
+    "w": 0.35,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "3": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "4": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "5": [
+   {
+    "game": 12,
+    "line": 1,
+    "w": 0.3,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "6": [],
+  "7": [
+   {
+    "game": 21,
+    "line": 3,
+    "w": 0.65,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 12,
+    "line": 2,
+    "w": 0.3,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "8": [
+   {
+    "game": 21,
+    "line": 11,
+    "w": 0.6,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 12,
+    "line": 2,
+    "w": 0.4,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 4,
+    "w": 0.35,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "9": [
+   {
+    "game": 21,
+    "line": 10,
+    "w": 0.7,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 27,
+    "line": 4,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   },
+   {
+    "game": 12,
+    "line": 2,
+    "w": 0.25,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "10": [
+   {
+    "game": 12,
+    "line": 2,
+    "w": 0.2,
+    "factor": 1.0,
+    "why": "llm"
+   }
+  ],
+  "11": [],
+  "12": [],
+  "13": [],
+  "14": [],
+  "15": [],
+  "16": [],
+  "17": []
+ }
+}

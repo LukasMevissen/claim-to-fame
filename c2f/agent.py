@@ -12,7 +12,7 @@ from .belief import TBelief
 from .case_io import Case
 from .config import Config
 from .extract import ItemEstimate, extract
-from .pricing import Quote, quote
+from .pricing import Quote, acceptance_limit, quote
 
 
 @dataclass
@@ -37,15 +37,47 @@ def to_belief(it: ItemEstimate, cfg: Config) -> TBelief:
     return TBelief(median=it.quantity * it.unit_price_gross_eur, sigma=sigma, p_zero=p_zero)
 
 
-def price_items(items: list[ItemEstimate], cfg: Config) -> list[PricedItem]:
+def price_items(items: list[ItemEstimate], cfg: Config,
+                charges: dict[int, float] | None = None) -> list[PricedItem]:
+    """charges: POS -> charge a decided by the charge agent (c2f/charge_agent.py). For those
+    lines only the limit b is computed here; the search for a under the fixed rule is skipped
+    (it takes seconds per line against the learned opponent population)."""
     params = cfg.pricing
     out = []
-    for it in items:
+    for k, it in enumerate(items, 1):
         bel = to_belief(it, cfg)
-        q: Quote = quote(bel, params)
+        a = (charges or {}).get(_index(it.item_id, k))
+        if a is not None and a > 0 and math.isfinite(a):
+            q = Quote(round(a, 2), round(acceptance_limit(bel, params), 2))
+        else:
+            q = quote(bel, params)
         out.append(PricedItem(it.item_id, it.description, asdict(bel),
                               q.charge_price, q.acceptance_limit))
     return out
+
+
+def _agent_charges(items: list[ItemEstimate], case: Case, cfg: Config, timing: dict, wait: bool,
+                   time_left: float | None) -> dict[int, float]:
+    """Opt-in ([charge_agent] mode = "rule" | "llm"): the charge a per line decided by the
+    charge agent (c2f/charge_agent.py), as POS -> a for price_items. The limit b is not
+    touched. Never raises: on any error it returns {} and the fixed rule prices every line."""
+    sec = cfg.section("charge_agent")
+    if sec.get("mode", "off") not in ("rule", "llm") or not items:
+        return {}
+    try:
+        from . import charge_agent
+        est = {_index(it.item_id, k): (it.quantity * it.unit_price_gross_eur, it.price_log_sd)
+               for k, it in enumerate(items, 1)}
+        dec, info = charge_agent.live_charges(case, est, sec, cfg.section("llm").get("model", "gpt-6.2-sol"),
+                                              wait=wait, time_left=time_left)
+        out = {pos: d.a for pos, d in dec.items() if d.a > 0 and math.isfinite(d.a)}
+        info["lines_set"] = len(out)
+        timing["charge_agent"] = info
+        return out
+    except Exception as e:  # noqa: BLE001  an extra, never a blocker
+        timing["charge_agent"] = {"error": repr(e)[:200]}
+        print(f"[agent] charge agent skipped: {e!r}")
+        return {}
 
 
 def _with_item_prior(reference: str, case: Case, llm: dict, errors: list[str]) -> str:
@@ -100,6 +132,11 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
     # No de-duplication: when both entries name the same model, the second attempt is a
     # retry after a failure (game 21: one dropped connection left us with fixed prices).
     models = [m for m in models if m]
+    try:                                   # mode "llm": the judge runs alongside the assessment
+        from . import charge_agent
+        charge_agent.begin(case, cfg.section("charge_agent"), cfg.section("llm").get("model", "gpt-6.2-sol"))
+    except Exception as e:  # noqa: BLE001
+        errors.append(f"charge_agent: {e!r}"[:200])
     reference = ""
     if llm.get("use_pricebook", True):
         try:
@@ -124,11 +161,16 @@ def price_case(case: Case, cfg: Config, use_cache: bool = True,
             print(f"[agent] model {model} failed: {e!r}")
     t1 = time.monotonic()
     _combine_item_prior(items, case, cfg)
-    priced = price_items(items, cfg)
+    agent_info: dict = {}
+    # The quick safety-net stage never waits for the judge; the full stage waits at most
+    # [charge_agent].judge_wait_seconds after the judge started and never into the last 6 s.
+    charges = _agent_charges(items, case, cfg, agent_info, wait=with_image,
+                             time_left=deadline - (time.monotonic() - t0))
+    priced = price_items(items, cfg, charges)
     t2 = time.monotonic()
     timing = {"model": used, "with_image": with_image and case.image is not None,
               "extract_s": round(t1 - t0, 2),
-              "pricing_s": round(t2 - t1, 2), "total_s": round(t2 - t0, 2)}
+              "pricing_s": round(t2 - t1, 2), "total_s": round(t2 - t0, 2), **agent_info}
     if errors:
         timing["model_errors"] = errors
     return priced, timing
@@ -145,6 +187,11 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
     t0 = time.monotonic()
     timing: dict = {"model": spec, "backup": True}
     items: list[ItemEstimate] = []
+    try:
+        from . import charge_agent
+        charge_agent.begin(case, cfg.section("charge_agent"), cfg.section("llm").get("model", "gpt-6.2-sol"))
+    except Exception as e:  # noqa: BLE001
+        print(f"[agent] charge agent not started: {e!r}")
     try:
         if not spec:
             return [], timing
@@ -174,7 +221,9 @@ def price_case_backup(case: Case, cfg: Config, budget: float) -> tuple[list[Pric
         timing["model_errors"] = [f"{spec}: {e!r}"[:300]]
         print(f"[agent] backup {spec} failed: {e!r}")
     _combine_item_prior(items, case, cfg)
-    priced = price_items(items, cfg)
+    charges = _agent_charges(items, case, cfg, timing, wait=True,
+                             time_left=budget - (time.monotonic() - t0))
+    priced = price_items(items, cfg, charges)
     timing["total_s"] = round(time.monotonic() - t0, 2)
     return priced, timing
 

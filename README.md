@@ -113,6 +113,23 @@ for the invoiced quantity. Coverage and policy arithmetic stay with the model.
 
 Design, test results and limits: [docs/research/item_prior.md](docs/research/item_prior.md).
 
+## Charge agent: the charge a per line from all earlier rounds
+
+`c2f/charge_agent.py` replaces the fixed share of the estimate (`charge_min_ratio`, tuned on
+games 1-12) by a decision per line. It measures on every earlier round how wrong our
+estimates are for the uncertainty the model states, which earlier lines predict the current
+threshold (same line type, same policy wording, similar claim), and how the other teams
+accept charges, and then picks the a with the highest expected revenue (`risk = "neutral"`)
+or with more weight on the high outcome (`risk = "loving"`). `mode = "rule"` needs no model
+call (milliseconds); `mode = "llm"` lets a judge model weigh the earlier rounds, in parallel
+to the assessment, with a hard time limit and the rule weights as fallback. Off by default
+(`[charge_agent]` in `configs/default.toml`); the limit b is not touched.
+
+    python scripts/charge_agent_backtest.py                  # walk-forward, rule mode, both settings
+    python scripts/charge_agent_backtest.py --llm gpt-4.1    # + llm mode (judgements cached)
+
+Design, results and limits: [docs/research/charge_agent.md](docs/research/charge_agent.md).
+
 ## Layout
 
     c2f/            agent package
@@ -123,6 +140,7 @@ Design, test results and limits: [docs/research/item_prior.md](docs/research/ite
       agent.py        case -> quotes, deadline + fallback model
       pricebook.py    earlier cases with their revealed t bounds -> REFERENCE CASES prompt block
       item_prior.py   distribution of t per unit for recurring line types -> PRICE PRIORS prompt block
+      charge_agent.py charge a per line from all earlier rounds (rule or llm relevance, risk setting)
       evaluate.py     QC gates + tournament simulation vs labelled case
       api.py          QuantCo API client (list games, fetch key, submit)
       versioning.py   version stamp on every run
